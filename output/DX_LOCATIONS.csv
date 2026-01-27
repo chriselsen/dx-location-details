@@ -3,7 +3,7 @@ EANB1,"East Africa Data Centres NBO1, Nairobi, KE",KE,af-south-1,af-south-1,"10G
 RCL1,"Rack Centre LGS1, Ikeja, NG",NG,af-south-1,af-south-1,"1G, 10G, 100G","10G, 100G",4411,6.597527,3.373062
 TECT1,"Teraco CT1, Cape Town, ZA",ZA,af-south-1,af-south-1,"1G, 10G, 100G","10G, 100G",1225,-33.970872,18.465223
 EQHK1,"Equinix HK1, Tsuen Wan, HK",HK,ap-east-1,ap-east-1,"1G, 10G, 100G","10G, 100G",170,22.365581,114.11932
-CFT54,"Chief Telecom HD, TW",TW,ap-east-2,ap-east-2,"10G, 100G","10G, 100G",5678,25.074213,121.576784
+CFT54,"Chief Telecom HD, Taipei, TW",TW,ap-east-2,ap-east-2,"10G, 100G","10G, 100G",5678,25.074213,121.576784
 CHT51,"Chunghwa Telecom, New Taipei City, TW",TW,ap-east-2,ap-east-2,"10G, 100G","10G, 100G",2886,24.994866,121.458263
 ATTC1,"AT Tokyo Chuo Data Center, Tokyo, JP",JP,ap-northeast-1,ap-northeast-1,"1G, 10G, 100G","10G, 100G",738,35.645435,139.793285
 CFT52,"Chief Telecom LY, Taipei, TW",TW,ap-northeast-1,ap-northeast-1,"1G, 10G",,456,25.073467,121.577519
