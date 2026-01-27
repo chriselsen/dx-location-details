@@ -339,7 +339,7 @@ html += """
 """
 
 # Write file
-with open('docs/advanced.html', 'w') as f:
+with open('docs/index.html', 'w') as f:
     f.write(html)
 
-print("Generated docs/advanced.html")
+print("Generated docs/index.html")
