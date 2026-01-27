@@ -114,7 +114,7 @@ for loc in locations:
     if loc.get('latitude') and loc.get('longitude'):
         html += f"""        markers['{loc['code']}'] = L.marker([{loc['latitude']}, {loc['longitude']}], {{icon: customIcon}})
             .bindPopup('{loc['code']}: {loc['name']}')
-            .on('click', function() {{ selectLocation('{loc['code']}'); }})
+            .on('click', function(e) {{ L.DomEvent.stopPropagation(e); selectLocation('{loc['code']}'); }})
             .addTo(map);
         labels['{loc['code']}'] = L.marker([{loc['latitude']}, {loc['longitude']}], {{
             icon: L.divIcon({{html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">{loc['code']}</div>', className: 'empty'}})
