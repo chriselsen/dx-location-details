@@ -1,0 +1,1342 @@
+{
+  "151FS": {
+    "city": "Toronto",
+    "coordinates": {
+      "lat": "43.644672",
+      "lon": "-79.384128"
+    },
+    "country": "CA",
+    "peeringdb_id": "392"
+  },
+  "165HS": {
+    "city": "Newark",
+    "coordinates": {
+      "lat": "40.736844",
+      "lon": "-74.173402"
+    },
+    "country": "US",
+    "peeringdb_id": "350",
+    "state": "NJ"
+  },
+  "AIMMN": {
+    "city": "Kuala Lumpur",
+    "coordinates": {
+      "lat": "3.14969",
+      "lon": "101.70634"
+    },
+    "country": "MY",
+    "peeringdb_id": "460"
+  },
+  "ALN91": {
+    "city": "Kapolei",
+    "coordinates": {
+      "lat": "21.335728",
+      "lon": "-158.086738"
+    },
+    "country": "US",
+    "peeringdb_id": "3149",
+    "state": "HI"
+  },
+  "ATTC1": {
+    "city": "Tokyo",
+    "coordinates": {
+      "lat": "35.645435",
+      "lon": "139.793285"
+    },
+    "country": "JP",
+    "peeringdb_id": "738"
+  },
+  "BDC52": {
+    "city": "Hamala",
+    "coordinates": {
+      "lat": "26.154542",
+      "lon": "50.475258"
+    },
+    "country": "BH",
+    "peeringdb_id": "8243"
+  },
+  "BDC53": {
+    "city": "Askar",
+    "coordinates": {
+      "lat": "26.2285",
+      "lon": "50.586"
+    },
+    "country": "BH",
+    "peeringdb_id": "8242"
+  },
+  "CBHU2": {
+    "city": "Hume",
+    "coordinates": {
+      "lat": "-35.388831",
+      "lon": "149.1683"
+    },
+    "country": "AU",
+    "peeringdb_id": "12416"
+  },
+  "CDSR1": {
+    "city": "Milan",
+    "coordinates": {
+      "lat": "45.476394",
+      "lon": "9.103571"
+    },
+    "country": "IT",
+    "peeringdb_id": "3519"
+  },
+  "CEC50": {
+    "city": "Prague",
+    "coordinates": {
+      "lat": "50.060164",
+      "lon": "14.482978"
+    },
+    "country": "CZ",
+    "peeringdb_id": "214"
+  },
+  "CFT52": {
+    "city": "Taipei",
+    "coordinates": {
+      "lat": "25.073467",
+      "lon": "121.577519"
+    },
+    "country": "TW",
+    "peeringdb_id": "456"
+  },
+  "CFT53": {
+    "city": "Taipei",
+    "coordinates": {
+      "lat": "25.074213",
+      "lon": "121.576784"
+    },
+    "country": "TW",
+    "peeringdb_id": "5678"
+  },
+  "CFT54": {
+    "coordinates": {
+      "lat": "25.074213",
+      "lon": "121.576784"
+    },
+    "country": "TW",
+    "peeringdb_id": "5678"
+  },
+  "CGM60": {
+    "city": "Montreal",
+    "coordinates": {
+      "lat": "45.497188",
+      "lon": "-73.570471"
+    },
+    "country": "CA",
+    "peeringdb_id": "1944"
+  },
+  "CHT51": {
+    "city": "New Taipei City",
+    "coordinates": {
+      "lat": "24.994866",
+      "lon": "121.458263"
+    },
+    "country": "TW",
+    "peeringdb_id": "2886"
+  },
+  "CHT54": {
+    "city": "New Taipei City",
+    "coordinates": {
+      "lat": "24.994866",
+      "lon": "121.458263"
+    },
+    "country": "TW",
+    "peeringdb_id": "2886"
+  },
+  "CIBNA": {
+    "city": "Buenos Aires",
+    "coordinates": {
+      "lat": "-34.590248",
+      "lon": "-58.467164"
+    },
+    "country": "AR",
+    "peeringdb_id": "1550"
+  },
+  "CILIM": {
+    "city": "Santiago de Surco",
+    "coordinates": {
+      "lat": "-12.094823",
+      "lon": "-76.973532"
+    },
+    "country": "PE",
+    "peeringdb_id": "6248"
+  },
+  "CMCHV": {
+    "city": "Hanoi",
+    "coordinates": {
+      "lat": "21.03042",
+      "lon": "105.784363"
+    },
+    "country": "VN",
+    "peeringdb_id": "15938"
+  },
+  "COL67": {
+    "city": "Columbus",
+    "coordinates": {
+      "lat": "40.116491",
+      "lon": "-83.001985"
+    },
+    "country": "US",
+    "peeringdb_id": "2378",
+    "state": "OH"
+  },
+  "COLM3": {
+    "city": "Minneapolis",
+    "coordinates": {
+      "lat": "44.971408",
+      "lon": "-93.25458"
+    },
+    "country": "US",
+    "peeringdb_id": "3312",
+    "state": "MN"
+  },
+  "COLV2": {
+    "city": "Vancouver",
+    "coordinates": {
+      "lat": "49.286981",
+      "lon": "-123.119579"
+    },
+    "country": "CA",
+    "peeringdb_id": "1881"
+  },
+  "COLV3": {
+    "city": "Vancouver",
+    "coordinates": {
+      "lat": "49.259393",
+      "lon": "-123.029619"
+    },
+    "country": "CA",
+    "peeringdb_id": "8060"
+  },
+  "CS32A": {
+    "city": "New York",
+    "coordinates": {
+      "lat": "40.72",
+      "lon": "-74.004561"
+    },
+    "country": "US",
+    "peeringdb_id": "670",
+    "state": "NY"
+  },
+  "CSCH1": {
+    "city": "Chicago",
+    "coordinates": {
+      "lat": "41.876212",
+      "lon": "-87.631453"
+    },
+    "country": "US",
+    "peeringdb_id": "440",
+    "state": "IL"
+  },
+  "CSDE1": {
+    "city": "Denver",
+    "coordinates": {
+      "lat": "39.745636",
+      "lon": "-104.995636"
+    },
+    "country": "US",
+    "peeringdb_id": "389",
+    "state": "CO"
+  },
+  "CSFX1": {
+    "city": "Cyberjaya",
+    "coordinates": {
+      "lat": "2.913224",
+      "lon": "101.655646"
+    },
+    "country": "MY",
+    "peeringdb_id": "1279"
+  },
+  "CSOW": {
+    "city": "Los Angeles",
+    "coordinates": {
+      "lat": "34.047942",
+      "lon": "-118.255564"
+    },
+    "country": "US",
+    "peeringdb_id": "19",
+    "state": "CA"
+  },
+  "CSSV2": {
+    "city": "Milpitas",
+    "coordinates": {
+      "lat": "37.405693",
+      "lon": "-121.916261"
+    },
+    "country": "US",
+    "peeringdb_id": "671",
+    "state": "CA"
+  },
+  "CSSV4": {
+    "city": "Santa Clara",
+    "coordinates": {
+      "lat": "37.376259",
+      "lon": "-121.970705"
+    },
+    "country": "US",
+    "peeringdb_id": "1619",
+    "state": "CA"
+  },
+  "CSVA1": {
+    "city": "Reston",
+    "coordinates": {
+      "lat": "38.950631",
+      "lon": "-77.364541"
+    },
+    "country": "US",
+    "peeringdb_id": "668",
+    "state": "VA"
+  },
+  "CYOA1": {
+    "city": "Aurora",
+    "coordinates": {
+      "lat": "41.796754",
+      "lon": "-88.24276"
+    },
+    "country": "US",
+    "peeringdb_id": "3143",
+    "state": "IL"
+  },
+  "CYOW3": {
+    "city": "Houston",
+    "coordinates": {
+      "lat": "29.844182",
+      "lon": "-95.556656"
+    },
+    "country": "US",
+    "peeringdb_id": "1476",
+    "state": "TX"
+  },
+  "DBLV1": {
+    "city": "Las Vegas",
+    "coordinates": {
+      "lat": "36.059162",
+      "lon": "-115.145989"
+    },
+    "country": "US",
+    "peeringdb_id": "1594",
+    "state": "NV"
+  },
+  "DCDH6": {
+    "city": "Auckland",
+    "coordinates": {
+      "lat": "-36.740554",
+      "lon": "174.728988"
+    },
+    "country": "NZ",
+    "peeringdb_id": "2024"
+  },
+  "DCIJ3": {
+    "city": "Bekasi, Cibitung",
+    "coordinates": {
+      "lat": "-6.299731",
+      "lon": "107.089244"
+    },
+    "country": "ID",
+    "peeringdb_id": "8169"
+  },
+  "DGPU1": {
+    "city": "Oslo",
+    "coordinates": {
+      "lat": "59.924726",
+      "lon": "10.810183"
+    },
+    "country": "NO",
+    "peeringdb_id": "345"
+  },
+  "EANB1": {
+    "city": "Nairobi",
+    "coordinates": {
+      "lat": "-1.34014",
+      "lon": "36.896534"
+    },
+    "country": "KE",
+    "peeringdb_id": "1964"
+  },
+  "ECPH1": {
+    "city": "Tempe",
+    "coordinates": {
+      "lat": "33.395544",
+      "lon": "-111.97012"
+    },
+    "country": "US",
+    "peeringdb_id": "1917",
+    "state": "AZ"
+  },
+  "ECPO1": {
+    "city": "Hillsboro",
+    "coordinates": {
+      "lat": "45.548296",
+      "lon": "-122.907473"
+    },
+    "country": "US",
+    "peeringdb_id": "1922",
+    "state": "OR"
+  },
+  "ECTL1": {
+    "city": "Herzliya",
+    "coordinates": {
+      "lat": "32.052681",
+      "lon": "34.770992"
+    },
+    "country": "IL",
+    "peeringdb_id": "11734"
+  },
+  "EIRCL": {
+    "city": "Dublin",
+    "coordinates": {
+      "lat": "53.400983",
+      "lon": "-6.218081"
+    },
+    "country": "IE",
+    "peeringdb_id": "2343"
+  },
+  "EPVM2": {
+    "city": "Makati",
+    "coordinates": {
+      "lat": "14.564484",
+      "lon": "121.022368"
+    },
+    "country": "PH",
+    "peeringdb_id": "4809"
+  },
+  "EQAM3": {
+    "city": "Amsterdam",
+    "coordinates": {
+      "lat": "52.354686",
+      "lon": "4.958827"
+    },
+    "country": "NL",
+    "peeringdb_id": "1320"
+  },
+  "EQBA1": {
+    "city": "Barcelona",
+    "coordinates": {
+      "lat": "41.351557",
+      "lon": "2.137457"
+    },
+    "country": "ES",
+    "peeringdb_id": "122"
+  },
+  "EQBG1": {
+    "city": "Bogota",
+    "coordinates": {
+      "lat": "4.671384",
+      "lon": "-74.156026"
+    },
+    "country": "CO",
+    "peeringdb_id": "1354"
+  },
+  "EQC50": {
+    "city": "Chicago",
+    "coordinates": {
+      "lat": "41.85365",
+      "lon": "-87.618342"
+    },
+    "country": "US",
+    "peeringdb_id": "7",
+    "state": "IL"
+  },
+  "EQCL1": {
+    "city": "Calgary",
+    "coordinates": {
+      "lat": "51.045517",
+      "lon": "-114.069297"
+    },
+    "country": "CA",
+    "peeringdb_id": "9553"
+  },
+  "EQCL3": {
+    "city": "Calgary",
+    "coordinates": {
+      "lat": "50.976971",
+      "lon": "-113.956677"
+    },
+    "country": "CA",
+    "peeringdb_id": "3251"
+  },
+  "EQDA2": {
+    "city": "Dallas",
+    "coordinates": {
+      "lat": "32.800748",
+      "lon": "-96.819412"
+    },
+    "country": "US",
+    "peeringdb_id": "505",
+    "state": "TX"
+  },
+  "EQDC2": {
+    "city": "Ashburn",
+    "coordinates": {
+      "lat": "39.016363",
+      "lon": "-77.459023"
+    },
+    "country": "US",
+    "peeringdb_id": "1",
+    "state": "VA"
+  },
+  "EQDX1": {
+    "city": "Dubai",
+    "coordinates": {
+      "lat": "25.02618",
+      "lon": "55.18695"
+    },
+    "country": "AE",
+    "peeringdb_id": "1355"
+  },
+  "EQFA5": {
+    "city": "Frankfurt",
+    "coordinates": {
+      "lat": "50.09885",
+      "lon": "8.632004"
+    },
+    "country": "DE",
+    "peeringdb_id": "60"
+  },
+  "EQHE6": {
+    "city": "Espoo",
+    "coordinates": {
+      "lat": "60.203031",
+      "lon": "24.777861"
+    },
+    "country": "FI",
+    "peeringdb_id": "2516"
+  },
+  "EQHK1": {
+    "city": "Tsuen Wan",
+    "coordinates": {
+      "lat": "22.365581",
+      "lon": "114.11932"
+    },
+    "country": "HK",
+    "peeringdb_id": "170"
+  },
+  "EQIL4": {
+    "city": "Istanbul",
+    "coordinates": {
+      "lat": "41.008655",
+      "lon": "29.156655"
+    },
+    "country": "TR",
+    "peeringdb_id": "15498"
+  },
+  "EQLA3": {
+    "city": "El Segundo",
+    "coordinates": {
+      "lat": "33.921239",
+      "lon": "-118.383778"
+    },
+    "country": "US",
+    "peeringdb_id": "333",
+    "state": "CA"
+  },
+  "EQLD5": {
+    "city": "Slough",
+    "coordinates": {
+      "lat": "51.522463",
+      "lon": "-0.62905"
+    },
+    "country": "GB",
+    "peeringdb_id": "832"
+  },
+  "EQLS1": {
+    "city": "Lisbon",
+    "coordinates": {
+      "lat": "38.787919",
+      "lon": "-9.123454"
+    },
+    "country": "PT",
+    "peeringdb_id": "126"
+  },
+  "EQMA3": {
+    "city": "Manchester",
+    "coordinates": {
+      "lat": "53.468674",
+      "lon": "-2.310421"
+    },
+    "country": "GB",
+    "peeringdb_id": "1403"
+  },
+  "EQMB2": {
+    "city": "Mumbai",
+    "coordinates": {
+      "lat": "19.109353",
+      "lon": "72.901441"
+    },
+    "country": "IN",
+    "peeringdb_id": "7377"
+  },
+  "EQMC1": {
+    "city": "Muscat",
+    "coordinates": {
+      "lat": "23.7280664",
+      "lon": "57.7950975"
+    },
+    "country": "OM",
+    "peeringdb_id": "9339"
+  },
+  "EQME2": {
+    "city": "Melbourne",
+    "coordinates": {
+      "lat": "-37.821681",
+      "lon": "144.915458"
+    },
+    "country": "AU",
+    "peeringdb_id": "1988"
+  },
+  "EQMI1": {
+    "city": "Miami",
+    "coordinates": {
+      "lat": "25.782648",
+      "lon": "-80.193157"
+    },
+    "country": "US",
+    "peeringdb_id": "15",
+    "state": "FL"
+  },
+  "EQML2": {
+    "city": "Milan",
+    "coordinates": {
+      "lat": "45.448684",
+      "lon": "9.147436"
+    },
+    "country": "IT",
+    "peeringdb_id": "884"
+  },
+  "EQMU1": {
+    "city": "Munich",
+    "coordinates": {
+      "lat": "48.143056",
+      "lon": "11.55584"
+    },
+    "country": "DE",
+    "peeringdb_id": "480"
+  },
+  "EQMX1": {
+    "city": "El Marques",
+    "coordinates": {
+      "lat": "20.556925",
+      "lon": "-100.277833"
+    },
+    "country": "MX",
+    "peeringdb_id": "8434"
+  },
+  "EQNY5": {
+    "city": "Secaucus",
+    "coordinates": {
+      "lat": "40.778534",
+      "lon": "-74.072237"
+    },
+    "country": "US",
+    "peeringdb_id": "36",
+    "state": "NJ"
+  },
+  "EQOS1": {
+    "city": "Osaka",
+    "coordinates": {
+      "lat": "34.675774",
+      "lon": "135.495551"
+    },
+    "country": "JP",
+    "peeringdb_id": "1791"
+  },
+  "EQPA3": {
+    "city": "Paris",
+    "coordinates": {
+      "lat": "48.927166",
+      "lon": "2.350664"
+    },
+    "country": "FR",
+    "peeringdb_id": "717"
+  },
+  "EQRJ2": {
+    "city": "Rio de Janeiro",
+    "coordinates": {
+      "lat": "-22.871261",
+      "lon": "-43.272742"
+    },
+    "country": "BR",
+    "peeringdb_id": "1899"
+  },
+  "EQSE2": {
+    "city": "Seattle",
+    "coordinates": {
+      "lat": "47.614358",
+      "lon": "-122.338864"
+    },
+    "country": "US",
+    "peeringdb_id": "86",
+    "state": "WA"
+  },
+  "EQSG2": {
+    "city": "Singapore",
+    "coordinates": {
+      "lat": "1.321502",
+      "lon": "103.695359"
+    },
+    "country": "SG",
+    "peeringdb_id": "705"
+  },
+  "EQSK1": {
+    "city": "Stockholm",
+    "coordinates": {
+      "lat": "59.362574",
+      "lon": "17.955657"
+    },
+    "country": "SE",
+    "peeringdb_id": "156"
+  },
+  "EQSV5": {
+    "city": "San Jose",
+    "coordinates": {
+      "lat": "37.241767",
+      "lon": "-121.782967"
+    },
+    "country": "US",
+    "peeringdb_id": "6",
+    "state": "CA"
+  },
+  "EQSY3": {
+    "city": "Sydney",
+    "coordinates": {
+      "lat": "-33.911776",
+      "lon": "151.192942"
+    },
+    "country": "AU",
+    "peeringdb_id": "1605"
+  },
+  "EQTR2": {
+    "city": "Toronto",
+    "coordinates": {
+      "lat": "43.650854",
+      "lon": "-79.361951"
+    },
+    "country": "CA",
+    "peeringdb_id": "2206"
+  },
+  "EQTY2": {
+    "city": "Tokyo",
+    "coordinates": {
+      "lat": "35.617432",
+      "lon": "139.748106"
+    },
+    "country": "JP",
+    "peeringdb_id": "452"
+  },
+  "EQWA1": {
+    "city": "Warsaw",
+    "coordinates": {
+      "lat": "52.227354",
+      "lon": "21.003357"
+    },
+    "country": "PL",
+    "peeringdb_id": "509"
+  },
+  "EQZH5": {
+    "city": "Zurich",
+    "coordinates": {
+      "lat": "47.405667",
+      "lon": "8.46174"
+    },
+    "country": "CH",
+    "peeringdb_id": "1515"
+  },
+  "ETIFJ": {
+    "city": "Fujairah",
+    "coordinates": {
+      "lat": "25.131143",
+      "lon": "56.336378"
+    },
+    "country": "AE",
+    "peeringdb_id": "1493"
+  },
+  "GBSY6": {
+    "city": "Silverwater",
+    "coordinates": {
+      "lat": "-33.836684",
+      "lon": "151.053282"
+    },
+    "country": "AU",
+    "peeringdb_id": "2474"
+  },
+  "GPX51": {
+    "city": "Mumbai",
+    "coordinates": {
+      "lat": "19.113908",
+      "lon": "72.892742"
+    },
+    "country": "IN",
+    "peeringdb_id": "2310"
+  },
+  "GSS52": {
+    "city": "Singapore",
+    "coordinates": {
+      "lat": "1.336723",
+      "lon": "103.893828"
+    },
+    "country": "SG",
+    "peeringdb_id": "388"
+  },
+  "IAMGI": {
+    "city": "Hong Kong",
+    "coordinates": {
+      "lat": "22.266098",
+      "lon": "114.246512"
+    },
+    "country": "HK",
+    "peeringdb_id": "225"
+  },
+  "INX6": {
+    "city": "Frankfurt",
+    "coordinates": {
+      "lat": "50.11967",
+      "lon": "8.73463"
+    },
+    "country": "DE",
+    "peeringdb_id": "58"
+  },
+  "IPB50": {
+    "city": "Berlin",
+    "coordinates": {
+      "lat": "52.50192",
+      "lon": "13.36945"
+    },
+    "country": "DE",
+    "peeringdb_id": "445"
+  },
+  "IPHH3": {
+    "city": "Hamburg",
+    "coordinates": {
+      "lat": "53.550998",
+      "lon": "10.03825"
+    },
+    "country": "DE",
+    "peeringdb_id": "7274"
+  },
+  "ITCM2": {
+    "city": "Alcobendas",
+    "coordinates": {
+      "lat": "40.536855",
+      "lon": "-3.648584"
+    },
+    "country": "ES",
+    "peeringdb_id": "127"
+  },
+  "ITXA1": {
+    "city": "Koropi",
+    "coordinates": {
+      "lat": "37.871339",
+      "lon": "23.870251"
+    },
+    "country": "GR",
+    "peeringdb_id": "1949"
+  },
+  "ITXA7": {
+    "city": "Amsterdam",
+    "coordinates": {
+      "lat": "52.28415",
+      "lon": "4.770855"
+    },
+    "country": "NL",
+    "peeringdb_id": "64"
+  },
+  "ITXC2": {
+    "city": "Copenhagen",
+    "coordinates": {
+      "lat": "55.728092",
+      "lon": "12.377482"
+    },
+    "country": "DK",
+    "peeringdb_id": "148"
+  },
+  "ITXD2": {
+    "city": "Dublin",
+    "coordinates": {
+      "lat": "53.334251",
+      "lon": "-6.365538"
+    },
+    "country": "IE",
+    "peeringdb_id": "177"
+  },
+  "ITXM1": {
+    "city": "Marseille",
+    "coordinates": {
+      "lat": "43.310818",
+      "lon": "5.373865"
+    },
+    "country": "FR",
+    "peeringdb_id": "226"
+  },
+  "ITXM2": {
+    "city": "Madrid",
+    "coordinates": {
+      "lat": "40.439323",
+      "lon": "-3.621211"
+    },
+    "country": "ES",
+    "peeringdb_id": "130"
+  },
+  "ITXM3": {
+    "city": "Madrid",
+    "coordinates": {
+      "lat": "40.433899",
+      "lon": "-3.62408"
+    },
+    "country": "ES",
+    "peeringdb_id": "7414"
+  },
+  "ITXP7": {
+    "city": "Paris",
+    "coordinates": {
+      "lat": "48.924907",
+      "lon": "2.403"
+    },
+    "country": "FR",
+    "peeringdb_id": "1536"
+  },
+  "ITXS1": {
+    "city": "Stockholm",
+    "coordinates": {
+      "lat": "59.422226",
+      "lon": "17.916696"
+    },
+    "country": "SE",
+    "peeringdb_id": "208"
+  },
+  "ITXV2": {
+    "city": "Vienna",
+    "coordinates": {
+      "lat": "48.269027",
+      "lon": "16.410613"
+    },
+    "country": "AT",
+    "peeringdb_id": "67"
+  },
+  "ITXZ1": {
+    "city": "Glattbrugg",
+    "coordinates": {
+      "lat": "47.432702",
+      "lon": "8.557273"
+    },
+    "country": "CH",
+    "peeringdb_id": "81"
+  },
+  "JKT02": {
+    "city": "Jakarta",
+    "coordinates": {
+      "lat": "-6.237998",
+      "lon": "106.823452"
+    },
+    "country": "ID",
+    "peeringdb_id": "5865"
+  },
+  "KDOS2": {
+    "city": "Osaka",
+    "coordinates": {
+      "lat": "34.693119",
+      "lon": "135.534371"
+    },
+    "country": "JP",
+    "peeringdb_id": "3068"
+  },
+  "KIOQ1": {
+    "city": "El Marques",
+    "coordinates": {
+      "lat": "20.567915",
+      "lon": "-100.254141"
+    },
+    "country": "MX",
+    "peeringdb_id": "1778"
+  },
+  "LGKNX": {
+    "city": "Seoul",
+    "coordinates": {
+      "lat": "37.482096",
+      "lon": "126.879733"
+    },
+    "country": "KR",
+    "peeringdb_id": "7674"
+  },
+  "LGT50": {
+    "city": "Philadelphia",
+    "coordinates": {
+      "lat": "39.959889",
+      "lon": "-75.161752"
+    },
+    "country": "US",
+    "peeringdb_id": "2111",
+    "state": "PA"
+  },
+  "LGU57": {
+    "city": "Anyang-si",
+    "coordinates": {
+      "lat": "37.397891",
+      "lon": "126.9648961"
+    },
+    "country": "KR",
+    "peeringdb_id": "7573"
+  },
+  "MB1SD": {
+    "city": "Boston",
+    "coordinates": {
+      "lat": "42.354692",
+      "lon": "-71.060266"
+    },
+    "country": "US",
+    "peeringdb_id": "219",
+    "state": "MA"
+  },
+  "MOILH": {
+    "city": "Tirat Carmel",
+    "coordinates": {
+      "lat": "32.770949",
+      "lon": "34.966486"
+    },
+    "country": "IL",
+    "peeringdb_id": "7177"
+  },
+  "NDCB2": {
+    "city": "Fortitude Valley",
+    "coordinates": {
+      "lat": "-27.453902",
+      "lon": "153.0332"
+    },
+    "country": "AU",
+    "peeringdb_id": "4688"
+  },
+  "NDCC1": {
+    "city": "Bruce",
+    "coordinates": {
+      "lat": "-35.245308",
+      "lon": "149.096242"
+    },
+    "country": "AU",
+    "peeringdb_id": "1162"
+  },
+  "NDCM1": {
+    "city": "Melbourne",
+    "coordinates": {
+      "lat": "-37.821705",
+      "lon": "144.931061"
+    },
+    "country": "AU",
+    "peeringdb_id": "1339"
+  },
+  "NDCP1": {
+    "city": "M\u00e1laga",
+    "coordinates": {
+      "lat": "-31.864402",
+      "lon": "115.895935"
+    },
+    "country": "AU",
+    "peeringdb_id": "1940"
+  },
+  "NDCS2": {
+    "city": "Macquarie Park",
+    "coordinates": {
+      "lat": "-33.785125",
+      "lon": "151.125301"
+    },
+    "country": "AU",
+    "peeringdb_id": "6792"
+  },
+  "NEIN2": {
+    "city": "Inzai-shi",
+    "coordinates": {
+      "lat": "35.808986",
+      "lon": "140.117527"
+    },
+    "country": "JP",
+    "peeringdb_id": "9596"
+  },
+  "NMBL2": {
+    "city": "Bangalore",
+    "coordinates": {
+      "lat": "12.839551",
+      "lon": "77.662274"
+    },
+    "country": "IN",
+    "peeringdb_id": "7988"
+  },
+  "NPKC1": {
+    "city": "Kansas City",
+    "coordinates": {
+      "lat": "39.100941",
+      "lon": "-94.581036"
+    },
+    "country": "US",
+    "peeringdb_id": "435",
+    "state": "MO"
+  },
+  "NTM62": {
+    "city": "Montreal",
+    "coordinates": {
+      "lat": "45.501394",
+      "lon": "-73.56192"
+    },
+    "country": "CA",
+    "peeringdb_id": "1885"
+  },
+  "PEH51": {
+    "city": "Portland",
+    "coordinates": {
+      "lat": "45.521366",
+      "lon": "-122.680792"
+    },
+    "country": "US",
+    "peeringdb_id": "275",
+    "state": "OR"
+  },
+  "PNP51": {
+    "city": "Phoenix",
+    "coordinates": {
+      "lat": "33.41601",
+      "lon": "-112.009445"
+    },
+    "country": "US",
+    "peeringdb_id": "917",
+    "state": "AZ"
+  },
+  "QTDC2": {
+    "city": "Atlanta",
+    "coordinates": {
+      "lat": "33.777526",
+      "lon": "-84.421036"
+    },
+    "country": "US",
+    "peeringdb_id": "581",
+    "state": "GA"
+  },
+  "QTS52": {
+    "city": "Chicago",
+    "coordinates": {
+      "lat": "41.841895",
+      "lon": "-87.668306"
+    },
+    "country": "US",
+    "peeringdb_id": "3362",
+    "state": "IL"
+  },
+  "RCL1": {
+    "city": "Ikeja",
+    "coordinates": {
+      "lat": "6.597527",
+      "lon": "3.373062"
+    },
+    "country": "NG",
+    "peeringdb_id": "4411"
+  },
+  "SCDB9": {
+    "city": "Dublin",
+    "coordinates": {
+      "lat": "53.412959",
+      "lon": "-6.373212"
+    },
+    "country": "IE",
+    "peeringdb_id": "5901"
+  },
+  "SFY52": {
+    "city": "Navi Mumbai",
+    "coordinates": {
+      "lat": "19.147451",
+      "lon": "73.014195"
+    },
+    "country": "IN",
+    "peeringdb_id": "2465"
+  },
+  "SNAP": {
+    "city": "Las Vegas",
+    "coordinates": {
+      "lat": "36.059914",
+      "lon": "-115.210194"
+    },
+    "country": "US",
+    "peeringdb_id": "770",
+    "state": "NV"
+  },
+  "SONQU": {
+    "city": "Santiago",
+    "coordinates": {
+      "lat": "-33.35628",
+      "lon": "-70.698912"
+    },
+    "country": "CL",
+    "peeringdb_id": "10697"
+  },
+  "SPK53": {
+    "city": "Auckland",
+    "coordinates": {
+      "lat": "-36.854324",
+      "lon": "174.764384"
+    },
+    "country": "NZ",
+    "peeringdb_id": "1523"
+  },
+  "T5ALA": {
+    "city": "El Segundo",
+    "coordinates": {
+      "lat": "33.921614",
+      "lon": "-118.386551"
+    },
+    "country": "US",
+    "peeringdb_id": "4952",
+    "state": "CA"
+  },
+  "TCCBK": {
+    "city": "Bangkok",
+    "coordinates": {
+      "lat": "13.663651",
+      "lon": "100.651345"
+    },
+    "country": "TH",
+    "peeringdb_id": "4139"
+  },
+  "TCDC1": {
+    "city": "Chennai",
+    "coordinates": {
+      "lat": "13.068351",
+      "lon": "80.278869"
+    },
+    "country": "IN",
+    "peeringdb_id": "6778"
+  },
+  "TCDE2": {
+    "city": "Delhi",
+    "coordinates": {
+      "lat": "28.541514",
+      "lon": "77.240201"
+    },
+    "country": "IN",
+    "peeringdb_id": "6786"
+  },
+  "TCDK1": {
+    "city": "Kolkata",
+    "coordinates": {
+      "lat": "22.588218",
+      "lon": "88.392964"
+    },
+    "country": "IN",
+    "peeringdb_id": "6780"
+  },
+  "TCHY1": {
+    "city": "Hyderabad",
+    "coordinates": {
+      "lat": "17.441478",
+      "lon": "78.377811"
+    },
+    "country": "IN",
+    "peeringdb_id": "6781"
+  },
+  "TCSH": {
+    "city": "London",
+    "coordinates": {
+      "lat": "51.499819",
+      "lon": "-0.010775"
+    },
+    "country": "GB",
+    "peeringdb_id": "40"
+  },
+  "TECT1": {
+    "city": "Cape Town",
+    "coordinates": {
+      "lat": "-33.970872",
+      "lon": "18.465223"
+    },
+    "country": "ZA",
+    "peeringdb_id": "1225"
+  },
+  "TEJB1": {
+    "city": "Johannesburg",
+    "coordinates": {
+      "lat": "-26.137957",
+      "lon": "28.197517"
+    },
+    "country": "ZA",
+    "peeringdb_id": "850"
+  },
+  "THNO2": {
+    "city": "London",
+    "coordinates": {
+      "lat": "51.511776",
+      "lon": "-0.002927"
+    },
+    "country": "GB",
+    "peeringdb_id": "835"
+  },
+  "THRA9": {
+    "city": "Bangkok",
+    "coordinates": {
+      "lat": "13.75161",
+      "lon": "100.57305"
+    },
+    "country": "TH",
+    "peeringdb_id": "13618"
+  },
+  "THV52": {
+    "city": "Paris",
+    "coordinates": {
+      "lat": "48.856654",
+      "lon": "2.38532"
+    },
+    "country": "FR",
+    "peeringdb_id": "53"
+  },
+  "TIVIT": {
+    "city": "S\u00e3o Paulo",
+    "coordinates": {
+      "lat": "-23.65071",
+      "lon": "-46.720519"
+    },
+    "country": "BR",
+    "peeringdb_id": "1325"
+  },
+  "TLLPJ": {
+    "city": "Ashburn",
+    "coordinates": {
+      "lat": "39.001795",
+      "lon": "-77.47841"
+    },
+    "country": "US",
+    "peeringdb_id": "4745",
+    "state": "VA"
+  },
+  "TLS10": {
+    "city": "Mapo-gu",
+    "coordinates": {
+      "lat": "37.582162",
+      "lon": "126.886128"
+    },
+    "country": "KR",
+    "peeringdb_id": "9210"
+  },
+  "TLXA1": {
+    "city": "Atlanta",
+    "coordinates": {
+      "lat": "33.755456",
+      "lon": "-84.39153"
+    },
+    "country": "US",
+    "peeringdb_id": "125",
+    "state": "GA"
+  },
+  "TNDB": {
+    "city": "Barueri",
+    "coordinates": {
+      "lat": "-23.497589",
+      "lon": "-46.814577"
+    },
+    "country": "BR",
+    "peeringdb_id": "165"
+  },
+  "TPS19": {
+    "city": "Seattle",
+    "coordinates": {
+      "lat": "47.619446",
+      "lon": "-122.34811"
+    },
+    "country": "US",
+    "peeringdb_id": "8599",
+    "state": "WA"
+  }
+}
