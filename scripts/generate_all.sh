@@ -24,6 +24,10 @@ echo "Step 4: Generating world map PNG..."
 python3 scripts/generate_map_png.py
 echo ""
 
+echo "Step 5: Generating GitHub Pages..."
+python3 scripts/generate_github_pages.py
+echo ""
+
 echo "=========================================="
 echo "✓ All outputs generated successfully!"
 echo "=========================================="

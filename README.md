@@ -3,11 +3,14 @@
 ## Overview
 Automatically generates a sortable wiki table and KML file of AWS Direct Connect locations.
 
+**Live View**: [Interactive Table](https://chriselsen.github.io/dx-location-details/) | [Interactive Map](https://chriselsen.github.io/dx-location-details/map.html)
+
 ![AWS Direct Connect Locations World Map](output/DX_Locations.png)
 
 ## Files
 - `scripts/collect_data.py` - Fetches DX locations from AWS CLI and merges with mapping data
 - `scripts/generate_github_md.py` - Generates GitHub markdown table from collected data
+- `scripts/generate_github_pages.py` - Generates HTML files for GitHub Pages
 - `scripts/add_location.py` - Interactive tool to add new locations to the mapping
 - `data-structures/location-mapping.json` - Mapping of location codes to PeeringDB IDs and coordinates
 
@@ -19,11 +22,12 @@ To run all generation steps at once (recommended for weekly updates):
 bash scripts/generate_all.sh
 ```
 
-This runs steps 1-4 in sequence:
+This runs steps 1-5 in sequence:
 1. Collect data from AWS
 2. Generate markdown table
 3. Generate KML files
 4. Generate world map PNG
+5. Generate GitHub Pages HTML
 
 ### Individual Steps
 
@@ -78,8 +82,15 @@ python3 scripts/generate_map_png.py
 
 Output: `output/DX_Locations.png`
 
-### 5. Generate Targets File
-Note: Target generation is not available in the external version as it requires internal IP addresses.
+### 5. Generate GitHub Pages
+Creates HTML files for GitHub Pages with interactive table and map:
+```bash
+python3 scripts/generate_github_pages.py
+```
+
+Outputs:
+- `docs/index.html` - Interactive sortable/filterable table
+- `docs/map.html` - Interactive map
 
 ### 6. Sync with PeeringDB
 Updates country codes and coordinates from PeeringDB for all locations:
@@ -129,3 +140,10 @@ The system automatically normalizes location codes:
 - `peeringdb_id`: PeeringDB facility ID
 - `latitude`: Facility latitude
 - `longitude`: Facility longitude
+
+## GitHub Pages
+The repository publishes interactive HTML pages via GitHub Pages:
+- **Table**: https://chriselsen.github.io/dx-location-details/
+- **Map**: https://chriselsen.github.io/dx-location-details/map.html
+
+These are automatically updated daily via GitHub Actions.

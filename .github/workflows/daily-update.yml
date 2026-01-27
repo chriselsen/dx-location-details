@@ -28,6 +28,7 @@ jobs:
       
       - name: Generate all outputs
         run: bash scripts/generate_all.sh
+python3 scripts/generate_github_pages.py
       
       - name: Commit and push changes
         run: |
