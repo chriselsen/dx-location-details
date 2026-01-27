@@ -87,13 +87,15 @@ html_content += """        </tbody>
                     shouldSwitch = false;
                     x = rows[i].getElementsByTagName("TD")[n];
                     y = rows[i + 1].getElementsByTagName("TD")[n];
+                    const xContent = x.textContent || x.innerText;
+                    const yContent = y.textContent || y.innerText;
                     if (dir == "asc") {
-                        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                        if (xContent.toLowerCase() > yContent.toLowerCase()) {
                             shouldSwitch = true;
                             break;
                         }
                     } else if (dir == "desc") {
-                        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                        if (xContent.toLowerCase() < yContent.toLowerCase()) {
                             shouldSwitch = true;
                             break;
                         }
@@ -120,7 +122,8 @@ html_content += """        </tbody>
                 const tds = tr[i].getElementsByTagName("td");
                 let found = false;
                 for (let j = 0; j < tds.length; j++) {
-                    if (tds[j].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    const txtValue = tds[j].textContent || tds[j].innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
                         found = true;
                         break;
                     }
