@@ -912,719 +912,1006 @@
         // Markers storage
         const markers = {};
         const labels = {};
+        let selectedCode = null;
         
         markers['EANB1'] = L.marker([-1.34014, 36.896534], {icon: customIcon})
-            .bindPopup('EANB1: East Africa Data Centres NBO1, Nairobi, KE').addTo(map);
+            .bindPopup('EANB1: East Africa Data Centres NBO1, Nairobi, KE')
+            .on('click', function() { selectLocation('EANB1'); })
+            .addTo(map);
         labels['EANB1'] = L.marker([-1.34014, 36.896534], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">EANB1</div>', className: 'empty'})
         }).addTo(map);
         markers['RCL1'] = L.marker([6.597527, 3.373062], {icon: customIcon})
-            .bindPopup('RCL1: Rack Centre LGS1, Ikeja, NG').addTo(map);
+            .bindPopup('RCL1: Rack Centre LGS1, Ikeja, NG')
+            .on('click', function() { selectLocation('RCL1'); })
+            .addTo(map);
         labels['RCL1'] = L.marker([6.597527, 3.373062], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">RCL1</div>', className: 'empty'})
         }).addTo(map);
         markers['TECT1'] = L.marker([-33.970872, 18.465223], {icon: customIcon})
-            .bindPopup('TECT1: Teraco CT1, Cape Town, ZA').addTo(map);
+            .bindPopup('TECT1: Teraco CT1, Cape Town, ZA')
+            .on('click', function() { selectLocation('TECT1'); })
+            .addTo(map);
         labels['TECT1'] = L.marker([-33.970872, 18.465223], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">TECT1</div>', className: 'empty'})
         }).addTo(map);
         markers['EQHK1'] = L.marker([22.365581, 114.11932], {icon: customIcon})
-            .bindPopup('EQHK1: Equinix HK1, Tsuen Wan, HK').addTo(map);
+            .bindPopup('EQHK1: Equinix HK1, Tsuen Wan, HK')
+            .on('click', function() { selectLocation('EQHK1'); })
+            .addTo(map);
         labels['EQHK1'] = L.marker([22.365581, 114.11932], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">EQHK1</div>', className: 'empty'})
         }).addTo(map);
         markers['CFT54'] = L.marker([25.074213, 121.576784], {icon: customIcon})
-            .bindPopup('CFT54: Chief Telecom HD, Taipei, TW').addTo(map);
+            .bindPopup('CFT54: Chief Telecom HD, Taipei, TW')
+            .on('click', function() { selectLocation('CFT54'); })
+            .addTo(map);
         labels['CFT54'] = L.marker([25.074213, 121.576784], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">CFT54</div>', className: 'empty'})
         }).addTo(map);
         markers['CHT51'] = L.marker([24.994866, 121.458263], {icon: customIcon})
-            .bindPopup('CHT51: Chunghwa Telecom, New Taipei City, TW').addTo(map);
+            .bindPopup('CHT51: Chunghwa Telecom, New Taipei City, TW')
+            .on('click', function() { selectLocation('CHT51'); })
+            .addTo(map);
         labels['CHT51'] = L.marker([24.994866, 121.458263], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">CHT51</div>', className: 'empty'})
         }).addTo(map);
         markers['ATTC1'] = L.marker([35.645435, 139.793285], {icon: customIcon})
-            .bindPopup('ATTC1: AT Tokyo Chuo Data Center, Tokyo, JP').addTo(map);
+            .bindPopup('ATTC1: AT Tokyo Chuo Data Center, Tokyo, JP')
+            .on('click', function() { selectLocation('ATTC1'); })
+            .addTo(map);
         labels['ATTC1'] = L.marker([35.645435, 139.793285], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">ATTC1</div>', className: 'empty'})
         }).addTo(map);
         markers['CFT52'] = L.marker([25.073467, 121.577519], {icon: customIcon})
-            .bindPopup('CFT52: Chief Telecom LY, Taipei, TW').addTo(map);
+            .bindPopup('CFT52: Chief Telecom LY, Taipei, TW')
+            .on('click', function() { selectLocation('CFT52'); })
+            .addTo(map);
         labels['CFT52'] = L.marker([25.073467, 121.577519], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">CFT52</div>', className: 'empty'})
         }).addTo(map);
         markers['EQOS1'] = L.marker([34.675774, 135.495551], {icon: customIcon})
-            .bindPopup('EQOS1: Equinix OS1, Osaka, JP').addTo(map);
+            .bindPopup('EQOS1: Equinix OS1, Osaka, JP')
+            .on('click', function() { selectLocation('EQOS1'); })
+            .addTo(map);
         labels['EQOS1'] = L.marker([34.675774, 135.495551], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">EQOS1</div>', className: 'empty'})
         }).addTo(map);
         markers['EQTY2'] = L.marker([35.617432, 139.748106], {icon: customIcon})
-            .bindPopup('EQTY2: Equinix TY2, Tokyo, JP').addTo(map);
+            .bindPopup('EQTY2: Equinix TY2, Tokyo, JP')
+            .on('click', function() { selectLocation('EQTY2'); })
+            .addTo(map);
         labels['EQTY2'] = L.marker([35.617432, 139.748106], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">EQTY2</div>', className: 'empty'})
         }).addTo(map);
         markers['NEIN2'] = L.marker([35.808986, 140.117527], {icon: customIcon})
-            .bindPopup('NEIN2: NEC Inzai, Inzai-shi, JP').addTo(map);
+            .bindPopup('NEIN2: NEC Inzai, Inzai-shi, JP')
+            .on('click', function() { selectLocation('NEIN2'); })
+            .addTo(map);
         labels['NEIN2'] = L.marker([35.808986, 140.117527], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">NEIN2</div>', className: 'empty'})
         }).addTo(map);
         markers['LGKNX'] = L.marker([37.482096, 126.879733], {icon: customIcon})
-            .bindPopup('LGKNX: KINX Gasen, Seoul, KR').addTo(map);
+            .bindPopup('LGKNX: KINX Gasen, Seoul, KR')
+            .on('click', function() { selectLocation('LGKNX'); })
+            .addTo(map);
         labels['LGKNX'] = L.marker([37.482096, 126.879733], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">LGKNX</div>', className: 'empty'})
         }).addTo(map);
         markers['LGU57'] = L.marker([37.397891, 126.9648961], {icon: customIcon})
-            .bindPopup('LGU57: LG U+ Pyeong-Chon Mega Center, Anyang-si, KR').addTo(map);
+            .bindPopup('LGU57: LG U+ Pyeong-Chon Mega Center, Anyang-si, KR')
+            .on('click', function() { selectLocation('LGU57'); })
+            .addTo(map);
         labels['LGU57'] = L.marker([37.397891, 126.9648961], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">LGU57</div>', className: 'empty'})
         }).addTo(map);
         markers['TLS10'] = L.marker([37.582162, 126.886128], {icon: customIcon})
-            .bindPopup('TLS10: Digital Realty ICN10, Mapo-gu, KR').addTo(map);
+            .bindPopup('TLS10: Digital Realty ICN10, Mapo-gu, KR')
+            .on('click', function() { selectLocation('TLS10'); })
+            .addTo(map);
         labels['TLS10'] = L.marker([37.582162, 126.886128], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">TLS10</div>', className: 'empty'})
         }).addTo(map);
         markers['KDOS2'] = L.marker([34.693119, 135.534371], {icon: customIcon})
-            .bindPopup('KDOS2: KDDI Telehouse Osaka 2, Osaka, JP').addTo(map);
+            .bindPopup('KDOS2: KDDI Telehouse Osaka 2, Osaka, JP')
+            .on('click', function() { selectLocation('KDOS2'); })
+            .addTo(map);
         labels['KDOS2'] = L.marker([34.693119, 135.534371], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">KDOS2</div>', className: 'empty'})
         }).addTo(map);
         markers['EQMB2'] = L.marker([19.109353, 72.901441], {icon: customIcon})
-            .bindPopup('EQMB2: Equinix MB2, Mumbai, IN').addTo(map);
+            .bindPopup('EQMB2: Equinix MB2, Mumbai, IN')
+            .on('click', function() { selectLocation('EQMB2'); })
+            .addTo(map);
         labels['EQMB2'] = L.marker([19.109353, 72.901441], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">EQMB2</div>', className: 'empty'})
         }).addTo(map);
         markers['GPX51'] = L.marker([19.113908, 72.892742], {icon: customIcon})
-            .bindPopup('GPX51: Equinix MB1, Mumbai, IN').addTo(map);
+            .bindPopup('GPX51: Equinix MB1, Mumbai, IN')
+            .on('click', function() { selectLocation('GPX51'); })
+            .addTo(map);
         labels['GPX51'] = L.marker([19.113908, 72.892742], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">GPX51</div>', className: 'empty'})
         }).addTo(map);
         markers['NMBL2'] = L.marker([12.839551, 77.662274], {icon: customIcon})
-            .bindPopup('NMBL2: NetMagic DC2, Bangalore, IN').addTo(map);
+            .bindPopup('NMBL2: NetMagic DC2, Bangalore, IN')
+            .on('click', function() { selectLocation('NMBL2'); })
+            .addTo(map);
         labels['NMBL2'] = L.marker([12.839551, 77.662274], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">NMBL2</div>', className: 'empty'})
         }).addTo(map);
         markers['SFY52'] = L.marker([19.147451, 73.014195], {icon: customIcon})
-            .bindPopup('SFY52: Sify Rabale, Navi Mumbai, IN').addTo(map);
+            .bindPopup('SFY52: Sify Rabale, Navi Mumbai, IN')
+            .on('click', function() { selectLocation('SFY52'); })
+            .addTo(map);
         labels['SFY52'] = L.marker([19.147451, 73.014195], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">SFY52</div>', className: 'empty'})
         }).addTo(map);
         markers['TCDC1'] = L.marker([13.068351, 80.278869], {icon: customIcon})
-            .bindPopup('TCDC1: STT GDC INDIA PVT. LTD. VSB, Chennai, IN').addTo(map);
+            .bindPopup('TCDC1: STT GDC INDIA PVT. LTD. VSB, Chennai, IN')
+            .on('click', function() { selectLocation('TCDC1'); })
+            .addTo(map);
         labels['TCDC1'] = L.marker([13.068351, 80.278869], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">TCDC1</div>', className: 'empty'})
         }).addTo(map);
         markers['TCDE2'] = L.marker([28.541514, 77.240201], {icon: customIcon})
-            .bindPopup('TCDE2: STT Delhi DC2, Delhi, IN').addTo(map);
+            .bindPopup('TCDE2: STT Delhi DC2, Delhi, IN')
+            .on('click', function() { selectLocation('TCDE2'); })
+            .addTo(map);
         labels['TCDE2'] = L.marker([28.541514, 77.240201], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">TCDE2</div>', className: 'empty'})
         }).addTo(map);
         markers['TCDK1'] = L.marker([22.588218, 88.392964], {icon: customIcon})
-            .bindPopup('TCDK1: STT Kolkata, Kolkata, IN').addTo(map);
+            .bindPopup('TCDK1: STT Kolkata, Kolkata, IN')
+            .on('click', function() { selectLocation('TCDK1'); })
+            .addTo(map);
         labels['TCDK1'] = L.marker([22.588218, 88.392964], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">TCDK1</div>', className: 'empty'})
         }).addTo(map);
         markers['TCHY1'] = L.marker([17.441478, 78.377811], {icon: customIcon})
-            .bindPopup('TCHY1: STT Hyderabad DC1, Hyderabad, IN').addTo(map);
+            .bindPopup('TCHY1: STT Hyderabad DC1, Hyderabad, IN')
+            .on('click', function() { selectLocation('TCHY1'); })
+            .addTo(map);
         labels['TCHY1'] = L.marker([17.441478, 78.377811], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">TCHY1</div>', className: 'empty'})
         }).addTo(map);
         markers['AIMMN'] = L.marker([3.14969, 101.70634], {icon: customIcon})
-            .bindPopup('AIMMN: Menara AIMS, Kuala Lumpur, MY').addTo(map);
+            .bindPopup('AIMMN: Menara AIMS, Kuala Lumpur, MY')
+            .on('click', function() { selectLocation('AIMMN'); })
+            .addTo(map);
         labels['AIMMN'] = L.marker([3.14969, 101.70634], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">AIMMN</div>', className: 'empty'})
         }).addTo(map);
         markers['EPVM2'] = L.marker([14.564484, 121.022368], {icon: customIcon})
-            .bindPopup('EPVM2: ePLDT VM2, Makati, PH').addTo(map);
+            .bindPopup('EPVM2: ePLDT VM2, Makati, PH')
+            .on('click', function() { selectLocation('EPVM2'); })
+            .addTo(map);
         labels['EPVM2'] = L.marker([14.564484, 121.022368], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">EPVM2</div>', className: 'empty'})
         }).addTo(map);
         markers['EQSG2'] = L.marker([1.321502, 103.695359], {icon: customIcon})
-            .bindPopup('EQSG2: Equinix SG2, Singapore, SG').addTo(map);
+            .bindPopup('EQSG2: Equinix SG2, Singapore, SG')
+            .on('click', function() { selectLocation('EQSG2'); })
+            .addTo(map);
         labels['EQSG2'] = L.marker([1.321502, 103.695359], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">EQSG2</div>', className: 'empty'})
         }).addTo(map);
         markers['GSS52'] = L.marker([1.336723, 103.893828], {icon: customIcon})
-            .bindPopup('GSS52: Global Switch, Singapore, SG').addTo(map);
+            .bindPopup('GSS52: Global Switch, Singapore, SG')
+            .on('click', function() { selectLocation('GSS52'); })
+            .addTo(map);
         labels['GSS52'] = L.marker([1.336723, 103.893828], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">GSS52</div>', className: 'empty'})
         }).addTo(map);
         markers['IAMGI'] = L.marker([22.266098, 114.246512], {icon: customIcon})
-            .bindPopup('IAMGI: iAdvantage MEGA-i, Hong Kong, HK').addTo(map);
+            .bindPopup('IAMGI: iAdvantage MEGA-i, Hong Kong, HK')
+            .on('click', function() { selectLocation('IAMGI'); })
+            .addTo(map);
         labels['IAMGI'] = L.marker([22.266098, 114.246512], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">IAMGI</div>', className: 'empty'})
         }).addTo(map);
         markers['TCCBK'] = L.marker([13.663651, 100.651345], {icon: customIcon})
-            .bindPopup('TCCBK: TCC, Bangkok, TH').addTo(map);
+            .bindPopup('TCCBK: TCC, Bangkok, TH')
+            .on('click', function() { selectLocation('TCCBK'); })
+            .addTo(map);
         labels['TCCBK'] = L.marker([13.663651, 100.651345], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">TCCBK</div>', className: 'empty'})
         }).addTo(map);
         markers['CBHU2'] = L.marker([-35.388831, 149.1683], {icon: customIcon})
-            .bindPopup('CBHU2: CDC Hume 2, Hume, AU').addTo(map);
+            .bindPopup('CBHU2: CDC Hume 2, Hume, AU')
+            .on('click', function() { selectLocation('CBHU2'); })
+            .addTo(map);
         labels['CBHU2'] = L.marker([-35.388831, 149.1683], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">CBHU2</div>', className: 'empty'})
         }).addTo(map);
         markers['DCDH6'] = L.marker([-36.740554, 174.728988], {icon: customIcon})
-            .bindPopup('DCDH6: Datacom DH6, Auckland, NZ').addTo(map);
+            .bindPopup('DCDH6: Datacom DH6, Auckland, NZ')
+            .on('click', function() { selectLocation('DCDH6'); })
+            .addTo(map);
         labels['DCDH6'] = L.marker([-36.740554, 174.728988], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">DCDH6</div>', className: 'empty'})
         }).addTo(map);
         markers['EQSY3'] = L.marker([-33.911776, 151.192942], {icon: customIcon})
-            .bindPopup('EQSY3: Equinix SY1 - SY4, Sydney, AU').addTo(map);
+            .bindPopup('EQSY3: Equinix SY1 - SY4, Sydney, AU')
+            .on('click', function() { selectLocation('EQSY3'); })
+            .addTo(map);
         labels['EQSY3'] = L.marker([-33.911776, 151.192942], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">EQSY3</div>', className: 'empty'})
         }).addTo(map);
         markers['GBSY6'] = L.marker([-33.836684, 151.053282], {icon: customIcon})
-            .bindPopup('GBSY6: Global Switch SY6, Silverwater, AU').addTo(map);
+            .bindPopup('GBSY6: Global Switch SY6, Silverwater, AU')
+            .on('click', function() { selectLocation('GBSY6'); })
+            .addTo(map);
         labels['GBSY6'] = L.marker([-33.836684, 151.053282], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">GBSY6</div>', className: 'empty'})
         }).addTo(map);
         markers['NDCB2'] = L.marker([-27.453902, 153.0332], {icon: customIcon})
-            .bindPopup('NDCB2: NEXTDC B2, Fortitude Valley, AU').addTo(map);
+            .bindPopup('NDCB2: NEXTDC B2, Fortitude Valley, AU')
+            .on('click', function() { selectLocation('NDCB2'); })
+            .addTo(map);
         labels['NDCB2'] = L.marker([-27.453902, 153.0332], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">NDCB2</div>', className: 'empty'})
         }).addTo(map);
         markers['NDCC1'] = L.marker([-35.245308, 149.096242], {icon: customIcon})
-            .bindPopup('NDCC1: NEXTDC C1, Bruce, AU').addTo(map);
+            .bindPopup('NDCC1: NEXTDC C1, Bruce, AU')
+            .on('click', function() { selectLocation('NDCC1'); })
+            .addTo(map);
         labels['NDCC1'] = L.marker([-35.245308, 149.096242], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">NDCC1</div>', className: 'empty'})
         }).addTo(map);
         markers['NDCM1'] = L.marker([-37.821705, 144.931061], {icon: customIcon})
-            .bindPopup('NDCM1: NEXTDC M1, Melbourne, AU').addTo(map);
+            .bindPopup('NDCM1: NEXTDC M1, Melbourne, AU')
+            .on('click', function() { selectLocation('NDCM1'); })
+            .addTo(map);
         labels['NDCM1'] = L.marker([-37.821705, 144.931061], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">NDCM1</div>', className: 'empty'})
         }).addTo(map);
         markers['NDCP1'] = L.marker([-31.864402, 115.895935], {icon: customIcon})
-            .bindPopup('NDCP1: NEXTDC P1, Málaga, AU').addTo(map);
+            .bindPopup('NDCP1: NEXTDC P1, Málaga, AU')
+            .on('click', function() { selectLocation('NDCP1'); })
+            .addTo(map);
         labels['NDCP1'] = L.marker([-31.864402, 115.895935], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">NDCP1</div>', className: 'empty'})
         }).addTo(map);
         markers['NDCS2'] = L.marker([-33.785125, 151.125301], {icon: customIcon})
-            .bindPopup('NDCS2: NEXTDC S2, Macquarie Park, AU').addTo(map);
+            .bindPopup('NDCS2: NEXTDC S2, Macquarie Park, AU')
+            .on('click', function() { selectLocation('NDCS2'); })
+            .addTo(map);
         labels['NDCS2'] = L.marker([-33.785125, 151.125301], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">NDCS2</div>', className: 'empty'})
         }).addTo(map);
         markers['DCIJ3'] = L.marker([-6.299731, 107.089244], {icon: customIcon})
-            .bindPopup('DCIJ3: DCI Indonesia, Bekasi, Cibitung, ID').addTo(map);
+            .bindPopup('DCIJ3: DCI Indonesia, Bekasi, Cibitung, ID')
+            .on('click', function() { selectLocation('DCIJ3'); })
+            .addTo(map);
         labels['DCIJ3'] = L.marker([-6.299731, 107.089244], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">DCIJ3</div>', className: 'empty'})
         }).addTo(map);
         markers['JKT02'] = L.marker([-6.237998, 106.823452], {icon: customIcon})
-            .bindPopup('JKT02: NTT Jakarta 2 Data Center, Jakarta, ID').addTo(map);
+            .bindPopup('JKT02: NTT Jakarta 2 Data Center, Jakarta, ID')
+            .on('click', function() { selectLocation('JKT02'); })
+            .addTo(map);
         labels['JKT02'] = L.marker([-6.237998, 106.823452], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">JKT02</div>', className: 'empty'})
         }).addTo(map);
         markers['EQME2'] = L.marker([-37.821681, 144.915458], {icon: customIcon})
-            .bindPopup('EQME2: Equinix ME2, Melbourne, AU').addTo(map);
+            .bindPopup('EQME2: Equinix ME2, Melbourne, AU')
+            .on('click', function() { selectLocation('EQME2'); })
+            .addTo(map);
         labels['EQME2'] = L.marker([-37.821681, 144.915458], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">EQME2</div>', className: 'empty'})
         }).addTo(map);
         markers['CMCHV'] = L.marker([21.03042, 105.784363], {icon: customIcon})
-            .bindPopup('CMCHV: CMC Tower, Hanoi, VN').addTo(map);
+            .bindPopup('CMCHV: CMC Tower, Hanoi, VN')
+            .on('click', function() { selectLocation('CMCHV'); })
+            .addTo(map);
         labels['CMCHV'] = L.marker([21.03042, 105.784363], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">CMCHV</div>', className: 'empty'})
         }).addTo(map);
         markers['CSFX1'] = L.marker([2.913224, 101.655646], {icon: customIcon})
-            .bindPopup('CSFX1: Telcohub 1 (CX1), Cyberjaya, MY').addTo(map);
+            .bindPopup('CSFX1: Telcohub 1 (CX1), Cyberjaya, MY')
+            .on('click', function() { selectLocation('CSFX1'); })
+            .addTo(map);
         labels['CSFX1'] = L.marker([2.913224, 101.655646], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">CSFX1</div>', className: 'empty'})
         }).addTo(map);
         markers['SPK53'] = L.marker([-36.854324, 174.764384], {icon: customIcon})
-            .bindPopup('SPK53: Spark MDR, Auckland, NZ').addTo(map);
+            .bindPopup('SPK53: Spark MDR, Auckland, NZ')
+            .on('click', function() { selectLocation('SPK53'); })
+            .addTo(map);
         labels['SPK53'] = L.marker([-36.854324, 174.764384], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">SPK53</div>', className: 'empty'})
         }).addTo(map);
         markers['THRA9'] = L.marker([13.75161, 100.57305], {icon: customIcon})
-            .bindPopup('THRA9: Telehouse Bangkok, Bangkok, TH').addTo(map);
+            .bindPopup('THRA9: Telehouse Bangkok, Bangkok, TH')
+            .on('click', function() { selectLocation('THRA9'); })
+            .addTo(map);
         labels['THRA9'] = L.marker([13.75161, 100.57305], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">THRA9</div>', className: 'empty'})
         }).addTo(map);
         markers['151FS'] = L.marker([43.644672, -79.384128], {icon: customIcon})
-            .bindPopup('151FS: Telehouse, Toronto, CA').addTo(map);
+            .bindPopup('151FS: Telehouse, Toronto, CA')
+            .on('click', function() { selectLocation('151FS'); })
+            .addTo(map);
         labels['151FS'] = L.marker([43.644672, -79.384128], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">151FS</div>', className: 'empty'})
         }).addTo(map);
         markers['CGM60'] = L.marker([45.497188, -73.570471], {icon: customIcon})
-            .bindPopup('CGM60: Cologix MTL3, Montreal, CA').addTo(map);
+            .bindPopup('CGM60: Cologix MTL3, Montreal, CA')
+            .on('click', function() { selectLocation('CGM60'); })
+            .addTo(map);
         labels['CGM60'] = L.marker([45.497188, -73.570471], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">CGM60</div>', className: 'empty'})
         }).addTo(map);
         markers['COLV2'] = L.marker([49.286981, -123.119579], {icon: customIcon})
-            .bindPopup('COLV2: Cologix VAN2, Vancouver, CA').addTo(map);
+            .bindPopup('COLV2: Cologix VAN2, Vancouver, CA')
+            .on('click', function() { selectLocation('COLV2'); })
+            .addTo(map);
         labels['COLV2'] = L.marker([49.286981, -123.119579], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">COLV2</div>', className: 'empty'})
         }).addTo(map);
         markers['COLV3'] = L.marker([49.259393, -123.029619], {icon: customIcon})
-            .bindPopup('COLV3: Cologix VAN3, Vancouver, CA').addTo(map);
+            .bindPopup('COLV3: Cologix VAN3, Vancouver, CA')
+            .on('click', function() { selectLocation('COLV3'); })
+            .addTo(map);
         labels['COLV3'] = L.marker([49.259393, -123.029619], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">COLV3</div>', className: 'empty'})
         }).addTo(map);
         markers['EQTR2'] = L.marker([43.650854, -79.361951], {icon: customIcon})
-            .bindPopup('EQTR2: Equinix TR2, Toronto, CA').addTo(map);
+            .bindPopup('EQTR2: Equinix TR2, Toronto, CA')
+            .on('click', function() { selectLocation('EQTR2'); })
+            .addTo(map);
         labels['EQTR2'] = L.marker([43.650854, -79.361951], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">EQTR2</div>', className: 'empty'})
         }).addTo(map);
         markers['NTM62'] = L.marker([45.501394, -73.56192], {icon: customIcon})
-            .bindPopup('NTM62: eStruxture, Montreal, CA').addTo(map);
+            .bindPopup('NTM62: eStruxture, Montreal, CA')
+            .on('click', function() { selectLocation('NTM62'); })
+            .addTo(map);
         labels['NTM62'] = L.marker([45.501394, -73.56192], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">NTM62</div>', className: 'empty'})
         }).addTo(map);
         markers['EQCL1'] = L.marker([51.045517, -114.069297], {icon: customIcon})
-            .bindPopup('EQCL1: Equinix CL1, Calgary, CA').addTo(map);
+            .bindPopup('EQCL1: Equinix CL1, Calgary, CA')
+            .on('click', function() { selectLocation('EQCL1'); })
+            .addTo(map);
         labels['EQCL1'] = L.marker([51.045517, -114.069297], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">EQCL1</div>', className: 'empty'})
         }).addTo(map);
         markers['EQCL3'] = L.marker([50.976971, -113.956677], {icon: customIcon})
-            .bindPopup('EQCL3: Equinix CL3, Calgary, CA').addTo(map);
+            .bindPopup('EQCL3: Equinix CL3, Calgary, CA')
+            .on('click', function() { selectLocation('EQCL3'); })
+            .addTo(map);
         labels['EQCL3'] = L.marker([50.976971, -113.956677], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">EQCL3</div>', className: 'empty'})
         }).addTo(map);
         markers['CDSR1'] = L.marker([45.476394, 9.103571], {icon: customIcon})
-            .bindPopup('CDSR1: CDLAN srl Via Caldera 21, Milan, IT').addTo(map);
+            .bindPopup('CDSR1: CDLAN srl Via Caldera 21, Milan, IT')
+            .on('click', function() { selectLocation('CDSR1'); })
+            .addTo(map);
         labels['CDSR1'] = L.marker([45.476394, 9.103571], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">CDSR1</div>', className: 'empty'})
         }).addTo(map);
         markers['CEC50'] = L.marker([50.060164, 14.482978], {icon: customIcon})
-            .bindPopup('CEC50: CE Colo, Prague, CZ').addTo(map);
+            .bindPopup('CEC50: CE Colo, Prague, CZ')
+            .on('click', function() { selectLocation('CEC50'); })
+            .addTo(map);
         labels['CEC50'] = L.marker([50.060164, 14.482978], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">CEC50</div>', className: 'empty'})
         }).addTo(map);
         markers['DGPU1'] = L.marker([59.924726, 10.810183], {icon: customIcon})
-            .bindPopup('DGPU1: DigiPlex Ulven, Oslo, NO').addTo(map);
+            .bindPopup('DGPU1: DigiPlex Ulven, Oslo, NO')
+            .on('click', function() { selectLocation('DGPU1'); })
+            .addTo(map);
         labels['DGPU1'] = L.marker([59.924726, 10.810183], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">DGPU1</div>', className: 'empty'})
         }).addTo(map);
         markers['EQAM3'] = L.marker([52.354686, 4.958827], {icon: customIcon})
-            .bindPopup('EQAM3: Equinix AM3, Amsterdam, NL').addTo(map);
+            .bindPopup('EQAM3: Equinix AM3, Amsterdam, NL')
+            .on('click', function() { selectLocation('EQAM3'); })
+            .addTo(map);
         labels['EQAM3'] = L.marker([52.354686, 4.958827], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">EQAM3</div>', className: 'empty'})
         }).addTo(map);
         markers['EQFA5'] = L.marker([50.09885, 8.632004], {icon: customIcon})
-            .bindPopup('EQFA5: Equinix FR5, Frankfurt, DE').addTo(map);
+            .bindPopup('EQFA5: Equinix FR5, Frankfurt, DE')
+            .on('click', function() { selectLocation('EQFA5'); })
+            .addTo(map);
         labels['EQFA5'] = L.marker([50.09885, 8.632004], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">EQFA5</div>', className: 'empty'})
         }).addTo(map);
         markers['EQHE6'] = L.marker([60.203031, 24.777861], {icon: customIcon})
-            .bindPopup('EQHE6: Equinix HE6, Espoo, FI').addTo(map);
+            .bindPopup('EQHE6: Equinix HE6, Espoo, FI')
+            .on('click', function() { selectLocation('EQHE6'); })
+            .addTo(map);
         labels['EQHE6'] = L.marker([60.203031, 24.777861], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">EQHE6</div>', className: 'empty'})
         }).addTo(map);
         markers['EQIL4'] = L.marker([41.008655, 29.156655], {icon: customIcon})
-            .bindPopup('EQIL4: Equinix IL4 Istanbul, Istanbul, TR').addTo(map);
+            .bindPopup('EQIL4: Equinix IL4 Istanbul, Istanbul, TR')
+            .on('click', function() { selectLocation('EQIL4'); })
+            .addTo(map);
         labels['EQIL4'] = L.marker([41.008655, 29.156655], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">EQIL4</div>', className: 'empty'})
         }).addTo(map);
         markers['EQMU1'] = L.marker([48.143056, 11.55584], {icon: customIcon})
-            .bindPopup('EQMU1: Equinix MU1, Munich, DE').addTo(map);
+            .bindPopup('EQMU1: Equinix MU1, Munich, DE')
+            .on('click', function() { selectLocation('EQMU1'); })
+            .addTo(map);
         labels['EQMU1'] = L.marker([48.143056, 11.55584], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">EQMU1</div>', className: 'empty'})
         }).addTo(map);
         markers['EQWA1'] = L.marker([52.227354, 21.003357], {icon: customIcon})
-            .bindPopup('EQWA1: Equinix WA1, Warsaw, PL').addTo(map);
+            .bindPopup('EQWA1: Equinix WA1, Warsaw, PL')
+            .on('click', function() { selectLocation('EQWA1'); })
+            .addTo(map);
         labels['EQWA1'] = L.marker([52.227354, 21.003357], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">EQWA1</div>', className: 'empty'})
         }).addTo(map);
         markers['INX6'] = L.marker([50.11967, 8.73463], {icon: customIcon})
-            .bindPopup('INX6: Digital Realty FRA6, Frankfurt, DE').addTo(map);
+            .bindPopup('INX6: Digital Realty FRA6, Frankfurt, DE')
+            .on('click', function() { selectLocation('INX6'); })
+            .addTo(map);
         labels['INX6'] = L.marker([50.11967, 8.73463], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">INX6</div>', className: 'empty'})
         }).addTo(map);
         markers['IPB50'] = L.marker([52.50192, 13.36945], {icon: customIcon})
-            .bindPopup('IPB50: IPB GmbH, Berlin, DE').addTo(map);
+            .bindPopup('IPB50: IPB GmbH, Berlin, DE')
+            .on('click', function() { selectLocation('IPB50'); })
+            .addTo(map);
         labels['IPB50'] = L.marker([52.50192, 13.36945], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">IPB50</div>', className: 'empty'})
         }).addTo(map);
         markers['IPHH3'] = L.marker([53.550998, 10.03825], {icon: customIcon})
-            .bindPopup('IPHH3: IPHH H3, Hamburg, DE').addTo(map);
+            .bindPopup('IPHH3: IPHH H3, Hamburg, DE')
+            .on('click', function() { selectLocation('IPHH3'); })
+            .addTo(map);
         labels['IPHH3'] = L.marker([53.550998, 10.03825], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">IPHH3</div>', className: 'empty'})
         }).addTo(map);
         markers['ITCM2'] = L.marker([40.536855, -3.648584], {icon: customIcon})
-            .bindPopup('ITCM2: Equinix Itconic MD2, Alcobendas, ES').addTo(map);
+            .bindPopup('ITCM2: Equinix Itconic MD2, Alcobendas, ES')
+            .on('click', function() { selectLocation('ITCM2'); })
+            .addTo(map);
         labels['ITCM2'] = L.marker([40.536855, -3.648584], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">ITCM2</div>', className: 'empty'})
         }).addTo(map);
         markers['ITXA1'] = L.marker([37.871339, 23.870251], {icon: customIcon})
-            .bindPopup('ITXA1: Digital Realty ATH3, Koropi, GR').addTo(map);
+            .bindPopup('ITXA1: Digital Realty ATH3, Koropi, GR')
+            .on('click', function() { selectLocation('ITXA1'); })
+            .addTo(map);
         labels['ITXA1'] = L.marker([37.871339, 23.870251], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">ITXA1</div>', className: 'empty'})
         }).addTo(map);
         markers['ITXA7'] = L.marker([52.28415, 4.770855], {icon: customIcon})
-            .bindPopup('ITXA7: Digital Realty AMS7, Amsterdam, NL').addTo(map);
+            .bindPopup('ITXA7: Digital Realty AMS7, Amsterdam, NL')
+            .on('click', function() { selectLocation('ITXA7'); })
+            .addTo(map);
         labels['ITXA7'] = L.marker([52.28415, 4.770855], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">ITXA7</div>', className: 'empty'})
         }).addTo(map);
         markers['ITXC2'] = L.marker([55.728092, 12.377482], {icon: customIcon})
-            .bindPopup('ITXC2: Digital Realty CPH2, Copenhagen, DK').addTo(map);
+            .bindPopup('ITXC2: Digital Realty CPH2, Copenhagen, DK')
+            .on('click', function() { selectLocation('ITXC2'); })
+            .addTo(map);
         labels['ITXC2'] = L.marker([55.728092, 12.377482], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">ITXC2</div>', className: 'empty'})
         }).addTo(map);
         markers['ITXM2'] = L.marker([40.439323, -3.621211], {icon: customIcon})
-            .bindPopup('ITXM2: Digital Realty MAD2, Madrid, ES').addTo(map);
+            .bindPopup('ITXM2: Digital Realty MAD2, Madrid, ES')
+            .on('click', function() { selectLocation('ITXM2'); })
+            .addTo(map);
         labels['ITXM2'] = L.marker([40.439323, -3.621211], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">ITXM2</div>', className: 'empty'})
         }).addTo(map);
         markers['ITXM3'] = L.marker([40.433899, -3.62408], {icon: customIcon})
-            .bindPopup('ITXM3: Digital Realty MAD3, Madrid, ES').addTo(map);
+            .bindPopup('ITXM3: Digital Realty MAD3, Madrid, ES')
+            .on('click', function() { selectLocation('ITXM3'); })
+            .addTo(map);
         labels['ITXM3'] = L.marker([40.433899, -3.62408], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">ITXM3</div>', className: 'empty'})
         }).addTo(map);
         markers['ITXS1'] = L.marker([59.422226, 17.916696], {icon: customIcon})
-            .bindPopup('ITXS1: Digital Realty STO1, Stockholm, SE').addTo(map);
+            .bindPopup('ITXS1: Digital Realty STO1, Stockholm, SE')
+            .on('click', function() { selectLocation('ITXS1'); })
+            .addTo(map);
         labels['ITXS1'] = L.marker([59.422226, 17.916696], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">ITXS1</div>', className: 'empty'})
         }).addTo(map);
         markers['ITXV2'] = L.marker([48.269027, 16.410613], {icon: customIcon})
-            .bindPopup('ITXV2: Digital Realty VIE2, Vienna, AT').addTo(map);
+            .bindPopup('ITXV2: Digital Realty VIE2, Vienna, AT')
+            .on('click', function() { selectLocation('ITXV2'); })
+            .addTo(map);
         labels['ITXV2'] = L.marker([48.269027, 16.410613], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">ITXV2</div>', className: 'empty'})
         }).addTo(map);
         markers['ITXZ1'] = L.marker([47.432702, 8.557273], {icon: customIcon})
-            .bindPopup('ITXZ1: Digital Realty ZUR1, Glattbrugg, CH').addTo(map);
+            .bindPopup('ITXZ1: Digital Realty ZUR1, Glattbrugg, CH')
+            .on('click', function() { selectLocation('ITXZ1'); })
+            .addTo(map);
         labels['ITXZ1'] = L.marker([47.432702, 8.557273], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">ITXZ1</div>', className: 'empty'})
         }).addTo(map);
         markers['MOILH'] = L.marker([32.770949, 34.966486], {icon: customIcon})
-            .bindPopup('MOILH: MedOne, Tirat Carmel, IL').addTo(map);
+            .bindPopup('MOILH: MedOne, Tirat Carmel, IL')
+            .on('click', function() { selectLocation('MOILH'); })
+            .addTo(map);
         labels['MOILH'] = L.marker([32.770949, 34.966486], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">MOILH</div>', className: 'empty'})
         }).addTo(map);
         markers['THV52'] = L.marker([48.856654, 2.38532], {icon: customIcon})
-            .bindPopup('THV52: Telehouse Voltaire, Paris, FR').addTo(map);
+            .bindPopup('THV52: Telehouse Voltaire, Paris, FR')
+            .on('click', function() { selectLocation('THV52'); })
+            .addTo(map);
         labels['THV52'] = L.marker([48.856654, 2.38532], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">THV52</div>', className: 'empty'})
         }).addTo(map);
         markers['EQZH5'] = L.marker([47.405667, 8.46174], {icon: customIcon})
-            .bindPopup('EQZH5: Equinix ZH5, Zurich, CH').addTo(map);
+            .bindPopup('EQZH5: Equinix ZH5, Zurich, CH')
+            .on('click', function() { selectLocation('EQZH5'); })
+            .addTo(map);
         labels['EQZH5'] = L.marker([47.405667, 8.46174], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">EQZH5</div>', className: 'empty'})
         }).addTo(map);
         markers['EQSK1'] = L.marker([59.362574, 17.955657], {icon: customIcon})
-            .bindPopup('EQSK1: Equinix Sweden SK1, Stockholm, SE').addTo(map);
+            .bindPopup('EQSK1: Equinix Sweden SK1, Stockholm, SE')
+            .on('click', function() { selectLocation('EQSK1'); })
+            .addTo(map);
         labels['EQSK1'] = L.marker([59.362574, 17.955657], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">EQSK1</div>', className: 'empty'})
         }).addTo(map);
         markers['EQML2'] = L.marker([45.448684, 9.147436], {icon: customIcon})
-            .bindPopup('EQML2: Equinix ML2, Milan, IT').addTo(map);
+            .bindPopup('EQML2: Equinix ML2, Milan, IT')
+            .on('click', function() { selectLocation('EQML2'); })
+            .addTo(map);
         labels['EQML2'] = L.marker([45.448684, 9.147436], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">EQML2</div>', className: 'empty'})
         }).addTo(map);
         markers['EQBA1'] = L.marker([41.351557, 2.137457], {icon: customIcon})
-            .bindPopup('EQBA1: Equinix BA1, Barcelona, ES').addTo(map);
+            .bindPopup('EQBA1: Equinix BA1, Barcelona, ES')
+            .on('click', function() { selectLocation('EQBA1'); })
+            .addTo(map);
         labels['EQBA1'] = L.marker([41.351557, 2.137457], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">EQBA1</div>', className: 'empty'})
         }).addTo(map);
         markers['EIRCL'] = L.marker([53.400983, -6.218081], {icon: customIcon})
-            .bindPopup('EIRCL: Eircom Clonshaugh, Dublin, IE').addTo(map);
+            .bindPopup('EIRCL: Eircom Clonshaugh, Dublin, IE')
+            .on('click', function() { selectLocation('EIRCL'); })
+            .addTo(map);
         labels['EIRCL'] = L.marker([53.400983, -6.218081], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">EIRCL</div>', className: 'empty'})
         }).addTo(map);
         markers['EQDX1'] = L.marker([25.02618, 55.18695], {icon: customIcon})
-            .bindPopup('EQDX1: Equinix DX1, Dubai, AE').addTo(map);
+            .bindPopup('EQDX1: Equinix DX1, Dubai, AE')
+            .on('click', function() { selectLocation('EQDX1'); })
+            .addTo(map);
         labels['EQDX1'] = L.marker([25.02618, 55.18695], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">EQDX1</div>', className: 'empty'})
         }).addTo(map);
         markers['EQLD5'] = L.marker([51.522463, -0.62905], {icon: customIcon})
-            .bindPopup('EQLD5: Equinix LD5, Slough, GB').addTo(map);
+            .bindPopup('EQLD5: Equinix LD5, Slough, GB')
+            .on('click', function() { selectLocation('EQLD5'); })
+            .addTo(map);
         labels['EQLD5'] = L.marker([51.522463, -0.62905], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">EQLD5</div>', className: 'empty'})
         }).addTo(map);
         markers['EQLS1'] = L.marker([38.787919, -9.123454], {icon: customIcon})
-            .bindPopup('EQLS1: Equinix LS1, Lisbon, PT').addTo(map);
+            .bindPopup('EQLS1: Equinix LS1, Lisbon, PT')
+            .on('click', function() { selectLocation('EQLS1'); })
+            .addTo(map);
         labels['EQLS1'] = L.marker([38.787919, -9.123454], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">EQLS1</div>', className: 'empty'})
         }).addTo(map);
         markers['ETIFJ'] = L.marker([25.131143, 56.336378], {icon: customIcon})
-            .bindPopup('ETIFJ: Etisalat Smart Hub Data Center, Fujairah, AE').addTo(map);
+            .bindPopup('ETIFJ: Etisalat Smart Hub Data Center, Fujairah, AE')
+            .on('click', function() { selectLocation('ETIFJ'); })
+            .addTo(map);
         labels['ETIFJ'] = L.marker([25.131143, 56.336378], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">ETIFJ</div>', className: 'empty'})
         }).addTo(map);
         markers['ITXD2'] = L.marker([53.334251, -6.365538], {icon: customIcon})
-            .bindPopup('ITXD2: Digital Realty DUB2, Dublin, IE').addTo(map);
+            .bindPopup('ITXD2: Digital Realty DUB2, Dublin, IE')
+            .on('click', function() { selectLocation('ITXD2'); })
+            .addTo(map);
         labels['ITXD2'] = L.marker([53.334251, -6.365538], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">ITXD2</div>', className: 'empty'})
         }).addTo(map);
         markers['ITXM1'] = L.marker([43.310818, 5.373865], {icon: customIcon})
-            .bindPopup('ITXM1: Digital Realty MRS1, Marseille, FR').addTo(map);
+            .bindPopup('ITXM1: Digital Realty MRS1, Marseille, FR')
+            .on('click', function() { selectLocation('ITXM1'); })
+            .addTo(map);
         labels['ITXM1'] = L.marker([43.310818, 5.373865], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">ITXM1</div>', className: 'empty'})
         }).addTo(map);
         markers['SCDB9'] = L.marker([53.412959, -6.373212], {icon: customIcon})
-            .bindPopup('SCDB9: Servecentric Unit 9, Dublin, IE').addTo(map);
+            .bindPopup('SCDB9: Servecentric Unit 9, Dublin, IE')
+            .on('click', function() { selectLocation('SCDB9'); })
+            .addTo(map);
         labels['SCDB9'] = L.marker([53.412959, -6.373212], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">SCDB9</div>', className: 'empty'})
         }).addTo(map);
         markers['TCSH'] = L.marker([51.499819, -0.010775], {icon: customIcon})
-            .bindPopup('TCSH: Digital Realty LHR20, London, GB').addTo(map);
+            .bindPopup('TCSH: Digital Realty LHR20, London, GB')
+            .on('click', function() { selectLocation('TCSH'); })
+            .addTo(map);
         labels['TCSH'] = L.marker([51.499819, -0.010775], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">TCSH</div>', className: 'empty'})
         }).addTo(map);
         markers['TEJB1'] = L.marker([-26.137957, 28.197517], {icon: customIcon})
-            .bindPopup('TEJB1: Teraco JB1, Johannesburg, ZA').addTo(map);
+            .bindPopup('TEJB1: Teraco JB1, Johannesburg, ZA')
+            .on('click', function() { selectLocation('TEJB1'); })
+            .addTo(map);
         labels['TEJB1'] = L.marker([-26.137957, 28.197517], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">TEJB1</div>', className: 'empty'})
         }).addTo(map);
         markers['EQMA3'] = L.marker([53.468674, -2.310421], {icon: customIcon})
-            .bindPopup('EQMA3: Equinix MA3, Manchester, GB').addTo(map);
+            .bindPopup('EQMA3: Equinix MA3, Manchester, GB')
+            .on('click', function() { selectLocation('EQMA3'); })
+            .addTo(map);
         labels['EQMA3'] = L.marker([53.468674, -2.310421], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">EQMA3</div>', className: 'empty'})
         }).addTo(map);
         markers['THNO2'] = L.marker([51.511776, -0.002927], {icon: customIcon})
-            .bindPopup('THNO2: Telehouse West, London, GB').addTo(map);
+            .bindPopup('THNO2: Telehouse West, London, GB')
+            .on('click', function() { selectLocation('THNO2'); })
+            .addTo(map);
         labels['THNO2'] = L.marker([51.511776, -0.002927], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">THNO2</div>', className: 'empty'})
         }).addTo(map);
         markers['EQPA3'] = L.marker([48.927166, 2.350664], {icon: customIcon})
-            .bindPopup('EQPA3: Equinix PA3, Paris, FR').addTo(map);
+            .bindPopup('EQPA3: Equinix PA3, Paris, FR')
+            .on('click', function() { selectLocation('EQPA3'); })
+            .addTo(map);
         labels['EQPA3'] = L.marker([48.927166, 2.350664], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">EQPA3</div>', className: 'empty'})
         }).addTo(map);
         markers['ITXP7'] = L.marker([48.924907, 2.403], {icon: customIcon})
-            .bindPopup('ITXP7: Digital Realty PAR7, Paris, FR').addTo(map);
+            .bindPopup('ITXP7: Digital Realty PAR7, Paris, FR')
+            .on('click', function() { selectLocation('ITXP7'); })
+            .addTo(map);
         labels['ITXP7'] = L.marker([48.924907, 2.403], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">ITXP7</div>', className: 'empty'})
         }).addTo(map);
         markers['ECTL1'] = L.marker([32.052681, 34.770992], {icon: customIcon})
-            .bindPopup('ECTL1: Edgeconnex, Herzliya, IL').addTo(map);
+            .bindPopup('ECTL1: Edgeconnex, Herzliya, IL')
+            .on('click', function() { selectLocation('ECTL1'); })
+            .addTo(map);
         labels['ECTL1'] = L.marker([32.052681, 34.770992], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">ECTL1</div>', className: 'empty'})
         }).addTo(map);
         markers['BDC52'] = L.marker([26.154542, 50.475258], {icon: customIcon})
-            .bindPopup('BDC52: AWS Bahrain DC52, Hamala, BH').addTo(map);
+            .bindPopup('BDC52: AWS Bahrain DC52, Hamala, BH')
+            .on('click', function() { selectLocation('BDC52'); })
+            .addTo(map);
         labels['BDC52'] = L.marker([26.154542, 50.475258], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">BDC52</div>', className: 'empty'})
         }).addTo(map);
         markers['BDC53'] = L.marker([26.2285, 50.586], {icon: customIcon})
-            .bindPopup('BDC53: AWS Bahrain DC53, Askar, BH').addTo(map);
+            .bindPopup('BDC53: AWS Bahrain DC53, Askar, BH')
+            .on('click', function() { selectLocation('BDC53'); })
+            .addTo(map);
         labels['BDC53'] = L.marker([26.2285, 50.586], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">BDC53</div>', className: 'empty'})
         }).addTo(map);
         markers['EQMC1'] = L.marker([23.7280664, 57.7950975], {icon: customIcon})
-            .bindPopup('EQMC1: Equinix MC1 Barka, Muscat, OM').addTo(map);
+            .bindPopup('EQMC1: Equinix MC1 Barka, Muscat, OM')
+            .on('click', function() { selectLocation('EQMC1'); })
+            .addTo(map);
         labels['EQMC1'] = L.marker([23.7280664, 57.7950975], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">EQMC1</div>', className: 'empty'})
         }).addTo(map);
         markers['EQMX1'] = L.marker([20.556925, -100.277833], {icon: customIcon})
-            .bindPopup('EQMX1: Equinix MX1, El Marques, MX').addTo(map);
+            .bindPopup('EQMX1: Equinix MX1, El Marques, MX')
+            .on('click', function() { selectLocation('EQMX1'); })
+            .addTo(map);
         labels['EQMX1'] = L.marker([20.556925, -100.277833], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">EQMX1</div>', className: 'empty'})
         }).addTo(map);
         markers['CIBNA'] = L.marker([-34.590248, -58.467164], {icon: customIcon})
-            .bindPopup('CIBNA: Cirion BNARAGMS, Buenos Aires, AR').addTo(map);
+            .bindPopup('CIBNA: Cirion BNARAGMS, Buenos Aires, AR')
+            .on('click', function() { selectLocation('CIBNA'); })
+            .addTo(map);
         labels['CIBNA'] = L.marker([-34.590248, -58.467164], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">CIBNA</div>', className: 'empty'})
         }).addTo(map);
         markers['CILIM'] = L.marker([-12.094823, -76.973532], {icon: customIcon})
-            .bindPopup('CILIM: Cirion LIMAPUCD, Santiago de Surco, PE').addTo(map);
+            .bindPopup('CILIM: Cirion LIMAPUCD, Santiago de Surco, PE')
+            .on('click', function() { selectLocation('CILIM'); })
+            .addTo(map);
         labels['CILIM'] = L.marker([-12.094823, -76.973532], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">CILIM</div>', className: 'empty'})
         }).addTo(map);
         markers['EQBG1'] = L.marker([4.671384, -74.156026], {icon: customIcon})
-            .bindPopup('EQBG1: Equinix BG1, Bogota, CO').addTo(map);
+            .bindPopup('EQBG1: Equinix BG1, Bogota, CO')
+            .on('click', function() { selectLocation('EQBG1'); })
+            .addTo(map);
         labels['EQBG1'] = L.marker([4.671384, -74.156026], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">EQBG1</div>', className: 'empty'})
         }).addTo(map);
         markers['EQRJ2'] = L.marker([-22.871261, -43.272742], {icon: customIcon})
-            .bindPopup('EQRJ2: Equinix RJ2, Rio de Janeiro, BR').addTo(map);
+            .bindPopup('EQRJ2: Equinix RJ2, Rio de Janeiro, BR')
+            .on('click', function() { selectLocation('EQRJ2'); })
+            .addTo(map);
         labels['EQRJ2'] = L.marker([-22.871261, -43.272742], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">EQRJ2</div>', className: 'empty'})
         }).addTo(map);
         markers['SONQU'] = L.marker([-33.35628, -70.698912], {icon: customIcon})
-            .bindPopup('SONQU: Sonda Quilicura, Santiago, CL').addTo(map);
+            .bindPopup('SONQU: Sonda Quilicura, Santiago, CL')
+            .on('click', function() { selectLocation('SONQU'); })
+            .addTo(map);
         labels['SONQU'] = L.marker([-33.35628, -70.698912], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">SONQU</div>', className: 'empty'})
         }).addTo(map);
         markers['TIVIT'] = L.marker([-23.65071, -46.720519], {icon: customIcon})
-            .bindPopup('TIVIT: Tivit, São Paulo, BR').addTo(map);
+            .bindPopup('TIVIT: Tivit, São Paulo, BR')
+            .on('click', function() { selectLocation('TIVIT'); })
+            .addTo(map);
         labels['TIVIT'] = L.marker([-23.65071, -46.720519], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">TIVIT</div>', className: 'empty'})
         }).addTo(map);
         markers['TNDB'] = L.marker([-23.497589, -46.814577], {icon: customIcon})
-            .bindPopup('TNDB: Equinix SP4, Barueri, BR').addTo(map);
+            .bindPopup('TNDB: Equinix SP4, Barueri, BR')
+            .on('click', function() { selectLocation('TNDB'); })
+            .addTo(map);
         labels['TNDB'] = L.marker([-23.497589, -46.814577], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">TNDB</div>', className: 'empty'})
         }).addTo(map);
         markers['165HS'] = L.marker([40.736844, -74.173402], {icon: customIcon})
-            .bindPopup('165HS: 165 Halsey Street, Newark, NJ, US').addTo(map);
+            .bindPopup('165HS: 165 Halsey Street, Newark, NJ, US')
+            .on('click', function() { selectLocation('165HS'); })
+            .addTo(map);
         labels['165HS'] = L.marker([40.736844, -74.173402], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">165HS</div>', className: 'empty'})
         }).addTo(map);
         markers['CS32A'] = L.marker([40.72, -74.004561], {icon: customIcon})
-            .bindPopup('CS32A: CoreSite NY1, New York, NY, US').addTo(map);
+            .bindPopup('CS32A: CoreSite NY1, New York, NY, US')
+            .on('click', function() { selectLocation('CS32A'); })
+            .addTo(map);
         labels['CS32A'] = L.marker([40.72, -74.004561], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">CS32A</div>', className: 'empty'})
         }).addTo(map);
         markers['CSVA1'] = L.marker([38.950631, -77.364541], {icon: customIcon})
-            .bindPopup('CSVA1: CoreSite VA1, Reston, VA, US').addTo(map);
+            .bindPopup('CSVA1: CoreSite VA1, Reston, VA, US')
+            .on('click', function() { selectLocation('CSVA1'); })
+            .addTo(map);
         labels['CSVA1'] = L.marker([38.950631, -77.364541], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">CSVA1</div>', className: 'empty'})
         }).addTo(map);
         markers['EQDA2'] = L.marker([32.800748, -96.819412], {icon: customIcon})
-            .bindPopup('EQDA2: Equinix DA2, Dallas, TX, US').addTo(map);
+            .bindPopup('EQDA2: Equinix DA2, Dallas, TX, US')
+            .on('click', function() { selectLocation('EQDA2'); })
+            .addTo(map);
         labels['EQDA2'] = L.marker([32.800748, -96.819412], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">EQDA2</div>', className: 'empty'})
         }).addTo(map);
         markers['EQDC2'] = L.marker([39.016363, -77.459023], {icon: customIcon})
-            .bindPopup('EQDC2: Equinix DC2/DC11, Ashburn, VA, US').addTo(map);
+            .bindPopup('EQDC2: Equinix DC2/DC11, Ashburn, VA, US')
+            .on('click', function() { selectLocation('EQDC2'); })
+            .addTo(map);
         labels['EQDC2'] = L.marker([39.016363, -77.459023], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">EQDC2</div>', className: 'empty'})
         }).addTo(map);
         markers['EQMI1'] = L.marker([25.782648, -80.193157], {icon: customIcon})
-            .bindPopup('EQMI1: Equinix MI1, Miami, FL, US').addTo(map);
+            .bindPopup('EQMI1: Equinix MI1, Miami, FL, US')
+            .on('click', function() { selectLocation('EQMI1'); })
+            .addTo(map);
         labels['EQMI1'] = L.marker([25.782648, -80.193157], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">EQMI1</div>', className: 'empty'})
         }).addTo(map);
         markers['EQNY5'] = L.marker([40.778534, -74.072237], {icon: customIcon})
-            .bindPopup('EQNY5: Equinix NY5, Secaucus, NJ, US').addTo(map);
+            .bindPopup('EQNY5: Equinix NY5, Secaucus, NJ, US')
+            .on('click', function() { selectLocation('EQNY5'); })
+            .addTo(map);
         labels['EQNY5'] = L.marker([40.778534, -74.072237], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">EQNY5</div>', className: 'empty'})
         }).addTo(map);
         markers['KIOQ1'] = L.marker([20.567915, -100.254141], {icon: customIcon})
-            .bindPopup('KIOQ1: KIO Networks QRO 1, El Marques, MX').addTo(map);
+            .bindPopup('KIOQ1: KIO Networks QRO 1, El Marques, MX')
+            .on('click', function() { selectLocation('KIOQ1'); })
+            .addTo(map);
         labels['KIOQ1'] = L.marker([20.567915, -100.254141], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">KIOQ1</div>', className: 'empty'})
         }).addTo(map);
         markers['LGT50'] = L.marker([39.959889, -75.161752], {icon: customIcon})
-            .bindPopup('LGT50: Crown Castle, Philadelphia, PA, US').addTo(map);
+            .bindPopup('LGT50: Crown Castle, Philadelphia, PA, US')
+            .on('click', function() { selectLocation('LGT50'); })
+            .addTo(map);
         labels['LGT50'] = L.marker([39.959889, -75.161752], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">LGT50</div>', className: 'empty'})
         }).addTo(map);
         markers['MB1SD'] = L.marker([42.354692, -71.060266], {icon: customIcon})
-            .bindPopup('MB1SD: Markley, Boston, MA, US').addTo(map);
+            .bindPopup('MB1SD: Markley, Boston, MA, US')
+            .on('click', function() { selectLocation('MB1SD'); })
+            .addTo(map);
         labels['MB1SD'] = L.marker([42.354692, -71.060266], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">MB1SD</div>', className: 'empty'})
         }).addTo(map);
         markers['QTDC2'] = L.marker([33.777526, -84.421036], {icon: customIcon})
-            .bindPopup('QTDC2: QTS ATL1, Atlanta, GA, US').addTo(map);
+            .bindPopup('QTDC2: QTS ATL1, Atlanta, GA, US')
+            .on('click', function() { selectLocation('QTDC2'); })
+            .addTo(map);
         labels['QTDC2'] = L.marker([33.777526, -84.421036], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">QTDC2</div>', className: 'empty'})
         }).addTo(map);
         markers['TLLPJ'] = L.marker([39.001795, -77.47841], {icon: customIcon})
-            .bindPopup('TLLPJ: Digital Realty IAD38, Ashburn, VA, US').addTo(map);
+            .bindPopup('TLLPJ: Digital Realty IAD38, Ashburn, VA, US')
+            .on('click', function() { selectLocation('TLLPJ'); })
+            .addTo(map);
         labels['TLLPJ'] = L.marker([39.001795, -77.47841], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">TLLPJ</div>', className: 'empty'})
         }).addTo(map);
         markers['TLXA1'] = L.marker([33.755456, -84.39153], {icon: customIcon})
-            .bindPopup('TLXA1: Digital Realty ATL13, Atlanta, GA, US').addTo(map);
+            .bindPopup('TLXA1: Digital Realty ATL13, Atlanta, GA, US')
+            .on('click', function() { selectLocation('TLXA1'); })
+            .addTo(map);
         labels['TLXA1'] = L.marker([33.755456, -84.39153], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">TLXA1</div>', className: 'empty'})
         }).addTo(map);
         markers['COL67'] = L.marker([40.116491, -83.001985], {icon: customIcon})
-            .bindPopup('COL67: Cologix COL2, Columbus, OH, US').addTo(map);
+            .bindPopup('COL67: Cologix COL2, Columbus, OH, US')
+            .on('click', function() { selectLocation('COL67'); })
+            .addTo(map);
         labels['COL67'] = L.marker([40.116491, -83.001985], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">COL67</div>', className: 'empty'})
         }).addTo(map);
         markers['COLM3'] = L.marker([44.971408, -93.25458], {icon: customIcon})
-            .bindPopup('COLM3: Cologix MIN3, Minneapolis, MN, US').addTo(map);
+            .bindPopup('COLM3: Cologix MIN3, Minneapolis, MN, US')
+            .on('click', function() { selectLocation('COLM3'); })
+            .addTo(map);
         labels['COLM3'] = L.marker([44.971408, -93.25458], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">COLM3</div>', className: 'empty'})
         }).addTo(map);
         markers['CSCH1'] = L.marker([41.876212, -87.631453], {icon: customIcon})
-            .bindPopup('CSCH1: CoreSite CH1, Chicago, IL, US').addTo(map);
+            .bindPopup('CSCH1: CoreSite CH1, Chicago, IL, US')
+            .on('click', function() { selectLocation('CSCH1'); })
+            .addTo(map);
         labels['CSCH1'] = L.marker([41.876212, -87.631453], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">CSCH1</div>', className: 'empty'})
         }).addTo(map);
         markers['CYOA1'] = L.marker([41.796754, -88.24276], {icon: customIcon})
-            .bindPopup('CYOA1: CyrusOne Aurora A1, Aurora, IL, US').addTo(map);
+            .bindPopup('CYOA1: CyrusOne Aurora A1, Aurora, IL, US')
+            .on('click', function() { selectLocation('CYOA1'); })
+            .addTo(map);
         labels['CYOA1'] = L.marker([41.796754, -88.24276], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">CYOA1</div>', className: 'empty'})
         }).addTo(map);
         markers['CYOW3'] = L.marker([29.844182, -95.556656], {icon: customIcon})
-            .bindPopup('CYOW3: DataBank HOU3, Houston, TX, US').addTo(map);
+            .bindPopup('CYOW3: DataBank HOU3, Houston, TX, US')
+            .on('click', function() { selectLocation('CYOW3'); })
+            .addTo(map);
         labels['CYOW3'] = L.marker([29.844182, -95.556656], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">CYOW3</div>', className: 'empty'})
         }).addTo(map);
         markers['EQC50'] = L.marker([41.85365, -87.618342], {icon: customIcon})
-            .bindPopup('EQC50: Equinix CH2, Chicago, IL, US').addTo(map);
+            .bindPopup('EQC50: Equinix CH2, Chicago, IL, US')
+            .on('click', function() { selectLocation('EQC50'); })
+            .addTo(map);
         labels['EQC50'] = L.marker([41.85365, -87.618342], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">EQC50</div>', className: 'empty'})
         }).addTo(map);
         markers['NPKC1'] = L.marker([39.100941, -94.581036], {icon: customIcon})
-            .bindPopup('NPKC1: Netrality Data Centers, Kansas City, MO, US').addTo(map);
+            .bindPopup('NPKC1: Netrality Data Centers, Kansas City, MO, US')
+            .on('click', function() { selectLocation('NPKC1'); })
+            .addTo(map);
         labels['NPKC1'] = L.marker([39.100941, -94.581036], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">NPKC1</div>', className: 'empty'})
         }).addTo(map);
         markers['QTS52'] = L.marker([41.841895, -87.668306], {icon: customIcon})
-            .bindPopup('QTS52: QTS, Chicago, IL, US').addTo(map);
+            .bindPopup('QTS52: QTS, Chicago, IL, US')
+            .on('click', function() { selectLocation('QTS52'); })
+            .addTo(map);
         labels['QTS52'] = L.marker([41.841895, -87.668306], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">QTS52</div>', className: 'empty'})
         }).addTo(map);
         markers['CSOW'] = L.marker([34.047942, -118.255564], {icon: customIcon})
-            .bindPopup('CSOW: CoreSite LA1, Los Angeles, CA, US').addTo(map);
+            .bindPopup('CSOW: CoreSite LA1, Los Angeles, CA, US')
+            .on('click', function() { selectLocation('CSOW'); })
+            .addTo(map);
         labels['CSOW'] = L.marker([34.047942, -118.255564], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">CSOW</div>', className: 'empty'})
         }).addTo(map);
         markers['CSSV2'] = L.marker([37.405693, -121.916261], {icon: customIcon})
-            .bindPopup('CSSV2: Coresite SV2, Milpitas, CA, US').addTo(map);
+            .bindPopup('CSSV2: Coresite SV2, Milpitas, CA, US')
+            .on('click', function() { selectLocation('CSSV2'); })
+            .addTo(map);
         labels['CSSV2'] = L.marker([37.405693, -121.916261], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">CSSV2</div>', className: 'empty'})
         }).addTo(map);
         markers['CSSV4'] = L.marker([37.376259, -121.970705], {icon: customIcon})
-            .bindPopup('CSSV4: CoreSite SV4, Santa Clara, CA, US').addTo(map);
+            .bindPopup('CSSV4: CoreSite SV4, Santa Clara, CA, US')
+            .on('click', function() { selectLocation('CSSV4'); })
+            .addTo(map);
         labels['CSSV4'] = L.marker([37.376259, -121.970705], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">CSSV4</div>', className: 'empty'})
         }).addTo(map);
         markers['ECPH1'] = L.marker([33.395544, -111.97012], {icon: customIcon})
-            .bindPopup('ECPH1: EdgeConnex PHX01, Tempe, AZ, US').addTo(map);
+            .bindPopup('ECPH1: EdgeConnex PHX01, Tempe, AZ, US')
+            .on('click', function() { selectLocation('ECPH1'); })
+            .addTo(map);
         labels['ECPH1'] = L.marker([33.395544, -111.97012], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">ECPH1</div>', className: 'empty'})
         }).addTo(map);
         markers['EQLA3'] = L.marker([33.921239, -118.383778], {icon: customIcon})
-            .bindPopup('EQLA3: Equinix LA3, El Segundo, CA, US').addTo(map);
+            .bindPopup('EQLA3: Equinix LA3, El Segundo, CA, US')
+            .on('click', function() { selectLocation('EQLA3'); })
+            .addTo(map);
         labels['EQLA3'] = L.marker([33.921239, -118.383778], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">EQLA3</div>', className: 'empty'})
         }).addTo(map);
         markers['EQSV5'] = L.marker([37.241767, -121.782967], {icon: customIcon})
-            .bindPopup('EQSV5: Equinix SV5, San Jose, CA, US').addTo(map);
+            .bindPopup('EQSV5: Equinix SV5, San Jose, CA, US')
+            .on('click', function() { selectLocation('EQSV5'); })
+            .addTo(map);
         labels['EQSV5'] = L.marker([37.241767, -121.782967], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">EQSV5</div>', className: 'empty'})
         }).addTo(map);
         markers['PNP51'] = L.marker([33.41601, -112.009445], {icon: customIcon})
-            .bindPopup('PNP51: PhoenixNAP, Phoenix, AZ, US').addTo(map);
+            .bindPopup('PNP51: PhoenixNAP, Phoenix, AZ, US')
+            .on('click', function() { selectLocation('PNP51'); })
+            .addTo(map);
         labels['PNP51'] = L.marker([33.41601, -112.009445], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">PNP51</div>', className: 'empty'})
         }).addTo(map);
         markers['ALN91'] = L.marker([21.335728, -158.086738], {icon: customIcon})
-            .bindPopup('ALN91: AlohaNap, Kapolei, HI, US').addTo(map);
+            .bindPopup('ALN91: AlohaNap, Kapolei, HI, US')
+            .on('click', function() { selectLocation('ALN91'); })
+            .addTo(map);
         labels['ALN91'] = L.marker([21.335728, -158.086738], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">ALN91</div>', className: 'empty'})
         }).addTo(map);
         markers['CSDE1'] = L.marker([39.745636, -104.995636], {icon: customIcon})
-            .bindPopup('CSDE1: CoreSite DE1, Denver, CO, US').addTo(map);
+            .bindPopup('CSDE1: CoreSite DE1, Denver, CO, US')
+            .on('click', function() { selectLocation('CSDE1'); })
+            .addTo(map);
         labels['CSDE1'] = L.marker([39.745636, -104.995636], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">CSDE1</div>', className: 'empty'})
         }).addTo(map);
         markers['DBLV1'] = L.marker([36.059162, -115.145989], {icon: customIcon})
-            .bindPopup('DBLV1: DataBank LAS1, Las Vegas, NV, US').addTo(map);
+            .bindPopup('DBLV1: DataBank LAS1, Las Vegas, NV, US')
+            .on('click', function() { selectLocation('DBLV1'); })
+            .addTo(map);
         labels['DBLV1'] = L.marker([36.059162, -115.145989], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">DBLV1</div>', className: 'empty'})
         }).addTo(map);
         markers['ECPO1'] = L.marker([45.548296, -122.907473], {icon: customIcon})
-            .bindPopup('ECPO1: EdgeConnex, Hillsboro, OR, US').addTo(map);
+            .bindPopup('ECPO1: EdgeConnex, Hillsboro, OR, US')
+            .on('click', function() { selectLocation('ECPO1'); })
+            .addTo(map);
         labels['ECPO1'] = L.marker([45.548296, -122.907473], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">ECPO1</div>', className: 'empty'})
         }).addTo(map);
         markers['EQSE2'] = L.marker([47.614358, -122.338864], {icon: customIcon})
-            .bindPopup('EQSE2: Westin Building Exchange, Seattle, WA, US').addTo(map);
+            .bindPopup('EQSE2: Westin Building Exchange, Seattle, WA, US')
+            .on('click', function() { selectLocation('EQSE2'); })
+            .addTo(map);
         labels['EQSE2'] = L.marker([47.614358, -122.338864], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">EQSE2</div>', className: 'empty'})
         }).addTo(map);
         markers['PEH51'] = L.marker([45.521366, -122.680792], {icon: customIcon})
-            .bindPopup('PEH51: Pittock Block, Portland, OR, US').addTo(map);
+            .bindPopup('PEH51: Pittock Block, Portland, OR, US')
+            .on('click', function() { selectLocation('PEH51'); })
+            .addTo(map);
         labels['PEH51'] = L.marker([45.521366, -122.680792], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">PEH51</div>', className: 'empty'})
         }).addTo(map);
         markers['SNAP'] = L.marker([36.059914, -115.210194], {icon: customIcon})
-            .bindPopup('SNAP: Switch SUPERNAP 8, Las Vegas, NV, US').addTo(map);
+            .bindPopup('SNAP: Switch SUPERNAP 8, Las Vegas, NV, US')
+            .on('click', function() { selectLocation('SNAP'); })
+            .addTo(map);
         labels['SNAP'] = L.marker([36.059914, -115.210194], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">SNAP</div>', className: 'empty'})
         }).addTo(map);
         markers['T5ALA'] = L.marker([33.921614, -118.386551], {icon: customIcon})
-            .bindPopup('T5ALA: Serverfarm LAX1 El Segundo, El Segundo, CA, US').addTo(map);
+            .bindPopup('T5ALA: Serverfarm LAX1 El Segundo, El Segundo, CA, US')
+            .on('click', function() { selectLocation('T5ALA'); })
+            .addTo(map);
         labels['T5ALA'] = L.marker([33.921614, -118.386551], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">T5ALA</div>', className: 'empty'})
         }).addTo(map);
         markers['TPS19'] = L.marker([47.619446, -122.34811], {icon: customIcon})
-            .bindPopup('TPS19: TierPoint, Seattle, WA, US').addTo(map);
+            .bindPopup('TPS19: TierPoint, Seattle, WA, US')
+            .on('click', function() { selectLocation('TPS19'); })
+            .addTo(map);
         labels['TPS19'] = L.marker([47.619446, -122.34811], {
             icon: L.divIcon({html: '<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">TPS19</div>', className: 'empty'})
         }).addTo(map);
@@ -1656,6 +1943,20 @@
             document.querySelectorAll('th').forEach(th => th.classList.remove('asc', 'desc'));
             document.getElementById('th' + n).classList.add(currentSort.dir);
         }
+        
+        // Select location from map
+        function selectLocation(code) {
+            selectedCode = code;
+            document.getElementById('searchInput').value = code;
+            filterTable();
+        }
+        
+        // Clear selection on map click
+        map.on('click', function() {
+            selectedCode = null;
+            document.getElementById('searchInput').value = '';
+            filterTable();
+        });
         
         // Filter table and map
         function filterTable() {
