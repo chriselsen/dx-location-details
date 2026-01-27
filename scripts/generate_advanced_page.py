@@ -69,7 +69,7 @@ html = f"""<!DOCTYPE html>
 
 # Add table rows
 for loc in sorted_locations:
-    pdb_link = f"<a href='https://www.peeringdb.com/fac/{loc['peeringdb_id']}' target='_blank'>{loc['name']}, {loc['country']}</a>" if loc.get('peeringdb_id') else f"{loc['name']}, {loc['country']}"
+    pdb_link = f"<a href='https://www.peeringdb.com/fac/{loc['peeringdb_id']}' target='_blank'>{loc['name']}</a>" if loc.get('peeringdb_id') else loc['name']
     
     speeds_unlocked = ', '.join(loc.get('port_speeds', []))
     speeds_macsec = ', '.join(loc.get('macsec_capable', []))
