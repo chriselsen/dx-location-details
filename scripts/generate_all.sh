@@ -12,8 +12,8 @@ echo "Step 1: Collecting data from AWS..."
 python3 scripts/collect_data.py
 echo ""
 
-echo "Step 2: Generating markdown table..."
-python3 scripts/generate_github_md.py
+echo "Step 2: Generating CSV file..."
+python3 scripts/generate_csv.py
 echo ""
 
 echo "Step 3: Generating KML files..."

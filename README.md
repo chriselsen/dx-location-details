@@ -9,7 +9,7 @@ Automatically generates a sortable wiki table and KML file of AWS Direct Connect
 
 ## Files
 - `scripts/collect_data.py` - Fetches DX locations from AWS CLI and merges with mapping data
-- `scripts/generate_github_md.py` - Generates GitHub markdown table from collected data
+- `scripts/generate_csv.py` - Generates CSV file from collected data
 - `scripts/generate_github_pages.py` - Generates HTML files for GitHub Pages
 - `scripts/add_location.py` - Interactive tool to add new locations to the mapping
 - `data-structures/location-mapping.json` - Mapping of location codes to PeeringDB IDs and coordinates
@@ -24,7 +24,7 @@ bash scripts/generate_all.sh
 
 This runs steps 1-5 in sequence:
 1. Collect data from AWS
-2. Generate markdown table
+2. Generate CSV file
 3. Generate KML files
 4. Generate world map PNG
 5. Generate GitHub Pages HTML
@@ -51,13 +51,13 @@ python3 scripts/collect_data.py
 
 This creates `data-structures/dx-locations-data.json` with complete location information.
 
-### 2. Generate Markdown Table
-Creates the GitHub markdown table:
+### 2. Generate CSV File
+Creates a CSV file with all location data:
 ```bash
-python3 scripts/generate_github_md.py
+python3 scripts/generate_csv.py
 ```
 
-Output: `output/DX_LOCATIONS.md`
+Output: `output/DX_LOCATIONS.csv`
 
 ### 3. Generate KML Files
 Creates KML files for Google Maps/Earth with custom icon:
@@ -119,10 +119,10 @@ The tool will prompt you for:
 
 If you provide a PeeringDB ID, the tool will automatically fetch the facility name and coordinates from PeeringDB.
 
-After adding a location, regenerate the data and markdown:
+After adding a location, regenerate the data:
 ```bash
 python3 scripts/collect_data.py
-python3 scripts/generate_github_md.py
+python3 scripts/generate_csv.py
 ```
 
 ## Location Code Normalization
