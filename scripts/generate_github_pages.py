@@ -20,7 +20,8 @@ html_content = """<!DOCTYPE html>
     <link rel="icon" type="image/jpeg" href="data:image/jpeg;base64,""" + icon_data + """">
     <style>
         body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
-        h1 { color: #232f3e; }
+        h1 { color: #232f3e; display: flex; align-items: center; gap: 10px; }
+        h1 img { height: 40px; width: 40px; }
         #searchInput { width: 100%; padding: 12px; margin-bottom: 15px; border: 2px solid #ddd; border-radius: 4px; font-size: 16px; }
         table { width: 100%; border-collapse: collapse; background: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
         th { background: #232f3e; color: white; padding: 12px; text-align: left; cursor: pointer; user-select: none; position: relative; }
@@ -34,7 +35,7 @@ html_content = """<!DOCTYPE html>
     </style>
 </head>
 <body>
-    <h1>AWS Direct Connect Locations</h1>
+    <h1><img src="data:image/jpeg;base64,""" + icon_data + """" alt="AWS Direct Connect">AWS Direct Connect Locations</h1>
     <input type="text" id="searchInput" placeholder="Search locations..." onkeyup="filterTable()">
     <table id="dxTable">
         <thead>

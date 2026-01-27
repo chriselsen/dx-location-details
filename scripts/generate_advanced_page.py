@@ -28,13 +28,16 @@ html = f"""<!DOCTYPE html>
     <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
     <style>
         body {{ font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }}
-        h1 {{ color: #232f3e; }}
+        h1 {{ color: #232f3e; display: flex; align-items: center; gap: 10px; }}
+        h1 img {{ height: 40px; width: 40px; }}
         #map {{ height: 500px; width: 100%; margin-bottom: 20px; border: 2px solid #ddd; border-radius: 4px; background: white; position: relative; }}
         .home-button {{ position: absolute; bottom: 10px; left: 10px; z-index: 1000; background: white; border: 2px solid #ccc; border-radius: 4px; padding: 8px 12px; cursor: pointer; font-size: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.2); }}
         .home-button:hover {{ background: #f0f0f0; }}
         .filters {{ display: flex; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }}
         .filters select {{ padding: 8px 12px; border: 2px solid #ddd; border-radius: 4px; font-size: 14px; background: white; cursor: pointer; }}
         .filters select:hover {{ border-color: #999; }}
+        .reset-filters {{ padding: 8px 16px; border: 2px solid #ddd; border-radius: 4px; font-size: 14px; background: white; cursor: pointer; display: none; }}
+        .reset-filters:hover {{ background: #f0f0f0; border-color: #999; }}
         .search-container {{ position: relative; margin-bottom: 15px; }}
         #searchInput {{ width: 100%; padding: 12px 40px 12px 12px; border: 2px solid #ddd; border-radius: 4px; font-size: 16px; box-sizing: border-box; }}
         .clear-btn {{ position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: none; border: none; font-size: 20px; cursor: pointer; color: #999; display: none; }}
@@ -51,7 +54,7 @@ html = f"""<!DOCTYPE html>
     </style>
 </head>
 <body>
-    <h1>AWS Direct Connect Locations</h1>
+    <h1><img src="{icon_data}" alt="AWS Direct Connect">AWS Direct Connect Locations</h1>
     <div id="map">
         <button class="home-button" onclick="resetMap()" title="Reset map view">🏠</button>
     </div>
@@ -67,6 +70,7 @@ html = f"""<!DOCTYPE html>
             <option value="macsec">With MACsec</option>
             <option value="no-macsec">Without MACsec</option>
         </select>
+        <button class="reset-filters" id="resetFilters" onclick="resetFilters()">Reset Filters</button>
     </div>
     <div class="search-container">
         <input type="text" id="searchInput" placeholder="Search locations..." onkeyup="filterTable()" oninput="toggleClearBtn()">
@@ -244,6 +248,14 @@ html += """
             filterTable();
         }
         
+        // Reset filters
+        function resetFilters() {
+            document.getElementById('countryFilter').value = '';
+            document.getElementById('speedFilter').value = '';
+            document.getElementById('macsecFilter').value = '';
+            filterTable();
+        }
+        
         // Filter table and map
         function filterTable() {
             const searchInput = document.getElementById("searchInput").value.toUpperCase();
@@ -253,6 +265,10 @@ html += """
             const table = document.getElementById("dxTable");
             const tr = table.getElementsByTagName("tr");
             const visibleCodes = new Set();
+            
+            // Show/hide reset button
+            const resetBtn = document.getElementById('resetFilters');
+            resetBtn.style.display = (countryFilter || speedFilter || macsecFilter) ? 'block' : 'none';
             
             for (let i = 1; i < tr.length; i++) {
                 const row = tr[i];
