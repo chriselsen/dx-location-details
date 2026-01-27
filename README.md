@@ -3,9 +3,12 @@
 ## Overview
 Automatically generates a sortable wiki table and KML file of AWS Direct Connect locations.
 
-**Live View**: [Interactive Table](https://chriselsen.github.io/dx-location-details/) | [Interactive Map](https://chriselsen.github.io/dx-location-details/map.html)
+**Live View**: [Interactive Table with Map](https://chriselsen.github.io/dx-location-details/)
 
 ![AWS Direct Connect Locations World Map](output/DX_Locations.png)
+
+> [!NOTE]
+> Although I do work for AWS, no internal data is being used in this repo. Mapping of DX locations to PeeringDB locations is solely performed manually through public information.
 
 ## Files
 - `scripts/collect_data.py` - Fetches DX locations from AWS CLI and merges with mapping data
@@ -89,8 +92,7 @@ python3 scripts/generate_github_pages.py
 ```
 
 Outputs:
-- `docs/index.html` - Interactive sortable/filterable table
-- `docs/map.html` - Interactive map
+- `docs/index.html` - Interactive page with integrated map and sortable/filterable table
 
 ### 6. Sync with PeeringDB
 Updates country codes and coordinates from PeeringDB for all locations:
@@ -142,8 +144,7 @@ The system automatically normalizes location codes:
 - `longitude`: Facility longitude
 
 ## GitHub Pages
-The repository publishes interactive HTML pages via GitHub Pages:
-- **Table**: https://chriselsen.github.io/dx-location-details/
-- **Map**: https://chriselsen.github.io/dx-location-details/map.html
+The repository publishes an interactive HTML page via GitHub Pages:
+- **Interactive Table with Map**: https://chriselsen.github.io/dx-location-details/
 
-These are automatically updated daily via GitHub Actions.
+This page is automatically updated daily via GitHub Actions.
