@@ -59,7 +59,7 @@ html = f"""<!DOCTYPE html>
 <body>
     <h1><img src="{icon_data}" alt="AWS Direct Connect">AWS Direct Connect Locations</h1>
     <div id="map">
-        <button class="home-button" onclick="resetMap()" title="Reset map view">🏠</button>
+        <button class="home-button" onclick="resetMap(); event.stopPropagation();" title="Reset map view">🏠</button>
     </div>
     <div class="filters">
         <select id="countryFilter" onchange="filterTable()">
@@ -157,14 +157,27 @@ html += """        </tbody>
             return R * c;
         }
         
-        // Find nearest locations
+        // Find nearest locations from currently visible ones
         function findNearest(lat, lon) {
-            const distances = locationsData.map(loc => ({
-                code: loc.code,
-                lat: loc.lat,
-                lon: loc.lon,
-                distance: getDistance(lat, lon, loc.lat, loc.lon)
-            })).sort((a, b) => a.distance - b.distance);
+            // Get currently visible location codes from table
+            const visibleCodes = new Set();
+            const table = document.getElementById('dxTable');
+            const tr = table.getElementsByTagName('tr');
+            for (let i = 1; i < tr.length; i++) {
+                if (tr[i].style.display !== 'none') {
+                    visibleCodes.add(tr[i].getAttribute('data-code'));
+                }
+            }
+            
+            const distances = locationsData
+                .filter(loc => visibleCodes.has(loc.code))
+                .map(loc => ({
+                    code: loc.code,
+                    lat: loc.lat,
+                    lon: loc.lon,
+                    distance: getDistance(lat, lon, loc.lat, loc.lon)
+                }))
+                .sort((a, b) => a.distance - b.distance);
             return distances.slice(0, 2);
         }
         
@@ -319,12 +332,7 @@ html += """
         
         // Reset map view
         function resetMap() {
-            if (userMarker) {
-                map.removeLayer(userMarker);
-                nearestLines.forEach(line => map.removeLayer(line));
-                nearestLines = [];
-                userMarker = null;
-            }
+            clearUserMarker();
             map.setView([20, 0], 2);
             document.getElementById('searchInput').value = '';
             toggleClearBtn();
@@ -340,12 +348,7 @@ html += """
         
         // Clear search
         function clearSearch() {
-            if (userMarker) {
-                map.removeLayer(userMarker);
-                nearestLines.forEach(line => map.removeLayer(line));
-                nearestLines = [];
-                userMarker = null;
-            }
+            clearUserMarker();
             selectedCode = null;
             document.getElementById('searchInput').value = '';
             document.getElementById('countryFilter').value = '';
@@ -355,8 +358,21 @@ html += """
             filterTable();
         }
         
+        // Clear user marker and lines
+        function clearUserMarker() {
+            if (userMarker) {
+                map.removeLayer(userMarker);
+                nearestLines.forEach(line => map.removeLayer(line));
+                nearestLines = [];
+                userMarker = null;
+            }
+        }
+        
         // Reset filters
         function resetFilters() {
+            clearUserMarker();
+            document.getElementById('searchInput').value = '';
+            toggleClearBtn();
             document.getElementById('countryFilter').value = '';
             document.getElementById('speedFilter').value = '';
             document.getElementById('macsecFilter').value = '';
@@ -365,10 +381,17 @@ html += """
         
         // Filter table and map
         function filterTable() {
+            clearUserMarker();
             const searchInput = document.getElementById("searchInput").value.toUpperCase();
             const countryFilter = document.getElementById("countryFilter").value;
             const speedFilter = document.getElementById("speedFilter").value;
             const macsecFilter = document.getElementById("macsecFilter").value;
+            
+            // Clear search box if any filter is active
+            if (countryFilter || speedFilter || macsecFilter) {
+                document.getElementById('searchInput').value = '';
+                toggleClearBtn();
+            }
             const table = document.getElementById("dxTable");
             const tr = table.getElementsByTagName("tr");
             const visibleCodes = new Set();
