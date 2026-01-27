@@ -3,25 +3,40 @@ import json
 import folium
 from PIL import Image
 import io
+import base64
 
 def generate_map():
     with open('data-structures/dx-locations-data.json', 'r') as f:
         locations = json.load(f)
     
+    # Read the custom icon
+    with open('icons/icon.txt', 'r') as f:
+        icon_data = f.read().strip()
+    
     # Create map centered on world
     m = folium.Map(location=[20, 0], zoom_start=2, tiles='OpenStreetMap')
     
-    # Add markers
+    # Add markers with custom icon and labels
     for loc in locations:
         if loc.get('latitude') and loc.get('longitude'):
-            folium.CircleMarker(
+            # Create custom icon
+            icon = folium.CustomIcon(
+                icon_image=icon_data,
+                icon_size=(24, 24)
+            )
+            
+            # Add marker with icon
+            folium.Marker(
                 location=[float(loc['latitude']), float(loc['longitude'])],
-                radius=4,
                 popup=f"{loc['code']}: {loc['name']}",
-                color='#FF6600',
-                fill=True,
-                fillColor='#FF6600',
-                fillOpacity=0.8
+                icon=icon,
+                tooltip=loc['code']  # This adds the DX code as a label on hover
+            ).add_to(m)
+            
+            # Add permanent label for DX code
+            folium.Marker(
+                location=[float(loc['latitude']), float(loc['longitude'])],
+                icon=folium.DivIcon(html=f'<div style="font-size: 10px; font-weight: bold; color: #232f3e; text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white; white-space: nowrap; margin-top: 20px;">{loc["code"]}</div>')
             ).add_to(m)
     
     # Save as HTML first
