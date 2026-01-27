@@ -65,7 +65,7 @@ for loc in sorted_locations:
     # Region name
     with open('data-structures/region-mapping.json', 'r') as f:
         regions = json.load(f)
-    region_name = regions.get(loc['region'], {}).get('name', loc['region'])
+    region_name = regions.get('aws_region_names', {}).get(loc['region'], loc['region'])
     region_html = f"{region_name}<br><code>{loc['region']}</code>"
     
     html_content += f"""            <tr>
