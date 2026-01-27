@@ -3,10 +3,9 @@ EANB1,"East Africa Data Centres NBO1, Nairobi, KE",KE,af-south-1,af-south-1,"10G
 RCL1,"Rack Centre LGS1, Ikeja, NG",NG,af-south-1,af-south-1,"1G, 10G, 100G","10G, 100G",4411,6.597527,3.373062
 TECT1,"Teraco CT1, Cape Town, ZA",ZA,af-south-1,af-south-1,"1G, 10G, 100G","10G, 100G",1225,-33.970872,18.465223
 EQHK1,"Equinix HK1, Tsuen Wan, HK",HK,ap-east-1,ap-east-1,"1G, 10G, 100G","10G, 100G",170,22.365581,114.11932
-CFT54,"Chief Telecom HD, Taipei, TW",TW,ap-east-2,ap-east-2,"10G, 100G","10G, 100G",5678,25.074213,121.576784
-CHT51,"Chunghwa Telecom, New Taipei City, TW",TW,ap-east-2,ap-east-2,"10G, 100G","10G, 100G",2886,24.994866,121.458263
 ATTC1,"AT Tokyo Chuo Data Center, Tokyo, JP",JP,ap-northeast-1,ap-northeast-1,"1G, 10G, 100G","10G, 100G",738,35.645435,139.793285
 CFT52,"Chief Telecom LY, Taipei, TW",TW,ap-northeast-1,ap-northeast-1,"1G, 10G",,456,25.073467,121.577519
+CHT51,"Chunghwa Telecom, New Taipei City, TW",TW,ap-northeast-1,ap-northeast-1,,,2886,24.994866,121.458263
 EQOS1,"Equinix OS1, Osaka, JP",JP,ap-northeast-1,ap-northeast-1,"1G, 10G, 100G","10G, 100G",1791,34.675774,135.495551
 EQTY2,"Equinix TY2, Tokyo, JP",JP,ap-northeast-1,ap-northeast-1,"1G, 10G, 100G","10G, 100G",452,35.617432,139.748106
 NEIN2,"NEC Inzai, Inzai-shi, JP",JP,ap-northeast-1,ap-northeast-1,"1G, 10G, 100G","10G, 100G",9596,35.808986,140.117527
@@ -24,9 +23,9 @@ TCDK1,"STT Kolkata, Kolkata, IN",IN,ap-south-1,ap-south-1,"1G, 10G, 100G","10G, 
 SFY52,"Sify Rabale, Navi Mumbai, IN",IN,ap-south-1,ap-south-1,"1G, 10G",10G,2465,19.147451,73.014195
 EQSG2,"Equinix SG2, Singapore, SG",SG,ap-southeast-1,ap-southeast-1,"1G, 10G, 100G","10G, 100G",705,1.321502,103.695359
 GSS52,"Global Switch, Singapore, SG",SG,ap-southeast-1,ap-southeast-1,"1G, 10G, 100G","10G, 100G",388,1.336723,103.893828
-AIMMN,"Menara AIMS, Kuala Lumpur, MY",MY,ap-southeast-1,ap-southeast-1,"1G, 10G, 100G","10G, 100G",460,3.14969,101.70634
+AIMMN,"Menara AIMS, Kuala Lumpur, MY",MY,ap-southeast-1,ap-southeast-1,"1G, 10G",10G,460,3.14969,101.70634
 TCCBK,"TCC, Bangkok, TH",TH,ap-southeast-1,ap-southeast-1,"1G, 10G, 100G","10G, 100G",4139,13.663651,100.651345
-EPVM2,"ePLDT VM2, Makati, PH",PH,ap-southeast-1,ap-southeast-1,"1G, 10G, 100G","10G, 100G",4809,14.564484,121.022368
+EPVM2,"ePLDT VM2, Makati, PH",PH,ap-southeast-1,ap-southeast-1,"1G, 10G",10G,4809,14.564484,121.022368
 IAMGI,"iAdvantage MEGA-i, Hong Kong, HK",HK,ap-southeast-1,ap-southeast-1,"1G, 10G, 100G","10G, 100G",225,22.266098,114.246512
 CBHU2,"CDC Hume 2, Hume, AU",AU,ap-southeast-2,ap-southeast-2,"10G, 100G","10G, 100G",12416,-35.388831,149.1683
 DCDH6,"Datacom DH6, Auckland, NZ",NZ,ap-southeast-2,ap-southeast-2,"1G, 10G",10G,2024,-36.740554,174.728988
@@ -40,10 +39,6 @@ NDCS2,"NEXTDC S2, Macquarie Park, AU",AU,ap-southeast-2,ap-southeast-2,"1G, 10G,
 DCIJ3,"DCI Indonesia, Bekasi, Cibitung, ID",ID,ap-southeast-3,ap-southeast-3,"1G, 10G, 100G","10G, 100G",8169,-6.299731,107.089244
 JKT02,"NTT Jakarta 2 Data Center, Jakarta, ID",ID,ap-southeast-3,ap-southeast-3,"1G, 10G, 100G","10G, 100G",5865,-6.237998,106.823452
 EQME2,"Equinix ME2, Melbourne, AU",AU,ap-southeast-4,ap-southeast-4,"1G, 10G, 100G","10G, 100G",1988,-37.821681,144.915458
-CMCHV,"CMC Tower, Hanoi, VN",VN,ap-southeast-5,ap-southeast-5,"1G, 10G, 100G","10G, 100G",15938,21.03042,105.784363
-CSFX1,"Telcohub 1 (CX1), Cyberjaya, MY",MY,ap-southeast-5,ap-southeast-5,"10G, 100G","10G, 100G",1279,2.913224,101.655646
-SPK53,"Spark MDR, Auckland, NZ",NZ,ap-southeast-6,ap-southeast-6,"10G, 100G","10G, 100G",1523,-36.854324,174.764384
-THRA9,"Telehouse Bangkok, Bangkok, TH",TH,ap-southeast-7,ap-southeast-7,"10G, 100G","10G, 100G",13618,13.75161,100.57305
 CGM60,"Cologix MTL3, Montreal, CA",CA,ca-central-1,ca-central-1,"1G, 10G, 100G","10G, 100G",1944,45.497188,-73.570471
 COLV2,"Cologix VAN2, Vancouver, CA",CA,ca-central-1,ca-central-1,"1G, 10G",10G,1881,49.286981,-123.119579
 COLV3,"Cologix VAN3, Vancouver, CA",CA,ca-central-1,ca-central-1,"10G, 100G","10G, 100G",8060,49.259393,-123.029619
@@ -97,7 +92,6 @@ ECTL1,"Edgeconnex, Herzliya, IL",IL,il-central-1,il-central-1,"1G, 10G",10G,1173
 BDC52,"AWS Bahrain DC52, Hamala, BH",BH,me-south-1,me-south-1,"1G, 10G",,8243,26.154542,50.475258
 BDC53,"AWS Bahrain DC53, Askar, BH",BH,me-south-1,me-south-1,"1G, 10G",,8242,26.2285,50.586
 EQMC1,"Equinix MC1 Barka, Muscat, OM",OM,me-south-1,me-south-1,"1G, 10G",10G,9339,23.7280664,57.7950975
-EQMX1,"Equinix MX1, El Marques, MX",MX,mx-central-1,mx-central-1,"10G, 100G","10G, 100G",8434,20.556925,-100.277833
 CIBNA,"Cirion BNARAGMS, Buenos Aires, AR",AR,sa-east-1,sa-east-1,"1G, 10G, 100G","10G, 100G",1550,-34.590248,-58.467164
 CILIM,"Cirion LIMAPUCD, Santiago de Surco, PE",PE,sa-east-1,sa-east-1,"1G, 10G",10G,6248,-12.094823,-76.973532
 EQBG1,"Equinix BG1, Bogota, CO",CO,sa-east-1,sa-east-1,"1G, 10G, 100G","10G, 100G",1354,4.671384,-74.156026

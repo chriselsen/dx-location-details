@@ -79,44 +79,6 @@
     ]
   },
   {
-    "code": "CFT54",
-    "region": "ap-east-2",
-    "name": "Chief Telecom HD, Taipei, TW",
-    "internal_code": null,
-    "peeringdb_id": "5678",
-    "country": "TW",
-    "latitude": "25.074213",
-    "longitude": "121.576784",
-    "ip": null,
-    "port_speeds": [
-      "10G",
-      "100G"
-    ],
-    "macsec_capable": [
-      "10G",
-      "100G"
-    ]
-  },
-  {
-    "code": "CHT51",
-    "region": "ap-east-2",
-    "name": "Chunghwa Telecom, New Taipei City, TW",
-    "internal_code": null,
-    "peeringdb_id": "2886",
-    "country": "TW",
-    "latitude": "24.994866",
-    "longitude": "121.458263",
-    "ip": null,
-    "port_speeds": [
-      "10G",
-      "100G"
-    ],
-    "macsec_capable": [
-      "10G",
-      "100G"
-    ]
-  },
-  {
     "code": "ATTC1",
     "region": "ap-northeast-1",
     "name": "AT Tokyo Chuo Data Center, Tokyo, JP",
@@ -150,6 +112,19 @@
       "1G",
       "10G"
     ],
+    "macsec_capable": []
+  },
+  {
+    "code": "CHT51",
+    "region": "ap-northeast-1",
+    "name": "Chunghwa Telecom, New Taipei City, TW",
+    "internal_code": null,
+    "peeringdb_id": "2886",
+    "country": "TW",
+    "latitude": "24.994866",
+    "longitude": "121.458263",
+    "ip": null,
+    "port_speeds": [],
     "macsec_capable": []
   },
   {
@@ -454,12 +429,10 @@
     "ip": null,
     "port_speeds": [
       "1G",
-      "10G",
-      "100G"
+      "10G"
     ],
     "macsec_capable": [
-      "10G",
-      "100G"
+      "10G"
     ]
   },
   {
@@ -474,12 +447,10 @@
     "ip": null,
     "port_speeds": [
       "1G",
-      "10G",
-      "100G"
+      "10G"
     ],
     "macsec_capable": [
-      "10G",
-      "100G"
+      "10G"
     ]
   },
   {
@@ -784,83 +755,6 @@
     "ip": null,
     "port_speeds": [
       "1G",
-      "10G",
-      "100G"
-    ],
-    "macsec_capable": [
-      "10G",
-      "100G"
-    ]
-  },
-  {
-    "code": "CMCHV",
-    "region": "ap-southeast-5",
-    "name": "CMC Tower, Hanoi, VN",
-    "internal_code": null,
-    "peeringdb_id": "15938",
-    "country": "VN",
-    "latitude": "21.03042",
-    "longitude": "105.784363",
-    "ip": null,
-    "port_speeds": [
-      "1G",
-      "10G",
-      "100G"
-    ],
-    "macsec_capable": [
-      "10G",
-      "100G"
-    ]
-  },
-  {
-    "code": "CSFX1",
-    "region": "ap-southeast-5",
-    "name": "Telcohub 1 (CX1), Cyberjaya, MY",
-    "internal_code": null,
-    "peeringdb_id": "1279",
-    "country": "MY",
-    "latitude": "2.913224",
-    "longitude": "101.655646",
-    "ip": null,
-    "port_speeds": [
-      "10G",
-      "100G"
-    ],
-    "macsec_capable": [
-      "10G",
-      "100G"
-    ]
-  },
-  {
-    "code": "SPK53",
-    "region": "ap-southeast-6",
-    "name": "Spark MDR, Auckland, NZ",
-    "internal_code": null,
-    "peeringdb_id": "1523",
-    "country": "NZ",
-    "latitude": "-36.854324",
-    "longitude": "174.764384",
-    "ip": null,
-    "port_speeds": [
-      "10G",
-      "100G"
-    ],
-    "macsec_capable": [
-      "10G",
-      "100G"
-    ]
-  },
-  {
-    "code": "THRA9",
-    "region": "ap-southeast-7",
-    "name": "Telehouse Bangkok, Bangkok, TH",
-    "internal_code": null,
-    "peeringdb_id": "13618",
-    "country": "TH",
-    "latitude": "13.75161",
-    "longitude": "100.57305",
-    "ip": null,
-    "port_speeds": [
       "10G",
       "100G"
     ],
@@ -1852,25 +1746,6 @@
     ],
     "macsec_capable": [
       "10G"
-    ]
-  },
-  {
-    "code": "EQMX1",
-    "region": "mx-central-1",
-    "name": "Equinix MX1, El Marques, MX",
-    "internal_code": null,
-    "peeringdb_id": "8434",
-    "country": "MX",
-    "latitude": "20.556925",
-    "longitude": "-100.277833",
-    "ip": null,
-    "port_speeds": [
-      "10G",
-      "100G"
-    ],
-    "macsec_capable": [
-      "10G",
-      "100G"
     ]
   },
   {

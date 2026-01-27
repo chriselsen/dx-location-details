@@ -45,24 +45,6 @@
     <Point><coordinates>114.11932,22.365581,0</coordinates></Point>
   </Placemark>
   <Placemark>
-    <name>CFT54</name>
-    <description><![CDATA[
-      <b>Chief Telecom HD, Taipei, TW</b><br/>
-      Region: ap-east-2
-    ]]></description>
-    <styleUrl>#dx-location</styleUrl>
-    <Point><coordinates>121.576784,25.074213,0</coordinates></Point>
-  </Placemark>
-  <Placemark>
-    <name>CHT51</name>
-    <description><![CDATA[
-      <b>Chunghwa Telecom, New Taipei City, TW</b><br/>
-      Region: ap-east-2
-    ]]></description>
-    <styleUrl>#dx-location</styleUrl>
-    <Point><coordinates>121.458263,24.994866,0</coordinates></Point>
-  </Placemark>
-  <Placemark>
     <name>ATTC1</name>
     <description><![CDATA[
       <b>AT Tokyo Chuo Data Center, Tokyo, JP</b><br/>
@@ -79,6 +61,15 @@
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
     <Point><coordinates>121.577519,25.073467,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+    <name>CHT51</name>
+    <description><![CDATA[
+      <b>Chunghwa Telecom, New Taipei City, TW</b><br/>
+      Region: ap-northeast-1
+    ]]></description>
+    <styleUrl>#dx-location</styleUrl>
+    <Point><coordinates>121.458263,24.994866,0</coordinates></Point>
   </Placemark>
   <Placemark>
     <name>EQOS1</name>
@@ -376,42 +367,6 @@
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
     <Point><coordinates>144.915458,-37.821681,0</coordinates></Point>
-  </Placemark>
-  <Placemark>
-    <name>CMCHV</name>
-    <description><![CDATA[
-      <b>CMC Tower, Hanoi, VN</b><br/>
-      Region: ap-southeast-5
-    ]]></description>
-    <styleUrl>#dx-location</styleUrl>
-    <Point><coordinates>105.784363,21.03042,0</coordinates></Point>
-  </Placemark>
-  <Placemark>
-    <name>CSFX1</name>
-    <description><![CDATA[
-      <b>Telcohub 1 (CX1), Cyberjaya, MY</b><br/>
-      Region: ap-southeast-5
-    ]]></description>
-    <styleUrl>#dx-location</styleUrl>
-    <Point><coordinates>101.655646,2.913224,0</coordinates></Point>
-  </Placemark>
-  <Placemark>
-    <name>SPK53</name>
-    <description><![CDATA[
-      <b>Spark MDR, Auckland, NZ</b><br/>
-      Region: ap-southeast-6
-    ]]></description>
-    <styleUrl>#dx-location</styleUrl>
-    <Point><coordinates>174.764384,-36.854324,0</coordinates></Point>
-  </Placemark>
-  <Placemark>
-    <name>THRA9</name>
-    <description><![CDATA[
-      <b>Telehouse Bangkok, Bangkok, TH</b><br/>
-      Region: ap-southeast-7
-    ]]></description>
-    <styleUrl>#dx-location</styleUrl>
-    <Point><coordinates>100.57305,13.75161,0</coordinates></Point>
   </Placemark>
   <Placemark>
     <name>151FS</name>
@@ -889,15 +844,6 @@
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
     <Point><coordinates>57.7950975,23.7280664,0</coordinates></Point>
-  </Placemark>
-  <Placemark>
-    <name>EQMX1</name>
-    <description><![CDATA[
-      <b>Equinix MX1, El Marques, MX</b><br/>
-      Region: mx-central-1
-    ]]></description>
-    <styleUrl>#dx-location</styleUrl>
-    <Point><coordinates>-100.277833,20.556925,0</coordinates></Point>
   </Placemark>
   <Placemark>
     <name>CIBNA</name>
