@@ -9,8 +9,10 @@
         h1 { color: #232f3e; }
         #searchInput { width: 100%; padding: 12px; margin-bottom: 15px; border: 2px solid #ddd; border-radius: 4px; font-size: 16px; }
         table { width: 100%; border-collapse: collapse; background: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        th { background: #232f3e; color: white; padding: 12px; text-align: left; cursor: pointer; user-select: none; }
+        th { background: #232f3e; color: white; padding: 12px; text-align: left; cursor: pointer; user-select: none; position: relative; }
         th:hover { background: #37475a; }
+        th.asc::after { content: ' ▲'; position: absolute; right: 10px; }
+        th.desc::after { content: ' ▼'; position: absolute; right: 10px; }
         td { padding: 10px; border-bottom: 1px solid #ddd; }
         tr:hover { background: #f9f9f9; }
         a { color: #0073bb; text-decoration: none; }
@@ -23,10 +25,10 @@
     <table id="dxTable">
         <thead>
             <tr>
-                <th onclick="sortTable(0)">Location ⇅</th>
-                <th onclick="sortTable(1)">Port Speeds ⇅</th>
-                <th onclick="sortTable(2)">Code ⇅</th>
-                <th onclick="sortTable(3)">Region ⇅</th>
+                <th onclick="sortTable(0)" id="th0">Location</th>
+                <th onclick="sortTable(1)" id="th1">Port Speeds</th>
+                <th onclick="sortTable(2)" id="th2">Code</th>
+                <th onclick="sortTable(3)" id="th3">Region</th>
             </tr>
         </thead>
         <tbody>
@@ -891,42 +893,39 @@
         </tbody>
     </table>
     <script>
+        let currentSort = { col: -1, dir: 'asc' };
+        
         function sortTable(n) {
             const table = document.getElementById("dxTable");
-            let switching = true, shouldSwitch, i, x, y, dir = "asc", switchcount = 0;
-            while (switching) {
-                switching = false;
-                const rows = table.rows;
-                for (i = 1; i < (rows.length - 1); i++) {
-                    shouldSwitch = false;
-                    x = rows[i].getElementsByTagName("TD")[n];
-                    y = rows[i + 1].getElementsByTagName("TD")[n];
-                    const xContent = x.textContent || x.innerText;
-                    const yContent = y.textContent || y.innerText;
-                    if (dir == "asc") {
-                        if (xContent.toLowerCase() > yContent.toLowerCase()) {
-                            shouldSwitch = true;
-                            break;
-                        }
-                    } else if (dir == "desc") {
-                        if (xContent.toLowerCase() < yContent.toLowerCase()) {
-                            shouldSwitch = true;
-                            break;
-                        }
-                    }
-                }
-                if (shouldSwitch) {
-                    rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-                    switching = true;
-                    switchcount++;
-                } else {
-                    if (switchcount == 0 && dir == "asc") {
-                        dir = "desc";
-                        switching = true;
-                    }
-                }
+            const tbody = table.tBodies[0];
+            const rows = Array.from(tbody.rows);
+            
+            // Toggle direction
+            if (currentSort.col === n) {
+                currentSort.dir = currentSort.dir === 'asc' ? 'desc' : 'asc';
+            } else {
+                currentSort.col = n;
+                currentSort.dir = 'asc';
             }
+            
+            // Sort rows
+            rows.sort((a, b) => {
+                const aText = a.cells[n].textContent.trim();
+                const bText = b.cells[n].textContent.trim();
+                const compare = aText.localeCompare(bText, undefined, { numeric: true });
+                return currentSort.dir === 'asc' ? compare : -compare;
+            });
+            
+            // Reorder rows
+            rows.forEach(row => tbody.appendChild(row));
+            
+            // Update headers
+            document.querySelectorAll('th').forEach(th => {
+                th.classList.remove('asc', 'desc');
+            });
+            document.getElementById('th' + n).classList.add(currentSort.dir);
         }
+        
         function filterTable() {
             const input = document.getElementById("searchInput");
             const filter = input.value.toUpperCase();
