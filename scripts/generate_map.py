@@ -41,6 +41,17 @@ def generate_map():
     
     # Save as HTML first
     m.save('output/DX_Locations_map.html')
+    
+    # Add favicon to the generated HTML
+    with open('output/DX_Locations_map.html', 'r') as f:
+        html_content = f.read()
+    
+    favicon_tag = f'<link rel="icon" type="image/jpeg" href="{icon_data}">'
+    html_content = html_content.replace('<head>', f'<head>\n    {favicon_tag}')
+    
+    with open('output/DX_Locations_map.html', 'w') as f:
+        f.write(html_content)
+    
     print("Generated: output/DX_Locations_map.html")
     
     # Try to save as PNG using selenium if available

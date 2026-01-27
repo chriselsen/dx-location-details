@@ -23,6 +23,7 @@ html = f"""<!DOCTYPE html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AWS Direct Connect Locations - Advanced View</title>
+    <link rel="icon" type="image/jpeg" href="{icon_data}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
     <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
     <style>
@@ -31,6 +32,9 @@ html = f"""<!DOCTYPE html>
         #map {{ height: 500px; width: 100%; margin-bottom: 20px; border: 2px solid #ddd; border-radius: 4px; background: white; position: relative; }}
         .home-button {{ position: absolute; bottom: 10px; left: 10px; z-index: 1000; background: white; border: 2px solid #ccc; border-radius: 4px; padding: 8px 12px; cursor: pointer; font-size: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.2); }}
         .home-button:hover {{ background: #f0f0f0; }}
+        .filters {{ display: flex; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }}
+        .filters select {{ padding: 8px 12px; border: 2px solid #ddd; border-radius: 4px; font-size: 14px; background: white; cursor: pointer; }}
+        .filters select:hover {{ border-color: #999; }}
         .search-container {{ position: relative; margin-bottom: 15px; }}
         #searchInput {{ width: 100%; padding: 12px 40px 12px 12px; border: 2px solid #ddd; border-radius: 4px; font-size: 16px; box-sizing: border-box; }}
         .clear-btn {{ position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: none; border: none; font-size: 20px; cursor: pointer; color: #999; display: none; }}
@@ -51,6 +55,19 @@ html = f"""<!DOCTYPE html>
     <div id="map">
         <button class="home-button" onclick="resetMap()" title="Reset map view">🏠</button>
     </div>
+    <div class="filters">
+        <select id="countryFilter" onchange="filterTable()">
+            <option value="">All Countries</option>
+        </select>
+        <select id="speedFilter" onchange="filterTable()">
+            <option value="">All Port Speeds</option>
+        </select>
+        <select id="macsecFilter" onchange="filterTable()">
+            <option value="">All (MACsec & Non-MACsec)</option>
+            <option value="macsec">With MACsec</option>
+            <option value="no-macsec">Without MACsec</option>
+        </select>
+    </div>
     <div class="search-container">
         <input type="text" id="searchInput" placeholder="Search locations..." onkeyup="filterTable()" oninput="toggleClearBtn()">
         <button class="clear-btn" id="clearBtn" onclick="clearSearch()">✕</button>
@@ -67,7 +84,7 @@ html = f"""<!DOCTYPE html>
         <tbody>
 """
 
-# Add table rows
+# Add table rows with data attributes
 for loc in sorted_locations:
     pdb_link = f"<a href='https://www.peeringdb.com/fac/{loc['peeringdb_id']}' target='_blank'>{loc['name']}</a>" if loc.get('peeringdb_id') else loc['name']
     
@@ -85,7 +102,12 @@ for loc in sorted_locations:
     region_name = region_mapping.get('aws_region_names', {}).get(loc['region'], loc['region'])
     region_html = f"{region_name}<br><code>{loc['region']}</code>"
     
-    html += f"""            <tr data-code="{loc['code']}">
+    # Data attributes for filtering
+    country = loc.get('country', '')
+    port_speeds = ','.join(loc.get('port_speeds', []))
+    macsec_speeds = ','.join(loc.get('macsec_capable', []))
+    
+    html += f"""            <tr data-code="{loc['code']}" data-country="{country}" data-speeds="{port_speeds}" data-macsec="{macsec_speeds}">
                 <td>{pdb_link}</td>
                 <td>{speeds_html}</td>
                 <td>{map_link}</td>
@@ -112,6 +134,32 @@ html += """        </tbody>
         const markers = {};
         const labels = {};
         let selectedCode = null;
+        
+        // Populate filter dropdowns
+        const countries = new Set();
+        const speeds = new Set();
+        document.querySelectorAll('tr[data-country]').forEach(tr => {
+            if (tr.dataset.country) countries.add(tr.dataset.country);
+            if (tr.dataset.speeds) tr.dataset.speeds.split(',').forEach(s => speeds.add(s));
+            if (tr.dataset.macsec) tr.dataset.macsec.split(',').forEach(s => speeds.add(s));
+        });
+        
+        Array.from(countries).sort().forEach(c => {
+            const opt = document.createElement('option');
+            opt.value = c;
+            opt.textContent = c;
+            document.getElementById('countryFilter').appendChild(opt);
+        });
+        
+        Array.from(speeds).sort((a,b) => {
+            const order = {'1G':1, '10G':2, '100G':3, '400G':4};
+            return (order[a]||99) - (order[b]||99);
+        }).forEach(s => {
+            const opt = document.createElement('option');
+            opt.value = s;
+            opt.textContent = s;
+            document.getElementById('speedFilter').appendChild(opt);
+        });
         
 """
 
@@ -189,31 +237,72 @@ html += """
         function clearSearch() {
             selectedCode = null;
             document.getElementById('searchInput').value = '';
+            document.getElementById('countryFilter').value = '';
+            document.getElementById('speedFilter').value = '';
+            document.getElementById('macsecFilter').value = '';
             toggleClearBtn();
             filterTable();
         }
         
         // Filter table and map
         function filterTable() {
-            const input = document.getElementById("searchInput");
-            const filter = input.value.toUpperCase();
+            const searchInput = document.getElementById("searchInput").value.toUpperCase();
+            const countryFilter = document.getElementById("countryFilter").value;
+            const speedFilter = document.getElementById("speedFilter").value;
+            const macsecFilter = document.getElementById("macsecFilter").value;
             const table = document.getElementById("dxTable");
             const tr = table.getElementsByTagName("tr");
             const visibleCodes = new Set();
             
             for (let i = 1; i < tr.length; i++) {
-                const tds = tr[i].getElementsByTagName("td");
-                let found = false;
-                for (let j = 0; j < tds.length; j++) {
-                    const txtValue = tds[j].textContent || tds[j].innerText;
-                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                        found = true;
-                        break;
+                const row = tr[i];
+                const country = row.dataset.country || '';
+                const speeds = row.dataset.speeds || '';
+                const macsec = row.dataset.macsec || '';
+                
+                // Text search
+                let textMatch = true;
+                if (searchInput) {
+                    const tds = row.getElementsByTagName("td");
+                    textMatch = false;
+                    for (let j = 0; j < tds.length; j++) {
+                        const txtValue = tds[j].textContent || tds[j].innerText;
+                        if (txtValue.toUpperCase().indexOf(searchInput) > -1) {
+                            textMatch = true;
+                            break;
+                        }
                     }
                 }
-                tr[i].style.display = found ? "" : "none";
-                if (found) {
-                    visibleCodes.add(tr[i].getAttribute('data-code'));
+                
+                // Country filter
+                const countryMatch = !countryFilter || country === countryFilter;
+                
+                // Speed filter
+                let speedMatch = true;
+                if (speedFilter) {
+                    if (macsecFilter === 'macsec') {
+                        speedMatch = macsec.includes(speedFilter);
+                    } else if (macsecFilter === 'no-macsec') {
+                        speedMatch = speeds.includes(speedFilter) && !macsec.includes(speedFilter);
+                    } else {
+                        speedMatch = speeds.includes(speedFilter) || macsec.includes(speedFilter);
+                    }
+                }
+                
+                // MACsec filter (when no speed selected)
+                let macsecMatch = true;
+                if (!speedFilter && macsecFilter) {
+                    if (macsecFilter === 'macsec') {
+                        macsecMatch = macsec.length > 0;
+                    } else if (macsecFilter === 'no-macsec') {
+                        macsecMatch = speeds.length > 0;
+                    }
+                }
+                
+                const show = textMatch && countryMatch && speedMatch && macsecMatch;
+                row.style.display = show ? "" : "none";
+                if (show) {
+                    visibleCodes.add(row.getAttribute('data-code'));
                 }
             }
             

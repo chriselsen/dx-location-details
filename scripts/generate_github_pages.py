@@ -6,6 +6,10 @@ import shutil
 with open('data-structures/dx-locations-data.json', 'r') as f:
     locations = json.load(f)
 
+# Read the icon
+with open('icons/icon.txt', 'r') as f:
+    icon_data = f.read().strip()
+
 # Generate table HTML
 html_content = """<!DOCTYPE html>
 <html lang="en">
@@ -13,6 +17,7 @@ html_content = """<!DOCTYPE html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AWS Direct Connect Locations</title>
+    <link rel="icon" type="image/jpeg" href="data:image/jpeg;base64,""" + icon_data + """">
     <style>
         body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
         h1 { color: #232f3e; }
