@@ -52,9 +52,9 @@ for loc in sorted_locations:
     # Port speeds
     speeds_unlocked = ', '.join(loc.get('port_speeds', []))
     speeds_macsec = ', '.join(loc.get('macsec_capable', []))
-    speeds_html = f"🔓 {speeds_unlocked}" if speeds_unlocked else ""
+    speeds_html = f"<span title='Without MACsec'>🔓</span> {speeds_unlocked}" if speeds_unlocked else ""
     if speeds_macsec:
-        speeds_html += f"<br>🔒 {speeds_macsec}"
+        speeds_html += f"<br><span title='With MACsec'>🔒</span> {speeds_macsec}"
     
     # Map link
     if loc.get('latitude') and loc.get('longitude'):
