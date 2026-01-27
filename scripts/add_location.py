@@ -15,6 +15,7 @@ def get_peeringdb_info(peeringdb_id):
                 fac = data['data'][0]
                 return {
                     'name': fac.get('name'),
+                    'city': fac.get('city'),
                     'latitude': fac.get('latitude'),
                     'longitude': fac.get('longitude'),
                     'country': fac.get('country')
@@ -61,8 +62,12 @@ def main():
         info = get_peeringdb_info(peeringdb_id)
         if info:
             print(f"  Name: {info['name']}")
+            print(f"  City: {info['city']}")
             print(f"  Country: {info['country']}")
             print(f"  Coordinates: {info['latitude']}, {info['longitude']}")
+            
+            if info['city']:
+                entry['city'] = info['city']
             
             if info['country']:
                 entry['country'] = info['country']
