@@ -141,6 +141,99 @@ html += """        </tbody>
         const markers = {};
         const labels = {};
         let selectedCode = null;
+        let userMarker = null;
+        let nearestLines = [];
+        const locationsData = """ + json.dumps([{"code": loc['code'], "lat": loc.get('latitude'), "lon": loc.get('longitude')} for loc in locations if loc.get('latitude') and loc.get('longitude')]) + """;
+        
+        // Haversine distance calculation
+        function getDistance(lat1, lon1, lat2, lon2) {
+            const R = 6371; // Earth radius in km
+            const dLat = (lat2 - lat1) * Math.PI / 180;
+            const dLon = (lon2 - lon1) * Math.PI / 180;
+            const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+                      Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+                      Math.sin(dLon/2) * Math.sin(dLon/2);
+            const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+            return R * c;
+        }
+        
+        // Find nearest locations
+        function findNearest(lat, lon) {
+            const distances = locationsData.map(loc => ({
+                code: loc.code,
+                lat: loc.lat,
+                lon: loc.lon,
+                distance: getDistance(lat, lon, loc.lat, loc.lon)
+            })).sort((a, b) => a.distance - b.distance);
+            return distances.slice(0, 2);
+        }
+        
+        // Place user marker
+        map.on('click', function(e) {
+            if (userMarker) {
+                map.removeLayer(userMarker);
+                nearestLines.forEach(line => map.removeLayer(line));
+                nearestLines = [];
+                document.getElementById('searchInput').value = '';
+                toggleClearBtn();
+                filterTable();
+                userMarker = null;
+                return;
+            }
+            
+            const userIcon = L.icon({
+                iconUrl: 'data:image/svg+xml;base64,' + btoa('<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#e74c3c" stroke="white" stroke-width="2"><circle cx="12" cy="12" r="8"/></svg>'),
+                iconSize: [24, 24]
+            });
+            
+            userMarker = L.marker([e.latlng.lat, e.latlng.lng], {icon: userIcon})
+                .addTo(map)
+                .on('click', function(ev) {
+                    L.DomEvent.stopPropagation(ev);
+                    map.removeLayer(userMarker);
+                    nearestLines.forEach(line => map.removeLayer(line));
+                    nearestLines = [];
+                    userMarker = null;
+                    document.getElementById('searchInput').value = '';
+                    toggleClearBtn();
+                    filterTable();
+                });
+            
+            const nearest = findNearest(e.latlng.lat, e.latlng.lng);
+            
+            nearest.forEach(loc => {
+                const line = L.polyline([[e.latlng.lat, e.latlng.lng], [loc.lat, loc.lon]], {
+                    color: '#0073bb',
+                    weight: 2,
+                    opacity: 0.7
+                }).addTo(map);
+                nearestLines.push(line);
+            });
+            
+            const codes = nearest.map(loc => loc.code).join('|');
+            document.getElementById('searchInput').value = codes;
+            toggleClearBtn();
+            
+            // Show only nearest locations
+            const nearestCodes = new Set(nearest.map(loc => loc.code));
+            const table = document.getElementById("dxTable");
+            const tr = table.getElementsByTagName("tr");
+            for (let i = 1; i < tr.length; i++) {
+                const code = tr[i].getAttribute('data-code');
+                tr[i].style.display = nearestCodes.has(code) ? "" : "none";
+            }
+            
+            // Show only nearest markers
+            Object.keys(markers).forEach(code => {
+                if (nearestCodes.has(code)) {
+                    map.addLayer(markers[code]);
+                    map.addLayer(labels[code]);
+                } else {
+                    map.removeLayer(markers[code]);
+                    map.removeLayer(labels[code]);
+                }
+            });
+        });
         
         // Populate filter dropdowns
         const countries = new Set();
@@ -217,23 +310,25 @@ html += """
         
         // Select location from map
         function selectLocation(code) {
+            if (userMarker) return; // Don't allow selection when user marker is active
             selectedCode = code;
             document.getElementById('searchInput').value = code;
             toggleClearBtn();
             filterTable();
         }
         
-        // Clear selection on map click
-        map.on('click', function() {
-            selectedCode = null;
+        // Reset map view
+        function resetMap() {
+            if (userMarker) {
+                map.removeLayer(userMarker);
+                nearestLines.forEach(line => map.removeLayer(line));
+                nearestLines = [];
+                userMarker = null;
+            }
+            map.setView([20, 0], 2);
             document.getElementById('searchInput').value = '';
             toggleClearBtn();
             filterTable();
-        });
-        
-        // Reset map view
-        function resetMap() {
-            map.setView([20, 0], 2);
         }
         
         // Toggle clear button visibility
@@ -245,6 +340,12 @@ html += """
         
         // Clear search
         function clearSearch() {
+            if (userMarker) {
+                map.removeLayer(userMarker);
+                nearestLines.forEach(line => map.removeLayer(line));
+                nearestLines = [];
+                userMarker = null;
+            }
             selectedCode = null;
             document.getElementById('searchInput').value = '';
             document.getElementById('countryFilter').value = '';
