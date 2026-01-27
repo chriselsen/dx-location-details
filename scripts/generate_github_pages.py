@@ -47,7 +47,7 @@ html_content = """<!DOCTYPE html>
 sorted_locations = sorted(locations, key=lambda x: (x['region'], x['name']))
 
 for loc in sorted_locations:
-    pdb_link = f"<a href='https://www.peeringdb.com/fac/{loc['peeringdb_id']}'>{loc['name']}, {loc['country']}</a>" if loc.get('peeringdb_id') else f"{loc['name']}, {loc['country']}"
+    pdb_link = f"<a href='https://www.peeringdb.com/fac/{loc['peeringdb_id']}' target='_blank'>{loc['name']}, {loc['country']}</a>" if loc.get('peeringdb_id') else f"{loc['name']}, {loc['country']}"
     
     # Port speeds
     speeds_unlocked = ', '.join(loc.get('port_speeds', []))
@@ -58,7 +58,7 @@ for loc in sorted_locations:
     
     # Map link
     if loc.get('latitude') and loc.get('longitude'):
-        map_link = f"<a href='https://maps.google.com/?q={loc['latitude']},{loc['longitude']}'>{loc['code']}</a>"
+        map_link = f"<a href='https://maps.google.com/?q={loc['latitude']},{loc['longitude']}' target='_blank'>{loc['code']}</a>"
     else:
         map_link = loc['code']
     
