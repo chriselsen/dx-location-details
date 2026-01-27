@@ -25,28 +25,73 @@ aws iam create-open-id-connect-provider \
 
 ### 2. Create IAM Role for GitHub Actions
 
-#### a. Update Trust Policy
+#### a. Create Trust Policy and Role
 
-Edit `iam/github-oidc-trust-policy.json` and replace:
-- `<AWS_ACCOUNT_ID>` with your AWS account ID
-- `<GITHUB_ORG>/<GITHUB_REPO>` with your GitHub organization and repository name (e.g., `chriselsen/dx-location-details`)
-
-#### b. Create the IAM Role
+Replace `<AWS_ACCOUNT_ID>` with your AWS account ID and `<GITHUB_ORG>/<GITHUB_REPO>` with your repository (e.g., `chriselsen/dx-location-details`):
 
 ```bash
+# Create trust policy
+cat > github-oidc-trust-policy.json << 'EOF'
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "Federated": "arn:aws:iam::<AWS_ACCOUNT_ID>:oidc-provider/token.actions.githubusercontent.com"
+      },
+      "Action": "sts:AssumeRoleWithWebIdentity",
+      "Condition": {
+        "StringEquals": {
+          "token.actions.githubusercontent.com:aud": "sts.amazonaws.com"
+        },
+        "StringLike": {
+          "token.actions.githubusercontent.com:sub": "repo:<GITHUB_ORG>/<GITHUB_REPO>:*"
+        }
+      }
+    }
+  ]
+}
+EOF
+
+# Create the role
 aws iam create-role \
   --role-name GitHubActions-DXLocationDetails \
-  --assume-role-policy-document file://iam/github-oidc-trust-policy.json \
+  --assume-role-policy-document file://github-oidc-trust-policy.json \
   --description "Role for GitHub Actions to query AWS Direct Connect locations"
 ```
 
-#### c. Attach Permissions Policy
+#### b. Create and Attach Permissions Policy
 
 ```bash
+# Create permissions policy
+cat > github-oidc-permissions-policy.json << 'EOF'
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "directconnect:DescribeLocations"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "account:ListRegions"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
+EOF
+
+# Attach the policy to the role
 aws iam put-role-policy \
   --role-name GitHubActions-DXLocationDetails \
   --policy-name DXLocationQuery \
-  --policy-document file://iam/github-oidc-permissions-policy.json
+  --policy-document file://github-oidc-permissions-policy.json
 ```
 
 ### 3. Configure GitHub Repository
