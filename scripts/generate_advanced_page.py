@@ -31,7 +31,10 @@ html = f"""<!DOCTYPE html>
         #map {{ height: 500px; width: 100%; margin-bottom: 20px; border: 2px solid #ddd; border-radius: 4px; background: white; position: relative; }}
         .home-button {{ position: absolute; bottom: 10px; left: 10px; z-index: 1000; background: white; border: 2px solid #ccc; border-radius: 4px; padding: 8px 12px; cursor: pointer; font-size: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.2); }}
         .home-button:hover {{ background: #f0f0f0; }}
-        #searchInput {{ width: 100%; padding: 12px; margin-bottom: 15px; border: 2px solid #ddd; border-radius: 4px; font-size: 16px; }}
+        .search-container {{ position: relative; margin-bottom: 15px; }}
+        #searchInput {{ width: 100%; padding: 12px 40px 12px 12px; border: 2px solid #ddd; border-radius: 4px; font-size: 16px; box-sizing: border-box; }}
+        .clear-btn {{ position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: none; border: none; font-size: 20px; cursor: pointer; color: #999; display: none; }}
+        .clear-btn:hover {{ color: #333; }}
         table {{ width: 100%; border-collapse: collapse; background: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }}
         th {{ background: #232f3e; color: white; padding: 12px; text-align: left; cursor: pointer; user-select: none; position: relative; }}
         th:hover {{ background: #37475a; }}
@@ -48,7 +51,10 @@ html = f"""<!DOCTYPE html>
     <div id="map">
         <button class="home-button" onclick="resetMap()" title="Reset map view">🏠</button>
     </div>
-    <input type="text" id="searchInput" placeholder="Search locations..." onkeyup="filterTable()">
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search locations..." onkeyup="filterTable()" oninput="toggleClearBtn()">
+        <button class="clear-btn" id="clearBtn" onclick="clearSearch()">✕</button>
+    </div>
     <table id="dxTable">
         <thead>
             <tr>
@@ -155,6 +161,7 @@ html += """
         function selectLocation(code) {
             selectedCode = code;
             document.getElementById('searchInput').value = code;
+            toggleClearBtn();
             filterTable();
         }
         
@@ -162,12 +169,28 @@ html += """
         map.on('click', function() {
             selectedCode = null;
             document.getElementById('searchInput').value = '';
+            toggleClearBtn();
             filterTable();
         });
         
         // Reset map view
         function resetMap() {
             map.setView([20, 0], 2);
+        }
+        
+        // Toggle clear button visibility
+        function toggleClearBtn() {
+            const input = document.getElementById('searchInput');
+            const clearBtn = document.getElementById('clearBtn');
+            clearBtn.style.display = input.value ? 'block' : 'none';
+        }
+        
+        // Clear search
+        function clearSearch() {
+            selectedCode = null;
+            document.getElementById('searchInput').value = '';
+            toggleClearBtn();
+            filterTable();
         }
         
         // Filter table and map
