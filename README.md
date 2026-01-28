@@ -1,5 +1,7 @@
 # DX Location Details Table Generator
 
+[![Daily DX Location Update](https://github.com/chriselsen/dx-location-details/actions/workflows/daily-update.yml/badge.svg)](https://github.com/chriselsen/dx-location-details/actions/workflows/daily-update.yml)
+
 ## Overview
 Automatically generates a sortable wiki table and KML file of AWS Direct Connect locations.
 
