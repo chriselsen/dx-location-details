@@ -351,6 +351,7 @@ html += """
         // Reset map view
         function resetMap() {
             clearUserMarker();
+            document.querySelectorAll('#dxTable tbody tr').forEach(row => row.classList.remove('highlighted'));
             map.setView([20, 0], 2);
             document.getElementById('searchInput').value = '';
             toggleClearBtn();
@@ -367,6 +368,7 @@ html += """
         // Clear search
         function clearSearch() {
             clearUserMarker();
+            document.querySelectorAll('#dxTable tbody tr').forEach(row => row.classList.remove('highlighted'));
             selectedCode = null;
             document.getElementById('searchInput').value = '';
             document.getElementById('countryFilter').value = '';
@@ -400,6 +402,7 @@ html += """
         // Filter table and map
         function filterTable() {
             clearUserMarker();
+            document.querySelectorAll('#dxTable tbody tr').forEach(row => row.classList.remove('highlighted'));
             const searchInput = document.getElementById("searchInput").value.toUpperCase();
             const countryFilter = document.getElementById("countryFilter").value;
             const speedFilter = document.getElementById("speedFilter").value;
