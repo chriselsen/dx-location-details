@@ -280,7 +280,7 @@ html += """        </tbody>
             row.addEventListener('click', function(e) {
                 if (e.target.tagName === 'A') return;
                 const code = this.getAttribute('data-code');
-                if (code) selectLocation(code);
+                if (code) zoomToLocation(code);
             });
         });
         
@@ -331,7 +331,7 @@ html += """
             document.getElementById('th' + n).classList.add(currentSort.dir);
         }
         
-        // Select location from map or table
+        // Select location from map
         function selectLocation(code) {
             if (userMarker) return;
             const loc = locationsData.find(l => l.code === code);
@@ -341,6 +341,15 @@ html += """
             document.getElementById('searchInput').value = code;
             toggleClearBtn();
             filterTable();
+        }
+        
+        // Zoom to location from table row
+        function zoomToLocation(code) {
+            if (userMarker) return;
+            const loc = locationsData.find(l => l.code === code);
+            if (loc) {
+                map.setView([loc.lat, loc.lon], 8);
+            }
         }
         
         // Reset map view
