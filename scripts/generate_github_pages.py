@@ -49,6 +49,7 @@ html = f"""<!DOCTYPE html>
         th.desc::after {{ content: ' ▼'; position: absolute; right: 10px; }}
         td {{ padding: 10px; border-bottom: 1px solid #ddd; }}
         tbody tr {{ cursor: pointer; }}
+        tbody tr.highlighted {{ background: #fffacd !important; }}
         tr:hover {{ background: #f9f9f9; }}
         a {{ color: #0073bb; text-decoration: none; }}
         a:hover {{ text-decoration: underline; }}
@@ -337,6 +338,13 @@ html += """
             const loc = locationsData.find(l => l.code === code);
             if (loc) {
                 map.setView([loc.lat, loc.lon], 8);
+            }
+            // Highlight and scroll to row
+            document.querySelectorAll('#dxTable tbody tr').forEach(row => row.classList.remove('highlighted'));
+            const row = document.querySelector(`#dxTable tbody tr[data-code="${code}"]`);
+            if (row) {
+                row.classList.add('highlighted');
+                row.scrollIntoView({ behavior: 'smooth', block: 'center' });
             }
         }
         
