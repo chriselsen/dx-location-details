@@ -49,7 +49,6 @@ html = f"""<!DOCTYPE html>
         th.desc::after {{ content: ' ▼'; position: absolute; right: 10px; }}
         td {{ padding: 10px; border-bottom: 1px solid #ddd; }}
         tbody tr {{ cursor: pointer; }}
-        tbody tr.highlighted {{ background: #fffacd !important; }}
         tr:hover {{ background: #f9f9f9; }}
         a {{ color: #0073bb; text-decoration: none; }}
         a:hover {{ text-decoration: underline; }}
@@ -339,19 +338,14 @@ html += """
             if (loc) {
                 map.setView([loc.lat, loc.lon], 8);
             }
-            // Highlight and scroll to row
-            document.querySelectorAll('#dxTable tbody tr').forEach(row => row.classList.remove('highlighted'));
-            const row = document.querySelector(`#dxTable tbody tr[data-code="${code}"]`);
-            if (row) {
-                row.classList.add('highlighted');
-                row.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            }
+            document.getElementById('searchInput').value = code;
+            toggleClearBtn();
+            filterTable();
         }
         
         // Reset map view
         function resetMap() {
             clearUserMarker();
-            document.querySelectorAll('#dxTable tbody tr').forEach(row => row.classList.remove('highlighted'));
             map.setView([20, 0], 2);
             document.getElementById('searchInput').value = '';
             toggleClearBtn();
@@ -368,7 +362,6 @@ html += """
         // Clear search
         function clearSearch() {
             clearUserMarker();
-            document.querySelectorAll('#dxTable tbody tr').forEach(row => row.classList.remove('highlighted'));
             selectedCode = null;
             document.getElementById('searchInput').value = '';
             document.getElementById('countryFilter').value = '';
@@ -402,7 +395,6 @@ html += """
         // Filter table and map
         function filterTable() {
             clearUserMarker();
-            document.querySelectorAll('#dxTable tbody tr').forEach(row => row.classList.remove('highlighted'));
             const searchInput = document.getElementById("searchInput").value.toUpperCase();
             const countryFilter = document.getElementById("countryFilter").value;
             const speedFilter = document.getElementById("speedFilter").value;
