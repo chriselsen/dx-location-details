@@ -9,6 +9,15 @@
     </IconStyle>
   </Style>
   <Placemark>
+    <name>EQMX1</name>
+    <description><![CDATA[
+      <b>Equinix MX1, El Marques, MX</b><br/>
+      Region: mx-central-1
+    ]]></description>
+    <styleUrl>#dx-location</styleUrl>
+    <Point><coordinates>-100.277833,20.556925,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
     <name>CIBNA</name>
     <description><![CDATA[
       <b>Cirion BNARAGMS, Buenos Aires, AR</b><br/>
