@@ -48,6 +48,7 @@ html = f"""<!DOCTYPE html>
         th.asc::after {{ content: ' ▲'; position: absolute; right: 10px; }}
         th.desc::after {{ content: ' ▼'; position: absolute; right: 10px; }}
         td {{ padding: 10px; border-bottom: 1px solid #ddd; }}
+        tbody tr {{ cursor: pointer; }}
         tr:hover {{ background: #f9f9f9; }}
         a {{ color: #0073bb; text-decoration: none; }}
         a:hover {{ text-decoration: underline; }}
@@ -274,6 +275,15 @@ html += """        </tbody>
             document.getElementById('speedFilter').appendChild(opt);
         });
         
+        // Add click handlers to table rows
+        document.querySelectorAll('#dxTable tbody tr').forEach(row => {
+            row.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') return;
+                const code = this.getAttribute('data-code');
+                if (code) selectLocation(code);
+            });
+        });
+        
 """
 
 # Add markers
@@ -321,13 +331,13 @@ html += """
             document.getElementById('th' + n).classList.add(currentSort.dir);
         }
         
-        // Select location from map
+        // Select location from map or table
         function selectLocation(code) {
-            if (userMarker) return; // Don't allow selection when user marker is active
-            selectedCode = code;
-            document.getElementById('searchInput').value = code;
-            toggleClearBtn();
-            filterTable();
+            if (userMarker) return;
+            const loc = locationsData.find(l => l.code === code);
+            if (loc) {
+                map.setView([loc.lat, loc.lon], 8);
+            }
         }
         
         // Reset map view
