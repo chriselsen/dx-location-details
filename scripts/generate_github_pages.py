@@ -336,7 +336,7 @@ html += """
             if (userMarker) return;
             const loc = locationsData.find(l => l.code === code);
             if (loc) {
-                map.setView([loc.lat, loc.lon], 8);
+                map.setView([loc.lat, loc.lon], 12);
             }
             document.getElementById('searchInput').value = code;
             toggleClearBtn();
@@ -348,7 +348,7 @@ html += """
             if (userMarker) return;
             const loc = locationsData.find(l => l.code === code);
             if (loc) {
-                map.setView([loc.lat, loc.lon], 8);
+                map.setView([loc.lat, loc.lon], 12);
             }
         }
         
