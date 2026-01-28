@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import json
+from datetime import datetime
 
 # Read the data
 with open('data-structures/dx-locations-data.json', 'r') as f:
@@ -55,6 +56,9 @@ html = f"""<!DOCTYPE html>
         .info-icon {{ display: inline-block; width: 16px; height: 16px; line-height: 16px; text-align: center; background: #0073bb; color: white; border-radius: 50%; font-size: 12px; font-weight: bold; margin-left: 5px; cursor: help; position: relative; }}
         .info-icon:hover::after {{ content: attr(data-tooltip); position: absolute; bottom: 125%; left: 50%; transform: translateX(-50%); background: #333; color: white; padding: 8px 12px; border-radius: 4px; white-space: normal; width: 300px; font-size: 13px; font-weight: normal; z-index: 1000; line-height: 1.4; }}
         .info-icon:hover::before {{ content: ''; position: absolute; bottom: 115%; left: 50%; transform: translateX(-50%); border: 6px solid transparent; border-top-color: #333; }}
+        .footer {{ margin-top: 30px; padding: 20px; text-align: center; color: #666; font-size: 14px; border-top: 1px solid #ddd; background: white; }}
+        .footer a {{ color: #0073bb; text-decoration: none; }}
+        .footer a:hover {{ text-decoration: underline; }}
     </style>
 </head>
 <body>
@@ -486,6 +490,9 @@ html += """
             });
         }
     </script>
+    <div class="footer">
+        <p><a href="https://github.com/chriselsen/dx-location-details" target="_blank">GitHub Repository</a> | Last updated: """ + datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S UTC') + """</p>
+    </div>
 </body>
 </html>
 """

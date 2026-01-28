@@ -7,6 +7,8 @@ Automatically generates a sortable wiki table and KML file of AWS Direct Connect
 
 **Live View**: [Interactive Table with Map](https://chriselsen.github.io/dx-location-details/)
 
+**Downloads**: [KML File](output/DirectConnectLocations.kml) | [CSV File](output/DX_LOCATIONS.csv)
+
 ![AWS Direct Connect Locations World Map](output/DX_Locations.png)
 
 > [!NOTE]
