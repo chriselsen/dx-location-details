@@ -105,7 +105,7 @@ EQRJ2,"Equinix RJ2, Rio de Janeiro, BR",BR,sa-east-1,sa-east-1,"1G, 10G, 100G","
 TNDB,"Equinix SP4, Barueri, BR",BR,sa-east-1,sa-east-1,"1G, 10G, 100G","10G, 100G",165,-23.497589,-46.814577
 SONQU,"Sonda Quilicura, Santiago, CL",CL,sa-east-1,sa-east-1,"1G, 10G, 100G","10G, 100G",10697,-33.35628,-70.698912
 TIVIT,"Tivit, São Paulo, BR",BR,sa-east-1,sa-east-1,"1G, 10G, 100G","10G, 100G",1325,-23.65071,-46.720519
-165HS,"165 Halsey Street, Newark, NJ, US",US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",350,40.736844,-74.173402
+165HS,"165 Halsey Street, Newark, NJ, US",US,us-east-1,us-east-1,"1G, 10G, 100G, 400G","10G, 100G, 400G",350,40.736844,-74.173402
 CS32A,"CoreSite NY1, New York, NY, US",US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",670,40.72,-74.004561
 CSVA1,"CoreSite VA1, Reston, VA, US",US,us-east-1,us-east-1,"1G, 10G, 100G, 400G","10G, 100G, 400G",668,38.950631,-77.364541
 LGT50,"Crown Castle, Philadelphia, PA, US",US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",2111,39.959889,-75.161752
