@@ -111,7 +111,7 @@ CSVA1,"CoreSite VA1, Reston, VA, US",US,us-east-1,us-east-1,"1G, 10G, 100G, 400G
 LGT50,"Crown Castle, Philadelphia, PA, US",US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",2111,39.959889,-75.161752
 TLXA1,"Digital Realty ATL13, Atlanta, GA, US",US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",125,33.755456,-84.39153
 TLLPJ,"Digital Realty IAD38, Ashburn, VA, US",US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",4745,39.001795,-77.47841
-EQDA2,"Equinix DA2, Dallas, TX, US",US,us-east-1,us-east-1,"1G, 10G, 100G, 400G","10G, 100G, 400G",505,32.800748,-96.819412
+EQDA2,"Equinix DA2, Dallas, TX, US",US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",505,32.800748,-96.819412
 EQDC2,"Equinix DC2/DC11, Ashburn, VA, US",US,us-east-1,us-east-1,"1G, 10G, 100G, 400G","10G, 100G, 400G",1,39.016363,-77.459023
 EQMI1,"Equinix MI1, Miami, FL, US",US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",15,25.782648,-80.193157
 EQNY5,"Equinix NY5, Secaucus, NJ, US",US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",36,40.778534,-74.072237
@@ -136,7 +136,7 @@ PNP51,"PhoenixNAP, Phoenix, AZ, US",US,us-west-1,us-west-1,"1G, 10G",,917,33.416
 ALN91,"AlohaNap, Kapolei, HI, US",US,us-west-2,us-west-2,"10G, 100G","10G, 100G",3149,21.335728,-158.086738
 CSDE1,"CoreSite DE1, Denver, CO, US",US,us-west-2,us-west-2,"1G, 10G",10G,389,39.745636,-104.995636
 DBLV1,"DataBank LAS1, Las Vegas, NV, US",US,us-west-2,us-west-2,"10G, 100G","10G, 100G",1594,36.059162,-115.145989
-ECPO1,"EdgeConnex, Hillsboro, OR, US",US,us-west-2,us-west-2,"1G, 10G",10G,1922,45.548296,-122.907473
+ECPO1,"EdgeConnex, Hillsboro, OR, US",US,us-west-2,us-west-2,"1G, 10G, 100G","10G, 100G",1922,45.548296,-122.907473
 PEH51,"Pittock Block, Portland, OR, US",US,us-west-2,us-west-2,"1G, 10G, 100G","10G, 100G",275,45.521366,-122.680792
 T5ALA,"Serverfarm LAX1 El Segundo, El Segundo, CA, US",US,us-west-2,us-west-2,"1G, 10G, 100G",,4952,33.921614,-118.386551
 SNAP,"Switch SUPERNAP 8, Las Vegas, NV, US",US,us-west-2,us-west-2,"1G, 10G, 100G","10G, 100G",770,36.059914,-115.210194
