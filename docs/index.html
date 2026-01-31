@@ -35,6 +35,7 @@
         .country-tag button:hover { color: #ffcccc; }
         .reset-filters { padding: 8px 16px; border: 2px solid #ddd; border-radius: 4px; font-size: 14px; background: white; cursor: pointer; display: none; }
         .reset-filters:hover { background: #f0f0f0; border-color: #999; }
+        .location-count { padding: 8px 12px; font-size: 14px; color: #666; }
         .search-container { position: relative; margin-bottom: 15px; }
         #searchInput { width: 100%; padding: 12px 40px 12px 12px; border: 2px solid #ddd; border-radius: 4px; font-size: 16px; box-sizing: border-box; }
         .clear-btn { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: none; border: none; font-size: 20px; cursor: pointer; color: #999; display: none; }
@@ -88,6 +89,7 @@
             <option value="">All Associated Regions</option>
         </select>
         <button class="reset-filters" id="resetFilters" onclick="resetFilters()">Reset Filters</button>
+        <span class="location-count" id="locationCount"></span>
     </div>
     <div class="search-container">
         <input type="text" id="searchInput" placeholder="Search locations..." onkeyup="filterTable()" oninput="toggleClearBtn()">
@@ -1139,6 +1141,9 @@
                 if (code) zoomToLocation(code);
             });
         });
+        
+        // Initial filter to set location count
+        filterTable();
         
         markers['EANB1'] = L.marker([-1.34014, 36.896534], {icon: customIcon})
             .on('click', function(e) { L.DomEvent.stopPropagation(e); selectLocation('EANB1'); })
@@ -2950,6 +2955,11 @@
                 }
             }
             
+            // Update location count
+            const locationCount = document.getElementById('locationCount');
+            locationCount.textContent = `${visibleCodes.size} location${visibleCodes.size !== 1 ? 's' : ''}`;
+            locationCount.style.display = 'block';
+            
             // Update map markers
             Object.keys(markers).forEach(code => {
                 if (visibleCodes.has(code)) {
@@ -2963,7 +2973,7 @@
         }
     </script>
     <div class="footer">
-        <p><a href="https://github.com/chriselsen/dx-location-details" target="_blank">GitHub Repository</a> | Last updated: 2026-01-31 01:47:26 UTC</p>
+        <p><a href="https://github.com/chriselsen/dx-location-details" target="_blank">GitHub Repository</a> | Last updated: 2026-01-31 01:55:01 UTC</p>
     </div>
 </body>
 </html>

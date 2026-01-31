@@ -14,6 +14,11 @@ with open('icons/icon.txt', 'r') as f:
 with open('data-structures/region-mapping.json', 'r') as f:
     region_mapping = json.load(f)
 
+# Read country mapping (reverse it for code -> name)
+with open('data-structures/country-mapping.json', 'r') as f:
+    country_mapping_raw = json.load(f)
+    country_code_to_name = {v: k for k, v in country_mapping_raw.items() if len(k) > 2}
+
 # Sort by region, then by name
 sorted_locations = sorted(locations, key=lambda x: (x['region'], x['name']))
 
@@ -34,11 +39,28 @@ html = f"""<!DOCTYPE html>
         #map {{ height: 500px; width: 100%; margin-bottom: 20px; border: 2px solid #ddd; border-radius: 4px; background: white; position: relative; }}
         .home-button {{ position: absolute; bottom: 10px; left: 10px; z-index: 1000; background: white; border: 2px solid #ccc; border-radius: 4px; padding: 8px 12px; cursor: pointer; font-size: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.2); }}
         .home-button:hover {{ background: #f0f0f0; }}
-        .filters {{ display: flex; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }}
+        .filters {{ display: flex; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; align-items: flex-start; }}
         .filters select {{ padding: 8px 12px; border: 2px solid #ddd; border-radius: 4px; font-size: 14px; background: white; cursor: pointer; }}
         .filters select:hover {{ border-color: #999; }}
+        .multi-select {{ position: relative; min-width: 200px; }}
+        .multi-select-trigger {{ padding: 8px 12px; border: 2px solid #ddd; border-radius: 4px; font-size: 14px; background: white; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 8px; }}
+        .multi-select-trigger:hover {{ border-color: #999; }}
+        .multi-select-trigger.active {{ border-color: #0073bb; }}
+        .multi-select-dropdown {{ position: absolute; top: 100%; left: 0; min-width: 250px; background: white; border: 2px solid #ddd; border-radius: 4px; margin-top: 4px; max-height: 300px; overflow-y: auto; display: none; z-index: 1000; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }}
+        .multi-select-dropdown.show {{ display: block; }}
+        .multi-select-actions {{ display: flex; gap: 8px; padding: 8px; border-bottom: 1px solid #ddd; background: #f9f9f9; }}
+        .multi-select-actions button {{ padding: 4px 12px; border: 1px solid #ddd; border-radius: 3px; background: white; cursor: pointer; font-size: 12px; flex: 1; }}
+        .multi-select-actions button:hover {{ background: #e8e8e8; }}
+        .multi-select-option {{ padding: 8px 12px; cursor: pointer; display: flex; align-items: center; gap: 8px; }}
+        .multi-select-option:hover {{ background: #f0f0f0; }}
+        .multi-select-option input[type="checkbox"] {{ cursor: pointer; }}
+        .country-tags {{ display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }}
+        .country-tag {{ display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; background: #0073bb; color: white; border-radius: 16px; font-size: 13px; }}
+        .country-tag button {{ background: none; border: none; color: white; cursor: pointer; font-size: 16px; padding: 0; margin: 0; line-height: 1; }}
+        .country-tag button:hover {{ color: #ffcccc; }}
         .reset-filters {{ padding: 8px 16px; border: 2px solid #ddd; border-radius: 4px; font-size: 14px; background: white; cursor: pointer; display: none; }}
         .reset-filters:hover {{ background: #f0f0f0; border-color: #999; }}
+        .location-count {{ padding: 8px 12px; font-size: 14px; color: #666; }}
         .search-container {{ position: relative; margin-bottom: 15px; }}
         #searchInput {{ width: 100%; padding: 12px 40px 12px 12px; border: 2px solid #ddd; border-radius: 4px; font-size: 16px; box-sizing: border-box; }}
         .clear-btn {{ position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: none; border: none; font-size: 20px; cursor: pointer; color: #999; display: none; }}
@@ -67,9 +89,19 @@ html = f"""<!DOCTYPE html>
         <button class="home-button" onclick="resetMap(); event.stopPropagation();" title="Reset map view">🏠</button>
     </div>
     <div class="filters">
-        <select id="countryFilter" onchange="filterTable()">
-            <option value="">All Countries</option>
-        </select>
+        <div class="multi-select" id="countryMultiSelect">
+            <div class="multi-select-trigger" onclick="toggleCountryDropdown()">
+                <span>Country Filter</span>
+                <span>▼</span>
+            </div>
+            <div class="multi-select-dropdown" id="countryDropdown">
+                <div class="multi-select-actions">
+                    <button onclick="selectAllCountries(); event.stopPropagation();">Select All</button>
+                    <button onclick="clearAllCountries(); event.stopPropagation();">Clear All</button>
+                </div>
+            </div>
+        </div>
+        <div class="country-tags" id="countryTags"></div>
         <select id="speedFilter" onchange="filterTable()">
             <option value="">All Port Speeds</option>
         </select>
@@ -82,6 +114,7 @@ html = f"""<!DOCTYPE html>
             <option value="">All Associated Regions</option>
         </select>
         <button class="reset-filters" id="resetFilters" onclick="resetFilters()">Reset Filters</button>
+        <span class="location-count" id="locationCount"></span>
     </div>
     <div class="search-container">
         <input type="text" id="searchInput" placeholder="Search locations..." onkeyup="filterTable()" oninput="toggleClearBtn()">
@@ -127,12 +160,14 @@ for loc in sorted_locations:
     region_html = f"{region_name}<br><code>{loc['region']}</code>"
     
     # Data attributes for filtering
-    country = loc.get('country', '')
+    country_code = loc.get('country', '')
+    country_name = country_code_to_name.get(country_code, country_code)
+    country_display = f"{country_name} ({country_code})" if country_code and country_name else ""
     region = loc['region']
     port_speeds = ','.join(loc.get('port_speeds', []))
     macsec_speeds = ','.join(loc.get('macsec_capable', []))
     
-    html += f"""            <tr data-code="{loc['code']}" data-country="{country}" data-region="{region}" data-speeds="{port_speeds}" data-macsec="{macsec_speeds}">
+    html += f"""            <tr data-code="{loc['code']}" data-country="{country_display}" data-region="{region}" data-speeds="{port_speeds}" data-macsec="{macsec_speeds}">
                 <td>{location_html}</td>
                 <td>{speeds_html}</td>
                 <td>{map_link}</td>
@@ -270,6 +305,8 @@ html += """        </tbody>
         const countries = new Set();
         const regions = new Set();
         const speeds = new Set();
+        const selectedCountries = new Set();
+        
         document.querySelectorAll('tr[data-country]').forEach(tr => {
             if (tr.dataset.country) countries.add(tr.dataset.country);
             if (tr.dataset.region) regions.add(tr.dataset.region);
@@ -277,11 +314,18 @@ html += """        </tbody>
             if (tr.dataset.macsec) tr.dataset.macsec.split(',').forEach(s => speeds.add(s));
         });
         
-        Array.from(countries).sort().forEach(c => {
-            const opt = document.createElement('option');
-            opt.value = c;
-            opt.textContent = c;
-            document.getElementById('countryFilter').appendChild(opt);
+        // Populate country multi-select
+        const countryDropdown = document.getElementById('countryDropdown');
+        const sortedCountries = Array.from(countries).filter(c => c).sort((a, b) => {
+            const nameA = a.split(' (')[0];
+            const nameB = b.split(' (')[0];
+            return nameA.localeCompare(nameB);
+        });
+        sortedCountries.forEach(c => {
+            const option = document.createElement('div');
+            option.className = 'multi-select-option';
+            option.innerHTML = `<input type="checkbox" id="country-${c}" value="${c}" onchange="updateCountryFilter()"><label for="country-${c}" style="cursor: pointer; flex: 1;">${c}</label>`;
+            countryDropdown.appendChild(option);
         });
         
         Array.from(regions).sort().forEach(r => {
@@ -309,6 +353,9 @@ html += """        </tbody>
                 if (code) zoomToLocation(code);
             });
         });
+        
+        // Initial filter to set location count
+        filterTable();
         
 """
 
@@ -399,7 +446,7 @@ html += """
             clearUserMarker();
             selectedCode = null;
             document.getElementById('searchInput').value = '';
-            document.getElementById('countryFilter').value = '';
+            clearAllCountries();
             document.getElementById('regionFilter').value = '';
             document.getElementById('speedFilter').value = '';
             document.getElementById('macsecFilter').value = '';
@@ -422,23 +469,76 @@ html += """
             clearUserMarker();
             document.getElementById('searchInput').value = '';
             toggleClearBtn();
-            document.getElementById('countryFilter').value = '';
+            clearAllCountries();
             document.getElementById('regionFilter').value = '';
             document.getElementById('speedFilter').value = '';
             document.getElementById('macsecFilter').value = '';
             filterTable();
         }
         
+        // Toggle country dropdown
+        function toggleCountryDropdown() {
+            const dropdown = document.getElementById('countryDropdown');
+            dropdown.classList.toggle('show');
+            document.getElementById('countryMultiSelect').querySelector('.multi-select-trigger').classList.toggle('active');
+        }
+        
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!document.getElementById('countryMultiSelect').contains(e.target)) {
+                document.getElementById('countryDropdown').classList.remove('show');
+                document.getElementById('countryMultiSelect').querySelector('.multi-select-trigger').classList.remove('active');
+            }
+        });
+        
+        // Select all countries
+        function selectAllCountries() {
+            document.querySelectorAll('#countryDropdown input[type="checkbox"]').forEach(cb => cb.checked = true);
+            updateCountryFilter();
+        }
+        
+        // Clear all countries
+        function clearAllCountries() {
+            document.querySelectorAll('#countryDropdown input[type="checkbox"]').forEach(cb => cb.checked = false);
+            updateCountryFilter();
+        }
+        
+        // Update country filter and tags
+        function updateCountryFilter() {
+            selectedCountries.clear();
+            document.querySelectorAll('#countryDropdown input[type="checkbox"]:checked').forEach(cb => {
+                selectedCountries.add(cb.value);
+            });
+            
+            // Update tags
+            const tagsContainer = document.getElementById('countryTags');
+            tagsContainer.innerHTML = '';
+            Array.from(selectedCountries).sort().forEach(country => {
+                const tag = document.createElement('div');
+                tag.className = 'country-tag';
+                tag.innerHTML = `${country} <button onclick="removeCountryTag('${country}'); event.stopPropagation();">×</button>`;
+                tagsContainer.appendChild(tag);
+            });
+            
+            filterTable();
+        }
+        
+        // Remove country tag
+        function removeCountryTag(country) {
+            const checkbox = document.getElementById(`country-${country}`);
+            if (checkbox) checkbox.checked = false;
+            updateCountryFilter();
+        }
+        
         // Filter table and map
         function filterTable() {
             const searchInput = document.getElementById("searchInput").value.toUpperCase();
-            const countryFilter = document.getElementById("countryFilter").value;
             const regionFilter = document.getElementById("regionFilter").value;
             const speedFilter = document.getElementById("speedFilter").value;
             const macsecFilter = document.getElementById("macsecFilter").value;
             
             // Clear user marker and search if any filter is active
-            if (countryFilter || regionFilter || speedFilter || macsecFilter) {
+            if (selectedCountries.size > 0 || regionFilter || speedFilter || macsecFilter) {
                 clearUserMarker();
                 if (searchInput) {
                     document.getElementById('searchInput').value = '';
@@ -454,7 +554,7 @@ html += """
             
             // Show/hide reset button
             const resetBtn = document.getElementById('resetFilters');
-            resetBtn.style.display = (countryFilter || regionFilter || speedFilter || macsecFilter) ? 'block' : 'none';
+            resetBtn.style.display = (selectedCountries.size > 0 || regionFilter || speedFilter || macsecFilter) ? 'block' : 'none';
             
             for (let i = 1; i < tr.length; i++) {
                 const row = tr[i];
@@ -477,8 +577,8 @@ html += """
                     }
                 }
                 
-                // Country filter
-                const countryMatch = !countryFilter || country === countryFilter;
+                // Country filter (multi-select)
+                const countryMatch = selectedCountries.size === 0 || selectedCountries.has(country);
                 
                 // Region filter
                 const regionMatch = !regionFilter || region === regionFilter;
@@ -511,6 +611,11 @@ html += """
                     visibleCodes.add(row.getAttribute('data-code'));
                 }
             }
+            
+            // Update location count
+            const locationCount = document.getElementById('locationCount');
+            locationCount.textContent = `${visibleCodes.size} location${visibleCodes.size !== 1 ? 's' : ''}`;
+            locationCount.style.display = 'block';
             
             // Update map markers
             Object.keys(markers).forEach(code => {
