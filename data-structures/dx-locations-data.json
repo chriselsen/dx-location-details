@@ -2294,13 +2294,13 @@
   {
     "code": "LGT50",
     "region": "us-east-1",
-    "name": "Netrality Philadelphia - 401 N Broad, Philadelphia, PA, US",
+    "name": "Crown Castle Philadelphia (401 N Broad), Philadelphia, PA, US",
     "aws_name": "Crown Castle",
     "internal_code": null,
     "peeringdb_id": "3482",
     "country": "US",
-    "latitude": "39.959889",
-    "longitude": "-75.161752",
+    "latitude": "39.959668",
+    "longitude": "-75.161377",
     "ip": null,
     "port_speeds": [
       "1G",

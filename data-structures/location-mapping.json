@@ -1066,11 +1066,11 @@
   "LGT50": {
     "city": "Philadelphia",
     "coordinates": {
-      "lat": "39.959889",
-      "lon": "-75.161752"
+      "lat": "39.959668",
+      "lon": "-75.161377"
     },
     "country": "US",
-    "facility_name": "Netrality Philadelphia - 401 N Broad",
+    "facility_name": "Crown Castle Philadelphia (401 N Broad)",
     "peeringdb_id": "3482",
     "state": "PA"
   },
