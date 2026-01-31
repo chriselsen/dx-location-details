@@ -15,7 +15,7 @@ def get_facility_data_from_peeringdb(peeringdb_id, retry_count=0):
             if 'data' in data and len(data['data']) > 0:
                 fac = data['data'][0]
                 return {
-                    'name': fac.get('name'),
+                    'facility_name': fac.get('name'),
                     'city': fac.get('city'),
                     'state': fac.get('state'),
                     'country': fac.get('country'),
@@ -54,6 +54,7 @@ def main():
         mapping = json.load(f)
     
     total = len([e for e in mapping.values() if e.get('peeringdb_id')])
+    updated_facility_name = 0
     updated_city = 0
     updated_country = 0
     updated_coords = 0
@@ -62,7 +63,7 @@ def main():
     
     print(f"Processing {total} locations with PeeringDB IDs...\n")
     
-    # Fetch data from PeeringDB and update city, country, coordinates, and state
+    # Fetch data from PeeringDB and update facility name, city, country, coordinates, and state
     for code, entry in mapping.items():
         if not entry.get('peeringdb_id'):
             continue
@@ -72,6 +73,12 @@ def main():
         data = get_facility_data_from_peeringdb(entry['peeringdb_id'])
         
         if data:
+            # Update facility name
+            if data.get('facility_name') and data['facility_name'] != entry.get('facility_name'):
+                entry['facility_name'] = data['facility_name']
+                print(f"  → Facility: {data['facility_name']}")
+                updated_facility_name += 1
+            
             # Update city
             if data.get('city') and data['city'] != entry.get('city'):
                 entry['city'] = data['city']
@@ -102,10 +109,11 @@ def main():
                 print(f"  → State: {data['state']}")
                 updated_state += 1
     
-    if updated_city > 0 or updated_country > 0 or updated_coords > 0 or updated_state > 0:
+    if updated_facility_name > 0 or updated_city > 0 or updated_country > 0 or updated_coords > 0 or updated_state > 0:
         with open('data-structures/location-mapping.json', 'w') as f:
             json.dump(mapping, f, indent=2, sort_keys=True)
-        print(f"\n✓ Updated {updated_city} entries with city data")
+        print(f"\n✓ Updated {updated_facility_name} entries with facility name")
+        print(f"✓ Updated {updated_city} entries with city data")
         print(f"✓ Updated {updated_country} entries with country data")
         print(f"✓ Updated {updated_coords} entries with coordinates")
         print(f"✓ Updated {updated_state} entries with US state data")

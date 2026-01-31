@@ -101,7 +101,16 @@ html = f"""<!DOCTYPE html>
 
 # Add table rows with data attributes
 for loc in sorted_locations:
-    pdb_link = f"<a href='https://www.peeringdb.com/fac/{loc['peeringdb_id']}' target='_blank'>{loc['name']}</a>" if loc.get('peeringdb_id') else loc['name']
+    # Build location display with PeeringDB name and AWS name
+    location_html = ""
+    if loc.get('peeringdb_id'):
+        location_html = f"<a href='https://www.peeringdb.com/fac/{loc['peeringdb_id']}' target='_blank'>{loc['name']}</a>"
+    else:
+        location_html = loc['name']
+    
+    # Add AWS name below if different from main name
+    if loc.get('aws_name') and loc['aws_name'] != loc['name']:
+        location_html += f"<br><code>AWS name: {loc['aws_name']}</code>"
     
     speeds_unlocked = ', '.join(loc.get('port_speeds', []))
     speeds_macsec = ', '.join(loc.get('macsec_capable', []))
@@ -124,7 +133,7 @@ for loc in sorted_locations:
     macsec_speeds = ','.join(loc.get('macsec_capable', []))
     
     html += f"""            <tr data-code="{loc['code']}" data-country="{country}" data-region="{region}" data-speeds="{port_speeds}" data-macsec="{macsec_speeds}">
-                <td>{pdb_link}</td>
+                <td>{location_html}</td>
                 <td>{speeds_html}</td>
                 <td>{map_link}</td>
                 <td>{region_html}</td>

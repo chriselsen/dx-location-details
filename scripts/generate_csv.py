@@ -11,7 +11,7 @@ def main():
     
     with open('output/DX_LOCATIONS.csv', 'w', newline='') as f:
         writer = csv.writer(f)
-        writer.writerow(['Location Code', 'Location Name', 'Country', 'Region Code', 'Region Name', 
+        writer.writerow(['Location Code', 'Location Name', 'AWS Name', 'Country', 'Region Code', 'Region Name', 
                         'Port Speeds', 'MACsec Capable', 'PeeringDB ID', 'Latitude', 'Longitude'])
         
         for loc in sorted(data, key=lambda x: (x['region'], x['name'])):
@@ -22,6 +22,7 @@ def main():
             writer.writerow([
                 loc['code'],
                 loc['name'],
+                loc.get('aws_name', ''),
                 loc.get('country', ''),
                 loc['region'],
                 region_name,

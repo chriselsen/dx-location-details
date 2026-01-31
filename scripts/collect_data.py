@@ -44,12 +44,18 @@ def normalize_country_from_name(name, country_mapping):
             return country
     return None
 
-def build_location_name(aws_name, map_data):
-    """Build clean location name: Facility Name, City, State, Country"""
-    # Extract facility name from AWS (everything before first comma)
-    facility_name = aws_name.split(',')[0].strip()
+def extract_aws_name(aws_full_name):
+    """Extract AWS name without city/country (everything before first comma)"""
+    return aws_full_name.split(',')[0].strip()
+
+def build_peeringdb_name(peeringdb_facility_name, map_data):
+    """Build PeeringDB name: Facility Name (first part), City, State, Country"""
+    # Strip everything after first comma in PeeringDB name
+    facility_name = peeringdb_facility_name.split(',')[0].strip() if peeringdb_facility_name else None
     
-    # Build location string from PeeringDB data
+    if not facility_name:
+        return None
+    
     parts = [facility_name]
     
     if map_data.get('city'):
@@ -130,7 +136,8 @@ def main():
         entry = {
             'code': code,
             'region': region,
-            'name': aws_name,
+            'name': None,
+            'aws_name': extract_aws_name(aws_name),
             'internal_code': None,
             'peeringdb_id': None,
             'country': None,
@@ -151,9 +158,13 @@ def main():
                 entry['latitude'] = map_data['coordinates']['lat']
                 entry['longitude'] = map_data['coordinates']['lon']
             
-            # Build clean name from PeeringDB data if available
-            if map_data.get('city') or map_data.get('country'):
-                entry['name'] = build_location_name(aws_name, map_data)
+            # Build PeeringDB name if facility name available
+            if map_data.get('facility_name'):
+                entry['name'] = build_peeringdb_name(map_data['facility_name'], map_data)
+            
+            # Fallback to AWS name if no PeeringDB name
+            if not entry['name']:
+                entry['name'] = entry['aws_name']
         else:
             missing_locations.append({'code': code, 'name': aws_name, 'region': region})
         
