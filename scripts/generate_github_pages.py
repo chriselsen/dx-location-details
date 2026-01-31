@@ -143,7 +143,7 @@ for loc in sorted_locations:
     
     # Add AWS name below if different from main name
     if loc.get('aws_name') and loc['aws_name'] != loc['name']:
-        location_html += f"<br><code>AWS name: {loc['aws_name']}</code>"
+        location_html += f"<br><code>AWS Name: {loc['aws_name']}</code>"
     
     speeds_unlocked = ', '.join(loc.get('port_speeds', []))
     speeds_macsec = ', '.join(loc.get('macsec_capable', []))
