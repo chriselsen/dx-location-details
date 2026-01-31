@@ -407,17 +407,22 @@ html += """
         
         // Filter table and map
         function filterTable() {
-            clearUserMarker();
             const searchInput = document.getElementById("searchInput").value.toUpperCase();
             const countryFilter = document.getElementById("countryFilter").value;
             const speedFilter = document.getElementById("speedFilter").value;
             const macsecFilter = document.getElementById("macsecFilter").value;
             
-            // Clear search box if any filter is active
+            // Clear user marker and search if any filter is active
             if (countryFilter || speedFilter || macsecFilter) {
-                document.getElementById('searchInput').value = '';
-                toggleClearBtn();
+                clearUserMarker();
+                if (searchInput) {
+                    document.getElementById('searchInput').value = '';
+                    toggleClearBtn();
+                }
             }
+            
+            // Re-read search input after potential clearing
+            const finalSearchInput = document.getElementById("searchInput").value.toUpperCase();
             const table = document.getElementById("dxTable");
             const tr = table.getElementsByTagName("tr");
             const visibleCodes = new Set();
@@ -434,12 +439,12 @@ html += """
                 
                 // Text search
                 let textMatch = true;
-                if (searchInput) {
+                if (finalSearchInput) {
                     const tds = row.getElementsByTagName("td");
                     textMatch = false;
                     for (let j = 0; j < tds.length; j++) {
                         const txtValue = tds[j].textContent || tds[j].innerText;
-                        if (txtValue.toUpperCase().indexOf(searchInput) > -1) {
+                        if (txtValue.toUpperCase().indexOf(finalSearchInput) > -1) {
                             textMatch = true;
                             break;
                         }
