@@ -78,6 +78,9 @@ html = f"""<!DOCTYPE html>
             <option value="macsec">With MACsec</option>
             <option value="no-macsec">Without MACsec</option>
         </select>
+        <select id="regionFilter" onchange="filterTable()">
+            <option value="">All Associated Regions</option>
+        </select>
         <button class="reset-filters" id="resetFilters" onclick="resetFilters()">Reset Filters</button>
     </div>
     <div class="search-container">
@@ -116,10 +119,11 @@ for loc in sorted_locations:
     
     # Data attributes for filtering
     country = loc.get('country', '')
+    region = loc['region']
     port_speeds = ','.join(loc.get('port_speeds', []))
     macsec_speeds = ','.join(loc.get('macsec_capable', []))
     
-    html += f"""            <tr data-code="{loc['code']}" data-country="{country}" data-speeds="{port_speeds}" data-macsec="{macsec_speeds}">
+    html += f"""            <tr data-code="{loc['code']}" data-country="{country}" data-region="{region}" data-speeds="{port_speeds}" data-macsec="{macsec_speeds}">
                 <td>{pdb_link}</td>
                 <td>{speeds_html}</td>
                 <td>{map_link}</td>
@@ -255,9 +259,11 @@ html += """        </tbody>
         
         // Populate filter dropdowns
         const countries = new Set();
+        const regions = new Set();
         const speeds = new Set();
         document.querySelectorAll('tr[data-country]').forEach(tr => {
             if (tr.dataset.country) countries.add(tr.dataset.country);
+            if (tr.dataset.region) regions.add(tr.dataset.region);
             if (tr.dataset.speeds) tr.dataset.speeds.split(',').forEach(s => speeds.add(s));
             if (tr.dataset.macsec) tr.dataset.macsec.split(',').forEach(s => speeds.add(s));
         });
@@ -267,6 +273,13 @@ html += """        </tbody>
             opt.value = c;
             opt.textContent = c;
             document.getElementById('countryFilter').appendChild(opt);
+        });
+        
+        Array.from(regions).sort().forEach(r => {
+            const opt = document.createElement('option');
+            opt.value = r;
+            opt.textContent = r;
+            document.getElementById('regionFilter').appendChild(opt);
         });
         
         Array.from(speeds).sort((a,b) => {
@@ -378,6 +391,7 @@ html += """
             selectedCode = null;
             document.getElementById('searchInput').value = '';
             document.getElementById('countryFilter').value = '';
+            document.getElementById('regionFilter').value = '';
             document.getElementById('speedFilter').value = '';
             document.getElementById('macsecFilter').value = '';
             toggleClearBtn();
@@ -400,6 +414,7 @@ html += """
             document.getElementById('searchInput').value = '';
             toggleClearBtn();
             document.getElementById('countryFilter').value = '';
+            document.getElementById('regionFilter').value = '';
             document.getElementById('speedFilter').value = '';
             document.getElementById('macsecFilter').value = '';
             filterTable();
@@ -409,11 +424,12 @@ html += """
         function filterTable() {
             const searchInput = document.getElementById("searchInput").value.toUpperCase();
             const countryFilter = document.getElementById("countryFilter").value;
+            const regionFilter = document.getElementById("regionFilter").value;
             const speedFilter = document.getElementById("speedFilter").value;
             const macsecFilter = document.getElementById("macsecFilter").value;
             
             // Clear user marker and search if any filter is active
-            if (countryFilter || speedFilter || macsecFilter) {
+            if (countryFilter || regionFilter || speedFilter || macsecFilter) {
                 clearUserMarker();
                 if (searchInput) {
                     document.getElementById('searchInput').value = '';
@@ -429,11 +445,12 @@ html += """
             
             // Show/hide reset button
             const resetBtn = document.getElementById('resetFilters');
-            resetBtn.style.display = (countryFilter || speedFilter || macsecFilter) ? 'block' : 'none';
+            resetBtn.style.display = (countryFilter || regionFilter || speedFilter || macsecFilter) ? 'block' : 'none';
             
             for (let i = 1; i < tr.length; i++) {
                 const row = tr[i];
                 const country = row.dataset.country || '';
+                const region = row.dataset.region || '';
                 const speeds = row.dataset.speeds || '';
                 const macsec = row.dataset.macsec || '';
                 
@@ -453,6 +470,9 @@ html += """
                 
                 // Country filter
                 const countryMatch = !countryFilter || country === countryFilter;
+                
+                // Region filter
+                const regionMatch = !regionFilter || region === regionFilter;
                 
                 // Speed filter
                 let speedMatch = true;
@@ -476,7 +496,7 @@ html += """
                     }
                 }
                 
-                const show = textMatch && countryMatch && speedMatch && macsecMatch;
+                const show = textMatch && countryMatch && regionMatch && speedMatch && macsecMatch;
                 row.style.display = show ? "" : "none";
                 if (show) {
                     visibleCodes.add(row.getAttribute('data-code'));
