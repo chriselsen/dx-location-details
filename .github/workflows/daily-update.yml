@@ -23,15 +23,29 @@ jobs:
       - name: Install dependencies
         run: bash scripts/install_map_deps.sh
       
-      - name: Configure AWS credentials
+      - name: Collect EUSC data
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_EUSC_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_EUSC_SECRET_ACCESS_KEY }}
+        run: python3 scripts/collect_data_eusc.py
+      
+      - name: Configure AWS credentials for Commercial
         uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: ${{ vars.AWS_ROLE_ARN }}
           aws-region: us-east-1
       
+      - name: Collect Commercial data and merge partitions
+        run: |
+          python3 scripts/collect_data.py
+          python3 scripts/merge_partitions.py
+      
       - name: Generate all outputs
-        run: bash scripts/generate_all.sh
-             python3 scripts/generate_github_pages.py
+        run: |
+          python3 scripts/generate_csv.py
+          python3 scripts/generate_kml.py
+          python3 scripts/generate_map_png.py
+          python3 scripts/generate_github_pages.py
       
       - name: Commit and push changes
         run: |
