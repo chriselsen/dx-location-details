@@ -2,9 +2,13 @@
 import json
 from datetime import datetime
 
-# Read the data
-with open('data-structures/dx-locations-data.json', 'r') as f:
-    locations = json.load(f)
+# Read the data (use merged if available)
+try:
+    with open('data-structures/dx-locations-data-merged.json', 'r') as f:
+        locations = json.load(f)
+except FileNotFoundError:
+    with open('data-structures/dx-locations-data.json', 'r') as f:
+        locations = json.load(f)
 
 # Read the icon
 with open('icons/icon.txt', 'r') as f:
@@ -84,11 +88,16 @@ html = f"""<!DOCTYPE html>
     </style>
 </head>
 <body>
-    <h1><img src="{icon_data}" alt="AWS Direct Connect">AWS Direct Connect Locations</h1>
+    <h1><img src="{icon_data}" alt="AWS Direct Connect">AWS Direct Connect Locations<span id="partitionLabel"></span></h1>
     <div id="map">
         <button class="home-button" onclick="resetMap(); event.stopPropagation();" title="Reset map view">🏠</button>
     </div>
     <div class="filters">
+        <select id="partitionFilter" onchange="filterTable()">
+            <option value="aws">AWS Commercial Partition</option>
+            <option value="aws-eusc">EU Sovereign Cloud</option>
+        </select>
+        <span class="info-icon" id="partitionInfo" style="display: none;" data-tooltip="EU Sovereign Cloud is an isolated AWS region designed to meet strict European data residency and sovereignty requirements. It operates independently from standard AWS regions." onclick="event.stopPropagation()">i</span>
         <div class="multi-select" id="countryMultiSelect">
             <div class="multi-select-trigger" onclick="toggleCountryDropdown()">
                 <span>Country Filter</span>
@@ -164,10 +173,11 @@ for loc in sorted_locations:
     country_name = country_code_to_name.get(country_code, country_code)
     country_display = f"{country_name} ({country_code})" if country_code and country_name else ""
     region = loc['region']
+    partition = loc.get('partition', 'aws')
     port_speeds = ','.join(loc.get('port_speeds', []))
     macsec_speeds = ','.join(loc.get('macsec_capable', []))
     
-    html += f"""            <tr data-code="{loc['code']}" data-country="{country_display}" data-region="{region}" data-speeds="{port_speeds}" data-macsec="{macsec_speeds}">
+    html += f"""            <tr data-code="{loc['code']}" data-partition="{partition}" data-country="{country_display}" data-region="{region}" data-speeds="{port_speeds}" data-macsec="{macsec_speeds}">
                 <td>{location_html}</td>
                 <td>{speeds_html}</td>
                 <td>{map_link}</td>
@@ -307,6 +317,72 @@ html += """        </tbody>
         const speeds = new Set();
         const selectedCountries = new Set();
         
+        // Populate dropdowns based on all data initially
+        function populateFilters(partition) {
+            countries.clear();
+            regions.clear();
+            speeds.clear();
+            
+            document.querySelectorAll('tr[data-country]').forEach(tr => {
+                const rowPartition = tr.dataset.partition || 'aws';
+                if (rowPartition === partition) {
+                    if (tr.dataset.country) countries.add(tr.dataset.country);
+                    if (tr.dataset.region) regions.add(tr.dataset.region);
+                    if (tr.dataset.speeds) tr.dataset.speeds.split(',').forEach(s => speeds.add(s));
+                    if (tr.dataset.macsec) tr.dataset.macsec.split(',').forEach(s => speeds.add(s));
+                }
+            });
+            
+            // Repopulate country multi-select
+            const countryDropdown = document.getElementById('countryDropdown');
+            const actionsDiv = countryDropdown.querySelector('.multi-select-actions');
+            countryDropdown.innerHTML = '';
+            countryDropdown.appendChild(actionsDiv);
+            
+            const sortedCountries = Array.from(countries).filter(c => c).sort((a, b) => {
+                const nameA = a.split(' (')[0];
+                const nameB = b.split(' (')[0];
+                return nameA.localeCompare(nameB);
+            });
+            sortedCountries.forEach(c => {
+                const option = document.createElement('div');
+                option.className = 'multi-select-option';
+                option.innerHTML = `<input type="checkbox" id="country-${c}" value="${c}" onchange="updateCountryFilter()"><label for="country-${c}" style="cursor: pointer; flex: 1;">${c}</label>`;
+                countryDropdown.appendChild(option);
+            });
+            
+            // Repopulate region filter
+            const regionFilter = document.getElementById('regionFilter');
+            const currentRegion = regionFilter.value;
+            regionFilter.innerHTML = '<option value="">All Associated Regions</option>';
+            Array.from(regions).sort().forEach(r => {
+                const opt = document.createElement('option');
+                opt.value = r;
+                opt.textContent = r;
+                regionFilter.appendChild(opt);
+            });
+            if (regions.has(currentRegion)) {
+                regionFilter.value = currentRegion;
+            }
+            
+            // Repopulate speed filter
+            const speedFilter = document.getElementById('speedFilter');
+            const currentSpeed = speedFilter.value;
+            speedFilter.innerHTML = '<option value="">All Port Speeds</option>';
+            Array.from(speeds).sort((a,b) => {
+                const order = {'1G':1, '10G':2, '100G':3, '400G':4};
+                return (order[a]||99) - (order[b]||99);
+            }).forEach(s => {
+                const opt = document.createElement('option');
+                opt.value = s;
+                opt.textContent = s;
+                speedFilter.appendChild(opt);
+            });
+            if (speeds.has(currentSpeed)) {
+                speedFilter.value = currentSpeed;
+            }
+        }
+        
         document.querySelectorAll('tr[data-country]').forEach(tr => {
             if (tr.dataset.country) countries.add(tr.dataset.country);
             if (tr.dataset.region) regions.add(tr.dataset.region);
@@ -314,36 +390,9 @@ html += """        </tbody>
             if (tr.dataset.macsec) tr.dataset.macsec.split(',').forEach(s => speeds.add(s));
         });
         
-        // Populate country multi-select
+        // Populate country multi-select (initial)
         const countryDropdown = document.getElementById('countryDropdown');
-        const sortedCountries = Array.from(countries).filter(c => c).sort((a, b) => {
-            const nameA = a.split(' (')[0];
-            const nameB = b.split(' (')[0];
-            return nameA.localeCompare(nameB);
-        });
-        sortedCountries.forEach(c => {
-            const option = document.createElement('div');
-            option.className = 'multi-select-option';
-            option.innerHTML = `<input type="checkbox" id="country-${c}" value="${c}" onchange="updateCountryFilter()"><label for="country-${c}" style="cursor: pointer; flex: 1;">${c}</label>`;
-            countryDropdown.appendChild(option);
-        });
-        
-        Array.from(regions).sort().forEach(r => {
-            const opt = document.createElement('option');
-            opt.value = r;
-            opt.textContent = r;
-            document.getElementById('regionFilter').appendChild(opt);
-        });
-        
-        Array.from(speeds).sort((a,b) => {
-            const order = {'1G':1, '10G':2, '100G':3, '400G':4};
-            return (order[a]||99) - (order[b]||99);
-        }).forEach(s => {
-            const opt = document.createElement('option');
-            opt.value = s;
-            opt.textContent = s;
-            document.getElementById('speedFilter').appendChild(opt);
-        });
+        populateFilters('aws');
         
         // Add click handlers to table rows
         document.querySelectorAll('#dxTable tbody tr').forEach(row => {
@@ -530,12 +579,40 @@ html += """
             updateCountryFilter();
         }
         
+        // Update partition label
+        function updatePartitionLabel() {
+            const partition = document.getElementById('partitionFilter').value;
+            const label = document.getElementById('partitionLabel');
+            if (partition === 'aws-eusc') {
+                label.innerHTML = ' - <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 810 540" style="height: 1em; width: 1.5em; vertical-align: middle;"><rect fill="#039" width="810" height="540"/><g fill="#fc0" transform="scale(30)translate(13.5,9)"><use href="#s" y="-6"/><use href="#s" y="6"/><g id="l"><use href="#s" x="-6"/><use href="#s" transform="rotate(150)translate(0,6)rotate(66)"/><use href="#s" transform="rotate(120)translate(0,6)rotate(24)"/><use href="#s" transform="rotate(60)translate(0,6)rotate(12)"/><use href="#s" transform="rotate(30)translate(0,6)rotate(42)"/></g><use href="#l" transform="scale(-1,1)"/></g><defs><g id="s"><g id="c"><path id="t" d="M0,0v1h0.5z" transform="translate(0,-1)rotate(18)"/><use href="#t" transform="scale(-1,1)"/></g><g id="a"><use href="#c" transform="rotate(72)"/><use href="#c" transform="rotate(144)"/></g><use href="#a" transform="scale(-1,1)"/></g></defs></svg> EU Sovereign Cloud';
+                document.getElementById('partitionInfo').style.display = 'inline-block';
+                map.setView([50, 10], 4); // Zoom to Europe
+            } else {
+                label.innerHTML = '';
+                document.getElementById('partitionInfo').style.display = 'none';
+                map.setView([20, 0], 2); // Reset to world view
+            }
+        }
+        
         // Filter table and map
         function filterTable() {
+            updatePartitionLabel();
             const searchInput = document.getElementById("searchInput").value.toUpperCase();
+            const partitionFilter = document.getElementById("partitionFilter").value;
             const regionFilter = document.getElementById("regionFilter").value;
             const speedFilter = document.getElementById("speedFilter").value;
             const macsecFilter = document.getElementById("macsecFilter").value;
+            
+            // Repopulate filters when partition changes
+            const currentPartition = document.getElementById('partitionFilter').dataset.currentPartition || 'aws';
+            if (partitionFilter !== currentPartition) {
+                document.getElementById('partitionFilter').dataset.currentPartition = partitionFilter;
+                clearAllCountries();
+                document.getElementById('regionFilter').value = '';
+                document.getElementById('speedFilter').value = '';
+                document.getElementById('macsecFilter').value = '';
+                populateFilters(partitionFilter);
+            }
             
             // Clear user marker and search if any filter is active
             if (selectedCountries.size > 0 || regionFilter || speedFilter || macsecFilter) {
@@ -558,10 +635,14 @@ html += """
             
             for (let i = 1; i < tr.length; i++) {
                 const row = tr[i];
+                const partition = row.dataset.partition || 'aws';
                 const country = row.dataset.country || '';
                 const region = row.dataset.region || '';
                 const speeds = row.dataset.speeds || '';
                 const macsec = row.dataset.macsec || '';
+                
+                // Partition filter (always applied)
+                const partitionMatch = partition === partitionFilter;
                 
                 // Text search
                 let textMatch = true;
@@ -605,7 +686,7 @@ html += """
                     }
                 }
                 
-                const show = textMatch && countryMatch && regionMatch && speedMatch && macsecMatch;
+                const show = partitionMatch && textMatch && countryMatch && regionMatch && speedMatch && macsecMatch;
                 row.style.display = show ? "" : "none";
                 if (show) {
                     visibleCodes.add(row.getAttribute('data-code'));

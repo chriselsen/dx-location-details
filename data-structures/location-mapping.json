@@ -20,6 +20,16 @@
     "peeringdb_id": "350",
     "state": "NJ"
   },
+  "AEBTF": {
+    "city": "Berlin",
+    "coordinates": {
+      "lat": "52.527509",
+      "lon": "13.318852"
+    },
+    "country": "DE",
+    "facility_name": "AtlasEdge DC Berlin BER001",
+    "peeringdb_id": "4073"
+  },
   "AIMMN": {
     "city": "Kuala Lumpur",
     "coordinates": {
@@ -884,6 +894,16 @@
     "peeringdb_id": "58"
   },
   "IPB50": {
+    "city": "Berlin",
+    "coordinates": {
+      "lat": "52.50192",
+      "lon": "13.36945"
+    },
+    "country": "DE",
+    "facility_name": "CarrierColo Berlin Luetzow (I/P/B/ site B)",
+    "peeringdb_id": "445"
+  },
+  "IPBTF": {
     "city": "Berlin",
     "coordinates": {
       "lat": "52.50192",
