@@ -2,9 +2,13 @@
 import json
 from datetime import datetime
 
-# Read the data
-with open('data-structures/dx-locations-data.json', 'r') as f:
-    locations = json.load(f)
+# Read the data (use merged if available)
+try:
+    with open('data-structures/dx-locations-data-merged.json', 'r') as f:
+        locations = json.load(f)
+except FileNotFoundError:
+    with open('data-structures/dx-locations-data.json', 'r') as f:
+        locations = json.load(f)
 
 # Read the icon
 with open('icons/icon.txt', 'r') as f:
@@ -89,6 +93,10 @@ html = f"""<!DOCTYPE html>
         <button class="home-button" onclick="resetMap(); event.stopPropagation();" title="Reset map view">🏠</button>
     </div>
     <div class="filters">
+        <select id="partitionFilter" onchange="filterTable()">
+            <option value="aws">AWS Commercial</option>
+            <option value="aws-eusc">🇪🇺 EU Sovereign Cloud</option>
+        </select>
         <div class="multi-select" id="countryMultiSelect">
             <div class="multi-select-trigger" onclick="toggleCountryDropdown()">
                 <span>Country Filter</span>
@@ -164,10 +172,11 @@ for loc in sorted_locations:
     country_name = country_code_to_name.get(country_code, country_code)
     country_display = f"{country_name} ({country_code})" if country_code and country_name else ""
     region = loc['region']
+    partition = loc.get('partition', 'aws')
     port_speeds = ','.join(loc.get('port_speeds', []))
     macsec_speeds = ','.join(loc.get('macsec_capable', []))
     
-    html += f"""            <tr data-code="{loc['code']}" data-country="{country_display}" data-region="{region}" data-speeds="{port_speeds}" data-macsec="{macsec_speeds}">
+    html += f"""            <tr data-code="{loc['code']}" data-partition="{partition}" data-country="{country_display}" data-region="{region}" data-speeds="{port_speeds}" data-macsec="{macsec_speeds}">
                 <td>{location_html}</td>
                 <td>{speeds_html}</td>
                 <td>{map_link}</td>
@@ -307,6 +316,72 @@ html += """        </tbody>
         const speeds = new Set();
         const selectedCountries = new Set();
         
+        // Populate dropdowns based on all data initially
+        function populateFilters(partition) {
+            countries.clear();
+            regions.clear();
+            speeds.clear();
+            
+            document.querySelectorAll('tr[data-country]').forEach(tr => {
+                const rowPartition = tr.dataset.partition || 'aws';
+                if (rowPartition === partition) {
+                    if (tr.dataset.country) countries.add(tr.dataset.country);
+                    if (tr.dataset.region) regions.add(tr.dataset.region);
+                    if (tr.dataset.speeds) tr.dataset.speeds.split(',').forEach(s => speeds.add(s));
+                    if (tr.dataset.macsec) tr.dataset.macsec.split(',').forEach(s => speeds.add(s));
+                }
+            });
+            
+            // Repopulate country multi-select
+            const countryDropdown = document.getElementById('countryDropdown');
+            const actionsDiv = countryDropdown.querySelector('.multi-select-actions');
+            countryDropdown.innerHTML = '';
+            countryDropdown.appendChild(actionsDiv);
+            
+            const sortedCountries = Array.from(countries).filter(c => c).sort((a, b) => {
+                const nameA = a.split(' (')[0];
+                const nameB = b.split(' (')[0];
+                return nameA.localeCompare(nameB);
+            });
+            sortedCountries.forEach(c => {
+                const option = document.createElement('div');
+                option.className = 'multi-select-option';
+                option.innerHTML = `<input type="checkbox" id="country-${c}" value="${c}" onchange="updateCountryFilter()"><label for="country-${c}" style="cursor: pointer; flex: 1;">${c}</label>`;
+                countryDropdown.appendChild(option);
+            });
+            
+            // Repopulate region filter
+            const regionFilter = document.getElementById('regionFilter');
+            const currentRegion = regionFilter.value;
+            regionFilter.innerHTML = '<option value="">All Associated Regions</option>';
+            Array.from(regions).sort().forEach(r => {
+                const opt = document.createElement('option');
+                opt.value = r;
+                opt.textContent = r;
+                regionFilter.appendChild(opt);
+            });
+            if (regions.has(currentRegion)) {
+                regionFilter.value = currentRegion;
+            }
+            
+            // Repopulate speed filter
+            const speedFilter = document.getElementById('speedFilter');
+            const currentSpeed = speedFilter.value;
+            speedFilter.innerHTML = '<option value="">All Port Speeds</option>';
+            Array.from(speeds).sort((a,b) => {
+                const order = {'1G':1, '10G':2, '100G':3, '400G':4};
+                return (order[a]||99) - (order[b]||99);
+            }).forEach(s => {
+                const opt = document.createElement('option');
+                opt.value = s;
+                opt.textContent = s;
+                speedFilter.appendChild(opt);
+            });
+            if (speeds.has(currentSpeed)) {
+                speedFilter.value = currentSpeed;
+            }
+        }
+        
         document.querySelectorAll('tr[data-country]').forEach(tr => {
             if (tr.dataset.country) countries.add(tr.dataset.country);
             if (tr.dataset.region) regions.add(tr.dataset.region);
@@ -314,36 +389,9 @@ html += """        </tbody>
             if (tr.dataset.macsec) tr.dataset.macsec.split(',').forEach(s => speeds.add(s));
         });
         
-        // Populate country multi-select
+        // Populate country multi-select (initial)
         const countryDropdown = document.getElementById('countryDropdown');
-        const sortedCountries = Array.from(countries).filter(c => c).sort((a, b) => {
-            const nameA = a.split(' (')[0];
-            const nameB = b.split(' (')[0];
-            return nameA.localeCompare(nameB);
-        });
-        sortedCountries.forEach(c => {
-            const option = document.createElement('div');
-            option.className = 'multi-select-option';
-            option.innerHTML = `<input type="checkbox" id="country-${c}" value="${c}" onchange="updateCountryFilter()"><label for="country-${c}" style="cursor: pointer; flex: 1;">${c}</label>`;
-            countryDropdown.appendChild(option);
-        });
-        
-        Array.from(regions).sort().forEach(r => {
-            const opt = document.createElement('option');
-            opt.value = r;
-            opt.textContent = r;
-            document.getElementById('regionFilter').appendChild(opt);
-        });
-        
-        Array.from(speeds).sort((a,b) => {
-            const order = {'1G':1, '10G':2, '100G':3, '400G':4};
-            return (order[a]||99) - (order[b]||99);
-        }).forEach(s => {
-            const opt = document.createElement('option');
-            opt.value = s;
-            opt.textContent = s;
-            document.getElementById('speedFilter').appendChild(opt);
-        });
+        populateFilters('aws');
         
         // Add click handlers to table rows
         document.querySelectorAll('#dxTable tbody tr').forEach(row => {
@@ -533,9 +581,21 @@ html += """
         // Filter table and map
         function filterTable() {
             const searchInput = document.getElementById("searchInput").value.toUpperCase();
+            const partitionFilter = document.getElementById("partitionFilter").value;
             const regionFilter = document.getElementById("regionFilter").value;
             const speedFilter = document.getElementById("speedFilter").value;
             const macsecFilter = document.getElementById("macsecFilter").value;
+            
+            // Repopulate filters when partition changes
+            const currentPartition = document.getElementById('partitionFilter').dataset.currentPartition || 'aws';
+            if (partitionFilter !== currentPartition) {
+                document.getElementById('partitionFilter').dataset.currentPartition = partitionFilter;
+                clearAllCountries();
+                document.getElementById('regionFilter').value = '';
+                document.getElementById('speedFilter').value = '';
+                document.getElementById('macsecFilter').value = '';
+                populateFilters(partitionFilter);
+            }
             
             // Clear user marker and search if any filter is active
             if (selectedCountries.size > 0 || regionFilter || speedFilter || macsecFilter) {
@@ -558,10 +618,14 @@ html += """
             
             for (let i = 1; i < tr.length; i++) {
                 const row = tr[i];
+                const partition = row.dataset.partition || 'aws';
                 const country = row.dataset.country || '';
                 const region = row.dataset.region || '';
                 const speeds = row.dataset.speeds || '';
                 const macsec = row.dataset.macsec || '';
+                
+                // Partition filter (always applied)
+                const partitionMatch = partition === partitionFilter;
                 
                 // Text search
                 let textMatch = true;
@@ -605,7 +669,7 @@ html += """
                     }
                 }
                 
-                const show = textMatch && countryMatch && regionMatch && speedMatch && macsecMatch;
+                const show = partitionMatch && textMatch && countryMatch && regionMatch && speedMatch && macsecMatch;
                 row.style.display = show ? "" : "none";
                 if (show) {
                     visibleCodes.add(row.getAttribute('data-code'));
