@@ -97,6 +97,7 @@ html = f"""<!DOCTYPE html>
             <option value="aws">AWS Commercial</option>
             <option value="aws-eusc">EU Sovereign Cloud</option>
         </select>
+        <span class="info-icon" id="partitionInfo" style="display: none;" data-tooltip="EU Sovereign Cloud is an isolated AWS region designed to meet strict European data residency and sovereignty requirements. It operates independently from standard AWS regions." onclick="event.stopPropagation()">i</span>
         <div class="multi-select" id="countryMultiSelect">
             <div class="multi-select-trigger" onclick="toggleCountryDropdown()">
                 <span>Country Filter</span>
@@ -583,10 +584,12 @@ html += """
             const partition = document.getElementById('partitionFilter').value;
             const label = document.getElementById('partitionLabel');
             if (partition === 'aws-eusc') {
-                label.innerHTML = ' - <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 810 540" style="height: 1em; width: 1.5em; vertical-align: middle;"><rect fill="#039" width="810" height="540"/><g fill="#fc0" transform="scale(30)translate(13.5,9)"><use href="#s" y="-6"/><use href="#s" y="6"/><g id="l"><use href="#s" x="-6"/><use href="#s" transform="rotate(150)translate(0,6)rotate(66)"/><use href="#s" transform="rotate(120)translate(0,6)rotate(24)"/><use href="#s" transform="rotate(60)translate(0,6)rotate(12)"/><use href="#s" transform="rotate(30)translate(0,6)rotate(42)"/></g><use href="#l" transform="scale(-1,1)"/></g><defs><g id="s"><g id="c"><path id="t" d="M0,0v1h0.5z" transform="translate(0,-1)rotate(18)"/><use href="#t" transform="scale(-1,1)"/></g><g id="a"><use href="#c" transform="rotate(72)"/><use href="#c" transform="rotate(144)"/></g><use href="#a" transform="scale(-1,1)"/></g></defs></svg> EU Sovereign Cloud<span class="info-icon" data-tooltip="EU Sovereign Cloud is an isolated AWS region designed to meet strict European data residency and sovereignty requirements. It operates independently from standard AWS regions." onclick="event.stopPropagation()">i</span>';
+                label.innerHTML = ' - <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 810 540" style="height: 1em; width: 1.5em; vertical-align: middle;"><rect fill="#039" width="810" height="540"/><g fill="#fc0" transform="scale(30)translate(13.5,9)"><use href="#s" y="-6"/><use href="#s" y="6"/><g id="l"><use href="#s" x="-6"/><use href="#s" transform="rotate(150)translate(0,6)rotate(66)"/><use href="#s" transform="rotate(120)translate(0,6)rotate(24)"/><use href="#s" transform="rotate(60)translate(0,6)rotate(12)"/><use href="#s" transform="rotate(30)translate(0,6)rotate(42)"/></g><use href="#l" transform="scale(-1,1)"/></g><defs><g id="s"><g id="c"><path id="t" d="M0,0v1h0.5z" transform="translate(0,-1)rotate(18)"/><use href="#t" transform="scale(-1,1)"/></g><g id="a"><use href="#c" transform="rotate(72)"/><use href="#c" transform="rotate(144)"/></g><use href="#a" transform="scale(-1,1)"/></g></defs></svg> EU Sovereign Cloud';
+                document.getElementById('partitionInfo').style.display = 'inline-block';
                 map.setView([50, 10], 4); // Zoom to Europe
             } else {
                 label.innerHTML = '';
+                document.getElementById('partitionInfo').style.display = 'none';
                 map.setView([20, 0], 2); // Reset to world view
             }
         }
