@@ -3,11 +3,13 @@
 [![Daily DX Location Update](https://github.com/chriselsen/dx-location-details/actions/workflows/daily-update.yml/badge.svg)](https://github.com/chriselsen/dx-location-details/actions/workflows/daily-update.yml)
 
 ## Overview
-Automatically generates a sortable wiki table and KML file of AWS Direct Connect locations.
+Automatically generates a sortable wiki table and KML file of AWS Direct Connect locations across both AWS Commercial and EU Sovereign Cloud partitions.
 
 **Live View**: [Interactive Table with Map](https://chriselsen.github.io/dx-location-details/)
 
-**Downloads**: [KML File](output/DirectConnectLocations.kml) | [CSV File](output/DX_LOCATIONS.csv)
+**Downloads**: 
+- **Global**: [KML File](output/DirectConnectLocations.kml) | [CSV File](output/DX_LOCATIONS.csv)
+- **EU Sovereign Cloud**: [KML File](output/DirectConnectLocations_EUSC.kml) | [CSV File](output/DX_LOCATIONS_EUSC.csv)
 
 ![AWS Direct Connect Locations World Map](output/DX_Locations.png)
 
@@ -150,5 +152,9 @@ The system automatically normalizes location codes:
 ## GitHub Pages
 The repository publishes an interactive HTML page via GitHub Pages:
 - **Interactive Table with Map**: https://chriselsen.github.io/dx-location-details/
+
+The page features a tabbed interface allowing users to switch between:
+- **AWS Commercial Partition**: Global Direct Connect locations
+- **EU Sovereign Cloud**: European locations in the isolated EU partition
 
 This page is automatically updated daily via GitHub Actions.
