@@ -94,7 +94,7 @@ html = f"""<!DOCTYPE html>
     </div>
     <div class="filters">
         <select id="partitionFilter" onchange="filterTable()">
-            <option value="aws">AWS Commercial</option>
+            <option value="aws">AWS Commercial Partition</option>
             <option value="aws-eusc">EU Sovereign Cloud</option>
         </select>
         <span class="info-icon" id="partitionInfo" style="display: none;" data-tooltip="EU Sovereign Cloud is an isolated AWS region designed to meet strict European data residency and sovereignty requirements. It operates independently from standard AWS regions." onclick="event.stopPropagation()">i</span>
