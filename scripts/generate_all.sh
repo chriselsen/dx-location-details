@@ -12,12 +12,18 @@ echo "Step 1: Collecting data from AWS..."
 python3 scripts/collect_data.py
 echo ""
 
-echo "Step 2: Generating CSV file..."
+echo "Step 2: Generating CSV files..."
 python3 scripts/generate_csv.py
+if [ -f "data-structures/dx-locations-data-eusc.json" ]; then
+    python3 scripts/generate_csv_eusc.py
+fi
 echo ""
 
 echo "Step 3: Generating KML files..."
 python3 scripts/generate_kml.py
+if [ -f "data-structures/dx-locations-data-eusc.json" ]; then
+    python3 scripts/generate_kml_eusc.py
+fi
 echo ""
 
 echo "Step 4: Generating world map PNG..."

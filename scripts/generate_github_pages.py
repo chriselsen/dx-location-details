@@ -97,7 +97,7 @@ html = f"""<!DOCTYPE html>
             <option value="aws">AWS Commercial Partition</option>
             <option value="aws-eusc">EU Sovereign Cloud</option>
         </select>
-        <span class="info-icon" id="partitionInfo" style="display: none;" data-tooltip="EU Sovereign Cloud is an isolated AWS region designed to meet strict European data residency and sovereignty requirements. It operates independently from standard AWS regions." onclick="event.stopPropagation()">i</span>
+        <span class="info-icon" id="partitionInfo" style="display: none;" data-tooltip="EU Sovereign Cloud is an isolated AWS partition designed to meet strict European data residency and sovereignty requirements. It operates independently from other AWS partitions." onclick="event.stopPropagation()">i</span>
         <div class="multi-select" id="countryMultiSelect">
             <div class="multi-select-trigger" onclick="toggleCountryDropdown()">
                 <span>Country Filter</span>

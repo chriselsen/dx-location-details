@@ -1,0 +1,3 @@
+Location Code,Partition,Location Name,AWS Name,Country,Region Code,Region Name,Port Speeds,MACsec Capable,PeeringDB ID,Latitude,Longitude
+AEBTF,aws-eusc,"AtlasEdge DC Berlin BER001, Berlin, DE",Atlas Edge BER001,DE,eusc-de-east-1,eusc-de-east-1,"10G, 100G","10G, 100G",4073,52.527509,13.318852
+IPBTF,aws-eusc,"CarrierColo Berlin Luetzow (I/P/B/ site B), Berlin, DE",IPB GmbH,DE,eusc-de-east-1,eusc-de-east-1,"10G, 100G","10G, 100G",445,52.50192,13.36945
