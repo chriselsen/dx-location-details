@@ -11,7 +11,7 @@
   <Placemark>
     <name>EQHK1</name>
     <description><![CDATA[
-      <b>Equinix HK1, Tsuen Wan, HK</b><br/>
+      <b>Equinix HK1 - Hong Kong, Tsuen Wan, HK</b><br/>
       Region: ap-east-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -20,7 +20,7 @@
   <Placemark>
     <name>CFT54</name>
     <description><![CDATA[
-      <b>Chief Telecom HD, Taipei, TW</b><br/>
+      <b>Chief HD Building Taipei, Taipei, TW</b><br/>
       Region: ap-east-2
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -29,7 +29,7 @@
   <Placemark>
     <name>CHT51</name>
     <description><![CDATA[
-      <b>Chunghwa Telecom, New Taipei City, TW</b><br/>
+      <b>CHT Taipei Banqiao IDC, New Taipei City, TW</b><br/>
       Region: ap-east-2
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -38,7 +38,7 @@
   <Placemark>
     <name>ATTC1</name>
     <description><![CDATA[
-      <b>AT Tokyo Chuo Data Center, Tokyo, JP</b><br/>
+      <b>AT TOKYO (CC1/CC2), Tokyo, JP</b><br/>
       Region: ap-northeast-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -47,7 +47,7 @@
   <Placemark>
     <name>CFT52</name>
     <description><![CDATA[
-      <b>Chief Telecom LY, Taipei, TW</b><br/>
+      <b>Chief LY Building Taipei, Taipei, TW</b><br/>
       Region: ap-northeast-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -56,7 +56,7 @@
   <Placemark>
     <name>EQOS1</name>
     <description><![CDATA[
-      <b>Equinix OS1, Osaka, JP</b><br/>
+      <b>Equinix OS1 - Osaka, Osaka, JP</b><br/>
       Region: ap-northeast-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -65,7 +65,7 @@
   <Placemark>
     <name>EQTY2</name>
     <description><![CDATA[
-      <b>Equinix TY2, Tokyo, JP</b><br/>
+      <b>Equinix TY2 - Tokyo, Tokyo, JP</b><br/>
       Region: ap-northeast-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -74,7 +74,7 @@
   <Placemark>
     <name>NEIN2</name>
     <description><![CDATA[
-      <b>NEC Inzai, Inzai-shi, JP</b><br/>
+      <b>SCSK netXDC (SI1/SI2/SI3)/NEC Inzai DC, Inzai-shi, JP</b><br/>
       Region: ap-northeast-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -83,7 +83,7 @@
   <Placemark>
     <name>LGKNX</name>
     <description><![CDATA[
-      <b>KINX Gasen, Seoul, KR</b><br/>
+      <b>KINX Gasan, Seoul, KR</b><br/>
       Region: ap-northeast-2
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -92,7 +92,7 @@
   <Placemark>
     <name>LGU57</name>
     <description><![CDATA[
-      <b>LG U+ Pyeong-Chon Mega Center, Anyang-si, KR</b><br/>
+      <b>LG Uplus Pyeongchon IDC, Anyang-si, KR</b><br/>
       Region: ap-northeast-2
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -101,7 +101,7 @@
   <Placemark>
     <name>TLS10</name>
     <description><![CDATA[
-      <b>Digital Realty ICN10, Mapo-gu, KR</b><br/>
+      <b>Digital Realty ICN10 - Seoul, Mapo-gu, KR</b><br/>
       Region: ap-northeast-2
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -110,7 +110,7 @@
   <Placemark>
     <name>KDOS2</name>
     <description><![CDATA[
-      <b>KDDI Telehouse Osaka 2, Osaka, JP</b><br/>
+      <b>Telehouse – OSAKA 1&2, Osaka, JP</b><br/>
       Region: ap-northeast-3
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -119,7 +119,7 @@
   <Placemark>
     <name>EQMB2</name>
     <description><![CDATA[
-      <b>Equinix MB2, Mumbai, IN</b><br/>
+      <b>Equinix MB2 - Mumbai (GPX Mumbai 2), Mumbai, IN</b><br/>
       Region: ap-south-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -128,7 +128,7 @@
   <Placemark>
     <name>GPX51</name>
     <description><![CDATA[
-      <b>Equinix MB1, Mumbai, IN</b><br/>
+      <b>Equinix MB1 - Mumbai (GPX Mumbai 1), Mumbai, IN</b><br/>
       Region: ap-south-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -137,7 +137,7 @@
   <Placemark>
     <name>NMBL2</name>
     <description><![CDATA[
-      <b>NetMagic DC2, Bangalore, IN</b><br/>
+      <b>Netmagic Bangalore DC02, Bangalore, IN</b><br/>
       Region: ap-south-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -146,7 +146,7 @@
   <Placemark>
     <name>SFY52</name>
     <description><![CDATA[
-      <b>Sify Rabale, Navi Mumbai, IN</b><br/>
+      <b>Sify Rabale - Mumbai, Navi Mumbai, IN</b><br/>
       Region: ap-south-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -155,7 +155,7 @@
   <Placemark>
     <name>TCDC1</name>
     <description><![CDATA[
-      <b>STT GDC INDIA PVT. LTD. VSB, Chennai, IN</b><br/>
+      <b>STT Chennai 1, Chennai, IN</b><br/>
       Region: ap-south-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -164,7 +164,7 @@
   <Placemark>
     <name>TCDE2</name>
     <description><![CDATA[
-      <b>STT Delhi DC2, Delhi, IN</b><br/>
+      <b>STT Delhi 2, Delhi, IN</b><br/>
       Region: ap-south-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -173,7 +173,7 @@
   <Placemark>
     <name>TCDK1</name>
     <description><![CDATA[
-      <b>STT Kolkata, Kolkata, IN</b><br/>
+      <b>STT Kolkata 1, Kolkata, IN</b><br/>
       Region: ap-south-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -182,7 +182,7 @@
   <Placemark>
     <name>TCHY1</name>
     <description><![CDATA[
-      <b>STT Hyderabad DC1, Hyderabad, IN</b><br/>
+      <b>STT Hyderabad 1, Hyderabad, IN</b><br/>
       Region: ap-south-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -191,7 +191,7 @@
   <Placemark>
     <name>AIMMN</name>
     <description><![CDATA[
-      <b>Menara AIMS, Kuala Lumpur, MY</b><br/>
+      <b>AIMS Kuala Lumpur, Kuala Lumpur, MY</b><br/>
       Region: ap-southeast-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -200,7 +200,7 @@
   <Placemark>
     <name>EPVM2</name>
     <description><![CDATA[
-      <b>ePLDT VM2, Makati, PH</b><br/>
+      <b>VITRO Makati 2, Makati, PH</b><br/>
       Region: ap-southeast-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -209,7 +209,7 @@
   <Placemark>
     <name>EQSG2</name>
     <description><![CDATA[
-      <b>Equinix SG2, Singapore, SG</b><br/>
+      <b>Equinix SG2 - Singapore, Singapore, SG</b><br/>
       Region: ap-southeast-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -218,7 +218,7 @@
   <Placemark>
     <name>GSS52</name>
     <description><![CDATA[
-      <b>Global Switch, Singapore, SG</b><br/>
+      <b>Global Switch Singapore, Singapore, SG</b><br/>
       Region: ap-southeast-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -227,7 +227,7 @@
   <Placemark>
     <name>IAMGI</name>
     <description><![CDATA[
-      <b>iAdvantage MEGA-i, Hong Kong, HK</b><br/>
+      <b>MEGA-i (iAdvantage Hong Kong), Hong Kong, HK</b><br/>
       Region: ap-southeast-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -236,7 +236,7 @@
   <Placemark>
     <name>TCCBK</name>
     <description><![CDATA[
-      <b>TCC, Bangkok, TH</b><br/>
+      <b>TCC Technology Data Center- Bangkok, Bangkok, TH</b><br/>
       Region: ap-southeast-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -245,7 +245,7 @@
   <Placemark>
     <name>CBHU2</name>
     <description><![CDATA[
-      <b>CDC Hume 2, Hume, AU</b><br/>
+      <b>CDC Canberra HU2, Hume, AU</b><br/>
       Region: ap-southeast-2
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -254,7 +254,7 @@
   <Placemark>
     <name>DCDH6</name>
     <description><![CDATA[
-      <b>Datacom DH6, Auckland, NZ</b><br/>
+      <b>Datacom - Orbit Data Centre (Auckland), Auckland, NZ</b><br/>
       Region: ap-southeast-2
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -263,7 +263,7 @@
   <Placemark>
     <name>EQSY3</name>
     <description><![CDATA[
-      <b>Equinix SY1 - SY4, Sydney, AU</b><br/>
+      <b>Equinix SY3 - Sydney, Sydney, AU</b><br/>
       Region: ap-southeast-2
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -272,7 +272,7 @@
   <Placemark>
     <name>GBSY6</name>
     <description><![CDATA[
-      <b>Global Switch SY6, Silverwater, AU</b><br/>
+      <b>Equinix SY6 - Sydney (formerly Metronode Sydney 2), Silverwater, AU</b><br/>
       Region: ap-southeast-2
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -326,7 +326,7 @@
   <Placemark>
     <name>DCIJ3</name>
     <description><![CDATA[
-      <b>DCI Indonesia, Bekasi, Cibitung, ID</b><br/>
+      <b>DCI Indonesia (JK3), Bekasi, Cibitung, ID</b><br/>
       Region: ap-southeast-3
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -335,7 +335,7 @@
   <Placemark>
     <name>JKT02</name>
     <description><![CDATA[
-      <b>NTT Jakarta 2 Data Center, Jakarta, ID</b><br/>
+      <b>NTT Jakarta 2 Data Center (JKT2), Jakarta, ID</b><br/>
       Region: ap-southeast-3
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -344,7 +344,7 @@
   <Placemark>
     <name>EQME2</name>
     <description><![CDATA[
-      <b>Equinix ME2, Melbourne, AU</b><br/>
+      <b>Equinix ME1/ME2 - Melbourne, Melbourne, AU</b><br/>
       Region: ap-southeast-4
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -353,7 +353,7 @@
   <Placemark>
     <name>CMCHV</name>
     <description><![CDATA[
-      <b>CMC Tower, Hanoi, VN</b><br/>
+      <b>CMC Duy Tan (Hanoi), Hanoi, VN</b><br/>
       Region: ap-southeast-5
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -362,7 +362,7 @@
   <Placemark>
     <name>CSFX1</name>
     <description><![CDATA[
-      <b>Telcohub 1 (CX1), Cyberjaya, MY</b><br/>
+      <b>CSF CX1 / TelcoHub1 Kuala Lumpur, Cyberjaya, MY</b><br/>
       Region: ap-southeast-5
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -371,7 +371,7 @@
   <Placemark>
     <name>SPK53</name>
     <description><![CDATA[
-      <b>Spark MDR, Auckland, NZ</b><br/>
+      <b>Mayoral Drive Exchange (MDR), Auckland, NZ</b><br/>
       Region: ap-southeast-6
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -380,7 +380,7 @@
   <Placemark>
     <name>THRA9</name>
     <description><![CDATA[
-      <b>Telehouse Bangkok, Bangkok, TH</b><br/>
+      <b>Telehouse – Bangkok, Bangkok, TH</b><br/>
       Region: ap-southeast-7
     ]]></description>
     <styleUrl>#dx-location</styleUrl>

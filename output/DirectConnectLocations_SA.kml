@@ -11,7 +11,7 @@
   <Placemark>
     <name>EQMX1</name>
     <description><![CDATA[
-      <b>Equinix MX1, El Marques, MX</b><br/>
+      <b>Equinix MX1/MX2 - Mexico City, El Marques, MX</b><br/>
       Region: mx-central-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -20,7 +20,7 @@
   <Placemark>
     <name>CIBNA</name>
     <description><![CDATA[
-      <b>Cirion BNARAGMS, Buenos Aires, AR</b><br/>
+      <b>Cirion Buenos Aires - BUE1, Buenos Aires, AR</b><br/>
       Region: sa-east-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -29,7 +29,7 @@
   <Placemark>
     <name>CILIM</name>
     <description><![CDATA[
-      <b>Cirion LIMAPUCD, Santiago de Surco, PE</b><br/>
+      <b>Cirion Lima - LIM1, Santiago de Surco, PE</b><br/>
       Region: sa-east-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -38,7 +38,7 @@
   <Placemark>
     <name>EQBG1</name>
     <description><![CDATA[
-      <b>Equinix BG1, Bogota, CO</b><br/>
+      <b>Equinix BG1 - Bogota, Bogota, CO</b><br/>
       Region: sa-east-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -47,7 +47,7 @@
   <Placemark>
     <name>EQRJ2</name>
     <description><![CDATA[
-      <b>Equinix RJ2, Rio de Janeiro, BR</b><br/>
+      <b>Equinix RJ2 - Rio de Janeiro, Rio de Janeiro, BR</b><br/>
       Region: sa-east-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -56,7 +56,7 @@
   <Placemark>
     <name>SONQU</name>
     <description><![CDATA[
-      <b>Sonda Quilicura, Santiago, CL</b><br/>
+      <b>SONDA - Quilicura, Santiago, CL</b><br/>
       Region: sa-east-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -65,7 +65,7 @@
   <Placemark>
     <name>TIVIT</name>
     <description><![CDATA[
-      <b>Tivit, São Paulo, BR</b><br/>
+      <b>TIVIT Sao Paulo, São Paulo, BR</b><br/>
       Region: sa-east-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -74,7 +74,7 @@
   <Placemark>
     <name>TNDB</name>
     <description><![CDATA[
-      <b>Equinix SP4, Barueri, BR</b><br/>
+      <b>Equinix SP4 - São Paulo, Barueri, BR</b><br/>
       Region: sa-east-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>

@@ -11,7 +11,7 @@
   <Placemark>
     <name>EANB1</name>
     <description><![CDATA[
-      <b>East Africa Data Centres NBO1, Nairobi, KE</b><br/>
+      <b>Africa Data Centres, Nairobi, KE</b><br/>
       Region: af-south-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -20,7 +20,7 @@
   <Placemark>
     <name>RCL1</name>
     <description><![CDATA[
-      <b>Rack Centre LGS1, Ikeja, NG</b><br/>
+      <b>Rack Centre Lagos, Ikeja, NG</b><br/>
       Region: af-south-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -29,7 +29,7 @@
   <Placemark>
     <name>TECT1</name>
     <description><![CDATA[
-      <b>Teraco CT1, Cape Town, ZA</b><br/>
+      <b>Teraco CT1 Cape Town, Cape Town, ZA</b><br/>
       Region: af-south-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -38,7 +38,7 @@
   <Placemark>
     <name>CDSR1</name>
     <description><![CDATA[
-      <b>CDLAN srl Via Caldera 21, Milan, IT</b><br/>
+      <b>C21, Milan, IT</b><br/>
       Region: eu-central-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -47,7 +47,7 @@
   <Placemark>
     <name>CEC50</name>
     <description><![CDATA[
-      <b>CE Colo, Prague, CZ</b><br/>
+      <b>CE Colo Prague, Prague, CZ</b><br/>
       Region: eu-central-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -56,7 +56,7 @@
   <Placemark>
     <name>DGPU1</name>
     <description><![CDATA[
-      <b>DigiPlex Ulven, Oslo, NO</b><br/>
+      <b>STACK EMEA - OSL01, Oslo, NO</b><br/>
       Region: eu-central-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -65,7 +65,7 @@
   <Placemark>
     <name>EQAM3</name>
     <description><![CDATA[
-      <b>Equinix AM3, Amsterdam, NL</b><br/>
+      <b>Equinix AM3 - Amsterdam, Amsterdam, NL</b><br/>
       Region: eu-central-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -74,7 +74,7 @@
   <Placemark>
     <name>EQFA5</name>
     <description><![CDATA[
-      <b>Equinix FR5, Frankfurt, DE</b><br/>
+      <b>Equinix FR5 - Frankfurt, Frankfurt, DE</b><br/>
       Region: eu-central-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -83,7 +83,7 @@
   <Placemark>
     <name>EQHE6</name>
     <description><![CDATA[
-      <b>Equinix HE6, Espoo, FI</b><br/>
+      <b>Equinix HE6 - Helsinki, Espoo, FI</b><br/>
       Region: eu-central-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -92,7 +92,7 @@
   <Placemark>
     <name>EQIL4</name>
     <description><![CDATA[
-      <b>Equinix IL4 Istanbul, Istanbul, TR</b><br/>
+      <b>Equinix IL4 - Istanbul, Istanbul, TR</b><br/>
       Region: eu-central-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -101,7 +101,7 @@
   <Placemark>
     <name>EQMU1</name>
     <description><![CDATA[
-      <b>Equinix MU1, Munich, DE</b><br/>
+      <b>Equinix MU1/MU3 - Munich, Munich, DE</b><br/>
       Region: eu-central-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -110,7 +110,7 @@
   <Placemark>
     <name>EQWA1</name>
     <description><![CDATA[
-      <b>Equinix WA1, Warsaw, PL</b><br/>
+      <b>Equinix WA1 - Warsaw, Warsaw, PL</b><br/>
       Region: eu-central-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -119,7 +119,7 @@
   <Placemark>
     <name>INX6</name>
     <description><![CDATA[
-      <b>Digital Realty FRA6, Frankfurt, DE</b><br/>
+      <b>Digital Realty Frankfurt FRA1-16, Frankfurt, DE</b><br/>
       Region: eu-central-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -128,7 +128,7 @@
   <Placemark>
     <name>IPB50</name>
     <description><![CDATA[
-      <b>IPB GmbH, Berlin, DE</b><br/>
+      <b>CarrierColo Berlin Luetzow (I/P/B/ site B), Berlin, DE</b><br/>
       Region: eu-central-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -137,7 +137,7 @@
   <Placemark>
     <name>IPHH3</name>
     <description><![CDATA[
-      <b>IPHH H3, Hamburg, DE</b><br/>
+      <b>Portus/IPHH HH3 (Wendenstrasse 251), Hamburg, DE</b><br/>
       Region: eu-central-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -146,7 +146,7 @@
   <Placemark>
     <name>ITCM2</name>
     <description><![CDATA[
-      <b>Equinix Itconic MD2, Alcobendas, ES</b><br/>
+      <b>Equinix MD2 - Madrid, Alcobendas, ES</b><br/>
       Region: eu-central-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -155,7 +155,7 @@
   <Placemark>
     <name>ITXA1</name>
     <description><![CDATA[
-      <b>Digital Realty ATH3, Koropi, GR</b><br/>
+      <b>Digital Realty Athens Campus (ATH1, Koropi, GR</b><br/>
       Region: eu-central-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -164,7 +164,7 @@
   <Placemark>
     <name>ITXA7</name>
     <description><![CDATA[
-      <b>Digital Realty AMS7, Amsterdam, NL</b><br/>
+      <b>Digital Realty Amsterdam AMS3, Amsterdam, NL</b><br/>
       Region: eu-central-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -173,7 +173,7 @@
   <Placemark>
     <name>ITXC2</name>
     <description><![CDATA[
-      <b>Digital Realty CPH2, Copenhagen, DK</b><br/>
+      <b>Digital Realty Copenhagen CPH1-3, Copenhagen, DK</b><br/>
       Region: eu-central-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -182,7 +182,7 @@
   <Placemark>
     <name>ITXM2</name>
     <description><![CDATA[
-      <b>Digital Realty MAD2, Madrid, ES</b><br/>
+      <b>Digital Realty Madrid MAD1-2, Madrid, ES</b><br/>
       Region: eu-central-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -191,7 +191,7 @@
   <Placemark>
     <name>ITXM3</name>
     <description><![CDATA[
-      <b>Digital Realty MAD3, Madrid, ES</b><br/>
+      <b>Digital Realty Madrid MAD3, Madrid, ES</b><br/>
       Region: eu-central-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -200,7 +200,7 @@
   <Placemark>
     <name>ITXS1</name>
     <description><![CDATA[
-      <b>Digital Realty STO1, Stockholm, SE</b><br/>
+      <b>Digital Realty Stockholm STO1-6, Stockholm, SE</b><br/>
       Region: eu-central-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -209,7 +209,7 @@
   <Placemark>
     <name>ITXV2</name>
     <description><![CDATA[
-      <b>Digital Realty VIE2, Vienna, AT</b><br/>
+      <b>Digital Realty Vienna VIE1-2, Vienna, AT</b><br/>
       Region: eu-central-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -218,7 +218,7 @@
   <Placemark>
     <name>ITXZ1</name>
     <description><![CDATA[
-      <b>Digital Realty ZUR1, Glattbrugg, CH</b><br/>
+      <b>Digital Realty Zurich ZUR1, Glattbrugg, CH</b><br/>
       Region: eu-central-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -227,7 +227,7 @@
   <Placemark>
     <name>MOILH</name>
     <description><![CDATA[
-      <b>MedOne, Tirat Carmel, IL</b><br/>
+      <b>MedOne TC1, Tirat Carmel, IL</b><br/>
       Region: eu-central-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -236,7 +236,7 @@
   <Placemark>
     <name>THV52</name>
     <description><![CDATA[
-      <b>Telehouse Voltaire, Paris, FR</b><br/>
+      <b>Telehouse - Paris 2 (Voltaire - Léon Frot), Paris, FR</b><br/>
       Region: eu-central-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -245,7 +245,7 @@
   <Placemark>
     <name>EQZH5</name>
     <description><![CDATA[
-      <b>Equinix ZH5, Zurich, CH</b><br/>
+      <b>Equinix ZH5 - Zurich, Zurich, CH</b><br/>
       Region: eu-central-2
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -254,7 +254,7 @@
   <Placemark>
     <name>EQSK1</name>
     <description><![CDATA[
-      <b>Equinix Sweden SK1, Stockholm, SE</b><br/>
+      <b>Equinix SK1 - Stockholm, Stockholm, SE</b><br/>
       Region: eu-north-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -263,7 +263,7 @@
   <Placemark>
     <name>EQML2</name>
     <description><![CDATA[
-      <b>Equinix ML2, Milan, IT</b><br/>
+      <b>Equinix ML2 - Milan, Milan, IT</b><br/>
       Region: eu-south-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -272,7 +272,7 @@
   <Placemark>
     <name>EQBA1</name>
     <description><![CDATA[
-      <b>Equinix BA1, Barcelona, ES</b><br/>
+      <b>Equinix BA1 - Barcelona, Barcelona, ES</b><br/>
       Region: eu-south-2
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -281,7 +281,7 @@
   <Placemark>
     <name>EIRCL</name>
     <description><![CDATA[
-      <b>Eircom Clonshaugh, Dublin, IE</b><br/>
+      <b>Eircom Dublin (Clonshaugh), Dublin, IE</b><br/>
       Region: eu-west-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -290,7 +290,7 @@
   <Placemark>
     <name>EQDX1</name>
     <description><![CDATA[
-      <b>Equinix DX1, Dubai, AE</b><br/>
+      <b>Equinix DX1 - Dubai, Dubai, AE</b><br/>
       Region: eu-west-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -299,7 +299,7 @@
   <Placemark>
     <name>EQLD5</name>
     <description><![CDATA[
-      <b>Equinix LD5, Slough, GB</b><br/>
+      <b>Equinix LD5 - London, Slough, GB</b><br/>
       Region: eu-west-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -308,7 +308,7 @@
   <Placemark>
     <name>EQLS1</name>
     <description><![CDATA[
-      <b>Equinix LS1, Lisbon, PT</b><br/>
+      <b>Equinix LS1 - Lisbon, Lisbon, PT</b><br/>
       Region: eu-west-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -317,7 +317,7 @@
   <Placemark>
     <name>ETIFJ</name>
     <description><![CDATA[
-      <b>Etisalat Smart Hub Data Center, Fujairah, AE</b><br/>
+      <b>SmartHub Fujairah, Fujairah, AE</b><br/>
       Region: eu-west-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -326,7 +326,7 @@
   <Placemark>
     <name>ITXD2</name>
     <description><![CDATA[
-      <b>Digital Realty DUB2, Dublin, IE</b><br/>
+      <b>Digital Realty Dublin DUB1-2, Dublin, IE</b><br/>
       Region: eu-west-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -335,7 +335,7 @@
   <Placemark>
     <name>ITXM1</name>
     <description><![CDATA[
-      <b>Digital Realty MRS1, Marseille, FR</b><br/>
+      <b>Digital Realty Marseille MRS1-3, Marseille, FR</b><br/>
       Region: eu-west-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -344,7 +344,7 @@
   <Placemark>
     <name>SCDB9</name>
     <description><![CDATA[
-      <b>Servecentric Unit 9, Dublin, IE</b><br/>
+      <b>Servecentric (Blanchardstown), Dublin, IE</b><br/>
       Region: eu-west-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -353,7 +353,7 @@
   <Placemark>
     <name>TCSH</name>
     <description><![CDATA[
-      <b>Digital Realty LHR20, London, GB</b><br/>
+      <b>Digital Realty London LHR20, London, GB</b><br/>
       Region: eu-west-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -362,7 +362,7 @@
   <Placemark>
     <name>TEJB1</name>
     <description><![CDATA[
-      <b>Teraco JB1, Johannesburg, ZA</b><br/>
+      <b>Teraco Johannesburg Campus, Johannesburg, ZA</b><br/>
       Region: eu-west-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -371,7 +371,7 @@
   <Placemark>
     <name>EQMA3</name>
     <description><![CDATA[
-      <b>Equinix MA3, Manchester, GB</b><br/>
+      <b>Equinix MA3 - Manchester, Manchester, GB</b><br/>
       Region: eu-west-2
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -380,7 +380,7 @@
   <Placemark>
     <name>THNO2</name>
     <description><![CDATA[
-      <b>Telehouse West, London, GB</b><br/>
+      <b>Telehouse - London (Docklands West), London, GB</b><br/>
       Region: eu-west-2
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -389,7 +389,7 @@
   <Placemark>
     <name>EQPA3</name>
     <description><![CDATA[
-      <b>Equinix PA3, Paris, FR</b><br/>
+      <b>Equinix PA3 - Paris, Paris, FR</b><br/>
       Region: eu-west-3
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -398,7 +398,7 @@
   <Placemark>
     <name>ITXP7</name>
     <description><![CDATA[
-      <b>Digital Realty PAR7, Paris, FR</b><br/>
+      <b>Digital Realty Paris PAR7, Paris, FR</b><br/>
       Region: eu-west-3
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -407,7 +407,7 @@
   <Placemark>
     <name>ECTL1</name>
     <description><![CDATA[
-      <b>Edgeconnex, Herzliya, IL</b><br/>
+      <b>EdgeConneX Tel Aviv (EDCTLV01), Herzliya, IL</b><br/>
       Region: il-central-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -416,7 +416,7 @@
   <Placemark>
     <name>BDC52</name>
     <description><![CDATA[
-      <b>AWS Bahrain DC52, Hamala, BH</b><br/>
+      <b>AWS Bahrain DC52 MMR, Hamala, BH</b><br/>
       Region: me-south-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -425,7 +425,7 @@
   <Placemark>
     <name>BDC53</name>
     <description><![CDATA[
-      <b>AWS Bahrain DC53, Askar, BH</b><br/>
+      <b>AWS Bahrain DC53 MMR, Askar, BH</b><br/>
       Region: me-south-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -434,7 +434,7 @@
   <Placemark>
     <name>EQMC1</name>
     <description><![CDATA[
-      <b>Equinix MC1 Barka, Muscat, OM</b><br/>
+      <b>Equinix MC1 - Muscat, Muscat, OM</b><br/>
       Region: me-south-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>

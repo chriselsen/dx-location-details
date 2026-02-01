@@ -11,7 +11,7 @@
   <Placemark>
     <name>151FS</name>
     <description><![CDATA[
-      <b>Telehouse, Toronto, CA</b><br/>
+      <b>Telehouse Toronto (151 Front St West), Toronto, CA</b><br/>
       Region: ca-central-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -47,7 +47,7 @@
   <Placemark>
     <name>EQTR2</name>
     <description><![CDATA[
-      <b>Equinix TR2, Toronto, CA</b><br/>
+      <b>Equinix TR2 - Toronto, Toronto, CA</b><br/>
       Region: ca-central-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -56,7 +56,7 @@
   <Placemark>
     <name>NTM62</name>
     <description><![CDATA[
-      <b>eStruxture, Montreal, CA</b><br/>
+      <b>eStruxture MTL-1, Montreal, CA</b><br/>
       Region: ca-central-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -65,7 +65,7 @@
   <Placemark>
     <name>EQCL1</name>
     <description><![CDATA[
-      <b>Equinix CL1, Calgary, CA</b><br/>
+      <b>Equinix CL1 - Calgary, Calgary, CA</b><br/>
       Region: ca-west-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -74,7 +74,7 @@
   <Placemark>
     <name>EQCL3</name>
     <description><![CDATA[
-      <b>Equinix CL3, Calgary, CA</b><br/>
+      <b>Equinix CL3 - Calgary (formerly Q9 Calgary Three), Calgary, CA</b><br/>
       Region: ca-west-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -83,7 +83,7 @@
   <Placemark>
     <name>165HS</name>
     <description><![CDATA[
-      <b>165 Halsey Street, Newark, NJ, US</b><br/>
+      <b>165 Halsey Meet-Me Room, Newark, NJ, US</b><br/>
       Region: us-east-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -92,7 +92,7 @@
   <Placemark>
     <name>CS32A</name>
     <description><![CDATA[
-      <b>CoreSite NY1, New York, NY, US</b><br/>
+      <b>CoreSite - New York (NY1), New York, NY, US</b><br/>
       Region: us-east-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -101,7 +101,7 @@
   <Placemark>
     <name>CSVA1</name>
     <description><![CDATA[
-      <b>CoreSite VA1, Reston, VA, US</b><br/>
+      <b>CoreSite - Reston (VA1), Reston, VA, US</b><br/>
       Region: us-east-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -110,7 +110,7 @@
   <Placemark>
     <name>EQDA2</name>
     <description><![CDATA[
-      <b>Equinix DA2, Dallas, TX, US</b><br/>
+      <b>Equinix DA - Dallas (previously Infomart Dallas), Dallas, TX, US</b><br/>
       Region: us-east-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -119,7 +119,7 @@
   <Placemark>
     <name>EQDC2</name>
     <description><![CDATA[
-      <b>Equinix DC2/DC11, Ashburn, VA, US</b><br/>
+      <b>Equinix DC1-DC15, Ashburn, VA, US</b><br/>
       Region: us-east-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -128,7 +128,7 @@
   <Placemark>
     <name>EQMI1</name>
     <description><![CDATA[
-      <b>Equinix MI1, Miami, FL, US</b><br/>
+      <b>Equinix MI1 - Miami, Miami, FL, US</b><br/>
       Region: us-east-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -137,7 +137,7 @@
   <Placemark>
     <name>EQNY5</name>
     <description><![CDATA[
-      <b>Equinix NY5, Secaucus, NJ, US</b><br/>
+      <b>Equinix NY2/NY4/NY5/NY6 - New York, Secaucus, NJ, US</b><br/>
       Region: us-east-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -146,7 +146,7 @@
   <Placemark>
     <name>KIOQ1</name>
     <description><![CDATA[
-      <b>KIO Networks QRO 1, El Marques, MX</b><br/>
+      <b>KIO Querétaro 1 (QRO1), El Marques, MX</b><br/>
       Region: us-east-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -155,16 +155,16 @@
   <Placemark>
     <name>LGT50</name>
     <description><![CDATA[
-      <b>Crown Castle, Philadelphia, PA, US</b><br/>
+      <b>Crown Castle Philadelphia (401 N Broad), Philadelphia, PA, US</b><br/>
       Region: us-east-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
-    <Point><coordinates>-75.161752,39.959889,0</coordinates></Point>
+    <Point><coordinates>-75.161377,39.959668,0</coordinates></Point>
   </Placemark>
   <Placemark>
     <name>MB1SD</name>
     <description><![CDATA[
-      <b>Markley, Boston, MA, US</b><br/>
+      <b>Markley Group One Summer Street Boston, Boston, MA, US</b><br/>
       Region: us-east-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -173,7 +173,7 @@
   <Placemark>
     <name>QTDC2</name>
     <description><![CDATA[
-      <b>QTS ATL1, Atlanta, GA, US</b><br/>
+      <b>QTS Atlanta-Metro (ATL1), Atlanta, GA, US</b><br/>
       Region: us-east-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -182,7 +182,7 @@
   <Placemark>
     <name>TLLPJ</name>
     <description><![CDATA[
-      <b>Digital Realty IAD38, Ashburn, VA, US</b><br/>
+      <b>Digital Realty IAD (44100 Digital Loudoun), Ashburn, VA, US</b><br/>
       Region: us-east-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -191,7 +191,7 @@
   <Placemark>
     <name>TLXA1</name>
     <description><![CDATA[
-      <b>Digital Realty ATL13, Atlanta, GA, US</b><br/>
+      <b>Digital Realty ATL (56 Marietta), Atlanta, GA, US</b><br/>
       Region: us-east-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -218,7 +218,7 @@
   <Placemark>
     <name>CSCH1</name>
     <description><![CDATA[
-      <b>CoreSite CH1, Chicago, IL, US</b><br/>
+      <b>CoreSite - Chicago (CH1), Chicago, IL, US</b><br/>
       Region: us-east-2
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -227,7 +227,7 @@
   <Placemark>
     <name>CYOA1</name>
     <description><![CDATA[
-      <b>CyrusOne Aurora A1, Aurora, IL, US</b><br/>
+      <b>CyrusOne Aurora I, Aurora, IL, US</b><br/>
       Region: us-east-2
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -236,7 +236,7 @@
   <Placemark>
     <name>CYOW3</name>
     <description><![CDATA[
-      <b>DataBank HOU3, Houston, TX, US</b><br/>
+      <b>Databank Houston West (HOU1) (HOU2), Houston, TX, US</b><br/>
       Region: us-east-2
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -245,7 +245,7 @@
   <Placemark>
     <name>EQC50</name>
     <description><![CDATA[
-      <b>Equinix CH2, Chicago, IL, US</b><br/>
+      <b>Equinix CH1/CH2/CH4 - Chicago, Chicago, IL, US</b><br/>
       Region: us-east-2
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -254,7 +254,7 @@
   <Placemark>
     <name>NPKC1</name>
     <description><![CDATA[
-      <b>Netrality Data Centers, Kansas City, MO, US</b><br/>
+      <b>Netrality Kansas City - 1102 Grand, Kansas City, MO, US</b><br/>
       Region: us-east-2
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -263,7 +263,7 @@
   <Placemark>
     <name>QTS52</name>
     <description><![CDATA[
-      <b>QTS, Chicago, IL, US</b><br/>
+      <b>QTS Chicago (CHI1), Chicago, IL, US</b><br/>
       Region: us-east-2
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -272,7 +272,7 @@
   <Placemark>
     <name>CSOW</name>
     <description><![CDATA[
-      <b>CoreSite LA1, Los Angeles, CA, US</b><br/>
+      <b>CoreSite - Los Angeles (LA1) One Wilshire, Los Angeles, CA, US</b><br/>
       Region: us-west-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -281,7 +281,7 @@
   <Placemark>
     <name>CSSV2</name>
     <description><![CDATA[
-      <b>Coresite SV2, Milpitas, CA, US</b><br/>
+      <b>Coresite - Milpitas (SV2), Milpitas, CA, US</b><br/>
       Region: us-west-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -290,7 +290,7 @@
   <Placemark>
     <name>CSSV4</name>
     <description><![CDATA[
-      <b>CoreSite SV4, Santa Clara, CA, US</b><br/>
+      <b>CoreSite - Santa Clara (SV4), Santa Clara, CA, US</b><br/>
       Region: us-west-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -299,7 +299,7 @@
   <Placemark>
     <name>ECPH1</name>
     <description><![CDATA[
-      <b>EdgeConnex PHX01, Tempe, AZ, US</b><br/>
+      <b>EdgeConneX Phoenix (EDCPHX01), Tempe, AZ, US</b><br/>
       Region: us-west-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -308,7 +308,7 @@
   <Placemark>
     <name>EQLA3</name>
     <description><![CDATA[
-      <b>Equinix LA3, El Segundo, CA, US</b><br/>
+      <b>Equinix LA3/LA4 - Los Angeles, El Segundo, CA, US</b><br/>
       Region: us-west-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -317,7 +317,7 @@
   <Placemark>
     <name>EQSV5</name>
     <description><![CDATA[
-      <b>Equinix SV5, San Jose, CA, US</b><br/>
+      <b>Equinix SV1/SV5/SV10 - Silicon Valley, San Jose, CA, US</b><br/>
       Region: us-west-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -335,7 +335,7 @@
   <Placemark>
     <name>ALN91</name>
     <description><![CDATA[
-      <b>AlohaNap, Kapolei, HI, US</b><br/>
+      <b>AlohaNAP, Kapolei, HI, US</b><br/>
       Region: us-west-2
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -344,7 +344,7 @@
   <Placemark>
     <name>CSDE1</name>
     <description><![CDATA[
-      <b>CoreSite DE1, Denver, CO, US</b><br/>
+      <b>CoreSite - Denver (DE1), Denver, CO, US</b><br/>
       Region: us-west-2
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -353,7 +353,7 @@
   <Placemark>
     <name>DBLV1</name>
     <description><![CDATA[
-      <b>DataBank LAS1, Las Vegas, NV, US</b><br/>
+      <b>DataBank Las Vegas (LAS1), Las Vegas, NV, US</b><br/>
       Region: us-west-2
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -362,7 +362,7 @@
   <Placemark>
     <name>ECPO1</name>
     <description><![CDATA[
-      <b>EdgeConnex, Hillsboro, OR, US</b><br/>
+      <b>EdgeConneX Portland (EDCPOR01), Hillsboro, OR, US</b><br/>
       Region: us-west-2
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -371,7 +371,7 @@
   <Placemark>
     <name>EQSE2</name>
     <description><![CDATA[
-      <b>Westin Building Exchange, Seattle, WA, US</b><br/>
+      <b>Equinix SE2/SE3 - Seattle, Seattle, WA, US</b><br/>
       Region: us-west-2
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -380,7 +380,7 @@
   <Placemark>
     <name>PEH51</name>
     <description><![CDATA[
-      <b>Pittock Block, Portland, OR, US</b><br/>
+      <b>The Pittock, Portland, OR, US</b><br/>
       Region: us-west-2
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -389,7 +389,7 @@
   <Placemark>
     <name>SNAP</name>
     <description><![CDATA[
-      <b>Switch SUPERNAP 8, Las Vegas, NV, US</b><br/>
+      <b>Switch Las Vegas, Las Vegas, NV, US</b><br/>
       Region: us-west-2
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -398,7 +398,7 @@
   <Placemark>
     <name>T5ALA</name>
     <description><![CDATA[
-      <b>Serverfarm LAX1 El Segundo, El Segundo, CA, US</b><br/>
+      <b>Serverfarm LAX1 Los Angeles, El Segundo, CA, US</b><br/>
       Region: us-west-2
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -407,7 +407,7 @@
   <Placemark>
     <name>TPS19</name>
     <description><![CDATA[
-      <b>TierPoint, Seattle, WA, US</b><br/>
+      <b>TierPoint Seattle, Seattle, WA, US</b><br/>
       Region: us-west-2
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
