@@ -43,6 +43,11 @@ html = f"""<!DOCTYPE html>
         #map {{ height: 500px; width: 100%; margin-bottom: 20px; border: 2px solid #ddd; border-radius: 4px; background: white; position: relative; }}
         .home-button {{ position: absolute; bottom: 10px; left: 10px; z-index: 1000; background: white; border: 2px solid #ccc; border-radius: 4px; padding: 8px 12px; cursor: pointer; font-size: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.2); }}
         .home-button:hover {{ background: #f0f0f0; }}
+        .tabs {{ display: flex; margin-bottom: 20px; border-bottom: 2px solid #ddd; }}
+        .tab {{ padding: 12px 24px; cursor: pointer; border: none; background: none; font-size: 16px; color: #666; border-bottom: 3px solid transparent; transition: all 0.3s ease; }}
+        .tab:hover {{ color: #232f3e; background: #f5f5f5; }}
+        .tab.active {{ color: #232f3e; border-bottom-color: #0073bb; background: white; font-weight: 600; }}
+        .partition-info {{ display: inline-flex; align-items: center; gap: 8px; margin-left: 8px; }}
         .filters {{ display: flex; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; align-items: flex-start; }}
         .filters select {{ padding: 8px 12px; border: 2px solid #ddd; border-radius: 4px; font-size: 14px; background: white; cursor: pointer; }}
         .filters select:hover {{ border-color: #999; }}
@@ -88,16 +93,24 @@ html = f"""<!DOCTYPE html>
     </style>
 </head>
 <body>
-    <h1><img src="{icon_data}" alt="AWS Direct Connect">AWS Direct Connect Locations<span id="partitionLabel"></span></h1>
+    <h1><img src="{icon_data}" alt="AWS Direct Connect">AWS Direct Connect Locations</h1>
     <div id="map">
         <button class="home-button" onclick="resetMap(); event.stopPropagation();" title="Reset map view">🏠</button>
     </div>
+    <div class="tabs">
+        <button class="tab active" onclick="switchPartition('aws')" id="tab-aws">
+            <svg width="1em" height="1em" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 8px;"><path d="M5.5 16.5H19.5M5.5 8.5H19.5M4.5 12.5H20.5M12.5 20.5C12.5 20.5 8 18.5 8 12.5C8 6.5 12.5 4.5 12.5 4.5M12.5 4.5C12.5 4.5 17 6.5 17 12.5C17 18.5 12.5 20.5 12.5 20.5M12.5 4.5V20.5M20.5 12.5C20.5 16.9183 16.9183 20.5 12.5 20.5C8.08172 20.5 4.5 16.9183 4.5 12.5C4.5 8.08172 8.08172 4.5 12.5 4.5C16.9183 4.5 20.5 8.08172 20.5 12.5Z" stroke="currentColor" stroke-width="1.2"/></svg>
+            AWS Commercial Partition
+        </button>
+        <button class="tab" onclick="switchPartition('aws-eusc')" id="tab-aws-eusc">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 810 540" style="height: 1em; width: 1.5em; margin-right: 8px;"><rect fill="#039" width="810" height="540"/><g fill="#fc0" transform="scale(30)translate(13.5,9)"><use href="#s" y="-6"/><use href="#s" y="6"/><g id="l"><use href="#s" x="-6"/><use href="#s" transform="rotate(150)translate(0,6)rotate(66)"/><use href="#s" transform="rotate(120)translate(0,6)rotate(24)"/><use href="#s" transform="rotate(60)translate(0,6)rotate(12)"/><use href="#s" transform="rotate(30)translate(0,6)rotate(42)"/></g><use href="#l" transform="scale(-1,1)"/></g><defs><g id="s"><g id="c"><path id="t" d="M0,0v1h0.5z" transform="translate(0,-1)rotate(18)"/><use href="#t" transform="scale(-1,1)"/></g><g id="a"><use href="#c" transform="rotate(72)"/><use href="#c" transform="rotate(144)"/></g><use href="#a" transform="scale(-1,1)"/></g></defs></svg>
+            EU Sovereign Cloud
+            <div class="partition-info">
+                <span class="info-icon" data-tooltip="EU Sovereign Cloud is an isolated AWS partition designed to meet strict European data residency and sovereignty requirements. It operates independently from other AWS partitions." onclick="event.stopPropagation()">i</span>
+            </div>
+        </button>
+    </div>
     <div class="filters">
-        <select id="partitionFilter" onchange="filterTable()">
-            <option value="aws">AWS Commercial Partition</option>
-            <option value="aws-eusc">EU Sovereign Cloud</option>
-        </select>
-        <span class="info-icon" id="partitionInfo" style="display: none;" data-tooltip="EU Sovereign Cloud is an isolated AWS partition designed to meet strict European data residency and sovereignty requirements. It operates independently from other AWS partitions." onclick="event.stopPropagation()">i</span>
         <div class="multi-select" id="countryMultiSelect">
             <div class="multi-select-trigger" onclick="toggleCountryDropdown()">
                 <span>Country Filter</span>
@@ -477,7 +490,12 @@ html += """
         // Reset map view
         function resetMap() {
             clearUserMarker();
-            map.setView([20, 0], 2);
+            const currentPartition = getCurrentPartition();
+            if (currentPartition === 'aws-eusc') {
+                map.setView([50, 10], 4); // EU view for EUSC
+            } else {
+                map.setView([20, 0], 2); // World view for AWS Commercial
+            }
             document.getElementById('searchInput').value = '';
             toggleClearBtn();
             filterTable();
@@ -579,40 +597,40 @@ html += """
             updateCountryFilter();
         }
         
-        // Update partition label
-        function updatePartitionLabel() {
-            const partition = document.getElementById('partitionFilter').value;
-            const label = document.getElementById('partitionLabel');
+        // Switch partition tabs
+        function switchPartition(partition) {
+            // Update tab states
+            document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+            document.getElementById(`tab-${partition}`).classList.add('active');
+            
+            // Update map view
             if (partition === 'aws-eusc') {
-                label.innerHTML = ' - <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 810 540" style="height: 1em; width: 1.5em; vertical-align: middle;"><rect fill="#039" width="810" height="540"/><g fill="#fc0" transform="scale(30)translate(13.5,9)"><use href="#s" y="-6"/><use href="#s" y="6"/><g id="l"><use href="#s" x="-6"/><use href="#s" transform="rotate(150)translate(0,6)rotate(66)"/><use href="#s" transform="rotate(120)translate(0,6)rotate(24)"/><use href="#s" transform="rotate(60)translate(0,6)rotate(12)"/><use href="#s" transform="rotate(30)translate(0,6)rotate(42)"/></g><use href="#l" transform="scale(-1,1)"/></g><defs><g id="s"><g id="c"><path id="t" d="M0,0v1h0.5z" transform="translate(0,-1)rotate(18)"/><use href="#t" transform="scale(-1,1)"/></g><g id="a"><use href="#c" transform="rotate(72)"/><use href="#c" transform="rotate(144)"/></g><use href="#a" transform="scale(-1,1)"/></g></defs></svg> EU Sovereign Cloud';
-                document.getElementById('partitionInfo').style.display = 'inline-block';
                 map.setView([50, 10], 4); // Zoom to Europe
             } else {
-                label.innerHTML = '';
-                document.getElementById('partitionInfo').style.display = 'none';
                 map.setView([20, 0], 2); // Reset to world view
             }
+            
+            // Clear filters and update data
+            clearAllCountries();
+            document.getElementById('regionFilter').value = '';
+            document.getElementById('speedFilter').value = '';
+            document.getElementById('macsecFilter').value = '';
+            populateFilters(partition);
+            filterTable();
+        }
+        
+        // Get current partition
+        function getCurrentPartition() {
+            return document.querySelector('.tab.active').id.replace('tab-', '');
         }
         
         // Filter table and map
         function filterTable() {
-            updatePartitionLabel();
             const searchInput = document.getElementById("searchInput").value.toUpperCase();
-            const partitionFilter = document.getElementById("partitionFilter").value;
+            const partitionFilter = getCurrentPartition();
             const regionFilter = document.getElementById("regionFilter").value;
             const speedFilter = document.getElementById("speedFilter").value;
             const macsecFilter = document.getElementById("macsecFilter").value;
-            
-            // Repopulate filters when partition changes
-            const currentPartition = document.getElementById('partitionFilter').dataset.currentPartition || 'aws';
-            if (partitionFilter !== currentPartition) {
-                document.getElementById('partitionFilter').dataset.currentPartition = partitionFilter;
-                clearAllCountries();
-                document.getElementById('regionFilter').value = '';
-                document.getElementById('speedFilter').value = '';
-                document.getElementById('macsecFilter').value = '';
-                populateFilters(partitionFilter);
-            }
             
             // Clear user marker and search if any filter is active
             if (selectedCountries.size > 0 || regionFilter || speedFilter || macsecFilter) {
