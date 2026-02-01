@@ -88,14 +88,14 @@ html = f"""<!DOCTYPE html>
     </style>
 </head>
 <body>
-    <h1><img src="{icon_data}" alt="AWS Direct Connect">AWS Direct Connect Locations</h1>
+    <h1><img src="{icon_data}" alt="AWS Direct Connect">AWS Direct Connect Locations<span id="partitionLabel"></span></h1>
     <div id="map">
         <button class="home-button" onclick="resetMap(); event.stopPropagation();" title="Reset map view">🏠</button>
     </div>
     <div class="filters">
         <select id="partitionFilter" onchange="filterTable()">
             <option value="aws">AWS Commercial</option>
-            <option value="aws-eusc">🇪🇺 EU Sovereign Cloud</option>
+            <option value="aws-eusc">EU Sovereign Cloud</option>
         </select>
         <div class="multi-select" id="countryMultiSelect">
             <div class="multi-select-trigger" onclick="toggleCountryDropdown()">
@@ -578,8 +578,22 @@ html += """
             updateCountryFilter();
         }
         
+        // Update partition label
+        function updatePartitionLabel() {
+            const partition = document.getElementById('partitionFilter').value;
+            const label = document.getElementById('partitionLabel');
+            if (partition === 'aws-eusc') {
+                label.innerHTML = ' - <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="0 0 810 540" style="vertical-align: middle;"><rect fill="#039" width="810" height="540"/><g fill="#fc0" transform="scale(30)translate(13.5,9)"><use href="#s" y="-6"/><use href="#s" y="6"/><g id="l"><use href="#s" x="-6"/><use href="#s" transform="rotate(150)translate(0,6)rotate(66)"/><use href="#s" transform="rotate(120)translate(0,6)rotate(24)"/><use href="#s" transform="rotate(60)translate(0,6)rotate(12)"/><use href="#s" transform="rotate(30)translate(0,6)rotate(42)"/></g><use href="#l" transform="scale(-1,1)"/></g><defs><g id="s"><g id="c"><path id="t" d="M0,0v1h0.5z" transform="translate(0,-1)rotate(18)"/><use href="#t" transform="scale(-1,1)"/></g><g id="a"><use href="#c" transform="rotate(72)"/><use href="#c" transform="rotate(144)"/></g><use href="#a" transform="scale(-1,1)"/></g></defs></svg> EU Sovereign Cloud';
+                map.setView([50, 10], 4); // Zoom to Europe
+            } else {
+                label.innerHTML = '';
+                map.setView([20, 0], 2); // Reset to world view
+            }
+        }
+        
         // Filter table and map
         function filterTable() {
+            updatePartitionLabel();
             const searchInput = document.getElementById("searchInput").value.toUpperCase();
             const partitionFilter = document.getElementById("partitionFilter").value;
             const regionFilter = document.getElementById("regionFilter").value;

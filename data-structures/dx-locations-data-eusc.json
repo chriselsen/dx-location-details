@@ -1,0 +1,44 @@
+[
+  {
+    "code": "AEBTF",
+    "partition": "aws-eusc",
+    "region": "eusc-de-east-1",
+    "name": "AtlasEdge DC Berlin BER001, Berlin, DE",
+    "aws_name": "Atlas Edge BER001",
+    "internal_code": null,
+    "peeringdb_id": "4073",
+    "country": "DE",
+    "latitude": "52.527509",
+    "longitude": "13.318852",
+    "ip": null,
+    "port_speeds": [
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ]
+  },
+  {
+    "code": "IPBTF",
+    "partition": "aws-eusc",
+    "region": "eusc-de-east-1",
+    "name": "CarrierColo Berlin Luetzow (I/P/B/ site B), Berlin, DE",
+    "aws_name": "IPB GmbH",
+    "internal_code": null,
+    "peeringdb_id": "445",
+    "country": "DE",
+    "latitude": "52.50192",
+    "longitude": "13.36945",
+    "ip": null,
+    "port_speeds": [
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ]
+  }
+]

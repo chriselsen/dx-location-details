@@ -1,0 +1,3080 @@
+[
+  {
+    "code": "EANB1",
+    "region": "af-south-1",
+    "name": "Africa Data Centres, Nairobi, KE",
+    "aws_name": "East Africa Data Centres NBO1",
+    "internal_code": null,
+    "peeringdb_id": "1964",
+    "country": "KE",
+    "latitude": "-1.34014",
+    "longitude": "36.896534",
+    "ip": null,
+    "port_speeds": [
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "RCL1",
+    "region": "af-south-1",
+    "name": "Rack Centre Lagos, Ikeja, NG",
+    "aws_name": "Rack Centre LGS1",
+    "internal_code": null,
+    "peeringdb_id": "4411",
+    "country": "NG",
+    "latitude": "6.597527",
+    "longitude": "3.373062",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "TECT1",
+    "region": "af-south-1",
+    "name": "Teraco CT1 Cape Town, Cape Town, ZA",
+    "aws_name": "Teraco CT1",
+    "internal_code": null,
+    "peeringdb_id": "1225",
+    "country": "ZA",
+    "latitude": "-33.970872",
+    "longitude": "18.465223",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "EQHK1",
+    "region": "ap-east-1",
+    "name": "Equinix HK1 - Hong Kong, Tsuen Wan, HK",
+    "aws_name": "Equinix HK1",
+    "internal_code": null,
+    "peeringdb_id": "170",
+    "country": "HK",
+    "latitude": "22.365581",
+    "longitude": "114.11932",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "CFT54",
+    "region": "ap-east-2",
+    "name": "Chief HD Building Taipei, Taipei, TW",
+    "aws_name": "Chief Telecom HD",
+    "internal_code": null,
+    "peeringdb_id": "5678",
+    "country": "TW",
+    "latitude": "25.074213",
+    "longitude": "121.576784",
+    "ip": null,
+    "port_speeds": [
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "CHT51",
+    "region": "ap-east-2",
+    "name": "CHT Taipei Banqiao IDC, New Taipei City, TW",
+    "aws_name": "Chunghwa Telecom",
+    "internal_code": null,
+    "peeringdb_id": "2886",
+    "country": "TW",
+    "latitude": "24.994866",
+    "longitude": "121.458263",
+    "ip": null,
+    "port_speeds": [
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "ATTC1",
+    "region": "ap-northeast-1",
+    "name": "AT TOKYO (CC1/CC2), Tokyo, JP",
+    "aws_name": "AT Tokyo Chuo Data Center",
+    "internal_code": null,
+    "peeringdb_id": "738",
+    "country": "JP",
+    "latitude": "35.645435",
+    "longitude": "139.793285",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "CFT52",
+    "region": "ap-northeast-1",
+    "name": "Chief LY Building Taipei, Taipei, TW",
+    "aws_name": "Chief Telecom LY",
+    "internal_code": null,
+    "peeringdb_id": "456",
+    "country": "TW",
+    "latitude": "25.073467",
+    "longitude": "121.577519",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G"
+    ],
+    "macsec_capable": [],
+    "partition": "aws"
+  },
+  {
+    "code": "EQOS1",
+    "region": "ap-northeast-1",
+    "name": "Equinix OS1 - Osaka, Osaka, JP",
+    "aws_name": "Equinix OS1",
+    "internal_code": null,
+    "peeringdb_id": "1791",
+    "country": "JP",
+    "latitude": "34.675774",
+    "longitude": "135.495551",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "EQTY2",
+    "region": "ap-northeast-1",
+    "name": "Equinix TY2 - Tokyo, Tokyo, JP",
+    "aws_name": "Equinix TY2",
+    "internal_code": null,
+    "peeringdb_id": "452",
+    "country": "JP",
+    "latitude": "35.617432",
+    "longitude": "139.748106",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "NEIN2",
+    "region": "ap-northeast-1",
+    "name": "SCSK netXDC (SI1/SI2/SI3)/NEC Inzai DC, Inzai-shi, JP",
+    "aws_name": "NEC Inzai",
+    "internal_code": null,
+    "peeringdb_id": "9596",
+    "country": "JP",
+    "latitude": "35.808986",
+    "longitude": "140.117527",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "LGKNX",
+    "region": "ap-northeast-2",
+    "name": "KINX Gasan, Seoul, KR",
+    "aws_name": "KINX Gasen",
+    "internal_code": null,
+    "peeringdb_id": "7674",
+    "country": "KR",
+    "latitude": "37.482096",
+    "longitude": "126.879733",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G"
+    ],
+    "macsec_capable": [],
+    "partition": "aws"
+  },
+  {
+    "code": "LGU57",
+    "region": "ap-northeast-2",
+    "name": "LG Uplus Pyeongchon IDC, Anyang-si, KR",
+    "aws_name": "LG U+ Pyeong-Chon Mega Center",
+    "internal_code": null,
+    "peeringdb_id": "7573",
+    "country": "KR",
+    "latitude": "37.397891",
+    "longitude": "126.9648961",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "TLS10",
+    "region": "ap-northeast-2",
+    "name": "Digital Realty ICN10 - Seoul, Mapo-gu, KR",
+    "aws_name": "Digital Realty ICN10",
+    "internal_code": null,
+    "peeringdb_id": "9210",
+    "country": "KR",
+    "latitude": "37.582162",
+    "longitude": "126.886128",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "KDOS2",
+    "region": "ap-northeast-3",
+    "name": "Telehouse \u2013 OSAKA 1&2, Osaka, JP",
+    "aws_name": "KDDI Telehouse Osaka 2",
+    "internal_code": null,
+    "peeringdb_id": "3068",
+    "country": "JP",
+    "latitude": "34.693119",
+    "longitude": "135.534371",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "EQMB2",
+    "region": "ap-south-1",
+    "name": "Equinix MB2 - Mumbai (GPX Mumbai 2), Mumbai, IN",
+    "aws_name": "Equinix MB2",
+    "internal_code": null,
+    "peeringdb_id": "7377",
+    "country": "IN",
+    "latitude": "19.109353",
+    "longitude": "72.901441",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "GPX51",
+    "region": "ap-south-1",
+    "name": "Equinix MB1 - Mumbai (GPX Mumbai 1), Mumbai, IN",
+    "aws_name": "Equinix MB1",
+    "internal_code": null,
+    "peeringdb_id": "2310",
+    "country": "IN",
+    "latitude": "19.113908",
+    "longitude": "72.892742",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G"
+    ],
+    "macsec_capable": [
+      "10G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "NMBL2",
+    "region": "ap-south-1",
+    "name": "Netmagic Bangalore DC02, Bangalore, IN",
+    "aws_name": "NetMagic DC2",
+    "internal_code": null,
+    "peeringdb_id": "7988",
+    "country": "IN",
+    "latitude": "12.839551",
+    "longitude": "77.662274",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G"
+    ],
+    "macsec_capable": [
+      "10G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "SFY52",
+    "region": "ap-south-1",
+    "name": "Sify Rabale - Mumbai, Navi Mumbai, IN",
+    "aws_name": "Sify Rabale",
+    "internal_code": null,
+    "peeringdb_id": "2465",
+    "country": "IN",
+    "latitude": "19.147451",
+    "longitude": "73.014195",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G"
+    ],
+    "macsec_capable": [
+      "10G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "TCDC1",
+    "region": "ap-south-1",
+    "name": "STT Chennai 1, Chennai, IN",
+    "aws_name": "STT GDC INDIA PVT. LTD. VSB",
+    "internal_code": null,
+    "peeringdb_id": "6778",
+    "country": "IN",
+    "latitude": "13.068351",
+    "longitude": "80.278869",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "TCDE2",
+    "region": "ap-south-1",
+    "name": "STT Delhi 2, Delhi, IN",
+    "aws_name": "STT Delhi DC2",
+    "internal_code": null,
+    "peeringdb_id": "6786",
+    "country": "IN",
+    "latitude": "28.541514",
+    "longitude": "77.240201",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "TCDK1",
+    "region": "ap-south-1",
+    "name": "STT Kolkata 1, Kolkata, IN",
+    "aws_name": "STT Kolkata",
+    "internal_code": null,
+    "peeringdb_id": "6780",
+    "country": "IN",
+    "latitude": "22.588218",
+    "longitude": "88.392964",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "TCHY1",
+    "region": "ap-south-1",
+    "name": "STT Hyderabad 1, Hyderabad, IN",
+    "aws_name": "STT Hyderabad DC1",
+    "internal_code": null,
+    "peeringdb_id": "6781",
+    "country": "IN",
+    "latitude": "17.441478",
+    "longitude": "78.377811",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "AIMMN",
+    "region": "ap-southeast-1",
+    "name": "AIMS Kuala Lumpur, Kuala Lumpur, MY",
+    "aws_name": "Menara AIMS",
+    "internal_code": null,
+    "peeringdb_id": "460",
+    "country": "MY",
+    "latitude": "3.14969",
+    "longitude": "101.70634",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "EPVM2",
+    "region": "ap-southeast-1",
+    "name": "VITRO Makati 2, Makati, PH",
+    "aws_name": "ePLDT VM2",
+    "internal_code": null,
+    "peeringdb_id": "4809",
+    "country": "PH",
+    "latitude": "14.564484",
+    "longitude": "121.022368",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "EQSG2",
+    "region": "ap-southeast-1",
+    "name": "Equinix SG2 - Singapore, Singapore, SG",
+    "aws_name": "Equinix SG2",
+    "internal_code": null,
+    "peeringdb_id": "705",
+    "country": "SG",
+    "latitude": "1.321502",
+    "longitude": "103.695359",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "GSS52",
+    "region": "ap-southeast-1",
+    "name": "Global Switch Singapore, Singapore, SG",
+    "aws_name": "Global Switch",
+    "internal_code": null,
+    "peeringdb_id": "388",
+    "country": "SG",
+    "latitude": "1.336723",
+    "longitude": "103.893828",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "IAMGI",
+    "region": "ap-southeast-1",
+    "name": "MEGA-i (iAdvantage Hong Kong), Hong Kong, HK",
+    "aws_name": "iAdvantage MEGA-i",
+    "internal_code": null,
+    "peeringdb_id": "225",
+    "country": "HK",
+    "latitude": "22.266098",
+    "longitude": "114.246512",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "TCCBK",
+    "region": "ap-southeast-1",
+    "name": "TCC Technology Data Center- Bangkok, Bangkok, TH",
+    "aws_name": "TCC",
+    "internal_code": null,
+    "peeringdb_id": "4139",
+    "country": "TH",
+    "latitude": "13.663651",
+    "longitude": "100.651345",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "CBHU2",
+    "region": "ap-southeast-2",
+    "name": "CDC Canberra HU2, Hume, AU",
+    "aws_name": "CDC Hume 2",
+    "internal_code": null,
+    "peeringdb_id": "12416",
+    "country": "AU",
+    "latitude": "-35.388831",
+    "longitude": "149.1683",
+    "ip": null,
+    "port_speeds": [
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "DCDH6",
+    "region": "ap-southeast-2",
+    "name": "Datacom - Orbit Data Centre (Auckland), Auckland, NZ",
+    "aws_name": "Datacom DH6",
+    "internal_code": null,
+    "peeringdb_id": "2024",
+    "country": "NZ",
+    "latitude": "-36.740554",
+    "longitude": "174.728988",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G"
+    ],
+    "macsec_capable": [
+      "10G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "EQSY3",
+    "region": "ap-southeast-2",
+    "name": "Equinix SY3 - Sydney, Sydney, AU",
+    "aws_name": "Equinix SY1 - SY4",
+    "internal_code": null,
+    "peeringdb_id": "1605",
+    "country": "AU",
+    "latitude": "-33.911776",
+    "longitude": "151.192942",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "GBSY6",
+    "region": "ap-southeast-2",
+    "name": "Equinix SY6 - Sydney (formerly Metronode Sydney 2), Silverwater, AU",
+    "aws_name": "Global Switch SY6",
+    "internal_code": null,
+    "peeringdb_id": "2474",
+    "country": "AU",
+    "latitude": "-33.836684",
+    "longitude": "151.053282",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G"
+    ],
+    "macsec_capable": [],
+    "partition": "aws"
+  },
+  {
+    "code": "NDCB2",
+    "region": "ap-southeast-2",
+    "name": "NEXTDC B2, Fortitude Valley, AU",
+    "aws_name": "NEXTDC B2",
+    "internal_code": null,
+    "peeringdb_id": "4688",
+    "country": "AU",
+    "latitude": "-27.453902",
+    "longitude": "153.0332",
+    "ip": null,
+    "port_speeds": [
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "NDCC1",
+    "region": "ap-southeast-2",
+    "name": "NEXTDC C1, Bruce, AU",
+    "aws_name": "NEXTDC C1",
+    "internal_code": null,
+    "peeringdb_id": "1162",
+    "country": "AU",
+    "latitude": "-35.245308",
+    "longitude": "149.096242",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G"
+    ],
+    "macsec_capable": [
+      "10G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "NDCM1",
+    "region": "ap-southeast-2",
+    "name": "NEXTDC M1, Melbourne, AU",
+    "aws_name": "NEXTDC M1",
+    "internal_code": null,
+    "peeringdb_id": "1339",
+    "country": "AU",
+    "latitude": "-37.821705",
+    "longitude": "144.931061",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "NDCP1",
+    "region": "ap-southeast-2",
+    "name": "NEXTDC P1, M\u00e1laga, AU",
+    "aws_name": "NEXTDC P1",
+    "internal_code": null,
+    "peeringdb_id": "1940",
+    "country": "AU",
+    "latitude": "-31.864402",
+    "longitude": "115.895935",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "NDCS2",
+    "region": "ap-southeast-2",
+    "name": "NEXTDC S2, Macquarie Park, AU",
+    "aws_name": "NEXTDC S2",
+    "internal_code": null,
+    "peeringdb_id": "6792",
+    "country": "AU",
+    "latitude": "-33.785125",
+    "longitude": "151.125301",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "DCIJ3",
+    "region": "ap-southeast-3",
+    "name": "DCI Indonesia (JK3), Bekasi, Cibitung, ID",
+    "aws_name": "DCI Indonesia",
+    "internal_code": null,
+    "peeringdb_id": "8169",
+    "country": "ID",
+    "latitude": "-6.299731",
+    "longitude": "107.089244",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "JKT02",
+    "region": "ap-southeast-3",
+    "name": "NTT Jakarta 2 Data Center (JKT2), Jakarta, ID",
+    "aws_name": "NTT Jakarta 2 Data Center",
+    "internal_code": null,
+    "peeringdb_id": "5865",
+    "country": "ID",
+    "latitude": "-6.237998",
+    "longitude": "106.823452",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "EQME2",
+    "region": "ap-southeast-4",
+    "name": "Equinix ME1/ME2 - Melbourne, Melbourne, AU",
+    "aws_name": "Equinix ME2",
+    "internal_code": null,
+    "peeringdb_id": "1988",
+    "country": "AU",
+    "latitude": "-37.821681",
+    "longitude": "144.915458",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "CMCHV",
+    "region": "ap-southeast-5",
+    "name": "CMC Duy Tan (Hanoi), Hanoi, VN",
+    "aws_name": "CMC Tower",
+    "internal_code": null,
+    "peeringdb_id": "15938",
+    "country": "VN",
+    "latitude": "21.03042",
+    "longitude": "105.784363",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "CSFX1",
+    "region": "ap-southeast-5",
+    "name": "CSF CX1 / TelcoHub1 Kuala Lumpur, Cyberjaya, MY",
+    "aws_name": "Telcohub 1 (CX1)",
+    "internal_code": null,
+    "peeringdb_id": "1279",
+    "country": "MY",
+    "latitude": "2.913224",
+    "longitude": "101.655646",
+    "ip": null,
+    "port_speeds": [
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "SPK53",
+    "region": "ap-southeast-6",
+    "name": "Mayoral Drive Exchange (MDR), Auckland, NZ",
+    "aws_name": "Spark MDR",
+    "internal_code": null,
+    "peeringdb_id": "1523",
+    "country": "NZ",
+    "latitude": "-36.854324",
+    "longitude": "174.764384",
+    "ip": null,
+    "port_speeds": [
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "THRA9",
+    "region": "ap-southeast-7",
+    "name": "Telehouse \u2013 Bangkok, Bangkok, TH",
+    "aws_name": "Telehouse Bangkok",
+    "internal_code": null,
+    "peeringdb_id": "13618",
+    "country": "TH",
+    "latitude": "13.75161",
+    "longitude": "100.57305",
+    "ip": null,
+    "port_speeds": [
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "151FS",
+    "region": "ca-central-1",
+    "name": "Telehouse Toronto (151 Front St West), Toronto, CA",
+    "aws_name": "Telehouse",
+    "internal_code": null,
+    "peeringdb_id": "392",
+    "country": "CA",
+    "latitude": "43.644672",
+    "longitude": "-79.384128",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "CGM60",
+    "region": "ca-central-1",
+    "name": "Cologix MTL3, Montreal, CA",
+    "aws_name": "Cologix MTL3",
+    "internal_code": null,
+    "peeringdb_id": "1944",
+    "country": "CA",
+    "latitude": "45.497188",
+    "longitude": "-73.570471",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "COLV2",
+    "region": "ca-central-1",
+    "name": "Cologix VAN2, Vancouver, CA",
+    "aws_name": "Cologix VAN2",
+    "internal_code": null,
+    "peeringdb_id": "1881",
+    "country": "CA",
+    "latitude": "49.286981",
+    "longitude": "-123.119579",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G"
+    ],
+    "macsec_capable": [
+      "10G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "COLV3",
+    "region": "ca-central-1",
+    "name": "Cologix VAN3, Vancouver, CA",
+    "aws_name": "Cologix VAN3",
+    "internal_code": null,
+    "peeringdb_id": "8060",
+    "country": "CA",
+    "latitude": "49.259393",
+    "longitude": "-123.029619",
+    "ip": null,
+    "port_speeds": [
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "EQTR2",
+    "region": "ca-central-1",
+    "name": "Equinix TR2 - Toronto, Toronto, CA",
+    "aws_name": "Equinix TR2",
+    "internal_code": null,
+    "peeringdb_id": "2206",
+    "country": "CA",
+    "latitude": "43.650854",
+    "longitude": "-79.361951",
+    "ip": null,
+    "port_speeds": [
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "NTM62",
+    "region": "ca-central-1",
+    "name": "eStruxture MTL-1, Montreal, CA",
+    "aws_name": "eStruxture",
+    "internal_code": null,
+    "peeringdb_id": "1885",
+    "country": "CA",
+    "latitude": "45.501394",
+    "longitude": "-73.56192",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "EQCL1",
+    "region": "ca-west-1",
+    "name": "Equinix CL1 - Calgary, Calgary, CA",
+    "aws_name": "Equinix CL1",
+    "internal_code": null,
+    "peeringdb_id": "9553",
+    "country": "CA",
+    "latitude": "51.045517",
+    "longitude": "-114.069297",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "EQCL3",
+    "region": "ca-west-1",
+    "name": "Equinix CL3 - Calgary (formerly Q9 Calgary Three), Calgary, CA",
+    "aws_name": "Equinix CL3",
+    "internal_code": null,
+    "peeringdb_id": "3251",
+    "country": "CA",
+    "latitude": "50.976971",
+    "longitude": "-113.956677",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "CDSR1",
+    "region": "eu-central-1",
+    "name": "C21, Milan, IT",
+    "aws_name": "CDLAN srl Via Caldera 21",
+    "internal_code": null,
+    "peeringdb_id": "3519",
+    "country": "IT",
+    "latitude": "45.476394",
+    "longitude": "9.103571",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "CEC50",
+    "region": "eu-central-1",
+    "name": "CE Colo Prague, Prague, CZ",
+    "aws_name": "CE Colo",
+    "internal_code": null,
+    "peeringdb_id": "214",
+    "country": "CZ",
+    "latitude": "50.060164",
+    "longitude": "14.482978",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G"
+    ],
+    "macsec_capable": [],
+    "partition": "aws"
+  },
+  {
+    "code": "DGPU1",
+    "region": "eu-central-1",
+    "name": "STACK EMEA - OSL01, Oslo, NO",
+    "aws_name": "DigiPlex Ulven",
+    "internal_code": null,
+    "peeringdb_id": "345",
+    "country": "NO",
+    "latitude": "59.924726",
+    "longitude": "10.810183",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G"
+    ],
+    "macsec_capable": [
+      "10G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "EQAM3",
+    "region": "eu-central-1",
+    "name": "Equinix AM3 - Amsterdam, Amsterdam, NL",
+    "aws_name": "Equinix AM3",
+    "internal_code": null,
+    "peeringdb_id": "1320",
+    "country": "NL",
+    "latitude": "52.354686",
+    "longitude": "4.958827",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "EQFA5",
+    "region": "eu-central-1",
+    "name": "Equinix FR5 - Frankfurt, Frankfurt, DE",
+    "aws_name": "Equinix FR5",
+    "internal_code": null,
+    "peeringdb_id": "60",
+    "country": "DE",
+    "latitude": "50.09885",
+    "longitude": "8.632004",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "EQHE6",
+    "region": "eu-central-1",
+    "name": "Equinix HE6 - Helsinki, Espoo, FI",
+    "aws_name": "Equinix HE6",
+    "internal_code": null,
+    "peeringdb_id": "2516",
+    "country": "FI",
+    "latitude": "60.203031",
+    "longitude": "24.777861",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G"
+    ],
+    "macsec_capable": [],
+    "partition": "aws"
+  },
+  {
+    "code": "EQIL4",
+    "region": "eu-central-1",
+    "name": "Equinix IL4 - Istanbul, Istanbul, TR",
+    "aws_name": "Equinix IL4 Istanbul",
+    "internal_code": null,
+    "peeringdb_id": "15498",
+    "country": "TR",
+    "latitude": "41.008655",
+    "longitude": "29.156655",
+    "ip": null,
+    "port_speeds": [
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "EQMU1",
+    "region": "eu-central-1",
+    "name": "Equinix MU1/MU3 - Munich, Munich, DE",
+    "aws_name": "Equinix MU1",
+    "internal_code": null,
+    "peeringdb_id": "480",
+    "country": "DE",
+    "latitude": "48.143056",
+    "longitude": "11.55584",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G"
+    ],
+    "macsec_capable": [
+      "10G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "EQWA1",
+    "region": "eu-central-1",
+    "name": "Equinix WA1 - Warsaw, Warsaw, PL",
+    "aws_name": "Equinix WA1",
+    "internal_code": null,
+    "peeringdb_id": "509",
+    "country": "PL",
+    "latitude": "52.227354",
+    "longitude": "21.003357",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G"
+    ],
+    "macsec_capable": [],
+    "partition": "aws"
+  },
+  {
+    "code": "INX6",
+    "region": "eu-central-1",
+    "name": "Digital Realty Frankfurt FRA1-16, Frankfurt, DE",
+    "aws_name": "Digital Realty FRA6",
+    "internal_code": null,
+    "peeringdb_id": "58",
+    "country": "DE",
+    "latitude": "50.11967",
+    "longitude": "8.73463",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "IPB50",
+    "region": "eu-central-1",
+    "name": "CarrierColo Berlin Luetzow (I/P/B/ site B), Berlin, DE",
+    "aws_name": "IPB GmbH",
+    "internal_code": null,
+    "peeringdb_id": "445",
+    "country": "DE",
+    "latitude": "52.50192",
+    "longitude": "13.36945",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G"
+    ],
+    "macsec_capable": [
+      "10G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "IPHH3",
+    "region": "eu-central-1",
+    "name": "Portus/IPHH HH3 (Wendenstrasse 251), Hamburg, DE",
+    "aws_name": "IPHH H3",
+    "internal_code": null,
+    "peeringdb_id": "7274",
+    "country": "DE",
+    "latitude": "53.550998",
+    "longitude": "10.03825",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G"
+    ],
+    "macsec_capable": [
+      "10G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "ITCM2",
+    "region": "eu-central-1",
+    "name": "Equinix MD2 - Madrid, Alcobendas, ES",
+    "aws_name": "Equinix Itconic MD2",
+    "internal_code": null,
+    "peeringdb_id": "127",
+    "country": "ES",
+    "latitude": "40.536855",
+    "longitude": "-3.648584",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "ITXA1",
+    "region": "eu-central-1",
+    "name": "Digital Realty Athens Campus (ATH1, Koropi, GR",
+    "aws_name": "Digital Realty ATH3",
+    "internal_code": null,
+    "peeringdb_id": "1949",
+    "country": "GR",
+    "latitude": "37.871339",
+    "longitude": "23.870251",
+    "ip": null,
+    "port_speeds": [
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "ITXA7",
+    "region": "eu-central-1",
+    "name": "Digital Realty Amsterdam AMS3, Amsterdam, NL",
+    "aws_name": "Digital Realty AMS7",
+    "internal_code": null,
+    "peeringdb_id": "64",
+    "country": "NL",
+    "latitude": "52.28415",
+    "longitude": "4.770855",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G"
+    ],
+    "macsec_capable": [
+      "10G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "ITXC2",
+    "region": "eu-central-1",
+    "name": "Digital Realty Copenhagen CPH1-3, Copenhagen, DK",
+    "aws_name": "Digital Realty CPH2",
+    "internal_code": null,
+    "peeringdb_id": "148",
+    "country": "DK",
+    "latitude": "55.728092",
+    "longitude": "12.377482",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G"
+    ],
+    "macsec_capable": [
+      "10G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "ITXM2",
+    "region": "eu-central-1",
+    "name": "Digital Realty Madrid MAD1-2, Madrid, ES",
+    "aws_name": "Digital Realty MAD2",
+    "internal_code": null,
+    "peeringdb_id": "130",
+    "country": "ES",
+    "latitude": "40.439323",
+    "longitude": "-3.621211",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G"
+    ],
+    "macsec_capable": [],
+    "partition": "aws"
+  },
+  {
+    "code": "ITXM3",
+    "region": "eu-central-1",
+    "name": "Digital Realty Madrid MAD3, Madrid, ES",
+    "aws_name": "Digital Realty MAD3",
+    "internal_code": null,
+    "peeringdb_id": "7414",
+    "country": "ES",
+    "latitude": "40.433899",
+    "longitude": "-3.62408",
+    "ip": null,
+    "port_speeds": [
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "ITXS1",
+    "region": "eu-central-1",
+    "name": "Digital Realty Stockholm STO1-6, Stockholm, SE",
+    "aws_name": "Digital Realty STO1",
+    "internal_code": null,
+    "peeringdb_id": "208",
+    "country": "SE",
+    "latitude": "59.422226",
+    "longitude": "17.916696",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "ITXV2",
+    "region": "eu-central-1",
+    "name": "Digital Realty Vienna VIE1-2, Vienna, AT",
+    "aws_name": "Digital Realty VIE2",
+    "internal_code": null,
+    "peeringdb_id": "67",
+    "country": "AT",
+    "latitude": "48.269027",
+    "longitude": "16.410613",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G"
+    ],
+    "macsec_capable": [
+      "10G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "ITXZ1",
+    "region": "eu-central-1",
+    "name": "Digital Realty Zurich ZUR1, Glattbrugg, CH",
+    "aws_name": "Digital Realty ZUR1",
+    "internal_code": null,
+    "peeringdb_id": "81",
+    "country": "CH",
+    "latitude": "47.432702",
+    "longitude": "8.557273",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "MOILH",
+    "region": "eu-central-1",
+    "name": "MedOne TC1, Tirat Carmel, IL",
+    "aws_name": "MedOne",
+    "internal_code": null,
+    "peeringdb_id": "7177",
+    "country": "IL",
+    "latitude": "32.770949",
+    "longitude": "34.966486",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "THV52",
+    "region": "eu-central-1",
+    "name": "Telehouse - Paris 2 (Voltaire - L\u00e9on Frot), Paris, FR",
+    "aws_name": "Telehouse Voltaire",
+    "internal_code": null,
+    "peeringdb_id": "53",
+    "country": "FR",
+    "latitude": "48.856654",
+    "longitude": "2.38532",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "EQZH5",
+    "region": "eu-central-2",
+    "name": "Equinix ZH5 - Zurich, Zurich, CH",
+    "aws_name": "Equinix ZH5",
+    "internal_code": null,
+    "peeringdb_id": "1515",
+    "country": "CH",
+    "latitude": "47.405667",
+    "longitude": "8.46174",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "EQSK1",
+    "region": "eu-north-1",
+    "name": "Equinix SK1 - Stockholm, Stockholm, SE",
+    "aws_name": "Equinix Sweden SK1",
+    "internal_code": null,
+    "peeringdb_id": "156",
+    "country": "SE",
+    "latitude": "59.362574",
+    "longitude": "17.955657",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "EQML2",
+    "region": "eu-south-1",
+    "name": "Equinix ML2 - Milan, Milan, IT",
+    "aws_name": "Equinix ML2",
+    "internal_code": null,
+    "peeringdb_id": "884",
+    "country": "IT",
+    "latitude": "45.448684",
+    "longitude": "9.147436",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G"
+    ],
+    "macsec_capable": [],
+    "partition": "aws"
+  },
+  {
+    "code": "EQBA1",
+    "region": "eu-south-2",
+    "name": "Equinix BA1 - Barcelona, Barcelona, ES",
+    "aws_name": "Equinix BA1",
+    "internal_code": null,
+    "peeringdb_id": "122",
+    "country": "ES",
+    "latitude": "41.351557",
+    "longitude": "2.137457",
+    "ip": null,
+    "port_speeds": [
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "EIRCL",
+    "region": "eu-west-1",
+    "name": "Eircom Dublin (Clonshaugh), Dublin, IE",
+    "aws_name": "Eircom Clonshaugh",
+    "internal_code": null,
+    "peeringdb_id": "2343",
+    "country": "IE",
+    "latitude": "53.400983",
+    "longitude": "-6.218081",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G"
+    ],
+    "macsec_capable": [
+      "10G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "EQDX1",
+    "region": "eu-west-1",
+    "name": "Equinix DX1 - Dubai, Dubai, AE",
+    "aws_name": "Equinix DX1",
+    "internal_code": null,
+    "peeringdb_id": "1355",
+    "country": "AE",
+    "latitude": "25.02618",
+    "longitude": "55.18695",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G"
+    ],
+    "macsec_capable": [
+      "10G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "EQLD5",
+    "region": "eu-west-1",
+    "name": "Equinix LD5 - London, Slough, GB",
+    "aws_name": "Equinix LD5",
+    "internal_code": null,
+    "peeringdb_id": "832",
+    "country": "GB",
+    "latitude": "51.522463",
+    "longitude": "-0.62905",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "EQLS1",
+    "region": "eu-west-1",
+    "name": "Equinix LS1 - Lisbon, Lisbon, PT",
+    "aws_name": "Equinix LS1",
+    "internal_code": null,
+    "peeringdb_id": "126",
+    "country": "PT",
+    "latitude": "38.787919",
+    "longitude": "-9.123454",
+    "ip": null,
+    "port_speeds": [
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "ETIFJ",
+    "region": "eu-west-1",
+    "name": "SmartHub Fujairah, Fujairah, AE",
+    "aws_name": "Etisalat Smart Hub Data Center",
+    "internal_code": null,
+    "peeringdb_id": "1493",
+    "country": "AE",
+    "latitude": "25.131143",
+    "longitude": "56.336378",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G"
+    ],
+    "macsec_capable": [
+      "10G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "ITXD2",
+    "region": "eu-west-1",
+    "name": "Digital Realty Dublin DUB1-2, Dublin, IE",
+    "aws_name": "Digital Realty DUB2",
+    "internal_code": null,
+    "peeringdb_id": "177",
+    "country": "IE",
+    "latitude": "53.334251",
+    "longitude": "-6.365538",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "ITXM1",
+    "region": "eu-west-1",
+    "name": "Digital Realty Marseille MRS1-3, Marseille, FR",
+    "aws_name": "Digital Realty MRS1",
+    "internal_code": null,
+    "peeringdb_id": "226",
+    "country": "FR",
+    "latitude": "43.310818",
+    "longitude": "5.373865",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G"
+    ],
+    "macsec_capable": [],
+    "partition": "aws"
+  },
+  {
+    "code": "SCDB9",
+    "region": "eu-west-1",
+    "name": "Servecentric (Blanchardstown), Dublin, IE",
+    "aws_name": "Servecentric Unit 9",
+    "internal_code": null,
+    "peeringdb_id": "5901",
+    "country": "IE",
+    "latitude": "53.412959",
+    "longitude": "-6.373212",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "TCSH",
+    "region": "eu-west-1",
+    "name": "Digital Realty London LHR20, London, GB",
+    "aws_name": "Digital Realty LHR20",
+    "internal_code": null,
+    "peeringdb_id": "40",
+    "country": "GB",
+    "latitude": "51.499819",
+    "longitude": "-0.010775",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G"
+    ],
+    "macsec_capable": [
+      "10G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "TEJB1",
+    "region": "eu-west-1",
+    "name": "Teraco Johannesburg Campus, Johannesburg, ZA",
+    "aws_name": "Teraco JB1",
+    "internal_code": null,
+    "peeringdb_id": "850",
+    "country": "ZA",
+    "latitude": "-26.137957",
+    "longitude": "28.197517",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "EQMA3",
+    "region": "eu-west-2",
+    "name": "Equinix MA3 - Manchester, Manchester, GB",
+    "aws_name": "Equinix MA3",
+    "internal_code": null,
+    "peeringdb_id": "1403",
+    "country": "GB",
+    "latitude": "53.468674",
+    "longitude": "-2.310421",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G"
+    ],
+    "macsec_capable": [],
+    "partition": "aws"
+  },
+  {
+    "code": "THNO2",
+    "region": "eu-west-2",
+    "name": "Telehouse - London (Docklands West), London, GB",
+    "aws_name": "Telehouse West",
+    "internal_code": null,
+    "peeringdb_id": "835",
+    "country": "GB",
+    "latitude": "51.511776",
+    "longitude": "-0.002927",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "EQPA3",
+    "region": "eu-west-3",
+    "name": "Equinix PA3 - Paris, Paris, FR",
+    "aws_name": "Equinix PA3",
+    "internal_code": null,
+    "peeringdb_id": "717",
+    "country": "FR",
+    "latitude": "48.927166",
+    "longitude": "2.350664",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "ITXP7",
+    "region": "eu-west-3",
+    "name": "Digital Realty Paris PAR7, Paris, FR",
+    "aws_name": "Digital Realty PAR7",
+    "internal_code": null,
+    "peeringdb_id": "1536",
+    "country": "FR",
+    "latitude": "48.924907",
+    "longitude": "2.403",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G"
+    ],
+    "macsec_capable": [],
+    "partition": "aws"
+  },
+  {
+    "code": "ECTL1",
+    "region": "il-central-1",
+    "name": "EdgeConneX Tel Aviv (EDCTLV01), Herzliya, IL",
+    "aws_name": "Edgeconnex",
+    "internal_code": null,
+    "peeringdb_id": "11734",
+    "country": "IL",
+    "latitude": "32.052681",
+    "longitude": "34.770992",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G"
+    ],
+    "macsec_capable": [
+      "10G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "BDC52",
+    "region": "me-south-1",
+    "name": "AWS Bahrain DC52 MMR, Hamala, BH",
+    "aws_name": "AWS Bahrain DC52",
+    "internal_code": null,
+    "peeringdb_id": "8243",
+    "country": "BH",
+    "latitude": "26.154542",
+    "longitude": "50.475258",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G"
+    ],
+    "macsec_capable": [],
+    "partition": "aws"
+  },
+  {
+    "code": "BDC53",
+    "region": "me-south-1",
+    "name": "AWS Bahrain DC53 MMR, Askar, BH",
+    "aws_name": "AWS Bahrain DC53",
+    "internal_code": null,
+    "peeringdb_id": "8242",
+    "country": "BH",
+    "latitude": "26.2285",
+    "longitude": "50.586",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G"
+    ],
+    "macsec_capable": [],
+    "partition": "aws"
+  },
+  {
+    "code": "EQMC1",
+    "region": "me-south-1",
+    "name": "Equinix MC1 - Muscat, Muscat, OM",
+    "aws_name": "Equinix MC1 Barka",
+    "internal_code": null,
+    "peeringdb_id": "9339",
+    "country": "OM",
+    "latitude": "23.7280664",
+    "longitude": "57.7950975",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G"
+    ],
+    "macsec_capable": [
+      "10G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "EQMX1",
+    "region": "mx-central-1",
+    "name": "Equinix MX1/MX2 - Mexico City, El Marques, MX",
+    "aws_name": "Equinix MX1",
+    "internal_code": null,
+    "peeringdb_id": "8434",
+    "country": "MX",
+    "latitude": "20.556925",
+    "longitude": "-100.277833",
+    "ip": null,
+    "port_speeds": [
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "CIBNA",
+    "region": "sa-east-1",
+    "name": "Cirion Buenos Aires - BUE1, Buenos Aires, AR",
+    "aws_name": "Cirion BNARAGMS",
+    "internal_code": null,
+    "peeringdb_id": "1550",
+    "country": "AR",
+    "latitude": "-34.590248",
+    "longitude": "-58.467164",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "CILIM",
+    "region": "sa-east-1",
+    "name": "Cirion Lima - LIM1, Santiago de Surco, PE",
+    "aws_name": "Cirion LIMAPUCD",
+    "internal_code": null,
+    "peeringdb_id": "6248",
+    "country": "PE",
+    "latitude": "-12.094823",
+    "longitude": "-76.973532",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G"
+    ],
+    "macsec_capable": [
+      "10G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "EQBG1",
+    "region": "sa-east-1",
+    "name": "Equinix BG1 - Bogota, Bogota, CO",
+    "aws_name": "Equinix BG1",
+    "internal_code": null,
+    "peeringdb_id": "1354",
+    "country": "CO",
+    "latitude": "4.671384",
+    "longitude": "-74.156026",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "EQRJ2",
+    "region": "sa-east-1",
+    "name": "Equinix RJ2 - Rio de Janeiro, Rio de Janeiro, BR",
+    "aws_name": "Equinix RJ2",
+    "internal_code": null,
+    "peeringdb_id": "1899",
+    "country": "BR",
+    "latitude": "-22.871261",
+    "longitude": "-43.272742",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "SONQU",
+    "region": "sa-east-1",
+    "name": "SONDA - Quilicura, Santiago, CL",
+    "aws_name": "Sonda Quilicura",
+    "internal_code": null,
+    "peeringdb_id": "10697",
+    "country": "CL",
+    "latitude": "-33.35628",
+    "longitude": "-70.698912",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "TIVIT",
+    "region": "sa-east-1",
+    "name": "TIVIT Sao Paulo, S\u00e3o Paulo, BR",
+    "aws_name": "Tivit",
+    "internal_code": null,
+    "peeringdb_id": "1325",
+    "country": "BR",
+    "latitude": "-23.65071",
+    "longitude": "-46.720519",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "TNDB",
+    "region": "sa-east-1",
+    "name": "Equinix SP4 - S\u00e3o Paulo, Barueri, BR",
+    "aws_name": "Equinix SP4",
+    "internal_code": null,
+    "peeringdb_id": "165",
+    "country": "BR",
+    "latitude": "-23.497589",
+    "longitude": "-46.814577",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "165HS",
+    "region": "us-east-1",
+    "name": "165 Halsey Meet-Me Room, Newark, NJ, US",
+    "aws_name": "165 Halsey Street",
+    "internal_code": null,
+    "peeringdb_id": "350",
+    "country": "US",
+    "latitude": "40.736844",
+    "longitude": "-74.173402",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G",
+      "400G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G",
+      "400G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "CS32A",
+    "region": "us-east-1",
+    "name": "CoreSite - New York (NY1), New York, NY, US",
+    "aws_name": "CoreSite NY1",
+    "internal_code": null,
+    "peeringdb_id": "670",
+    "country": "US",
+    "latitude": "40.72",
+    "longitude": "-74.004561",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "CSVA1",
+    "region": "us-east-1",
+    "name": "CoreSite - Reston (VA1), Reston, VA, US",
+    "aws_name": "CoreSite VA1",
+    "internal_code": null,
+    "peeringdb_id": "668",
+    "country": "US",
+    "latitude": "38.950631",
+    "longitude": "-77.364541",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G",
+      "400G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G",
+      "400G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "EQDA2",
+    "region": "us-east-1",
+    "name": "Equinix DA - Dallas (previously Infomart Dallas), Dallas, TX, US",
+    "aws_name": "Equinix DA2",
+    "internal_code": null,
+    "peeringdb_id": "505",
+    "country": "US",
+    "latitude": "32.800748",
+    "longitude": "-96.819412",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "EQDC2",
+    "region": "us-east-1",
+    "name": "Equinix DC1-DC15, Ashburn, VA, US",
+    "aws_name": "Equinix DC2/DC11",
+    "internal_code": null,
+    "peeringdb_id": "1",
+    "country": "US",
+    "latitude": "39.016363",
+    "longitude": "-77.459023",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G",
+      "400G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G",
+      "400G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "EQMI1",
+    "region": "us-east-1",
+    "name": "Equinix MI1 - Miami, Miami, FL, US",
+    "aws_name": "Equinix MI1",
+    "internal_code": null,
+    "peeringdb_id": "15",
+    "country": "US",
+    "latitude": "25.782648",
+    "longitude": "-80.193157",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "EQNY5",
+    "region": "us-east-1",
+    "name": "Equinix NY2/NY4/NY5/NY6 - New York, Secaucus, NJ, US",
+    "aws_name": "Equinix NY5",
+    "internal_code": null,
+    "peeringdb_id": "36",
+    "country": "US",
+    "latitude": "40.778534",
+    "longitude": "-74.072237",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "KIOQ1",
+    "region": "us-east-1",
+    "name": "KIO Quer\u00e9taro 1 (QRO1), El Marques, MX",
+    "aws_name": "KIO Networks QRO 1",
+    "internal_code": null,
+    "peeringdb_id": "1778",
+    "country": "MX",
+    "latitude": "20.567915",
+    "longitude": "-100.254141",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "LGT50",
+    "region": "us-east-1",
+    "name": "Crown Castle Philadelphia (401 N Broad), Philadelphia, PA, US",
+    "aws_name": "Crown Castle",
+    "internal_code": null,
+    "peeringdb_id": "3482",
+    "country": "US",
+    "latitude": "39.959668",
+    "longitude": "-75.161377",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "MB1SD",
+    "region": "us-east-1",
+    "name": "Markley Group One Summer Street Boston, Boston, MA, US",
+    "aws_name": "Markley",
+    "internal_code": null,
+    "peeringdb_id": "219",
+    "country": "US",
+    "latitude": "42.354692",
+    "longitude": "-71.060266",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "QTDC2",
+    "region": "us-east-1",
+    "name": "QTS Atlanta-Metro (ATL1), Atlanta, GA, US",
+    "aws_name": "QTS ATL1",
+    "internal_code": null,
+    "peeringdb_id": "581",
+    "country": "US",
+    "latitude": "33.777526",
+    "longitude": "-84.421036",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "TLLPJ",
+    "region": "us-east-1",
+    "name": "Digital Realty IAD (44100 Digital Loudoun), Ashburn, VA, US",
+    "aws_name": "Digital Realty IAD38",
+    "internal_code": null,
+    "peeringdb_id": "4745",
+    "country": "US",
+    "latitude": "39.001795",
+    "longitude": "-77.47841",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "TLXA1",
+    "region": "us-east-1",
+    "name": "Digital Realty ATL (56 Marietta), Atlanta, GA, US",
+    "aws_name": "Digital Realty ATL13",
+    "internal_code": null,
+    "peeringdb_id": "125",
+    "country": "US",
+    "latitude": "33.755456",
+    "longitude": "-84.39153",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "COL67",
+    "region": "us-east-2",
+    "name": "Cologix COL2, Columbus, OH, US",
+    "aws_name": "Cologix COL2",
+    "internal_code": null,
+    "peeringdb_id": "2378",
+    "country": "US",
+    "latitude": "40.116491",
+    "longitude": "-83.001985",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "COLM3",
+    "region": "us-east-2",
+    "name": "Cologix MIN3, Minneapolis, MN, US",
+    "aws_name": "Cologix MIN3",
+    "internal_code": null,
+    "peeringdb_id": "3312",
+    "country": "US",
+    "latitude": "44.971408",
+    "longitude": "-93.25458",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "CSCH1",
+    "region": "us-east-2",
+    "name": "CoreSite - Chicago (CH1), Chicago, IL, US",
+    "aws_name": "CoreSite CH1",
+    "internal_code": null,
+    "peeringdb_id": "440",
+    "country": "US",
+    "latitude": "41.876212",
+    "longitude": "-87.631453",
+    "ip": null,
+    "port_speeds": [
+      "10G",
+      "100G",
+      "400G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G",
+      "400G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "CYOA1",
+    "region": "us-east-2",
+    "name": "CyrusOne Aurora I, Aurora, IL, US",
+    "aws_name": "CyrusOne Aurora A1",
+    "internal_code": null,
+    "peeringdb_id": "3143",
+    "country": "US",
+    "latitude": "41.796754",
+    "longitude": "-88.24276",
+    "ip": null,
+    "port_speeds": [
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "CYOW3",
+    "region": "us-east-2",
+    "name": "Databank Houston West (HOU1) (HOU2), Houston, TX, US",
+    "aws_name": "DataBank HOU3",
+    "internal_code": null,
+    "peeringdb_id": "1476",
+    "country": "US",
+    "latitude": "29.844182",
+    "longitude": "-95.556656",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "EQC50",
+    "region": "us-east-2",
+    "name": "Equinix CH1/CH2/CH4 - Chicago, Chicago, IL, US",
+    "aws_name": "Equinix CH2",
+    "internal_code": null,
+    "peeringdb_id": "7",
+    "country": "US",
+    "latitude": "41.85365",
+    "longitude": "-87.618342",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G",
+      "400G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G",
+      "400G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "NPKC1",
+    "region": "us-east-2",
+    "name": "Netrality Kansas City - 1102 Grand, Kansas City, MO, US",
+    "aws_name": "Netrality Data Centers",
+    "internal_code": null,
+    "peeringdb_id": "435",
+    "country": "US",
+    "latitude": "39.100941",
+    "longitude": "-94.581036",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "QTS52",
+    "region": "us-east-2",
+    "name": "QTS Chicago (CHI1), Chicago, IL, US",
+    "aws_name": "QTS",
+    "internal_code": null,
+    "peeringdb_id": "3362",
+    "country": "US",
+    "latitude": "41.841895",
+    "longitude": "-87.668306",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "CSOW",
+    "region": "us-west-1",
+    "name": "CoreSite - Los Angeles (LA1) One Wilshire, Los Angeles, CA, US",
+    "aws_name": "CoreSite LA1",
+    "internal_code": null,
+    "peeringdb_id": "19",
+    "country": "US",
+    "latitude": "34.047942",
+    "longitude": "-118.255564",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "CSSV2",
+    "region": "us-west-1",
+    "name": "Coresite - Milpitas (SV2), Milpitas, CA, US",
+    "aws_name": "Coresite SV2",
+    "internal_code": null,
+    "peeringdb_id": "671",
+    "country": "US",
+    "latitude": "37.405693",
+    "longitude": "-121.916261",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G"
+    ],
+    "macsec_capable": [],
+    "partition": "aws"
+  },
+  {
+    "code": "CSSV4",
+    "region": "us-west-1",
+    "name": "CoreSite - Santa Clara (SV4), Santa Clara, CA, US",
+    "aws_name": "CoreSite SV4",
+    "internal_code": null,
+    "peeringdb_id": "1619",
+    "country": "US",
+    "latitude": "37.376259",
+    "longitude": "-121.970705",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G",
+      "400G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G",
+      "400G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "ECPH1",
+    "region": "us-west-1",
+    "name": "EdgeConneX Phoenix (EDCPHX01), Tempe, AZ, US",
+    "aws_name": "EdgeConnex PHX01",
+    "internal_code": null,
+    "peeringdb_id": "1917",
+    "country": "US",
+    "latitude": "33.395544",
+    "longitude": "-111.97012",
+    "ip": null,
+    "port_speeds": [
+      "10G",
+      "100G",
+      "400G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G",
+      "400G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "EQLA3",
+    "region": "us-west-1",
+    "name": "Equinix LA3/LA4 - Los Angeles, El Segundo, CA, US",
+    "aws_name": "Equinix LA3",
+    "internal_code": null,
+    "peeringdb_id": "333",
+    "country": "US",
+    "latitude": "33.921239",
+    "longitude": "-118.383778",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "EQSV5",
+    "region": "us-west-1",
+    "name": "Equinix SV1/SV5/SV10 - Silicon Valley, San Jose, CA, US",
+    "aws_name": "Equinix SV5",
+    "internal_code": null,
+    "peeringdb_id": "6",
+    "country": "US",
+    "latitude": "37.241767",
+    "longitude": "-121.782967",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G",
+      "400G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G",
+      "400G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "PNP51",
+    "region": "us-west-1",
+    "name": "PhoenixNAP, Phoenix, AZ, US",
+    "aws_name": "PhoenixNAP",
+    "internal_code": null,
+    "peeringdb_id": "917",
+    "country": "US",
+    "latitude": "33.41601",
+    "longitude": "-112.009445",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G"
+    ],
+    "macsec_capable": [],
+    "partition": "aws"
+  },
+  {
+    "code": "ALN91",
+    "region": "us-west-2",
+    "name": "AlohaNAP, Kapolei, HI, US",
+    "aws_name": "AlohaNap",
+    "internal_code": null,
+    "peeringdb_id": "3149",
+    "country": "US",
+    "latitude": "21.335728",
+    "longitude": "-158.086738",
+    "ip": null,
+    "port_speeds": [
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "CSDE1",
+    "region": "us-west-2",
+    "name": "CoreSite - Denver (DE1), Denver, CO, US",
+    "aws_name": "CoreSite DE1",
+    "internal_code": null,
+    "peeringdb_id": "389",
+    "country": "US",
+    "latitude": "39.745636",
+    "longitude": "-104.995636",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G"
+    ],
+    "macsec_capable": [
+      "10G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "DBLV1",
+    "region": "us-west-2",
+    "name": "DataBank Las Vegas (LAS1), Las Vegas, NV, US",
+    "aws_name": "DataBank LAS1",
+    "internal_code": null,
+    "peeringdb_id": "1594",
+    "country": "US",
+    "latitude": "36.059162",
+    "longitude": "-115.145989",
+    "ip": null,
+    "port_speeds": [
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "ECPO1",
+    "region": "us-west-2",
+    "name": "EdgeConneX Portland (EDCPOR01), Hillsboro, OR, US",
+    "aws_name": "EdgeConnex",
+    "internal_code": null,
+    "peeringdb_id": "1922",
+    "country": "US",
+    "latitude": "45.548296",
+    "longitude": "-122.907473",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "EQSE2",
+    "region": "us-west-2",
+    "name": "Equinix SE2/SE3 - Seattle, Seattle, WA, US",
+    "aws_name": "Westin Building Exchange",
+    "internal_code": null,
+    "peeringdb_id": "86",
+    "country": "US",
+    "latitude": "47.614358",
+    "longitude": "-122.338864",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G",
+      "400G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G",
+      "400G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "PEH51",
+    "region": "us-west-2",
+    "name": "The Pittock, Portland, OR, US",
+    "aws_name": "Pittock Block",
+    "internal_code": null,
+    "peeringdb_id": "275",
+    "country": "US",
+    "latitude": "45.521366",
+    "longitude": "-122.680792",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "SNAP",
+    "region": "us-west-2",
+    "name": "Switch Las Vegas, Las Vegas, NV, US",
+    "aws_name": "Switch SUPERNAP 8",
+    "internal_code": null,
+    "peeringdb_id": "770",
+    "country": "US",
+    "latitude": "36.059914",
+    "longitude": "-115.210194",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "T5ALA",
+    "region": "us-west-2",
+    "name": "Serverfarm LAX1 Los Angeles, El Segundo, CA, US",
+    "aws_name": "Serverfarm LAX1 El Segundo",
+    "internal_code": null,
+    "peeringdb_id": "4952",
+    "country": "US",
+    "latitude": "33.921614",
+    "longitude": "-118.386551",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [],
+    "partition": "aws"
+  },
+  {
+    "code": "TPS19",
+    "region": "us-west-2",
+    "name": "TierPoint Seattle, Seattle, WA, US",
+    "aws_name": "TierPoint",
+    "internal_code": null,
+    "peeringdb_id": "8599",
+    "country": "US",
+    "latitude": "47.619446",
+    "longitude": "-122.34811",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G"
+    ],
+    "macsec_capable": [
+      "10G"
+    ],
+    "partition": "aws"
+  },
+  {
+    "code": "AEBTF",
+    "partition": "aws-eusc",
+    "region": "eusc-de-east-1",
+    "name": "AtlasEdge DC Berlin BER001, Berlin, DE",
+    "aws_name": "Atlas Edge BER001",
+    "internal_code": null,
+    "peeringdb_id": "4073",
+    "country": "DE",
+    "latitude": "52.527509",
+    "longitude": "13.318852",
+    "ip": null,
+    "port_speeds": [
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ]
+  },
+  {
+    "code": "IPBTF",
+    "partition": "aws-eusc",
+    "region": "eusc-de-east-1",
+    "name": "CarrierColo Berlin Luetzow (I/P/B/ site B), Berlin, DE",
+    "aws_name": "IPB GmbH",
+    "internal_code": null,
+    "peeringdb_id": "445",
+    "country": "DE",
+    "latitude": "52.50192",
+    "longitude": "13.36945",
+    "ip": null,
+    "port_speeds": [
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ]
+  }
+]
