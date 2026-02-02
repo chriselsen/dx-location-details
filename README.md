@@ -101,13 +101,13 @@ Outputs:
 - `docs/index.html` - Interactive page with integrated map and sortable/filterable table
 
 ### 6. Sync with PeeringDB
-Updates country codes and coordinates from PeeringDB for all locations:
+Updates country codes, coordinates, and organization data from PeeringDB for all locations:
 ```bash
 python3 scripts/sync_peeringdb.py
 ```
 
 This script:
-- Fetches country codes, coordinates, and state (for US) from PeeringDB API
+- Fetches country codes, coordinates, state (for US), and organization information from PeeringDB API
 - Updates entries if data has changed in PeeringDB
 - Respects rate limiting (1 request/second with exponential backoff)
 - Takes ~2-3 minutes for all locations
@@ -146,6 +146,8 @@ The system automatically normalizes location codes:
 - `region`: AWS region code
 - `name`: Location name from AWS
 - `peeringdb_id`: PeeringDB facility ID
+- `org_id`: PeeringDB organization ID
+- `org_name`: Organization name
 - `latitude`: Facility latitude
 - `longitude`: Facility longitude
 

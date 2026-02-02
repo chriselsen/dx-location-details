@@ -140,6 +140,8 @@ def main():
             'aws_name': extract_aws_name(aws_name),
             'internal_code': None,
             'peeringdb_id': None,
+            'org_id': None,
+            'org_name': None,
             'country': None,
             'latitude': None,
             'longitude': None,
@@ -151,6 +153,8 @@ def main():
         if code in mapping:
             map_data = mapping[code]
             entry['peeringdb_id'] = map_data.get('peeringdb_id')
+            entry['org_id'] = map_data.get('org_id')
+            entry['org_name'] = map_data.get('org_name')
             entry['country'] = map_data.get('country')
             
             if 'coordinates' in map_data:
