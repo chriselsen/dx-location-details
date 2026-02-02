@@ -100,7 +100,14 @@ html = f"""<!DOCTYPE html>
     <div class="tabs">
         <button class="tab active" onclick="switchPartition('aws')" id="tab-aws">
             <svg width="1em" height="1em" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 8px;"><path d="M5.5 16.5H19.5M5.5 8.5H19.5M4.5 12.5H20.5M12.5 20.5C12.5 20.5 8 18.5 8 12.5C8 6.5 12.5 4.5 12.5 4.5M12.5 4.5C12.5 4.5 17 6.5 17 12.5C17 18.5 12.5 20.5 12.5 20.5M12.5 4.5V20.5M20.5 12.5C20.5 16.9183 16.9183 20.5 12.5 20.5C8.08172 20.5 4.5 16.9183 4.5 12.5C4.5 8.08172 8.08172 4.5 12.5 4.5C16.9183 4.5 20.5 8.08172 20.5 12.5Z" stroke="currentColor" stroke-width="1.2"/></svg>
-            AWS Commercial Partition
+            AWS Commercial
+        </button>
+        <button class="tab" onclick="switchPartition('aws-govcloud')" id="tab-aws-govcloud">
+            <img src="GovCloud.png" style="height: 1em; width: 2em; margin-right: 8px; object-fit: contain;" alt="GovCloud">
+            AWS GovCloud (US)
+            <div class="partition-info">
+                <span class="info-icon" data-tooltip="Direct Connect Gateway enables connectivity from any Direct Connect location to AWS GovCloud (US) regions. Cross-account connectivity is supported between GovCloud and commercial accounts." onclick="event.stopPropagation()">i</span>
+            </div>
         </button>
         <button class="tab" onclick="switchPartition('aws-eusc')" id="tab-aws-eusc">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 810 540" style="height: 1em; width: 1.5em; margin-right: 8px;"><rect fill="#039" width="810" height="540"/><g fill="#fc0" transform="scale(30)translate(13.5,9)"><use href="#s" y="-6"/><use href="#s" y="6"/><g id="l"><use href="#s" x="-6"/><use href="#s" transform="rotate(150)translate(0,6)rotate(66)"/><use href="#s" transform="rotate(120)translate(0,6)rotate(24)"/><use href="#s" transform="rotate(60)translate(0,6)rotate(12)"/><use href="#s" transform="rotate(30)translate(0,6)rotate(42)"/></g><use href="#l" transform="scale(-1,1)"/></g><defs><g id="s"><g id="c"><path id="t" d="M0,0v1h0.5z" transform="translate(0,-1)rotate(18)"/><use href="#t" transform="scale(-1,1)"/></g><g id="a"><use href="#c" transform="rotate(72)"/><use href="#c" transform="rotate(144)"/></g><use href="#a" transform="scale(-1,1)"/></g></defs></svg>
@@ -146,9 +153,10 @@ html = f"""<!DOCTYPE html>
         <thead>
             <tr>
                 <th onclick="sortTable(0)" id="th0">Location</th>
-                <th onclick="sortTable(1)" id="th1">Port Speeds</th>
-                <th onclick="sortTable(2)" id="th2">Code</th>
-                <th onclick="sortTable(3)" id="th3">Associated Region<span class="info-icon" data-tooltip="The AWS region used for API calls to manage Direct Connect resources at this location. Virtual interfaces created at this location can connect to any AWS region globally. Note: Opt-in regions must be enabled in your AWS account before locations in those regions become selectable." onclick="event.stopPropagation()">i</span></th>
+                <th onclick="sortTable(1)" id="th1" style="text-align: center;">Google Maps</th>
+                <th onclick="sortTable(2)" id="th2">AWS Code</th>
+                <th onclick="sortTable(3)" id="th3">Port Speeds</th>
+                <th onclick="sortTable(4)" id="th4">Associated Region<span class="info-icon" data-tooltip="The AWS region used for API calls to manage Direct Connect resources at this location. Virtual interfaces created at this location can connect to any AWS region globally. Note: Opt-in regions must be enabled in your AWS account before locations in those regions become selectable." onclick="event.stopPropagation()">i</span></th>
             </tr>
         </thead>
         <tbody>
@@ -167,16 +175,18 @@ for loc in sorted_locations:
     if loc.get('aws_name') and loc['aws_name'] != loc['name']:
         location_html += f"<br><code>AWS Name: {loc['aws_name']}</code>"
     
+    # Map icon in separate column
+    map_html = ""
+    if loc.get('latitude') and loc.get('longitude'):
+        map_html = f"<a href='https://maps.google.com/?q={loc['latitude']},{loc['longitude']}' target='_blank' title='View on Google Maps'><svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' style='vertical-align: middle;'><path stroke='none' d='M0 0h24v24H0z' fill='none'/><path d='M12 18.5l-3 -1.5l-6 3v-13l6 -3l6 3l6 -3v7.5' /><path d='M9 4v13' /><path d='M15 7v5.5' /><path d='M21.121 20.121a3 3 0 1 0 -4.242 0c.418 .419 1.125 1.045 2.121 1.879c1.051 -.89 1.759 -1.516 2.121 -1.879' /><path d='M19 18v.01' /></svg></a>"
+    
     speeds_unlocked = ', '.join(loc.get('port_speeds', []))
     speeds_macsec = ', '.join(loc.get('macsec_capable', []))
     speeds_html = f"<span title='Without MACsec'><svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' style='vertical-align: middle;'><path stroke='none' d='M0 0h24v24H0z' fill='none'/><path d='M3 13a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2l0 -6' /><path d='M9 16a1 1 0 1 0 2 0a1 1 0 0 0 -2 0' /><path d='M13 11v-4a4 4 0 1 1 8 0v4' /></svg></span> {speeds_unlocked}" if speeds_unlocked else ""
     if speeds_macsec:
         speeds_html += f"<br><span title='With MACsec'><svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='currentColor' style='vertical-align: middle;'><path stroke='none' d='M0 0h24v24H0z' fill='none'/><path d='M12 2a5 5 0 0 1 5 5v3a3 3 0 0 1 3 3v6a3 3 0 0 1 -3 3h-10a3 3 0 0 1 -3 -3v-6a3 3 0 0 1 3 -3v-3a5 5 0 0 1 5 -5m0 12a2 2 0 0 0 -1.995 1.85l-.005 .15a2 2 0 1 0 2 -2m0 -10a3 3 0 0 0 -3 3v3h6v-3a3 3 0 0 0 -3 -3' /></svg></span> {speeds_macsec}"
     
-    if loc.get('latitude') and loc.get('longitude'):
-        map_link = f"<a href='https://maps.google.com/?q={loc['latitude']},{loc['longitude']}' target='_blank'>{loc['code']}</a>"
-    else:
-        map_link = loc['code']
+    map_link = loc['code']
     
     region_name = region_mapping.get('aws_region_names', {}).get(loc['region'], loc['region'])
     region_html = f"{region_name}<br><code>{loc['region']}</code>"
@@ -192,8 +202,9 @@ for loc in sorted_locations:
     
     html += f"""            <tr data-code="{loc['code']}" data-partition="{partition}" data-country="{country_display}" data-region="{region}" data-speeds="{port_speeds}" data-macsec="{macsec_speeds}">
                 <td>{location_html}</td>
-                <td>{speeds_html}</td>
+                <td style="text-align: center;">{map_html}</td>
                 <td>{map_link}</td>
+                <td>{speeds_html}</td>
                 <td>{region_html}</td>
             </tr>
 """
@@ -615,7 +626,17 @@ html += """
             document.getElementById('regionFilter').value = '';
             document.getElementById('speedFilter').value = '';
             document.getElementById('macsecFilter').value = '';
-            populateFilters(partition);
+            
+            // Only repopulate filters if switching to/from EUSC (different data)
+            // Commercial and GovCloud share the same data, so no need to repopulate
+            const prevPartition = document.getElementById('partitionFilter')?.dataset.currentPartition || 'aws';
+            const needsRepopulate = (partition === 'aws-eusc' || prevPartition === 'aws-eusc');
+            
+            if (needsRepopulate) {
+                populateFilters(partition === 'aws-eusc' ? 'aws-eusc' : 'aws');
+            }
+            
+            document.getElementById('partitionFilter').dataset.currentPartition = partition;
             filterTable();
         }
         
@@ -660,7 +681,9 @@ html += """
                 const macsec = row.dataset.macsec || '';
                 
                 // Partition filter (always applied)
-                const partitionMatch = partition === partitionFilter;
+                // Commercial and GovCloud use the same data (aws partition)
+                const effectivePartition = (partitionFilter === 'aws-govcloud') ? 'aws' : partitionFilter;
+                const partitionMatch = partition === effectivePartition;
                 
                 // Text search
                 let textMatch = true;
