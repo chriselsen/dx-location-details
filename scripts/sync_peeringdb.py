@@ -20,7 +20,9 @@ def get_facility_data_from_peeringdb(peeringdb_id, retry_count=0):
                     'state': fac.get('state'),
                     'country': fac.get('country'),
                     'latitude': fac.get('latitude'),
-                    'longitude': fac.get('longitude')
+                    'longitude': fac.get('longitude'),
+                    'org_id': fac.get('org_id'),
+                    'org_name': fac.get('org_name')
                 }
         elif response.status_code == 429:
             # Exponential backoff: 2^retry_count seconds, max 60s
@@ -59,6 +61,7 @@ def main():
     updated_country = 0
     updated_coords = 0
     updated_state = 0
+    updated_org = 0
     processed = 0
     
     print(f"Processing {total} locations with PeeringDB IDs...\n")
@@ -108,8 +111,17 @@ def main():
                 entry['state'] = data['state']
                 print(f"  → State: {data['state']}")
                 updated_state += 1
+            
+            # Update organization data
+            if data.get('org_id') and data['org_id'] != entry.get('org_id'):
+                entry['org_id'] = data['org_id']
+                updated_org += 1
+            if data.get('org_name') and data['org_name'] != entry.get('org_name'):
+                entry['org_name'] = data['org_name']
+                print(f"  → Organization: {data['org_name']}")
+                updated_org += 1
     
-    if updated_facility_name > 0 or updated_city > 0 or updated_country > 0 or updated_coords > 0 or updated_state > 0:
+    if updated_facility_name > 0 or updated_city > 0 or updated_country > 0 or updated_coords > 0 or updated_state > 0 or updated_org > 0:
         with open('data-structures/location-mapping.json', 'w') as f:
             json.dump(mapping, f, indent=2, sort_keys=True)
         print(f"\n✓ Updated {updated_facility_name} entries with facility name")
@@ -117,6 +129,7 @@ def main():
         print(f"✓ Updated {updated_country} entries with country data")
         print(f"✓ Updated {updated_coords} entries with coordinates")
         print(f"✓ Updated {updated_state} entries with US state data")
+        print(f"✓ Updated {updated_org} entries with organization data")
         print(f"\nSaved to data-structures/location-mapping.json")
     else:
         print("\nNo updates needed")

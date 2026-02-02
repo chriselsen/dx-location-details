@@ -1,146 +1,146 @@
-Location Code,Partition,Location Name,AWS Name,Country,Region Code,Region Name,Port Speeds,MACsec Capable,PeeringDB ID,Latitude,Longitude
-EANB1,aws,"Africa Data Centres, Nairobi, KE",East Africa Data Centres NBO1,KE,af-south-1,af-south-1,"10G, 100G","10G, 100G",1964,-1.34014,36.896534
-RCL1,aws,"Rack Centre Lagos, Ikeja, NG",Rack Centre LGS1,NG,af-south-1,af-south-1,"1G, 10G, 100G","10G, 100G",4411,6.597527,3.373062
-TECT1,aws,"Teraco CT1 Cape Town, Cape Town, ZA",Teraco CT1,ZA,af-south-1,af-south-1,"1G, 10G, 100G","10G, 100G",1225,-33.970872,18.465223
-EQHK1,aws,"Equinix HK1 - Hong Kong, Tsuen Wan, HK",Equinix HK1,HK,ap-east-1,ap-east-1,"1G, 10G, 100G","10G, 100G",170,22.365581,114.11932
-CHT51,aws,"CHT Taipei Banqiao IDC, New Taipei City, TW",Chunghwa Telecom,TW,ap-east-2,ap-east-2,"10G, 100G","10G, 100G",2886,24.994866,121.458263
-CFT54,aws,"Chief HD Building Taipei, Taipei, TW",Chief Telecom HD,TW,ap-east-2,ap-east-2,"10G, 100G","10G, 100G",5678,25.074213,121.576784
-ATTC1,aws,"AT TOKYO (CC1/CC2), Tokyo, JP",AT Tokyo Chuo Data Center,JP,ap-northeast-1,ap-northeast-1,"1G, 10G, 100G","10G, 100G",738,35.645435,139.793285
-CFT52,aws,"Chief LY Building Taipei, Taipei, TW",Chief Telecom LY,TW,ap-northeast-1,ap-northeast-1,"1G, 10G",,456,25.073467,121.577519
-EQOS1,aws,"Equinix OS1 - Osaka, Osaka, JP",Equinix OS1,JP,ap-northeast-1,ap-northeast-1,"1G, 10G, 100G","10G, 100G",1791,34.675774,135.495551
-EQTY2,aws,"Equinix TY2 - Tokyo, Tokyo, JP",Equinix TY2,JP,ap-northeast-1,ap-northeast-1,"1G, 10G, 100G","10G, 100G",452,35.617432,139.748106
-NEIN2,aws,"SCSK netXDC (SI1/SI2/SI3)/NEC Inzai DC, Inzai-shi, JP",NEC Inzai,JP,ap-northeast-1,ap-northeast-1,"1G, 10G, 100G","10G, 100G",9596,35.808986,140.117527
-TLS10,aws,"Digital Realty ICN10 - Seoul, Mapo-gu, KR",Digital Realty ICN10,KR,ap-northeast-2,ap-northeast-2,"1G, 10G, 100G","10G, 100G",9210,37.582162,126.886128
-LGKNX,aws,"KINX Gasan, Seoul, KR",KINX Gasen,KR,ap-northeast-2,ap-northeast-2,"1G, 10G",,7674,37.482096,126.879733
-LGU57,aws,"LG Uplus Pyeongchon IDC, Anyang-si, KR",LG U+ Pyeong-Chon Mega Center,KR,ap-northeast-2,ap-northeast-2,"1G, 10G, 100G","10G, 100G",7573,37.397891,126.9648961
-KDOS2,aws,"Telehouse – OSAKA 1&2, Osaka, JP",KDDI Telehouse Osaka 2,JP,ap-northeast-3,ap-northeast-3,"1G, 10G, 100G","10G, 100G",3068,34.693119,135.534371
-GPX51,aws,"Equinix MB1 - Mumbai (GPX Mumbai 1), Mumbai, IN",Equinix MB1,IN,ap-south-1,ap-south-1,"1G, 10G",10G,2310,19.113908,72.892742
-EQMB2,aws,"Equinix MB2 - Mumbai (GPX Mumbai 2), Mumbai, IN",Equinix MB2,IN,ap-south-1,ap-south-1,"1G, 10G, 100G","10G, 100G",7377,19.109353,72.901441
-NMBL2,aws,"Netmagic Bangalore DC02, Bangalore, IN",NetMagic DC2,IN,ap-south-1,ap-south-1,"1G, 10G",10G,7988,12.839551,77.662274
-TCDC1,aws,"STT Chennai 1, Chennai, IN",STT GDC INDIA PVT. LTD. VSB,IN,ap-south-1,ap-south-1,"1G, 10G, 100G","10G, 100G",6778,13.068351,80.278869
-TCDE2,aws,"STT Delhi 2, Delhi, IN",STT Delhi DC2,IN,ap-south-1,ap-south-1,"1G, 10G, 100G","10G, 100G",6786,28.541514,77.240201
-TCHY1,aws,"STT Hyderabad 1, Hyderabad, IN",STT Hyderabad DC1,IN,ap-south-1,ap-south-1,"1G, 10G, 100G","10G, 100G",6781,17.441478,78.377811
-TCDK1,aws,"STT Kolkata 1, Kolkata, IN",STT Kolkata,IN,ap-south-1,ap-south-1,"1G, 10G, 100G","10G, 100G",6780,22.588218,88.392964
-SFY52,aws,"Sify Rabale - Mumbai, Navi Mumbai, IN",Sify Rabale,IN,ap-south-1,ap-south-1,"1G, 10G",10G,2465,19.147451,73.014195
-AIMMN,aws,"AIMS Kuala Lumpur, Kuala Lumpur, MY",Menara AIMS,MY,ap-southeast-1,ap-southeast-1,"1G, 10G, 100G","10G, 100G",460,3.14969,101.70634
-EQSG2,aws,"Equinix SG2 - Singapore, Singapore, SG",Equinix SG2,SG,ap-southeast-1,ap-southeast-1,"1G, 10G, 100G","10G, 100G",705,1.321502,103.695359
-GSS52,aws,"Global Switch Singapore, Singapore, SG",Global Switch,SG,ap-southeast-1,ap-southeast-1,"1G, 10G, 100G","10G, 100G",388,1.336723,103.893828
-IAMGI,aws,"MEGA-i (iAdvantage Hong Kong), Hong Kong, HK",iAdvantage MEGA-i,HK,ap-southeast-1,ap-southeast-1,"1G, 10G, 100G","10G, 100G",225,22.266098,114.246512
-TCCBK,aws,"TCC Technology Data Center- Bangkok, Bangkok, TH",TCC,TH,ap-southeast-1,ap-southeast-1,"1G, 10G, 100G","10G, 100G",4139,13.663651,100.651345
-EPVM2,aws,"VITRO Makati 2, Makati, PH",ePLDT VM2,PH,ap-southeast-1,ap-southeast-1,"1G, 10G, 100G","10G, 100G",4809,14.564484,121.022368
-CBHU2,aws,"CDC Canberra HU2, Hume, AU",CDC Hume 2,AU,ap-southeast-2,ap-southeast-2,"10G, 100G","10G, 100G",12416,-35.388831,149.1683
-DCDH6,aws,"Datacom - Orbit Data Centre (Auckland), Auckland, NZ",Datacom DH6,NZ,ap-southeast-2,ap-southeast-2,"1G, 10G",10G,2024,-36.740554,174.728988
-EQSY3,aws,"Equinix SY3 - Sydney, Sydney, AU",Equinix SY1 - SY4,AU,ap-southeast-2,ap-southeast-2,"1G, 10G, 100G","10G, 100G",1605,-33.911776,151.192942
-GBSY6,aws,"Equinix SY6 - Sydney (formerly Metronode Sydney 2), Silverwater, AU",Global Switch SY6,AU,ap-southeast-2,ap-southeast-2,"1G, 10G",,2474,-33.836684,151.053282
-NDCB2,aws,"NEXTDC B2, Fortitude Valley, AU",NEXTDC B2,AU,ap-southeast-2,ap-southeast-2,"10G, 100G","10G, 100G",4688,-27.453902,153.0332
-NDCC1,aws,"NEXTDC C1, Bruce, AU",NEXTDC C1,AU,ap-southeast-2,ap-southeast-2,"1G, 10G",10G,1162,-35.245308,149.096242
-NDCM1,aws,"NEXTDC M1, Melbourne, AU",NEXTDC M1,AU,ap-southeast-2,ap-southeast-2,"1G, 10G, 100G","10G, 100G",1339,-37.821705,144.931061
-NDCP1,aws,"NEXTDC P1, Málaga, AU",NEXTDC P1,AU,ap-southeast-2,ap-southeast-2,"1G, 10G, 100G","10G, 100G",1940,-31.864402,115.895935
-NDCS2,aws,"NEXTDC S2, Macquarie Park, AU",NEXTDC S2,AU,ap-southeast-2,ap-southeast-2,"1G, 10G, 100G","10G, 100G",6792,-33.785125,151.125301
-DCIJ3,aws,"DCI Indonesia (JK3), Bekasi, Cibitung, ID",DCI Indonesia,ID,ap-southeast-3,ap-southeast-3,"1G, 10G, 100G","10G, 100G",8169,-6.299731,107.089244
-JKT02,aws,"NTT Jakarta 2 Data Center (JKT2), Jakarta, ID",NTT Jakarta 2 Data Center,ID,ap-southeast-3,ap-southeast-3,"1G, 10G, 100G","10G, 100G",5865,-6.237998,106.823452
-EQME2,aws,"Equinix ME1/ME2 - Melbourne, Melbourne, AU",Equinix ME2,AU,ap-southeast-4,ap-southeast-4,"1G, 10G, 100G","10G, 100G",1988,-37.821681,144.915458
-CMCHV,aws,"CMC Duy Tan (Hanoi), Hanoi, VN",CMC Tower,VN,ap-southeast-5,ap-southeast-5,"1G, 10G, 100G","10G, 100G",15938,21.03042,105.784363
-CSFX1,aws,"CSF CX1 / TelcoHub1 Kuala Lumpur, Cyberjaya, MY",Telcohub 1 (CX1),MY,ap-southeast-5,ap-southeast-5,"10G, 100G","10G, 100G",1279,2.913224,101.655646
-SPK53,aws,"Mayoral Drive Exchange (MDR), Auckland, NZ",Spark MDR,NZ,ap-southeast-6,ap-southeast-6,"10G, 100G","10G, 100G",1523,-36.854324,174.764384
-THRA9,aws,"Telehouse – Bangkok, Bangkok, TH",Telehouse Bangkok,TH,ap-southeast-7,ap-southeast-7,"10G, 100G","10G, 100G",13618,13.75161,100.57305
-CGM60,aws,"Cologix MTL3, Montreal, CA",Cologix MTL3,CA,ca-central-1,ca-central-1,"1G, 10G, 100G","10G, 100G",1944,45.497188,-73.570471
-COLV2,aws,"Cologix VAN2, Vancouver, CA",Cologix VAN2,CA,ca-central-1,ca-central-1,"1G, 10G",10G,1881,49.286981,-123.119579
-COLV3,aws,"Cologix VAN3, Vancouver, CA",Cologix VAN3,CA,ca-central-1,ca-central-1,"10G, 100G","10G, 100G",8060,49.259393,-123.029619
-EQTR2,aws,"Equinix TR2 - Toronto, Toronto, CA",Equinix TR2,CA,ca-central-1,ca-central-1,"10G, 100G","10G, 100G",2206,43.650854,-79.361951
-151FS,aws,"Telehouse Toronto (151 Front St West), Toronto, CA",Telehouse,CA,ca-central-1,ca-central-1,"1G, 10G, 100G","10G, 100G",392,43.644672,-79.384128
-NTM62,aws,"eStruxture MTL-1, Montreal, CA",eStruxture,CA,ca-central-1,ca-central-1,"1G, 10G, 100G","10G, 100G",1885,45.501394,-73.56192
-EQCL1,aws,"Equinix CL1 - Calgary, Calgary, CA",Equinix CL1,CA,ca-west-1,ca-west-1,"1G, 10G, 100G","10G, 100G",9553,51.045517,-114.069297
-EQCL3,aws,"Equinix CL3 - Calgary (formerly Q9 Calgary Three), Calgary, CA",Equinix CL3,CA,ca-west-1,ca-west-1,"1G, 10G, 100G","10G, 100G",3251,50.976971,-113.956677
-CDSR1,aws,"C21, Milan, IT",CDLAN srl Via Caldera 21,IT,eu-central-1,eu-central-1,"1G, 10G, 100G","10G, 100G",3519,45.476394,9.103571
-CEC50,aws,"CE Colo Prague, Prague, CZ",CE Colo,CZ,eu-central-1,eu-central-1,"1G, 10G",,214,50.060164,14.482978
-IPB50,aws,"CarrierColo Berlin Luetzow (I/P/B/ site B), Berlin, DE",IPB GmbH,DE,eu-central-1,eu-central-1,"1G, 10G",10G,445,52.50192,13.36945
-ITXA7,aws,"Digital Realty Amsterdam AMS3, Amsterdam, NL",Digital Realty AMS7,NL,eu-central-1,eu-central-1,"1G, 10G",10G,64,52.28415,4.770855
-ITXA1,aws,"Digital Realty Athens Campus (ATH1, Koropi, GR",Digital Realty ATH3,GR,eu-central-1,eu-central-1,"10G, 100G","10G, 100G",1949,37.871339,23.870251
-ITXC2,aws,"Digital Realty Copenhagen CPH1-3, Copenhagen, DK",Digital Realty CPH2,DK,eu-central-1,eu-central-1,"1G, 10G",10G,148,55.728092,12.377482
-INX6,aws,"Digital Realty Frankfurt FRA1-16, Frankfurt, DE",Digital Realty FRA6,DE,eu-central-1,eu-central-1,"1G, 10G, 100G","10G, 100G",58,50.11967,8.73463
-ITXM2,aws,"Digital Realty Madrid MAD1-2, Madrid, ES",Digital Realty MAD2,ES,eu-central-1,eu-central-1,"1G, 10G",,130,40.439323,-3.621211
-ITXM3,aws,"Digital Realty Madrid MAD3, Madrid, ES",Digital Realty MAD3,ES,eu-central-1,eu-central-1,"10G, 100G","10G, 100G",7414,40.433899,-3.62408
-ITXS1,aws,"Digital Realty Stockholm STO1-6, Stockholm, SE",Digital Realty STO1,SE,eu-central-1,eu-central-1,"1G, 10G, 100G","10G, 100G",208,59.422226,17.916696
-ITXV2,aws,"Digital Realty Vienna VIE1-2, Vienna, AT",Digital Realty VIE2,AT,eu-central-1,eu-central-1,"1G, 10G",10G,67,48.269027,16.410613
-ITXZ1,aws,"Digital Realty Zurich ZUR1, Glattbrugg, CH",Digital Realty ZUR1,CH,eu-central-1,eu-central-1,"1G, 10G, 100G","10G, 100G",81,47.432702,8.557273
-EQAM3,aws,"Equinix AM3 - Amsterdam, Amsterdam, NL",Equinix AM3,NL,eu-central-1,eu-central-1,"1G, 10G, 100G","10G, 100G",1320,52.354686,4.958827
-EQFA5,aws,"Equinix FR5 - Frankfurt, Frankfurt, DE",Equinix FR5,DE,eu-central-1,eu-central-1,"1G, 10G, 100G","10G, 100G",60,50.09885,8.632004
-EQHE6,aws,"Equinix HE6 - Helsinki, Espoo, FI",Equinix HE6,FI,eu-central-1,eu-central-1,"1G, 10G",,2516,60.203031,24.777861
-EQIL4,aws,"Equinix IL4 - Istanbul, Istanbul, TR",Equinix IL4 Istanbul,TR,eu-central-1,eu-central-1,"10G, 100G","10G, 100G",15498,41.008655,29.156655
-ITCM2,aws,"Equinix MD2 - Madrid, Alcobendas, ES",Equinix Itconic MD2,ES,eu-central-1,eu-central-1,"1G, 10G, 100G","10G, 100G",127,40.536855,-3.648584
-EQMU1,aws,"Equinix MU1/MU3 - Munich, Munich, DE",Equinix MU1,DE,eu-central-1,eu-central-1,"1G, 10G",10G,480,48.143056,11.55584
-EQWA1,aws,"Equinix WA1 - Warsaw, Warsaw, PL",Equinix WA1,PL,eu-central-1,eu-central-1,"1G, 10G",,509,52.227354,21.003357
-MOILH,aws,"MedOne TC1, Tirat Carmel, IL",MedOne,IL,eu-central-1,eu-central-1,"1G, 10G, 100G","10G, 100G",7177,32.770949,34.966486
-IPHH3,aws,"Portus/IPHH HH3 (Wendenstrasse 251), Hamburg, DE",IPHH H3,DE,eu-central-1,eu-central-1,"1G, 10G",10G,7274,53.550998,10.03825
-DGPU1,aws,"STACK EMEA - OSL01, Oslo, NO",DigiPlex Ulven,NO,eu-central-1,eu-central-1,"1G, 10G",10G,345,59.924726,10.810183
-THV52,aws,"Telehouse - Paris 2 (Voltaire - Léon Frot), Paris, FR",Telehouse Voltaire,FR,eu-central-1,eu-central-1,"1G, 10G, 100G","10G, 100G",53,48.856654,2.38532
-EQZH5,aws,"Equinix ZH5 - Zurich, Zurich, CH",Equinix ZH5,CH,eu-central-2,eu-central-2,"1G, 10G, 100G","10G, 100G",1515,47.405667,8.46174
-EQSK1,aws,"Equinix SK1 - Stockholm, Stockholm, SE",Equinix Sweden SK1,SE,eu-north-1,eu-north-1,"1G, 10G, 100G","10G, 100G",156,59.362574,17.955657
-EQML2,aws,"Equinix ML2 - Milan, Milan, IT",Equinix ML2,IT,eu-south-1,eu-south-1,"1G, 10G",,884,45.448684,9.147436
-EQBA1,aws,"Equinix BA1 - Barcelona, Barcelona, ES",Equinix BA1,ES,eu-south-2,eu-south-2,"10G, 100G","10G, 100G",122,41.351557,2.137457
-ITXD2,aws,"Digital Realty Dublin DUB1-2, Dublin, IE",Digital Realty DUB2,IE,eu-west-1,eu-west-1,"1G, 10G, 100G","10G, 100G",177,53.334251,-6.365538
-TCSH,aws,"Digital Realty London LHR20, London, GB",Digital Realty LHR20,GB,eu-west-1,eu-west-1,"1G, 10G",10G,40,51.499819,-0.010775
-ITXM1,aws,"Digital Realty Marseille MRS1-3, Marseille, FR",Digital Realty MRS1,FR,eu-west-1,eu-west-1,"1G, 10G",,226,43.310818,5.373865
-EIRCL,aws,"Eircom Dublin (Clonshaugh), Dublin, IE",Eircom Clonshaugh,IE,eu-west-1,eu-west-1,"1G, 10G",10G,2343,53.400983,-6.218081
-EQDX1,aws,"Equinix DX1 - Dubai, Dubai, AE",Equinix DX1,AE,eu-west-1,eu-west-1,"1G, 10G",10G,1355,25.02618,55.18695
-EQLD5,aws,"Equinix LD5 - London, Slough, GB",Equinix LD5,GB,eu-west-1,eu-west-1,"1G, 10G, 100G","10G, 100G",832,51.522463,-0.62905
-EQLS1,aws,"Equinix LS1 - Lisbon, Lisbon, PT",Equinix LS1,PT,eu-west-1,eu-west-1,"10G, 100G","10G, 100G",126,38.787919,-9.123454
-SCDB9,aws,"Servecentric (Blanchardstown), Dublin, IE",Servecentric Unit 9,IE,eu-west-1,eu-west-1,"1G, 10G, 100G","10G, 100G",5901,53.412959,-6.373212
-ETIFJ,aws,"SmartHub Fujairah, Fujairah, AE",Etisalat Smart Hub Data Center,AE,eu-west-1,eu-west-1,"1G, 10G",10G,1493,25.131143,56.336378
-TEJB1,aws,"Teraco Johannesburg Campus, Johannesburg, ZA",Teraco JB1,ZA,eu-west-1,eu-west-1,"1G, 10G, 100G","10G, 100G",850,-26.137957,28.197517
-EQMA3,aws,"Equinix MA3 - Manchester, Manchester, GB",Equinix MA3,GB,eu-west-2,eu-west-2,"1G, 10G",,1403,53.468674,-2.310421
-THNO2,aws,"Telehouse - London (Docklands West), London, GB",Telehouse West,GB,eu-west-2,eu-west-2,"1G, 10G, 100G","10G, 100G",835,51.511776,-0.002927
-ITXP7,aws,"Digital Realty Paris PAR7, Paris, FR",Digital Realty PAR7,FR,eu-west-3,eu-west-3,"1G, 10G",,1536,48.924907,2.403
-EQPA3,aws,"Equinix PA3 - Paris, Paris, FR",Equinix PA3,FR,eu-west-3,eu-west-3,"1G, 10G, 100G","10G, 100G",717,48.927166,2.350664
-AEBTF,aws-eusc,"AtlasEdge DC Berlin BER001, Berlin, DE",Atlas Edge BER001,DE,eusc-de-east-1,eusc-de-east-1,"10G, 100G","10G, 100G",4073,52.527509,13.318852
-IPBTF,aws-eusc,"CarrierColo Berlin Luetzow (I/P/B/ site B), Berlin, DE",IPB GmbH,DE,eusc-de-east-1,eusc-de-east-1,"10G, 100G","10G, 100G",445,52.50192,13.36945
-ECTL1,aws,"EdgeConneX Tel Aviv (EDCTLV01), Herzliya, IL",Edgeconnex,IL,il-central-1,il-central-1,"1G, 10G",10G,11734,32.052681,34.770992
-BDC52,aws,"AWS Bahrain DC52 MMR, Hamala, BH",AWS Bahrain DC52,BH,me-south-1,me-south-1,"1G, 10G",,8243,26.154542,50.475258
-BDC53,aws,"AWS Bahrain DC53 MMR, Askar, BH",AWS Bahrain DC53,BH,me-south-1,me-south-1,"1G, 10G",,8242,26.2285,50.586
-EQMC1,aws,"Equinix MC1 - Muscat, Muscat, OM",Equinix MC1 Barka,OM,me-south-1,me-south-1,"1G, 10G",10G,9339,23.7280664,57.7950975
-EQMX1,aws,"Equinix MX1/MX2 - Mexico City, El Marques, MX",Equinix MX1,MX,mx-central-1,mx-central-1,"10G, 100G","10G, 100G",8434,20.556925,-100.277833
-CIBNA,aws,"Cirion Buenos Aires - BUE1, Buenos Aires, AR",Cirion BNARAGMS,AR,sa-east-1,sa-east-1,"1G, 10G, 100G","10G, 100G",1550,-34.590248,-58.467164
-CILIM,aws,"Cirion Lima - LIM1, Santiago de Surco, PE",Cirion LIMAPUCD,PE,sa-east-1,sa-east-1,"1G, 10G",10G,6248,-12.094823,-76.973532
-EQBG1,aws,"Equinix BG1 - Bogota, Bogota, CO",Equinix BG1,CO,sa-east-1,sa-east-1,"1G, 10G, 100G","10G, 100G",1354,4.671384,-74.156026
-EQRJ2,aws,"Equinix RJ2 - Rio de Janeiro, Rio de Janeiro, BR",Equinix RJ2,BR,sa-east-1,sa-east-1,"1G, 10G, 100G","10G, 100G",1899,-22.871261,-43.272742
-TNDB,aws,"Equinix SP4 - São Paulo, Barueri, BR",Equinix SP4,BR,sa-east-1,sa-east-1,"1G, 10G, 100G","10G, 100G",165,-23.497589,-46.814577
-SONQU,aws,"SONDA - Quilicura, Santiago, CL",Sonda Quilicura,CL,sa-east-1,sa-east-1,"1G, 10G, 100G","10G, 100G",10697,-33.35628,-70.698912
-TIVIT,aws,"TIVIT Sao Paulo, São Paulo, BR",Tivit,BR,sa-east-1,sa-east-1,"1G, 10G, 100G","10G, 100G",1325,-23.65071,-46.720519
-165HS,aws,"165 Halsey Meet-Me Room, Newark, NJ, US",165 Halsey Street,US,us-east-1,us-east-1,"1G, 10G, 100G, 400G","10G, 100G, 400G",350,40.736844,-74.173402
-CS32A,aws,"CoreSite - New York (NY1), New York, NY, US",CoreSite NY1,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",670,40.72,-74.004561
-CSVA1,aws,"CoreSite - Reston (VA1), Reston, VA, US",CoreSite VA1,US,us-east-1,us-east-1,"1G, 10G, 100G, 400G","10G, 100G, 400G",668,38.950631,-77.364541
-LGT50,aws,"Crown Castle Philadelphia (401 N Broad), Philadelphia, PA, US",Crown Castle,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",3482,39.959668,-75.161377
-TLXA1,aws,"Digital Realty ATL (56 Marietta), Atlanta, GA, US",Digital Realty ATL13,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",125,33.755456,-84.39153
-TLLPJ,aws,"Digital Realty IAD (44100 Digital Loudoun), Ashburn, VA, US",Digital Realty IAD38,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",4745,39.001795,-77.47841
-EQDA2,aws,"Equinix DA - Dallas (previously Infomart Dallas), Dallas, TX, US",Equinix DA2,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",505,32.800748,-96.819412
-EQDC2,aws,"Equinix DC1-DC15, Ashburn, VA, US",Equinix DC2/DC11,US,us-east-1,us-east-1,"1G, 10G, 100G, 400G","10G, 100G, 400G",1,39.016363,-77.459023
-EQMI1,aws,"Equinix MI1 - Miami, Miami, FL, US",Equinix MI1,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",15,25.782648,-80.193157
-EQNY5,aws,"Equinix NY2/NY4/NY5/NY6 - New York, Secaucus, NJ, US",Equinix NY5,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",36,40.778534,-74.072237
-KIOQ1,aws,"KIO Querétaro 1 (QRO1), El Marques, MX",KIO Networks QRO 1,MX,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",1778,20.567915,-100.254141
-MB1SD,aws,"Markley Group One Summer Street Boston, Boston, MA, US",Markley,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",219,42.354692,-71.060266
-QTDC2,aws,"QTS Atlanta-Metro (ATL1), Atlanta, GA, US",QTS ATL1,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",581,33.777526,-84.421036
-COL67,aws,"Cologix COL2, Columbus, OH, US",Cologix COL2,US,us-east-2,us-east-2,"1G, 10G, 100G","10G, 100G",2378,40.116491,-83.001985
-COLM3,aws,"Cologix MIN3, Minneapolis, MN, US",Cologix MIN3,US,us-east-2,us-east-2,"1G, 10G, 100G","10G, 100G",3312,44.971408,-93.25458
-CSCH1,aws,"CoreSite - Chicago (CH1), Chicago, IL, US",CoreSite CH1,US,us-east-2,us-east-2,"10G, 100G, 400G","10G, 100G, 400G",440,41.876212,-87.631453
-CYOA1,aws,"CyrusOne Aurora I, Aurora, IL, US",CyrusOne Aurora A1,US,us-east-2,us-east-2,"10G, 100G","10G, 100G",3143,41.796754,-88.24276
-CYOW3,aws,"Databank Houston West (HOU1) (HOU2), Houston, TX, US",DataBank HOU3,US,us-east-2,us-east-2,"1G, 10G, 100G","10G, 100G",1476,29.844182,-95.556656
-EQC50,aws,"Equinix CH1/CH2/CH4 - Chicago, Chicago, IL, US",Equinix CH2,US,us-east-2,us-east-2,"1G, 10G, 100G, 400G","10G, 100G, 400G",7,41.85365,-87.618342
-NPKC1,aws,"Netrality Kansas City - 1102 Grand, Kansas City, MO, US",Netrality Data Centers,US,us-east-2,us-east-2,"1G, 10G, 100G","10G, 100G",435,39.100941,-94.581036
-QTS52,aws,"QTS Chicago (CHI1), Chicago, IL, US",QTS,US,us-east-2,us-east-2,"1G, 10G, 100G","10G, 100G",3362,41.841895,-87.668306
-CSOW,aws,"CoreSite - Los Angeles (LA1) One Wilshire, Los Angeles, CA, US",CoreSite LA1,US,us-west-1,us-west-1,"1G, 10G, 100G","10G, 100G",19,34.047942,-118.255564
-CSSV4,aws,"CoreSite - Santa Clara (SV4), Santa Clara, CA, US",CoreSite SV4,US,us-west-1,us-west-1,"1G, 10G, 100G, 400G","10G, 100G, 400G",1619,37.376259,-121.970705
-CSSV2,aws,"Coresite - Milpitas (SV2), Milpitas, CA, US",Coresite SV2,US,us-west-1,us-west-1,"1G, 10G",,671,37.405693,-121.916261
-ECPH1,aws,"EdgeConneX Phoenix (EDCPHX01), Tempe, AZ, US",EdgeConnex PHX01,US,us-west-1,us-west-1,"10G, 100G, 400G","10G, 100G, 400G",1917,33.395544,-111.97012
-EQLA3,aws,"Equinix LA3/LA4 - Los Angeles, El Segundo, CA, US",Equinix LA3,US,us-west-1,us-west-1,"1G, 10G, 100G","10G, 100G",333,33.921239,-118.383778
-EQSV5,aws,"Equinix SV1/SV5/SV10 - Silicon Valley, San Jose, CA, US",Equinix SV5,US,us-west-1,us-west-1,"1G, 10G, 100G, 400G","10G, 100G, 400G",6,37.241767,-121.782967
-PNP51,aws,"PhoenixNAP, Phoenix, AZ, US",PhoenixNAP,US,us-west-1,us-west-1,"1G, 10G",,917,33.41601,-112.009445
-ALN91,aws,"AlohaNAP, Kapolei, HI, US",AlohaNap,US,us-west-2,us-west-2,"10G, 100G","10G, 100G",3149,21.335728,-158.086738
-CSDE1,aws,"CoreSite - Denver (DE1), Denver, CO, US",CoreSite DE1,US,us-west-2,us-west-2,"1G, 10G",10G,389,39.745636,-104.995636
-DBLV1,aws,"DataBank Las Vegas (LAS1), Las Vegas, NV, US",DataBank LAS1,US,us-west-2,us-west-2,"10G, 100G","10G, 100G",1594,36.059162,-115.145989
-ECPO1,aws,"EdgeConneX Portland (EDCPOR01), Hillsboro, OR, US",EdgeConnex,US,us-west-2,us-west-2,"1G, 10G, 100G","10G, 100G",1922,45.548296,-122.907473
-EQSE2,aws,"Equinix SE2/SE3 - Seattle, Seattle, WA, US",Westin Building Exchange,US,us-west-2,us-west-2,"1G, 10G, 100G, 400G","10G, 100G, 400G",86,47.614358,-122.338864
-T5ALA,aws,"Serverfarm LAX1 Los Angeles, El Segundo, CA, US",Serverfarm LAX1 El Segundo,US,us-west-2,us-west-2,"1G, 10G, 100G",,4952,33.921614,-118.386551
-SNAP,aws,"Switch Las Vegas, Las Vegas, NV, US",Switch SUPERNAP 8,US,us-west-2,us-west-2,"1G, 10G, 100G","10G, 100G",770,36.059914,-115.210194
-PEH51,aws,"The Pittock, Portland, OR, US",Pittock Block,US,us-west-2,us-west-2,"1G, 10G, 100G","10G, 100G",275,45.521366,-122.680792
-TPS19,aws,"TierPoint Seattle, Seattle, WA, US",TierPoint,US,us-west-2,us-west-2,"1G, 10G",10G,8599,47.619446,-122.34811
+Location Code,Partition,Location Name,Organization,AWS Name,Country,Region Code,Region Name,Port Speeds,MACsec Capable,PeeringDB ID,Latitude,Longitude
+EANB1,aws,"Africa Data Centres, Nairobi, KE",Africa Data Centres,East Africa Data Centres NBO1,KE,af-south-1,af-south-1,"10G, 100G","10G, 100G",1964,-1.34014,36.896534
+RCL1,aws,"Rack Centre Lagos, Ikeja, NG",Rack Centre Limited,Rack Centre LGS1,NG,af-south-1,af-south-1,"1G, 10G, 100G","10G, 100G",4411,6.597527,3.373062
+TECT1,aws,"Teraco CT1 Cape Town, Cape Town, ZA",Teraco Data Environments Pty Ltd,Teraco CT1,ZA,af-south-1,af-south-1,"1G, 10G, 100G","10G, 100G",1225,-33.970872,18.465223
+EQHK1,aws,"Equinix HK1 - Hong Kong, Tsuen Wan, HK","Equinix, Inc.",Equinix HK1,HK,ap-east-1,ap-east-1,"1G, 10G, 100G","10G, 100G",170,22.365581,114.11932
+CHT51,aws,"CHT Taipei Banqiao IDC, New Taipei City, TW","Chunghwa Telecom Co., Ltd.",Chunghwa Telecom,TW,ap-east-2,ap-east-2,"10G, 100G","10G, 100G",2886,24.994866,121.458263
+CFT54,aws,"Chief HD Building Taipei, Taipei, TW",Chief Telecom Inc.,Chief Telecom HD,TW,ap-east-2,ap-east-2,"10G, 100G","10G, 100G",5678,25.074213,121.576784
+ATTC1,aws,"AT TOKYO (CC1/CC2), Tokyo, JP",AT TOKYO Corporation,AT Tokyo Chuo Data Center,JP,ap-northeast-1,ap-northeast-1,"1G, 10G, 100G","10G, 100G",738,35.645435,139.793285
+CFT52,aws,"Chief LY Building Taipei, Taipei, TW",Chief Telecom Inc.,Chief Telecom LY,TW,ap-northeast-1,ap-northeast-1,"1G, 10G",,456,25.073467,121.577519
+EQOS1,aws,"Equinix OS1 - Osaka, Osaka, JP","Equinix, Inc.",Equinix OS1,JP,ap-northeast-1,ap-northeast-1,"1G, 10G, 100G","10G, 100G",1791,34.675774,135.495551
+EQTY2,aws,"Equinix TY2 - Tokyo, Tokyo, JP","Equinix, Inc.",Equinix TY2,JP,ap-northeast-1,ap-northeast-1,"1G, 10G, 100G","10G, 100G",452,35.617432,139.748106
+NEIN2,aws,"SCSK netXDC (SI1/SI2/SI3)/NEC Inzai DC, Inzai-shi, JP",SCSK Corporation,NEC Inzai,JP,ap-northeast-1,ap-northeast-1,"1G, 10G, 100G","10G, 100G",9596,35.808986,140.117527
+TLS10,aws,"Digital Realty ICN10 - Seoul, Mapo-gu, KR",Digital Realty,Digital Realty ICN10,KR,ap-northeast-2,ap-northeast-2,"1G, 10G, 100G","10G, 100G",9210,37.582162,126.886128
+LGKNX,aws,"KINX Gasan, Seoul, KR",KINX Inc.,KINX Gasen,KR,ap-northeast-2,ap-northeast-2,"1G, 10G",,7674,37.482096,126.879733
+LGU57,aws,"LG Uplus Pyeongchon IDC, Anyang-si, KR",LG Uplus Corp.,LG U+ Pyeong-Chon Mega Center,KR,ap-northeast-2,ap-northeast-2,"1G, 10G, 100G","10G, 100G",7573,37.397891,126.9648961
+KDOS2,aws,"Telehouse – OSAKA 1&2, Osaka, JP",Telehouse - Global Data Centers,KDDI Telehouse Osaka 2,JP,ap-northeast-3,ap-northeast-3,"1G, 10G, 100G","10G, 100G",3068,34.693119,135.534371
+GPX51,aws,"Equinix MB1 - Mumbai (GPX Mumbai 1), Mumbai, IN","Equinix, Inc.",Equinix MB1,IN,ap-south-1,ap-south-1,"1G, 10G",10G,2310,19.113908,72.892742
+EQMB2,aws,"Equinix MB2 - Mumbai (GPX Mumbai 2), Mumbai, IN","Equinix, Inc.",Equinix MB2,IN,ap-south-1,ap-south-1,"1G, 10G, 100G","10G, 100G",7377,19.109353,72.901441
+NMBL2,aws,"Netmagic Bangalore DC02, Bangalore, IN",NTTCINS,NetMagic DC2,IN,ap-south-1,ap-south-1,"1G, 10G",10G,7988,12.839551,77.662274
+TCDC1,aws,"STT Chennai 1, Chennai, IN",ST Telemedia Global Data Centres (STT GDC),STT GDC INDIA PVT. LTD. VSB,IN,ap-south-1,ap-south-1,"1G, 10G, 100G","10G, 100G",6778,13.068351,80.278869
+TCDE2,aws,"STT Delhi 2, Delhi, IN",ST Telemedia Global Data Centres (STT GDC),STT Delhi DC2,IN,ap-south-1,ap-south-1,"1G, 10G, 100G","10G, 100G",6786,28.541514,77.240201
+TCHY1,aws,"STT Hyderabad 1, Hyderabad, IN",ST Telemedia Global Data Centres (STT GDC),STT Hyderabad DC1,IN,ap-south-1,ap-south-1,"1G, 10G, 100G","10G, 100G",6781,17.441478,78.377811
+TCDK1,aws,"STT Kolkata 1, Kolkata, IN",ST Telemedia Global Data Centres (STT GDC),STT Kolkata,IN,ap-south-1,ap-south-1,"1G, 10G, 100G","10G, 100G",6780,22.588218,88.392964
+SFY52,aws,"Sify Rabale - Mumbai, Navi Mumbai, IN",Sify Technologies Limited,Sify Rabale,IN,ap-south-1,ap-south-1,"1G, 10G",10G,2465,19.147451,73.014195
+AIMMN,aws,"AIMS Kuala Lumpur, Kuala Lumpur, MY",AIMS Data Centre Sdn Bhd,Menara AIMS,MY,ap-southeast-1,ap-southeast-1,"1G, 10G, 100G","10G, 100G",460,3.14969,101.70634
+EQSG2,aws,"Equinix SG2 - Singapore, Singapore, SG","Equinix, Inc.",Equinix SG2,SG,ap-southeast-1,ap-southeast-1,"1G, 10G, 100G","10G, 100G",705,1.321502,103.695359
+GSS52,aws,"Global Switch Singapore, Singapore, SG",Global Switch,Global Switch,SG,ap-southeast-1,ap-southeast-1,"1G, 10G, 100G","10G, 100G",388,1.336723,103.893828
+IAMGI,aws,"MEGA-i (iAdvantage Hong Kong), Hong Kong, HK",iAdvantage Hong Kong,iAdvantage MEGA-i,HK,ap-southeast-1,ap-southeast-1,"1G, 10G, 100G","10G, 100G",225,22.266098,114.246512
+TCCBK,aws,"TCC Technology Data Center- Bangkok, Bangkok, TH","TCC Technology Co., Ltd",TCC,TH,ap-southeast-1,ap-southeast-1,"1G, 10G, 100G","10G, 100G",4139,13.663651,100.651345
+EPVM2,aws,"VITRO Makati 2, Makati, PH",Vitro Inc.,ePLDT VM2,PH,ap-southeast-1,ap-southeast-1,"1G, 10G, 100G","10G, 100G",4809,14.564484,121.022368
+CBHU2,aws,"CDC Canberra HU2, Hume, AU",CDC Data Centres,CDC Hume 2,AU,ap-southeast-2,ap-southeast-2,"10G, 100G","10G, 100G",12416,-35.388831,149.1683
+DCDH6,aws,"Datacom - Orbit Data Centre (Auckland), Auckland, NZ",Datacom Data Centres Ltd,Datacom DH6,NZ,ap-southeast-2,ap-southeast-2,"1G, 10G",10G,2024,-36.740554,174.728988
+EQSY3,aws,"Equinix SY3 - Sydney, Sydney, AU","Equinix, Inc.",Equinix SY1 - SY4,AU,ap-southeast-2,ap-southeast-2,"1G, 10G, 100G","10G, 100G",1605,-33.911776,151.192942
+GBSY6,aws,"Equinix SY6 - Sydney (formerly Metronode Sydney 2), Silverwater, AU","Equinix, Inc.",Global Switch SY6,AU,ap-southeast-2,ap-southeast-2,"1G, 10G",,2474,-33.836684,151.053282
+NDCB2,aws,"NEXTDC B2, Fortitude Valley, AU",NEXTDC,NEXTDC B2,AU,ap-southeast-2,ap-southeast-2,"10G, 100G","10G, 100G",4688,-27.453902,153.0332
+NDCC1,aws,"NEXTDC C1, Bruce, AU",NEXTDC,NEXTDC C1,AU,ap-southeast-2,ap-southeast-2,"1G, 10G",10G,1162,-35.245308,149.096242
+NDCM1,aws,"NEXTDC M1, Melbourne, AU",NEXTDC,NEXTDC M1,AU,ap-southeast-2,ap-southeast-2,"1G, 10G, 100G","10G, 100G",1339,-37.821705,144.931061
+NDCP1,aws,"NEXTDC P1, Málaga, AU",NEXTDC,NEXTDC P1,AU,ap-southeast-2,ap-southeast-2,"1G, 10G, 100G","10G, 100G",1940,-31.864402,115.895935
+NDCS2,aws,"NEXTDC S2, Macquarie Park, AU",NEXTDC,NEXTDC S2,AU,ap-southeast-2,ap-southeast-2,"1G, 10G, 100G","10G, 100G",6792,-33.785125,151.125301
+DCIJ3,aws,"DCI Indonesia (JK3), Bekasi, Cibitung, ID",DCI Indonesia,DCI Indonesia,ID,ap-southeast-3,ap-southeast-3,"1G, 10G, 100G","10G, 100G",8169,-6.299731,107.089244
+JKT02,aws,"NTT Jakarta 2 Data Center (JKT2), Jakarta, ID",NTT DATA's Global Data Centers division,NTT Jakarta 2 Data Center,ID,ap-southeast-3,ap-southeast-3,"1G, 10G, 100G","10G, 100G",5865,-6.237998,106.823452
+EQME2,aws,"Equinix ME1/ME2 - Melbourne, Melbourne, AU","Equinix, Inc.",Equinix ME2,AU,ap-southeast-4,ap-southeast-4,"1G, 10G, 100G","10G, 100G",1988,-37.821681,144.915458
+CMCHV,aws,"CMC Duy Tan (Hanoi), Hanoi, VN",CMC Telecom,CMC Tower,VN,ap-southeast-5,ap-southeast-5,"1G, 10G, 100G","10G, 100G",15938,21.03042,105.784363
+CSFX1,aws,"CSF CX1 / TelcoHub1 Kuala Lumpur, Cyberjaya, MY",CSF Group,Telcohub 1 (CX1),MY,ap-southeast-5,ap-southeast-5,"10G, 100G","10G, 100G",1279,2.913224,101.655646
+SPK53,aws,"Mayoral Drive Exchange (MDR), Auckland, NZ",Spark New Zealand Trading Limited,Spark MDR,NZ,ap-southeast-6,ap-southeast-6,"10G, 100G","10G, 100G",1523,-36.854324,174.764384
+THRA9,aws,"Telehouse – Bangkok, Bangkok, TH",Telehouse - Global Data Centers,Telehouse Bangkok,TH,ap-southeast-7,ap-southeast-7,"10G, 100G","10G, 100G",13618,13.75161,100.57305
+CGM60,aws,"Cologix MTL3, Montreal, CA","Cologix, Inc.",Cologix MTL3,CA,ca-central-1,ca-central-1,"1G, 10G, 100G","10G, 100G",1944,45.497188,-73.570471
+COLV2,aws,"Cologix VAN2, Vancouver, CA","Cologix, Inc.",Cologix VAN2,CA,ca-central-1,ca-central-1,"1G, 10G",10G,1881,49.286981,-123.119579
+COLV3,aws,"Cologix VAN3, Vancouver, CA","Cologix, Inc.",Cologix VAN3,CA,ca-central-1,ca-central-1,"10G, 100G","10G, 100G",8060,49.259393,-123.029619
+EQTR2,aws,"Equinix TR2 - Toronto, Toronto, CA","Equinix, Inc.",Equinix TR2,CA,ca-central-1,ca-central-1,"10G, 100G","10G, 100G",2206,43.650854,-79.361951
+151FS,aws,"Telehouse Toronto (151 Front St West), Toronto, CA",Telehouse - Global Data Centers,Telehouse,CA,ca-central-1,ca-central-1,"1G, 10G, 100G","10G, 100G",392,43.644672,-79.384128
+NTM62,aws,"eStruxture MTL-1, Montreal, CA",eStruxture Data Centers Inc.,eStruxture,CA,ca-central-1,ca-central-1,"1G, 10G, 100G","10G, 100G",1885,45.501394,-73.56192
+EQCL1,aws,"Equinix CL1 - Calgary, Calgary, CA","Equinix, Inc.",Equinix CL1,CA,ca-west-1,ca-west-1,"1G, 10G, 100G","10G, 100G",9553,51.045517,-114.069297
+EQCL3,aws,"Equinix CL3 - Calgary (formerly Q9 Calgary Three), Calgary, CA","Equinix, Inc.",Equinix CL3,CA,ca-west-1,ca-west-1,"1G, 10G, 100G","10G, 100G",3251,50.976971,-113.956677
+CDSR1,aws,"C21, Milan, IT",CDLAN SpA,CDLAN srl Via Caldera 21,IT,eu-central-1,eu-central-1,"1G, 10G, 100G","10G, 100G",3519,45.476394,9.103571
+CEC50,aws,"CE Colo Prague, Prague, CZ",CE Colo Czech s.r.o.,CE Colo,CZ,eu-central-1,eu-central-1,"1G, 10G",,214,50.060164,14.482978
+IPB50,aws,"CarrierColo Berlin Luetzow (I/P/B/ site B), Berlin, DE",IPB Internet Provider in Berlin GmbH,IPB GmbH,DE,eu-central-1,eu-central-1,"1G, 10G",10G,445,52.50192,13.36945
+ITXA7,aws,"Digital Realty Amsterdam AMS3, Amsterdam, NL",Digital Realty,Digital Realty AMS7,NL,eu-central-1,eu-central-1,"1G, 10G",10G,64,52.28415,4.770855
+ITXA1,aws,"Digital Realty Athens Campus (ATH1, Koropi, GR",Digital Realty,Digital Realty ATH3,GR,eu-central-1,eu-central-1,"10G, 100G","10G, 100G",1949,37.871339,23.870251
+ITXC2,aws,"Digital Realty Copenhagen CPH1-3, Copenhagen, DK",Digital Realty,Digital Realty CPH2,DK,eu-central-1,eu-central-1,"1G, 10G",10G,148,55.728092,12.377482
+INX6,aws,"Digital Realty Frankfurt FRA1-16, Frankfurt, DE",Digital Realty,Digital Realty FRA6,DE,eu-central-1,eu-central-1,"1G, 10G, 100G","10G, 100G",58,50.11967,8.73463
+ITXM2,aws,"Digital Realty Madrid MAD1-2, Madrid, ES",Digital Realty,Digital Realty MAD2,ES,eu-central-1,eu-central-1,"1G, 10G",,130,40.439323,-3.621211
+ITXM3,aws,"Digital Realty Madrid MAD3, Madrid, ES",Digital Realty,Digital Realty MAD3,ES,eu-central-1,eu-central-1,"10G, 100G","10G, 100G",7414,40.433899,-3.62408
+ITXS1,aws,"Digital Realty Stockholm STO1-6, Stockholm, SE",Digital Realty,Digital Realty STO1,SE,eu-central-1,eu-central-1,"1G, 10G, 100G","10G, 100G",208,59.422226,17.916696
+ITXV2,aws,"Digital Realty Vienna VIE1-2, Vienna, AT",Digital Realty,Digital Realty VIE2,AT,eu-central-1,eu-central-1,"1G, 10G",10G,67,48.269027,16.410613
+ITXZ1,aws,"Digital Realty Zurich ZUR1, Glattbrugg, CH",Digital Realty,Digital Realty ZUR1,CH,eu-central-1,eu-central-1,"1G, 10G, 100G","10G, 100G",81,47.432702,8.557273
+EQAM3,aws,"Equinix AM3 - Amsterdam, Amsterdam, NL","Equinix, Inc.",Equinix AM3,NL,eu-central-1,eu-central-1,"1G, 10G, 100G","10G, 100G",1320,52.354686,4.958827
+EQFA5,aws,"Equinix FR5 - Frankfurt, Frankfurt, DE","Equinix, Inc.",Equinix FR5,DE,eu-central-1,eu-central-1,"1G, 10G, 100G","10G, 100G",60,50.09885,8.632004
+EQHE6,aws,"Equinix HE6 - Helsinki, Espoo, FI","Equinix, Inc.",Equinix HE6,FI,eu-central-1,eu-central-1,"1G, 10G",,2516,60.203031,24.777861
+EQIL4,aws,"Equinix IL4 - Istanbul, Istanbul, TR","Equinix, Inc.",Equinix IL4 Istanbul,TR,eu-central-1,eu-central-1,"10G, 100G","10G, 100G",15498,41.008655,29.156655
+ITCM2,aws,"Equinix MD2 - Madrid, Alcobendas, ES","Equinix, Inc.",Equinix Itconic MD2,ES,eu-central-1,eu-central-1,"1G, 10G, 100G","10G, 100G",127,40.536855,-3.648584
+EQMU1,aws,"Equinix MU1/MU3 - Munich, Munich, DE","Equinix, Inc.",Equinix MU1,DE,eu-central-1,eu-central-1,"1G, 10G",10G,480,48.143056,11.55584
+EQWA1,aws,"Equinix WA1 - Warsaw, Warsaw, PL","Equinix, Inc.",Equinix WA1,PL,eu-central-1,eu-central-1,"1G, 10G",,509,52.227354,21.003357
+MOILH,aws,"MedOne TC1, Tirat Carmel, IL",Med-1 IC-1 (1999) LTD.,MedOne,IL,eu-central-1,eu-central-1,"1G, 10G, 100G","10G, 100G",7177,32.770949,34.966486
+IPHH3,aws,"Portus/IPHH HH3 (Wendenstrasse 251), Hamburg, DE",Portus Data Centers Company,IPHH H3,DE,eu-central-1,eu-central-1,"1G, 10G",10G,7274,53.550998,10.03825
+DGPU1,aws,"STACK EMEA - OSL01, Oslo, NO",STACK EMEA - Nordics,DigiPlex Ulven,NO,eu-central-1,eu-central-1,"1G, 10G",10G,345,59.924726,10.810183
+THV52,aws,"Telehouse - Paris 2 (Voltaire - Léon Frot), Paris, FR",Telehouse - Global Data Centers,Telehouse Voltaire,FR,eu-central-1,eu-central-1,"1G, 10G, 100G","10G, 100G",53,48.856654,2.38532
+EQZH5,aws,"Equinix ZH5 - Zurich, Zurich, CH","Equinix, Inc.",Equinix ZH5,CH,eu-central-2,eu-central-2,"1G, 10G, 100G","10G, 100G",1515,47.405667,8.46174
+EQSK1,aws,"Equinix SK1 - Stockholm, Stockholm, SE","Equinix, Inc.",Equinix Sweden SK1,SE,eu-north-1,eu-north-1,"1G, 10G, 100G","10G, 100G",156,59.362574,17.955657
+EQML2,aws,"Equinix ML2 - Milan, Milan, IT","Equinix, Inc.",Equinix ML2,IT,eu-south-1,eu-south-1,"1G, 10G",,884,45.448684,9.147436
+EQBA1,aws,"Equinix BA1 - Barcelona, Barcelona, ES","Equinix, Inc.",Equinix BA1,ES,eu-south-2,eu-south-2,"10G, 100G","10G, 100G",122,41.351557,2.137457
+ITXD2,aws,"Digital Realty Dublin DUB1-2, Dublin, IE",Digital Realty,Digital Realty DUB2,IE,eu-west-1,eu-west-1,"1G, 10G, 100G","10G, 100G",177,53.334251,-6.365538
+TCSH,aws,"Digital Realty London LHR20, London, GB",Digital Realty,Digital Realty LHR20,GB,eu-west-1,eu-west-1,"1G, 10G",10G,40,51.499819,-0.010775
+ITXM1,aws,"Digital Realty Marseille MRS1-3, Marseille, FR",Digital Realty,Digital Realty MRS1,FR,eu-west-1,eu-west-1,"1G, 10G",,226,43.310818,5.373865
+EIRCL,aws,"Eircom Dublin (Clonshaugh), Dublin, IE",eircom Ltd,Eircom Clonshaugh,IE,eu-west-1,eu-west-1,"1G, 10G",10G,2343,53.400983,-6.218081
+EQDX1,aws,"Equinix DX1 - Dubai, Dubai, AE","Equinix, Inc.",Equinix DX1,AE,eu-west-1,eu-west-1,"1G, 10G",10G,1355,25.02618,55.18695
+EQLD5,aws,"Equinix LD5 - London, Slough, GB","Equinix, Inc.",Equinix LD5,GB,eu-west-1,eu-west-1,"1G, 10G, 100G","10G, 100G",832,51.522463,-0.62905
+EQLS1,aws,"Equinix LS1 - Lisbon, Lisbon, PT","Equinix, Inc.",Equinix LS1,PT,eu-west-1,eu-west-1,"10G, 100G","10G, 100G",126,38.787919,-9.123454
+SCDB9,aws,"Servecentric (Blanchardstown), Dublin, IE",ServeCentric Ltd. (Blanchardstown),Servecentric Unit 9,IE,eu-west-1,eu-west-1,"1G, 10G, 100G","10G, 100G",5901,53.412959,-6.373212
+ETIFJ,aws,"SmartHub Fujairah, Fujairah, AE",Etisalat,Etisalat Smart Hub Data Center,AE,eu-west-1,eu-west-1,"1G, 10G",10G,1493,25.131143,56.336378
+TEJB1,aws,"Teraco Johannesburg Campus, Johannesburg, ZA",Teraco Data Environments Pty Ltd,Teraco JB1,ZA,eu-west-1,eu-west-1,"1G, 10G, 100G","10G, 100G",850,-26.137957,28.197517
+EQMA3,aws,"Equinix MA3 - Manchester, Manchester, GB","Equinix, Inc.",Equinix MA3,GB,eu-west-2,eu-west-2,"1G, 10G",,1403,53.468674,-2.310421
+THNO2,aws,"Telehouse - London (Docklands West), London, GB",Telehouse - Global Data Centers,Telehouse West,GB,eu-west-2,eu-west-2,"1G, 10G, 100G","10G, 100G",835,51.511776,-0.002927
+ITXP7,aws,"Digital Realty Paris PAR7, Paris, FR",Digital Realty,Digital Realty PAR7,FR,eu-west-3,eu-west-3,"1G, 10G",,1536,48.924907,2.403
+EQPA3,aws,"Equinix PA3 - Paris, Paris, FR","Equinix, Inc.",Equinix PA3,FR,eu-west-3,eu-west-3,"1G, 10G, 100G","10G, 100G",717,48.927166,2.350664
+AEBTF,aws-eusc,"AtlasEdge DC Berlin BER001, Berlin, DE",AtlasEdge,Atlas Edge BER001,DE,eusc-de-east-1,eusc-de-east-1,"10G, 100G","10G, 100G",4073,52.527509,13.318852
+IPBTF,aws-eusc,"CarrierColo Berlin Luetzow (I/P/B/ site B), Berlin, DE",IPB Internet Provider in Berlin GmbH,IPB GmbH,DE,eusc-de-east-1,eusc-de-east-1,"10G, 100G","10G, 100G",445,52.50192,13.36945
+ECTL1,aws,"EdgeConneX Tel Aviv (EDCTLV01), Herzliya, IL",EdgeConneX Inc.,Edgeconnex,IL,il-central-1,il-central-1,"1G, 10G",10G,11734,32.052681,34.770992
+BDC52,aws,"AWS Bahrain DC52 MMR, Hamala, BH","Amazon.com, Inc.",AWS Bahrain DC52,BH,me-south-1,me-south-1,"1G, 10G",,8243,26.154542,50.475258
+BDC53,aws,"AWS Bahrain DC53 MMR, Askar, BH","Amazon.com, Inc.",AWS Bahrain DC53,BH,me-south-1,me-south-1,"1G, 10G",,8242,26.2285,50.586
+EQMC1,aws,"Equinix MC1 - Muscat, Muscat, OM","Equinix, Inc.",Equinix MC1 Barka,OM,me-south-1,me-south-1,"1G, 10G",10G,9339,23.7280664,57.7950975
+EQMX1,aws,"Equinix MX1/MX2 - Mexico City, El Marques, MX","Equinix, Inc.",Equinix MX1,MX,mx-central-1,mx-central-1,"10G, 100G","10G, 100G",8434,20.556925,-100.277833
+CIBNA,aws,"Cirion Buenos Aires - BUE1, Buenos Aires, AR",Cirion,Cirion BNARAGMS,AR,sa-east-1,sa-east-1,"1G, 10G, 100G","10G, 100G",1550,-34.590248,-58.467164
+CILIM,aws,"Cirion Lima - LIM1, Santiago de Surco, PE",Cirion,Cirion LIMAPUCD,PE,sa-east-1,sa-east-1,"1G, 10G",10G,6248,-12.094823,-76.973532
+EQBG1,aws,"Equinix BG1 - Bogota, Bogota, CO","Equinix, Inc.",Equinix BG1,CO,sa-east-1,sa-east-1,"1G, 10G, 100G","10G, 100G",1354,4.671384,-74.156026
+EQRJ2,aws,"Equinix RJ2 - Rio de Janeiro, Rio de Janeiro, BR","Equinix, Inc.",Equinix RJ2,BR,sa-east-1,sa-east-1,"1G, 10G, 100G","10G, 100G",1899,-22.871261,-43.272742
+TNDB,aws,"Equinix SP4 - São Paulo, Barueri, BR","Equinix, Inc.",Equinix SP4,BR,sa-east-1,sa-east-1,"1G, 10G, 100G","10G, 100G",165,-23.497589,-46.814577
+SONQU,aws,"SONDA - Quilicura, Santiago, CL",SONDA S.A.,Sonda Quilicura,CL,sa-east-1,sa-east-1,"1G, 10G, 100G","10G, 100G",10697,-33.35628,-70.698912
+TIVIT,aws,"TIVIT Sao Paulo, São Paulo, BR",TIVIT,Tivit,BR,sa-east-1,sa-east-1,"1G, 10G, 100G","10G, 100G",1325,-23.65071,-46.720519
+165HS,aws,"165 Halsey Meet-Me Room, Newark, NJ, US",Tishman Real Estate Services,165 Halsey Street,US,us-east-1,us-east-1,"1G, 10G, 100G, 400G","10G, 100G, 400G",350,40.736844,-74.173402
+CS32A,aws,"CoreSite - New York (NY1), New York, NY, US",CoreSite,CoreSite NY1,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",670,40.72,-74.004561
+CSVA1,aws,"CoreSite - Reston (VA1), Reston, VA, US",CoreSite,CoreSite VA1,US,us-east-1,us-east-1,"1G, 10G, 100G, 400G","10G, 100G, 400G",668,38.950631,-77.364541
+LGT50,aws,"Crown Castle Philadelphia (401 N Broad), Philadelphia, PA, US",Crown Castle Inc.,Crown Castle,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",3482,39.959668,-75.161377
+TLXA1,aws,"Digital Realty ATL (56 Marietta), Atlanta, GA, US",Digital Realty,Digital Realty ATL13,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",125,33.755456,-84.39153
+TLLPJ,aws,"Digital Realty IAD (44100 Digital Loudoun), Ashburn, VA, US",Digital Realty,Digital Realty IAD38,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",4745,39.001795,-77.47841
+EQDA2,aws,"Equinix DA - Dallas (previously Infomart Dallas), Dallas, TX, US","Equinix, Inc.",Equinix DA2,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",505,32.800748,-96.819412
+EQDC2,aws,"Equinix DC1-DC15, Ashburn, VA, US","Equinix, Inc.",Equinix DC2/DC11,US,us-east-1,us-east-1,"1G, 10G, 100G, 400G","10G, 100G, 400G",1,39.016363,-77.459023
+EQMI1,aws,"Equinix MI1 - Miami, Miami, FL, US","Equinix, Inc.",Equinix MI1,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",15,25.782648,-80.193157
+EQNY5,aws,"Equinix NY2/NY4/NY5/NY6 - New York, Secaucus, NJ, US","Equinix, Inc.",Equinix NY5,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",36,40.778534,-74.072237
+KIOQ1,aws,"KIO Querétaro 1 (QRO1), El Marques, MX",KIO,KIO Networks QRO 1,MX,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",1778,20.567915,-100.254141
+MB1SD,aws,"Markley Group One Summer Street Boston, Boston, MA, US","Markley Group, LLC",Markley,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",219,42.354692,-71.060266
+QTDC2,aws,"QTS Atlanta-Metro (ATL1), Atlanta, GA, US","QTS Realty Trust, Inc.",QTS ATL1,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",581,33.777526,-84.421036
+COL67,aws,"Cologix COL2, Columbus, OH, US","Cologix, Inc.",Cologix COL2,US,us-east-2,us-east-2,"1G, 10G, 100G","10G, 100G",2378,40.116491,-83.001985
+COLM3,aws,"Cologix MIN3, Minneapolis, MN, US","Cologix, Inc.",Cologix MIN3,US,us-east-2,us-east-2,"1G, 10G, 100G","10G, 100G",3312,44.971408,-93.25458
+CSCH1,aws,"CoreSite - Chicago (CH1), Chicago, IL, US",CoreSite,CoreSite CH1,US,us-east-2,us-east-2,"10G, 100G, 400G","10G, 100G, 400G",440,41.876212,-87.631453
+CYOA1,aws,"CyrusOne Aurora I, Aurora, IL, US",CyrusOne Inc.,CyrusOne Aurora A1,US,us-east-2,us-east-2,"10G, 100G","10G, 100G",3143,41.796754,-88.24276
+CYOW3,aws,"Databank Houston West (HOU1) (HOU2), Houston, TX, US","DataBank, Ltd.",DataBank HOU3,US,us-east-2,us-east-2,"1G, 10G, 100G","10G, 100G",1476,29.844182,-95.556656
+EQC50,aws,"Equinix CH1/CH2/CH4 - Chicago, Chicago, IL, US","Equinix, Inc.",Equinix CH2,US,us-east-2,us-east-2,"1G, 10G, 100G, 400G","10G, 100G, 400G",7,41.85365,-87.618342
+NPKC1,aws,"Netrality Kansas City - 1102 Grand, Kansas City, MO, US",Netrality Data Centers,Netrality Data Centers,US,us-east-2,us-east-2,"1G, 10G, 100G","10G, 100G",435,39.100941,-94.581036
+QTS52,aws,"QTS Chicago (CHI1), Chicago, IL, US","QTS Realty Trust, Inc.",QTS,US,us-east-2,us-east-2,"1G, 10G, 100G","10G, 100G",3362,41.841895,-87.668306
+CSOW,aws,"CoreSite - Los Angeles (LA1) One Wilshire, Los Angeles, CA, US",CoreSite,CoreSite LA1,US,us-west-1,us-west-1,"1G, 10G, 100G","10G, 100G",19,34.047942,-118.255564
+CSSV4,aws,"CoreSite - Santa Clara (SV4), Santa Clara, CA, US",CoreSite,CoreSite SV4,US,us-west-1,us-west-1,"1G, 10G, 100G, 400G","10G, 100G, 400G",1619,37.376259,-121.970705
+CSSV2,aws,"Coresite - Milpitas (SV2), Milpitas, CA, US",CoreSite,Coresite SV2,US,us-west-1,us-west-1,"1G, 10G",,671,37.405693,-121.916261
+ECPH1,aws,"EdgeConneX Phoenix (EDCPHX01), Tempe, AZ, US",EdgeConneX Inc.,EdgeConnex PHX01,US,us-west-1,us-west-1,"10G, 100G, 400G","10G, 100G, 400G",1917,33.395544,-111.97012
+EQLA3,aws,"Equinix LA3/LA4 - Los Angeles, El Segundo, CA, US","Equinix, Inc.",Equinix LA3,US,us-west-1,us-west-1,"1G, 10G, 100G","10G, 100G",333,33.921239,-118.383778
+EQSV5,aws,"Equinix SV1/SV5/SV10 - Silicon Valley, San Jose, CA, US","Equinix, Inc.",Equinix SV5,US,us-west-1,us-west-1,"1G, 10G, 100G, 400G","10G, 100G, 400G",6,37.241767,-121.782967
+PNP51,aws,"PhoenixNAP, Phoenix, AZ, US",PhoenixNAP,PhoenixNAP,US,us-west-1,us-west-1,"1G, 10G",,917,33.41601,-112.009445
+ALN91,aws,"AlohaNAP, Kapolei, HI, US",HAWAII PACIFIC DATA LLC,AlohaNap,US,us-west-2,us-west-2,"10G, 100G","10G, 100G",3149,21.335728,-158.086738
+CSDE1,aws,"CoreSite - Denver (DE1), Denver, CO, US",CoreSite,CoreSite DE1,US,us-west-2,us-west-2,"1G, 10G",10G,389,39.745636,-104.995636
+DBLV1,aws,"DataBank Las Vegas (LAS1), Las Vegas, NV, US","DataBank, Ltd.",DataBank LAS1,US,us-west-2,us-west-2,"10G, 100G","10G, 100G",1594,36.059162,-115.145989
+ECPO1,aws,"EdgeConneX Portland (EDCPOR01), Hillsboro, OR, US",EdgeConneX Inc.,EdgeConnex,US,us-west-2,us-west-2,"1G, 10G, 100G","10G, 100G",1922,45.548296,-122.907473
+EQSE2,aws,"Equinix SE2/SE3 - Seattle, Seattle, WA, US","Equinix, Inc.",Westin Building Exchange,US,us-west-2,us-west-2,"1G, 10G, 100G, 400G","10G, 100G, 400G",86,47.614358,-122.338864
+T5ALA,aws,"Serverfarm LAX1 Los Angeles, El Segundo, CA, US",Serverfarm,Serverfarm LAX1 El Segundo,US,us-west-2,us-west-2,"1G, 10G, 100G",,4952,33.921614,-118.386551
+SNAP,aws,"Switch Las Vegas, Las Vegas, NV, US","Switch, Ltd.",Switch SUPERNAP 8,US,us-west-2,us-west-2,"1G, 10G, 100G","10G, 100G",770,36.059914,-115.210194
+PEH51,aws,"The Pittock, Portland, OR, US",1547 Critical Systems Realty,Pittock Block,US,us-west-2,us-west-2,"1G, 10G, 100G","10G, 100G",275,45.521366,-122.680792
+TPS19,aws,"TierPoint Seattle, Seattle, WA, US","TierPoint, LLC",TierPoint,US,us-west-2,us-west-2,"1G, 10G",10G,8599,47.619446,-122.34811

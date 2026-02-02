@@ -7,6 +7,8 @@
     },
     "country": "CA",
     "facility_name": "Telehouse Toronto (151 Front St West)",
+    "org_id": 7,
+    "org_name": "Telehouse - Global Data Centers",
     "peeringdb_id": "392"
   },
   "165HS": {
@@ -17,6 +19,8 @@
     },
     "country": "US",
     "facility_name": "165 Halsey Meet-Me Room",
+    "org_id": 616,
+    "org_name": "Tishman Real Estate Services",
     "peeringdb_id": "350",
     "state": "NJ"
   },
@@ -28,6 +32,8 @@
     },
     "country": "DE",
     "facility_name": "AtlasEdge DC Berlin BER001",
+    "org_id": 19800,
+    "org_name": "AtlasEdge",
     "peeringdb_id": "4073"
   },
   "AIMMN": {
@@ -38,6 +44,8 @@
     },
     "country": "MY",
     "facility_name": "AIMS Kuala Lumpur",
+    "org_id": 12427,
+    "org_name": "AIMS Data Centre Sdn Bhd",
     "peeringdb_id": "460"
   },
   "ALN91": {
@@ -48,6 +56,8 @@
     },
     "country": "US",
     "facility_name": "AlohaNAP",
+    "org_id": 14796,
+    "org_name": "HAWAII PACIFIC DATA LLC",
     "peeringdb_id": "3149",
     "state": "HI"
   },
@@ -59,6 +69,8 @@
     },
     "country": "JP",
     "facility_name": "AT TOKYO (CC1/CC2)",
+    "org_id": 1209,
+    "org_name": "AT TOKYO Corporation",
     "peeringdb_id": "738"
   },
   "BDC52": {
@@ -69,6 +81,8 @@
     },
     "country": "BH",
     "facility_name": "AWS Bahrain DC52 MMR",
+    "org_id": 1520,
+    "org_name": "Amazon.com, Inc.",
     "peeringdb_id": "8243"
   },
   "BDC53": {
@@ -79,6 +93,8 @@
     },
     "country": "BH",
     "facility_name": "AWS Bahrain DC53 MMR",
+    "org_id": 1520,
+    "org_name": "Amazon.com, Inc.",
     "peeringdb_id": "8242"
   },
   "CBHU2": {
@@ -89,6 +105,8 @@
     },
     "country": "AU",
     "facility_name": "CDC Canberra HU2",
+    "org_id": 32729,
+    "org_name": "CDC Data Centres",
     "peeringdb_id": "12416"
   },
   "CDSR1": {
@@ -99,6 +117,8 @@
     },
     "country": "IT",
     "facility_name": "C21",
+    "org_id": 7771,
+    "org_name": "CDLAN SpA",
     "peeringdb_id": "3519"
   },
   "CEC50": {
@@ -109,6 +129,8 @@
     },
     "country": "CZ",
     "facility_name": "CE Colo Prague",
+    "org_id": 8089,
+    "org_name": "CE Colo Czech s.r.o.",
     "peeringdb_id": "214"
   },
   "CFT52": {
@@ -119,6 +141,8 @@
     },
     "country": "TW",
     "facility_name": "Chief LY Building Taipei",
+    "org_id": 8554,
+    "org_name": "Chief Telecom Inc.",
     "peeringdb_id": "456"
   },
   "CFT53": {
@@ -129,6 +153,8 @@
     },
     "country": "TW",
     "facility_name": "Chief HD Building Taipei",
+    "org_id": 8554,
+    "org_name": "Chief Telecom Inc.",
     "peeringdb_id": "5678"
   },
   "CFT54": {
@@ -139,6 +165,8 @@
     },
     "country": "TW",
     "facility_name": "Chief HD Building Taipei",
+    "org_id": 8554,
+    "org_name": "Chief Telecom Inc.",
     "peeringdb_id": "5678"
   },
   "CGM60": {
@@ -149,6 +177,8 @@
     },
     "country": "CA",
     "facility_name": "Cologix MTL3",
+    "org_id": 7030,
+    "org_name": "Cologix, Inc.",
     "peeringdb_id": "1944"
   },
   "CHT51": {
@@ -159,6 +189,8 @@
     },
     "country": "TW",
     "facility_name": "CHT Taipei Banqiao IDC",
+    "org_id": 1023,
+    "org_name": "Chunghwa Telecom Co., Ltd.",
     "peeringdb_id": "2886"
   },
   "CHT54": {
@@ -169,6 +201,8 @@
     },
     "country": "TW",
     "facility_name": "CHT Taipei Banqiao IDC",
+    "org_id": 1023,
+    "org_name": "Chunghwa Telecom Co., Ltd.",
     "peeringdb_id": "2886"
   },
   "CIBNA": {
@@ -179,6 +213,8 @@
     },
     "country": "AR",
     "facility_name": "Cirion Buenos Aires - BUE1",
+    "org_id": 35201,
+    "org_name": "Cirion",
     "peeringdb_id": "1550"
   },
   "CILIM": {
@@ -189,6 +225,8 @@
     },
     "country": "PE",
     "facility_name": "Cirion Lima - LIM1",
+    "org_id": 35201,
+    "org_name": "Cirion",
     "peeringdb_id": "6248"
   },
   "CMCHV": {
@@ -199,6 +237,8 @@
     },
     "country": "VN",
     "facility_name": "CMC Duy Tan (Hanoi)",
+    "org_id": 8461,
+    "org_name": "CMC Telecom",
     "peeringdb_id": "15938"
   },
   "COL67": {
@@ -209,6 +249,8 @@
     },
     "country": "US",
     "facility_name": "Cologix COL2",
+    "org_id": 7030,
+    "org_name": "Cologix, Inc.",
     "peeringdb_id": "2378",
     "state": "OH"
   },
@@ -220,6 +262,8 @@
     },
     "country": "US",
     "facility_name": "Cologix MIN3",
+    "org_id": 7030,
+    "org_name": "Cologix, Inc.",
     "peeringdb_id": "3312",
     "state": "MN"
   },
@@ -231,6 +275,8 @@
     },
     "country": "CA",
     "facility_name": "Cologix VAN2",
+    "org_id": 7030,
+    "org_name": "Cologix, Inc.",
     "peeringdb_id": "1881"
   },
   "COLV3": {
@@ -241,6 +287,8 @@
     },
     "country": "CA",
     "facility_name": "Cologix VAN3",
+    "org_id": 7030,
+    "org_name": "Cologix, Inc.",
     "peeringdb_id": "8060"
   },
   "CS32A": {
@@ -251,6 +299,8 @@
     },
     "country": "US",
     "facility_name": "CoreSite - New York (NY1)",
+    "org_id": 34,
+    "org_name": "CoreSite",
     "peeringdb_id": "670",
     "state": "NY"
   },
@@ -262,6 +312,8 @@
     },
     "country": "US",
     "facility_name": "CoreSite - Chicago (CH1)",
+    "org_id": 34,
+    "org_name": "CoreSite",
     "peeringdb_id": "440",
     "state": "IL"
   },
@@ -273,6 +325,8 @@
     },
     "country": "US",
     "facility_name": "CoreSite - Denver (DE1)",
+    "org_id": 34,
+    "org_name": "CoreSite",
     "peeringdb_id": "389",
     "state": "CO"
   },
@@ -284,6 +338,8 @@
     },
     "country": "MY",
     "facility_name": "CSF CX1 / TelcoHub1 Kuala Lumpur",
+    "org_id": 7793,
+    "org_name": "CSF Group",
     "peeringdb_id": "1279"
   },
   "CSOW": {
@@ -294,6 +350,8 @@
     },
     "country": "US",
     "facility_name": "CoreSite - Los Angeles (LA1) One Wilshire",
+    "org_id": 34,
+    "org_name": "CoreSite",
     "peeringdb_id": "19",
     "state": "CA"
   },
@@ -305,6 +363,8 @@
     },
     "country": "US",
     "facility_name": "Coresite - Milpitas (SV2)",
+    "org_id": 34,
+    "org_name": "CoreSite",
     "peeringdb_id": "671",
     "state": "CA"
   },
@@ -316,6 +376,8 @@
     },
     "country": "US",
     "facility_name": "CoreSite - Santa Clara (SV4)",
+    "org_id": 34,
+    "org_name": "CoreSite",
     "peeringdb_id": "1619",
     "state": "CA"
   },
@@ -327,6 +389,8 @@
     },
     "country": "US",
     "facility_name": "CoreSite - Reston (VA1)",
+    "org_id": 34,
+    "org_name": "CoreSite",
     "peeringdb_id": "668",
     "state": "VA"
   },
@@ -338,6 +402,8 @@
     },
     "country": "US",
     "facility_name": "CyrusOne Aurora I",
+    "org_id": 7625,
+    "org_name": "CyrusOne Inc.",
     "peeringdb_id": "3143",
     "state": "IL"
   },
@@ -349,6 +415,8 @@
     },
     "country": "US",
     "facility_name": "Databank Houston West (HOU1) (HOU2)",
+    "org_id": 2680,
+    "org_name": "DataBank, Ltd.",
     "peeringdb_id": "1476",
     "state": "TX"
   },
@@ -360,6 +428,8 @@
     },
     "country": "US",
     "facility_name": "DataBank Las Vegas (LAS1)",
+    "org_id": 2680,
+    "org_name": "DataBank, Ltd.",
     "peeringdb_id": "1594",
     "state": "NV"
   },
@@ -371,6 +441,8 @@
     },
     "country": "NZ",
     "facility_name": "Datacom - Orbit Data Centre (Auckland)",
+    "org_id": 19061,
+    "org_name": "Datacom Data Centres Ltd",
     "peeringdb_id": "2024"
   },
   "DCIJ3": {
@@ -381,6 +453,8 @@
     },
     "country": "ID",
     "facility_name": "DCI Indonesia (JK3)",
+    "org_id": 23644,
+    "org_name": "DCI Indonesia",
     "peeringdb_id": "8169"
   },
   "DGPU1": {
@@ -391,6 +465,8 @@
     },
     "country": "NO",
     "facility_name": "STACK EMEA - OSL01",
+    "org_id": 603,
+    "org_name": "STACK EMEA - Nordics",
     "peeringdb_id": "345"
   },
   "EANB1": {
@@ -401,6 +477,8 @@
     },
     "country": "KE",
     "facility_name": "Africa Data Centres, Nairobi NBO1, Kenya",
+    "org_id": 20800,
+    "org_name": "Africa Data Centres",
     "peeringdb_id": "1964"
   },
   "ECPH1": {
@@ -411,6 +489,8 @@
     },
     "country": "US",
     "facility_name": "EdgeConneX Phoenix (EDCPHX01)",
+    "org_id": 8735,
+    "org_name": "EdgeConneX Inc.",
     "peeringdb_id": "1917",
     "state": "AZ"
   },
@@ -422,6 +502,8 @@
     },
     "country": "US",
     "facility_name": "EdgeConneX Portland (EDCPOR01)",
+    "org_id": 8735,
+    "org_name": "EdgeConneX Inc.",
     "peeringdb_id": "1922",
     "state": "OR"
   },
@@ -433,6 +515,8 @@
     },
     "country": "IL",
     "facility_name": "EdgeConneX Tel Aviv (EDCTLV01)",
+    "org_id": 8735,
+    "org_name": "EdgeConneX Inc.",
     "peeringdb_id": "11734"
   },
   "EIRCL": {
@@ -443,6 +527,8 @@
     },
     "country": "IE",
     "facility_name": "Eircom Dublin (Clonshaugh)",
+    "org_id": 12494,
+    "org_name": "eircom Ltd",
     "peeringdb_id": "2343"
   },
   "EPVM2": {
@@ -453,6 +539,8 @@
     },
     "country": "PH",
     "facility_name": "VITRO Makati 2",
+    "org_id": 18866,
+    "org_name": "Vitro Inc.",
     "peeringdb_id": "4809"
   },
   "EQAM3": {
@@ -463,6 +551,8 @@
     },
     "country": "NL",
     "facility_name": "Equinix AM3 - Amsterdam, Science Park",
+    "org_id": 2,
+    "org_name": "Equinix, Inc.",
     "peeringdb_id": "1320"
   },
   "EQBA1": {
@@ -473,6 +563,8 @@
     },
     "country": "ES",
     "facility_name": "Equinix BA1 - Barcelona",
+    "org_id": 2,
+    "org_name": "Equinix, Inc.",
     "peeringdb_id": "122"
   },
   "EQBG1": {
@@ -483,6 +575,8 @@
     },
     "country": "CO",
     "facility_name": "Equinix BG1 - Bogota",
+    "org_id": 2,
+    "org_name": "Equinix, Inc.",
     "peeringdb_id": "1354"
   },
   "EQC50": {
@@ -493,6 +587,8 @@
     },
     "country": "US",
     "facility_name": "Equinix CH1/CH2/CH4 - Chicago",
+    "org_id": 2,
+    "org_name": "Equinix, Inc.",
     "peeringdb_id": "7",
     "state": "IL"
   },
@@ -504,6 +600,8 @@
     },
     "country": "CA",
     "facility_name": "Equinix CL1 - Calgary",
+    "org_id": 2,
+    "org_name": "Equinix, Inc.",
     "peeringdb_id": "9553"
   },
   "EQCL3": {
@@ -514,6 +612,8 @@
     },
     "country": "CA",
     "facility_name": "Equinix CL3 - Calgary (formerly Q9 Calgary Three)",
+    "org_id": 2,
+    "org_name": "Equinix, Inc.",
     "peeringdb_id": "3251"
   },
   "EQDA2": {
@@ -524,6 +624,8 @@
     },
     "country": "US",
     "facility_name": "Equinix DA - Dallas (previously Infomart Dallas)",
+    "org_id": 2,
+    "org_name": "Equinix, Inc.",
     "peeringdb_id": "505",
     "state": "TX"
   },
@@ -535,6 +637,8 @@
     },
     "country": "US",
     "facility_name": "Equinix DC1-DC15, DC21 - Ashburn",
+    "org_id": 2,
+    "org_name": "Equinix, Inc.",
     "peeringdb_id": "1",
     "state": "VA"
   },
@@ -546,6 +650,8 @@
     },
     "country": "AE",
     "facility_name": "Equinix DX1 - Dubai",
+    "org_id": 2,
+    "org_name": "Equinix, Inc.",
     "peeringdb_id": "1355"
   },
   "EQFA5": {
@@ -556,6 +662,8 @@
     },
     "country": "DE",
     "facility_name": "Equinix FR5 - Frankfurt, KleyerStrasse",
+    "org_id": 2,
+    "org_name": "Equinix, Inc.",
     "peeringdb_id": "60"
   },
   "EQHE6": {
@@ -566,6 +674,8 @@
     },
     "country": "FI",
     "facility_name": "Equinix HE6 - Helsinki, Sinim\u00e4ki",
+    "org_id": 2,
+    "org_name": "Equinix, Inc.",
     "peeringdb_id": "2516"
   },
   "EQHK1": {
@@ -576,6 +686,8 @@
     },
     "country": "HK",
     "facility_name": "Equinix HK1 - Hong Kong",
+    "org_id": 2,
+    "org_name": "Equinix, Inc.",
     "peeringdb_id": "170"
   },
   "EQIL4": {
@@ -586,6 +698,8 @@
     },
     "country": "TR",
     "facility_name": "Equinix IL4 - Istanbul",
+    "org_id": 2,
+    "org_name": "Equinix, Inc.",
     "peeringdb_id": "15498"
   },
   "EQLA3": {
@@ -596,6 +710,8 @@
     },
     "country": "US",
     "facility_name": "Equinix LA3/LA4 - Los Angeles, El Segundo",
+    "org_id": 2,
+    "org_name": "Equinix, Inc.",
     "peeringdb_id": "333",
     "state": "CA"
   },
@@ -607,6 +723,8 @@
     },
     "country": "GB",
     "facility_name": "Equinix LD5 - London, Slough",
+    "org_id": 2,
+    "org_name": "Equinix, Inc.",
     "peeringdb_id": "832"
   },
   "EQLS1": {
@@ -617,6 +735,8 @@
     },
     "country": "PT",
     "facility_name": "Equinix LS1 - Lisbon",
+    "org_id": 2,
+    "org_name": "Equinix, Inc.",
     "peeringdb_id": "126"
   },
   "EQMA3": {
@@ -627,6 +747,8 @@
     },
     "country": "GB",
     "facility_name": "Equinix MA3 - Manchester, Joule House",
+    "org_id": 2,
+    "org_name": "Equinix, Inc.",
     "peeringdb_id": "1403"
   },
   "EQMB2": {
@@ -637,6 +759,8 @@
     },
     "country": "IN",
     "facility_name": "Equinix MB2 - Mumbai (GPX Mumbai 2)",
+    "org_id": 2,
+    "org_name": "Equinix, Inc.",
     "peeringdb_id": "7377"
   },
   "EQMC1": {
@@ -647,6 +771,8 @@
     },
     "country": "OM",
     "facility_name": "Equinix MC1 - Muscat",
+    "org_id": 2,
+    "org_name": "Equinix, Inc.",
     "peeringdb_id": "9339"
   },
   "EQME2": {
@@ -657,6 +783,8 @@
     },
     "country": "AU",
     "facility_name": "Equinix ME1/ME2 - Melbourne",
+    "org_id": 2,
+    "org_name": "Equinix, Inc.",
     "peeringdb_id": "1988"
   },
   "EQMI1": {
@@ -667,6 +795,8 @@
     },
     "country": "US",
     "facility_name": "Equinix MI1 - Miami, NOTA",
+    "org_id": 2,
+    "org_name": "Equinix, Inc.",
     "peeringdb_id": "15",
     "state": "FL"
   },
@@ -678,6 +808,8 @@
     },
     "country": "IT",
     "facility_name": "Equinix ML2 - Milan, Savona",
+    "org_id": 2,
+    "org_name": "Equinix, Inc.",
     "peeringdb_id": "884"
   },
   "EQMU1": {
@@ -688,6 +820,8 @@
     },
     "country": "DE",
     "facility_name": "Equinix MU1/MU3 - Munich",
+    "org_id": 2,
+    "org_name": "Equinix, Inc.",
     "peeringdb_id": "480"
   },
   "EQMX1": {
@@ -698,6 +832,8 @@
     },
     "country": "MX",
     "facility_name": "Equinix MX1/MX2 - Mexico City",
+    "org_id": 2,
+    "org_name": "Equinix, Inc.",
     "peeringdb_id": "8434"
   },
   "EQNY5": {
@@ -708,6 +844,8 @@
     },
     "country": "US",
     "facility_name": "Equinix NY2/NY4/NY5/NY6 - New York, Secaucus",
+    "org_id": 2,
+    "org_name": "Equinix, Inc.",
     "peeringdb_id": "36",
     "state": "NJ"
   },
@@ -719,6 +857,8 @@
     },
     "country": "JP",
     "facility_name": "Equinix OS1 - Osaka",
+    "org_id": 2,
+    "org_name": "Equinix, Inc.",
     "peeringdb_id": "1791"
   },
   "EQPA3": {
@@ -729,6 +869,8 @@
     },
     "country": "FR",
     "facility_name": "Equinix PA3 - Paris, Saint-Denis",
+    "org_id": 2,
+    "org_name": "Equinix, Inc.",
     "peeringdb_id": "717"
   },
   "EQRJ2": {
@@ -739,6 +881,8 @@
     },
     "country": "BR",
     "facility_name": "Equinix RJ2 - Rio de Janeiro",
+    "org_id": 2,
+    "org_name": "Equinix, Inc.",
     "peeringdb_id": "1899"
   },
   "EQSE2": {
@@ -749,6 +893,8 @@
     },
     "country": "US",
     "facility_name": "Equinix SE2/SE3 - Seattle",
+    "org_id": 2,
+    "org_name": "Equinix, Inc.",
     "peeringdb_id": "86",
     "state": "WA"
   },
@@ -760,6 +906,8 @@
     },
     "country": "SG",
     "facility_name": "Equinix SG2 - Singapore",
+    "org_id": 2,
+    "org_name": "Equinix, Inc.",
     "peeringdb_id": "705"
   },
   "EQSK1": {
@@ -770,6 +918,8 @@
     },
     "country": "SE",
     "facility_name": "Equinix SK1 - Stockholm, Bromma",
+    "org_id": 2,
+    "org_name": "Equinix, Inc.",
     "peeringdb_id": "156"
   },
   "EQSV5": {
@@ -780,6 +930,8 @@
     },
     "country": "US",
     "facility_name": "Equinix SV1/SV5/SV10 - Silicon Valley, San Jose",
+    "org_id": 2,
+    "org_name": "Equinix, Inc.",
     "peeringdb_id": "6",
     "state": "CA"
   },
@@ -791,6 +943,8 @@
     },
     "country": "AU",
     "facility_name": "Equinix SY3 - Sydney",
+    "org_id": 2,
+    "org_name": "Equinix, Inc.",
     "peeringdb_id": "1605"
   },
   "EQTR2": {
@@ -801,6 +955,8 @@
     },
     "country": "CA",
     "facility_name": "Equinix TR2 - Toronto",
+    "org_id": 2,
+    "org_name": "Equinix, Inc.",
     "peeringdb_id": "2206"
   },
   "EQTY2": {
@@ -811,6 +967,8 @@
     },
     "country": "JP",
     "facility_name": "Equinix TY2 - Tokyo",
+    "org_id": 2,
+    "org_name": "Equinix, Inc.",
     "peeringdb_id": "452"
   },
   "EQWA1": {
@@ -821,6 +979,8 @@
     },
     "country": "PL",
     "facility_name": "Equinix WA1 - Warsaw, Centrum LIM",
+    "org_id": 2,
+    "org_name": "Equinix, Inc.",
     "peeringdb_id": "509"
   },
   "EQZH5": {
@@ -831,6 +991,8 @@
     },
     "country": "CH",
     "facility_name": "Equinix ZH5 - Zurich, South",
+    "org_id": 2,
+    "org_name": "Equinix, Inc.",
     "peeringdb_id": "1515"
   },
   "ETIFJ": {
@@ -841,6 +1003,8 @@
     },
     "country": "AE",
     "facility_name": "SmartHub Fujairah",
+    "org_id": 7648,
+    "org_name": "Etisalat",
     "peeringdb_id": "1493"
   },
   "GBSY6": {
@@ -851,6 +1015,8 @@
     },
     "country": "AU",
     "facility_name": "Equinix SY6 - Sydney (formerly Metronode Sydney 2)",
+    "org_id": 2,
+    "org_name": "Equinix, Inc.",
     "peeringdb_id": "2474"
   },
   "GPX51": {
@@ -861,6 +1027,8 @@
     },
     "country": "IN",
     "facility_name": "Equinix MB1 - Mumbai (GPX Mumbai 1)",
+    "org_id": 2,
+    "org_name": "Equinix, Inc.",
     "peeringdb_id": "2310"
   },
   "GSS52": {
@@ -871,6 +1039,8 @@
     },
     "country": "SG",
     "facility_name": "Global Switch Singapore",
+    "org_id": 77,
+    "org_name": "Global Switch",
     "peeringdb_id": "388"
   },
   "IAMGI": {
@@ -881,6 +1051,8 @@
     },
     "country": "HK",
     "facility_name": "MEGA-i (iAdvantage Hong Kong)",
+    "org_id": 12354,
+    "org_name": "iAdvantage Hong Kong",
     "peeringdb_id": "225"
   },
   "INX6": {
@@ -891,6 +1063,8 @@
     },
     "country": "DE",
     "facility_name": "Digital Realty Frankfurt FRA1-16",
+    "org_id": 8592,
+    "org_name": "Digital Realty",
     "peeringdb_id": "58"
   },
   "IPB50": {
@@ -901,6 +1075,8 @@
     },
     "country": "DE",
     "facility_name": "CarrierColo Berlin Luetzow (I/P/B/ site B)",
+    "org_id": 797,
+    "org_name": "IPB Internet Provider in Berlin GmbH",
     "peeringdb_id": "445"
   },
   "IPBTF": {
@@ -911,6 +1087,8 @@
     },
     "country": "DE",
     "facility_name": "CarrierColo Berlin Luetzow (I/P/B/ site B)",
+    "org_id": 797,
+    "org_name": "IPB Internet Provider in Berlin GmbH",
     "peeringdb_id": "445"
   },
   "IPHH3": {
@@ -921,6 +1099,8 @@
     },
     "country": "DE",
     "facility_name": "Portus/IPHH HH3 (Wendenstrasse 251)",
+    "org_id": 1263,
+    "org_name": "Portus Data Centers Company",
     "peeringdb_id": "7274"
   },
   "ITCM2": {
@@ -931,6 +1111,8 @@
     },
     "country": "ES",
     "facility_name": "Equinix MD2 - Madrid",
+    "org_id": 2,
+    "org_name": "Equinix, Inc.",
     "peeringdb_id": "127"
   },
   "ITXA1": {
@@ -941,6 +1123,8 @@
     },
     "country": "GR",
     "facility_name": "Digital Realty Athens Campus (ATH1, ATH2, ATH3)",
+    "org_id": 8592,
+    "org_name": "Digital Realty",
     "peeringdb_id": "1949"
   },
   "ITXA7": {
@@ -951,6 +1135,8 @@
     },
     "country": "NL",
     "facility_name": "Digital Realty Amsterdam AMS3, AMS5-8, AMS10",
+    "org_id": 8592,
+    "org_name": "Digital Realty",
     "peeringdb_id": "64"
   },
   "ITXC2": {
@@ -961,6 +1147,8 @@
     },
     "country": "DK",
     "facility_name": "Digital Realty Copenhagen CPH1-3",
+    "org_id": 8592,
+    "org_name": "Digital Realty",
     "peeringdb_id": "148"
   },
   "ITXD2": {
@@ -971,6 +1159,8 @@
     },
     "country": "IE",
     "facility_name": "Digital Realty Dublin DUB1-2",
+    "org_id": 8592,
+    "org_name": "Digital Realty",
     "peeringdb_id": "177"
   },
   "ITXM1": {
@@ -981,6 +1171,8 @@
     },
     "country": "FR",
     "facility_name": "Digital Realty Marseille MRS1-3",
+    "org_id": 8592,
+    "org_name": "Digital Realty",
     "peeringdb_id": "226"
   },
   "ITXM2": {
@@ -991,6 +1183,8 @@
     },
     "country": "ES",
     "facility_name": "Digital Realty Madrid MAD1-2",
+    "org_id": 8592,
+    "org_name": "Digital Realty",
     "peeringdb_id": "130"
   },
   "ITXM3": {
@@ -1001,6 +1195,8 @@
     },
     "country": "ES",
     "facility_name": "Digital Realty Madrid MAD3",
+    "org_id": 8592,
+    "org_name": "Digital Realty",
     "peeringdb_id": "7414"
   },
   "ITXP7": {
@@ -1011,6 +1207,8 @@
     },
     "country": "FR",
     "facility_name": "Digital Realty Paris PAR7",
+    "org_id": 8592,
+    "org_name": "Digital Realty",
     "peeringdb_id": "1536"
   },
   "ITXS1": {
@@ -1021,6 +1219,8 @@
     },
     "country": "SE",
     "facility_name": "Digital Realty Stockholm STO1-6",
+    "org_id": 8592,
+    "org_name": "Digital Realty",
     "peeringdb_id": "208"
   },
   "ITXV2": {
@@ -1031,6 +1231,8 @@
     },
     "country": "AT",
     "facility_name": "Digital Realty Vienna VIE1-2",
+    "org_id": 8592,
+    "org_name": "Digital Realty",
     "peeringdb_id": "67"
   },
   "ITXZ1": {
@@ -1041,6 +1243,8 @@
     },
     "country": "CH",
     "facility_name": "Digital Realty Zurich ZUR1",
+    "org_id": 8592,
+    "org_name": "Digital Realty",
     "peeringdb_id": "81"
   },
   "JKT02": {
@@ -1051,6 +1255,8 @@
     },
     "country": "ID",
     "facility_name": "NTT Jakarta 2 Data Center (JKT2)",
+    "org_id": 491,
+    "org_name": "NTT DATA's Global Data Centers division",
     "peeringdb_id": "5865"
   },
   "KDOS2": {
@@ -1061,6 +1267,8 @@
     },
     "country": "JP",
     "facility_name": "Telehouse \u2013 OSAKA 1&2",
+    "org_id": 7,
+    "org_name": "Telehouse - Global Data Centers",
     "peeringdb_id": "3068"
   },
   "KIOQ1": {
@@ -1071,6 +1279,8 @@
     },
     "country": "MX",
     "facility_name": "KIO Quer\u00e9taro 1 (QRO1)",
+    "org_id": 17983,
+    "org_name": "KIO",
     "peeringdb_id": "1778"
   },
   "LGKNX": {
@@ -1081,6 +1291,8 @@
     },
     "country": "KR",
     "facility_name": "KINX Gasan",
+    "org_id": 113,
+    "org_name": "KINX Inc.",
     "peeringdb_id": "7674"
   },
   "LGT50": {
@@ -1091,6 +1303,8 @@
     },
     "country": "US",
     "facility_name": "Crown Castle Philadelphia (401 N Broad)",
+    "org_id": 15332,
+    "org_name": "Crown Castle Inc.",
     "peeringdb_id": "3482",
     "state": "PA"
   },
@@ -1102,6 +1316,8 @@
     },
     "country": "KR",
     "facility_name": "LG Uplus Pyeongchon IDC",
+    "org_id": 6734,
+    "org_name": "LG Uplus Corp.",
     "peeringdb_id": "7573"
   },
   "MB1SD": {
@@ -1112,6 +1328,8 @@
     },
     "country": "US",
     "facility_name": "Markley Group One Summer Street Boston",
+    "org_id": 373,
+    "org_name": "Markley Group, LLC",
     "peeringdb_id": "219",
     "state": "MA"
   },
@@ -1123,6 +1341,8 @@
     },
     "country": "IL",
     "facility_name": "MedOne TC1, TC2, TC3 (Tirat Carmel)",
+    "org_id": 34214,
+    "org_name": "Med-1 IC-1 (1999) LTD.",
     "peeringdb_id": "7177"
   },
   "NDCB2": {
@@ -1133,6 +1353,8 @@
     },
     "country": "AU",
     "facility_name": "NEXTDC B2",
+    "org_id": 7093,
+    "org_name": "NEXTDC",
     "peeringdb_id": "4688"
   },
   "NDCC1": {
@@ -1143,6 +1365,8 @@
     },
     "country": "AU",
     "facility_name": "NEXTDC C1",
+    "org_id": 7093,
+    "org_name": "NEXTDC",
     "peeringdb_id": "1162"
   },
   "NDCM1": {
@@ -1153,6 +1377,8 @@
     },
     "country": "AU",
     "facility_name": "NEXTDC M1",
+    "org_id": 7093,
+    "org_name": "NEXTDC",
     "peeringdb_id": "1339"
   },
   "NDCP1": {
@@ -1163,6 +1389,8 @@
     },
     "country": "AU",
     "facility_name": "NEXTDC P1",
+    "org_id": 7093,
+    "org_name": "NEXTDC",
     "peeringdb_id": "1940"
   },
   "NDCS2": {
@@ -1173,6 +1401,8 @@
     },
     "country": "AU",
     "facility_name": "NEXTDC S2",
+    "org_id": 7093,
+    "org_name": "NEXTDC",
     "peeringdb_id": "6792"
   },
   "NEIN2": {
@@ -1183,6 +1413,8 @@
     },
     "country": "JP",
     "facility_name": "SCSK netXDC (SI1/SI2/SI3)/NEC Inzai DC",
+    "org_id": 8422,
+    "org_name": "SCSK Corporation",
     "peeringdb_id": "9596"
   },
   "NMBL2": {
@@ -1193,6 +1425,8 @@
     },
     "country": "IN",
     "facility_name": "Netmagic Bangalore DC02",
+    "org_id": 10364,
+    "org_name": "NTTCINS",
     "peeringdb_id": "7988"
   },
   "NPKC1": {
@@ -1203,6 +1437,8 @@
     },
     "country": "US",
     "facility_name": "Netrality Kansas City - 1102 Grand",
+    "org_id": 13880,
+    "org_name": "Netrality Data Centers",
     "peeringdb_id": "435",
     "state": "MO"
   },
@@ -1214,6 +1450,8 @@
     },
     "country": "CA",
     "facility_name": "eStruxture MTL-1",
+    "org_id": 2520,
+    "org_name": "eStruxture Data Centers Inc.",
     "peeringdb_id": "1885"
   },
   "PEH51": {
@@ -1224,6 +1462,8 @@
     },
     "country": "US",
     "facility_name": "The Pittock",
+    "org_id": 29970,
+    "org_name": "1547 Critical Systems Realty",
     "peeringdb_id": "275",
     "state": "OR"
   },
@@ -1235,6 +1475,8 @@
     },
     "country": "US",
     "facility_name": "PhoenixNAP",
+    "org_id": 3061,
+    "org_name": "PhoenixNAP",
     "peeringdb_id": "917",
     "state": "AZ"
   },
@@ -1246,6 +1488,8 @@
     },
     "country": "US",
     "facility_name": "QTS Atlanta-Metro (ATL1)",
+    "org_id": 13077,
+    "org_name": "QTS Realty Trust, Inc.",
     "peeringdb_id": "581",
     "state": "GA"
   },
@@ -1257,6 +1501,8 @@
     },
     "country": "US",
     "facility_name": "QTS Chicago (CHI1)",
+    "org_id": 13077,
+    "org_name": "QTS Realty Trust, Inc.",
     "peeringdb_id": "3362",
     "state": "IL"
   },
@@ -1268,6 +1514,8 @@
     },
     "country": "NG",
     "facility_name": "Rack Centre Lagos",
+    "org_id": 17963,
+    "org_name": "Rack Centre Limited",
     "peeringdb_id": "4411"
   },
   "SCDB9": {
@@ -1278,6 +1526,8 @@
     },
     "country": "IE",
     "facility_name": "Servecentric (Blanchardstown)",
+    "org_id": 290,
+    "org_name": "ServeCentric Ltd. (Blanchardstown)",
     "peeringdb_id": "5901"
   },
   "SFY52": {
@@ -1288,6 +1538,8 @@
     },
     "country": "IN",
     "facility_name": "Sify Rabale - Mumbai",
+    "org_id": 2199,
+    "org_name": "Sify Technologies Limited",
     "peeringdb_id": "2465"
   },
   "SNAP": {
@@ -1298,6 +1550,8 @@
     },
     "country": "US",
     "facility_name": "Switch Las Vegas",
+    "org_id": 483,
+    "org_name": "Switch, Ltd.",
     "peeringdb_id": "770",
     "state": "NV"
   },
@@ -1309,6 +1563,8 @@
     },
     "country": "CL",
     "facility_name": "SONDA - Quilicura",
+    "org_id": 29607,
+    "org_name": "SONDA S.A.",
     "peeringdb_id": "10697"
   },
   "SPK53": {
@@ -1319,6 +1575,8 @@
     },
     "country": "NZ",
     "facility_name": "Mayoral Drive Exchange (MDR)",
+    "org_id": 18244,
+    "org_name": "Spark New Zealand Trading Limited",
     "peeringdb_id": "1523"
   },
   "T5ALA": {
@@ -1329,6 +1587,8 @@
     },
     "country": "US",
     "facility_name": "Serverfarm LAX1 Los Angeles",
+    "org_id": 16352,
+    "org_name": "Serverfarm",
     "peeringdb_id": "4952",
     "state": "CA"
   },
@@ -1340,6 +1600,8 @@
     },
     "country": "TH",
     "facility_name": "TCC Technology Data Center- Bangkok,Thailand (TCC BNDC,TCC Bangna,TCCtech)",
+    "org_id": 921,
+    "org_name": "TCC Technology Co., Ltd",
     "peeringdb_id": "4139"
   },
   "TCDC1": {
@@ -1350,6 +1612,8 @@
     },
     "country": "IN",
     "facility_name": "STT Chennai 1",
+    "org_id": 15538,
+    "org_name": "ST Telemedia Global Data Centres (STT GDC)",
     "peeringdb_id": "6778"
   },
   "TCDE2": {
@@ -1360,6 +1624,8 @@
     },
     "country": "IN",
     "facility_name": "STT Delhi 2",
+    "org_id": 15538,
+    "org_name": "ST Telemedia Global Data Centres (STT GDC)",
     "peeringdb_id": "6786"
   },
   "TCDK1": {
@@ -1370,6 +1636,8 @@
     },
     "country": "IN",
     "facility_name": "STT Kolkata 1",
+    "org_id": 15538,
+    "org_name": "ST Telemedia Global Data Centres (STT GDC)",
     "peeringdb_id": "6780"
   },
   "TCHY1": {
@@ -1380,6 +1648,8 @@
     },
     "country": "IN",
     "facility_name": "STT Hyderabad 1",
+    "org_id": 15538,
+    "org_name": "ST Telemedia Global Data Centres (STT GDC)",
     "peeringdb_id": "6781"
   },
   "TCSH": {
@@ -1390,6 +1660,8 @@
     },
     "country": "GB",
     "facility_name": "Digital Realty London LHR20",
+    "org_id": 8592,
+    "org_name": "Digital Realty",
     "peeringdb_id": "40"
   },
   "TECT1": {
@@ -1400,6 +1672,8 @@
     },
     "country": "ZA",
     "facility_name": "Teraco CT1 Cape Town, South Africa",
+    "org_id": 6798,
+    "org_name": "Teraco Data Environments Pty Ltd",
     "peeringdb_id": "1225"
   },
   "TEJB1": {
@@ -1410,6 +1684,8 @@
     },
     "country": "ZA",
     "facility_name": "Teraco Johannesburg Campus, South Africa",
+    "org_id": 6798,
+    "org_name": "Teraco Data Environments Pty Ltd",
     "peeringdb_id": "850"
   },
   "THNO2": {
@@ -1420,6 +1696,8 @@
     },
     "country": "GB",
     "facility_name": "Telehouse - London (Docklands West)",
+    "org_id": 7,
+    "org_name": "Telehouse - Global Data Centers",
     "peeringdb_id": "835"
   },
   "THRA9": {
@@ -1430,6 +1708,8 @@
     },
     "country": "TH",
     "facility_name": "Telehouse \u2013 Bangkok",
+    "org_id": 7,
+    "org_name": "Telehouse - Global Data Centers",
     "peeringdb_id": "13618"
   },
   "THV52": {
@@ -1440,6 +1720,8 @@
     },
     "country": "FR",
     "facility_name": "Telehouse - Paris 2 (Voltaire - L\u00e9on Frot)",
+    "org_id": 7,
+    "org_name": "Telehouse - Global Data Centers",
     "peeringdb_id": "53"
   },
   "TIVIT": {
@@ -1450,6 +1732,8 @@
     },
     "country": "BR",
     "facility_name": "TIVIT Sao Paulo",
+    "org_id": 6993,
+    "org_name": "TIVIT",
     "peeringdb_id": "1325"
   },
   "TLLPJ": {
@@ -1460,6 +1744,8 @@
     },
     "country": "US",
     "facility_name": "Digital Realty IAD (44100 Digital Loudoun)",
+    "org_id": 8592,
+    "org_name": "Digital Realty",
     "peeringdb_id": "4745",
     "state": "VA"
   },
@@ -1471,6 +1757,8 @@
     },
     "country": "KR",
     "facility_name": "Digital Realty ICN10 - Seoul",
+    "org_id": 8592,
+    "org_name": "Digital Realty",
     "peeringdb_id": "9210"
   },
   "TLXA1": {
@@ -1481,6 +1769,8 @@
     },
     "country": "US",
     "facility_name": "Digital Realty ATL (56 Marietta)",
+    "org_id": 8592,
+    "org_name": "Digital Realty",
     "peeringdb_id": "125",
     "state": "GA"
   },
@@ -1492,6 +1782,8 @@
     },
     "country": "BR",
     "facility_name": "Equinix SP4 - S\u00e3o Paulo",
+    "org_id": 2,
+    "org_name": "Equinix, Inc.",
     "peeringdb_id": "165"
   },
   "TPS19": {
@@ -1502,6 +1794,8 @@
     },
     "country": "US",
     "facility_name": "TierPoint Seattle",
+    "org_id": 882,
+    "org_name": "TierPoint, LLC",
     "peeringdb_id": "8599",
     "state": "WA"
   }

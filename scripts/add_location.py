@@ -19,7 +19,9 @@ def get_peeringdb_info(peeringdb_id):
                     'state': fac.get('state'),
                     'latitude': fac.get('latitude'),
                     'longitude': fac.get('longitude'),
-                    'country': fac.get('country')
+                    'country': fac.get('country'),
+                    'org_id': fac.get('org_id'),
+                    'org_name': fac.get('org_name')
                 }
         elif response.status_code == 429:
             print("Rate limited, waiting...")
@@ -65,6 +67,7 @@ def main():
             print(f"  Facility: {info['facility_name']}")
             print(f"  City: {info['city']}")
             print(f"  Country: {info['country']}")
+            print(f"  Organization: {info.get('org_name', 'N/A')}")
             print(f"  Coordinates: {info['latitude']}, {info['longitude']}")
             
             if info['facility_name']:
@@ -78,6 +81,12 @@ def main():
             
             if info.get('state'):
                 entry['state'] = info['state']
+            
+            if info.get('org_id'):
+                entry['org_id'] = info['org_id']
+            
+            if info.get('org_name'):
+                entry['org_name'] = info['org_name']
             
             if info['latitude'] and info['longitude']:
                 entry['coordinates'] = {
