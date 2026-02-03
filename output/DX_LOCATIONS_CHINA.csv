@@ -1,5 +1,5 @@
 Location Code,Partition,Location Name,AWS Name,Country,Region Code,Region Name,Port Speeds,MACsec Capable,PeeringDB ID,Latitude,Longitude
-GDSH3,aws-cn,"GDS No. 3 Data Center, Shanghai, CN",GDS No. 3 DC,CN,cn-north-1,cn-north-1,"1G, 10G",,,31.320822,121.60532
+GDSH3,aws-cn,"GDS No. 3 Data Center, Shanghai, CN",GDS No. 3 DC,CN,cn-north-1,cn-north-1,"1G, 10G",,,31.323104,121.600306
 GDSZ3,aws-cn,"GDS No. 3 Data Center, Shenzhen, CN",GDS No. 3 DC,CN,cn-north-1,cn-north-1,"1G, 10G",,,22.507249,114.045065
 MOC2,aws-cn,"CIDS Jiachuang IDC, Beijing, CN",CIDS Jiachuang IDC,CN,cn-north-1,cn-north-1,"1G, 10G, 100G",,,39.816829,116.552776
 SINJI,aws-cn,"Sinnet Jiuxianqiao IDC, Beijing, CN",Sinnet Jiuxianqiao IDC,CN,cn-north-1,cn-north-1,"1G, 10G, 100G",,,39.985399,116.481053
