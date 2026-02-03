@@ -8,6 +8,19 @@ def load_mapping(mapping_file):
     with open(mapping_file, 'r') as f:
         return json.load(f)
 
+def check_disabled_regions():
+    """Check for any disabled regions and fail if found"""
+    cmd = "aws account list-regions --region-opt-status-contains DISABLED --query 'Regions[].RegionName' --output text"
+    result = subprocess.run(cmd, shell=True, capture_output=True, text=True, executable='/bin/bash')
+    disabled_regions = [r.strip() for r in result.stdout.strip().split() if r.strip()]
+    
+    if disabled_regions:
+        print(f"\nERROR: Found {len(disabled_regions)} DISABLED region(s):")
+        for region in disabled_regions:
+            print(f"  - {region}")
+        print(f"\nPlease enable all regions to ensure complete Direct Connect location coverage.")
+        exit(1)
+
 def normalize_location_code(code):
     """Remove floor suffixes like -32FL, -10FL and MMR suffixes, normalize case"""
     # Remove floor suffixes like -32FL, -10FL
@@ -17,6 +30,19 @@ def normalize_location_code(code):
     # Remove other common suffixes like -21001, -21004, -CDLAN-A, -MIX-DC1, -SC1, -SC111, -EQ, -WBE
     code = re.sub(r'-(\d{5}|CDLAN-[AB]|MIX-DC\d+|SC\d+|EQ|WBE)$', '', code)
     return code.upper()
+
+def get_region_opt_status():
+    """Get opt-in status for all regions"""
+    cmd = "aws account list-regions --query 'Regions[].[RegionName,RegionOptStatus]' --output text"
+    result = subprocess.run(cmd, shell=True, capture_output=True, text=True, executable='/bin/bash')
+    
+    region_status = {}
+    for line in result.stdout.strip().split('\n'):
+        if line.strip():
+            parts = line.split()
+            if len(parts) == 2:
+                region_status[parts[0]] = parts[1]
+    return region_status
 
 def get_dx_locations():
     """Fetch DX locations from AWS CLI"""
@@ -111,6 +137,12 @@ def main():
     country_mapping_file = 'data-structures/country-mapping.json'
     output_file = 'data-structures/dx-locations-data.json'
     
+    print("Checking for disabled regions...")
+    check_disabled_regions()
+    
+    print("Getting region opt-in status...")
+    region_opt_status = get_region_opt_status()
+    
     print("Loading mappings...")
     mapping = load_mapping(mapping_file)
     country_mapping = load_mapping(country_mapping_file)
@@ -136,6 +168,7 @@ def main():
         entry = {
             'code': code,
             'region': region,
+            'region_opt_status': region_opt_status.get(region, 'UNKNOWN'),
             'name': None,
             'aws_name': extract_aws_name(aws_name),
             'internal_code': None,

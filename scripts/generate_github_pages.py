@@ -87,8 +87,12 @@ html = f"""<!DOCTYPE html>
         a {{ color: #0073bb; text-decoration: none; }}
         a:hover {{ text-decoration: underline; }}
         .info-icon {{ display: inline-block; width: 16px; height: 16px; line-height: 16px; text-align: center; background: #0073bb; color: white; border-radius: 50%; font-size: 12px; font-weight: bold; margin-left: 5px; cursor: help; position: relative; }}
-        .info-icon:hover::after {{ content: attr(data-tooltip); position: absolute; bottom: 125%; left: 50%; transform: translateX(-50%); background: #333; color: white; padding: 8px 12px; border-radius: 4px; white-space: normal; width: 300px; font-size: 13px; font-weight: normal; z-index: 1000; line-height: 1.4; }}
-        .info-icon:hover::before {{ content: ''; position: absolute; bottom: 115%; left: 50%; transform: translateX(-50%); border: 6px solid transparent; border-top-color: #333; }}
+        .info-icon:hover::after {{ content: attr(data-tooltip); position: absolute; bottom: 125%; right: 0; background: #333; color: white; padding: 8px 12px; border-radius: 4px; white-space: normal; width: 300px; font-size: 13px; font-weight: normal; z-index: 1000; line-height: 1.4; }}
+        .info-icon:hover::before {{ content: ''; position: absolute; bottom: 115%; right: 10px; border: 6px solid transparent; border-top-color: #333; }}
+        .warning-icon {{ display: inline-block; margin-left: 5px; cursor: help; position: relative; vertical-align: text-top; }}
+        .warning-icon svg {{ width: 24px; height: 24px; color: #ff9800; display: block; }}
+        .warning-icon:hover::after {{ content: attr(data-tooltip); position: absolute; bottom: 125%; right: 0; background: #333; color: white; padding: 8px 12px; border-radius: 4px; white-space: normal; width: 300px; font-size: 13px; font-weight: normal; z-index: 1000; line-height: 1.4; pointer-events: none; }}
+        .warning-icon:hover::before {{ content: ''; position: absolute; bottom: 115%; right: 10px; border: 6px solid transparent; border-top-color: #333; pointer-events: none; }}
         .footer {{ margin-top: 30px; padding: 20px; text-align: center; color: #666; font-size: 14px; border-top: 1px solid #ddd; background: white; }}
         .footer a {{ color: #0073bb; text-decoration: none; }}
         .footer a:hover {{ text-decoration: underline; }}
@@ -200,7 +204,11 @@ for loc in sorted_locations:
     map_link = loc['code']
     
     region_name = region_mapping.get('aws_region_names', {}).get(loc['region'], loc['region'])
-    region_html = f"{region_name}<br><code>{loc['region']}</code>"
+    region_opt_status = loc.get('region_opt_status', 'ENABLED_BY_DEFAULT')
+    opt_in_warning = ''
+    if region_opt_status == 'ENABLED':
+        opt_in_warning = '<span class="warning-icon" data-tooltip="This Direct Connect location is associated with an opt-in region. To use this location in the AWS Console or API, you must first enable this region in your AWS account."><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 1.67c.955 0 1.845 .467 2.39 1.247l.105 .16l8.114 13.548a2.914 2.914 0 0 1 -2.307 4.363l-.195 .008h-16.225a2.914 2.914 0 0 1 -2.582 -4.2l.099 -.185l8.11 -13.538a2.914 2.914 0 0 1 2.491 -1.403zm.01 13.33l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007zm-.01 -7a1 1 0 0 0 -.993 .883l-.007 .117v4l.007 .117a1 1 0 0 0 1.986 0l.007 -.117v-4l-.007 -.117a1 1 0 0 0 -.993 -.883z" /></svg></span>'
+    region_html = f"{region_name}{opt_in_warning}<br><code>{loc['region']}</code>"
     
     # Data attributes for filtering
     country_code = loc.get('country', '')
