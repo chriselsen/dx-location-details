@@ -3,13 +3,14 @@
 [![Daily DX Location Update](https://github.com/chriselsen/dx-location-details/actions/workflows/daily-update.yml/badge.svg)](https://github.com/chriselsen/dx-location-details/actions/workflows/daily-update.yml)
 
 ## Overview
-Automatically generates a sortable wiki table and KML file of AWS Direct Connect locations across both AWS Commercial and EU Sovereign Cloud partitions.
+Automatically generates a sortable wiki table and KML file of AWS Direct Connect locations across AWS Commercial, EU Sovereign Cloud, and China partitions.
 
 **Live View**: [Interactive Table with Map](https://chriselsen.github.io/dx-location-details/)
 
 **Downloads**: 
 - **AWS Commercial Partition**: [KML File](output/DirectConnectLocations.kml) | [CSV File](output/DX_LOCATIONS.csv)
 - **EU Sovereign Cloud**: [KML File](output/DirectConnectLocations_EUSC.kml) | [CSV File](output/DX_LOCATIONS_EUSC.csv)
+- **AWS China**: [KML File](output/DirectConnectLocations_CHINA.kml) | [CSV File](output/DX_LOCATIONS_CHINA.csv)
 
 ![AWS Direct Connect Locations World Map](output/DX_Locations.png)
 
@@ -17,7 +18,9 @@ Automatically generates a sortable wiki table and KML file of AWS Direct Connect
 > Although I do work for AWS, no internal data is being used in this repo. Mapping of DX locations to PeeringDB locations is solely performed manually through public information.
 
 ## Files
-- `scripts/collect_data.py` - Fetches DX locations from AWS CLI and merges with mapping data
+- `scripts/collect_data.py` - Fetches DX locations from AWS Commercial partition
+- `scripts/collect_data_eusc.py` - Fetches DX locations from EU Sovereign Cloud
+- `scripts/collect_data_china.py` - Fetches DX locations from AWS China partition
 - `scripts/generate_csv.py` - Generates CSV file from collected data
 - `scripts/generate_github_pages.py` - Generates HTML files for GitHub Pages
 - `scripts/add_location.py` - Interactive tool to add new locations to the mapping
@@ -158,5 +161,6 @@ The repository publishes an interactive HTML page via GitHub Pages:
 The page features a tabbed interface allowing users to switch between:
 - **AWS Commercial Partition**: Global Direct Connect locations
 - **EU Sovereign Cloud**: European locations in the isolated EU partition
+- **AWS China**: China locations in the isolated China partition operated by local partners
 
 This page is automatically updated daily via GitHub Actions.

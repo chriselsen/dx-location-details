@@ -3465,6 +3465,128 @@
     "partition": "aws"
   },
   {
+    "code": "GDSH3",
+    "partition": "aws-cn",
+    "region": "cn-north-1",
+    "name": "GDS No. 3 Data Center, Shanghai, CN",
+    "aws_name": "GDS No. 3 DC",
+    "internal_code": null,
+    "peeringdb_id": null,
+    "org_id": null,
+    "org_name": null,
+    "country": "CN",
+    "latitude": "31.320822",
+    "longitude": "121.60532",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G"
+    ],
+    "macsec_capable": []
+  },
+  {
+    "code": "GDSZ3",
+    "partition": "aws-cn",
+    "region": "cn-north-1",
+    "name": "GDS No. 3 Data Center, Shenzhen, CN",
+    "aws_name": "GDS No. 3 DC",
+    "internal_code": null,
+    "peeringdb_id": null,
+    "org_id": null,
+    "org_name": null,
+    "country": "CN",
+    "latitude": "22.507249",
+    "longitude": "114.045065",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G"
+    ],
+    "macsec_capable": []
+  },
+  {
+    "code": "MOC2",
+    "partition": "aws-cn",
+    "region": "cn-north-1",
+    "name": "CIDS Jiachuang IDC, Beijing, CN",
+    "aws_name": "CIDS Jiachuang IDC",
+    "internal_code": null,
+    "peeringdb_id": null,
+    "org_id": null,
+    "org_name": null,
+    "country": "CN",
+    "latitude": "39.816829",
+    "longitude": "116.552776",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": []
+  },
+  {
+    "code": "SINJI",
+    "partition": "aws-cn",
+    "region": "cn-north-1",
+    "name": "Sinnet Jiuxianqiao IDC, Beijing, CN",
+    "aws_name": "Sinnet Jiuxianqiao IDC",
+    "internal_code": null,
+    "peeringdb_id": null,
+    "org_id": null,
+    "org_name": null,
+    "country": "CN",
+    "latitude": "39.985399",
+    "longitude": "116.481053",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G",
+      "100G"
+    ],
+    "macsec_capable": []
+  },
+  {
+    "code": "IPI50",
+    "partition": "aws-cn",
+    "region": "cn-northwest-1",
+    "name": "Industrial Park IDC, Zhongwei, CN",
+    "aws_name": "Industrial Park IDC",
+    "internal_code": null,
+    "peeringdb_id": null,
+    "org_id": null,
+    "org_name": null,
+    "country": "CN",
+    "latitude": "37.5684",
+    "longitude": "105.1873",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G"
+    ],
+    "macsec_capable": []
+  },
+  {
+    "code": "SHP54",
+    "partition": "aws-cn",
+    "region": "cn-northwest-1",
+    "name": "Shapotou IDC, Zhongwei, CN",
+    "aws_name": "Shapotou IDC",
+    "internal_code": null,
+    "peeringdb_id": null,
+    "org_id": null,
+    "org_name": null,
+    "country": "CN",
+    "latitude": "37.63670",
+    "longitude": "105.34678",
+    "ip": null,
+    "port_speeds": [
+      "1G",
+      "10G"
+    ],
+    "macsec_capable": []
+  },
+  {
     "code": "AEBTF",
     "partition": "aws-eusc",
     "region": "eusc-de-east-1",
