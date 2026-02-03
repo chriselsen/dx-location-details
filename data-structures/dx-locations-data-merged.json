@@ -2,6 +2,7 @@
   {
     "code": "EANB1",
     "region": "af-south-1",
+    "region_opt_status": "ENABLED",
     "name": "Africa Data Centres, Nairobi, KE",
     "aws_name": "East Africa Data Centres NBO1",
     "internal_code": null,
@@ -25,6 +26,7 @@
   {
     "code": "RCL1",
     "region": "af-south-1",
+    "region_opt_status": "ENABLED",
     "name": "Rack Centre Lagos, Ikeja, NG",
     "aws_name": "Rack Centre LGS1",
     "internal_code": null,
@@ -49,6 +51,7 @@
   {
     "code": "TECT1",
     "region": "af-south-1",
+    "region_opt_status": "ENABLED",
     "name": "Teraco CT1 Cape Town, Cape Town, ZA",
     "aws_name": "Teraco CT1",
     "internal_code": null,
@@ -73,6 +76,7 @@
   {
     "code": "EQHK1",
     "region": "ap-east-1",
+    "region_opt_status": "ENABLED",
     "name": "Equinix HK1 - Hong Kong, Tsuen Wan, HK",
     "aws_name": "Equinix HK1",
     "internal_code": null,
@@ -97,6 +101,7 @@
   {
     "code": "CFT54",
     "region": "ap-east-2",
+    "region_opt_status": "ENABLED",
     "name": "Chief HD Building Taipei, Taipei, TW",
     "aws_name": "Chief Telecom HD",
     "internal_code": null,
@@ -120,6 +125,7 @@
   {
     "code": "CHT51",
     "region": "ap-east-2",
+    "region_opt_status": "ENABLED",
     "name": "CHT Taipei Banqiao IDC, New Taipei City, TW",
     "aws_name": "Chunghwa Telecom",
     "internal_code": null,
@@ -143,6 +149,7 @@
   {
     "code": "ATTC1",
     "region": "ap-northeast-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "AT TOKYO (CC1/CC2), Tokyo, JP",
     "aws_name": "AT Tokyo Chuo Data Center",
     "internal_code": null,
@@ -167,6 +174,7 @@
   {
     "code": "CFT52",
     "region": "ap-northeast-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Chief LY Building Taipei, Taipei, TW",
     "aws_name": "Chief Telecom LY",
     "internal_code": null,
@@ -187,6 +195,7 @@
   {
     "code": "EQOS1",
     "region": "ap-northeast-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Equinix OS1 - Osaka, Osaka, JP",
     "aws_name": "Equinix OS1",
     "internal_code": null,
@@ -211,6 +220,7 @@
   {
     "code": "EQTY2",
     "region": "ap-northeast-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Equinix TY2 - Tokyo, Tokyo, JP",
     "aws_name": "Equinix TY2",
     "internal_code": null,
@@ -235,6 +245,7 @@
   {
     "code": "NEIN2",
     "region": "ap-northeast-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "SCSK netXDC (SI1/SI2/SI3)/NEC Inzai DC, Inzai-shi, JP",
     "aws_name": "NEC Inzai",
     "internal_code": null,
@@ -259,6 +270,7 @@
   {
     "code": "LGKNX",
     "region": "ap-northeast-2",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "KINX Gasan, Seoul, KR",
     "aws_name": "KINX Gasen",
     "internal_code": null,
@@ -279,6 +291,7 @@
   {
     "code": "LGU57",
     "region": "ap-northeast-2",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "LG Uplus Pyeongchon IDC, Anyang-si, KR",
     "aws_name": "LG U+ Pyeong-Chon Mega Center",
     "internal_code": null,
@@ -303,6 +316,7 @@
   {
     "code": "TLS10",
     "region": "ap-northeast-2",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Digital Realty ICN10 - Seoul, Mapo-gu, KR",
     "aws_name": "Digital Realty ICN10",
     "internal_code": null,
@@ -327,6 +341,7 @@
   {
     "code": "KDOS2",
     "region": "ap-northeast-3",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Telehouse \u2013 OSAKA 1&2, Osaka, JP",
     "aws_name": "KDDI Telehouse Osaka 2",
     "internal_code": null,
@@ -351,6 +366,7 @@
   {
     "code": "EQMB2",
     "region": "ap-south-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Equinix MB2 - Mumbai (GPX Mumbai 2), Mumbai, IN",
     "aws_name": "Equinix MB2",
     "internal_code": null,
@@ -375,6 +391,7 @@
   {
     "code": "GPX51",
     "region": "ap-south-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Equinix MB1 - Mumbai (GPX Mumbai 1), Mumbai, IN",
     "aws_name": "Equinix MB1",
     "internal_code": null,
@@ -397,6 +414,7 @@
   {
     "code": "NMBL2",
     "region": "ap-south-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Netmagic Bangalore DC02, Bangalore, IN",
     "aws_name": "NetMagic DC2",
     "internal_code": null,
@@ -419,6 +437,7 @@
   {
     "code": "SFY52",
     "region": "ap-south-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Sify Rabale - Mumbai, Navi Mumbai, IN",
     "aws_name": "Sify Rabale",
     "internal_code": null,
@@ -441,6 +460,7 @@
   {
     "code": "TCDC1",
     "region": "ap-south-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "STT Chennai 1, Chennai, IN",
     "aws_name": "STT GDC INDIA PVT. LTD. VSB",
     "internal_code": null,
@@ -465,6 +485,7 @@
   {
     "code": "TCDE2",
     "region": "ap-south-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "STT Delhi 2, Delhi, IN",
     "aws_name": "STT Delhi DC2",
     "internal_code": null,
@@ -489,6 +510,7 @@
   {
     "code": "TCDK1",
     "region": "ap-south-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "STT Kolkata 1, Kolkata, IN",
     "aws_name": "STT Kolkata",
     "internal_code": null,
@@ -513,6 +535,7 @@
   {
     "code": "TCHY1",
     "region": "ap-south-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "STT Hyderabad 1, Hyderabad, IN",
     "aws_name": "STT Hyderabad DC1",
     "internal_code": null,
@@ -537,6 +560,7 @@
   {
     "code": "AIMMN",
     "region": "ap-southeast-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "AIMS Kuala Lumpur, Kuala Lumpur, MY",
     "aws_name": "Menara AIMS",
     "internal_code": null,
@@ -561,6 +585,7 @@
   {
     "code": "EPVM2",
     "region": "ap-southeast-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "VITRO Makati 2, Makati, PH",
     "aws_name": "ePLDT VM2",
     "internal_code": null,
@@ -585,6 +610,7 @@
   {
     "code": "EQSG2",
     "region": "ap-southeast-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Equinix SG2 - Singapore, Singapore, SG",
     "aws_name": "Equinix SG2",
     "internal_code": null,
@@ -609,6 +635,7 @@
   {
     "code": "GSS52",
     "region": "ap-southeast-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Global Switch Singapore, Singapore, SG",
     "aws_name": "Global Switch",
     "internal_code": null,
@@ -633,6 +660,7 @@
   {
     "code": "IAMGI",
     "region": "ap-southeast-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "MEGA-i (iAdvantage Hong Kong), Hong Kong, HK",
     "aws_name": "iAdvantage MEGA-i",
     "internal_code": null,
@@ -657,6 +685,7 @@
   {
     "code": "TCCBK",
     "region": "ap-southeast-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "TCC Technology Data Center- Bangkok, Bangkok, TH",
     "aws_name": "TCC",
     "internal_code": null,
@@ -681,6 +710,7 @@
   {
     "code": "CBHU2",
     "region": "ap-southeast-2",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "CDC Canberra HU2, Hume, AU",
     "aws_name": "CDC Hume 2",
     "internal_code": null,
@@ -704,6 +734,7 @@
   {
     "code": "DCDH6",
     "region": "ap-southeast-2",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Datacom - Orbit Data Centre (Auckland), Auckland, NZ",
     "aws_name": "Datacom DH6",
     "internal_code": null,
@@ -726,6 +757,7 @@
   {
     "code": "EQSY3",
     "region": "ap-southeast-2",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Equinix SY3 - Sydney, Sydney, AU",
     "aws_name": "Equinix SY1 - SY4",
     "internal_code": null,
@@ -750,6 +782,7 @@
   {
     "code": "GBSY6",
     "region": "ap-southeast-2",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Equinix SY6 - Sydney (formerly Metronode Sydney 2), Silverwater, AU",
     "aws_name": "Global Switch SY6",
     "internal_code": null,
@@ -770,6 +803,7 @@
   {
     "code": "NDCB2",
     "region": "ap-southeast-2",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "NEXTDC B2, Fortitude Valley, AU",
     "aws_name": "NEXTDC B2",
     "internal_code": null,
@@ -793,6 +827,7 @@
   {
     "code": "NDCC1",
     "region": "ap-southeast-2",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "NEXTDC C1, Bruce, AU",
     "aws_name": "NEXTDC C1",
     "internal_code": null,
@@ -815,6 +850,7 @@
   {
     "code": "NDCM1",
     "region": "ap-southeast-2",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "NEXTDC M1, Melbourne, AU",
     "aws_name": "NEXTDC M1",
     "internal_code": null,
@@ -839,6 +875,7 @@
   {
     "code": "NDCP1",
     "region": "ap-southeast-2",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "NEXTDC P1, M\u00e1laga, AU",
     "aws_name": "NEXTDC P1",
     "internal_code": null,
@@ -863,6 +900,7 @@
   {
     "code": "NDCS2",
     "region": "ap-southeast-2",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "NEXTDC S2, Macquarie Park, AU",
     "aws_name": "NEXTDC S2",
     "internal_code": null,
@@ -887,6 +925,7 @@
   {
     "code": "DCIJ3",
     "region": "ap-southeast-3",
+    "region_opt_status": "ENABLED",
     "name": "DCI Indonesia (JK3), Bekasi, Cibitung, ID",
     "aws_name": "DCI Indonesia",
     "internal_code": null,
@@ -911,6 +950,7 @@
   {
     "code": "JKT02",
     "region": "ap-southeast-3",
+    "region_opt_status": "ENABLED",
     "name": "NTT Jakarta 2 Data Center (JKT2), Jakarta, ID",
     "aws_name": "NTT Jakarta 2 Data Center",
     "internal_code": null,
@@ -935,6 +975,7 @@
   {
     "code": "EQME2",
     "region": "ap-southeast-4",
+    "region_opt_status": "ENABLED",
     "name": "Equinix ME1/ME2 - Melbourne, Melbourne, AU",
     "aws_name": "Equinix ME2",
     "internal_code": null,
@@ -959,6 +1000,7 @@
   {
     "code": "CMCHV",
     "region": "ap-southeast-5",
+    "region_opt_status": "ENABLED",
     "name": "CMC Duy Tan (Hanoi), Hanoi, VN",
     "aws_name": "CMC Tower",
     "internal_code": null,
@@ -983,6 +1025,7 @@
   {
     "code": "CSFX1",
     "region": "ap-southeast-5",
+    "region_opt_status": "ENABLED",
     "name": "CSF CX1 / TelcoHub1 Kuala Lumpur, Cyberjaya, MY",
     "aws_name": "Telcohub 1 (CX1)",
     "internal_code": null,
@@ -1006,6 +1049,7 @@
   {
     "code": "SPK53",
     "region": "ap-southeast-6",
+    "region_opt_status": "ENABLED",
     "name": "Mayoral Drive Exchange (MDR), Auckland, NZ",
     "aws_name": "Spark MDR",
     "internal_code": null,
@@ -1029,6 +1073,7 @@
   {
     "code": "THRA9",
     "region": "ap-southeast-7",
+    "region_opt_status": "ENABLED",
     "name": "Telehouse \u2013 Bangkok, Bangkok, TH",
     "aws_name": "Telehouse Bangkok",
     "internal_code": null,
@@ -1052,6 +1097,7 @@
   {
     "code": "151FS",
     "region": "ca-central-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Telehouse Toronto (151 Front St West), Toronto, CA",
     "aws_name": "Telehouse",
     "internal_code": null,
@@ -1076,6 +1122,7 @@
   {
     "code": "CGM60",
     "region": "ca-central-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Cologix MTL3, Montreal, CA",
     "aws_name": "Cologix MTL3",
     "internal_code": null,
@@ -1100,6 +1147,7 @@
   {
     "code": "COLV2",
     "region": "ca-central-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Cologix VAN2, Vancouver, CA",
     "aws_name": "Cologix VAN2",
     "internal_code": null,
@@ -1122,6 +1170,7 @@
   {
     "code": "COLV3",
     "region": "ca-central-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Cologix VAN3, Vancouver, CA",
     "aws_name": "Cologix VAN3",
     "internal_code": null,
@@ -1145,6 +1194,7 @@
   {
     "code": "EQTR2",
     "region": "ca-central-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Equinix TR2 - Toronto, Toronto, CA",
     "aws_name": "Equinix TR2",
     "internal_code": null,
@@ -1168,6 +1218,7 @@
   {
     "code": "NTM62",
     "region": "ca-central-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "eStruxture MTL-1, Montreal, CA",
     "aws_name": "eStruxture",
     "internal_code": null,
@@ -1192,6 +1243,7 @@
   {
     "code": "EQCL1",
     "region": "ca-west-1",
+    "region_opt_status": "ENABLED",
     "name": "Equinix CL1 - Calgary, Calgary, CA",
     "aws_name": "Equinix CL1",
     "internal_code": null,
@@ -1216,6 +1268,7 @@
   {
     "code": "EQCL3",
     "region": "ca-west-1",
+    "region_opt_status": "ENABLED",
     "name": "Equinix CL3 - Calgary (formerly Q9 Calgary Three), Calgary, CA",
     "aws_name": "Equinix CL3",
     "internal_code": null,
@@ -1240,6 +1293,7 @@
   {
     "code": "CDSR1",
     "region": "eu-central-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "C21, Milan, IT",
     "aws_name": "CDLAN srl Via Caldera 21",
     "internal_code": null,
@@ -1264,6 +1318,7 @@
   {
     "code": "CEC50",
     "region": "eu-central-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "CE Colo Prague, Prague, CZ",
     "aws_name": "CE Colo",
     "internal_code": null,
@@ -1284,6 +1339,7 @@
   {
     "code": "DGPU1",
     "region": "eu-central-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "STACK EMEA - OSL01, Oslo, NO",
     "aws_name": "DigiPlex Ulven",
     "internal_code": null,
@@ -1306,6 +1362,7 @@
   {
     "code": "EQAM3",
     "region": "eu-central-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Equinix AM3 - Amsterdam, Amsterdam, NL",
     "aws_name": "Equinix AM3",
     "internal_code": null,
@@ -1330,6 +1387,7 @@
   {
     "code": "EQFA5",
     "region": "eu-central-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Equinix FR5 - Frankfurt, Frankfurt, DE",
     "aws_name": "Equinix FR5",
     "internal_code": null,
@@ -1354,6 +1412,7 @@
   {
     "code": "EQHE6",
     "region": "eu-central-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Equinix HE6 - Helsinki, Espoo, FI",
     "aws_name": "Equinix HE6",
     "internal_code": null,
@@ -1374,6 +1433,7 @@
   {
     "code": "EQIL4",
     "region": "eu-central-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Equinix IL4 - Istanbul, Istanbul, TR",
     "aws_name": "Equinix IL4 Istanbul",
     "internal_code": null,
@@ -1397,6 +1457,7 @@
   {
     "code": "EQMU1",
     "region": "eu-central-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Equinix MU1/MU3 - Munich, Munich, DE",
     "aws_name": "Equinix MU1",
     "internal_code": null,
@@ -1419,6 +1480,7 @@
   {
     "code": "EQWA1",
     "region": "eu-central-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Equinix WA1 - Warsaw, Warsaw, PL",
     "aws_name": "Equinix WA1",
     "internal_code": null,
@@ -1439,6 +1501,7 @@
   {
     "code": "INX6",
     "region": "eu-central-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Digital Realty Frankfurt FRA1-16, Frankfurt, DE",
     "aws_name": "Digital Realty FRA6",
     "internal_code": null,
@@ -1463,6 +1526,7 @@
   {
     "code": "IPB50",
     "region": "eu-central-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "CarrierColo Berlin Luetzow (I/P/B/ site B), Berlin, DE",
     "aws_name": "IPB GmbH",
     "internal_code": null,
@@ -1485,6 +1549,7 @@
   {
     "code": "IPHH3",
     "region": "eu-central-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Portus/IPHH HH3 (Wendenstrasse 251), Hamburg, DE",
     "aws_name": "IPHH H3",
     "internal_code": null,
@@ -1507,6 +1572,7 @@
   {
     "code": "ITCM2",
     "region": "eu-central-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Equinix MD2 - Madrid, Alcobendas, ES",
     "aws_name": "Equinix Itconic MD2",
     "internal_code": null,
@@ -1531,6 +1597,7 @@
   {
     "code": "ITXA1",
     "region": "eu-central-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Digital Realty Athens Campus (ATH1, Koropi, GR",
     "aws_name": "Digital Realty ATH3",
     "internal_code": null,
@@ -1554,6 +1621,7 @@
   {
     "code": "ITXA7",
     "region": "eu-central-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Digital Realty Amsterdam AMS3, Amsterdam, NL",
     "aws_name": "Digital Realty AMS7",
     "internal_code": null,
@@ -1576,6 +1644,7 @@
   {
     "code": "ITXC2",
     "region": "eu-central-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Digital Realty Copenhagen CPH1-3, Copenhagen, DK",
     "aws_name": "Digital Realty CPH2",
     "internal_code": null,
@@ -1598,6 +1667,7 @@
   {
     "code": "ITXM2",
     "region": "eu-central-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Digital Realty Madrid MAD1-2, Madrid, ES",
     "aws_name": "Digital Realty MAD2",
     "internal_code": null,
@@ -1618,6 +1688,7 @@
   {
     "code": "ITXM3",
     "region": "eu-central-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Digital Realty Madrid MAD3, Madrid, ES",
     "aws_name": "Digital Realty MAD3",
     "internal_code": null,
@@ -1641,6 +1712,7 @@
   {
     "code": "ITXS1",
     "region": "eu-central-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Digital Realty Stockholm STO1-6, Stockholm, SE",
     "aws_name": "Digital Realty STO1",
     "internal_code": null,
@@ -1665,6 +1737,7 @@
   {
     "code": "ITXV2",
     "region": "eu-central-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Digital Realty Vienna VIE1-2, Vienna, AT",
     "aws_name": "Digital Realty VIE2",
     "internal_code": null,
@@ -1687,6 +1760,7 @@
   {
     "code": "ITXZ1",
     "region": "eu-central-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Digital Realty Zurich ZUR1, Glattbrugg, CH",
     "aws_name": "Digital Realty ZUR1",
     "internal_code": null,
@@ -1711,6 +1785,7 @@
   {
     "code": "MOILH",
     "region": "eu-central-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "MedOne TC1, Tirat Carmel, IL",
     "aws_name": "MedOne",
     "internal_code": null,
@@ -1735,6 +1810,7 @@
   {
     "code": "THV52",
     "region": "eu-central-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Telehouse - Paris 2 (Voltaire - L\u00e9on Frot), Paris, FR",
     "aws_name": "Telehouse Voltaire",
     "internal_code": null,
@@ -1759,6 +1835,7 @@
   {
     "code": "EQZH5",
     "region": "eu-central-2",
+    "region_opt_status": "ENABLED",
     "name": "Equinix ZH5 - Zurich, Zurich, CH",
     "aws_name": "Equinix ZH5",
     "internal_code": null,
@@ -1783,6 +1860,7 @@
   {
     "code": "EQSK1",
     "region": "eu-north-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Equinix SK1 - Stockholm, Stockholm, SE",
     "aws_name": "Equinix Sweden SK1",
     "internal_code": null,
@@ -1807,6 +1885,7 @@
   {
     "code": "EQML2",
     "region": "eu-south-1",
+    "region_opt_status": "ENABLED",
     "name": "Equinix ML2 - Milan, Milan, IT",
     "aws_name": "Equinix ML2",
     "internal_code": null,
@@ -1827,6 +1906,7 @@
   {
     "code": "EQBA1",
     "region": "eu-south-2",
+    "region_opt_status": "ENABLED",
     "name": "Equinix BA1 - Barcelona, Barcelona, ES",
     "aws_name": "Equinix BA1",
     "internal_code": null,
@@ -1850,6 +1930,7 @@
   {
     "code": "EIRCL",
     "region": "eu-west-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Eircom Dublin (Clonshaugh), Dublin, IE",
     "aws_name": "Eircom Clonshaugh",
     "internal_code": null,
@@ -1872,6 +1953,7 @@
   {
     "code": "EQDX1",
     "region": "eu-west-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Equinix DX1 - Dubai, Dubai, AE",
     "aws_name": "Equinix DX1",
     "internal_code": null,
@@ -1894,6 +1976,7 @@
   {
     "code": "EQLD5",
     "region": "eu-west-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Equinix LD5 - London, Slough, GB",
     "aws_name": "Equinix LD5",
     "internal_code": null,
@@ -1918,6 +2001,7 @@
   {
     "code": "EQLS1",
     "region": "eu-west-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Equinix LS1 - Lisbon, Lisbon, PT",
     "aws_name": "Equinix LS1",
     "internal_code": null,
@@ -1941,6 +2025,7 @@
   {
     "code": "ETIFJ",
     "region": "eu-west-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "SmartHub Fujairah, Fujairah, AE",
     "aws_name": "Etisalat Smart Hub Data Center",
     "internal_code": null,
@@ -1963,6 +2048,7 @@
   {
     "code": "ITXD2",
     "region": "eu-west-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Digital Realty Dublin DUB1-2, Dublin, IE",
     "aws_name": "Digital Realty DUB2",
     "internal_code": null,
@@ -1987,6 +2073,7 @@
   {
     "code": "ITXM1",
     "region": "eu-west-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Digital Realty Marseille MRS1-3, Marseille, FR",
     "aws_name": "Digital Realty MRS1",
     "internal_code": null,
@@ -2007,6 +2094,7 @@
   {
     "code": "SCDB9",
     "region": "eu-west-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Servecentric (Blanchardstown), Dublin, IE",
     "aws_name": "Servecentric Unit 9",
     "internal_code": null,
@@ -2031,6 +2119,7 @@
   {
     "code": "TCSH",
     "region": "eu-west-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Digital Realty London LHR20, London, GB",
     "aws_name": "Digital Realty LHR20",
     "internal_code": null,
@@ -2053,6 +2142,7 @@
   {
     "code": "TEJB1",
     "region": "eu-west-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Teraco Johannesburg Campus, Johannesburg, ZA",
     "aws_name": "Teraco JB1",
     "internal_code": null,
@@ -2077,6 +2167,7 @@
   {
     "code": "EQMA3",
     "region": "eu-west-2",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Equinix MA3 - Manchester, Manchester, GB",
     "aws_name": "Equinix MA3",
     "internal_code": null,
@@ -2097,6 +2188,7 @@
   {
     "code": "THNO2",
     "region": "eu-west-2",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Telehouse - London (Docklands West), London, GB",
     "aws_name": "Telehouse West",
     "internal_code": null,
@@ -2121,6 +2213,7 @@
   {
     "code": "EQPA3",
     "region": "eu-west-3",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Equinix PA3 - Paris, Paris, FR",
     "aws_name": "Equinix PA3",
     "internal_code": null,
@@ -2145,6 +2238,7 @@
   {
     "code": "ITXP7",
     "region": "eu-west-3",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Digital Realty Paris PAR7, Paris, FR",
     "aws_name": "Digital Realty PAR7",
     "internal_code": null,
@@ -2165,6 +2259,7 @@
   {
     "code": "ECTL1",
     "region": "il-central-1",
+    "region_opt_status": "ENABLED",
     "name": "EdgeConneX Tel Aviv (EDCTLV01), Herzliya, IL",
     "aws_name": "Edgeconnex",
     "internal_code": null,
@@ -2187,6 +2282,7 @@
   {
     "code": "BDC52",
     "region": "me-south-1",
+    "region_opt_status": "ENABLED",
     "name": "AWS Bahrain DC52 MMR, Hamala, BH",
     "aws_name": "AWS Bahrain DC52",
     "internal_code": null,
@@ -2207,6 +2303,7 @@
   {
     "code": "BDC53",
     "region": "me-south-1",
+    "region_opt_status": "ENABLED",
     "name": "AWS Bahrain DC53 MMR, Askar, BH",
     "aws_name": "AWS Bahrain DC53",
     "internal_code": null,
@@ -2227,6 +2324,7 @@
   {
     "code": "EQMC1",
     "region": "me-south-1",
+    "region_opt_status": "ENABLED",
     "name": "Equinix MC1 - Muscat, Muscat, OM",
     "aws_name": "Equinix MC1 Barka",
     "internal_code": null,
@@ -2249,6 +2347,7 @@
   {
     "code": "EQMX1",
     "region": "mx-central-1",
+    "region_opt_status": "ENABLED",
     "name": "Equinix MX1/MX2 - Mexico City, El Marques, MX",
     "aws_name": "Equinix MX1",
     "internal_code": null,
@@ -2272,6 +2371,7 @@
   {
     "code": "CIBNA",
     "region": "sa-east-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Cirion Buenos Aires - BUE1, Buenos Aires, AR",
     "aws_name": "Cirion BNARAGMS",
     "internal_code": null,
@@ -2296,6 +2396,7 @@
   {
     "code": "CILIM",
     "region": "sa-east-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Cirion Lima - LIM1, Santiago de Surco, PE",
     "aws_name": "Cirion LIMAPUCD",
     "internal_code": null,
@@ -2318,6 +2419,7 @@
   {
     "code": "EQBG1",
     "region": "sa-east-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Equinix BG1 - Bogota, Bogota, CO",
     "aws_name": "Equinix BG1",
     "internal_code": null,
@@ -2342,6 +2444,7 @@
   {
     "code": "EQRJ2",
     "region": "sa-east-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Equinix RJ2 - Rio de Janeiro, Rio de Janeiro, BR",
     "aws_name": "Equinix RJ2",
     "internal_code": null,
@@ -2366,6 +2469,7 @@
   {
     "code": "SONQU",
     "region": "sa-east-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "SONDA - Quilicura, Santiago, CL",
     "aws_name": "Sonda Quilicura",
     "internal_code": null,
@@ -2390,6 +2494,7 @@
   {
     "code": "TIVIT",
     "region": "sa-east-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "TIVIT Sao Paulo, S\u00e3o Paulo, BR",
     "aws_name": "Tivit",
     "internal_code": null,
@@ -2414,6 +2519,7 @@
   {
     "code": "TNDB",
     "region": "sa-east-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Equinix SP4 - S\u00e3o Paulo, Barueri, BR",
     "aws_name": "Equinix SP4",
     "internal_code": null,
@@ -2438,6 +2544,7 @@
   {
     "code": "165HS",
     "region": "us-east-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "165 Halsey Meet-Me Room, Newark, NJ, US",
     "aws_name": "165 Halsey Street",
     "internal_code": null,
@@ -2464,6 +2571,7 @@
   {
     "code": "CS32A",
     "region": "us-east-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "CoreSite - New York (NY1), New York, NY, US",
     "aws_name": "CoreSite NY1",
     "internal_code": null,
@@ -2488,6 +2596,7 @@
   {
     "code": "CSVA1",
     "region": "us-east-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "CoreSite - Reston (VA1), Reston, VA, US",
     "aws_name": "CoreSite VA1",
     "internal_code": null,
@@ -2514,6 +2623,7 @@
   {
     "code": "EQDA2",
     "region": "us-east-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Equinix DA - Dallas (previously Infomart Dallas), Dallas, TX, US",
     "aws_name": "Equinix DA2",
     "internal_code": null,
@@ -2538,6 +2648,7 @@
   {
     "code": "EQDC2",
     "region": "us-east-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Equinix DC1-DC15, Ashburn, VA, US",
     "aws_name": "Equinix DC2/DC11",
     "internal_code": null,
@@ -2564,6 +2675,7 @@
   {
     "code": "EQMI1",
     "region": "us-east-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Equinix MI1 - Miami, Miami, FL, US",
     "aws_name": "Equinix MI1",
     "internal_code": null,
@@ -2588,6 +2700,7 @@
   {
     "code": "EQNY5",
     "region": "us-east-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Equinix NY2/NY4/NY5/NY6 - New York, Secaucus, NJ, US",
     "aws_name": "Equinix NY5",
     "internal_code": null,
@@ -2612,6 +2725,7 @@
   {
     "code": "KIOQ1",
     "region": "us-east-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "KIO Quer\u00e9taro 1 (QRO1), El Marques, MX",
     "aws_name": "KIO Networks QRO 1",
     "internal_code": null,
@@ -2636,6 +2750,7 @@
   {
     "code": "LGT50",
     "region": "us-east-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Crown Castle Philadelphia (401 N Broad), Philadelphia, PA, US",
     "aws_name": "Crown Castle",
     "internal_code": null,
@@ -2660,6 +2775,7 @@
   {
     "code": "MB1SD",
     "region": "us-east-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Markley Group One Summer Street Boston, Boston, MA, US",
     "aws_name": "Markley",
     "internal_code": null,
@@ -2684,6 +2800,7 @@
   {
     "code": "QTDC2",
     "region": "us-east-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "QTS Atlanta-Metro (ATL1), Atlanta, GA, US",
     "aws_name": "QTS ATL1",
     "internal_code": null,
@@ -2708,6 +2825,7 @@
   {
     "code": "TLLPJ",
     "region": "us-east-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Digital Realty IAD (44100 Digital Loudoun), Ashburn, VA, US",
     "aws_name": "Digital Realty IAD38",
     "internal_code": null,
@@ -2732,6 +2850,7 @@
   {
     "code": "TLXA1",
     "region": "us-east-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Digital Realty ATL (56 Marietta), Atlanta, GA, US",
     "aws_name": "Digital Realty ATL13",
     "internal_code": null,
@@ -2756,6 +2875,7 @@
   {
     "code": "COL67",
     "region": "us-east-2",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Cologix COL2, Columbus, OH, US",
     "aws_name": "Cologix COL2",
     "internal_code": null,
@@ -2780,6 +2900,7 @@
   {
     "code": "COLM3",
     "region": "us-east-2",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Cologix MIN3, Minneapolis, MN, US",
     "aws_name": "Cologix MIN3",
     "internal_code": null,
@@ -2804,6 +2925,7 @@
   {
     "code": "CSCH1",
     "region": "us-east-2",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "CoreSite - Chicago (CH1), Chicago, IL, US",
     "aws_name": "CoreSite CH1",
     "internal_code": null,
@@ -2829,6 +2951,7 @@
   {
     "code": "CYOA1",
     "region": "us-east-2",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "CyrusOne Aurora I, Aurora, IL, US",
     "aws_name": "CyrusOne Aurora A1",
     "internal_code": null,
@@ -2852,6 +2975,7 @@
   {
     "code": "CYOW3",
     "region": "us-east-2",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Databank Houston West (HOU1) (HOU2), Houston, TX, US",
     "aws_name": "DataBank HOU3",
     "internal_code": null,
@@ -2876,6 +3000,7 @@
   {
     "code": "EQC50",
     "region": "us-east-2",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Equinix CH1/CH2/CH4 - Chicago, Chicago, IL, US",
     "aws_name": "Equinix CH2",
     "internal_code": null,
@@ -2902,6 +3027,7 @@
   {
     "code": "NPKC1",
     "region": "us-east-2",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Netrality Kansas City - 1102 Grand, Kansas City, MO, US",
     "aws_name": "Netrality Data Centers",
     "internal_code": null,
@@ -2926,6 +3052,7 @@
   {
     "code": "QTS52",
     "region": "us-east-2",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "QTS Chicago (CHI1), Chicago, IL, US",
     "aws_name": "QTS",
     "internal_code": null,
@@ -2950,6 +3077,7 @@
   {
     "code": "CSOW",
     "region": "us-west-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "CoreSite - Los Angeles (LA1) One Wilshire, Los Angeles, CA, US",
     "aws_name": "CoreSite LA1",
     "internal_code": null,
@@ -2974,6 +3102,7 @@
   {
     "code": "CSSV2",
     "region": "us-west-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Coresite - Milpitas (SV2), Milpitas, CA, US",
     "aws_name": "Coresite SV2",
     "internal_code": null,
@@ -2994,6 +3123,7 @@
   {
     "code": "CSSV4",
     "region": "us-west-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "CoreSite - Santa Clara (SV4), Santa Clara, CA, US",
     "aws_name": "CoreSite SV4",
     "internal_code": null,
@@ -3020,6 +3150,7 @@
   {
     "code": "ECPH1",
     "region": "us-west-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "EdgeConneX Phoenix (EDCPHX01), Tempe, AZ, US",
     "aws_name": "EdgeConnex PHX01",
     "internal_code": null,
@@ -3045,6 +3176,7 @@
   {
     "code": "EQLA3",
     "region": "us-west-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Equinix LA3/LA4 - Los Angeles, El Segundo, CA, US",
     "aws_name": "Equinix LA3",
     "internal_code": null,
@@ -3069,6 +3201,7 @@
   {
     "code": "EQSV5",
     "region": "us-west-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Equinix SV1/SV5/SV10 - Silicon Valley, San Jose, CA, US",
     "aws_name": "Equinix SV5",
     "internal_code": null,
@@ -3095,6 +3228,7 @@
   {
     "code": "PNP51",
     "region": "us-west-1",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "PhoenixNAP, Phoenix, AZ, US",
     "aws_name": "PhoenixNAP",
     "internal_code": null,
@@ -3115,6 +3249,7 @@
   {
     "code": "ALN91",
     "region": "us-west-2",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "AlohaNAP, Kapolei, HI, US",
     "aws_name": "AlohaNap",
     "internal_code": null,
@@ -3138,6 +3273,7 @@
   {
     "code": "CSDE1",
     "region": "us-west-2",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "CoreSite - Denver (DE1), Denver, CO, US",
     "aws_name": "CoreSite DE1",
     "internal_code": null,
@@ -3160,6 +3296,7 @@
   {
     "code": "DBLV1",
     "region": "us-west-2",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "DataBank Las Vegas (LAS1), Las Vegas, NV, US",
     "aws_name": "DataBank LAS1",
     "internal_code": null,
@@ -3183,6 +3320,7 @@
   {
     "code": "ECPO1",
     "region": "us-west-2",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "EdgeConneX Portland (EDCPOR01), Hillsboro, OR, US",
     "aws_name": "EdgeConnex",
     "internal_code": null,
@@ -3207,6 +3345,7 @@
   {
     "code": "EQSE2",
     "region": "us-west-2",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Equinix SE2/SE3 - Seattle, Seattle, WA, US",
     "aws_name": "Westin Building Exchange",
     "internal_code": null,
@@ -3233,6 +3372,7 @@
   {
     "code": "PEH51",
     "region": "us-west-2",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "The Pittock, Portland, OR, US",
     "aws_name": "Pittock Block",
     "internal_code": null,
@@ -3257,6 +3397,7 @@
   {
     "code": "SNAP",
     "region": "us-west-2",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Switch Las Vegas, Las Vegas, NV, US",
     "aws_name": "Switch SUPERNAP 8",
     "internal_code": null,
@@ -3281,6 +3422,7 @@
   {
     "code": "T5ALA",
     "region": "us-west-2",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Serverfarm LAX1 Los Angeles, El Segundo, CA, US",
     "aws_name": "Serverfarm LAX1 El Segundo",
     "internal_code": null,
@@ -3302,6 +3444,7 @@
   {
     "code": "TPS19",
     "region": "us-west-2",
+    "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "TierPoint Seattle, Seattle, WA, US",
     "aws_name": "TierPoint",
     "internal_code": null,
