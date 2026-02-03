@@ -23,8 +23,8 @@ with open('data-structures/country-mapping.json', 'r') as f:
     country_mapping_raw = json.load(f)
     country_code_to_name = {v: k for k, v in country_mapping_raw.items() if len(k) > 2}
 
-# Sort by name (location name)
-sorted_locations = sorted(locations, key=lambda x: x['name'])
+# Sort by name (location name), handling None values
+sorted_locations = sorted(locations, key=lambda x: x['name'] or x.get('aws_name', ''))
 
 # Generate HTML
 html = f"""<!DOCTYPE html>
@@ -122,6 +122,13 @@ html = f"""<!DOCTYPE html>
                 <span class="info-icon" data-tooltip="EU Sovereign Cloud is an isolated AWS partition designed to meet strict European data residency and sovereignty requirements. It operates independently from other AWS partitions." onclick="event.stopPropagation()">i</span>
             </div>
         </button>
+        <button class="tab" onclick="switchPartition('aws-cn')" id="tab-aws-cn">
+            <img src="cn.svg" style="height: 1em; width: 1.5em; margin-right: 8px; object-fit: contain;" alt="China">
+            AWS China
+            <div class="partition-info">
+                <span class="info-icon" data-tooltip="AWS China is an isolated AWS partition operated by local partners (Sinnet in Beijing, NWCD in Ningxia) to meet Chinese regulatory requirements. It operates independently from other AWS partitions." onclick="event.stopPropagation()">i</span>
+            </div>
+        </button>
     </div>
     <div class="filters">
         <div class="multi-select" id="countryMultiSelect">
@@ -176,13 +183,14 @@ html = f"""<!DOCTYPE html>
 for loc in sorted_locations:
     # Build location display with PeeringDB name and AWS name
     location_html = ""
+    display_name = loc['name'] or loc.get('aws_name', 'Unknown')
     if loc.get('peeringdb_id'):
-        location_html = f"<a href='https://www.peeringdb.com/fac/{loc['peeringdb_id']}' target='_blank'>{loc['name']}</a>"
+        location_html = f"<a href='https://www.peeringdb.com/fac/{loc['peeringdb_id']}' target='_blank'>{display_name}</a>"
     else:
-        location_html = loc['name']
+        location_html = display_name
     
     # Add AWS name below if different from main name
-    if loc.get('aws_name') and loc['aws_name'] != loc['name']:
+    if loc.get('aws_name') and loc['aws_name'] != display_name:
         location_html += f"<br><code>AWS Name: {loc['aws_name']}</code>"
     
     # Build organization display with PeeringDB link
@@ -190,10 +198,18 @@ for loc in sorted_locations:
     if loc.get('org_id') and loc.get('org_name'):
         org_html = f"<a href='https://www.peeringdb.com/org/{loc['org_id']}' target='_blank'>{loc['org_name']}</a>"
     
-    # Map icon in separate column
+    # Get partition early for use in map icon
+    partition = loc.get('partition', 'aws')
+    
+    # Map icon in separate column with warning for China locations
     map_html = ""
     if loc.get('latitude') and loc.get('longitude'):
-        map_html = f"<a href='https://maps.google.com/?q={loc['latitude']},{loc['longitude']}' target='_blank' title='View on Google Maps'><svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' style='vertical-align: middle;'><path stroke='none' d='M0 0h24v24H0z' fill='none'/><path d='M12 18.5l-3 -1.5l-6 3v-13l6 -3l6 3l6 -3v7.5' /><path d='M9 4v13' /><path d='M15 7v5.5' /><path d='M21.121 20.121a3 3 0 1 0 -4.242 0c.418 .419 1.125 1.045 2.121 1.879c1.051 -.89 1.759 -1.516 2.121 -1.879' /><path d='M19 18v.01' /></svg></a>"
+        if partition == 'aws-cn':
+            # China locations: only show warning icon
+            map_html = '<span class="warning-icon" data-tooltip="Due to the lack of PeeringDB data for AWS Direct Connect colocation facilities in China, all locations are only approximate."><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ffa500" style="vertical-align: middle;"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 1.67c.955 0 1.845 .467 2.39 1.247l.105 .16l8.114 13.548a2.914 2.914 0 0 1 -2.307 4.363l-.195 .008h-16.225a2.914 2.914 0 0 1 -2.582 -4.2l.099 -.185l8.11 -13.538a2.914 2.914 0 0 1 2.491 -1.403zm.01 13.33l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007zm-.01 -7a1 1 0 0 0 -.993 .883l-.007 .117v4l.007 .117a1 1 0 0 0 1.986 0l.007 -.117v-4l-.007 -.117a1 1 0 0 0 -.993 -.883z" /></svg></span>'
+        else:
+            # Other partitions: show Google Maps link
+            map_html = f"<a href='https://maps.google.com/?q={loc['latitude']},{loc['longitude']}' target='_blank' title='View on Google Maps'><svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' style='vertical-align: middle;'><path stroke='none' d='M0 0h24v24H0z' fill='none'/><path d='M12 18.5l-3 -1.5l-6 3v-13l6 -3l6 3l6 -3v7.5' /><path d='M9 4v13' /><path d='M15 7v5.5' /><path d='M21.121 20.121a3 3 0 1 0 -4.242 0c.418 .419 1.125 1.045 2.121 1.879c1.051 -.89 1.759 -1.516 2.121 -1.879' /><path d='M19 18v.01' /></svg></a>"
     
     speeds_unlocked = ', '.join(loc.get('port_speeds', []))
     speeds_macsec = ', '.join(loc.get('macsec_capable', []))
@@ -215,7 +231,6 @@ for loc in sorted_locations:
     country_name = country_code_to_name.get(country_code, country_code)
     country_display = f"{country_name} ({country_code})" if country_code and country_name else ""
     region = loc['region']
-    partition = loc.get('partition', 'aws')
     port_speeds = ','.join(loc.get('port_speeds', []))
     macsec_speeds = ','.join(loc.get('macsec_capable', []))
     org_name = loc.get('org_name', '')
@@ -540,6 +555,8 @@ html += """
             const currentPartition = getCurrentPartition();
             if (currentPartition === 'aws-eusc') {
                 map.setView([50, 10], 4); // EU view for EUSC
+            } else if (currentPartition === 'aws-cn') {
+                map.setView([35, 105], 4); // China view for China
             } else {
                 map.setView([20, 0], 2); // World view for AWS Commercial
             }
@@ -657,6 +674,8 @@ html += """
             // Update map view
             if (partition === 'aws-eusc') {
                 map.setView([50, 10], 4); // Zoom to Europe
+            } else if (partition === 'aws-cn') {
+                map.setView([35, 105], 4); // Zoom to China
             } else {
                 map.setView([20, 0], 2); // Reset to world view
             }
@@ -668,12 +687,12 @@ html += """
             document.getElementById('speedFilter').value = '';
             document.getElementById('macsecFilter').value = '';
             
-            // Only repopulate filters if switching to/from EUSC (different data)
-            // Commercial and GovCloud share the same data, so no need to repopulate
-            const needsRepopulate = (partition === 'aws-eusc' || currentPartition === 'aws-eusc');
+            // Only repopulate filters if switching between different partitions
+            const needsRepopulate = (partition === 'aws-eusc' || partition === 'aws-cn' || currentPartition === 'aws-eusc' || currentPartition === 'aws-cn');
             
             if (needsRepopulate) {
-                populateFilters(partition === 'aws-eusc' ? 'aws-eusc' : 'aws');
+                const filterPartition = (partition === 'aws-eusc') ? 'aws-eusc' : (partition === 'aws-cn') ? 'aws-cn' : 'aws';
+                populateFilters(filterPartition);
             }
             
             currentPartition = partition;

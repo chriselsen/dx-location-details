@@ -29,6 +29,12 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_EUSC_SECRET_ACCESS_KEY }}
         run: python3 scripts/collect_data_eusc.py
       
+      - name: Collect China data
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_CHINA_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_CHINA_SECRET_ACCESS_KEY }}
+        run: python3 scripts/collect_data_china.py
+      
       - name: Configure AWS credentials for Commercial
         uses: aws-actions/configure-aws-credentials@v4
         with:
@@ -44,8 +50,10 @@ jobs:
         run: |
           python3 scripts/generate_csv.py
           python3 scripts/generate_csv_eusc.py
+          python3 scripts/generate_csv_china.py
           python3 scripts/generate_kml.py
           python3 scripts/generate_kml_eusc.py
+          python3 scripts/generate_kml_china.py
           python3 scripts/generate_map_png.py
           python3 scripts/generate_github_pages.py
       

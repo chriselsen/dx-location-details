@@ -3,10 +3,11 @@ import json
 import os
 
 def merge_partitions():
-    """Merge commercial and EUSC partition data into single file"""
+    """Merge commercial, EUSC, and China partition data into single file"""
     
     commercial_file = 'data-structures/dx-locations-data.json'
     eusc_file = 'data-structures/dx-locations-data-eusc.json'
+    china_file = 'data-structures/dx-locations-data-china.json'
     output_file = 'data-structures/dx-locations-data-merged.json'
     
     merged_data = []
@@ -32,6 +33,15 @@ def merge_partitions():
             print(f"Loaded {len(eusc_data)} EUSC locations")
     else:
         print(f"INFO: {eusc_file} not found, skipping EUSC data")
+    
+    # Load China data
+    if os.path.exists(china_file):
+        with open(china_file, 'r') as f:
+            china_data = json.load(f)
+            merged_data.extend(china_data)
+            print(f"Loaded {len(china_data)} China locations")
+    else:
+        print(f"INFO: {china_file} not found, skipping China data")
     
     # Sort by partition, then region, then code
     merged_data.sort(key=lambda x: (x.get('partition', 'aws'), x['region'], x['code']))

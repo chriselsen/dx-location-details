@@ -96,8 +96,9 @@ aws iam put-role-policy \
 
 ### 3. Configure GitHub Repository
 
-Add the IAM role ARN as a GitHub Actions variable:
+Add the IAM role ARN and credentials as GitHub Actions secrets and variables:
 
+#### AWS Commercial Partition (OIDC)
 1. Go to your GitHub repository
 2. Navigate to **Settings** → **Secrets and variables** → **Actions**
 3. Click **New repository variable**
@@ -105,6 +106,26 @@ Add the IAM role ARN as a GitHub Actions variable:
 5. Value: `arn:aws:iam::<AWS_ACCOUNT_ID>:role/GitHubActions-DXLocationDetails`
 
 Replace `<AWS_ACCOUNT_ID>` with your actual AWS account ID.
+
+#### EU Sovereign Cloud (Access Keys)
+1. Go to your GitHub repository
+2. Navigate to **Settings** → **Secrets and variables** → **Actions**
+3. Click **New repository secret**
+4. Add two secrets:
+   - Name: `AWS_EUSC_ACCESS_KEY_ID`
+   - Value: Your EUSC IAM user access key ID
+   - Name: `AWS_EUSC_SECRET_ACCESS_KEY`
+   - Value: Your EUSC IAM user secret access key
+
+#### China Partition (Access Keys)
+1. Go to your GitHub repository
+2. Navigate to **Settings** → **Secrets and variables** → **Actions**
+3. Click **New repository secret**
+4. Add two secrets:
+   - Name: `AWS_CHINA_ACCESS_KEY_ID`
+   - Value: Your China IAM user access key ID
+   - Name: `AWS_CHINA_SECRET_ACCESS_KEY`
+   - Value: Your China IAM user secret access key
 
 ### 4. Verify Setup
 
@@ -116,10 +137,20 @@ The GitHub Actions workflow is now configured to use OIDC authentication. You ca
 
 ## IAM Permissions
 
-The role has minimal permissions required for this workflow:
-
+### AWS Commercial Partition
+The OIDC role has minimal permissions required:
 - `directconnect:DescribeLocations` - Query Direct Connect location information
 - `account:ListRegions` - List enabled AWS regions
+
+### EU Sovereign Cloud
+The IAM user requires:
+- `directconnect:DescribeLocations` - Query Direct Connect location information
+- `ec2:DescribeRegions` - List available regions (alternative to account:ListRegions)
+
+### China Partition
+The IAM user requires:
+- `directconnect:DescribeLocations` - Query Direct Connect location information
+- `ec2:DescribeRegions` - List available regions
 
 These permissions are read-only and scoped to the minimum required for the workflow to function.
 

@@ -1798,5 +1798,59 @@
     "org_name": "TierPoint, LLC",
     "peeringdb_id": "8599",
     "state": "WA"
+  },
+  "MOC2": {
+    "city": "Beijing",
+    "coordinates": {
+      "lat": "39.816829",
+      "lon": "116.552776"
+    },
+    "country": "CN",
+    "facility_name": "CIDS Jiachuang IDC"
+  },
+  "SINJI": {
+    "city": "Beijing",
+    "coordinates": {
+      "lat": "39.985399",
+      "lon": "116.481053"
+    },
+    "country": "CN",
+    "facility_name": "Sinnet Jiuxianqiao IDC"
+  },
+  "IPI50": {
+    "city": "Zhongwei",
+    "coordinates": {
+      "lat": "37.5684",
+      "lon": "105.1873"
+    },
+    "country": "CN",
+    "facility_name": "Industrial Park IDC"
+  },
+  "SHP54": {
+    "city": "Zhongwei",
+    "coordinates": {
+      "lat": "37.63670",
+      "lon": "105.34678"
+    },
+    "country": "CN",
+    "facility_name": "Shapotou IDC"
+  },
+  "GDSH3": {
+    "city": "Shanghai",
+    "coordinates": {
+      "lat": "31.320822",
+      "lon": "121.60532"
+    },
+    "country": "CN",
+    "facility_name": "GDS No. 3 Data Center"
+  },
+  "GDSZ3": {
+    "city": "Shenzhen",
+    "coordinates": {
+      "lat": "22.507249",
+      "lon": "114.045065"
+    },
+    "country": "CN",
+    "facility_name": "GDS No. 3 Data Center"
   }
 }
