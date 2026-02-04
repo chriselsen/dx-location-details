@@ -52,6 +52,12 @@ EQTR2,aws,"Equinix TR2 - Toronto, Toronto, CA","Equinix, Inc.",Equinix TR2,CA,ca
 NTM62,aws,"eStruxture MTL-1, Montreal, CA",eStruxture Data Centers Inc.,eStruxture,CA,ca-central-1,ca-central-1,"1G, 10G, 100G","10G, 100G",1885,45.501394,-73.56192
 EQCL1,aws,"Equinix CL1 - Calgary, Calgary, CA","Equinix, Inc.",Equinix CL1,CA,ca-west-1,ca-west-1,"1G, 10G, 100G","10G, 100G",9553,51.045517,-114.069297
 EQCL3,aws,"Equinix CL3 - Calgary (formerly Q9 Calgary Three), Calgary, CA","Equinix, Inc.",Equinix CL3,CA,ca-west-1,ca-west-1,"1G, 10G, 100G","10G, 100G",3251,50.976971,-113.956677
+MOC2,aws-cn,"CIDS Jiachuang IDC, Beijing, CN",,CIDS Jiachuang IDC,CN,cn-north-1,cn-north-1,"1G, 10G, 100G",,,39.816829,116.552776
+GDSH3,aws-cn,"GDS No. 3 Data Center, Shanghai, CN",,GDS No. 3 DC,CN,cn-north-1,cn-north-1,"1G, 10G",,,31.323104,121.600306
+GDSZ3,aws-cn,"GDS No. 3 Data Center, Shenzhen, CN",,GDS No. 3 DC,CN,cn-north-1,cn-north-1,"1G, 10G",,,22.507249,114.045065
+SINJI,aws-cn,"Sinnet Jiuxianqiao IDC, Beijing, CN",,Sinnet Jiuxianqiao IDC,CN,cn-north-1,cn-north-1,"1G, 10G, 100G",,,39.985399,116.481053
+IPI50,aws-cn,"Industrial Park IDC, Zhongwei, CN",,Industrial Park IDC,CN,cn-northwest-1,cn-northwest-1,"1G, 10G",,,37.5684,105.1873
+SHP54,aws-cn,"Shapotou IDC, Zhongwei, CN",,Shapotou IDC,CN,cn-northwest-1,cn-northwest-1,"1G, 10G",,,37.63670,105.34678
 CDSR1,aws,"C21, Milan, IT",CDLAN SpA,CDLAN srl Via Caldera 21,IT,eu-central-1,eu-central-1,"1G, 10G, 100G","10G, 100G",3519,45.476394,9.103571
 CEC50,aws,"CE Colo Prague, Prague, CZ",CE Colo Czech s.r.o.,CE Colo,CZ,eu-central-1,eu-central-1,"1G, 10G",,214,50.060164,14.482978
 IPB50,aws,"CarrierColo Berlin Luetzow (I/P/B/ site B), Berlin, DE",IPB Internet Provider in Berlin GmbH,IPB GmbH,DE,eu-central-1,eu-central-1,"1G, 10G",10G,445,52.50192,13.36945
