@@ -11,7 +11,7 @@ EQOS1,aws,"Equinix OS1 - Osaka, Osaka, JP","Equinix, Inc.",Equinix OS1,JP,ap-nor
 EQTY2,aws,"Equinix TY2 - Tokyo, Tokyo, JP","Equinix, Inc.",Equinix TY2,JP,ap-northeast-1,ap-northeast-1,"1G, 10G, 100G","10G, 100G",452,35.617432,139.748106
 NEIN2,aws,"SCSK netXDC (SI1/SI2/SI3)/NEC Inzai DC, Inzai-shi, JP",SCSK Corporation,NEC Inzai,JP,ap-northeast-1,ap-northeast-1,"1G, 10G, 100G","10G, 100G",9596,35.808986,140.117527
 TLS10,aws,"Digital Realty ICN10 - Seoul, Mapo-gu, KR",Digital Realty,Digital Realty ICN10,KR,ap-northeast-2,ap-northeast-2,"1G, 10G, 100G","10G, 100G",9210,37.582162,126.886128
-LGKNX,aws,"KINX Gasan, Seoul, KR",KINX Inc.,KINX Gasen,KR,ap-northeast-2,ap-northeast-2,"1G, 10G, 100G",100G,7674,37.482096,126.879733
+LGKNX,aws,"KINX Gasan, Seoul, KR",KINX Inc.,KINX Gasen,KR,ap-northeast-2,ap-northeast-2,"1G, 10G",,7674,37.482096,126.879733
 LGU57,aws,"LG Uplus Pyeongchon IDC, Anyang-si, KR",LG Uplus Corp.,LG U+ Pyeong-Chon Mega Center,KR,ap-northeast-2,ap-northeast-2,"1G, 10G, 100G","10G, 100G",7573,37.397891,126.9648961
 KDOS2,aws,"Telehouse – OSAKA 1&2, Osaka, JP",Telehouse - Global Data Centers,KDDI Telehouse Osaka 2,JP,ap-northeast-3,ap-northeast-3,"1G, 10G, 100G","10G, 100G",3068,34.693119,135.534371
 GPX51,aws,"Equinix MB1 - Mumbai (GPX Mumbai 1), Mumbai, IN","Equinix, Inc.",Equinix MB1,IN,ap-south-1,ap-south-1,"1G, 10G",10G,2310,19.113908,72.892742

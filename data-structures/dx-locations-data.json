@@ -272,12 +272,9 @@
     "ip": null,
     "port_speeds": [
       "1G",
-      "10G",
-      "100G"
+      "10G"
     ],
-    "macsec_capable": [
-      "100G"
-    ]
+    "macsec_capable": []
   },
   {
     "code": "LGU57",
