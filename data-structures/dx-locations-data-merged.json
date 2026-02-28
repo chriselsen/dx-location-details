@@ -137,6 +137,7 @@
     "longitude": "121.458263",
     "ip": null,
     "port_speeds": [
+      "1G",
       "10G",
       "100G"
     ],

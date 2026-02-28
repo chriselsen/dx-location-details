@@ -3,7 +3,7 @@ EANB1,aws,"Africa Data Centres, Nairobi, KE",Africa Data Centres,East Africa Dat
 RCL1,aws,"Rack Centre Lagos, Ikeja, NG",Rack Centre Limited,Rack Centre LGS1,NG,af-south-1,af-south-1,"1G, 10G, 100G","10G, 100G",4411,6.597527,3.373062
 TECT1,aws,"Teraco CT1 Cape Town, Cape Town, ZA",Teraco Data Environments Pty Ltd,Teraco CT1,ZA,af-south-1,af-south-1,"1G, 10G, 100G","10G, 100G",1225,-33.970872,18.465223
 EQHK1,aws,"Equinix HK1 - Hong Kong, Tsuen Wan, HK","Equinix, Inc.",Equinix HK1,HK,ap-east-1,ap-east-1,"1G, 10G, 100G","10G, 100G",170,22.365581,114.11932
-CHT51,aws,"CHT Taipei Banqiao IDC, New Taipei City, TW","Chunghwa Telecom Co., Ltd.",Chunghwa Telecom,TW,ap-east-2,ap-east-2,"10G, 100G","10G, 100G",2886,24.994866,121.458263
+CHT51,aws,"CHT Taipei Banqiao IDC, New Taipei City, TW","Chunghwa Telecom Co., Ltd.",Chunghwa Telecom,TW,ap-east-2,ap-east-2,"1G, 10G, 100G","10G, 100G",2886,24.994866,121.458263
 CFT54,aws,"Chief HD Building Taipei, Taipei, TW",Chief Telecom Inc.,Chief Telecom HD,TW,ap-east-2,ap-east-2,"10G, 100G","10G, 100G",5678,25.074213,121.576784
 ATTC1,aws,"AT TOKYO (CC1/CC2), Tokyo, JP",AT TOKYO Corporation,AT Tokyo Chuo Data Center,JP,ap-northeast-1,ap-northeast-1,"1G, 10G, 100G","10G, 100G",738,35.645435,139.793285
 CFT52,aws,"Chief LY Building Taipei, Taipei, TW",Chief Telecom Inc.,Chief Telecom LY,TW,ap-northeast-1,ap-northeast-1,"1G, 10G",,456,25.073467,121.577519
