@@ -464,9 +464,9 @@
       "lon": "10.810183"
     },
     "country": "NO",
-    "facility_name": "STACK EMEA - OSL01",
+    "facility_name": "OSL01 - Vaultica Data Centers",
     "org_id": 603,
-    "org_name": "STACK EMEA - Nordics",
+    "org_name": "Vaultica Data Centers - NORDICS",
     "peeringdb_id": "345"
   },
   "EANB1": {
@@ -636,7 +636,7 @@
       "lon": "-77.459023"
     },
     "country": "US",
-    "facility_name": "Equinix DC1-DC15, DC21 - Ashburn",
+    "facility_name": "Equinix DC1-DC15,DC21-DC22 - Ashburn",
     "org_id": 2,
     "org_name": "Equinix, Inc.",
     "peeringdb_id": "1",
@@ -1019,6 +1019,24 @@
     "org_name": "Equinix, Inc.",
     "peeringdb_id": "2474"
   },
+  "GDSH3": {
+    "city": "Shanghai",
+    "coordinates": {
+      "lat": "31.323104",
+      "lon": "121.600306"
+    },
+    "country": "CN",
+    "facility_name": "GDS No. 3 Data Center"
+  },
+  "GDSZ3": {
+    "city": "Shenzhen",
+    "coordinates": {
+      "lat": "22.507249",
+      "lon": "114.045065"
+    },
+    "country": "CN",
+    "facility_name": "GDS No. 3 Data Center"
+  },
   "GPX51": {
     "city": "Mumbai",
     "coordinates": {
@@ -1100,8 +1118,17 @@
     "country": "DE",
     "facility_name": "Portus/IPHH HH3 (Wendenstrasse 251)",
     "org_id": 1263,
-    "org_name": "Portus Data Centers Company",
+    "org_name": "Portus Data Centers",
     "peeringdb_id": "7274"
+  },
+  "IPI50": {
+    "city": "Zhongwei",
+    "coordinates": {
+      "lat": "37.5684",
+      "lon": "105.1873"
+    },
+    "country": "CN",
+    "facility_name": "Industrial Park IDC"
   },
   "ITCM2": {
     "city": "Alcobendas",
@@ -1333,6 +1360,15 @@
     "peeringdb_id": "219",
     "state": "MA"
   },
+  "MOC2": {
+    "city": "Beijing",
+    "coordinates": {
+      "lat": "39.816829",
+      "lon": "116.552776"
+    },
+    "country": "CN",
+    "facility_name": "CIDS Jiachuang IDC"
+  },
   "MOILH": {
     "city": "Tirat Carmel",
     "coordinates": {
@@ -1461,7 +1497,7 @@
       "lon": "-122.680792"
     },
     "country": "US",
-    "facility_name": "The Pittock",
+    "facility_name": "PTOR1",
     "org_id": 29970,
     "org_name": "1547 Critical Systems Realty",
     "peeringdb_id": "275",
@@ -1541,6 +1577,24 @@
     "org_id": 2199,
     "org_name": "Sify Technologies Limited",
     "peeringdb_id": "2465"
+  },
+  "SHP54": {
+    "city": "Zhongwei",
+    "coordinates": {
+      "lat": "37.63670",
+      "lon": "105.34678"
+    },
+    "country": "CN",
+    "facility_name": "Shapotou IDC"
+  },
+  "SINJI": {
+    "city": "Beijing",
+    "coordinates": {
+      "lat": "39.985399",
+      "lon": "116.481053"
+    },
+    "country": "CN",
+    "facility_name": "Sinnet Jiuxianqiao IDC"
   },
   "SNAP": {
     "city": "Las Vegas",
@@ -1798,59 +1852,5 @@
     "org_name": "TierPoint, LLC",
     "peeringdb_id": "8599",
     "state": "WA"
-  },
-  "MOC2": {
-    "city": "Beijing",
-    "coordinates": {
-      "lat": "39.816829",
-      "lon": "116.552776"
-    },
-    "country": "CN",
-    "facility_name": "CIDS Jiachuang IDC"
-  },
-  "SINJI": {
-    "city": "Beijing",
-    "coordinates": {
-      "lat": "39.985399",
-      "lon": "116.481053"
-    },
-    "country": "CN",
-    "facility_name": "Sinnet Jiuxianqiao IDC"
-  },
-  "IPI50": {
-    "city": "Zhongwei",
-    "coordinates": {
-      "lat": "37.5684",
-      "lon": "105.1873"
-    },
-    "country": "CN",
-    "facility_name": "Industrial Park IDC"
-  },
-  "SHP54": {
-    "city": "Zhongwei",
-    "coordinates": {
-      "lat": "37.63670",
-      "lon": "105.34678"
-    },
-    "country": "CN",
-    "facility_name": "Shapotou IDC"
-  },
-  "GDSH3": {
-    "city": "Shanghai",
-    "coordinates": {
-      "lat": "31.323104",
-      "lon": "121.600306"
-    },
-    "country": "CN",
-    "facility_name": "GDS No. 3 Data Center"
-  },
-  "GDSZ3": {
-    "city": "Shenzhen",
-    "coordinates": {
-      "lat": "22.507249",
-      "lon": "114.045065"
-    },
-    "country": "CN",
-    "facility_name": "GDS No. 3 Data Center"
   }
 }
