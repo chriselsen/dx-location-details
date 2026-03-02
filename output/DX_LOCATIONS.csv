@@ -78,8 +78,8 @@ ITCM2,aws,"Equinix MD2 - Madrid, Alcobendas, ES","Equinix, Inc.",Equinix Itconic
 EQMU1,aws,"Equinix MU1/MU3 - Munich, Munich, DE","Equinix, Inc.",Equinix MU1,DE,eu-central-1,eu-central-1,"1G, 10G",10G,480,48.143056,11.55584
 EQWA1,aws,"Equinix WA1 - Warsaw, Warsaw, PL","Equinix, Inc.",Equinix WA1,PL,eu-central-1,eu-central-1,"1G, 10G",,509,52.227354,21.003357
 MOILH,aws,"MedOne TC1, Tirat Carmel, IL",Med-1 IC-1 (1999) LTD.,MedOne,IL,eu-central-1,eu-central-1,"1G, 10G, 100G","10G, 100G",7177,32.770949,34.966486
-IPHH3,aws,"Portus/IPHH HH3 (Wendenstrasse 251), Hamburg, DE",Portus Data Centers Company,IPHH H3,DE,eu-central-1,eu-central-1,"1G, 10G",10G,7274,53.550998,10.03825
-DGPU1,aws,"STACK EMEA - OSL01, Oslo, NO",STACK EMEA - Nordics,DigiPlex Ulven,NO,eu-central-1,eu-central-1,"1G, 10G",10G,345,59.924726,10.810183
+DGPU1,aws,"OSL01 - Vaultica Data Centers, Oslo, NO",Vaultica Data Centers - NORDICS,DigiPlex Ulven,NO,eu-central-1,eu-central-1,"1G, 10G",10G,345,59.924726,10.810183
+IPHH3,aws,"Portus/IPHH HH3 (Wendenstrasse 251), Hamburg, DE",Portus Data Centers,IPHH H3,DE,eu-central-1,eu-central-1,"1G, 10G",10G,7274,53.550998,10.03825
 THV52,aws,"Telehouse - Paris 2 (Voltaire - Léon Frot), Paris, FR",Telehouse - Global Data Centers,Telehouse Voltaire,FR,eu-central-1,eu-central-1,"1G, 10G, 100G","10G, 100G",53,48.856654,2.38532
 EQZH5,aws,"Equinix ZH5 - Zurich, Zurich, CH","Equinix, Inc.",Equinix ZH5,CH,eu-central-2,eu-central-2,"1G, 10G, 100G","10G, 100G",1515,47.405667,8.46174
 EQSK1,aws,"Equinix SK1 - Stockholm, Stockholm, SE","Equinix, Inc.",Equinix Sweden SK1,SE,eu-north-1,eu-north-1,"1G, 10G, 100G","10G, 100G",156,59.362574,17.955657
@@ -146,7 +146,7 @@ CSDE1,aws,"CoreSite - Denver (DE1), Denver, CO, US",CoreSite,CoreSite DE1,US,us-
 DBLV1,aws,"DataBank Las Vegas (LAS1), Las Vegas, NV, US","DataBank, Ltd.",DataBank LAS1,US,us-west-2,us-west-2,"10G, 100G","10G, 100G",1594,36.059162,-115.145989
 ECPO1,aws,"EdgeConneX Portland (EDCPOR01), Hillsboro, OR, US",EdgeConneX Inc.,EdgeConnex,US,us-west-2,us-west-2,"1G, 10G, 100G","10G, 100G",1922,45.548296,-122.907473
 EQSE2,aws,"Equinix SE2/SE3 - Seattle, Seattle, WA, US","Equinix, Inc.",Westin Building Exchange,US,us-west-2,us-west-2,"1G, 10G, 100G, 400G","10G, 100G, 400G",86,47.614358,-122.338864
+PEH51,aws,"PTOR1, Portland, OR, US",1547 Critical Systems Realty,Pittock Block,US,us-west-2,us-west-2,"1G, 10G, 100G","10G, 100G",275,45.521366,-122.680792
 T5ALA,aws,"Serverfarm LAX1 Los Angeles, El Segundo, CA, US",Serverfarm,Serverfarm LAX1 El Segundo,US,us-west-2,us-west-2,"1G, 10G, 100G",,4952,33.921614,-118.386551
 SNAP,aws,"Switch Las Vegas, Las Vegas, NV, US","Switch, Ltd.",Switch SUPERNAP 8,US,us-west-2,us-west-2,"1G, 10G, 100G","10G, 100G",770,36.059914,-115.210194
-PEH51,aws,"The Pittock, Portland, OR, US",1547 Critical Systems Realty,Pittock Block,US,us-west-2,us-west-2,"1G, 10G, 100G","10G, 100G",275,45.521366,-122.680792
 TPS19,aws,"TierPoint Seattle, Seattle, WA, US","TierPoint, LLC",TierPoint,US,us-west-2,us-west-2,"1G, 10G",10G,8599,47.619446,-122.34811
