@@ -947,6 +947,18 @@
     "org_name": "Equinix, Inc.",
     "peeringdb_id": "1605"
   },
+    "EQSY5": {
+    "city": "Sydney",
+    "coordinates": {
+      "lat": "-33.918198",
+      "lon": "151.1893"
+    },
+    "country": "AU",
+    "facility_name": "Equinix SY5 - Sydney",
+    "org_id": 2,
+    "org_name": "Equinix, Inc.",
+    "peeringdb_id": "8615"
+  },
   "EQTR2": {
     "city": "Toronto",
     "coordinates": {
