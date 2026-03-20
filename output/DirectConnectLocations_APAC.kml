@@ -270,6 +270,15 @@
     <Point><coordinates>151.192942,-33.911776,0</coordinates></Point>
   </Placemark>
   <Placemark>
+    <name>EQSY5</name>
+    <description><![CDATA[
+      <b>Equinix SY5 - Sydney, Sydney, AU</b><br/>
+      Region: ap-southeast-2
+    ]]></description>
+    <styleUrl>#dx-location</styleUrl>
+    <Point><coordinates>151.1893,-33.918198,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
     <name>GBSY6</name>
     <description><![CDATA[
       <b>Equinix SY6 - Sydney (formerly Metronode Sydney 2), Silverwater, AU</b><br/>
