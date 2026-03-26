@@ -29,7 +29,7 @@ IAMGI,aws,"MEGA-i (iAdvantage Hong Kong), Hong Kong, HK",iAdvantage Hong Kong,iA
 TCCBK,aws,"TCC Technology Data Center- Bangkok, Bangkok, TH","TCC Technology Co., Ltd",TCC,TH,ap-southeast-1,ap-southeast-1,"1G, 10G, 100G","10G, 100G",4139,13.663651,100.651345
 EPVM2,aws,"VITRO Makati 2, Makati, PH",Vitro Inc.,ePLDT VM2,PH,ap-southeast-1,ap-southeast-1,"1G, 10G, 100G","10G, 100G",4809,14.564484,121.022368
 CBHU2,aws,"CDC Canberra HU2, Hume, AU",CDC Data Centres,CDC Hume 2,AU,ap-southeast-2,ap-southeast-2,"10G, 100G","10G, 100G",12416,-35.388831,149.1683
-DCDH6,aws,"Datacom - Orbit Data Centre (Auckland), Auckland, NZ",Datacom Data Centres Ltd,Datacom DH6,NZ,ap-southeast-2,ap-southeast-2,"1G, 10G",10G,2024,-36.740554,174.728988
+DCDH6,aws,"Datacom - Orbit Data Centre (Auckland), Auckland, NZ",Datacom Data Centres Ltd,Datacom DH6,NZ,ap-southeast-2,ap-southeast-2,"1G, 10G, 100G","10G, 100G",2024,-36.740554,174.728988
 EQSY3,aws,"Equinix SY3 - Sydney, Sydney, AU","Equinix, Inc.",Equinix SY1 - SY4,AU,ap-southeast-2,ap-southeast-2,"1G, 10G, 100G","10G, 100G",1605,-33.911776,151.192942
 EQSY5,aws,"Equinix SY5 - Sydney, Sydney, AU","Equinix, Inc.",Equinix SY5,AU,ap-southeast-2,ap-southeast-2,"10G, 100G","10G, 100G",8615,-33.918198,151.1893
 GBSY6,aws,"Equinix SY6 - Sydney (formerly Metronode Sydney 2), Silverwater, AU","Equinix, Inc.",Global Switch SY6,AU,ap-southeast-2,ap-southeast-2,"1G, 10G",,2474,-33.836684,151.053282
