@@ -947,7 +947,7 @@
     "org_name": "Equinix, Inc.",
     "peeringdb_id": "1605"
   },
-    "EQSY5": {
+  "EQSY5": {
     "city": "Sydney",
     "coordinates": {
       "lat": "-33.918198",
@@ -1209,7 +1209,7 @@
       "lon": "5.373865"
     },
     "country": "FR",
-    "facility_name": "Digital Realty Marseille MRS1-3",
+    "facility_name": "Digital Realty Marseille MRS1/2/3/4",
     "org_id": 8592,
     "org_name": "Digital Realty",
     "peeringdb_id": "226"
