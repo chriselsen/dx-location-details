@@ -88,7 +88,7 @@ EQML2,aws,"Equinix ML2 - Milan, Milan, IT","Equinix, Inc.",Equinix ML2,IT,eu-sou
 EQBA1,aws,"Equinix BA1 - Barcelona, Barcelona, ES","Equinix, Inc.",Equinix BA1,ES,eu-south-2,eu-south-2,"10G, 100G","10G, 100G",122,41.351557,2.137457
 ITXD2,aws,"Digital Realty Dublin DUB1-2, Dublin, IE",Digital Realty,Digital Realty DUB2,IE,eu-west-1,eu-west-1,"1G, 10G, 100G","10G, 100G",177,53.334251,-6.365538
 TCSH,aws,"Digital Realty London LHR20, London, GB",Digital Realty,Digital Realty LHR20,GB,eu-west-1,eu-west-1,"1G, 10G",10G,40,51.499819,-0.010775
-ITXM1,aws,"Digital Realty Marseille MRS1-3, Marseille, FR",Digital Realty,Digital Realty MRS1,FR,eu-west-1,eu-west-1,"1G, 10G",,226,43.310818,5.373865
+ITXM1,aws,"Digital Realty Marseille MRS1/2/3/4, Marseille, FR",Digital Realty,Digital Realty MRS1,FR,eu-west-1,eu-west-1,"1G, 10G",,226,43.310818,5.373865
 EIRCL,aws,"Eircom Dublin (Clonshaugh), Dublin, IE",eircom Ltd,Eircom Clonshaugh,IE,eu-west-1,eu-west-1,"1G, 10G",10G,2343,53.400983,-6.218081
 EQDX1,aws,"Equinix DX1 - Dubai, Dubai, AE","Equinix, Inc.",Equinix DX1,AE,eu-west-1,eu-west-1,"1G, 10G",10G,1355,25.02618,55.18695
 EQLD5,aws,"Equinix LD5 - London, Slough, GB","Equinix, Inc.",Equinix LD5,GB,eu-west-1,eu-west-1,"1G, 10G, 100G","10G, 100G",832,51.522463,-0.62905
@@ -103,9 +103,6 @@ EQPA3,aws,"Equinix PA3 - Paris, Paris, FR","Equinix, Inc.",Equinix PA3,FR,eu-wes
 AEBTF,aws-eusc,"AtlasEdge DC Berlin BER001, Berlin, DE",AtlasEdge,Atlas Edge BER001,DE,eusc-de-east-1,eusc-de-east-1,"10G, 100G","10G, 100G",4073,52.527509,13.318852
 IPBTF,aws-eusc,"CarrierColo Berlin Luetzow (I/P/B/ site B), Berlin, DE",IPB Internet Provider in Berlin GmbH,IPB GmbH,DE,eusc-de-east-1,eusc-de-east-1,"10G, 100G","10G, 100G",445,52.50192,13.36945
 ECTL1,aws,"EdgeConneX Tel Aviv (EDCTLV01), Herzliya, IL",EdgeConneX Inc.,Edgeconnex,IL,il-central-1,il-central-1,"1G, 10G",10G,11734,32.052681,34.770992
-BDC52,aws,"AWS Bahrain DC52 MMR, Hamala, BH","Amazon.com, Inc.",AWS Bahrain DC52,BH,me-south-1,me-south-1,"1G, 10G",,8243,26.154542,50.475258
-BDC53,aws,"AWS Bahrain DC53 MMR, Askar, BH","Amazon.com, Inc.",AWS Bahrain DC53,BH,me-south-1,me-south-1,"1G, 10G",,8242,26.2285,50.586
-EQMC1,aws,"Equinix MC1 - Muscat, Muscat, OM","Equinix, Inc.",Equinix MC1 Barka,OM,me-south-1,me-south-1,"1G, 10G",10G,9339,23.7280664,57.7950975
 EQMX1,aws,"Equinix MX1/MX2 - Mexico City, El Marques, MX","Equinix, Inc.",Equinix MX1,MX,mx-central-1,mx-central-1,"10G, 100G","10G, 100G",8434,20.556925,-100.277833
 CIBNA,aws,"Cirion Buenos Aires - BUE1, Buenos Aires, AR",Cirion,Cirion BNARAGMS,AR,sa-east-1,sa-east-1,"1G, 10G, 100G","10G, 100G",1550,-34.590248,-58.467164
 CILIM,aws,"Cirion Lima - LIM1, Santiago de Surco, PE",Cirion,Cirion LIMAPUCD,PE,sa-east-1,sa-east-1,"1G, 10G",10G,6248,-12.094823,-76.973532
@@ -143,7 +140,7 @@ EQLA3,aws,"Equinix LA3/LA4 - Los Angeles, El Segundo, CA, US","Equinix, Inc.",Eq
 EQSV5,aws,"Equinix SV1/SV5/SV10 - Silicon Valley, San Jose, CA, US","Equinix, Inc.",Equinix SV5,US,us-west-1,us-west-1,"1G, 10G, 100G, 400G","10G, 100G, 400G",6,37.241767,-121.782967
 PNP51,aws,"PhoenixNAP, Phoenix, AZ, US",PhoenixNAP,PhoenixNAP,US,us-west-1,us-west-1,"1G, 10G",,917,33.41601,-112.009445
 ALN91,aws,"AlohaNAP, Kapolei, HI, US",HAWAII PACIFIC DATA LLC,AlohaNap,US,us-west-2,us-west-2,"10G, 100G","10G, 100G",3149,21.335728,-158.086738
-CSDE1,aws,"CoreSite - Denver (DE1), Denver, CO, US",CoreSite,CoreSite DE1,US,us-west-2,us-west-2,"1G, 10G",10G,389,39.745636,-104.995636
+CSDE1,aws,"CoreSite - Denver (DE1), Denver, CO, US",CoreSite,CoreSite DE1,US,us-west-2,us-west-2,"1G, 10G, 100G","10G, 100G",389,39.745636,-104.995636
 DBLV1,aws,"DataBank Las Vegas (LAS1), Las Vegas, NV, US","DataBank, Ltd.",DataBank LAS1,US,us-west-2,us-west-2,"10G, 100G","10G, 100G",1594,36.059162,-115.145989
 ECPO1,aws,"EdgeConneX Portland (EDCPOR01), Hillsboro, OR, US",EdgeConneX Inc.,EdgeConnex,US,us-west-2,us-west-2,"1G, 10G, 100G","10G, 100G",1922,45.548296,-122.907473
 EQSE2,aws,"Equinix SE2/SE3 - Seattle, Seattle, WA, US","Equinix, Inc.",Westin Building Exchange,US,us-west-2,us-west-2,"1G, 10G, 100G, 400G","10G, 100G, 400G",86,47.614358,-122.338864

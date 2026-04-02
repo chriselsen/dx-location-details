@@ -2101,7 +2101,7 @@
     "code": "ITXM1",
     "region": "eu-west-1",
     "region_opt_status": "ENABLED_BY_DEFAULT",
-    "name": "Digital Realty Marseille MRS1-3, Marseille, FR",
+    "name": "Digital Realty Marseille MRS1/2/3/4, Marseille, FR",
     "aws_name": "Digital Realty MRS1",
     "internal_code": null,
     "peeringdb_id": "226",
@@ -2296,71 +2296,6 @@
     "country": "IL",
     "latitude": "32.052681",
     "longitude": "34.770992",
-    "ip": null,
-    "port_speeds": [
-      "1G",
-      "10G"
-    ],
-    "macsec_capable": [
-      "10G"
-    ],
-    "partition": "aws"
-  },
-  {
-    "code": "BDC52",
-    "region": "me-south-1",
-    "region_opt_status": "ENABLED",
-    "name": "AWS Bahrain DC52 MMR, Hamala, BH",
-    "aws_name": "AWS Bahrain DC52",
-    "internal_code": null,
-    "peeringdb_id": "8243",
-    "org_id": 1520,
-    "org_name": "Amazon.com, Inc.",
-    "country": "BH",
-    "latitude": "26.154542",
-    "longitude": "50.475258",
-    "ip": null,
-    "port_speeds": [
-      "1G",
-      "10G"
-    ],
-    "macsec_capable": [],
-    "partition": "aws"
-  },
-  {
-    "code": "BDC53",
-    "region": "me-south-1",
-    "region_opt_status": "ENABLED",
-    "name": "AWS Bahrain DC53 MMR, Askar, BH",
-    "aws_name": "AWS Bahrain DC53",
-    "internal_code": null,
-    "peeringdb_id": "8242",
-    "org_id": 1520,
-    "org_name": "Amazon.com, Inc.",
-    "country": "BH",
-    "latitude": "26.2285",
-    "longitude": "50.586",
-    "ip": null,
-    "port_speeds": [
-      "1G",
-      "10G"
-    ],
-    "macsec_capable": [],
-    "partition": "aws"
-  },
-  {
-    "code": "EQMC1",
-    "region": "me-south-1",
-    "region_opt_status": "ENABLED",
-    "name": "Equinix MC1 - Muscat, Muscat, OM",
-    "aws_name": "Equinix MC1 Barka",
-    "internal_code": null,
-    "peeringdb_id": "9339",
-    "org_id": 2,
-    "org_name": "Equinix, Inc.",
-    "country": "OM",
-    "latitude": "23.7280664",
-    "longitude": "57.7950975",
     "ip": null,
     "port_speeds": [
       "1G",
@@ -3311,10 +3246,12 @@
     "ip": null,
     "port_speeds": [
       "1G",
-      "10G"
+      "10G",
+      "100G"
     ],
     "macsec_capable": [
-      "10G"
+      "10G",
+      "100G"
     ],
     "partition": "aws"
   },

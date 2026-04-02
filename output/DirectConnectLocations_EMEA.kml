@@ -335,7 +335,7 @@
   <Placemark>
     <name>ITXM1</name>
     <description><![CDATA[
-      <b>Digital Realty Marseille MRS1-3, Marseille, FR</b><br/>
+      <b>Digital Realty Marseille MRS1/2/3/4, Marseille, FR</b><br/>
       Region: eu-west-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -412,33 +412,6 @@
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
     <Point><coordinates>34.770992,32.052681,0</coordinates></Point>
-  </Placemark>
-  <Placemark>
-    <name>BDC52</name>
-    <description><![CDATA[
-      <b>AWS Bahrain DC52 MMR, Hamala, BH</b><br/>
-      Region: me-south-1
-    ]]></description>
-    <styleUrl>#dx-location</styleUrl>
-    <Point><coordinates>50.475258,26.154542,0</coordinates></Point>
-  </Placemark>
-  <Placemark>
-    <name>BDC53</name>
-    <description><![CDATA[
-      <b>AWS Bahrain DC53 MMR, Askar, BH</b><br/>
-      Region: me-south-1
-    ]]></description>
-    <styleUrl>#dx-location</styleUrl>
-    <Point><coordinates>50.586,26.2285,0</coordinates></Point>
-  </Placemark>
-  <Placemark>
-    <name>EQMC1</name>
-    <description><![CDATA[
-      <b>Equinix MC1 - Muscat, Muscat, OM</b><br/>
-      Region: me-south-1
-    ]]></description>
-    <styleUrl>#dx-location</styleUrl>
-    <Point><coordinates>57.7950975,23.7280664,0</coordinates></Point>
   </Placemark>
 </Document>
 </kml>
