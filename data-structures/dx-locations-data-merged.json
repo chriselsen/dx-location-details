@@ -286,7 +286,9 @@
       "1G",
       "10G"
     ],
-    "macsec_capable": [],
+    "macsec_capable": [
+      "10G"
+    ],
     "partition": "aws"
   },
   {
@@ -2974,13 +2976,11 @@
     "port_speeds": [
       "1G",
       "10G",
-      "100G",
-      "400G"
+      "100G"
     ],
     "macsec_capable": [
       "10G",
-      "100G",
-      "400G"
+      "100G"
     ],
     "partition": "aws"
   },
