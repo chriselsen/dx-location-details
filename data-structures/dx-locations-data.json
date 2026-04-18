@@ -1638,8 +1638,7 @@
     "longitude": "-3.621211",
     "ip": null,
     "port_speeds": [
-      "1G",
-      "10G"
+      "1G"
     ],
     "macsec_capable": []
   },
@@ -2116,10 +2115,7 @@
     "latitude": "53.468674",
     "longitude": "-2.310421",
     "ip": null,
-    "port_speeds": [
-      "1G",
-      "10G"
-    ],
+    "port_speeds": [],
     "macsec_capable": []
   },
   {
