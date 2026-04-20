@@ -96,6 +96,8 @@ html = f"""<!DOCTYPE html>
         .footer {{ margin-top: 30px; padding: 20px; text-align: center; color: #666; font-size: 14px; border-top: 1px solid #ddd; background: white; }}
         .footer a {{ color: #0073bb; text-decoration: none; }}
         .footer a:hover {{ text-decoration: underline; }}
+        .line-label {{ background: white; border: 1px solid #0073bb; border-radius: 3px; padding: 2px 5px; font-size: 11px; color: #232f3e; white-space: nowrap; box-shadow: none; }}
+        .line-label::before {{ display: none; }}
     </style>
 </head>
 <body>
@@ -266,7 +268,7 @@ html += """        </tbody>
         let selectedCode = null;
         let userMarker = null;
         let nearestLines = [];
-        const locationsData = """ + json.dumps([{"code": loc['code'], "lat": loc.get('latitude'), "lon": loc.get('longitude')} for loc in locations if loc.get('latitude') and loc.get('longitude')]) + """;
+        const locationsData = """ + json.dumps([{"code": loc['code'], "lat": float(loc['latitude']), "lon": float(loc['longitude'])} for loc in locations if loc.get('latitude') and loc.get('longitude')]) + """;
         
         // Haversine distance calculation
         function getDistance(lat1, lon1, lat2, lon2) {
@@ -337,13 +339,28 @@ html += """        </tbody>
             
             const nearest = findNearest(e.latlng.lat, e.latlng.lng);
             
-            nearest.forEach(loc => {
+            nearest.forEach((loc, i) => {
+                const distKm = Math.round(loc.distance);
+                const latencyMs = (loc.distance / 100).toFixed(1);
+                const midLat = e.latlng.lat + 0.5 * (loc.lat - e.latlng.lat);
+                const midLon = e.latlng.lng + 0.5 * (loc.lon - e.latlng.lng);
                 const line = L.polyline([[e.latlng.lat, e.latlng.lng], [loc.lat, loc.lon]], {
                     color: '#0073bb',
                     weight: 2,
                     opacity: 0.7
                 }).addTo(map);
+                const offset = (i === 0) ? L.point(-4, -14) : L.point(4, 14);
+                const label = L.tooltip({
+                    permanent: true,
+                    direction: 'center',
+                    className: 'line-label',
+                    offset: offset
+                })
+                    .setContent(distKm + ' km \u00b7 &gt;' + latencyMs + ' ms')
+                    .setLatLng([midLat, midLon])
+                    .addTo(map);
                 nearestLines.push(line);
+                nearestLines.push(label);
             });
             
             const codes = nearest.map(loc => loc.code).join('|');
