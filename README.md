@@ -21,119 +21,89 @@ Automatically generates a sortable wiki table and KML file of AWS Direct Connect
 - `scripts/collect_data.py` - Fetches DX locations from AWS Commercial partition
 - `scripts/collect_data_eusc.py` - Fetches DX locations from EU Sovereign Cloud
 - `scripts/collect_data_china.py` - Fetches DX locations from AWS China partition
-- `scripts/generate_csv.py` - Generates CSV file from collected data
-- `scripts/generate_github_pages.py` - Generates HTML files for GitHub Pages
-- `scripts/add_location.py` - Interactive tool to add new locations to the mapping
+- `scripts/merge_partitions.py` - Merges data from all three partitions
+- `scripts/generate_csv.py` - Generates CSV file for Commercial partition
+- `scripts/generate_csv_eusc.py` - Generates CSV file for EU Sovereign Cloud
+- `scripts/generate_csv_china.py` - Generates CSV file for AWS China
+- `scripts/generate_kml.py` - Generates KML files for Commercial partition
+- `scripts/generate_kml_eusc.py` - Generates KML file for EU Sovereign Cloud
+- `scripts/generate_kml_china.py` - Generates KML file for AWS China
+- `scripts/generate_map_png.py` - Generates world map PNG
+- `scripts/generate_github_pages.py` - Generates HTML page for GitHub Pages
+- `scripts/generate_all.sh` - Runs all generation steps for Commercial partition
+- `scripts/sync_peeringdb.py` - Syncs location data from PeeringDB
+- `scripts/add_location.py` - Adds new locations to the mapping
+- `scripts/install_map_deps.sh` - Installs dependencies for map PNG generation
 - `data-structures/location-mapping.json` - Mapping of location codes to PeeringDB IDs and coordinates
 
-## Workflow
+## Automation
+The repository automatically updates daily via GitHub Actions (`.github/workflows/daily-update.yml`):
+- Collects data from all three partitions (Commercial, EU Sovereign Cloud, China)
+- Regenerates all outputs (CSV, KML, PNG, GitHub Pages)
+- Only commits if data has actually changed
 
-### Quick Start - Generate All Outputs
-To run all generation steps at once (recommended for weekly updates):
+## Manual Workflow
+
+### 0. Install Dependencies (First Time Only)
+```bash
+bash scripts/install_map_deps.sh
+```
+Installs `matplotlib` and `cartopy` for world map PNG generation.
+
+### 1. Collect Data
+Fetch DX locations from AWS for all partitions and merge:
+```bash
+python3 scripts/collect_data.py
+python3 scripts/collect_data_eusc.py
+python3 scripts/collect_data_china.py
+python3 scripts/merge_partitions.py
+```
+
+**Prerequisites:** AWS CLI must be installed and configured with credentials for each partition.
+
+### 2. Generate All Outputs
+Run all generation steps at once:
 ```bash
 bash scripts/generate_all.sh
 ```
 
-This runs steps 1-5 in sequence:
-1. Collect data from AWS
-2. Generate CSV file
-3. Generate KML files
-4. Generate world map PNG
-5. Generate GitHub Pages HTML
+This generates:
+- CSV files for all partitions → `output/DX_LOCATIONS*.csv`
+- KML files for all partitions → `output/DirectConnectLocations*.kml`
+- World map PNG → `output/DX_Locations.png`
+- GitHub Pages HTML → `docs/index.html`
 
-### Individual Steps
-
-### 0. Install Dependencies (First Time Only)
-Before generating the world map PNG, install required dependencies:
-```bash
-bash scripts/install_map_deps.sh
-```
-
-This installs:
-- `matplotlib` - For plotting and image generation
-- `cartopy` - For geographic map projections
-
-### 1. Collect Data
-Fetches all DX locations from AWS and merges with the mapping file:
-```bash
-python3 scripts/collect_data.py
-```
-
-**Prerequisites:** AWS CLI must be installed and configured with credentials. All AWS regions must be enabled for the account.
-
-This creates `data-structures/dx-locations-data.json` with complete location information.
-
-### 2. Generate CSV File
-Creates a CSV file with all location data:
-```bash
-python3 scripts/generate_csv.py
-```
-
-Output: `output/DX_LOCATIONS.csv`
-
-### 3. Generate KML Files
-Creates KML files for Google Maps/Earth with custom icon:
-```bash
-python3 scripts/generate_kml.py
-```
-
-Outputs:
-- `output/DirectConnectLocations.kml` - All locations
-- `output/DirectConnectLocations_APAC.kml` - Asia Pacific locations
-- `output/DirectConnectLocations_EMEA.kml` - Europe, Middle East, Africa locations
-- `output/DirectConnectLocations_NA.kml` - North America locations
-- `output/DirectConnectLocations_SA.kml` - South America locations
-
-The icon used in KML files is defined in `icons/icon.txt` (base64-encoded image).
-
-### 4. Generate World Map PNG
-Creates a world map visualization with all DX locations:
-```bash
-python3 scripts/generate_map_png.py
-```
-
-Output: `output/DX_Locations.png`
-
-### 5. Generate GitHub Pages
-Creates HTML files for GitHub Pages with interactive table and map:
-```bash
-python3 scripts/generate_github_pages.py
-```
-
-Outputs:
-- `docs/index.html` - Interactive page with integrated map and sortable/filterable table
-
-### 6. Sync with PeeringDB
-Updates country codes, coordinates, and organization data from PeeringDB for all locations:
+### 3. Sync with PeeringDB (Periodic)
+Updates country codes, coordinates, and organization data from PeeringDB:
 ```bash
 python3 scripts/sync_peeringdb.py
 ```
-
-This script:
-- Fetches country codes, coordinates, state (for US), and organization information from PeeringDB API
-- Updates entries if data has changed in PeeringDB
+- Fetches country, coordinates, state (US only), and organization info from PeeringDB API
+- Only updates entries where data has changed
 - Respects rate limiting (1 request/second with exponential backoff)
 - Takes ~2-3 minutes for all locations
 
-Run this periodically to keep location data synchronized with PeeringDB.
+### 4. Add New Locations
 
-### 7. Add New Locations
-When new DX locations appear in AWS, use the interactive tool:
+#### Option A: Via GitHub Actions (no local setup required)
+Trigger the **Add New DX Location** workflow from the GitHub Actions tab:
+- Go to **Actions** → **Add New DX Location** → **Run workflow**
+- Enter the AWS location code and optionally a PeeringDB facility ID
+- The workflow adds the location, regenerates all outputs, and commits automatically
 
+#### Option B: Locally
 ```bash
 python3 scripts/add_location.py
 ```
-
-The tool will prompt you for:
+The tool prompts for:
 - **Location code**: AWS location code (e.g., TCCBK)
-- **PeeringDB ID**: PeeringDB facility ID (optional - press Enter to skip)
+- **PeeringDB ID**: PeeringDB facility ID (optional)
 
-If you provide a PeeringDB ID, the tool will automatically fetch the facility name and coordinates from PeeringDB.
+If a PeeringDB ID is provided, facility name, coordinates, and organization are fetched automatically.
 
 After adding a location, regenerate the data:
 ```bash
-python3 scripts/collect_data.py
-python3 scripts/generate_csv.py
+bash scripts/generate_all.sh
 ```
 
 ## Location Code Normalization
@@ -158,9 +128,9 @@ The system automatically normalizes location codes:
 The repository publishes an interactive HTML page via GitHub Pages:
 - **Interactive Table with Map**: https://chriselsen.github.io/dx-location-details/
 
-The page features a tabbed interface allowing users to switch between:
+The page features a tabbed interface with:
 - **AWS Commercial Partition**: Global Direct Connect locations
 - **EU Sovereign Cloud**: European locations in the isolated EU partition
 - **AWS China**: China locations in the isolated China partition operated by local partners
 
-This page is automatically updated daily via GitHub Actions.
+Click anywhere on the map to find the two nearest DX locations, with distance and minimum RTT latency displayed.
