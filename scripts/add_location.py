@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
+import argparse
 import json
 import requests
+import sys
 import time
 
 def get_peeringdb_info(peeringdb_id):
@@ -32,27 +34,38 @@ def get_peeringdb_info(peeringdb_id):
     return None
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--code')
+    parser.add_argument('--peeringdb-id', default='')
+    args = parser.parse_args()
+    cli_mode = args.code is not None
+
     mapping_file = 'data-structures/location-mapping.json'
     
     # Load existing mapping
     with open(mapping_file, 'r') as f:
         mapping = json.load(f)
     
-    print("=== Add New DX Location ===\n")
-    
-    # Get input
-    code = input("Location code (e.g., TCCBK): ").strip().upper()
-    if not code:
-        print("Error: Code is required")
-        return
-    
-    if code in mapping:
-        print(f"Warning: {code} already exists in mapping")
-        overwrite = input("Overwrite? (y/n): ").strip().lower()
-        if overwrite != 'y':
+    if cli_mode:
+        code = args.code.strip().upper()
+        peeringdb_id = args.peeringdb_id.strip()
+        if not code:
+            print("Error: Code is required")
+            sys.exit(1)
+        if code in mapping:
+            print(f"Warning: {code} already exists in mapping, overwriting")
+    else:
+        print("=== Add New DX Location ===\n")
+        code = input("Location code (e.g., TCCBK): ").strip().upper()
+        if not code:
+            print("Error: Code is required")
             return
-    
-    peeringdb_id = input("PeeringDB ID (or press Enter to skip): ").strip()
+        if code in mapping:
+            print(f"Warning: {code} already exists in mapping")
+            overwrite = input("Overwrite? (y/n): ").strip().lower()
+            if overwrite != 'y':
+                return
+        peeringdb_id = input("PeeringDB ID (or press Enter to skip): ").strip()
     
     # Create entry
     entry = {

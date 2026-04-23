@@ -1,0 +1,81 @@
+name: Add New DX Location
+
+on:
+  workflow_dispatch:
+    inputs:
+      location_code:
+        description: 'AWS location code (e.g. TCCBK)'
+        required: true
+      peeringdb_id:
+        description: 'PeeringDB facility ID (optional)'
+        required: false
+        default: ''
+
+permissions:
+  id-token: write
+  contents: write
+
+jobs:
+  add-location:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Add location to mapping
+        run: |
+          python3 scripts/add_location.py \
+            --code "${{ github.event.inputs.location_code }}" \
+            --peeringdb-id "${{ github.event.inputs.peeringdb_id }}"
+
+      - name: Install map dependencies
+        run: bash scripts/install_map_deps.sh
+
+      - name: Collect EUSC data
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_EUSC_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_EUSC_SECRET_ACCESS_KEY }}
+        run: python3 scripts/collect_data_eusc.py
+
+      - name: Collect China data
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_CHINA_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_CHINA_SECRET_ACCESS_KEY }}
+        run: python3 scripts/collect_data_china.py
+
+      - name: Configure AWS credentials for Commercial
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ vars.AWS_ROLE_ARN }}
+          aws-region: us-east-1
+
+      - name: Collect Commercial data and merge partitions
+        run: |
+          python3 scripts/collect_data.py
+          python3 scripts/merge_partitions.py
+
+      - name: Generate all outputs
+        run: |
+          python3 scripts/generate_csv.py
+          python3 scripts/generate_csv_eusc.py
+          python3 scripts/generate_csv_china.py
+          python3 scripts/generate_kml.py
+          python3 scripts/generate_kml_eusc.py
+          python3 scripts/generate_kml_china.py
+          python3 scripts/generate_map_png.py
+          python3 scripts/generate_github_pages.py
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add -A
+          git commit -m "Add DX location ${{ github.event.inputs.location_code }}"
+          git push
