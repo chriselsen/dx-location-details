@@ -1088,11 +1088,11 @@
   "INX6": {
     "city": "Frankfurt",
     "coordinates": {
-      "lat": "50.11967",
-      "lon": "8.73463"
+      "lat": "50.11925",
+      "lon": "8.735199"
     },
     "country": "DE",
-    "facility_name": "Digital Realty Frankfurt FRA1-16",
+    "facility_name": "Digital Realty Frankfurt FRA1-27",
     "org_id": 8592,
     "org_name": "Digital Realty",
     "peeringdb_id": "58"
