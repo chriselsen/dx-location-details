@@ -119,11 +119,11 @@
   <Placemark>
     <name>INX6</name>
     <description><![CDATA[
-      <b>Digital Realty Frankfurt FRA1-16, Frankfurt, DE</b><br/>
+      <b>Digital Realty Frankfurt FRA1-27, Frankfurt, DE</b><br/>
       Region: eu-central-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
-    <Point><coordinates>8.73463,50.11967,0</coordinates></Point>
+    <Point><coordinates>8.735199,50.11925,0</coordinates></Point>
   </Placemark>
   <Placemark>
     <name>IPB50</name>
