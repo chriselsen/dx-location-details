@@ -66,7 +66,7 @@ ITXA7,aws,"Digital Realty Amsterdam AMS3, Amsterdam, NL",Digital Realty,Digital 
 ITXA1,aws,"Digital Realty Athens Campus (ATH1, Koropi, GR",Digital Realty,Digital Realty ATH3,GR,eu-central-1,eu-central-1,"10G, 100G","10G, 100G",1949,37.871339,23.870251
 ITXC2,aws,"Digital Realty Copenhagen CPH1-3, Copenhagen, DK",Digital Realty,Digital Realty CPH2,DK,eu-central-1,eu-central-1,"1G, 10G",10G,148,55.728092,12.377482
 INX6,aws,"Digital Realty Frankfurt FRA1-27, Frankfurt, DE",Digital Realty,Digital Realty FRA6,DE,eu-central-1,eu-central-1,"1G, 10G, 100G","10G, 100G",58,50.11925,8.735199
-ITXM2,aws,"Digital Realty Madrid MAD1-2, Madrid, ES",Digital Realty,Digital Realty MAD2,ES,eu-central-1,eu-central-1,1G,,130,40.439323,-3.621211
+ITXM2,aws,"Digital Realty Madrid MAD1-2, Madrid, ES",Digital Realty,Digital Realty MAD2,ES,eu-central-1,eu-central-1,,,130,40.439323,-3.621211
 ITXM3,aws,"Digital Realty Madrid MAD3, Madrid, ES",Digital Realty,Digital Realty MAD3,ES,eu-central-1,eu-central-1,"10G, 100G","10G, 100G",7414,40.433899,-3.62408
 ITXS1,aws,"Digital Realty Stockholm STO1-6, Stockholm, SE",Digital Realty,Digital Realty STO1,SE,eu-central-1,eu-central-1,"1G, 10G, 100G","10G, 100G",208,59.422226,17.916696
 ITXV2,aws,"Digital Realty Vienna VIE1-2, Vienna, AT",Digital Realty,Digital Realty VIE2,AT,eu-central-1,eu-central-1,"1G, 10G",10G,67,48.269027,16.410613

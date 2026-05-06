@@ -1707,9 +1707,7 @@
     "latitude": "40.439323",
     "longitude": "-3.621211",
     "ip": null,
-    "port_speeds": [
-      "1G"
-    ],
+    "port_speeds": [],
     "macsec_capable": [],
     "partition": "aws"
   },
