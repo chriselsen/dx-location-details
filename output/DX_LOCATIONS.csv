@@ -129,7 +129,7 @@ COLM3,aws,"Cologix MIN3, Minneapolis, MN, US","Cologix, Inc.",Cologix MIN3,US,us
 CSCH1,aws,"CoreSite - Chicago (CH1), Chicago, IL, US",CoreSite,CoreSite CH1,US,us-east-2,us-east-2,"10G, 100G","10G, 100G",440,41.876212,-87.631453
 CYOA1,aws,"CyrusOne Aurora I, Aurora, IL, US",CyrusOne Inc.,CyrusOne Aurora A1,US,us-east-2,us-east-2,"10G, 100G","10G, 100G",3143,41.796754,-88.24276
 CYOW3,aws,"Databank Houston West (HOU1) (HOU2), Houston, TX, US","DataBank, Ltd.",DataBank HOU3,US,us-east-2,us-east-2,"1G, 10G, 100G","10G, 100G",1476,29.844182,-95.556656
-EQC50,aws,"Equinix CH1/CH2/CH4 - Chicago, Chicago, IL, US","Equinix, Inc.",Equinix CH2,US,us-east-2,us-east-2,"1G, 10G, 100G","10G, 100G",7,41.85365,-87.618342
+EQC50,aws,"Equinix CH1/CH2/CH4 - Chicago, Chicago, IL, US","Equinix, Inc.",Equinix CH2,US,us-east-2,us-east-2,"1G, 10G",10G,7,41.85365,-87.618342
 NPKC1,aws,"Netrality Kansas City - 1102 Grand, Kansas City, MO, US",Netrality Data Centers,Netrality Data Centers,US,us-east-2,us-east-2,"1G, 10G, 100G","10G, 100G",435,39.100941,-94.581036
 QTS52,aws,"QTS Chicago (CHI1), Chicago, IL, US","QTS Realty Trust, Inc.",QTS,US,us-east-2,us-east-2,"1G, 10G, 100G","10G, 100G",3362,41.841895,-87.668306
 CSOW,aws,"CoreSite - Los Angeles (LA1) One Wilshire, Los Angeles, CA, US",CoreSite,CoreSite LA1,US,us-west-1,us-west-1,"1G, 10G, 100G","10G, 100G",19,34.047942,-118.255564
