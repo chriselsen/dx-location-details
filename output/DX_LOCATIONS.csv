@@ -96,7 +96,7 @@ EQLS1,aws,"Equinix LS1 - Lisbon, Lisbon, PT","Equinix, Inc.",Equinix LS1,PT,eu-w
 SCDB9,aws,"Servecentric (Blanchardstown), Dublin, IE",ServeCentric Ltd. (Blanchardstown),Servecentric Unit 9,IE,eu-west-1,eu-west-1,"1G, 10G, 100G","10G, 100G",5901,53.412959,-6.373212
 ETIFJ,aws,"SmartHub Fujairah, Fujairah, AE",Etisalat,Etisalat Smart Hub Data Center,AE,eu-west-1,eu-west-1,"1G, 10G",10G,1493,25.131143,56.336378
 TEJB1,aws,"Teraco Johannesburg Campus, Johannesburg, ZA",Teraco Data Environments Pty Ltd,Teraco JB1,ZA,eu-west-1,eu-west-1,"1G, 10G, 100G","10G, 100G",850,-26.137957,28.197517
-EQMA3,aws,"Equinix MA3 - Manchester, Manchester, GB","Equinix, Inc.",Equinix MA3,GB,eu-west-2,eu-west-2,10G,,1403,53.468674,-2.310421
+EQMA3,aws,"Equinix MA3 - Manchester, Manchester, GB","Equinix, Inc.",Equinix MA3,GB,eu-west-2,eu-west-2,"1G, 10G",,1403,53.468674,-2.310421
 THNO2,aws,"Telehouse - London (Docklands West), London, GB",Telehouse - Global Data Centers,Telehouse West,GB,eu-west-2,eu-west-2,"1G, 10G, 100G","10G, 100G",835,51.511776,-0.002927
 ITXP7,aws,"Digital Realty Paris PAR7, Paris, FR",Digital Realty,Digital Realty PAR7,FR,eu-west-3,eu-west-3,"1G, 10G",,1536,48.924907,2.403
 EQPA3,aws,"Equinix PA3 - Paris, Paris, FR","Equinix, Inc.",Equinix PA3,FR,eu-west-3,eu-west-3,"1G, 10G, 100G","10G, 100G",717,48.927166,2.350664

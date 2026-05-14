@@ -2205,6 +2205,7 @@
     "longitude": "-2.310421",
     "ip": null,
     "port_speeds": [
+      "1G",
       "10G"
     ],
     "macsec_capable": [],
