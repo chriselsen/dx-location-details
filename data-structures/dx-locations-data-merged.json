@@ -1464,7 +1464,7 @@
     "region": "eu-central-1",
     "region_opt_status": "ENABLED_BY_DEFAULT",
     "name": "Equinix IL4 - Istanbul, Istanbul, TR",
-    "aws_name": "Equinix IL4 Istanbul",
+    "aws_name": "Equinix IL4",
     "internal_code": null,
     "peeringdb_id": "15498",
     "org_id": 2,
