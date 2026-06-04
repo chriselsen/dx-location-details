@@ -1922,10 +1922,7 @@
     "latitude": "45.448684",
     "longitude": "9.147436",
     "ip": null,
-    "port_speeds": [
-      "1G",
-      "10G"
-    ],
+    "port_speeds": [],
     "macsec_capable": [],
     "partition": "aws"
   },
