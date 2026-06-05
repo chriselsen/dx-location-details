@@ -35,72 +35,134 @@ html = f"""<!DOCTYPE html>
     <title>AWS Direct Connect Locations</title>
     <link rel="icon" type="image/jpeg" href="{icon_data}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="alternate" type="application/json" href="locations.json" title="AWS Direct Connect Locations Data (machine-readable)">
     <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
     <style>
-        body {{ font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }}
+        body {{ font-family: "Amazon Ember", "Helvetica Neue", Roboto, Arial, sans-serif; margin: 20px; background: #ffffff; }}
         h1 {{ color: #232f3e; display: flex; align-items: center; gap: 10px; }}
         h1 img {{ height: 40px; width: 40px; }}
-        #map {{ height: 500px; width: 100%; margin-bottom: 20px; border: 2px solid #ddd; border-radius: 4px; background: white; position: relative; }}
-        .home-button {{ position: absolute; bottom: 10px; left: 10px; z-index: 1000; background: white; border: 2px solid #ccc; border-radius: 4px; padding: 8px 12px; cursor: pointer; font-size: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.2); }}
-        .home-button:hover {{ background: #f0f0f0; }}
-        .tabs {{ display: flex; margin-bottom: 20px; border-bottom: 2px solid #ddd; }}
-        .tab {{ padding: 12px 24px; cursor: pointer; border: none; background: none; font-size: 16px; color: #666; border-bottom: 3px solid transparent; transition: all 0.3s ease; }}
-        .tab:hover {{ color: #232f3e; background: #f5f5f5; }}
-        .tab.active {{ color: #232f3e; border-bottom-color: #0073bb; background: white; font-weight: 600; }}
+        #map {{ height: 500px; width: 100%; margin-bottom: 20px; border: 1px solid #d5dbdb; border-radius: 8px; background: white; position: relative; }}
+        .home-button {{ position: absolute; bottom: 10px; left: 10px; z-index: 1000; background: white; border: 1px solid #d5dbdb; border-radius: 8px; padding: 8px 12px; cursor: pointer; font-size: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }}
+        .home-button:hover {{ background: #f2f3f3; }}
+        .tabs {{ display: flex; margin-bottom: 20px; border-bottom: 2px solid #d5dbdb; }}
+        .tab {{ padding: 12px 24px; cursor: pointer; border: none; background: none; font-size: 16px; color: #687078; border-bottom: 3px solid transparent; transition: all 0.3s ease; }}
+        .tab:hover {{ color: #232f3e; background: #f2f3f3; }}
+        .tab.active {{ color: #232f3e; border-bottom-color: #ff9900; background: white; font-weight: 600; }}
         .partition-info {{ display: inline-flex; align-items: center; gap: 8px; margin-left: 8px; }}
         .filters {{ display: flex; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; align-items: flex-start; }}
-        .filters select {{ padding: 8px 12px; border: 2px solid #ddd; border-radius: 4px; font-size: 14px; background: white; cursor: pointer; }}
-        .filters select:hover {{ border-color: #999; }}
+        .filters select {{ padding: 8px 12px; border: 1px solid #d5dbdb; border-radius: 8px; font-size: 14px; background: white; cursor: pointer; }}
+        .filters select:hover {{ border-color: #879596; }}
         .multi-select {{ position: relative; min-width: 200px; }}
-        .multi-select-trigger {{ padding: 8px 12px; border: 2px solid #ddd; border-radius: 4px; font-size: 14px; background: white; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 8px; }}
-        .multi-select-trigger:hover {{ border-color: #999; }}
-        .multi-select-trigger.active {{ border-color: #0073bb; }}
-        .multi-select-dropdown {{ position: absolute; top: 100%; left: 0; min-width: 250px; background: white; border: 2px solid #ddd; border-radius: 4px; margin-top: 4px; max-height: 300px; overflow-y: auto; display: none; z-index: 1000; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }}
+        .multi-select-trigger {{ padding: 8px 12px; border: 1px solid #d5dbdb; border-radius: 8px; font-size: 14px; background: white; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 8px; }}
+        .multi-select-trigger:hover {{ border-color: #879596; }}
+        .multi-select-trigger.active {{ border-color: #ff9900; }}
+        .multi-select-dropdown {{ position: absolute; top: 100%; left: 0; min-width: 250px; background: white; border: 1px solid #d5dbdb; border-radius: 8px; margin-top: 4px; max-height: 300px; overflow-y: auto; display: none; z-index: 1000; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }}
         .multi-select-dropdown.show {{ display: block; }}
-        .multi-select-actions {{ display: flex; gap: 8px; padding: 8px; border-bottom: 1px solid #ddd; background: #f9f9f9; }}
-        .multi-select-actions button {{ padding: 4px 12px; border: 1px solid #ddd; border-radius: 3px; background: white; cursor: pointer; font-size: 12px; flex: 1; }}
-        .multi-select-actions button:hover {{ background: #e8e8e8; }}
+        .multi-select-actions {{ display: flex; gap: 8px; padding: 8px; border-bottom: 1px solid #eaeded; background: #f2f3f3; }}
+        .multi-select-actions button {{ padding: 4px 12px; border: 1px solid #d5dbdb; border-radius: 4px; background: white; cursor: pointer; font-size: 12px; flex: 1; }}
+        .multi-select-actions button:hover {{ background: #eaeded; }}
         .multi-select-option {{ padding: 8px 12px; cursor: pointer; display: flex; align-items: center; gap: 8px; }}
-        .multi-select-option:hover {{ background: #f0f0f0; }}
+        .multi-select-option:hover {{ background: #f2f3f3; }}
         .multi-select-option input[type="checkbox"] {{ cursor: pointer; }}
         .country-tags {{ display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }}
-        .country-tag {{ display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; background: #0073bb; color: white; border-radius: 16px; font-size: 13px; }}
+        .country-tag {{ display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; background: #ff9900; color: white; border-radius: 16px; font-size: 13px; }}
         .country-tag button {{ background: none; border: none; color: white; cursor: pointer; font-size: 16px; padding: 0; margin: 0; line-height: 1; }}
-        .country-tag button:hover {{ color: #ffcccc; }}
-        .reset-filters {{ padding: 8px 16px; border: 2px solid #ddd; border-radius: 4px; font-size: 14px; background: white; cursor: pointer; display: none; }}
-        .reset-filters:hover {{ background: #f0f0f0; border-color: #999; }}
-        .location-count {{ padding: 8px 12px; font-size: 14px; color: #666; }}
+        .country-tag button:hover {{ color: #fff3e0; }}
+        .reset-filters {{ padding: 8px 16px; border: 1px solid #d5dbdb; border-radius: 8px; font-size: 14px; background: white; cursor: pointer; display: none; }}
+        .reset-filters:hover {{ background: #f2f3f3; border-color: #879596; }}
+        .location-count {{ padding: 8px 12px; font-size: 14px; color: #687078; }}
         .search-container {{ position: relative; margin-bottom: 15px; }}
-        #searchInput {{ width: 100%; padding: 12px 40px 12px 12px; border: 2px solid #ddd; border-radius: 4px; font-size: 16px; box-sizing: border-box; }}
-        .clear-btn {{ position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: none; border: none; font-size: 20px; cursor: pointer; color: #999; display: none; }}
-        .clear-btn:hover {{ color: #333; }}
-        table {{ width: 100%; border-collapse: collapse; background: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }}
+        #searchInput {{ width: 100%; padding: 12px 40px 12px 12px; border: 1px solid #d5dbdb; border-radius: 8px; font-size: 16px; box-sizing: border-box; }}
+        .clear-btn {{ position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: none; border: none; font-size: 20px; cursor: pointer; color: #879596; display: none; }}
+        .clear-btn:hover {{ color: #232f3e; }}
+        table {{ width: 100%; border-collapse: collapse; background: white; box-shadow: 0 1px 3px rgba(0,0,0,0.08); border-radius: 8px; overflow: hidden; }}
         th {{ background: #232f3e; color: white; padding: 12px; text-align: left; cursor: pointer; user-select: none; position: relative; }}
         th:hover {{ background: #37475a; }}
         th.no-sort {{ cursor: default; }}
         th.no-sort:hover {{ background: #232f3e; }}
         th.asc::after {{ content: ' ▲'; position: absolute; right: 10px; }}
         th.desc::after {{ content: ' ▼'; position: absolute; right: 10px; }}
-        td {{ padding: 10px; border-bottom: 1px solid #ddd; }}
+        td {{ padding: 10px; border-bottom: 1px solid #eaeded; }}
         tbody tr {{ cursor: pointer; }}
-        tr:hover {{ background: #f9f9f9; }}
+        tr:hover {{ background: #f2f3f3; }}
         a {{ color: #0073bb; text-decoration: none; }}
         a:hover {{ text-decoration: underline; }}
-        .info-icon {{ display: inline-block; width: 16px; height: 16px; line-height: 16px; text-align: center; background: #0073bb; color: white; border-radius: 50%; font-size: 12px; font-weight: bold; margin-left: 5px; cursor: help; position: relative; }}
-        .info-icon:hover::after {{ content: attr(data-tooltip); position: absolute; bottom: 125%; right: 0; background: #333; color: white; padding: 8px 12px; border-radius: 4px; white-space: normal; width: 300px; font-size: 13px; font-weight: normal; z-index: 1000; line-height: 1.4; }}
-        .info-icon:hover::before {{ content: ''; position: absolute; bottom: 115%; right: 10px; border: 6px solid transparent; border-top-color: #333; }}
-        .warning-icon {{ display: inline-block; margin-left: 5px; cursor: help; position: relative; vertical-align: text-top; }}
-        .warning-icon svg {{ width: 24px; height: 24px; color: #ff9800; display: block; }}
-        .warning-icon:hover::after {{ content: attr(data-tooltip); position: absolute; bottom: 125%; right: 0; background: #333; color: white; padding: 8px 12px; border-radius: 4px; white-space: normal; width: 300px; font-size: 13px; font-weight: normal; z-index: 1000; line-height: 1.4; pointer-events: none; }}
-        .warning-icon:hover::before {{ content: ''; position: absolute; bottom: 115%; right: 10px; border: 6px solid transparent; border-top-color: #333; pointer-events: none; }}
-        .footer {{ margin-top: 30px; padding: 20px; text-align: center; color: #666; font-size: 14px; border-top: 1px solid #ddd; background: white; }}
-        .footer a {{ color: #0073bb; text-decoration: none; }}
-        .footer a:hover {{ text-decoration: underline; }}
-        .line-label {{ background: white; border: 1px solid #0073bb; border-radius: 3px; padding: 2px 5px; font-size: 11px; color: #232f3e; white-space: nowrap; box-shadow: none; }}
+        .info-icon {{ display: inline-flex; align-items: center; justify-content: center; width: 16px; height: 16px; margin-left: 5px; cursor: help; position: relative; vertical-align: middle; }}
+        .info-icon svg {{ width: 16px; height: 16px; fill: none; stroke: #0073bb; stroke-width: 2; }}
+        .info-icon svg circle {{ fill: none; }}
+        th .info-icon svg {{ stroke: white; }}
+        .info-icon:hover::after {{ content: attr(data-tooltip); position: absolute; bottom: 125%; right: 0; background: #232f3e; color: white; padding: 8px 12px; border-radius: 8px; white-space: pre-line; width: 300px; font-size: 13px; font-weight: normal; z-index: 1000; line-height: 1.4; }}
+        .info-icon:hover::before {{ content: ''; position: absolute; bottom: 115%; right: 10px; border: 6px solid transparent; border-top-color: #232f3e; }}
+        .info-icon.tooltip-right:hover::after {{ right: auto; left: 0; }}
+        .info-icon.tooltip-right:hover::before {{ right: auto; left: 10px; }}
+        .info-icon.tooltip-below:hover::after {{ bottom: auto; top: 125%; }}
+        .info-icon.tooltip-below:hover::before {{ bottom: auto; top: 115%; border-top-color: transparent; border-bottom-color: #232f3e; }}
+        .warning-icon {{ display: inline-block; margin-left: 5px; cursor: help; position: relative; vertical-align: middle; }}
+        .warning-icon svg {{ width: 16px; height: 16px; fill: none; stroke: #ff9900; stroke-width: 2; stroke-linejoin: round; display: block; }}
+        .warning-icon:hover::after {{ content: attr(data-tooltip); position: absolute; bottom: 125%; right: 0; background: #232f3e; color: white; padding: 8px 12px; border-radius: 8px; white-space: normal; width: 300px; font-size: 13px; font-weight: normal; z-index: 1000; line-height: 1.4; pointer-events: none; }}
+        .warning-icon:hover::before {{ content: ''; position: absolute; bottom: 115%; right: 10px; border: 6px solid transparent; border-top-color: #232f3e; pointer-events: none; }}
+        .footer {{ margin-top: 30px; padding: 20px; text-align: center; color: #687078; font-size: 14px; border-top: 1px solid #eaeded; }}
+        .line-label {{ background: white; border: 1px solid #ff9900; border-radius: 4px; padding: 2px 5px; font-size: 11px; color: #232f3e; white-space: nowrap; box-shadow: none; }}
         .line-label::before {{ display: none; }}
+        .help-button {{ position: fixed; top: 20px; right: 20px; z-index: 1001; background: white; border: 1px solid #d5dbdb; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }}
+        .help-button:hover {{ border-color: #0073bb; }}
+        .help-button svg {{ width: 18px; height: 18px; fill: none; stroke: #0073bb; stroke-width: 2; }}
+        .help-panel {{ position: fixed; top: 0; right: -400px; width: 380px; height: 100%; background: white; border-left: 1px solid #d5dbdb; box-shadow: -2px 0 8px rgba(0,0,0,0.1); z-index: 2000; transition: right 0.3s ease; overflow-y: auto; padding: 24px; box-sizing: border-box; }}
+        .help-panel.open {{ right: 0; }}
+        .help-panel h2 {{ color: #232f3e; font-size: 20px; margin: 0 0 16px 0; display: flex; align-items: center; justify-content: space-between; }}
+        .help-panel h3 {{ color: #232f3e; font-size: 15px; margin: 20px 0 8px 0; }}
+        .help-panel p, .help-panel li {{ color: #414d5c; font-size: 14px; line-height: 1.6; }}
+        .help-panel ul {{ padding-left: 18px; }}
+        .help-panel .close-btn {{ background: none; border: none; cursor: pointer; padding: 4px; display: flex; align-items: center; }}
+        .help-panel .close-btn svg {{ width: 18px; height: 18px; stroke: #687078; stroke-width: 2; fill: none; }}
+        .help-panel .close-btn:hover svg {{ stroke: #232f3e; }}
+        .help-overlay {{ position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.3); z-index: 1999; display: none; }}
+        .help-overlay.open {{ display: block; }}
     </style>
 </head>
 <body>
+    <div class="help-overlay" id="helpOverlay" onclick="closeHelp()"></div>
+    <div class="help-panel" id="helpPanel">
+        <h2>Help<button class="close-btn" onclick="closeHelp()"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M2 2l12 12M14 2L2 14"></path></svg></button></h2>
+        <h3>About this page</h3>
+        <p>This page shows all AWS Direct Connect locations across all AWS partitions: Commercial, GovCloud (US), EU Sovereign Cloud, and China.</p>
+        <p>Location data is sourced from the <a href="https://docs.aws.amazon.com/directconnect/latest/APIReference/" target="_blank">AWS Direct Connect API</a> and enriched with facility names, coordinates, and organization details from <a href="https://www.peeringdb.com/" target="_blank">PeeringDB</a>.</p>
+        <h3>Switching partitions</h3>
+        <p>Use the tabs above the table to switch between AWS partitions. Each tab filters the map and table to show only locations in that partition.</p>
+        <h3>Interactive map</h3>
+        <ul>
+            <li><b>Click a marker</b> to zoom in and highlight that location in the table.</li>
+            <li><b>Click anywhere on the map</b> to find the 2 nearest Direct Connect locations with estimated distance and latency.</li>
+            <li><b>Click the red dot</b> or click the map again to clear the selection.</li>
+            <li><b>&#x1f3e0; button</b> resets the map view.</li>
+        </ul>
+        <h3>Filtering</h3>
+        <ul>
+            <li><b>Country Filter</b> &#x2014; multi-select dropdown with tag pills.</li>
+            <li><b>Organization</b> &#x2014; filter by colocation provider.</li>
+            <li><b>Port Speeds</b> &#x2014; filter by available speeds (1G, 10G, 100G, 400G).</li>
+            <li><b>MACsec</b> &#x2014; show only locations with or without MACsec support.</li>
+            <li><b>Region</b> &#x2014; filter by associated AWS region.</li>
+            <li><b>Search</b> &#x2014; free-text search across all columns.</li>
+        </ul>
+        <h3>Table</h3>
+        <ul>
+            <li><b>Click a column header</b> to sort ascending/descending.</li>
+            <li><b>Click a row</b> to zoom the map to that location.</li>
+        </ul>
+        <h3>Icons</h3>
+        <ul>
+            <li><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" style="width:14px;height:14px;fill:none;stroke:#0073bb;stroke-width:2;vertical-align:middle;"><circle cx="8" cy="8" r="7"></circle><path d="M8 12V7M8 6V4"></path></svg> &#x2014; Additional information (hover to view).</li>
+            <li><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" style="width:14px;height:14px;fill:none;stroke:#ff9900;stroke-width:2;stroke-linejoin:round;vertical-align:middle;"><path d="M8 5v4M8 10v2M6.52 1.88l-5.33 9.76c-.13.23-.19.5-.19.76 0 .88.71 1.59 1.59 1.59H13.4c.88 0 1.59-.71 1.59-1.59 0-.27-.07-.53-.19-.76L9.48 1.88C9.18 1.34 8.62 1 8 1s-1.18.34-1.48.88Z"></path></svg> &#x2014; Opt-in region warning.</li>
+        </ul>
+    </div>
+    <button class="help-button" onclick="openHelp()" title="Help">
+        <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true"><circle cx="8" cy="8" r="7"></circle><path d="M8 12V7M8 6V4"></path></svg>
+    </button>
+    <script>
+        function openHelp() {{ document.getElementById('helpPanel').classList.add('open'); document.getElementById('helpOverlay').classList.add('open'); }}
+        function closeHelp() {{ document.getElementById('helpPanel').classList.remove('open'); document.getElementById('helpOverlay').classList.remove('open'); }}
+    </script>
     <h1><img src="{icon_data}" alt="AWS Direct Connect">AWS Direct Connect Locations</h1>
     <div id="map">
         <button class="home-button" onclick="resetMap(); event.stopPropagation();" title="Reset map view">🏠</button>
@@ -114,21 +176,21 @@ html = f"""<!DOCTYPE html>
             <img src="GovCloud.png" style="height: 1em; width: 2em; margin-right: 8px; object-fit: contain;" alt="GovCloud">
             AWS GovCloud (US)
             <div class="partition-info">
-                <span class="info-icon" data-tooltip="Direct Connect Gateway enables connectivity from any Direct Connect location to AWS GovCloud (US) regions. Cross-account connectivity is supported between GovCloud and commercial accounts." onclick="event.stopPropagation()">i</span>
+                <span class="info-icon" data-tooltip="Direct Connect Gateway enables connectivity from any Direct Connect location to AWS GovCloud (US) regions. Cross-account connectivity is supported between GovCloud and commercial accounts." onclick="event.stopPropagation()"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true"><circle cx="8" cy="8" r="7"></circle><path d="M8 12V7M8 6V4"></path></svg></span>
             </div>
         </button>
         <button class="tab" onclick="switchPartition('aws-eusc')" id="tab-aws-eusc">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 810 540" style="height: 1em; width: 1.5em; margin-right: 8px;"><rect fill="#039" width="810" height="540"/><g fill="#fc0" transform="scale(30)translate(13.5,9)"><use href="#s" y="-6"/><use href="#s" y="6"/><g id="l"><use href="#s" x="-6"/><use href="#s" transform="rotate(150)translate(0,6)rotate(66)"/><use href="#s" transform="rotate(120)translate(0,6)rotate(24)"/><use href="#s" transform="rotate(60)translate(0,6)rotate(12)"/><use href="#s" transform="rotate(30)translate(0,6)rotate(42)"/></g><use href="#l" transform="scale(-1,1)"/></g><defs><g id="s"><g id="c"><path id="t" d="M0,0v1h0.5z" transform="translate(0,-1)rotate(18)"/><use href="#t" transform="scale(-1,1)"/></g><g id="a"><use href="#c" transform="rotate(72)"/><use href="#c" transform="rotate(144)"/></g><use href="#a" transform="scale(-1,1)"/></g></defs></svg>
             EU Sovereign Cloud
             <div class="partition-info">
-                <span class="info-icon" data-tooltip="EU Sovereign Cloud is an isolated AWS partition designed to meet strict European data residency and sovereignty requirements. It operates independently from other AWS partitions." onclick="event.stopPropagation()">i</span>
+                <span class="info-icon" data-tooltip="EU Sovereign Cloud is an isolated AWS partition designed to meet strict European data residency and sovereignty requirements. It operates independently from other AWS partitions." onclick="event.stopPropagation()"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true"><circle cx="8" cy="8" r="7"></circle><path d="M8 12V7M8 6V4"></path></svg></span>
             </div>
         </button>
         <button class="tab" onclick="switchPartition('aws-cn')" id="tab-aws-cn">
             <img src="cn.svg" style="height: 1em; width: 1.5em; margin-right: 8px; object-fit: contain;" alt="China">
             AWS China
             <div class="partition-info">
-                <span class="info-icon" data-tooltip="AWS China is an isolated AWS partition operated by local partners (Sinnet in Beijing, NWCD in Ningxia) to meet Chinese regulatory requirements. It operates independently from other AWS partitions." onclick="event.stopPropagation()">i</span>
+                <span class="info-icon" data-tooltip="AWS China is an isolated AWS partition operated by local partners (Sinnet in Beijing, NWCD in Ningxia) to meet Chinese regulatory requirements. It operates independently from other AWS partitions." onclick="event.stopPropagation()"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true"><circle cx="8" cy="8" r="7"></circle><path d="M8 12V7M8 6V4"></path></svg></span>
             </div>
         </button>
     </div>
@@ -148,6 +210,9 @@ html = f"""<!DOCTYPE html>
         <div class="country-tags" id="countryTags"></div>
         <select id="orgFilter" onchange="filterTable()">
             <option value="">All Organizations</option>
+        </select>
+        <select id="partnerFilter" onchange="filterTable()">
+            <option value="">All DX Partners</option>
         </select>
         <select id="speedFilter" onchange="filterTable()">
             <option value="">All Port Speeds</option>
@@ -175,7 +240,8 @@ html = f"""<!DOCTYPE html>
                 <th class="no-sort" id="th2" style="text-align: center;">Google Maps</th>
                 <th onclick="sortTable(3)" id="th3">AWS Code</th>
                 <th onclick="sortTable(4)" id="th4">Port Speeds</th>
-                <th onclick="sortTable(5)" id="th5">Associated Region<span class="info-icon" data-tooltip="The AWS region used for API calls to manage Direct Connect resources at this location. Virtual interfaces created at this location can connect to any AWS region globally. Note: Opt-in regions must be enabled in your AWS account before locations in those regions become selectable." onclick="event.stopPropagation()">i</span></th>
+                <th onclick="sortTable(5)" id="th5">DX Partners</th>
+                <th onclick="sortTable(6)" id="th6">Associated Region<span class="info-icon tooltip-below" id="regionTooltip" data-tooltip="The AWS region used for API calls to manage Direct Connect resources at this location. Virtual interfaces created at this location can connect to any AWS Commercial and AWS GovCloud (US) region globally. Note: Opt-in regions must be enabled in your AWS account before locations in those regions become selectable." onclick="event.stopPropagation()"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true"><circle cx="8" cy="8" r="7"></circle><path d="M8 12V7M8 6V4"></path></svg></span></th>
             </tr>
         </thead>
         <tbody>
@@ -207,10 +273,8 @@ for loc in sorted_locations:
     map_html = ""
     if loc.get('latitude') and loc.get('longitude'):
         if partition == 'aws-cn':
-            # China locations: only show warning icon
-            map_html = '<span class="warning-icon" data-tooltip="Due to the lack of PeeringDB data for AWS Direct Connect colocation facilities in China, all locations are only approximate."><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ffa500" style="vertical-align: middle;"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 1.67c.955 0 1.845 .467 2.39 1.247l.105 .16l8.114 13.548a2.914 2.914 0 0 1 -2.307 4.363l-.195 .008h-16.225a2.914 2.914 0 0 1 -2.582 -4.2l.099 -.185l8.11 -13.538a2.914 2.914 0 0 1 2.491 -1.403zm.01 13.33l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007zm-.01 -7a1 1 0 0 0 -.993 .883l-.007 .117v4l.007 .117a1 1 0 0 0 1.986 0l.007 -.117v-4l-.007 -.117a1 1 0 0 0 -.993 -.883z" /></svg></span>'
+            map_html = '<span class="warning-icon" data-tooltip="Due to the lack of PeeringDB data for AWS Direct Connect colocation facilities in China, all locations are only approximate."><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true"><path d="M8 5v4M8 10v2M6.52 1.88l-5.33 9.76c-.13.23-.19.5-.19.76 0 .88.71 1.59 1.59 1.59H13.4c.88 0 1.59-.71 1.59-1.59 0-.27-.07-.53-.19-.76L9.48 1.88C9.18 1.34 8.62 1 8 1s-1.18.34-1.48.88Z"></path></svg></span>'
         else:
-            # Other partitions: show Google Maps link
             map_html = f"<a href='https://maps.google.com/?q={loc['latitude']},{loc['longitude']}' target='_blank' title='View on Google Maps'><svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' style='vertical-align: middle;'><path stroke='none' d='M0 0h24v24H0z' fill='none'/><path d='M12 18.5l-3 -1.5l-6 3v-13l6 -3l6 3l6 -3v7.5' /><path d='M9 4v13' /><path d='M15 7v5.5' /><path d='M21.121 20.121a3 3 0 1 0 -4.242 0c.418 .419 1.125 1.045 2.121 1.879c1.051 -.89 1.759 -1.516 2.121 -1.879' /><path d='M19 18v.01' /></svg></a>"
     
     speeds_unlocked = ', '.join(loc.get('port_speeds', []))
@@ -225,7 +289,7 @@ for loc in sorted_locations:
     region_opt_status = loc.get('region_opt_status', 'ENABLED_BY_DEFAULT')
     opt_in_warning = ''
     if region_opt_status == 'ENABLED':
-        opt_in_warning = '<span class="warning-icon" data-tooltip="This Direct Connect location is associated with an opt-in region. To use this location in the AWS Console or API, you must first enable this region in your AWS account."><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 1.67c.955 0 1.845 .467 2.39 1.247l.105 .16l8.114 13.548a2.914 2.914 0 0 1 -2.307 4.363l-.195 .008h-16.225a2.914 2.914 0 0 1 -2.582 -4.2l.099 -.185l8.11 -13.538a2.914 2.914 0 0 1 2.491 -1.403zm.01 13.33l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007zm-.01 -7a1 1 0 0 0 -.993 .883l-.007 .117v4l.007 .117a1 1 0 0 0 1.986 0l.007 -.117v-4l-.007 -.117a1 1 0 0 0 -.993 -.883z" /></svg></span>'
+        opt_in_warning = '<span class="warning-icon" data-tooltip="This Direct Connect location is associated with an opt-in region. To use this location in the AWS Console or API, you must first enable this region in your AWS account."><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true"><path d="M8 5v4M8 10v2M6.52 1.88l-5.33 9.76c-.13.23-.19.5-.19.76 0 .88.71 1.59 1.59 1.59H13.4c.88 0 1.59-.71 1.59-1.59 0-.27-.07-.53-.19-.76L9.48 1.88C9.18 1.34 8.62 1 8 1s-1.18.34-1.48.88Z"></path></svg></span>'
     region_html = f"{region_name}{opt_in_warning}<br><code>{loc['region']}</code>"
     
     # Data attributes for filtering
@@ -236,16 +300,27 @@ for loc in sorted_locations:
     port_speeds = ','.join(loc.get('port_speeds', []))
     macsec_speeds = ','.join(loc.get('macsec_capable', []))
     org_name = loc.get('org_name', '')
+    providers = loc.get('providers', [])
+    providers_str = ','.join(providers)
     
-    html += f"""            <tr data-code="{loc['code']}" data-partition="{partition}" data-country="{country_display}" data-region="{region}" data-org="{org_name}" data-speeds="{port_speeds}" data-macsec="{macsec_speeds}">
+    # DX Partners column: count badge with tooltip listing all partners
+    if providers:
+        providers_tooltip = '&#8226; ' + '&#10;&#8226; '.join(providers)
+        partners_html = f"<span class='info-icon tooltip-below' data-tooltip='{providers_tooltip}' onclick='event.stopPropagation()'><svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' style='vertical-align: middle;'><path d='M5.931 6.936l1.275 4.249m5.607 5.609l4.251 1.275' /><path d='M11.683 12.317l5.759 -5.759' /><path d='M4 5.5a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0' /><path d='M17 5.5a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0' /><path d='M17 18.5a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0' /><path d='M4 15.5a4.5 4.5 0 1 0 9 0a4.5 4.5 0 1 0 -9 0' /></svg></span> {len(providers)}"
+    else:
+        partners_html = ""
+    
+    html += f"""            <tr data-code="{loc['code']}" data-partition="{partition}" data-country="{country_display}" data-region="{region}" data-org="{org_name}" data-speeds="{port_speeds}" data-macsec="{macsec_speeds}" data-providers="{providers_str}">
                 <td>{location_html}</td>
                 <td>{org_html}</td>
                 <td style="text-align: center;">{map_html}</td>
                 <td>{map_link}</td>
                 <td>{speeds_html}</td>
+                <td>{partners_html}</td>
                 <td>{region_html}</td>
             </tr>
 """
+
 
 html += """        </tbody>
     </table>
@@ -284,7 +359,6 @@ html += """        </tbody>
         
         // Find nearest locations from currently visible ones
         function findNearest(lat, lon) {
-            // Get currently visible location codes from table
             const visibleCodes = new Set();
             const table = document.getElementById('dxTable');
             const tr = table.getElementsByTagName('tr');
@@ -345,7 +419,7 @@ html += """        </tbody>
                 const midLat = e.latlng.lat + 0.5 * (loc.lat - e.latlng.lat);
                 const midLon = e.latlng.lng + 0.5 * (loc.lon - e.latlng.lng);
                 const line = L.polyline([[e.latlng.lat, e.latlng.lng], [loc.lat, loc.lon]], {
-                    color: '#0073bb',
+                    color: '#ff9900',
                     weight: 2,
                     opacity: 0.7
                 }).addTo(map);
@@ -356,7 +430,7 @@ html += """        </tbody>
                     className: 'line-label',
                     offset: offset
                 })
-                    .setContent(distKm + ' km \u00b7 &gt;' + latencyMs + ' ms')
+                    .setContent(distKm + ' km \\u00b7 &gt;' + latencyMs + ' ms')
                     .setLatLng([midLat, midLon])
                     .addTo(map);
                 nearestLines.push(line);
@@ -367,7 +441,6 @@ html += """        </tbody>
             document.getElementById('searchInput').value = codes;
             toggleClearBtn();
             
-            // Show only nearest locations
             const nearestCodes = new Set(nearest.map(loc => loc.code));
             const table = document.getElementById("dxTable");
             const tr = table.getElementsByTagName("tr");
@@ -376,7 +449,6 @@ html += """        </tbody>
                 tr[i].style.display = nearestCodes.has(code) ? "" : "none";
             }
             
-            // Show only nearest markers
             Object.keys(markers).forEach(code => {
                 if (nearestCodes.has(code)) {
                     map.addLayer(markers[code]);
@@ -393,14 +465,15 @@ html += """        </tbody>
         const orgs = new Set();
         const regions = new Set();
         const speeds = new Set();
+        const partners = new Set();
         const selectedCountries = new Set();
         
-        // Populate dropdowns based on all data initially
         function populateFilters(partition) {
             countries.clear();
             orgs.clear();
             regions.clear();
             speeds.clear();
+            partners.clear();
             
             document.querySelectorAll('tr[data-country]').forEach(tr => {
                 const rowPartition = tr.dataset.partition || 'aws';
@@ -410,10 +483,10 @@ html += """        </tbody>
                     if (tr.dataset.region) regions.add(tr.dataset.region);
                     if (tr.dataset.speeds) tr.dataset.speeds.split(',').forEach(s => speeds.add(s));
                     if (tr.dataset.macsec) tr.dataset.macsec.split(',').forEach(s => speeds.add(s));
+                    if (tr.dataset.providers) tr.dataset.providers.split(',').forEach(p => { if (p) partners.add(p); });
                 }
             });
             
-            // Repopulate country multi-select
             const countryDropdown = document.getElementById('countryDropdown');
             const actionsDiv = countryDropdown.querySelector('.multi-select-actions');
             countryDropdown.innerHTML = '';
@@ -431,7 +504,6 @@ html += """        </tbody>
                 countryDropdown.appendChild(option);
             });
             
-            // Repopulate organization filter
             const orgFilter = document.getElementById('orgFilter');
             const currentOrg = orgFilter.value;
             orgFilter.innerHTML = '<option value="">All Organizations</option>';
@@ -441,11 +513,8 @@ html += """        </tbody>
                 opt.textContent = o;
                 orgFilter.appendChild(opt);
             });
-            if (orgs.has(currentOrg)) {
-                orgFilter.value = currentOrg;
-            }
+            if (orgs.has(currentOrg)) orgFilter.value = currentOrg;
             
-            // Repopulate region filter
             const regionFilter = document.getElementById('regionFilter');
             const currentRegion = regionFilter.value;
             regionFilter.innerHTML = '<option value="">All Associated Regions</option>';
@@ -455,11 +524,8 @@ html += """        </tbody>
                 opt.textContent = r;
                 regionFilter.appendChild(opt);
             });
-            if (regions.has(currentRegion)) {
-                regionFilter.value = currentRegion;
-            }
+            if (regions.has(currentRegion)) regionFilter.value = currentRegion;
             
-            // Repopulate speed filter
             const speedFilter = document.getElementById('speedFilter');
             const currentSpeed = speedFilter.value;
             speedFilter.innerHTML = '<option value="">All Port Speeds</option>';
@@ -472,9 +538,18 @@ html += """        </tbody>
                 opt.textContent = s;
                 speedFilter.appendChild(opt);
             });
-            if (speeds.has(currentSpeed)) {
-                speedFilter.value = currentSpeed;
-            }
+            if (speeds.has(currentSpeed)) speedFilter.value = currentSpeed;
+            
+            const partnerFilter = document.getElementById('partnerFilter');
+            const currentPartner = partnerFilter.value;
+            partnerFilter.innerHTML = '<option value="">All DX Partners</option>';
+            Array.from(partners).sort().forEach(p => {
+                const opt = document.createElement('option');
+                opt.value = p;
+                opt.textContent = p;
+                partnerFilter.appendChild(opt);
+            });
+            if (partners.has(currentPartner)) partnerFilter.value = currentPartner;
         }
         
         document.querySelectorAll('tr[data-country]').forEach(tr => {
@@ -485,7 +560,6 @@ html += """        </tbody>
             if (tr.dataset.macsec) tr.dataset.macsec.split(',').forEach(s => speeds.add(s));
         });
         
-        // Populate country multi-select (initial)
         const countryDropdown = document.getElementById('countryDropdown');
         populateFilters('aws');
         
@@ -545,51 +619,42 @@ html += """
             document.getElementById('th' + n).classList.add(currentSort.dir);
         }
         
-        // Select location from map
         function selectLocation(code) {
             if (userMarker) return;
             const loc = locationsData.find(l => l.code === code);
-            if (loc) {
-                map.setView([loc.lat, loc.lon], 12);
-            }
+            if (loc) map.setView([loc.lat, loc.lon], 12);
             document.getElementById('searchInput').value = code;
             toggleClearBtn();
             filterTable();
         }
         
-        // Zoom to location from table row
         function zoomToLocation(code) {
             if (userMarker) return;
             const loc = locationsData.find(l => l.code === code);
-            if (loc) {
-                map.setView([loc.lat, loc.lon], 12);
-            }
+            if (loc) map.setView([loc.lat, loc.lon], 12);
         }
         
-        // Reset map view
         function resetMap() {
             clearUserMarker();
             const currentPartition = getCurrentPartition();
             if (currentPartition === 'aws-eusc') {
-                map.setView([50, 10], 4); // EU view for EUSC
+                map.setView([50, 10], 4);
             } else if (currentPartition === 'aws-cn') {
-                map.setView([35, 105], 4); // China view for China
+                map.setView([35, 105], 4);
             } else {
-                map.setView([20, 0], 2); // World view for AWS Commercial
+                map.setView([20, 0], 2);
             }
             document.getElementById('searchInput').value = '';
             toggleClearBtn();
             filterTable();
         }
         
-        // Toggle clear button visibility
         function toggleClearBtn() {
             const input = document.getElementById('searchInput');
             const clearBtn = document.getElementById('clearBtn');
             clearBtn.style.display = input.value ? 'block' : 'none';
         }
         
-        // Clear search
         function clearSearch() {
             clearUserMarker();
             selectedCode = null;
@@ -603,7 +668,6 @@ html += """
             filterTable();
         }
         
-        // Clear user marker and lines
         function clearUserMarker() {
             if (userMarker) {
                 map.removeLayer(userMarker);
@@ -613,27 +677,25 @@ html += """
             }
         }
         
-        // Reset filters
         function resetFilters() {
             clearUserMarker();
             document.getElementById('searchInput').value = '';
             toggleClearBtn();
             clearAllCountries();
             document.getElementById('orgFilter').value = '';
+            document.getElementById('partnerFilter').value = '';
             document.getElementById('regionFilter').value = '';
             document.getElementById('speedFilter').value = '';
             document.getElementById('macsecFilter').value = '';
             filterTable();
         }
         
-        // Toggle country dropdown
         function toggleCountryDropdown() {
             const dropdown = document.getElementById('countryDropdown');
             dropdown.classList.toggle('show');
             document.getElementById('countryMultiSelect').querySelector('.multi-select-trigger').classList.toggle('active');
         }
         
-        // Close dropdown when clicking outside
         document.addEventListener('click', function(e) {
             if (!document.getElementById('countryMultiSelect').contains(e.target)) {
                 document.getElementById('countryDropdown').classList.remove('show');
@@ -641,26 +703,22 @@ html += """
             }
         });
         
-        // Select all countries
         function selectAllCountries() {
             document.querySelectorAll('#countryDropdown input[type="checkbox"]').forEach(cb => cb.checked = true);
             updateCountryFilter();
         }
         
-        // Clear all countries
         function clearAllCountries() {
             document.querySelectorAll('#countryDropdown input[type="checkbox"]').forEach(cb => cb.checked = false);
             updateCountryFilter();
         }
         
-        // Update country filter and tags
         function updateCountryFilter() {
             selectedCountries.clear();
             document.querySelectorAll('#countryDropdown input[type="checkbox"]:checked').forEach(cb => {
                 selectedCountries.add(cb.value);
             });
             
-            // Update tags
             const tagsContainer = document.getElementById('countryTags');
             tagsContainer.innerHTML = '';
             Array.from(selectedCountries).sort().forEach(country => {
@@ -673,38 +731,32 @@ html += """
             filterTable();
         }
         
-        // Remove country tag
         function removeCountryTag(country) {
             const checkbox = document.getElementById(`country-${country}`);
             if (checkbox) checkbox.checked = false;
             updateCountryFilter();
         }
         
-        // Switch partition tabs
-        let currentPartition = 'aws'; // Track current partition
+        let currentPartition = 'aws';
         
         function switchPartition(partition) {
-            // Update tab states
             document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
             document.getElementById(`tab-${partition}`).classList.add('active');
             
-            // Update map view
             if (partition === 'aws-eusc') {
-                map.setView([50, 10], 4); // Zoom to Europe
+                map.setView([50, 10], 4);
             } else if (partition === 'aws-cn') {
-                map.setView([35, 105], 4); // Zoom to China
+                map.setView([35, 105], 4);
             } else {
-                map.setView([20, 0], 2); // Reset to world view
+                map.setView([20, 0], 2);
             }
             
-            // Clear filters and update data
             clearAllCountries();
             document.getElementById('orgFilter').value = '';
             document.getElementById('regionFilter').value = '';
             document.getElementById('speedFilter').value = '';
             document.getElementById('macsecFilter').value = '';
             
-            // Only repopulate filters if switching between different partitions
             const needsRepopulate = (partition === 'aws-eusc' || partition === 'aws-cn' || currentPartition === 'aws-eusc' || currentPartition === 'aws-cn');
             
             if (needsRepopulate) {
@@ -713,25 +765,33 @@ html += """
             }
             
             currentPartition = partition;
+            
+            // Update region tooltip per partition
+            const regionTooltips = {
+                'aws': 'The AWS region used for API calls to manage Direct Connect resources at this location. Virtual interfaces created at this location can connect to any AWS Commercial and AWS GovCloud (US) region globally. Note: Opt-in regions must be enabled in your AWS account before locations in those regions become selectable.',
+                'aws-govcloud': 'The AWS region used for API calls to manage Direct Connect resources at this location. Virtual interfaces created at this location can connect to any AWS Commercial and AWS GovCloud (US) region globally. Note: Opt-in regions must be enabled in your AWS account before locations in those regions become selectable.',
+                'aws-eusc': 'The AWS region used for API calls to manage Direct Connect resources at this location. Virtual interfaces created at this location can connect to any AWS EU Sovereign Cloud region.',
+                'aws-cn': 'The AWS region used for API calls to manage Direct Connect resources at this location. Virtual interfaces created at this location can connect to any AWS China region.'
+            };
+            document.getElementById('regionTooltip').setAttribute('data-tooltip', regionTooltips[partition] || regionTooltips['aws']);
+            
             filterTable();
         }
         
-        // Get current partition
         function getCurrentPartition() {
             return document.querySelector('.tab.active').id.replace('tab-', '');
         }
         
-        // Filter table and map
         function filterTable() {
             const searchInput = document.getElementById("searchInput").value.toUpperCase();
             const partitionFilter = getCurrentPartition();
             const orgFilter = document.getElementById("orgFilter").value;
+            const partnerFilter = document.getElementById("partnerFilter").value;
             const regionFilter = document.getElementById("regionFilter").value;
             const speedFilter = document.getElementById("speedFilter").value;
             const macsecFilter = document.getElementById("macsecFilter").value;
             
-            // Clear user marker and search if any filter is active
-            if (selectedCountries.size > 0 || orgFilter || regionFilter || speedFilter || macsecFilter) {
+            if (selectedCountries.size > 0 || orgFilter || partnerFilter || regionFilter || speedFilter || macsecFilter) {
                 clearUserMarker();
                 if (searchInput) {
                     document.getElementById('searchInput').value = '';
@@ -739,15 +799,13 @@ html += """
                 }
             }
             
-            // Re-read search input after potential clearing
             const finalSearchInput = document.getElementById("searchInput").value.toUpperCase();
             const table = document.getElementById("dxTable");
             const tr = table.getElementsByTagName("tr");
             const visibleCodes = new Set();
             
-            // Show/hide reset button
             const resetBtn = document.getElementById('resetFilters');
-            resetBtn.style.display = (selectedCountries.size > 0 || orgFilter || regionFilter || speedFilter || macsecFilter) ? 'block' : 'none';
+            resetBtn.style.display = (selectedCountries.size > 0 || orgFilter || partnerFilter || regionFilter || speedFilter || macsecFilter) ? 'block' : 'none';
             
             for (let i = 1; i < tr.length; i++) {
                 const row = tr[i];
@@ -757,13 +815,11 @@ html += """
                 const region = row.dataset.region || '';
                 const speeds = row.dataset.speeds || '';
                 const macsec = row.dataset.macsec || '';
+                const rowProviders = row.dataset.providers || '';
                 
-                // Partition filter (always applied)
-                // Commercial and GovCloud use the same data (aws partition)
                 const effectivePartition = (partitionFilter === 'aws-govcloud') ? 'aws' : partitionFilter;
                 const partitionMatch = partition === effectivePartition;
                 
-                // Text search
                 let textMatch = true;
                 if (finalSearchInput) {
                     const tds = row.getElementsByTagName("td");
@@ -777,16 +833,11 @@ html += """
                     }
                 }
                 
-                // Country filter (multi-select)
                 const countryMatch = selectedCountries.size === 0 || selectedCountries.has(country);
-                
-                // Organization filter
                 const orgMatch = !orgFilter || org === orgFilter;
-                
-                // Region filter
+                const partnerMatch = !partnerFilter || rowProviders.split(',').includes(partnerFilter);
                 const regionMatch = !regionFilter || region === regionFilter;
                 
-                // Speed filter
                 let speedMatch = true;
                 if (speedFilter) {
                     if (macsecFilter === 'macsec') {
@@ -798,7 +849,6 @@ html += """
                     }
                 }
                 
-                // MACsec filter (when no speed selected)
                 let macsecMatch = true;
                 if (!speedFilter && macsecFilter) {
                     if (macsecFilter === 'macsec') {
@@ -808,19 +858,15 @@ html += """
                     }
                 }
                 
-                const show = partitionMatch && textMatch && countryMatch && orgMatch && regionMatch && speedMatch && macsecMatch;
+                const show = partitionMatch && textMatch && countryMatch && orgMatch && partnerMatch && regionMatch && speedMatch && macsecMatch;
                 row.style.display = show ? "" : "none";
-                if (show) {
-                    visibleCodes.add(row.getAttribute('data-code'));
-                }
+                if (show) visibleCodes.add(row.getAttribute('data-code'));
             }
             
-            // Update location count
             const locationCount = document.getElementById('locationCount');
             locationCount.textContent = `${visibleCodes.size} location${visibleCodes.size !== 1 ? 's' : ''}`;
             locationCount.style.display = 'block';
             
-            // Update map markers
             Object.keys(markers).forEach(code => {
                 if (visibleCodes.has(code)) {
                     map.addLayer(markers[code]);
@@ -833,7 +879,6 @@ html += """
         }
     </script>
     <script>
-        // Initialize after all functions are defined
         filterTable();
         currentSort = { col: 0, dir: 'asc' };
         document.getElementById('th0').classList.add('asc');
@@ -846,7 +891,7 @@ html += """
 """
 
 # Write file
-with open('docs/index.html', 'w') as f:
+with open('output/web/index.html', 'w') as f:
     f.write(html)
 
-print("Generated docs/index.html")
+print("Generated output/web/index.html")

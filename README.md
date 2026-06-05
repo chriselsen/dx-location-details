@@ -29,7 +29,7 @@ Automatically generates a sortable wiki table and KML file of AWS Direct Connect
 - `scripts/generate_kml_eusc.py` - Generates KML file for EU Sovereign Cloud
 - `scripts/generate_kml_china.py` - Generates KML file for AWS China
 - `scripts/generate_map_png.py` - Generates world map PNG
-- `scripts/generate_github_pages.py` - Generates HTML page for GitHub Pages
+- `scripts/generate_github_pages.py` - Generates HTML page for GitHub Pages (`output/web/`)
 - `scripts/generate_all.sh` - Runs all generation steps for Commercial partition
 - `scripts/sync_peeringdb.py` - Syncs location data from PeeringDB
 - `scripts/add_location.py` - Adds new locations to the mapping
@@ -41,6 +41,8 @@ The repository automatically updates daily via GitHub Actions (`.github/workflow
 - Collects data from all three partitions (Commercial, EU Sovereign Cloud, China)
 - Regenerates all outputs (CSV, KML, PNG, GitHub Pages)
 - Only commits if data has actually changed
+
+For setup instructions, see [AWS GitHub OIDC Setup](docs/AWS_GITHUB_SETUP.md).
 
 ## Manual Workflow
 
@@ -71,7 +73,7 @@ This generates:
 - CSV files for all partitions → `output/DX_LOCATIONS*.csv`
 - KML files for all partitions → `output/DirectConnectLocations*.kml`
 - World map PNG → `output/DX_Locations.png`
-- GitHub Pages HTML → `docs/index.html`
+- GitHub Pages HTML → `output/web/index.html`
 
 ### 3. Sync with PeeringDB (Periodic)
 Updates country codes, coordinates, and organization data from PeeringDB:
@@ -123,6 +125,7 @@ The system automatically normalizes location codes:
 - `org_name`: Organization name
 - `latitude`: Facility latitude
 - `longitude`: Facility longitude
+- `providers`: List of DX Partners (normalized names)
 
 ## GitHub Pages
 The repository publishes an interactive HTML page via GitHub Pages:
@@ -130,7 +133,19 @@ The repository publishes an interactive HTML page via GitHub Pages:
 
 The page features a tabbed interface with:
 - **AWS Commercial Partition**: Global Direct Connect locations
+- **AWS GovCloud (US)**: Uses the same locations as Commercial (connected via Direct Connect Gateway)
 - **EU Sovereign Cloud**: European locations in the isolated EU partition
 - **AWS China**: China locations in the isolated China partition operated by local partners
 
-Click anywhere on the map to find the two nearest DX locations, with distance and minimum RTT latency displayed.
+Features:
+- Click anywhere on the map to find the two nearest DX locations, with distance and minimum RTT latency displayed
+- Filter by country, organization, DX partners, port speeds, MACsec support, and associated region
+- DX Partners column shows the number of partners at each location with a tooltip listing all of them
+- Help panel (?) with documentation about page features and icons
+- Machine-readable JSON available at `locations.json`
+
+## Provider Name Normalization
+The `collect_data.py` script normalizes DX Partner names from the AWS API:
+- Strips corporate suffixes: Ltd, Inc, AG, GmbH, Sdn Bhd, Berhad, SA de CV, SPA, Pty, Corp
+- Consolidates aliases (e.g., "CenturyLink" → "Lumen", "Equinix, Inc." → "Equinix")
+- Merges regional variants (e.g., all "China Telecom ..." → "China Telecom")
