@@ -891,7 +891,7 @@ html += """
 """
 
 # Write file
-with open('output/web/index.html', 'w') as f:
+with open('docs/index.html', 'w') as f:
     f.write(html)
 
-print("Generated output/web/index.html")
+print("Generated docs/index.html")
