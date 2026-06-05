@@ -29,7 +29,7 @@ Automatically generates a sortable wiki table and KML file of AWS Direct Connect
 - `scripts/generate_kml_eusc.py` - Generates KML file for EU Sovereign Cloud
 - `scripts/generate_kml_china.py` - Generates KML file for AWS China
 - `scripts/generate_map_png.py` - Generates world map PNG
-- `scripts/generate_github_pages.py` - Generates HTML page for GitHub Pages (`output/web/`)
+- `scripts/generate_github_pages.py` - Generates HTML page for GitHub Pages (`docs/`)
 - `scripts/generate_all.sh` - Runs all generation steps for Commercial partition
 - `scripts/sync_peeringdb.py` - Syncs location data from PeeringDB
 - `scripts/add_location.py` - Adds new locations to the mapping
@@ -42,7 +42,7 @@ The repository automatically updates daily via GitHub Actions (`.github/workflow
 - Regenerates all outputs (CSV, KML, PNG, GitHub Pages)
 - Only commits if data has actually changed
 
-For setup instructions, see [AWS GitHub OIDC Setup](docs/AWS_GITHUB_SETUP.md).
+For setup instructions, see [AWS GitHub OIDC Setup](documentation/AWS_GITHUB_SETUP.md).
 
 ## Manual Workflow
 
@@ -73,7 +73,7 @@ This generates:
 - CSV files for all partitions → `output/DX_LOCATIONS*.csv`
 - KML files for all partitions → `output/DirectConnectLocations*.kml`
 - World map PNG → `output/DX_Locations.png`
-- GitHub Pages HTML → `output/web/index.html`
+- GitHub Pages HTML → `docs/index.html`
 
 ### 3. Sync with PeeringDB (Periodic)
 Updates country codes, coordinates, and organization data from PeeringDB:
