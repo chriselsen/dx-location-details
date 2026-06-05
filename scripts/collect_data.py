@@ -101,9 +101,76 @@ def sort_port_speeds(speeds):
              '1G': 6, '2G': 7, '5G': 8, '10G': 9, '100G': 10}
     return sorted(speeds, key=lambda x: order.get(x, 999))
 
+# Provider name aliases for normalization
+PROVIDER_ALIASES = {
+    'AT&T Inc': 'AT&T',
+    'Equinix Inc.': 'Equinix',
+    'Equinix, Inc': 'Equinix',
+    'Equinix, Inc.': 'Equinix',
+    'Equinix, INc.': 'Equinix',
+    'COLT': 'Colt',
+    'Colt Networks': 'Colt',
+    'Colt Technology Services AG': 'Colt',
+    'Zayo Group': 'Zayo',
+    'zayo': 'Zayo',
+    'CenturyLink': 'Lumen',
+    'CenturyLink / Lumen': 'Lumen',
+    'Century Link / Lumen': 'Lumen',
+    'AARnet': 'AARNet',
+    'Bell Cananda': 'Bell Canada',
+    'Coresite': 'CoreSite',
+    'COX': 'Cox',
+    'Cox Business': 'Cox',
+    'euNetworks': 'EUNetworks',
+    'Exa': 'EXA',
+    'Flo Networks': 'FLO Networks',
+    'Orange Business Services': 'Orange Business',
+    'iXSforAll, Inc': 'iXSforAll',
+    'CITIC Telecom International CPC Limited': 'CITIC Telecom CPC',
+    'Cogent Communication': 'Cogent Communications',
+    'Cogent': 'Cogent Communications',
+    'Telecom Italia Sparke': 'Telecom Italia Sparkle',
+    'Singapore Telecom LTD': 'Singtel',
+    'Singapore Telecom': 'Singtel',
+    'Beanfield Metro': 'Beanfield Metro',
+    'Beanfield Metroconnect': 'Beanfield Metro',
+    'Comcast Business': 'Comcast',
+    'CrownCastle': 'Crown Castle',
+    'NTT Communications Corporation': 'NTT Communications',
+    'NTT Communications ICT Solutions': 'NTT Communications',
+}
+
+# Prefix-based normalization: all names starting with these prefixes map to the canonical name
+PROVIDER_PREFIX_ALIASES = {
+    'China Telecom': 'China Telecom',
+    'China Unicom': 'China Unicom',
+}
+
+def normalize_provider(name):
+    """Normalize provider name: strip whitespace, apply alias mapping, strip common suffixes."""
+    name = name.strip()
+    # Apply explicit alias mapping first
+    if name in PROVIDER_ALIASES:
+        return PROVIDER_ALIASES[name]
+    # Strip common corporate suffixes (case-insensitive), loop to handle compound suffixes like "Pty Ltd"
+    import re
+    pattern = r',?\s*\b(Sdn Bhd|Sdn Bh|Berhad|Limited|Inc\.?|AG|GmbH|Ltd\.?|ltd\.?|SA de CV|S\.?A\.?\s*de\s*C\.?V\.?|SPA|S\.?p\.?A\.?|Pty|Corp\.?)\s*$'
+    prev = None
+    while prev != name:
+        prev = name
+        name = re.sub(pattern, '', name, flags=re.IGNORECASE).strip()
+    # Re-check alias mapping after suffix stripping
+    if name in PROVIDER_ALIASES:
+        return PROVIDER_ALIASES[name]
+    # Apply prefix-based normalization
+    for prefix, canonical in PROVIDER_PREFIX_ALIASES.items():
+        if name.startswith(prefix):
+            return canonical
+    return name
+
 def parse_locations(lines):
     """Parse location data and deduplicate by normalized code"""
-    locations = defaultdict(lambda: {'region': None, 'name': None, 'port_speeds': set(), 'macsec_speeds': set()})
+    locations = defaultdict(lambda: {'region': None, 'name': None, 'port_speeds': set(), 'macsec_speeds': set(), 'providers': set()})
     current_code = None
     
     for line in lines:
@@ -124,11 +191,16 @@ def parse_locations(lines):
                 locations[current_code]['port_speeds'].add(parts[1])
             elif parts[0] == 'AVAILABLEMACSECPORTSPEEDS':
                 locations[current_code]['macsec_speeds'].add(parts[1])
+            elif parts[0] == 'AVAILABLEPROVIDERS':
+                normalized = normalize_provider(parts[1])
+                if normalized:
+                    locations[current_code]['providers'].add(normalized)
     
     # Convert sets to sorted lists
     for code in locations:
         locations[code]['port_speeds'] = sort_port_speeds(list(locations[code]['port_speeds']))
         locations[code]['macsec_speeds'] = sort_port_speeds(list(locations[code]['macsec_speeds']))
+        locations[code]['providers'] = sorted(list(locations[code]['providers']))
     
     return locations
 
@@ -180,7 +252,8 @@ def main():
             'longitude': None,
             'ip': None,
             'port_speeds': port_speeds,
-            'macsec_capable': macsec_speeds
+            'macsec_capable': macsec_speeds,
+            'providers': data.get('providers', [])
         }
         
         if code in mapping:

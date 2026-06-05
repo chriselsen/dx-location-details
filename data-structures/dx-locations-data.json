@@ -20,7 +20,8 @@
     "macsec_capable": [
       "10G",
       "100G"
-    ]
+    ],
+    "providers": []
   },
   {
     "code": "RCL1",
@@ -44,6 +45,24 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "21st Century Technologies",
+      "9 Mobile",
+      "Brainshare Technologies",
+      "Cyberspace",
+      "Dotmac",
+      "Estream",
+      "Globacom",
+      "INQ Digital",
+      "IPNX",
+      "Kkontech",
+      "MTN Business",
+      "Mainone",
+      "Smile",
+      "Timeless Network",
+      "VDT",
+      "Vobiss"
     ]
   },
   {
@@ -68,6 +87,12 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "BT",
+      "Liquid Intelligent Technologies",
+      "Teraco",
+      "Vodacom Business"
     ]
   },
   {
@@ -92,6 +117,12 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "CITIC Telecom CPC",
+      "Equinix",
+      "Megaport",
+      "Orange Business"
     ]
   },
   {
@@ -115,6 +146,13 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "BSO Network Solutions",
+      "CITIC Telecom CPC",
+      "Chief Telecom",
+      "China Mobile International",
+      "Telstra"
     ]
   },
   {
@@ -139,6 +177,9 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "Chunghwa Telecom"
     ]
   },
   {
@@ -163,6 +204,26 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "ARTERIA Networks Corporation",
+      "AT Tokyo",
+      "BSO Network Solutions",
+      "BT",
+      "CITIC Telecom CPC",
+      "China Telecom",
+      "Colt",
+      "Epsilon",
+      "Global Cloud Xchange",
+      "ITEC Hankyu Hanshin",
+      "Internet Initiative Japan",
+      "KDDI",
+      "Megaport",
+      "NTT Communications",
+      "Softbank",
+      "TOKAI Communications",
+      "Telstra",
+      "Verizon"
     ]
   },
   {
@@ -183,7 +244,14 @@
       "1G",
       "10G"
     ],
-    "macsec_capable": []
+    "macsec_capable": [],
+    "providers": [
+      "BSO Network Solutions",
+      "CITIC Telecom CPC",
+      "Chief Telecom",
+      "China Mobile International",
+      "Telstra"
+    ]
   },
   {
     "code": "EQOS1",
@@ -207,6 +275,18 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "ARTERIA Networks Corporation",
+      "AT&T",
+      "China Telecom",
+      "Colt",
+      "Equinix",
+      "ITEC Hankyu Hanshin",
+      "Internet Initiative Japan",
+      "NTT Communications",
+      "Softbank",
+      "TOKAI Communications"
     ]
   },
   {
@@ -231,6 +311,37 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "ARTERIA Networks Corporation",
+      "AT&T",
+      "BSO Network Solutions",
+      "BT",
+      "CITIC Telecom CPC",
+      "China Mobile International",
+      "Colt",
+      "Datapath.io",
+      "Epsilon",
+      "Equinix",
+      "GTT",
+      "Global Cloud Xchange",
+      "HGC Global Communications",
+      "IX Reach",
+      "InterCloud",
+      "Internet Initiative Japan",
+      "KDDI",
+      "Lumen",
+      "NTT Communications",
+      "NTT East",
+      "Nomura Research Institute (NRI)",
+      "Orange Business",
+      "Sejong",
+      "Softbank",
+      "TOKAI Communications",
+      "Tata Communications",
+      "Telstra",
+      "Verizon",
+      "Zayo"
     ]
   },
   {
@@ -255,6 +366,14 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "ARTERIA Networks Corporation",
+      "Colt",
+      "KDDI",
+      "NTT East",
+      "Softbank",
+      "TOKAI Communications"
     ]
   },
   {
@@ -277,6 +396,14 @@
     ],
     "macsec_capable": [
       "10G"
+    ],
+    "providers": [
+      "Dreamline",
+      "KINX",
+      "LG Uplus",
+      "SK Telecom",
+      "Samsung SDS",
+      "Sejong"
     ]
   },
   {
@@ -301,6 +428,13 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "Dreamline",
+      "LG Uplus",
+      "SK Telecom",
+      "Samsung SDS",
+      "Sejong"
     ]
   },
   {
@@ -325,6 +459,16 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "Dreamline",
+      "KINX",
+      "Korea Telecom",
+      "LG Uplus",
+      "PCCW",
+      "SK Broadband",
+      "Samsung SDS",
+      "Sejong Telecom"
     ]
   },
   {
@@ -349,6 +493,12 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "KDDI",
+      "NTT West",
+      "Optage",
+      "TOKAI Communications"
     ]
   },
   {
@@ -373,6 +523,17 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "Bharti Airtel",
+      "Equinix",
+      "Lightstorm Telecom",
+      "MTNL",
+      "Reliance Communications",
+      "Reliance Jio",
+      "Sify",
+      "Tata Communications",
+      "Vodafone"
     ]
   },
   {
@@ -395,6 +556,15 @@
     ],
     "macsec_capable": [
       "10G"
+    ],
+    "providers": [
+      "Bharti Airtel",
+      "GPX",
+      "Global Cloud Xchange",
+      "NetMagic Solutions",
+      "Reliance Jio",
+      "Sify",
+      "Tata Communications"
     ]
   },
   {
@@ -417,6 +587,14 @@
     ],
     "macsec_capable": [
       "10G"
+    ],
+    "providers": [
+      "Bharti Airtel",
+      "NetMagic Solutions",
+      "Reliance Jio",
+      "Sify",
+      "Tata Communications",
+      "Vodafone"
     ]
   },
   {
@@ -439,6 +617,15 @@
     ],
     "macsec_capable": [
       "10G"
+    ],
+    "providers": [
+      "Bharti Airtel",
+      "NetMagic Solutions",
+      "Reliance Jio",
+      "Sify",
+      "Tata Communications",
+      "Vodafone",
+      "Vodafone Idea"
     ]
   },
   {
@@ -463,6 +650,13 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "Bharti Airtel",
+      "Reliance Jio",
+      "Sify",
+      "Tata Communications",
+      "Vodafone"
     ]
   },
   {
@@ -487,6 +681,9 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "Tata Communications"
     ]
   },
   {
@@ -511,6 +708,15 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "BSNL",
+      "Bharti Airtel",
+      "JIO",
+      "PGCIL",
+      "Sify",
+      "TCL",
+      "Vodafone"
     ]
   },
   {
@@ -535,6 +741,11 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "DE-CIX",
+      "Sify",
+      "Tata Communications"
     ]
   },
   {
@@ -559,6 +770,19 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "1CloudStar",
+      "CITIC Telecom CPC",
+      "China Telecom",
+      "Console Connect",
+      "HGC Global Communications",
+      "Maxis",
+      "Orange Business",
+      "Singtel",
+      "Tata Communications",
+      "Telekom Malaysia",
+      "Telstra"
     ]
   },
   {
@@ -583,6 +807,9 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "ePLDT"
     ]
   },
   {
@@ -607,6 +834,46 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "1CloudStar",
+      "AT&T",
+      "BSO Network Solutions",
+      "BT",
+      "Bharti Airtel",
+      "CITIC Telecom CPC",
+      "CMC Telecom",
+      "China Mobile International",
+      "Colt",
+      "Console Connect",
+      "Datapath.io",
+      "Datapipe",
+      "Epsilon",
+      "Equinix",
+      "GTT",
+      "Global Cloud Xchange",
+      "HGC Global Communications",
+      "IX Reach",
+      "InfoFabrica",
+      "InterCloud",
+      "Lumen",
+      "M1 Net",
+      "Masergy",
+      "Maxis",
+      "Megaport",
+      "NTT Communications",
+      "Orange Business",
+      "Sify",
+      "Singtel",
+      "Sprint",
+      "Tata Communications",
+      "Telstra",
+      "True Cloud Service",
+      "Verizon",
+      "Vodafone",
+      "Zayo",
+      "ePLDT",
+      "iXSforAll"
     ]
   },
   {
@@ -631,6 +898,33 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "1CloudStar",
+      "AT&T",
+      "BSO Network Solutions",
+      "BT",
+      "Bharti Airtel",
+      "China Mobile International",
+      "Colt",
+      "Console Connect",
+      "Epsilon",
+      "GTT",
+      "Global Cloud Xchange",
+      "Global Switch",
+      "InterCloud",
+      "Lumen",
+      "M1 Net",
+      "Megaport",
+      "Orange Business",
+      "Singtel",
+      "Tata Communications",
+      "Telecom Italia Sparkle",
+      "Telstra",
+      "United Information Highway (UIH)",
+      "Verizon",
+      "Vodafone",
+      "Zayo"
     ]
   },
   {
@@ -655,6 +949,37 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "CBCcom",
+      "CITIC Telecom CPC",
+      "CMC Telecom",
+      "China Mobile International",
+      "China Telecom",
+      "China Unicom",
+      "Colt",
+      "Console Connect",
+      "Datapipe",
+      "Epsilon",
+      "Equinix",
+      "GTT",
+      "Global Cloud Xchange",
+      "HGC Global Communications",
+      "Hong Kong Telecommunications (HKT)",
+      "KDDI",
+      "Lumen",
+      "Maxis",
+      "Megaport",
+      "Sify",
+      "Sprint",
+      "Tata Communications",
+      "Telstra",
+      "Telstra PBS",
+      "Verizon",
+      "Vodafone",
+      "WTT",
+      "Zayo",
+      "iAdvantage"
     ]
   },
   {
@@ -679,6 +1004,17 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "AT&T",
+      "CAT",
+      "Campana Taro",
+      "Frontiir",
+      "Jastel",
+      "NTT Communications",
+      "Symphony",
+      "True",
+      "UIH"
     ]
   },
   {
@@ -702,6 +1038,14 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "AARNet",
+      "ICON",
+      "Optus",
+      "TPG Telecom/AAPT",
+      "Telstra",
+      "Vocus"
     ]
   },
   {
@@ -726,6 +1070,15 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "AT&T",
+      "Chorus",
+      "Megaport",
+      "Spark",
+      "Vector",
+      "Vital",
+      "Vocus"
     ]
   },
   {
@@ -750,6 +1103,41 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "AARNet",
+      "AT&T",
+      "Amcom",
+      "BSO Network Solutions",
+      "BT",
+      "CITIC Telecom CPC",
+      "Console Connect",
+      "Devoli",
+      "Equinix",
+      "GCOMM",
+      "Global Cloud Xchange",
+      "HGC Global Communications",
+      "InterCloud",
+      "Kordia",
+      "Lumen",
+      "Masergy",
+      "Megaport",
+      "NEXTDC",
+      "NTT Communications",
+      "Nextgen Group",
+      "Optus",
+      "Orange Business",
+      "Over the wire",
+      "Sohonet",
+      "Spark",
+      "TPG Telecom/AAPT",
+      "Tata Communications",
+      "Telstra",
+      "VPN Solutions",
+      "Verizon",
+      "Vocus",
+      "Vodafone",
+      "Zayo"
     ]
   },
   {
@@ -773,6 +1161,21 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "BSO Network Solutions",
+      "CITIC Telecom CPC",
+      "Console Connect",
+      "Equinix",
+      "InterCloud",
+      "Megaport",
+      "NEXTDC",
+      "NTT Communications",
+      "Optus",
+      "Over the wire",
+      "Telstra",
+      "VPN Solutions",
+      "Verizon"
     ]
   },
   {
@@ -793,7 +1196,35 @@
       "1G",
       "10G"
     ],
-    "macsec_capable": []
+    "macsec_capable": [],
+    "providers": [
+      "AARNet",
+      "AT&T",
+      "Amcom",
+      "BT",
+      "Cinenet",
+      "Console Connect",
+      "Devoli",
+      "Global Switch",
+      "IX Australia",
+      "Kordia",
+      "Masergy",
+      "Megaport",
+      "NEXTDC",
+      "NTT Communications",
+      "Nextgen Group",
+      "Optus",
+      "Orange Business",
+      "Over the wire",
+      "Spark",
+      "TPG Telecom/AAPT",
+      "Tata Communications",
+      "TechFlow",
+      "Telstra",
+      "Verizon",
+      "Vocus",
+      "Vodafone"
+    ]
   },
   {
     "code": "NDCB2",
@@ -816,6 +1247,12 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "Anycast Networks",
+      "Optus",
+      "Telstra",
+      "Vocus"
     ]
   },
   {
@@ -838,6 +1275,12 @@
     ],
     "macsec_capable": [
       "10G"
+    ],
+    "providers": [
+      "Megaport",
+      "NEXTDC",
+      "TPG Telecom/AAPT",
+      "Telstra"
     ]
   },
   {
@@ -862,6 +1305,17 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "Equinix",
+      "Megaport",
+      "NEXTDC",
+      "NTT Communications",
+      "Optus",
+      "Sprint",
+      "Telstra",
+      "VPN Solutions",
+      "Vocus"
     ]
   },
   {
@@ -886,6 +1340,15 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "Amcom",
+      "Megaport",
+      "NEXTDC",
+      "Nextgen Group",
+      "TPG Telecom/AAPT",
+      "Telstra",
+      "Vocus"
     ]
   },
   {
@@ -910,6 +1373,11 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "AARNet",
+      "NEXTDC",
+      "Vocus"
     ]
   },
   {
@@ -934,6 +1402,14 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "DCI Indonesia",
+      "Indonet",
+      "Indosat",
+      "NTT Indonesia",
+      "Telin",
+      "XL Axiata"
     ]
   },
   {
@@ -958,6 +1434,15 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "DCI Indonesia",
+      "Epsilon",
+      "Indonet",
+      "Indosat",
+      "NTT Indonesia",
+      "Telin",
+      "XL Axiata"
     ]
   },
   {
@@ -982,6 +1467,15 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "AARNet",
+      "AT&T",
+      "Equinix",
+      "NEXTDC",
+      "Singtel",
+      "Telstra",
+      "Verizon"
     ]
   },
   {
@@ -1006,6 +1500,9 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "CMC Telecom"
     ]
   },
   {
@@ -1029,6 +1526,39 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "1CloudStar",
+      "Agarto",
+      "Aims Data Centre",
+      "Aries Telecoms (M)",
+      "Big Band",
+      "Celcom Networks",
+      "China Mobile International",
+      "Extreme Broadband",
+      "Fiberail",
+      "Fibercomm Network (M)",
+      "Global Forway",
+      "Hitachi Sunway Data Centre Services",
+      "IX Telecom",
+      "MSA Resources",
+      "Maxis Broadband",
+      "MyKRIS Asia",
+      "NGN Connection",
+      "NTT MSC",
+      "Net2One",
+      "Neutral Transmission Malaysia",
+      "REDtone Engineering and Network Services",
+      "SEAX Malaysia",
+      "Setia Haruman Technology",
+      "Speedlink",
+      "Symphonet",
+      "TIME DotCom Malaysia",
+      "TNB IT",
+      "Telekom Malaysia",
+      "U Mobile",
+      "Visi Cenderawasih",
+      "X86 Network"
     ]
   },
   {
@@ -1052,6 +1582,12 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "Megaport",
+      "PCCW",
+      "Spark",
+      "Vector"
     ]
   },
   {
@@ -1075,6 +1611,18 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "ALT",
+      "DTAC",
+      "HGC",
+      "IGC",
+      "Jastel",
+      "NT",
+      "Symphony",
+      "True",
+      "UIH",
+      "ais"
     ]
   },
   {
@@ -1099,6 +1647,20 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "Allstream",
+      "Beanfield Metro",
+      "Bell Canada",
+      "Cologix",
+      "Equinix",
+      "GTT",
+      "IX Reach",
+      "Megaport",
+      "Orange Business",
+      "Tata Communications",
+      "Telus",
+      "Zayo"
     ]
   },
   {
@@ -1123,6 +1685,25 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "Allstream",
+      "Arelion",
+      "BSO Network Solutions",
+      "Beanfield Metro",
+      "Bell Canada",
+      "Cologix",
+      "Fibrenoire",
+      "GTT",
+      "IX Reach",
+      "Lumen",
+      "Megaport",
+      "Orange Business",
+      "RISQ ( Reseau d'informations scientifiques du Quebec )",
+      "Sohonet",
+      "Tata Communications",
+      "Telus",
+      "Zayo"
     ]
   },
   {
@@ -1145,6 +1726,16 @@
     ],
     "macsec_capable": [
       "10G"
+    ],
+    "providers": [
+      "Allstream",
+      "Beanfield Metro",
+      "Bell Canada",
+      "Cologix",
+      "GTT",
+      "Sohonet",
+      "Telus",
+      "Zayo"
     ]
   },
   {
@@ -1168,6 +1759,19 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "Allstream",
+      "Bell Canada",
+      "Cogent Communications",
+      "Fibertel Networks",
+      "Lumen",
+      "Metro Optical",
+      "Shaw",
+      "Simnet",
+      "Telus",
+      "Urban Communications",
+      "Zayo"
     ]
   },
   {
@@ -1191,6 +1795,20 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "AT&T",
+      "BT",
+      "Beanfield Metro",
+      "Bell Canada",
+      "City Wide Communications",
+      "CrossLake Fibre",
+      "Deutsche Telekom ICSS",
+      "GTT",
+      "Lumen",
+      "NTT Communications",
+      "Rogers Carrier Services",
+      "Telus"
     ]
   },
   {
@@ -1215,7 +1833,8 @@
     "macsec_capable": [
       "10G",
       "100G"
-    ]
+    ],
+    "providers": []
   },
   {
     "code": "EQCL1",
@@ -1239,7 +1858,8 @@
     "macsec_capable": [
       "10G",
       "100G"
-    ]
+    ],
+    "providers": []
   },
   {
     "code": "EQCL3",
@@ -1263,7 +1883,8 @@
     "macsec_capable": [
       "10G",
       "100G"
-    ]
+    ],
+    "providers": []
   },
   {
     "code": "CDSR1",
@@ -1287,6 +1908,14 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "ACP - Init7",
+      "Colt",
+      "Fastweb",
+      "IT.net",
+      "Lumen",
+      "Telecom Italia Sparkle"
     ]
   },
   {
@@ -1307,7 +1936,15 @@
       "1G",
       "10G"
     ],
-    "macsec_capable": []
+    "macsec_capable": [],
+    "providers": [
+      "Arelion",
+      "Colt",
+      "GTT",
+      "IX Reach",
+      "Lumen",
+      "NL-ix"
+    ]
   },
   {
     "code": "DGPU1",
@@ -1329,6 +1966,10 @@
     ],
     "macsec_capable": [
       "10G"
+    ],
+    "providers": [
+      "DigiPlex",
+      "EUNetworks"
     ]
   },
   {
@@ -1353,6 +1994,31 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "ACP - Init7",
+      "Arelion",
+      "BT",
+      "China Telecom",
+      "Colt",
+      "Datapath.io",
+      "EUNetworks",
+      "Epsilon",
+      "Equinix",
+      "GTT",
+      "IX Reach",
+      "InterCloud",
+      "Lumen",
+      "Masergy",
+      "Megaport",
+      "NL-ix",
+      "Orange Business",
+      "T-Systems International",
+      "Telecom Italia Sparkle",
+      "Telefonica",
+      "Verizon",
+      "Vodafone",
+      "Zayo"
     ]
   },
   {
@@ -1377,6 +2043,45 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "ACP - Init7",
+      "AT&T",
+      "Arelion",
+      "BICS",
+      "BSO Network Solutions",
+      "BT",
+      "CITIC Telecom CPC",
+      "China Mobile International",
+      "China Telecom",
+      "Cinia",
+      "Colt",
+      "Console Connect",
+      "DE-CIX",
+      "EUNetworks",
+      "Epsilon",
+      "Equinix",
+      "GTT",
+      "Global Cloud Xchange",
+      "HGC Global Communications",
+      "IX Reach",
+      "InterCloud",
+      "KPN",
+      "Lumen",
+      "Masergy",
+      "NL-ix",
+      "NTT Europe",
+      "Orange Business",
+      "T-Systems International",
+      "Tamares Telecom",
+      "Tata Communications",
+      "Telecom Italia Sparkle",
+      "Telefonica",
+      "Telstra",
+      "Verizon",
+      "Vodafone",
+      "Zain Group",
+      "Zayo"
     ]
   },
   {
@@ -1397,7 +2102,11 @@
       "1G",
       "10G"
     ],
-    "macsec_capable": []
+    "macsec_capable": [],
+    "providers": [
+      "Cinia",
+      "Equinix"
+    ]
   },
   {
     "code": "EQIL4",
@@ -1420,6 +2129,21 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "China Telecom",
+      "Cogent Communications",
+      "Deutsche Telekom",
+      "EXA",
+      "Fiberconnect",
+      "Fink Telecom",
+      "Gulf Bridge",
+      "Hurricane Electric",
+      "Lumen",
+      "Turk Telecom",
+      "Turkcell",
+      "Turknet",
+      "Vodafone"
     ]
   },
   {
@@ -1442,6 +2166,19 @@
     ],
     "macsec_capable": [
       "10G"
+    ],
+    "providers": [
+      "Arelion",
+      "Colt",
+      "DE-CIX",
+      "EUNetworks",
+      "Equinix",
+      "GTT",
+      "Lumen",
+      "NL-ix",
+      "T-Systems International",
+      "Tata Communications",
+      "Vodafone"
     ]
   },
   {
@@ -1462,7 +2199,17 @@
       "1G",
       "10G"
     ],
-    "macsec_capable": []
+    "macsec_capable": [],
+    "providers": [
+      "EUNetworks",
+      "Equinix",
+      "GTT",
+      "KPN",
+      "Lumen",
+      "NL-ix",
+      "Orange Business",
+      "Tata Communications"
+    ]
   },
   {
     "code": "INX6",
@@ -1486,6 +2233,27 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "ACP - Init7",
+      "Arelion",
+      "BICS",
+      "BT",
+      "Colt",
+      "DE-CIX",
+      "Datapath.io",
+      "EUNetworks",
+      "Exponential-e",
+      "IX Reach",
+      "Interxion",
+      "KPN",
+      "Megaport",
+      "NL-ix",
+      "T-Systems International",
+      "Telefonica",
+      "Verizon",
+      "Vodafone",
+      "Zayo"
     ]
   },
   {
@@ -1508,6 +2276,18 @@
     ],
     "macsec_capable": [
       "10G"
+    ],
+    "providers": [
+      "Arelion",
+      "Colt",
+      "EUNetworks",
+      "GTT",
+      "IX Reach",
+      "Lumen",
+      "NL-ix",
+      "T-Systems International",
+      "Telefonica",
+      "Vodafone"
     ]
   },
   {
@@ -1530,6 +2310,15 @@
     ],
     "macsec_capable": [
       "10G"
+    ],
+    "providers": [
+      "ACP - Init7",
+      "BT",
+      "Colt",
+      "EUNetworks",
+      "Lumen",
+      "T-Systems International",
+      "Vodafone"
     ]
   },
   {
@@ -1554,6 +2343,22 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "AT&T",
+      "Arelion",
+      "BT",
+      "Colt",
+      "Equinix",
+      "GTT",
+      "KPN",
+      "Lumen",
+      "Orange Business",
+      "Tata Communications",
+      "Telecom Italia Sparkle",
+      "Telefonica",
+      "Verizon",
+      "Vodafone"
     ]
   },
   {
@@ -1577,6 +2382,18 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "Cogent Communications",
+      "Digital Realty (Interxion)",
+      "EXA",
+      "Forthnet",
+      "Grid Telecom",
+      "Hurricane Electric",
+      "Telecom Italia Sparkle",
+      "Telefonica",
+      "Vodafone",
+      "Wind"
     ]
   },
   {
@@ -1599,6 +2416,12 @@
     ],
     "macsec_capable": [
       "10G"
+    ],
+    "providers": [
+      "BSO Network Solutions",
+      "Interxion",
+      "Lumen",
+      "NOS"
     ]
   },
   {
@@ -1621,6 +2444,9 @@
     ],
     "macsec_capable": [
       "10G"
+    ],
+    "providers": [
+      "Interxion"
     ]
   },
   {
@@ -1638,7 +2464,26 @@
     "longitude": "-3.621211",
     "ip": null,
     "port_speeds": [],
-    "macsec_capable": []
+    "macsec_capable": [],
+    "providers": [
+      "ACP - Init7",
+      "AT&T",
+      "Arelion",
+      "BT",
+      "Colt",
+      "DE-CIX",
+      "GTT",
+      "IX Reach",
+      "InterCloud",
+      "Interxion",
+      "Lumen",
+      "NOS",
+      "Orange Business",
+      "Tata Communications",
+      "Telefonica",
+      "Verizon",
+      "Vodafone"
+    ]
   },
   {
     "code": "ITXM3",
@@ -1661,7 +2506,8 @@
     "macsec_capable": [
       "10G",
       "100G"
-    ]
+    ],
+    "providers": []
   },
   {
     "code": "ITXS1",
@@ -1685,6 +2531,21 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "Arelion",
+      "Cinia",
+      "Colt",
+      "Digital Realty (Interxion)",
+      "EUNetworks",
+      "GTT",
+      "Interxion",
+      "Lumen",
+      "Megaport",
+      "NL-ix",
+      "Verizon",
+      "Vodafone",
+      "Zayo"
     ]
   },
   {
@@ -1707,6 +2568,20 @@
     ],
     "macsec_capable": [
       "10G"
+    ],
+    "providers": [
+      "ACP - Init7",
+      "Arelion",
+      "Colt",
+      "GTT",
+      "IX Reach",
+      "Interxion",
+      "Lumen",
+      "NL-ix",
+      "T-Systems International",
+      "Tata Communications",
+      "Telefonica",
+      "Verizon"
     ]
   },
   {
@@ -1731,6 +2606,21 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "ACP - Init7",
+      "AT&T",
+      "Colt",
+      "EUNetworks",
+      "GTT",
+      "InterCloud",
+      "Interxion",
+      "Lumen",
+      "NL-ix",
+      "Sunrise",
+      "Swisscom",
+      "Telefonica",
+      "Verizon"
     ]
   },
   {
@@ -1755,6 +2645,12 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "Bezeq",
+      "Bezeq International",
+      "Cellcom",
+      "Tamares Telecom"
     ]
   },
   {
@@ -1779,6 +2675,32 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "ACP - Init7",
+      "AT&T",
+      "Arelion",
+      "BSO Network Solutions",
+      "BT",
+      "China Mobile International",
+      "Colt",
+      "Console Connect",
+      "EUNetworks",
+      "Epsilon",
+      "GTT",
+      "IX Reach",
+      "InterCloud",
+      "Lumen",
+      "NL-ix",
+      "Orange Business",
+      "SES",
+      "Tata Communications",
+      "Telecom Italia Sparkle",
+      "Telefonica",
+      "Telehouse",
+      "Telstra",
+      "Verizon",
+      "Zayo"
     ]
   },
   {
@@ -1803,6 +2725,15 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "ACP - Init7",
+      "Colt",
+      "EWZ Telecom",
+      "Equinix",
+      "Gas & Com",
+      "Sunrise",
+      "Swisscom"
     ]
   },
   {
@@ -1827,6 +2758,13 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "Arelion",
+      "Cinia",
+      "Equinix",
+      "Lumen",
+      "Telecom Italia Sparkle"
     ]
   },
   {
@@ -1844,7 +2782,15 @@
     "longitude": "9.147436",
     "ip": null,
     "port_speeds": [],
-    "macsec_capable": []
+    "macsec_capable": [],
+    "providers": [
+      "ACP - Init7",
+      "Colt",
+      "EUNetworks",
+      "Equinix",
+      "Fastweb",
+      "IT.net"
+    ]
   },
   {
     "code": "EQBA1",
@@ -1867,7 +2813,8 @@
     "macsec_capable": [
       "10G",
       "100G"
-    ]
+    ],
+    "providers": []
   },
   {
     "code": "EIRCL",
@@ -1889,6 +2836,17 @@
     ],
     "macsec_capable": [
       "10G"
+    ],
+    "providers": [
+      "BT",
+      "Colt",
+      "EUNetworks",
+      "Equinix",
+      "GTT",
+      "InterCloud",
+      "Lumen",
+      "Tata Communications",
+      "eircom"
     ]
   },
   {
@@ -1911,6 +2869,28 @@
     ],
     "macsec_capable": [
       "10G"
+    ],
+    "providers": [
+      "BICS",
+      "CITIC Telecom CPC",
+      "CUBIT Technologies",
+      "China Mobile International",
+      "China Telecom",
+      "City Network Hosting",
+      "DE-CIX",
+      "DataMena",
+      "Eathlink Telecommunications",
+      "Epsilon",
+      "Equinix",
+      "GTT",
+      "HGC",
+      "Infonas",
+      "Kalaam Telecom",
+      "Lumen",
+      "MetroNet (UK)",
+      "Orixcom",
+      "Telstra",
+      "Zain Group"
     ]
   },
   {
@@ -1935,6 +2915,44 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "AT&T",
+      "Apcela",
+      "Arelion",
+      "BICS",
+      "BSO Network Solutions",
+      "BT",
+      "China Mobile International",
+      "Colt",
+      "Datapath.io",
+      "Datapipe",
+      "Digital Realty",
+      "EUNetworks",
+      "Epsilon",
+      "Equinix",
+      "Exponential-e",
+      "GTT",
+      "Global Cloud Xchange",
+      "IX Reach",
+      "InterCloud",
+      "KPN",
+      "Lumen",
+      "Masergy",
+      "Megaport",
+      "NL-ix",
+      "NTT Communications",
+      "Orange Business",
+      "T-Systems International",
+      "Tata Communications",
+      "Telecom Italia Sparkle",
+      "Telefonica",
+      "Telia Carrier",
+      "Telstra",
+      "Verizon",
+      "Vodafone",
+      "Zayo",
+      "hSo"
     ]
   },
   {
@@ -1958,6 +2976,25 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "AT&T",
+      "Altice",
+      "Axione",
+      "BT Portugal",
+      "China Telecom",
+      "Colt",
+      "Equinix",
+      "GTT",
+      "IP Telecom - Infraestructure De Portugal",
+      "Lumen",
+      "MTN Business",
+      "Orange Business",
+      "PCCW",
+      "Tata Communications",
+      "Telecom Italia Sparkle",
+      "Telefonica Global",
+      "Vodafone"
     ]
   },
   {
@@ -1980,6 +3017,11 @@
     ],
     "macsec_capable": [
       "10G"
+    ],
+    "providers": [
+      "BSO Network Solutions",
+      "Infonas",
+      "Zain Group"
     ]
   },
   {
@@ -2004,6 +3046,20 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "AT&T",
+      "BT",
+      "Colt",
+      "EUNetworks",
+      "GTT",
+      "IX Reach",
+      "Interxion",
+      "Lumen",
+      "Megaport",
+      "Telefonica",
+      "Verizon",
+      "Zayo"
     ]
   },
   {
@@ -2024,7 +3080,28 @@
       "1G",
       "10G"
     ],
-    "macsec_capable": []
+    "macsec_capable": [],
+    "providers": [
+      "ACP - Init7",
+      "AT&T",
+      "Arelion",
+      "BSO Network Solutions",
+      "BT",
+      "Colt",
+      "Console Connect",
+      "EUNetworks",
+      "Epsilon",
+      "GTT",
+      "IX Reach",
+      "Interxion",
+      "Lumen",
+      "NL-ix",
+      "Orange Business",
+      "Tata Communications",
+      "Telecom Italia Sparkle",
+      "Verizon",
+      "Vodafone"
+    ]
   },
   {
     "code": "SCDB9",
@@ -2048,6 +3125,21 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "Aurora Telecom",
+      "BT",
+      "Cogent Communications",
+      "Colt",
+      "EUNetworks",
+      "Lumen",
+      "Magnet Networks",
+      "Servecentric",
+      "Verizon",
+      "ViaTel",
+      "Virgin Media",
+      "Vodafone",
+      "Zayo"
     ]
   },
   {
@@ -2070,6 +3162,53 @@
     ],
     "macsec_capable": [
       "10G"
+    ],
+    "providers": [
+      "AT&T",
+      "Arelion",
+      "BICS",
+      "BT",
+      "Batelco",
+      "Cellnex Telecom",
+      "Colt",
+      "Console Connect",
+      "Datapipe",
+      "Digital Realty",
+      "EUNetworks",
+      "Epsilon",
+      "Equinix",
+      "Exponential-e",
+      "GTT",
+      "Global Cloud Xchange",
+      "HGC Global Communications",
+      "IX Reach",
+      "Infonas",
+      "InterCloud",
+      "Interxion",
+      "KCOM",
+      "KPN",
+      "Kalaam Telecom",
+      "Lumen",
+      "MTN Business",
+      "Masergy",
+      "Megaport",
+      "NL-ix",
+      "NTT Communications",
+      "Orange Business",
+      "Sohonet",
+      "Tamares Telecom",
+      "Tata Communications",
+      "Telecom Italia Sparkle",
+      "Telefonica",
+      "Telia Carrier",
+      "Telstra",
+      "Updata",
+      "Venus",
+      "Verizon",
+      "Vodafone",
+      "Zain Group",
+      "Zayo",
+      "hSo"
     ]
   },
   {
@@ -2094,6 +3233,14 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "BSO Network Solutions",
+      "BT",
+      "Liquid Intelligent Technologies",
+      "Orange Business",
+      "Teraco",
+      "Vodacom Business"
     ]
   },
   {
@@ -2114,7 +3261,18 @@
       "1G",
       "10G"
     ],
-    "macsec_capable": []
+    "macsec_capable": [],
+    "providers": [
+      "BT",
+      "Colt",
+      "EUNetworks",
+      "Equinix",
+      "Exponential-e",
+      "GTT",
+      "IX Reach",
+      "Lumen",
+      "Vodafone"
+    ]
   },
   {
     "code": "THNO2",
@@ -2138,6 +3296,24 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "21st Century Technologies",
+      "ACP - Init7",
+      "Arelion",
+      "BICS",
+      "BSO Network Solutions",
+      "CITIC Telecom CPC",
+      "China Mobile International",
+      "Colt",
+      "Console Connect",
+      "Epsilon",
+      "HGC Global Communications",
+      "IX Reach",
+      "Lumen",
+      "Sprint",
+      "Telecom Italia Sparkle",
+      "Zayo"
     ]
   },
   {
@@ -2162,6 +3338,20 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "Arelion",
+      "BSO Network Solutions",
+      "China Mobile International",
+      "China Telecom",
+      "Colt",
+      "EUNetworks",
+      "Equinix",
+      "IX Reach",
+      "InterCloud",
+      "Lumen",
+      "Orange Business",
+      "Zayo"
     ]
   },
   {
@@ -2182,7 +3372,13 @@
       "1G",
       "10G"
     ],
-    "macsec_capable": []
+    "macsec_capable": [],
+    "providers": [
+      "Arelion",
+      "BT",
+      "Colt",
+      "Interxion"
+    ]
   },
   {
     "code": "ECTL1",
@@ -2204,6 +3400,13 @@
     ],
     "macsec_capable": [
       "10G"
+    ],
+    "providers": [
+      "Bezeq",
+      "Bezeq International",
+      "Cellcom",
+      "Hot/Altice",
+      "IT Sparkle"
     ]
   },
   {
@@ -2227,6 +3430,29 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "AT&T",
+      "Axtel",
+      "BT",
+      "Cirion",
+      "Cogent Communications",
+      "Equinix",
+      "FLO Networks",
+      "GRUPO Neutral Networks",
+      "Hurricane Electric",
+      "IENTC",
+      "Lanto Internet",
+      "Marcatel",
+      "Megacable",
+      "Mexico Red",
+      "Neulink Networks",
+      "Operbes",
+      "Redetec",
+      "Servnet Mexico",
+      "Telia Carrier",
+      "Total Play",
+      "UC Telecom"
     ]
   },
   {
@@ -2251,6 +3477,9 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "Lumen"
     ]
   },
   {
@@ -2273,6 +3502,23 @@
     ],
     "macsec_capable": [
       "10G"
+    ],
+    "providers": [
+      "Americatel",
+      "Claro",
+      "Commerce",
+      "Convergia",
+      "Entel",
+      "Fiberlux",
+      "Mautilux",
+      "Media",
+      "Mega Andina",
+      "Netline",
+      "Optical IP",
+      "Orbitel",
+      "Telefonica",
+      "Telmex",
+      "Viettel"
     ]
   },
   {
@@ -2297,6 +3543,12 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "Liberty Global",
+      "Lumen",
+      "Orange Business",
+      "Telefonica"
     ]
   },
   {
@@ -2321,6 +3573,14 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "China Mobile International",
+      "Equinix",
+      "T-Systems Brazil",
+      "Telecom Italia Sparkle",
+      "Telefonica",
+      "Verizon"
     ]
   },
   {
@@ -2345,6 +3605,14 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "Cirion",
+      "Claro",
+      "Entel",
+      "GTD",
+      "Telefonica",
+      "Ufinet"
     ]
   },
   {
@@ -2369,6 +3637,17 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "Ascenty",
+      "BT",
+      "China Mobile International",
+      "Lumen",
+      "T-Systems Brazil",
+      "TIVIT",
+      "Telecom Italia Sparkle",
+      "Telefonica",
+      "UOL DIVEO"
     ]
   },
   {
@@ -2393,6 +3672,23 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "Ascenty",
+      "BT",
+      "China Mobile International",
+      "China Telecom",
+      "Equinix",
+      "InterCloud",
+      "Lumen",
+      "Neutrona Networks",
+      "Orange Business",
+      "Sprint",
+      "T-Systems Brazil",
+      "Telecom Italia Sparkle",
+      "Telefonica",
+      "UOL DIVEO",
+      "Verizon"
     ]
   },
   {
@@ -2419,6 +3715,27 @@
       "10G",
       "100G",
       "400G"
+    ],
+    "providers": [
+      "11:11 Systems",
+      "AT&T",
+      "Arelion",
+      "BSO Network Solutions",
+      "BT",
+      "Colt",
+      "Crown Castle",
+      "DE-CIX",
+      "Epsilon",
+      "Equinix",
+      "GTT",
+      "Global Cloud Xchange",
+      "Lumen",
+      "PacketFabric",
+      "Tata Communications",
+      "Telecom Italia Sparkle",
+      "Verizon",
+      "XO Communications",
+      "Zayo"
     ]
   },
   {
@@ -2443,6 +3760,32 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "AT&T",
+      "Apcela",
+      "Atlantic Metro Communications",
+      "CITIC Telecom CPC",
+      "Cologix",
+      "Colt",
+      "CoreSite",
+      "Crown Castle",
+      "Digital Realty",
+      "GTT",
+      "Global Cloud Xchange",
+      "IX Reach",
+      "Lightpath",
+      "Lumen",
+      "Megaport",
+      "PacketFabric",
+      "RCN",
+      "Sohonet",
+      "TOWARDEX",
+      "Telecom Italia Sparkle",
+      "Telstra",
+      "Verizon",
+      "Vodafone",
+      "Zayo"
     ]
   },
   {
@@ -2467,6 +3810,28 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "11:11 Systems",
+      "AT&T",
+      "Arelion",
+      "BT",
+      "Beanfield Metro",
+      "CoreSite",
+      "Crown Castle",
+      "Datapipe",
+      "FiberLight",
+      "GTT",
+      "IX Reach",
+      "Lumen",
+      "Megaport",
+      "NTT Communications",
+      "PacketFabric",
+      "Summit IG",
+      "Verizon",
+      "XO Communications",
+      "YellowFiber Networks",
+      "Zayo"
     ]
   },
   {
@@ -2491,6 +3856,40 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "11:11 Systems",
+      "AT&T",
+      "Arelion",
+      "BICS",
+      "Bestel",
+      "C3ntro Telecom",
+      "China Telecom",
+      "Cologix",
+      "Colt",
+      "Cox",
+      "Crown Castle",
+      "CyrusOne",
+      "DE-CIX",
+      "Epsilon",
+      "Equinix",
+      "FiberLight",
+      "GTT",
+      "Global Cloud Xchange",
+      "IX Reach",
+      "Internet2",
+      "Lumen",
+      "MCM Telecom",
+      "Masergy",
+      "Megaport",
+      "Orange Business",
+      "PacketFabric",
+      "Pureport",
+      "Tata Communications",
+      "Telefonica",
+      "Verizon",
+      "XO Communications",
+      "Zayo"
     ]
   },
   {
@@ -2517,6 +3916,58 @@
       "10G",
       "100G",
       "400G"
+    ],
+    "providers": [
+      "11:11 Systems",
+      "AT&T",
+      "Apcela",
+      "Arelion",
+      "BICS",
+      "BT",
+      "Beanfield Metro",
+      "Bestel",
+      "C3ntro Telecom",
+      "China Mobile International",
+      "China Telecom",
+      "Colt",
+      "Comcast",
+      "Console Connect",
+      "Cox",
+      "Crown Castle",
+      "Datapath.io",
+      "Datapipe",
+      "Digital Realty",
+      "Epsilon",
+      "Equinix",
+      "FiberLight",
+      "First Communications",
+      "GTT",
+      "Global Cloud Xchange",
+      "HopOne",
+      "IX Reach",
+      "InterCloud",
+      "Internet2",
+      "Lightpath",
+      "Lumen",
+      "Masergy",
+      "Megaport",
+      "NTT Communications",
+      "Neutrona Networks",
+      "Orange Business",
+      "PacketFabric",
+      "Pureport",
+      "RCN",
+      "SES",
+      "Sprint",
+      "Summit IG",
+      "Tata Communications",
+      "Telecom Italia Sparkle",
+      "Telefonica",
+      "Transtelco",
+      "Verizon",
+      "XO Communications",
+      "YellowFiber Networks",
+      "Zayo"
     ]
   },
   {
@@ -2541,6 +3992,30 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "AT&T",
+      "Arelion",
+      "BT",
+      "C3ntro Telecom",
+      "China Mobile International",
+      "Colt",
+      "Console Connect",
+      "Epsilon",
+      "Equinix",
+      "GTT",
+      "Global Cloud Xchange",
+      "Lightpath",
+      "Lumen",
+      "Masergy",
+      "Megaport",
+      "Neutrona Networks",
+      "PacketFabric",
+      "SES",
+      "Telecom Italia Sparkle",
+      "Verizon",
+      "Vodafone",
+      "Zayo"
     ]
   },
   {
@@ -2565,6 +4040,13 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "AT&T",
+      "C3ntro Telecom",
+      "Equinix",
+      "Lightpath",
+      "Telecom Italia Sparkle"
     ]
   },
   {
@@ -2589,6 +4071,12 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "American Tower Communications",
+      "C3ntro Telecom",
+      "FLO Networks",
+      "KIO Networks"
     ]
   },
   {
@@ -2613,6 +4101,19 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "AT&T",
+      "Arelion",
+      "BT",
+      "Crown Castle",
+      "First Communications",
+      "GTT",
+      "Global Cloud Xchange",
+      "Lumen",
+      "Verizon",
+      "XO Communications",
+      "Zayo"
     ]
   },
   {
@@ -2637,6 +4138,25 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "AT&T",
+      "Arelion",
+      "BT",
+      "Colt",
+      "Crown Castle",
+      "GTT",
+      "Lightpath",
+      "Lumen",
+      "Megaport",
+      "Orange Business",
+      "PacketFabric",
+      "RCN",
+      "Sprint",
+      "Tata Communications",
+      "Verizon",
+      "XO Communications",
+      "Zayo"
     ]
   },
   {
@@ -2661,6 +4181,25 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "11:11 Systems",
+      "AT&T",
+      "Cogent Communications",
+      "Colt",
+      "Comcast",
+      "Crown Castle",
+      "FiberLight",
+      "Hurricane Electric",
+      "Lightpath",
+      "Lumen",
+      "One Ring",
+      "Southern Telecom",
+      "Telia Carrier",
+      "Unitas Global",
+      "Verizon",
+      "Windstream",
+      "Zayo"
     ]
   },
   {
@@ -2685,6 +4224,21 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "AT&T",
+      "BSO Network Solutions",
+      "China Telecom",
+      "China Unicom",
+      "Cogent Communications",
+      "Colt",
+      "Comcast",
+      "GTT",
+      "Lumen",
+      "PacketFabric",
+      "Tata Communications",
+      "Verizon",
+      "Zayo"
     ]
   },
   {
@@ -2709,6 +4263,29 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "AT&T",
+      "Arelion",
+      "Bestel",
+      "Colt",
+      "Console Connect",
+      "Crown Castle",
+      "Digital Realty",
+      "Equinix",
+      "FiberLight",
+      "GTT",
+      "Lumen",
+      "Megaport",
+      "Orange Business",
+      "PacketFabric",
+      "QTS",
+      "Sohonet",
+      "Tata Communications",
+      "Verizon",
+      "Vodafone",
+      "XO Communications",
+      "Zayo"
     ]
   },
   {
@@ -2733,6 +4310,14 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "AT&T",
+      "Crown Castle",
+      "Lumen",
+      "Verizon",
+      "XO Communications",
+      "Zayo"
     ]
   },
   {
@@ -2757,6 +4342,18 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "11:11 Systems",
+      "AT&T",
+      "Allstream",
+      "Arelion",
+      "GTT",
+      "Lumen",
+      "Masergy",
+      "Verizon",
+      "XO Communications",
+      "Zayo"
     ]
   },
   {
@@ -2780,6 +4377,21 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "AT&T",
+      "CoreSite",
+      "Crown Castle",
+      "Level 3",
+      "Lumen",
+      "MFS",
+      "Qwest",
+      "RCN",
+      "Sidera",
+      "Sunesys",
+      "Verizon",
+      "Windstream",
+      "Zayo"
     ]
   },
   {
@@ -2803,6 +4415,15 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "AT&T",
+      "Comcast",
+      "CryusOne",
+      "Lighttower",
+      "Lumen",
+      "Megaport",
+      "Zayo"
     ]
   },
   {
@@ -2827,6 +4448,20 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "AT&T",
+      "Arelion",
+      "BT",
+      "Crown Castle",
+      "FiberLight",
+      "IX Reach",
+      "Lumen",
+      "Megaport",
+      "PacketFabric",
+      "Tata Communications",
+      "Verizon",
+      "Zayo"
     ]
   },
   {
@@ -2851,6 +4486,42 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "11:11 Systems",
+      "AT&T",
+      "Arelion",
+      "Atlantic Metro Communications",
+      "BICS",
+      "BSO Network Solutions",
+      "BT",
+      "China Mobile International",
+      "China Telecom",
+      "Colt",
+      "Comcast",
+      "Console Connect",
+      "CoreSite",
+      "Crown Castle",
+      "Epsilon",
+      "Equinix",
+      "GTT",
+      "Global Cloud Xchange",
+      "HopOne",
+      "IX Reach",
+      "InterCloud",
+      "Internet2",
+      "Lightpath",
+      "Lumen",
+      "Masergy",
+      "Orange Business",
+      "PacketFabric",
+      "Pureport",
+      "RCN",
+      "Sprint",
+      "Tata Communications",
+      "Verizon",
+      "XO Communications",
+      "Zayo"
     ]
   },
   {
@@ -2875,6 +4546,27 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "AT&T",
+      "Arelion",
+      "BlueBird Networks",
+      "Charter Spectrum",
+      "Cogent Communications",
+      "Cologix",
+      "Comcast",
+      "Consolidated Communications",
+      "Cox",
+      "Crown Castle",
+      "Great Plains Communications",
+      "K=Powernet",
+      "Kansas Fiber Network",
+      "Linkcity",
+      "Lumen",
+      "Unite Private Networks",
+      "Verizon",
+      "Windstream",
+      "Zayo"
     ]
   },
   {
@@ -2899,6 +4591,13 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "AT&T",
+      "Megaport",
+      "PacketFabric",
+      "QTS",
+      "Zayo"
     ]
   },
   {
@@ -2923,6 +4622,34 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "11:11 Systems",
+      "Allstream",
+      "Arelion",
+      "BICS",
+      "BSO Network Solutions",
+      "CENIC",
+      "CoreSite",
+      "Crown Castle",
+      "Digital Realty",
+      "Epsilon",
+      "Global Cloud Xchange",
+      "HGC Global Communications",
+      "IX Reach",
+      "KDDI",
+      "Lumen",
+      "Megaport",
+      "NTT Communications",
+      "Neutrona Networks",
+      "PacketFabric",
+      "Sohonet",
+      "Telecom Italia Sparkle",
+      "Telstra",
+      "Transtelco",
+      "Verizon",
+      "Vodafone",
+      "Zayo"
     ]
   },
   {
@@ -2943,7 +4670,10 @@
       "1G",
       "10G"
     ],
-    "macsec_capable": []
+    "macsec_capable": [],
+    "providers": [
+      "CoreSite"
+    ]
   },
   {
     "code": "CSSV4",
@@ -2969,6 +4699,20 @@
       "10G",
       "100G",
       "400G"
+    ],
+    "providers": [
+      "11:11 Systems",
+      "CoreSite",
+      "Datapipe",
+      "Fiber Internet Center",
+      "GTT",
+      "IX Reach",
+      "Layer42",
+      "Lumen",
+      "PacketFabric",
+      "Verizon",
+      "XO Communications",
+      "Zayo"
     ]
   },
   {
@@ -2994,6 +4738,21 @@
       "10G",
       "100G",
       "400G"
+    ],
+    "providers": [
+      "48 IX",
+      "Arelion",
+      "Cloudflare",
+      "Cogent Communications",
+      "DE-CIX",
+      "Hurricane Electric",
+      "Lumen",
+      "Megaport",
+      "Phoenix IX",
+      "SRP Telecom",
+      "WhiteSky Communications",
+      "XO Communications",
+      "Zayo"
     ]
   },
   {
@@ -3018,6 +4777,16 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "Crown Castle",
+      "Equinix",
+      "GTT",
+      "IX Reach",
+      "Lumen",
+      "Vodafone",
+      "XO Communications",
+      "Zayo"
     ]
   },
   {
@@ -3042,6 +4811,41 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "Arelion",
+      "BSO Network Solutions",
+      "Bestel",
+      "CENIC",
+      "Colt",
+      "Comcast",
+      "CoreSite",
+      "Cox",
+      "Datapipe",
+      "Epsilon",
+      "Equinix",
+      "Fiber Internet Center",
+      "GTT",
+      "Global Cloud Xchange",
+      "IX Reach",
+      "InterCloud",
+      "Internet2",
+      "Layer42",
+      "Lumen",
+      "Masergy",
+      "Megaport",
+      "NTT Communications",
+      "Orange Business",
+      "PacketFabric",
+      "Pureport",
+      "RCN",
+      "Sprint",
+      "Tata Communications",
+      "Telstra",
+      "Verizon",
+      "Vodafone",
+      "XO Communications",
+      "Zayo"
     ]
   },
   {
@@ -3062,7 +4866,17 @@
       "1G",
       "10G"
     ],
-    "macsec_capable": []
+    "macsec_capable": [],
+    "providers": [
+      "Arelion",
+      "GTT",
+      "Lumen",
+      "PacketFabric",
+      "Tata Communications",
+      "Verizon",
+      "XO Communications",
+      "Zayo"
+    ]
   },
   {
     "code": "ALN91",
@@ -3085,6 +4899,10 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "Hawaii Telecom",
+      "Lumen"
     ]
   },
   {
@@ -3109,6 +4927,17 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "Arelion",
+      "CoreSite",
+      "GTT",
+      "IX Reach",
+      "Lumen",
+      "Megaport",
+      "Verizon",
+      "XO Communications",
+      "Zayo"
     ]
   },
   {
@@ -3132,6 +4961,15 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "Cogent Communications",
+      "Cox",
+      "Fusion",
+      "Lumen",
+      "TDS",
+      "Verizon",
+      "Zayo"
     ]
   },
   {
@@ -3156,6 +4994,17 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "Arelion",
+      "Comcast",
+      "Cox",
+      "Datapath.io",
+      "EdgeConneX",
+      "Lumen",
+      "Megaport",
+      "XO Communications",
+      "Zayo"
     ]
   },
   {
@@ -3182,6 +5031,38 @@
       "10G",
       "100G",
       "400G"
+    ],
+    "providers": [
+      "AT&T",
+      "Allstream",
+      "Arelion",
+      "Beanfield Metro",
+      "China Mobile International",
+      "Colt",
+      "Comcast",
+      "Console Connect",
+      "Datapipe",
+      "Epsilon",
+      "Equinix",
+      "GTT",
+      "HopOne",
+      "IX Reach",
+      "Internet2",
+      "Layer42",
+      "Lumen",
+      "Masergy",
+      "Megaport",
+      "PacketFabric",
+      "Pureport",
+      "RCN",
+      "Sprint",
+      "Telstra",
+      "Telus",
+      "Transtelco",
+      "Verizon",
+      "XO Communications",
+      "Zayo",
+      "ePLDT"
     ]
   },
   {
@@ -3206,6 +5087,15 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "AT&T",
+      "Allstream",
+      "Arelion",
+      "Datapath.io",
+      "Verizon",
+      "XO Communications",
+      "Zayo"
     ]
   },
   {
@@ -3230,6 +5120,17 @@
     "macsec_capable": [
       "10G",
       "100G"
+    ],
+    "providers": [
+      "AT&T",
+      "Cox",
+      "Crown Castle",
+      "IX Reach",
+      "Lumen",
+      "Megaport",
+      "Verizon",
+      "XO Communications",
+      "Zayo"
     ]
   },
   {
@@ -3251,7 +5152,10 @@
       "10G",
       "100G"
     ],
-    "macsec_capable": []
+    "macsec_capable": [],
+    "providers": [
+      "Telecom Italia Sparkle"
+    ]
   },
   {
     "code": "TPS19",
@@ -3273,6 +5177,14 @@
     ],
     "macsec_capable": [
       "10G"
+    ],
+    "providers": [
+      "AT&T",
+      "Arelion",
+      "TierPoint",
+      "Verizon",
+      "XO Communications",
+      "Zayo"
     ]
   }
 ]
