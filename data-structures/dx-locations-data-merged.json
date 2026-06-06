@@ -5346,7 +5346,8 @@
       "1G",
       "10G"
     ],
-    "macsec_capable": []
+    "macsec_capable": [],
+    "providers": []
   },
   {
     "code": "GDSZ3",
@@ -5366,7 +5367,8 @@
       "1G",
       "10G"
     ],
-    "macsec_capable": []
+    "macsec_capable": [],
+    "providers": []
   },
   {
     "code": "MOC2",
@@ -5387,7 +5389,14 @@
       "10G",
       "100G"
     ],
-    "macsec_capable": []
+    "macsec_capable": [],
+    "providers": [
+      "CBCcom",
+      "China International Data System co.",
+      "China Telecom",
+      "China Unicom",
+      "DCconnect Technology Co."
+    ]
   },
   {
     "code": "SINJI",
@@ -5408,7 +5417,16 @@
       "10G",
       "100G"
     ],
-    "macsec_capable": []
+    "macsec_capable": [],
+    "providers": [
+      "Beijing Oneclouds Information Technology",
+      "China Mobile International",
+      "China Telecom",
+      "China Unicom",
+      "CypressTel",
+      "Sinnet",
+      "Sinnet Cloud"
+    ]
   },
   {
     "code": "IPI50",
@@ -5428,7 +5446,16 @@
       "1G",
       "10G"
     ],
-    "macsec_capable": []
+    "macsec_capable": [],
+    "providers": [
+      "Beijing Oneclouds Information Technology",
+      "China Mobile International",
+      "China Mobile Ningxia",
+      "China Telecom",
+      "China Unicom",
+      "DCconnect Technology Co.",
+      "Wangsu Science & Technology Co."
+    ]
   },
   {
     "code": "SHP54",
@@ -5448,7 +5475,13 @@
       "1G",
       "10G"
     ],
-    "macsec_capable": []
+    "macsec_capable": [],
+    "providers": [
+      "China Mobile Ningxia",
+      "China Unicom",
+      "GDS Services",
+      "Wangsu Science & Technology Co."
+    ]
   },
   {
     "code": "AEBTF",
@@ -5471,7 +5504,8 @@
     "macsec_capable": [
       "10G",
       "100G"
-    ]
+    ],
+    "providers": []
   },
   {
     "code": "IPBTF",
@@ -5494,6 +5528,7 @@
     "macsec_capable": [
       "10G",
       "100G"
-    ]
+    ],
+    "providers": []
   }
 ]
