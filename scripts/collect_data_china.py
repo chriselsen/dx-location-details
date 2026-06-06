@@ -90,9 +90,17 @@ def sort_port_speeds(speeds):
              '1G': 6, '2G': 7, '5G': 8, '10G': 9, '100G': 10}
     return sorted(speeds, key=lambda x: order.get(x, 999))
 
+def normalize_provider(name):
+    """Normalize provider name: reuse logic from collect_data.py"""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("collect_data", "scripts/collect_data.py")
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod.normalize_provider(name)
+
 def parse_locations(lines):
     """Parse location data and deduplicate by normalized code"""
-    locations = defaultdict(lambda: {'region': None, 'name': None, 'port_speeds': set(), 'macsec_speeds': set()})
+    locations = defaultdict(lambda: {'region': None, 'name': None, 'port_speeds': set(), 'macsec_speeds': set(), 'providers': set()})
     current_code = None
     
     for line in lines:
@@ -111,10 +119,15 @@ def parse_locations(lines):
                 locations[current_code]['port_speeds'].add(parts[1])
             elif parts[0] == 'AVAILABLEMACSECPORTSPEEDS':
                 locations[current_code]['macsec_speeds'].add(parts[1])
+            elif parts[0] == 'AVAILABLEPROVIDERS':
+                normalized = normalize_provider(parts[1])
+                if normalized:
+                    locations[current_code]['providers'].add(normalized)
     
     for code in locations:
         locations[code]['port_speeds'] = sort_port_speeds(list(locations[code]['port_speeds']))
         locations[code]['macsec_speeds'] = sort_port_speeds(list(locations[code]['macsec_speeds']))
+        locations[code]['providers'] = sorted(list(locations[code]['providers']))
     
     return locations
 
@@ -159,7 +172,8 @@ def main():
             'longitude': None,
             'ip': None,
             'port_speeds': port_speeds,
-            'macsec_capable': macsec_speeds
+            'macsec_capable': macsec_speeds,
+            'providers': data.get('providers', [])
         }
         
         if code in mapping:
