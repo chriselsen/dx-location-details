@@ -68,7 +68,9 @@ jobs:
       
       - name: Generate GitHub Pages
         if: steps.check_changes.outputs.changed == 'true'
-        run: python3 scripts/generate_github_pages.py
+        run: |
+          python3 scripts/generate_github_pages.py
+          python3 scripts/generate_locations_json.py
       
       - name: Commit and push changes
         if: steps.check_changes.outputs.changed == 'true'

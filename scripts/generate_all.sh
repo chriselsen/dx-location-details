@@ -26,6 +26,7 @@ echo ""
 
 echo "Step 4: Generating GitHub Pages..."
 python3 scripts/generate_github_pages.py
+python3 scripts/generate_locations_json.py
 echo ""
 
 echo "=========================================="

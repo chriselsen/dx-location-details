@@ -1,0 +1,5103 @@
+{
+  "metadata": {
+    "description": "AWS Direct Connect Locations",
+    "source": "https://github.com/chriselsen/dx-location-details",
+    "generated_at": "2026-06-08T18:24:35Z",
+    "total_locations": 149
+  },
+  "locations": [
+    {
+      "code": "EANB1",
+      "partition": "aws",
+      "name": "Africa Data Centres, Nairobi, KE",
+      "aws_name": "East Africa Data Centres NBO1",
+      "organization": "Africa Data Centres",
+      "country": "KE",
+      "region": "af-south-1",
+      "region_name": "Africa (Cape Town)",
+      "latitude": "-1.34014",
+      "longitude": "36.896534",
+      "port_speeds": [
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [],
+      "peeringdb_id": "1964"
+    },
+    {
+      "code": "RCL1",
+      "partition": "aws",
+      "name": "Rack Centre Lagos, Ikeja, NG",
+      "aws_name": "Rack Centre LGS1",
+      "organization": "Rack Centre Limited",
+      "country": "NG",
+      "region": "af-south-1",
+      "region_name": "Africa (Cape Town)",
+      "latitude": "6.597527",
+      "longitude": "3.373062",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "21st Century Technologies",
+        "9 Mobile",
+        "Brainshare Technologies",
+        "Cyberspace",
+        "Dotmac",
+        "Estream",
+        "Globacom",
+        "INQ Digital",
+        "IPNX",
+        "Kkontech",
+        "MTN Business",
+        "Mainone",
+        "Smile",
+        "Timeless Network",
+        "VDT",
+        "Vobiss"
+      ],
+      "peeringdb_id": "4411"
+    },
+    {
+      "code": "TECT1",
+      "partition": "aws",
+      "name": "Teraco CT1 Cape Town, Cape Town, ZA",
+      "aws_name": "Teraco CT1",
+      "organization": "Teraco Data Environments Pty Ltd",
+      "country": "ZA",
+      "region": "af-south-1",
+      "region_name": "Africa (Cape Town)",
+      "latitude": "-33.970872",
+      "longitude": "18.465223",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "BT",
+        "Liquid Intelligent Technologies",
+        "Teraco",
+        "Vodacom Business"
+      ],
+      "peeringdb_id": "1225"
+    },
+    {
+      "code": "EQHK1",
+      "partition": "aws",
+      "name": "Equinix HK1 - Hong Kong, Tsuen Wan, HK",
+      "aws_name": "Equinix HK1",
+      "organization": "Equinix, Inc.",
+      "country": "HK",
+      "region": "ap-east-1",
+      "region_name": "Asia Pacific (Hong Kong)",
+      "latitude": "22.365581",
+      "longitude": "114.11932",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "CITIC Telecom CPC",
+        "Equinix",
+        "Megaport",
+        "Orange Business"
+      ],
+      "peeringdb_id": "170"
+    },
+    {
+      "code": "CFT54",
+      "partition": "aws",
+      "name": "Chief HD Building Taipei, Taipei, TW",
+      "aws_name": "Chief Telecom HD",
+      "organization": "Chief Telecom Inc.",
+      "country": "TW",
+      "region": "ap-east-2",
+      "region_name": "Asia Pacific (Taipei)",
+      "latitude": "25.074213",
+      "longitude": "121.576784",
+      "port_speeds": [
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "BSO Network Solutions",
+        "CITIC Telecom CPC",
+        "Chief Telecom",
+        "China Mobile International",
+        "Telstra"
+      ],
+      "peeringdb_id": "5678"
+    },
+    {
+      "code": "CHT51",
+      "partition": "aws",
+      "name": "CHT Taipei Banqiao IDC, New Taipei City, TW",
+      "aws_name": "Chunghwa Telecom",
+      "organization": "Chunghwa Telecom Co., Ltd.",
+      "country": "TW",
+      "region": "ap-east-2",
+      "region_name": "Asia Pacific (Taipei)",
+      "latitude": "24.994866",
+      "longitude": "121.458263",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "Chunghwa Telecom"
+      ],
+      "peeringdb_id": "2886"
+    },
+    {
+      "code": "ATTC1",
+      "partition": "aws",
+      "name": "AT TOKYO (CC1/CC2), Tokyo, JP",
+      "aws_name": "AT Tokyo Chuo Data Center",
+      "organization": "AT TOKYO Corporation",
+      "country": "JP",
+      "region": "ap-northeast-1",
+      "region_name": "Asia Pacific (Tokyo)",
+      "latitude": "35.645435",
+      "longitude": "139.793285",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "ARTERIA Networks Corporation",
+        "AT Tokyo",
+        "BSO Network Solutions",
+        "BT",
+        "CITIC Telecom CPC",
+        "China Telecom",
+        "Colt",
+        "Epsilon",
+        "Global Cloud Xchange",
+        "ITEC Hankyu Hanshin",
+        "Internet Initiative Japan",
+        "KDDI",
+        "Megaport",
+        "NTT Communications",
+        "Softbank",
+        "TOKAI Communications",
+        "Telstra",
+        "Verizon"
+      ],
+      "peeringdb_id": "738"
+    },
+    {
+      "code": "CFT52",
+      "partition": "aws",
+      "name": "Chief LY Building Taipei, Taipei, TW",
+      "aws_name": "Chief Telecom LY",
+      "organization": "Chief Telecom Inc.",
+      "country": "TW",
+      "region": "ap-northeast-1",
+      "region_name": "Asia Pacific (Tokyo)",
+      "latitude": "25.073467",
+      "longitude": "121.577519",
+      "port_speeds": [
+        "1G",
+        "10G"
+      ],
+      "macsec_capable": [],
+      "providers": [
+        "BSO Network Solutions",
+        "CITIC Telecom CPC",
+        "Chief Telecom",
+        "China Mobile International",
+        "Telstra"
+      ],
+      "peeringdb_id": "456"
+    },
+    {
+      "code": "EQOS1",
+      "partition": "aws",
+      "name": "Equinix OS1 - Osaka, Osaka, JP",
+      "aws_name": "Equinix OS1",
+      "organization": "Equinix, Inc.",
+      "country": "JP",
+      "region": "ap-northeast-1",
+      "region_name": "Asia Pacific (Tokyo)",
+      "latitude": "34.675774",
+      "longitude": "135.495551",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "ARTERIA Networks Corporation",
+        "AT&T",
+        "China Telecom",
+        "Colt",
+        "Equinix",
+        "ITEC Hankyu Hanshin",
+        "Internet Initiative Japan",
+        "NTT Communications",
+        "Softbank",
+        "TOKAI Communications"
+      ],
+      "peeringdb_id": "1791"
+    },
+    {
+      "code": "EQTY2",
+      "partition": "aws",
+      "name": "Equinix TY2 - Tokyo, Tokyo, JP",
+      "aws_name": "Equinix TY2",
+      "organization": "Equinix, Inc.",
+      "country": "JP",
+      "region": "ap-northeast-1",
+      "region_name": "Asia Pacific (Tokyo)",
+      "latitude": "35.617432",
+      "longitude": "139.748106",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "ARTERIA Networks Corporation",
+        "AT&T",
+        "BSO Network Solutions",
+        "BT",
+        "CITIC Telecom CPC",
+        "China Mobile International",
+        "Colt",
+        "Datapath.io",
+        "Epsilon",
+        "Equinix",
+        "GTT",
+        "Global Cloud Xchange",
+        "HGC Global Communications",
+        "IX Reach",
+        "InterCloud",
+        "Internet Initiative Japan",
+        "KDDI",
+        "Lumen",
+        "NTT Communications",
+        "NTT East",
+        "Nomura Research Institute (NRI)",
+        "Orange Business",
+        "Sejong",
+        "Softbank",
+        "TOKAI Communications",
+        "Tata Communications",
+        "Telstra",
+        "Verizon",
+        "Zayo"
+      ],
+      "peeringdb_id": "452"
+    },
+    {
+      "code": "NEIN2",
+      "partition": "aws",
+      "name": "SCSK netXDC (SI1/SI2/SI3)/NEC Inzai DC, Inzai-shi, JP",
+      "aws_name": "NEC Inzai",
+      "organization": "SCSK Corporation",
+      "country": "JP",
+      "region": "ap-northeast-1",
+      "region_name": "Asia Pacific (Tokyo)",
+      "latitude": "35.808986",
+      "longitude": "140.117527",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "ARTERIA Networks Corporation",
+        "Colt",
+        "KDDI",
+        "NTT East",
+        "Softbank",
+        "TOKAI Communications"
+      ],
+      "peeringdb_id": "9596"
+    },
+    {
+      "code": "LGKNX",
+      "partition": "aws",
+      "name": "KINX Gasan, Seoul, KR",
+      "aws_name": "KINX Gasen",
+      "organization": "KINX Inc.",
+      "country": "KR",
+      "region": "ap-northeast-2",
+      "region_name": "Asia Pacific (Seoul)",
+      "latitude": "37.482096",
+      "longitude": "126.879733",
+      "port_speeds": [
+        "1G",
+        "10G"
+      ],
+      "macsec_capable": [
+        "10G"
+      ],
+      "providers": [
+        "Dreamline",
+        "KINX",
+        "LG Uplus",
+        "SK Telecom",
+        "Samsung SDS",
+        "Sejong"
+      ],
+      "peeringdb_id": "7674"
+    },
+    {
+      "code": "LGU57",
+      "partition": "aws",
+      "name": "LG Uplus Pyeongchon IDC, Anyang-si, KR",
+      "aws_name": "LG U+ Pyeong-Chon Mega Center",
+      "organization": "LG Uplus Corp.",
+      "country": "KR",
+      "region": "ap-northeast-2",
+      "region_name": "Asia Pacific (Seoul)",
+      "latitude": "37.397891",
+      "longitude": "126.9648961",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "Dreamline",
+        "LG Uplus",
+        "SK Telecom",
+        "Samsung SDS",
+        "Sejong"
+      ],
+      "peeringdb_id": "7573"
+    },
+    {
+      "code": "TLS10",
+      "partition": "aws",
+      "name": "Digital Realty ICN10 - Seoul, Mapo-gu, KR",
+      "aws_name": "Digital Realty ICN10",
+      "organization": "Digital Realty",
+      "country": "KR",
+      "region": "ap-northeast-2",
+      "region_name": "Asia Pacific (Seoul)",
+      "latitude": "37.582162",
+      "longitude": "126.886128",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "Dreamline",
+        "KINX",
+        "Korea Telecom",
+        "LG Uplus",
+        "PCCW",
+        "SK Broadband",
+        "Samsung SDS",
+        "Sejong Telecom"
+      ],
+      "peeringdb_id": "9210"
+    },
+    {
+      "code": "KDOS2",
+      "partition": "aws",
+      "name": "Telehouse \u2013 OSAKA 1&2, Osaka, JP",
+      "aws_name": "KDDI Telehouse Osaka 2",
+      "organization": "Telehouse - Global Data Centers",
+      "country": "JP",
+      "region": "ap-northeast-3",
+      "region_name": "Asia Pacific (Osaka)",
+      "latitude": "34.693119",
+      "longitude": "135.534371",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "KDDI",
+        "NTT West",
+        "Optage",
+        "TOKAI Communications"
+      ],
+      "peeringdb_id": "3068"
+    },
+    {
+      "code": "EQMB2",
+      "partition": "aws",
+      "name": "Equinix MB2 - Mumbai (GPX Mumbai 2), Mumbai, IN",
+      "aws_name": "Equinix MB2",
+      "organization": "Equinix, Inc.",
+      "country": "IN",
+      "region": "ap-south-1",
+      "region_name": "Asia Pacific (Mumbai)",
+      "latitude": "19.109353",
+      "longitude": "72.901441",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "Bharti Airtel",
+        "Equinix",
+        "Lightstorm Telecom",
+        "MTNL",
+        "Reliance Communications",
+        "Reliance Jio",
+        "Sify",
+        "Tata Communications",
+        "Vodafone"
+      ],
+      "peeringdb_id": "7377"
+    },
+    {
+      "code": "GPX51",
+      "partition": "aws",
+      "name": "Equinix MB1 - Mumbai (GPX Mumbai 1), Mumbai, IN",
+      "aws_name": "Equinix MB1",
+      "organization": "Equinix, Inc.",
+      "country": "IN",
+      "region": "ap-south-1",
+      "region_name": "Asia Pacific (Mumbai)",
+      "latitude": "19.113908",
+      "longitude": "72.892742",
+      "port_speeds": [
+        "1G",
+        "10G"
+      ],
+      "macsec_capable": [
+        "10G"
+      ],
+      "providers": [
+        "Bharti Airtel",
+        "GPX",
+        "Global Cloud Xchange",
+        "NetMagic Solutions",
+        "Reliance Jio",
+        "Sify",
+        "Tata Communications"
+      ],
+      "peeringdb_id": "2310"
+    },
+    {
+      "code": "NMBL2",
+      "partition": "aws",
+      "name": "Netmagic Bangalore DC02, Bangalore, IN",
+      "aws_name": "NetMagic DC2",
+      "organization": "NTTCINS",
+      "country": "IN",
+      "region": "ap-south-1",
+      "region_name": "Asia Pacific (Mumbai)",
+      "latitude": "12.839551",
+      "longitude": "77.662274",
+      "port_speeds": [
+        "1G",
+        "10G"
+      ],
+      "macsec_capable": [
+        "10G"
+      ],
+      "providers": [
+        "Bharti Airtel",
+        "NetMagic Solutions",
+        "Reliance Jio",
+        "Sify",
+        "Tata Communications",
+        "Vodafone"
+      ],
+      "peeringdb_id": "7988"
+    },
+    {
+      "code": "SFY52",
+      "partition": "aws",
+      "name": "Sify Rabale - Mumbai, Navi Mumbai, IN",
+      "aws_name": "Sify Rabale",
+      "organization": "Sify Technologies Limited",
+      "country": "IN",
+      "region": "ap-south-1",
+      "region_name": "Asia Pacific (Mumbai)",
+      "latitude": "19.147451",
+      "longitude": "73.014195",
+      "port_speeds": [
+        "1G",
+        "10G"
+      ],
+      "macsec_capable": [
+        "10G"
+      ],
+      "providers": [
+        "Bharti Airtel",
+        "NetMagic Solutions",
+        "Reliance Jio",
+        "Sify",
+        "Tata Communications",
+        "Vodafone",
+        "Vodafone Idea"
+      ],
+      "peeringdb_id": "2465"
+    },
+    {
+      "code": "TCDC1",
+      "partition": "aws",
+      "name": "STT Chennai 1, Chennai, IN",
+      "aws_name": "STT GDC INDIA PVT. LTD. VSB",
+      "organization": "ST Telemedia Global Data Centres (STT GDC)",
+      "country": "IN",
+      "region": "ap-south-1",
+      "region_name": "Asia Pacific (Mumbai)",
+      "latitude": "13.068351",
+      "longitude": "80.278869",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "Bharti Airtel",
+        "Reliance Jio",
+        "Sify",
+        "Tata Communications",
+        "Vodafone"
+      ],
+      "peeringdb_id": "6778"
+    },
+    {
+      "code": "TCDE2",
+      "partition": "aws",
+      "name": "STT Delhi 2, Delhi, IN",
+      "aws_name": "STT Delhi DC2",
+      "organization": "ST Telemedia Global Data Centres (STT GDC)",
+      "country": "IN",
+      "region": "ap-south-1",
+      "region_name": "Asia Pacific (Mumbai)",
+      "latitude": "28.541514",
+      "longitude": "77.240201",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "Tata Communications"
+      ],
+      "peeringdb_id": "6786"
+    },
+    {
+      "code": "TCDK1",
+      "partition": "aws",
+      "name": "STT Kolkata 1, Kolkata, IN",
+      "aws_name": "STT Kolkata",
+      "organization": "ST Telemedia Global Data Centres (STT GDC)",
+      "country": "IN",
+      "region": "ap-south-1",
+      "region_name": "Asia Pacific (Mumbai)",
+      "latitude": "22.588218",
+      "longitude": "88.392964",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "BSNL",
+        "Bharti Airtel",
+        "JIO",
+        "PGCIL",
+        "Sify",
+        "TCL",
+        "Vodafone"
+      ],
+      "peeringdb_id": "6780"
+    },
+    {
+      "code": "TCHY1",
+      "partition": "aws",
+      "name": "STT Hyderabad 1, Hyderabad, IN",
+      "aws_name": "STT Hyderabad DC1",
+      "organization": "ST Telemedia Global Data Centres (STT GDC)",
+      "country": "IN",
+      "region": "ap-south-1",
+      "region_name": "Asia Pacific (Mumbai)",
+      "latitude": "17.441478",
+      "longitude": "78.377811",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "DE-CIX",
+        "Sify",
+        "Tata Communications"
+      ],
+      "peeringdb_id": "6781"
+    },
+    {
+      "code": "AIMMN",
+      "partition": "aws",
+      "name": "AIMS Kuala Lumpur, Kuala Lumpur, MY",
+      "aws_name": "Menara AIMS",
+      "organization": "AIMS Data Centre Sdn Bhd",
+      "country": "MY",
+      "region": "ap-southeast-1",
+      "region_name": "Asia Pacific (Singapore)",
+      "latitude": "3.14969",
+      "longitude": "101.70634",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "1CloudStar",
+        "CITIC Telecom CPC",
+        "China Telecom",
+        "Console Connect",
+        "HGC Global Communications",
+        "Maxis",
+        "Orange Business",
+        "Singtel",
+        "Tata Communications",
+        "Telekom Malaysia",
+        "Telstra"
+      ],
+      "peeringdb_id": "460"
+    },
+    {
+      "code": "EPVM2",
+      "partition": "aws",
+      "name": "VITRO Makati 2, Makati, PH",
+      "aws_name": "ePLDT VM2",
+      "organization": "Vitro Inc.",
+      "country": "PH",
+      "region": "ap-southeast-1",
+      "region_name": "Asia Pacific (Singapore)",
+      "latitude": "14.564484",
+      "longitude": "121.022368",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "ePLDT"
+      ],
+      "peeringdb_id": "4809"
+    },
+    {
+      "code": "EQSG2",
+      "partition": "aws",
+      "name": "Equinix SG2 - Singapore, Singapore, SG",
+      "aws_name": "Equinix SG2",
+      "organization": "Equinix, Inc.",
+      "country": "SG",
+      "region": "ap-southeast-1",
+      "region_name": "Asia Pacific (Singapore)",
+      "latitude": "1.321502",
+      "longitude": "103.695359",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "1CloudStar",
+        "AT&T",
+        "BSO Network Solutions",
+        "BT",
+        "Bharti Airtel",
+        "CITIC Telecom CPC",
+        "CMC Telecom",
+        "China Mobile International",
+        "Colt",
+        "Console Connect",
+        "Datapath.io",
+        "Datapipe",
+        "Epsilon",
+        "Equinix",
+        "GTT",
+        "Global Cloud Xchange",
+        "HGC Global Communications",
+        "IX Reach",
+        "InfoFabrica",
+        "InterCloud",
+        "Lumen",
+        "M1 Net",
+        "Masergy",
+        "Maxis",
+        "Megaport",
+        "NTT Communications",
+        "Orange Business",
+        "Sify",
+        "Singtel",
+        "Sprint",
+        "Tata Communications",
+        "Telstra",
+        "True Cloud Service",
+        "Verizon",
+        "Vodafone",
+        "Zayo",
+        "ePLDT",
+        "iXSforAll"
+      ],
+      "peeringdb_id": "705"
+    },
+    {
+      "code": "GSS52",
+      "partition": "aws",
+      "name": "Global Switch Singapore, Singapore, SG",
+      "aws_name": "Global Switch",
+      "organization": "Global Switch",
+      "country": "SG",
+      "region": "ap-southeast-1",
+      "region_name": "Asia Pacific (Singapore)",
+      "latitude": "1.336723",
+      "longitude": "103.893828",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "1CloudStar",
+        "AT&T",
+        "BSO Network Solutions",
+        "BT",
+        "Bharti Airtel",
+        "China Mobile International",
+        "Colt",
+        "Console Connect",
+        "Epsilon",
+        "GTT",
+        "Global Cloud Xchange",
+        "Global Switch",
+        "InterCloud",
+        "Lumen",
+        "M1 Net",
+        "Megaport",
+        "Orange Business",
+        "Singtel",
+        "Tata Communications",
+        "Telecom Italia Sparkle",
+        "Telstra",
+        "United Information Highway (UIH)",
+        "Verizon",
+        "Vodafone",
+        "Zayo"
+      ],
+      "peeringdb_id": "388"
+    },
+    {
+      "code": "IAMGI",
+      "partition": "aws",
+      "name": "MEGA-i (iAdvantage Hong Kong), Hong Kong, HK",
+      "aws_name": "iAdvantage MEGA-i",
+      "organization": "iAdvantage Hong Kong",
+      "country": "HK",
+      "region": "ap-southeast-1",
+      "region_name": "Asia Pacific (Singapore)",
+      "latitude": "22.266098",
+      "longitude": "114.246512",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "CBCcom",
+        "CITIC Telecom CPC",
+        "CMC Telecom",
+        "China Mobile International",
+        "China Telecom",
+        "China Unicom",
+        "Colt",
+        "Console Connect",
+        "Datapipe",
+        "Epsilon",
+        "Equinix",
+        "GTT",
+        "Global Cloud Xchange",
+        "HGC Global Communications",
+        "Hong Kong Telecommunications (HKT)",
+        "KDDI",
+        "Lumen",
+        "Maxis",
+        "Megaport",
+        "Sify",
+        "Sprint",
+        "Tata Communications",
+        "Telstra",
+        "Telstra PBS",
+        "Verizon",
+        "Vodafone",
+        "WTT",
+        "Zayo",
+        "iAdvantage"
+      ],
+      "peeringdb_id": "225"
+    },
+    {
+      "code": "TCCBK",
+      "partition": "aws",
+      "name": "TCC Technology Data Center- Bangkok, Bangkok, TH",
+      "aws_name": "TCC",
+      "organization": "TCC Technology Co., Ltd",
+      "country": "TH",
+      "region": "ap-southeast-1",
+      "region_name": "Asia Pacific (Singapore)",
+      "latitude": "13.663651",
+      "longitude": "100.651345",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "AT&T",
+        "CAT",
+        "Campana Taro",
+        "Frontiir",
+        "Jastel",
+        "NTT Communications",
+        "Symphony",
+        "True",
+        "UIH"
+      ],
+      "peeringdb_id": "4139"
+    },
+    {
+      "code": "CBHU2",
+      "partition": "aws",
+      "name": "CDC Canberra HU2, Hume, AU",
+      "aws_name": "CDC Hume 2",
+      "organization": "CDC Data Centres",
+      "country": "AU",
+      "region": "ap-southeast-2",
+      "region_name": "Asia Pacific (Sydney)",
+      "latitude": "-35.388831",
+      "longitude": "149.1683",
+      "port_speeds": [
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "AARNet",
+        "ICON",
+        "Optus",
+        "TPG Telecom/AAPT",
+        "Telstra",
+        "Vocus"
+      ],
+      "peeringdb_id": "12416"
+    },
+    {
+      "code": "DCDH6",
+      "partition": "aws",
+      "name": "Datacom - Orbit Data Centre (Auckland), Auckland, NZ",
+      "aws_name": "Datacom DH6",
+      "organization": "Datacom Data Centres Ltd",
+      "country": "NZ",
+      "region": "ap-southeast-2",
+      "region_name": "Asia Pacific (Sydney)",
+      "latitude": "-36.740554",
+      "longitude": "174.728988",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "AT&T",
+        "Chorus",
+        "Megaport",
+        "Spark",
+        "Vector",
+        "Vital",
+        "Vocus"
+      ],
+      "peeringdb_id": "2024"
+    },
+    {
+      "code": "EQSY3",
+      "partition": "aws",
+      "name": "Equinix SY3 - Sydney, Sydney, AU",
+      "aws_name": "Equinix SY1 - SY4",
+      "organization": "Equinix, Inc.",
+      "country": "AU",
+      "region": "ap-southeast-2",
+      "region_name": "Asia Pacific (Sydney)",
+      "latitude": "-33.911776",
+      "longitude": "151.192942",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "AARNet",
+        "AT&T",
+        "Amcom",
+        "BSO Network Solutions",
+        "BT",
+        "CITIC Telecom CPC",
+        "Console Connect",
+        "Devoli",
+        "Equinix",
+        "GCOMM",
+        "Global Cloud Xchange",
+        "HGC Global Communications",
+        "InterCloud",
+        "Kordia",
+        "Lumen",
+        "Masergy",
+        "Megaport",
+        "NEXTDC",
+        "NTT Communications",
+        "Nextgen Group",
+        "Optus",
+        "Orange Business",
+        "Over the wire",
+        "Sohonet",
+        "Spark",
+        "TPG Telecom/AAPT",
+        "Tata Communications",
+        "Telstra",
+        "VPN Solutions",
+        "Verizon",
+        "Vocus",
+        "Vodafone",
+        "Zayo"
+      ],
+      "peeringdb_id": "1605"
+    },
+    {
+      "code": "EQSY5",
+      "partition": "aws",
+      "name": "Equinix SY5 - Sydney, Sydney, AU",
+      "aws_name": "Equinix SY5",
+      "organization": "Equinix, Inc.",
+      "country": "AU",
+      "region": "ap-southeast-2",
+      "region_name": "Asia Pacific (Sydney)",
+      "latitude": "-33.918198",
+      "longitude": "151.1893",
+      "port_speeds": [
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "BSO Network Solutions",
+        "CITIC Telecom CPC",
+        "Console Connect",
+        "Equinix",
+        "InterCloud",
+        "Megaport",
+        "NEXTDC",
+        "NTT Communications",
+        "Optus",
+        "Over the wire",
+        "Telstra",
+        "VPN Solutions",
+        "Verizon"
+      ],
+      "peeringdb_id": "8615"
+    },
+    {
+      "code": "GBSY6",
+      "partition": "aws",
+      "name": "Equinix SY6 - Sydney (formerly Metronode Sydney 2), Silverwater, AU",
+      "aws_name": "Global Switch SY6",
+      "organization": "Equinix, Inc.",
+      "country": "AU",
+      "region": "ap-southeast-2",
+      "region_name": "Asia Pacific (Sydney)",
+      "latitude": "-33.836684",
+      "longitude": "151.053282",
+      "port_speeds": [
+        "1G",
+        "10G"
+      ],
+      "macsec_capable": [],
+      "providers": [
+        "AARNet",
+        "AT&T",
+        "Amcom",
+        "BT",
+        "Cinenet",
+        "Console Connect",
+        "Devoli",
+        "Global Switch",
+        "IX Australia",
+        "Kordia",
+        "Masergy",
+        "Megaport",
+        "NEXTDC",
+        "NTT Communications",
+        "Nextgen Group",
+        "Optus",
+        "Orange Business",
+        "Over the wire",
+        "Spark",
+        "TPG Telecom/AAPT",
+        "Tata Communications",
+        "TechFlow",
+        "Telstra",
+        "Verizon",
+        "Vocus",
+        "Vodafone"
+      ],
+      "peeringdb_id": "2474"
+    },
+    {
+      "code": "NDCB2",
+      "partition": "aws",
+      "name": "NEXTDC B2, Fortitude Valley, AU",
+      "aws_name": "NEXTDC B2",
+      "organization": "NEXTDC",
+      "country": "AU",
+      "region": "ap-southeast-2",
+      "region_name": "Asia Pacific (Sydney)",
+      "latitude": "-27.453902",
+      "longitude": "153.0332",
+      "port_speeds": [
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "Anycast Networks",
+        "Optus",
+        "Telstra",
+        "Vocus"
+      ],
+      "peeringdb_id": "4688"
+    },
+    {
+      "code": "NDCC1",
+      "partition": "aws",
+      "name": "NEXTDC C1, Bruce, AU",
+      "aws_name": "NEXTDC C1",
+      "organization": "NEXTDC",
+      "country": "AU",
+      "region": "ap-southeast-2",
+      "region_name": "Asia Pacific (Sydney)",
+      "latitude": "-35.245308",
+      "longitude": "149.096242",
+      "port_speeds": [
+        "1G",
+        "10G"
+      ],
+      "macsec_capable": [
+        "10G"
+      ],
+      "providers": [
+        "Megaport",
+        "NEXTDC",
+        "TPG Telecom/AAPT",
+        "Telstra"
+      ],
+      "peeringdb_id": "1162"
+    },
+    {
+      "code": "NDCM1",
+      "partition": "aws",
+      "name": "NEXTDC M1, Melbourne, AU",
+      "aws_name": "NEXTDC M1",
+      "organization": "NEXTDC",
+      "country": "AU",
+      "region": "ap-southeast-2",
+      "region_name": "Asia Pacific (Sydney)",
+      "latitude": "-37.821705",
+      "longitude": "144.931061",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "Equinix",
+        "Megaport",
+        "NEXTDC",
+        "NTT Communications",
+        "Optus",
+        "Sprint",
+        "Telstra",
+        "VPN Solutions",
+        "Vocus"
+      ],
+      "peeringdb_id": "1339"
+    },
+    {
+      "code": "NDCP1",
+      "partition": "aws",
+      "name": "NEXTDC P1, M\u00e1laga, AU",
+      "aws_name": "NEXTDC P1",
+      "organization": "NEXTDC",
+      "country": "AU",
+      "region": "ap-southeast-2",
+      "region_name": "Asia Pacific (Sydney)",
+      "latitude": "-31.864402",
+      "longitude": "115.895935",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "Amcom",
+        "Megaport",
+        "NEXTDC",
+        "Nextgen Group",
+        "TPG Telecom/AAPT",
+        "Telstra",
+        "Vocus"
+      ],
+      "peeringdb_id": "1940"
+    },
+    {
+      "code": "NDCS2",
+      "partition": "aws",
+      "name": "NEXTDC S2, Macquarie Park, AU",
+      "aws_name": "NEXTDC S2",
+      "organization": "NEXTDC",
+      "country": "AU",
+      "region": "ap-southeast-2",
+      "region_name": "Asia Pacific (Sydney)",
+      "latitude": "-33.785125",
+      "longitude": "151.125301",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "AARNet",
+        "NEXTDC",
+        "Vocus"
+      ],
+      "peeringdb_id": "6792"
+    },
+    {
+      "code": "DCIJ3",
+      "partition": "aws",
+      "name": "DCI Indonesia (JK3), Bekasi, Cibitung, ID",
+      "aws_name": "DCI Indonesia",
+      "organization": "DCI Indonesia",
+      "country": "ID",
+      "region": "ap-southeast-3",
+      "region_name": "Asia Pacific (Jakarta)",
+      "latitude": "-6.299731",
+      "longitude": "107.089244",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "DCI Indonesia",
+        "Indonet",
+        "Indosat",
+        "NTT Indonesia",
+        "Telin",
+        "XL Axiata"
+      ],
+      "peeringdb_id": "8169"
+    },
+    {
+      "code": "JKT02",
+      "partition": "aws",
+      "name": "NTT Jakarta 2 Data Center (JKT2), Jakarta, ID",
+      "aws_name": "NTT Jakarta 2 Data Center",
+      "organization": "NTT DATA's Global Data Centers division",
+      "country": "ID",
+      "region": "ap-southeast-3",
+      "region_name": "Asia Pacific (Jakarta)",
+      "latitude": "-6.237998",
+      "longitude": "106.823452",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "DCI Indonesia",
+        "Epsilon",
+        "Indonet",
+        "Indosat",
+        "NTT Indonesia",
+        "Telin",
+        "XL Axiata"
+      ],
+      "peeringdb_id": "5865"
+    },
+    {
+      "code": "EQME2",
+      "partition": "aws",
+      "name": "Equinix ME1/ME2 - Melbourne, Melbourne, AU",
+      "aws_name": "Equinix ME2",
+      "organization": "Equinix, Inc.",
+      "country": "AU",
+      "region": "ap-southeast-4",
+      "region_name": "Asia Pacific (Melbourne)",
+      "latitude": "-37.821681",
+      "longitude": "144.915458",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "AARNet",
+        "AT&T",
+        "Equinix",
+        "NEXTDC",
+        "Singtel",
+        "Telstra",
+        "Verizon"
+      ],
+      "peeringdb_id": "1988"
+    },
+    {
+      "code": "CMCHV",
+      "partition": "aws",
+      "name": "CMC Duy Tan (Hanoi), Hanoi, VN",
+      "aws_name": "CMC Tower",
+      "organization": "CMC Telecom",
+      "country": "VN",
+      "region": "ap-southeast-5",
+      "region_name": "Asia Pacific (Malaysia)",
+      "latitude": "21.03042",
+      "longitude": "105.784363",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "CMC Telecom"
+      ],
+      "peeringdb_id": "15938"
+    },
+    {
+      "code": "CSFX1",
+      "partition": "aws",
+      "name": "CSF CX1 / TelcoHub1 Kuala Lumpur, Cyberjaya, MY",
+      "aws_name": "Telcohub 1 (CX1)",
+      "organization": "CSF Group",
+      "country": "MY",
+      "region": "ap-southeast-5",
+      "region_name": "Asia Pacific (Malaysia)",
+      "latitude": "2.913224",
+      "longitude": "101.655646",
+      "port_speeds": [
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "1CloudStar",
+        "Agarto",
+        "Aims Data Centre",
+        "Aries Telecoms (M)",
+        "Big Band",
+        "Celcom Networks",
+        "China Mobile International",
+        "Extreme Broadband",
+        "Fiberail",
+        "Fibercomm Network (M)",
+        "Global Forway",
+        "Hitachi Sunway Data Centre Services",
+        "IX Telecom",
+        "MSA Resources",
+        "Maxis Broadband",
+        "MyKRIS Asia",
+        "NGN Connection",
+        "NTT MSC",
+        "Net2One",
+        "Neutral Transmission Malaysia",
+        "REDtone Engineering and Network Services",
+        "SEAX Malaysia",
+        "Setia Haruman Technology",
+        "Speedlink",
+        "Symphonet",
+        "TIME DotCom Malaysia",
+        "TNB IT",
+        "Telekom Malaysia",
+        "U Mobile",
+        "Visi Cenderawasih",
+        "X86 Network"
+      ],
+      "peeringdb_id": "1279"
+    },
+    {
+      "code": "SPK53",
+      "partition": "aws",
+      "name": "Mayoral Drive Exchange (MDR), Auckland, NZ",
+      "aws_name": "Spark MDR",
+      "organization": "Spark New Zealand Trading Limited",
+      "country": "NZ",
+      "region": "ap-southeast-6",
+      "region_name": "Asia Pacific (New Zealand)",
+      "latitude": "-36.854324",
+      "longitude": "174.764384",
+      "port_speeds": [
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "Megaport",
+        "PCCW",
+        "Spark",
+        "Vector"
+      ],
+      "peeringdb_id": "1523"
+    },
+    {
+      "code": "THRA9",
+      "partition": "aws",
+      "name": "Telehouse \u2013 Bangkok, Bangkok, TH",
+      "aws_name": "Telehouse Bangkok",
+      "organization": "Telehouse - Global Data Centers",
+      "country": "TH",
+      "region": "ap-southeast-7",
+      "region_name": "Asia Pacific (Thailand)",
+      "latitude": "13.75161",
+      "longitude": "100.57305",
+      "port_speeds": [
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "ALT",
+        "DTAC",
+        "HGC",
+        "IGC",
+        "Jastel",
+        "NT",
+        "Symphony",
+        "True",
+        "UIH",
+        "ais"
+      ],
+      "peeringdb_id": "13618"
+    },
+    {
+      "code": "151FS",
+      "partition": "aws",
+      "name": "Telehouse Toronto (151 Front St West), Toronto, CA",
+      "aws_name": "Telehouse",
+      "organization": "Telehouse - Global Data Centers",
+      "country": "CA",
+      "region": "ca-central-1",
+      "region_name": "Canada (Central)",
+      "latitude": "43.644672",
+      "longitude": "-79.384128",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "Allstream",
+        "Beanfield Metro",
+        "Bell Canada",
+        "Cologix",
+        "Equinix",
+        "GTT",
+        "IX Reach",
+        "Megaport",
+        "Orange Business",
+        "Tata Communications",
+        "Telus",
+        "Zayo"
+      ],
+      "peeringdb_id": "392"
+    },
+    {
+      "code": "CGM60",
+      "partition": "aws",
+      "name": "Cologix MTL3, Montreal, CA",
+      "aws_name": "Cologix MTL3",
+      "organization": "Cologix, Inc.",
+      "country": "CA",
+      "region": "ca-central-1",
+      "region_name": "Canada (Central)",
+      "latitude": "45.497188",
+      "longitude": "-73.570471",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "Allstream",
+        "Arelion",
+        "BSO Network Solutions",
+        "Beanfield Metro",
+        "Bell Canada",
+        "Cologix",
+        "Fibrenoire",
+        "GTT",
+        "IX Reach",
+        "Lumen",
+        "Megaport",
+        "Orange Business",
+        "RISQ ( Reseau d'informations scientifiques du Quebec )",
+        "Sohonet",
+        "Tata Communications",
+        "Telus",
+        "Zayo"
+      ],
+      "peeringdb_id": "1944"
+    },
+    {
+      "code": "COLV2",
+      "partition": "aws",
+      "name": "Cologix VAN2, Vancouver, CA",
+      "aws_name": "Cologix VAN2",
+      "organization": "Cologix, Inc.",
+      "country": "CA",
+      "region": "ca-central-1",
+      "region_name": "Canada (Central)",
+      "latitude": "49.286981",
+      "longitude": "-123.119579",
+      "port_speeds": [
+        "1G",
+        "10G"
+      ],
+      "macsec_capable": [
+        "10G"
+      ],
+      "providers": [
+        "Allstream",
+        "Beanfield Metro",
+        "Bell Canada",
+        "Cologix",
+        "GTT",
+        "Sohonet",
+        "Telus",
+        "Zayo"
+      ],
+      "peeringdb_id": "1881"
+    },
+    {
+      "code": "COLV3",
+      "partition": "aws",
+      "name": "Cologix VAN3, Vancouver, CA",
+      "aws_name": "Cologix VAN3",
+      "organization": "Cologix, Inc.",
+      "country": "CA",
+      "region": "ca-central-1",
+      "region_name": "Canada (Central)",
+      "latitude": "49.259393",
+      "longitude": "-123.029619",
+      "port_speeds": [
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "Allstream",
+        "Bell Canada",
+        "Cogent Communications",
+        "Fibertel Networks",
+        "Lumen",
+        "Metro Optical",
+        "Shaw",
+        "Simnet",
+        "Telus",
+        "Urban Communications",
+        "Zayo"
+      ],
+      "peeringdb_id": "8060"
+    },
+    {
+      "code": "EQTR2",
+      "partition": "aws",
+      "name": "Equinix TR2 - Toronto, Toronto, CA",
+      "aws_name": "Equinix TR2",
+      "organization": "Equinix, Inc.",
+      "country": "CA",
+      "region": "ca-central-1",
+      "region_name": "Canada (Central)",
+      "latitude": "43.650854",
+      "longitude": "-79.361951",
+      "port_speeds": [
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "AT&T",
+        "BT",
+        "Beanfield Metro",
+        "Bell Canada",
+        "City Wide Communications",
+        "CrossLake Fibre",
+        "Deutsche Telekom ICSS",
+        "GTT",
+        "Lumen",
+        "NTT Communications",
+        "Rogers Carrier Services",
+        "Telus"
+      ],
+      "peeringdb_id": "2206"
+    },
+    {
+      "code": "NTM62",
+      "partition": "aws",
+      "name": "eStruxture MTL-1, Montreal, CA",
+      "aws_name": "eStruxture",
+      "organization": "eStruxture Data Centers Inc.",
+      "country": "CA",
+      "region": "ca-central-1",
+      "region_name": "Canada (Central)",
+      "latitude": "45.501394",
+      "longitude": "-73.56192",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [],
+      "peeringdb_id": "1885"
+    },
+    {
+      "code": "EQCL1",
+      "partition": "aws",
+      "name": "Equinix CL1 - Calgary, Calgary, CA",
+      "aws_name": "Equinix CL1",
+      "organization": "Equinix, Inc.",
+      "country": "CA",
+      "region": "ca-west-1",
+      "region_name": "Canada (Calgary)",
+      "latitude": "51.045517",
+      "longitude": "-114.069297",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [],
+      "peeringdb_id": "9553"
+    },
+    {
+      "code": "EQCL3",
+      "partition": "aws",
+      "name": "Equinix CL3 - Calgary (formerly Q9 Calgary Three), Calgary, CA",
+      "aws_name": "Equinix CL3",
+      "organization": "Equinix, Inc.",
+      "country": "CA",
+      "region": "ca-west-1",
+      "region_name": "Canada (Calgary)",
+      "latitude": "50.976971",
+      "longitude": "-113.956677",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [],
+      "peeringdb_id": "3251"
+    },
+    {
+      "code": "CDSR1",
+      "partition": "aws",
+      "name": "C21, Milan, IT",
+      "aws_name": "CDLAN srl Via Caldera 21",
+      "organization": "CDLAN SpA",
+      "country": "IT",
+      "region": "eu-central-1",
+      "region_name": "Europe (Frankfurt)",
+      "latitude": "45.476394",
+      "longitude": "9.103571",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "ACP - Init7",
+        "Colt",
+        "Fastweb",
+        "IT.net",
+        "Lumen",
+        "Telecom Italia Sparkle"
+      ],
+      "peeringdb_id": "3519"
+    },
+    {
+      "code": "CEC50",
+      "partition": "aws",
+      "name": "CE Colo Prague, Prague, CZ",
+      "aws_name": "CE Colo",
+      "organization": "CE Colo Czech s.r.o.",
+      "country": "CZ",
+      "region": "eu-central-1",
+      "region_name": "Europe (Frankfurt)",
+      "latitude": "50.060164",
+      "longitude": "14.482978",
+      "port_speeds": [
+        "1G",
+        "10G"
+      ],
+      "macsec_capable": [],
+      "providers": [
+        "Arelion",
+        "Colt",
+        "GTT",
+        "IX Reach",
+        "Lumen",
+        "NL-ix"
+      ],
+      "peeringdb_id": "214"
+    },
+    {
+      "code": "DGPU1",
+      "partition": "aws",
+      "name": "OSL01 - Vaultica Data Centers, Oslo, NO",
+      "aws_name": "DigiPlex Ulven",
+      "organization": "Vaultica Data Centers - NORDICS",
+      "country": "NO",
+      "region": "eu-central-1",
+      "region_name": "Europe (Frankfurt)",
+      "latitude": "59.924726",
+      "longitude": "10.810183",
+      "port_speeds": [
+        "1G",
+        "10G"
+      ],
+      "macsec_capable": [
+        "10G"
+      ],
+      "providers": [
+        "DigiPlex",
+        "EUNetworks"
+      ],
+      "peeringdb_id": "345"
+    },
+    {
+      "code": "EQAM3",
+      "partition": "aws",
+      "name": "Equinix AM3 - Amsterdam, Amsterdam, NL",
+      "aws_name": "Equinix AM3",
+      "organization": "Equinix, Inc.",
+      "country": "NL",
+      "region": "eu-central-1",
+      "region_name": "Europe (Frankfurt)",
+      "latitude": "52.354686",
+      "longitude": "4.958827",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "ACP - Init7",
+        "Arelion",
+        "BT",
+        "China Telecom",
+        "Colt",
+        "Datapath.io",
+        "EUNetworks",
+        "Epsilon",
+        "Equinix",
+        "GTT",
+        "IX Reach",
+        "InterCloud",
+        "Lumen",
+        "Masergy",
+        "Megaport",
+        "NL-ix",
+        "Orange Business",
+        "T-Systems International",
+        "Telecom Italia Sparkle",
+        "Telefonica",
+        "Verizon",
+        "Vodafone",
+        "Zayo"
+      ],
+      "peeringdb_id": "1320"
+    },
+    {
+      "code": "EQFA5",
+      "partition": "aws",
+      "name": "Equinix FR5 - Frankfurt, Frankfurt, DE",
+      "aws_name": "Equinix FR5",
+      "organization": "Equinix, Inc.",
+      "country": "DE",
+      "region": "eu-central-1",
+      "region_name": "Europe (Frankfurt)",
+      "latitude": "50.09885",
+      "longitude": "8.632004",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "ACP - Init7",
+        "AT&T",
+        "Arelion",
+        "BICS",
+        "BSO Network Solutions",
+        "BT",
+        "CITIC Telecom CPC",
+        "China Mobile International",
+        "China Telecom",
+        "Cinia",
+        "Colt",
+        "Console Connect",
+        "DE-CIX",
+        "EUNetworks",
+        "Epsilon",
+        "Equinix",
+        "GTT",
+        "Global Cloud Xchange",
+        "HGC Global Communications",
+        "IX Reach",
+        "InterCloud",
+        "KPN",
+        "Lumen",
+        "Masergy",
+        "NL-ix",
+        "NTT Europe",
+        "Orange Business",
+        "T-Systems International",
+        "Tamares Telecom",
+        "Tata Communications",
+        "Telecom Italia Sparkle",
+        "Telefonica",
+        "Telstra",
+        "Verizon",
+        "Vodafone",
+        "Zain Group",
+        "Zayo"
+      ],
+      "peeringdb_id": "60"
+    },
+    {
+      "code": "EQHE6",
+      "partition": "aws",
+      "name": "Equinix HE6 - Helsinki, Espoo, FI",
+      "aws_name": "Equinix HE6",
+      "organization": "Equinix, Inc.",
+      "country": "FI",
+      "region": "eu-central-1",
+      "region_name": "Europe (Frankfurt)",
+      "latitude": "60.203031",
+      "longitude": "24.777861",
+      "port_speeds": [
+        "1G",
+        "10G"
+      ],
+      "macsec_capable": [],
+      "providers": [
+        "Cinia",
+        "Equinix"
+      ],
+      "peeringdb_id": "2516"
+    },
+    {
+      "code": "EQIL4",
+      "partition": "aws",
+      "name": "Equinix IL4 - Istanbul, Istanbul, TR",
+      "aws_name": "Equinix IL4",
+      "organization": "Equinix, Inc.",
+      "country": "TR",
+      "region": "eu-central-1",
+      "region_name": "Europe (Frankfurt)",
+      "latitude": "41.008655",
+      "longitude": "29.156655",
+      "port_speeds": [
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "China Telecom",
+        "Cogent Communications",
+        "Deutsche Telekom",
+        "EXA",
+        "Fiberconnect",
+        "Fink Telecom",
+        "Gulf Bridge",
+        "Hurricane Electric",
+        "Lumen",
+        "Turk Telecom",
+        "Turkcell",
+        "Turknet",
+        "Vodafone"
+      ],
+      "peeringdb_id": "15498"
+    },
+    {
+      "code": "EQMU1",
+      "partition": "aws",
+      "name": "Equinix MU1/MU3 - Munich, Munich, DE",
+      "aws_name": "Equinix MU1",
+      "organization": "Equinix, Inc.",
+      "country": "DE",
+      "region": "eu-central-1",
+      "region_name": "Europe (Frankfurt)",
+      "latitude": "48.143056",
+      "longitude": "11.55584",
+      "port_speeds": [
+        "1G",
+        "10G"
+      ],
+      "macsec_capable": [
+        "10G"
+      ],
+      "providers": [
+        "Arelion",
+        "Colt",
+        "DE-CIX",
+        "EUNetworks",
+        "Equinix",
+        "GTT",
+        "Lumen",
+        "NL-ix",
+        "T-Systems International",
+        "Tata Communications",
+        "Vodafone"
+      ],
+      "peeringdb_id": "480"
+    },
+    {
+      "code": "EQWA1",
+      "partition": "aws",
+      "name": "Equinix WA1 - Warsaw, Warsaw, PL",
+      "aws_name": "Equinix WA1",
+      "organization": "Equinix, Inc.",
+      "country": "PL",
+      "region": "eu-central-1",
+      "region_name": "Europe (Frankfurt)",
+      "latitude": "52.227354",
+      "longitude": "21.003357",
+      "port_speeds": [
+        "1G",
+        "10G"
+      ],
+      "macsec_capable": [],
+      "providers": [
+        "EUNetworks",
+        "Equinix",
+        "GTT",
+        "KPN",
+        "Lumen",
+        "NL-ix",
+        "Orange Business",
+        "Tata Communications"
+      ],
+      "peeringdb_id": "509"
+    },
+    {
+      "code": "INX6",
+      "partition": "aws",
+      "name": "Digital Realty Frankfurt FRA1-27, Frankfurt, DE",
+      "aws_name": "Digital Realty FRA6",
+      "organization": "Digital Realty",
+      "country": "DE",
+      "region": "eu-central-1",
+      "region_name": "Europe (Frankfurt)",
+      "latitude": "50.11925",
+      "longitude": "8.735199",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "ACP - Init7",
+        "Arelion",
+        "BICS",
+        "BT",
+        "Colt",
+        "DE-CIX",
+        "Datapath.io",
+        "EUNetworks",
+        "Exponential-e",
+        "IX Reach",
+        "Interxion",
+        "KPN",
+        "Megaport",
+        "NL-ix",
+        "T-Systems International",
+        "Telefonica",
+        "Verizon",
+        "Vodafone",
+        "Zayo"
+      ],
+      "peeringdb_id": "58"
+    },
+    {
+      "code": "IPB50",
+      "partition": "aws",
+      "name": "CarrierColo Berlin Luetzow (I/P/B/ site B), Berlin, DE",
+      "aws_name": "IPB GmbH",
+      "organization": "IPB Internet Provider in Berlin GmbH",
+      "country": "DE",
+      "region": "eu-central-1",
+      "region_name": "Europe (Frankfurt)",
+      "latitude": "52.50192",
+      "longitude": "13.36945",
+      "port_speeds": [
+        "1G",
+        "10G"
+      ],
+      "macsec_capable": [
+        "10G"
+      ],
+      "providers": [
+        "Arelion",
+        "Colt",
+        "EUNetworks",
+        "GTT",
+        "IX Reach",
+        "Lumen",
+        "NL-ix",
+        "T-Systems International",
+        "Telefonica",
+        "Vodafone"
+      ],
+      "peeringdb_id": "445"
+    },
+    {
+      "code": "IPHH3",
+      "partition": "aws",
+      "name": "Portus/IPHH HH3 (Wendenstrasse 251), Hamburg, DE",
+      "aws_name": "IPHH H3",
+      "organization": "Portus Data Centers",
+      "country": "DE",
+      "region": "eu-central-1",
+      "region_name": "Europe (Frankfurt)",
+      "latitude": "53.550998",
+      "longitude": "10.03825",
+      "port_speeds": [
+        "1G",
+        "10G"
+      ],
+      "macsec_capable": [
+        "10G"
+      ],
+      "providers": [
+        "ACP - Init7",
+        "BT",
+        "Colt",
+        "EUNetworks",
+        "Lumen",
+        "T-Systems International",
+        "Vodafone"
+      ],
+      "peeringdb_id": "7274"
+    },
+    {
+      "code": "ITCM2",
+      "partition": "aws",
+      "name": "Equinix MD2 - Madrid, Alcobendas, ES",
+      "aws_name": "Equinix Itconic MD2",
+      "organization": "Equinix, Inc.",
+      "country": "ES",
+      "region": "eu-central-1",
+      "region_name": "Europe (Frankfurt)",
+      "latitude": "40.536855",
+      "longitude": "-3.648584",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "AT&T",
+        "Arelion",
+        "BT",
+        "Colt",
+        "Equinix",
+        "GTT",
+        "KPN",
+        "Lumen",
+        "Orange Business",
+        "Tata Communications",
+        "Telecom Italia Sparkle",
+        "Telefonica",
+        "Verizon",
+        "Vodafone"
+      ],
+      "peeringdb_id": "127"
+    },
+    {
+      "code": "ITXA1",
+      "partition": "aws",
+      "name": "Digital Realty Athens Campus (ATH1, Koropi, GR",
+      "aws_name": "Digital Realty ATH3",
+      "organization": "Digital Realty",
+      "country": "GR",
+      "region": "eu-central-1",
+      "region_name": "Europe (Frankfurt)",
+      "latitude": "37.871339",
+      "longitude": "23.870251",
+      "port_speeds": [
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "Cogent Communications",
+        "Digital Realty (Interxion)",
+        "EXA",
+        "Forthnet",
+        "Grid Telecom",
+        "Hurricane Electric",
+        "Telecom Italia Sparkle",
+        "Telefonica",
+        "Vodafone",
+        "Wind"
+      ],
+      "peeringdb_id": "1949"
+    },
+    {
+      "code": "ITXA7",
+      "partition": "aws",
+      "name": "Digital Realty Amsterdam AMS3, Amsterdam, NL",
+      "aws_name": "Digital Realty AMS7",
+      "organization": "Digital Realty",
+      "country": "NL",
+      "region": "eu-central-1",
+      "region_name": "Europe (Frankfurt)",
+      "latitude": "52.28415",
+      "longitude": "4.770855",
+      "port_speeds": [
+        "1G",
+        "10G"
+      ],
+      "macsec_capable": [
+        "10G"
+      ],
+      "providers": [
+        "BSO Network Solutions",
+        "Interxion",
+        "Lumen",
+        "NOS"
+      ],
+      "peeringdb_id": "64"
+    },
+    {
+      "code": "ITXC2",
+      "partition": "aws",
+      "name": "Digital Realty Copenhagen CPH1-3, Copenhagen, DK",
+      "aws_name": "Digital Realty CPH2",
+      "organization": "Digital Realty",
+      "country": "DK",
+      "region": "eu-central-1",
+      "region_name": "Europe (Frankfurt)",
+      "latitude": "55.728092",
+      "longitude": "12.377482",
+      "port_speeds": [
+        "1G",
+        "10G"
+      ],
+      "macsec_capable": [
+        "10G"
+      ],
+      "providers": [
+        "Interxion"
+      ],
+      "peeringdb_id": "148"
+    },
+    {
+      "code": "ITXM2",
+      "partition": "aws",
+      "name": "Digital Realty Madrid MAD1-2, Madrid, ES",
+      "aws_name": "Digital Realty MAD2",
+      "organization": "Digital Realty",
+      "country": "ES",
+      "region": "eu-central-1",
+      "region_name": "Europe (Frankfurt)",
+      "latitude": "40.439323",
+      "longitude": "-3.621211",
+      "port_speeds": [],
+      "macsec_capable": [],
+      "providers": [
+        "ACP - Init7",
+        "AT&T",
+        "Arelion",
+        "BT",
+        "Colt",
+        "DE-CIX",
+        "GTT",
+        "IX Reach",
+        "InterCloud",
+        "Interxion",
+        "Lumen",
+        "NOS",
+        "Orange Business",
+        "Tata Communications",
+        "Telefonica",
+        "Verizon",
+        "Vodafone"
+      ],
+      "peeringdb_id": "130"
+    },
+    {
+      "code": "ITXM3",
+      "partition": "aws",
+      "name": "Digital Realty Madrid MAD3, Madrid, ES",
+      "aws_name": "Digital Realty MAD3",
+      "organization": "Digital Realty",
+      "country": "ES",
+      "region": "eu-central-1",
+      "region_name": "Europe (Frankfurt)",
+      "latitude": "40.433899",
+      "longitude": "-3.62408",
+      "port_speeds": [
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [],
+      "peeringdb_id": "7414"
+    },
+    {
+      "code": "ITXS1",
+      "partition": "aws",
+      "name": "Digital Realty Stockholm STO1-6, Stockholm, SE",
+      "aws_name": "Digital Realty STO1",
+      "organization": "Digital Realty",
+      "country": "SE",
+      "region": "eu-central-1",
+      "region_name": "Europe (Frankfurt)",
+      "latitude": "59.422226",
+      "longitude": "17.916696",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "Arelion",
+        "Cinia",
+        "Colt",
+        "Digital Realty (Interxion)",
+        "EUNetworks",
+        "GTT",
+        "Interxion",
+        "Lumen",
+        "Megaport",
+        "NL-ix",
+        "Verizon",
+        "Vodafone",
+        "Zayo"
+      ],
+      "peeringdb_id": "208"
+    },
+    {
+      "code": "ITXV2",
+      "partition": "aws",
+      "name": "Digital Realty Vienna VIE1-2, Vienna, AT",
+      "aws_name": "Digital Realty VIE2",
+      "organization": "Digital Realty",
+      "country": "AT",
+      "region": "eu-central-1",
+      "region_name": "Europe (Frankfurt)",
+      "latitude": "48.269027",
+      "longitude": "16.410613",
+      "port_speeds": [
+        "1G",
+        "10G"
+      ],
+      "macsec_capable": [
+        "10G"
+      ],
+      "providers": [
+        "ACP - Init7",
+        "Arelion",
+        "Colt",
+        "GTT",
+        "IX Reach",
+        "Interxion",
+        "Lumen",
+        "NL-ix",
+        "T-Systems International",
+        "Tata Communications",
+        "Telefonica",
+        "Verizon"
+      ],
+      "peeringdb_id": "67"
+    },
+    {
+      "code": "ITXZ1",
+      "partition": "aws",
+      "name": "Digital Realty Zurich ZUR1, Glattbrugg, CH",
+      "aws_name": "Digital Realty ZUR1",
+      "organization": "Digital Realty",
+      "country": "CH",
+      "region": "eu-central-1",
+      "region_name": "Europe (Frankfurt)",
+      "latitude": "47.432702",
+      "longitude": "8.557273",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "ACP - Init7",
+        "AT&T",
+        "Colt",
+        "EUNetworks",
+        "GTT",
+        "InterCloud",
+        "Interxion",
+        "Lumen",
+        "NL-ix",
+        "Sunrise",
+        "Swisscom",
+        "Telefonica",
+        "Verizon"
+      ],
+      "peeringdb_id": "81"
+    },
+    {
+      "code": "MOILH",
+      "partition": "aws",
+      "name": "MedOne TC1, Tirat Carmel, IL",
+      "aws_name": "MedOne",
+      "organization": "Med-1 IC-1 (1999) LTD.",
+      "country": "IL",
+      "region": "eu-central-1",
+      "region_name": "Europe (Frankfurt)",
+      "latitude": "32.770949",
+      "longitude": "34.966486",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "Bezeq",
+        "Bezeq International",
+        "Cellcom",
+        "Tamares Telecom"
+      ],
+      "peeringdb_id": "7177"
+    },
+    {
+      "code": "THV52",
+      "partition": "aws",
+      "name": "Telehouse - Paris 2 (Voltaire - L\u00e9on Frot), Paris, FR",
+      "aws_name": "Telehouse Voltaire",
+      "organization": "Telehouse - Global Data Centers",
+      "country": "FR",
+      "region": "eu-central-1",
+      "region_name": "Europe (Frankfurt)",
+      "latitude": "48.856654",
+      "longitude": "2.38532",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "ACP - Init7",
+        "AT&T",
+        "Arelion",
+        "BSO Network Solutions",
+        "BT",
+        "China Mobile International",
+        "Colt",
+        "Console Connect",
+        "EUNetworks",
+        "Epsilon",
+        "GTT",
+        "IX Reach",
+        "InterCloud",
+        "Lumen",
+        "NL-ix",
+        "Orange Business",
+        "SES",
+        "Tata Communications",
+        "Telecom Italia Sparkle",
+        "Telefonica",
+        "Telehouse",
+        "Telstra",
+        "Verizon",
+        "Zayo"
+      ],
+      "peeringdb_id": "53"
+    },
+    {
+      "code": "EQZH5",
+      "partition": "aws",
+      "name": "Equinix ZH5 - Zurich, Zurich, CH",
+      "aws_name": "Equinix ZH5",
+      "organization": "Equinix, Inc.",
+      "country": "CH",
+      "region": "eu-central-2",
+      "region_name": "Europe (Zurich)",
+      "latitude": "47.405667",
+      "longitude": "8.46174",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "ACP - Init7",
+        "Colt",
+        "EWZ Telecom",
+        "Equinix",
+        "Gas & Com",
+        "Sunrise",
+        "Swisscom"
+      ],
+      "peeringdb_id": "1515"
+    },
+    {
+      "code": "EQSK1",
+      "partition": "aws",
+      "name": "Equinix SK1 - Stockholm, Stockholm, SE",
+      "aws_name": "Equinix Sweden SK1",
+      "organization": "Equinix, Inc.",
+      "country": "SE",
+      "region": "eu-north-1",
+      "region_name": "Europe (Stockholm)",
+      "latitude": "59.362574",
+      "longitude": "17.955657",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "Arelion",
+        "Cinia",
+        "Equinix",
+        "Lumen",
+        "Telecom Italia Sparkle"
+      ],
+      "peeringdb_id": "156"
+    },
+    {
+      "code": "EQML2",
+      "partition": "aws",
+      "name": "Equinix ML2 - Milan, Milan, IT",
+      "aws_name": "Equinix ML2",
+      "organization": "Equinix, Inc.",
+      "country": "IT",
+      "region": "eu-south-1",
+      "region_name": "Europe (Milan)",
+      "latitude": "45.448684",
+      "longitude": "9.147436",
+      "port_speeds": [],
+      "macsec_capable": [],
+      "providers": [
+        "ACP - Init7",
+        "Colt",
+        "EUNetworks",
+        "Equinix",
+        "Fastweb",
+        "IT.net"
+      ],
+      "peeringdb_id": "884"
+    },
+    {
+      "code": "EQBA1",
+      "partition": "aws",
+      "name": "Equinix BA1 - Barcelona, Barcelona, ES",
+      "aws_name": "Equinix BA1",
+      "organization": "Equinix, Inc.",
+      "country": "ES",
+      "region": "eu-south-2",
+      "region_name": "Europe (Spain)",
+      "latitude": "41.351557",
+      "longitude": "2.137457",
+      "port_speeds": [
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [],
+      "peeringdb_id": "122"
+    },
+    {
+      "code": "EIRCL",
+      "partition": "aws",
+      "name": "Eircom Dublin (Clonshaugh), Dublin, IE",
+      "aws_name": "Eircom Clonshaugh",
+      "organization": "eircom Ltd",
+      "country": "IE",
+      "region": "eu-west-1",
+      "region_name": "Europe (Ireland)",
+      "latitude": "53.400983",
+      "longitude": "-6.218081",
+      "port_speeds": [
+        "1G",
+        "10G"
+      ],
+      "macsec_capable": [
+        "10G"
+      ],
+      "providers": [
+        "BT",
+        "Colt",
+        "EUNetworks",
+        "Equinix",
+        "GTT",
+        "InterCloud",
+        "Lumen",
+        "Tata Communications",
+        "eircom"
+      ],
+      "peeringdb_id": "2343"
+    },
+    {
+      "code": "EQDX1",
+      "partition": "aws",
+      "name": "Equinix DX1 - Dubai, Dubai, AE",
+      "aws_name": "Equinix DX1",
+      "organization": "Equinix, Inc.",
+      "country": "AE",
+      "region": "eu-west-1",
+      "region_name": "Europe (Ireland)",
+      "latitude": "25.02618",
+      "longitude": "55.18695",
+      "port_speeds": [
+        "1G",
+        "10G"
+      ],
+      "macsec_capable": [
+        "10G"
+      ],
+      "providers": [
+        "BICS",
+        "CITIC Telecom CPC",
+        "CUBIT Technologies",
+        "China Mobile International",
+        "China Telecom",
+        "City Network Hosting",
+        "DE-CIX",
+        "DataMena",
+        "Eathlink Telecommunications",
+        "Epsilon",
+        "Equinix",
+        "GTT",
+        "HGC",
+        "Infonas",
+        "Kalaam Telecom",
+        "Lumen",
+        "MetroNet (UK)",
+        "Orixcom",
+        "Telstra",
+        "Zain Group"
+      ],
+      "peeringdb_id": "1355"
+    },
+    {
+      "code": "EQLD5",
+      "partition": "aws",
+      "name": "Equinix LD5 - London, Slough, GB",
+      "aws_name": "Equinix LD5",
+      "organization": "Equinix, Inc.",
+      "country": "GB",
+      "region": "eu-west-1",
+      "region_name": "Europe (Ireland)",
+      "latitude": "51.522463",
+      "longitude": "-0.62905",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "AT&T",
+        "Apcela",
+        "Arelion",
+        "BICS",
+        "BSO Network Solutions",
+        "BT",
+        "China Mobile International",
+        "Colt",
+        "Datapath.io",
+        "Datapipe",
+        "Digital Realty",
+        "EUNetworks",
+        "Epsilon",
+        "Equinix",
+        "Exponential-e",
+        "GTT",
+        "Global Cloud Xchange",
+        "IX Reach",
+        "InterCloud",
+        "KPN",
+        "Lumen",
+        "Masergy",
+        "Megaport",
+        "NL-ix",
+        "NTT Communications",
+        "Orange Business",
+        "T-Systems International",
+        "Tata Communications",
+        "Telecom Italia Sparkle",
+        "Telefonica",
+        "Telia Carrier",
+        "Telstra",
+        "Verizon",
+        "Vodafone",
+        "Zayo",
+        "hSo"
+      ],
+      "peeringdb_id": "832"
+    },
+    {
+      "code": "EQLS1",
+      "partition": "aws",
+      "name": "Equinix LS1 - Lisbon, Lisbon, PT",
+      "aws_name": "Equinix LS1",
+      "organization": "Equinix, Inc.",
+      "country": "PT",
+      "region": "eu-west-1",
+      "region_name": "Europe (Ireland)",
+      "latitude": "38.787919",
+      "longitude": "-9.123454",
+      "port_speeds": [
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "AT&T",
+        "Altice",
+        "Axione",
+        "BT Portugal",
+        "China Telecom",
+        "Colt",
+        "Equinix",
+        "GTT",
+        "IP Telecom - Infraestructure De Portugal",
+        "Lumen",
+        "MTN Business",
+        "Orange Business",
+        "PCCW",
+        "Tata Communications",
+        "Telecom Italia Sparkle",
+        "Telefonica Global",
+        "Vodafone"
+      ],
+      "peeringdb_id": "126"
+    },
+    {
+      "code": "ETIFJ",
+      "partition": "aws",
+      "name": "SmartHub Fujairah, Fujairah, AE",
+      "aws_name": "Etisalat Smart Hub Data Center",
+      "organization": "Etisalat",
+      "country": "AE",
+      "region": "eu-west-1",
+      "region_name": "Europe (Ireland)",
+      "latitude": "25.131143",
+      "longitude": "56.336378",
+      "port_speeds": [
+        "1G",
+        "10G"
+      ],
+      "macsec_capable": [
+        "10G"
+      ],
+      "providers": [
+        "BSO Network Solutions",
+        "Infonas",
+        "Zain Group"
+      ],
+      "peeringdb_id": "1493"
+    },
+    {
+      "code": "ITXD2",
+      "partition": "aws",
+      "name": "Digital Realty Dublin DUB1-2, Dublin, IE",
+      "aws_name": "Digital Realty DUB2",
+      "organization": "Digital Realty",
+      "country": "IE",
+      "region": "eu-west-1",
+      "region_name": "Europe (Ireland)",
+      "latitude": "53.334251",
+      "longitude": "-6.365538",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "AT&T",
+        "BT",
+        "Colt",
+        "EUNetworks",
+        "GTT",
+        "IX Reach",
+        "Interxion",
+        "Lumen",
+        "Megaport",
+        "Telefonica",
+        "Verizon",
+        "Zayo"
+      ],
+      "peeringdb_id": "177"
+    },
+    {
+      "code": "ITXM1",
+      "partition": "aws",
+      "name": "Digital Realty Marseille MRS1/2/3/4, Marseille, FR",
+      "aws_name": "Digital Realty MRS1",
+      "organization": "Digital Realty",
+      "country": "FR",
+      "region": "eu-west-1",
+      "region_name": "Europe (Ireland)",
+      "latitude": "43.310818",
+      "longitude": "5.373865",
+      "port_speeds": [
+        "1G",
+        "10G"
+      ],
+      "macsec_capable": [],
+      "providers": [
+        "ACP - Init7",
+        "AT&T",
+        "Arelion",
+        "BSO Network Solutions",
+        "BT",
+        "Colt",
+        "Console Connect",
+        "EUNetworks",
+        "Epsilon",
+        "GTT",
+        "IX Reach",
+        "Interxion",
+        "Lumen",
+        "NL-ix",
+        "Orange Business",
+        "Tata Communications",
+        "Telecom Italia Sparkle",
+        "Verizon",
+        "Vodafone"
+      ],
+      "peeringdb_id": "226"
+    },
+    {
+      "code": "SCDB9",
+      "partition": "aws",
+      "name": "Servecentric (Blanchardstown), Dublin, IE",
+      "aws_name": "Servecentric Unit 9",
+      "organization": "ServeCentric Ltd. (Blanchardstown)",
+      "country": "IE",
+      "region": "eu-west-1",
+      "region_name": "Europe (Ireland)",
+      "latitude": "53.412959",
+      "longitude": "-6.373212",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "Aurora Telecom",
+        "BT",
+        "Cogent Communications",
+        "Colt",
+        "EUNetworks",
+        "Lumen",
+        "Magnet Networks",
+        "Servecentric",
+        "Verizon",
+        "ViaTel",
+        "Virgin Media",
+        "Vodafone",
+        "Zayo"
+      ],
+      "peeringdb_id": "5901"
+    },
+    {
+      "code": "TCSH",
+      "partition": "aws",
+      "name": "Digital Realty London LHR20, London, GB",
+      "aws_name": "Digital Realty LHR20",
+      "organization": "Digital Realty",
+      "country": "GB",
+      "region": "eu-west-1",
+      "region_name": "Europe (Ireland)",
+      "latitude": "51.499819",
+      "longitude": "-0.010775",
+      "port_speeds": [
+        "1G",
+        "10G"
+      ],
+      "macsec_capable": [
+        "10G"
+      ],
+      "providers": [
+        "AT&T",
+        "Arelion",
+        "BICS",
+        "BT",
+        "Batelco",
+        "Cellnex Telecom",
+        "Colt",
+        "Console Connect",
+        "Datapipe",
+        "Digital Realty",
+        "EUNetworks",
+        "Epsilon",
+        "Equinix",
+        "Exponential-e",
+        "GTT",
+        "Global Cloud Xchange",
+        "HGC Global Communications",
+        "IX Reach",
+        "Infonas",
+        "InterCloud",
+        "Interxion",
+        "KCOM",
+        "KPN",
+        "Kalaam Telecom",
+        "Lumen",
+        "MTN Business",
+        "Masergy",
+        "Megaport",
+        "NL-ix",
+        "NTT Communications",
+        "Orange Business",
+        "Sohonet",
+        "Tamares Telecom",
+        "Tata Communications",
+        "Telecom Italia Sparkle",
+        "Telefonica",
+        "Telia Carrier",
+        "Telstra",
+        "Updata",
+        "Venus",
+        "Verizon",
+        "Vodafone",
+        "Zain Group",
+        "Zayo",
+        "hSo"
+      ],
+      "peeringdb_id": "40"
+    },
+    {
+      "code": "TEJB1",
+      "partition": "aws",
+      "name": "Teraco Johannesburg Campus, Johannesburg, ZA",
+      "aws_name": "Teraco JB1",
+      "organization": "Teraco Data Environments Pty Ltd",
+      "country": "ZA",
+      "region": "eu-west-1",
+      "region_name": "Europe (Ireland)",
+      "latitude": "-26.137957",
+      "longitude": "28.197517",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "BSO Network Solutions",
+        "BT",
+        "Liquid Intelligent Technologies",
+        "Orange Business",
+        "Teraco",
+        "Vodacom Business"
+      ],
+      "peeringdb_id": "850"
+    },
+    {
+      "code": "EQMA3",
+      "partition": "aws",
+      "name": "Equinix MA3 - Manchester, Manchester, GB",
+      "aws_name": "Equinix MA3",
+      "organization": "Equinix, Inc.",
+      "country": "GB",
+      "region": "eu-west-2",
+      "region_name": "Europe (London)",
+      "latitude": "53.468674",
+      "longitude": "-2.310421",
+      "port_speeds": [
+        "1G",
+        "10G"
+      ],
+      "macsec_capable": [],
+      "providers": [
+        "BT",
+        "Colt",
+        "EUNetworks",
+        "Equinix",
+        "Exponential-e",
+        "GTT",
+        "IX Reach",
+        "Lumen",
+        "Vodafone"
+      ],
+      "peeringdb_id": "1403"
+    },
+    {
+      "code": "THNO2",
+      "partition": "aws",
+      "name": "Telehouse - London (Docklands West), London, GB",
+      "aws_name": "Telehouse West",
+      "organization": "Telehouse - Global Data Centers",
+      "country": "GB",
+      "region": "eu-west-2",
+      "region_name": "Europe (London)",
+      "latitude": "51.511776",
+      "longitude": "-0.002927",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "21st Century Technologies",
+        "ACP - Init7",
+        "Arelion",
+        "BICS",
+        "BSO Network Solutions",
+        "CITIC Telecom CPC",
+        "China Mobile International",
+        "Colt",
+        "Console Connect",
+        "Epsilon",
+        "HGC Global Communications",
+        "IX Reach",
+        "Lumen",
+        "Sprint",
+        "Telecom Italia Sparkle",
+        "Zayo"
+      ],
+      "peeringdb_id": "835"
+    },
+    {
+      "code": "EQPA3",
+      "partition": "aws",
+      "name": "Equinix PA3 - Paris, Paris, FR",
+      "aws_name": "Equinix PA3",
+      "organization": "Equinix, Inc.",
+      "country": "FR",
+      "region": "eu-west-3",
+      "region_name": "Europe (Paris)",
+      "latitude": "48.927166",
+      "longitude": "2.350664",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "Arelion",
+        "BSO Network Solutions",
+        "China Mobile International",
+        "China Telecom",
+        "Colt",
+        "EUNetworks",
+        "Equinix",
+        "IX Reach",
+        "InterCloud",
+        "Lumen",
+        "Orange Business",
+        "Zayo"
+      ],
+      "peeringdb_id": "717"
+    },
+    {
+      "code": "ITXP7",
+      "partition": "aws",
+      "name": "Digital Realty Paris PAR7, Paris, FR",
+      "aws_name": "Digital Realty PAR7",
+      "organization": "Digital Realty",
+      "country": "FR",
+      "region": "eu-west-3",
+      "region_name": "Europe (Paris)",
+      "latitude": "48.924907",
+      "longitude": "2.403",
+      "port_speeds": [
+        "1G",
+        "10G"
+      ],
+      "macsec_capable": [],
+      "providers": [
+        "Arelion",
+        "BT",
+        "Colt",
+        "Interxion"
+      ],
+      "peeringdb_id": "1536"
+    },
+    {
+      "code": "ECTL1",
+      "partition": "aws",
+      "name": "EdgeConneX Tel Aviv (EDCTLV01), Herzliya, IL",
+      "aws_name": "Edgeconnex",
+      "organization": "EdgeConneX Inc.",
+      "country": "IL",
+      "region": "il-central-1",
+      "region_name": "Israel (Tel Aviv)",
+      "latitude": "32.052681",
+      "longitude": "34.770992",
+      "port_speeds": [
+        "1G",
+        "10G"
+      ],
+      "macsec_capable": [
+        "10G"
+      ],
+      "providers": [
+        "Bezeq",
+        "Bezeq International",
+        "Cellcom",
+        "Hot/Altice",
+        "IT Sparkle"
+      ],
+      "peeringdb_id": "11734"
+    },
+    {
+      "code": "EQMX1",
+      "partition": "aws",
+      "name": "Equinix MX1/MX2 - Mexico City, El Marques, MX",
+      "aws_name": "Equinix MX1",
+      "organization": "Equinix, Inc.",
+      "country": "MX",
+      "region": "mx-central-1",
+      "region_name": "Mexico (Central)",
+      "latitude": "20.556925",
+      "longitude": "-100.277833",
+      "port_speeds": [
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "AT&T",
+        "Axtel",
+        "BT",
+        "Cirion",
+        "Cogent Communications",
+        "Equinix",
+        "FLO Networks",
+        "GRUPO Neutral Networks",
+        "Hurricane Electric",
+        "IENTC",
+        "Lanto Internet",
+        "Marcatel",
+        "Megacable",
+        "Mexico Red",
+        "Neulink Networks",
+        "Operbes",
+        "Redetec",
+        "Servnet Mexico",
+        "Telia Carrier",
+        "Total Play",
+        "UC Telecom"
+      ],
+      "peeringdb_id": "8434"
+    },
+    {
+      "code": "CIBNA",
+      "partition": "aws",
+      "name": "Cirion Buenos Aires - BUE1, Buenos Aires, AR",
+      "aws_name": "Cirion BNARAGMS",
+      "organization": "Cirion",
+      "country": "AR",
+      "region": "sa-east-1",
+      "region_name": "South America (S\u00e3o Paulo)",
+      "latitude": "-34.590248",
+      "longitude": "-58.467164",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "Lumen"
+      ],
+      "peeringdb_id": "1550"
+    },
+    {
+      "code": "CILIM",
+      "partition": "aws",
+      "name": "Cirion Lima - LIM1, Santiago de Surco, PE",
+      "aws_name": "Cirion LIMAPUCD",
+      "organization": "Cirion",
+      "country": "PE",
+      "region": "sa-east-1",
+      "region_name": "South America (S\u00e3o Paulo)",
+      "latitude": "-12.094823",
+      "longitude": "-76.973532",
+      "port_speeds": [
+        "1G",
+        "10G"
+      ],
+      "macsec_capable": [
+        "10G"
+      ],
+      "providers": [
+        "Americatel",
+        "Claro",
+        "Commerce",
+        "Convergia",
+        "Entel",
+        "Fiberlux",
+        "Mautilux",
+        "Media",
+        "Mega Andina",
+        "Netline",
+        "Optical IP",
+        "Orbitel",
+        "Telefonica",
+        "Telmex",
+        "Viettel"
+      ],
+      "peeringdb_id": "6248"
+    },
+    {
+      "code": "EQBG1",
+      "partition": "aws",
+      "name": "Equinix BG1 - Bogota, Bogota, CO",
+      "aws_name": "Equinix BG1",
+      "organization": "Equinix, Inc.",
+      "country": "CO",
+      "region": "sa-east-1",
+      "region_name": "South America (S\u00e3o Paulo)",
+      "latitude": "4.671384",
+      "longitude": "-74.156026",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "Liberty Global",
+        "Lumen",
+        "Orange Business",
+        "Telefonica"
+      ],
+      "peeringdb_id": "1354"
+    },
+    {
+      "code": "EQRJ2",
+      "partition": "aws",
+      "name": "Equinix RJ2 - Rio de Janeiro, Rio de Janeiro, BR",
+      "aws_name": "Equinix RJ2",
+      "organization": "Equinix, Inc.",
+      "country": "BR",
+      "region": "sa-east-1",
+      "region_name": "South America (S\u00e3o Paulo)",
+      "latitude": "-22.871261",
+      "longitude": "-43.272742",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "China Mobile International",
+        "Equinix",
+        "T-Systems Brazil",
+        "Telecom Italia Sparkle",
+        "Telefonica",
+        "Verizon"
+      ],
+      "peeringdb_id": "1899"
+    },
+    {
+      "code": "SONQU",
+      "partition": "aws",
+      "name": "SONDA - Quilicura, Santiago, CL",
+      "aws_name": "Sonda Quilicura",
+      "organization": "SONDA S.A.",
+      "country": "CL",
+      "region": "sa-east-1",
+      "region_name": "South America (S\u00e3o Paulo)",
+      "latitude": "-33.35628",
+      "longitude": "-70.698912",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "Cirion",
+        "Claro",
+        "Entel",
+        "GTD",
+        "Telefonica",
+        "Ufinet"
+      ],
+      "peeringdb_id": "10697"
+    },
+    {
+      "code": "TIVIT",
+      "partition": "aws",
+      "name": "TIVIT Sao Paulo, S\u00e3o Paulo, BR",
+      "aws_name": "Tivit",
+      "organization": "TIVIT",
+      "country": "BR",
+      "region": "sa-east-1",
+      "region_name": "South America (S\u00e3o Paulo)",
+      "latitude": "-23.65071",
+      "longitude": "-46.720519",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "Ascenty",
+        "BT",
+        "China Mobile International",
+        "Lumen",
+        "T-Systems Brazil",
+        "TIVIT",
+        "Telecom Italia Sparkle",
+        "Telefonica",
+        "UOL DIVEO"
+      ],
+      "peeringdb_id": "1325"
+    },
+    {
+      "code": "TNDB",
+      "partition": "aws",
+      "name": "Equinix SP4 - S\u00e3o Paulo, Barueri, BR",
+      "aws_name": "Equinix SP4",
+      "organization": "Equinix, Inc.",
+      "country": "BR",
+      "region": "sa-east-1",
+      "region_name": "South America (S\u00e3o Paulo)",
+      "latitude": "-23.497589",
+      "longitude": "-46.814577",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "Ascenty",
+        "BT",
+        "China Mobile International",
+        "China Telecom",
+        "Equinix",
+        "InterCloud",
+        "Lumen",
+        "Neutrona Networks",
+        "Orange Business",
+        "Sprint",
+        "T-Systems Brazil",
+        "Telecom Italia Sparkle",
+        "Telefonica",
+        "UOL DIVEO",
+        "Verizon"
+      ],
+      "peeringdb_id": "165"
+    },
+    {
+      "code": "165HS",
+      "partition": "aws",
+      "name": "165 Halsey Meet-Me Room, Newark, NJ, US",
+      "aws_name": "165 Halsey Street",
+      "organization": "Tishman Real Estate Services",
+      "country": "US",
+      "region": "us-east-1",
+      "region_name": "US East (N. Virginia)",
+      "latitude": "40.736844",
+      "longitude": "-74.173402",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G",
+        "400G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G",
+        "400G"
+      ],
+      "providers": [
+        "11:11 Systems",
+        "AT&T",
+        "Arelion",
+        "BSO Network Solutions",
+        "BT",
+        "Colt",
+        "Crown Castle",
+        "DE-CIX",
+        "Epsilon",
+        "Equinix",
+        "GTT",
+        "Global Cloud Xchange",
+        "Lumen",
+        "PacketFabric",
+        "Tata Communications",
+        "Telecom Italia Sparkle",
+        "Verizon",
+        "XO Communications",
+        "Zayo"
+      ],
+      "peeringdb_id": "350"
+    },
+    {
+      "code": "CS32A",
+      "partition": "aws",
+      "name": "CoreSite - New York (NY1), New York, NY, US",
+      "aws_name": "CoreSite NY1",
+      "organization": "CoreSite",
+      "country": "US",
+      "region": "us-east-1",
+      "region_name": "US East (N. Virginia)",
+      "latitude": "40.72",
+      "longitude": "-74.004561",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "AT&T",
+        "Apcela",
+        "Atlantic Metro Communications",
+        "CITIC Telecom CPC",
+        "Cologix",
+        "Colt",
+        "CoreSite",
+        "Crown Castle",
+        "Digital Realty",
+        "GTT",
+        "Global Cloud Xchange",
+        "IX Reach",
+        "Lightpath",
+        "Lumen",
+        "Megaport",
+        "PacketFabric",
+        "RCN",
+        "Sohonet",
+        "TOWARDEX",
+        "Telecom Italia Sparkle",
+        "Telstra",
+        "Verizon",
+        "Vodafone",
+        "Zayo"
+      ],
+      "peeringdb_id": "670"
+    },
+    {
+      "code": "CSVA1",
+      "partition": "aws",
+      "name": "CoreSite - Reston (VA1), Reston, VA, US",
+      "aws_name": "CoreSite VA1",
+      "organization": "CoreSite",
+      "country": "US",
+      "region": "us-east-1",
+      "region_name": "US East (N. Virginia)",
+      "latitude": "38.950631",
+      "longitude": "-77.364541",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "11:11 Systems",
+        "AT&T",
+        "Arelion",
+        "BT",
+        "Beanfield Metro",
+        "CoreSite",
+        "Crown Castle",
+        "Datapipe",
+        "FiberLight",
+        "GTT",
+        "IX Reach",
+        "Lumen",
+        "Megaport",
+        "NTT Communications",
+        "PacketFabric",
+        "Summit IG",
+        "Verizon",
+        "XO Communications",
+        "YellowFiber Networks",
+        "Zayo"
+      ],
+      "peeringdb_id": "668"
+    },
+    {
+      "code": "EQDA2",
+      "partition": "aws",
+      "name": "Equinix DA - Dallas (previously Infomart Dallas), Dallas, TX, US",
+      "aws_name": "Equinix DA2",
+      "organization": "Equinix, Inc.",
+      "country": "US",
+      "region": "us-east-1",
+      "region_name": "US East (N. Virginia)",
+      "latitude": "32.800748",
+      "longitude": "-96.819412",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "11:11 Systems",
+        "AT&T",
+        "Arelion",
+        "BICS",
+        "Bestel",
+        "C3ntro Telecom",
+        "China Telecom",
+        "Cologix",
+        "Colt",
+        "Cox",
+        "Crown Castle",
+        "CyrusOne",
+        "DE-CIX",
+        "Epsilon",
+        "Equinix",
+        "FiberLight",
+        "GTT",
+        "Global Cloud Xchange",
+        "IX Reach",
+        "Internet2",
+        "Lumen",
+        "MCM Telecom",
+        "Masergy",
+        "Megaport",
+        "Orange Business",
+        "PacketFabric",
+        "Pureport",
+        "Tata Communications",
+        "Telefonica",
+        "Verizon",
+        "XO Communications",
+        "Zayo"
+      ],
+      "peeringdb_id": "505"
+    },
+    {
+      "code": "EQDC2",
+      "partition": "aws",
+      "name": "Equinix DC1-DC15, Ashburn, VA, US",
+      "aws_name": "Equinix DC2/DC11",
+      "organization": "Equinix, Inc.",
+      "country": "US",
+      "region": "us-east-1",
+      "region_name": "US East (N. Virginia)",
+      "latitude": "39.016363",
+      "longitude": "-77.459023",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G",
+        "400G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G",
+        "400G"
+      ],
+      "providers": [
+        "11:11 Systems",
+        "AT&T",
+        "Apcela",
+        "Arelion",
+        "BICS",
+        "BT",
+        "Beanfield Metro",
+        "Bestel",
+        "C3ntro Telecom",
+        "China Mobile International",
+        "China Telecom",
+        "Colt",
+        "Comcast",
+        "Console Connect",
+        "Cox",
+        "Crown Castle",
+        "Datapath.io",
+        "Datapipe",
+        "Digital Realty",
+        "Epsilon",
+        "Equinix",
+        "FiberLight",
+        "First Communications",
+        "GTT",
+        "Global Cloud Xchange",
+        "HopOne",
+        "IX Reach",
+        "InterCloud",
+        "Internet2",
+        "Lightpath",
+        "Lumen",
+        "Masergy",
+        "Megaport",
+        "NTT Communications",
+        "Neutrona Networks",
+        "Orange Business",
+        "PacketFabric",
+        "Pureport",
+        "RCN",
+        "SES",
+        "Sprint",
+        "Summit IG",
+        "Tata Communications",
+        "Telecom Italia Sparkle",
+        "Telefonica",
+        "Transtelco",
+        "Verizon",
+        "XO Communications",
+        "YellowFiber Networks",
+        "Zayo"
+      ],
+      "peeringdb_id": "1"
+    },
+    {
+      "code": "EQMI1",
+      "partition": "aws",
+      "name": "Equinix MI1 - Miami, Miami, FL, US",
+      "aws_name": "Equinix MI1",
+      "organization": "Equinix, Inc.",
+      "country": "US",
+      "region": "us-east-1",
+      "region_name": "US East (N. Virginia)",
+      "latitude": "25.782648",
+      "longitude": "-80.193157",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "AT&T",
+        "Arelion",
+        "BT",
+        "C3ntro Telecom",
+        "China Mobile International",
+        "Colt",
+        "Console Connect",
+        "Epsilon",
+        "Equinix",
+        "GTT",
+        "Global Cloud Xchange",
+        "Lightpath",
+        "Lumen",
+        "Masergy",
+        "Megaport",
+        "Neutrona Networks",
+        "PacketFabric",
+        "SES",
+        "Telecom Italia Sparkle",
+        "Verizon",
+        "Vodafone",
+        "Zayo"
+      ],
+      "peeringdb_id": "15"
+    },
+    {
+      "code": "EQNY5",
+      "partition": "aws",
+      "name": "Equinix NY2/NY4/NY5/NY6 - New York, Secaucus, NJ, US",
+      "aws_name": "Equinix NY5",
+      "organization": "Equinix, Inc.",
+      "country": "US",
+      "region": "us-east-1",
+      "region_name": "US East (N. Virginia)",
+      "latitude": "40.778534",
+      "longitude": "-74.072237",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "AT&T",
+        "C3ntro Telecom",
+        "Equinix",
+        "Lightpath",
+        "Telecom Italia Sparkle"
+      ],
+      "peeringdb_id": "36"
+    },
+    {
+      "code": "KIOQ1",
+      "partition": "aws",
+      "name": "KIO Quer\u00e9taro 1 (QRO1), El Marques, MX",
+      "aws_name": "KIO Networks QRO 1",
+      "organization": "KIO",
+      "country": "MX",
+      "region": "us-east-1",
+      "region_name": "US East (N. Virginia)",
+      "latitude": "20.567915",
+      "longitude": "-100.254141",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "American Tower Communications",
+        "C3ntro Telecom",
+        "FLO Networks",
+        "KIO Networks"
+      ],
+      "peeringdb_id": "1778"
+    },
+    {
+      "code": "LGT50",
+      "partition": "aws",
+      "name": "Crown Castle Philadelphia (401 N Broad), Philadelphia, PA, US",
+      "aws_name": "Crown Castle",
+      "organization": "Crown Castle Inc.",
+      "country": "US",
+      "region": "us-east-1",
+      "region_name": "US East (N. Virginia)",
+      "latitude": "39.959668",
+      "longitude": "-75.161377",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "AT&T",
+        "Arelion",
+        "BT",
+        "Crown Castle",
+        "First Communications",
+        "GTT",
+        "Global Cloud Xchange",
+        "Lumen",
+        "Verizon",
+        "XO Communications",
+        "Zayo"
+      ],
+      "peeringdb_id": "3482"
+    },
+    {
+      "code": "MB1SD",
+      "partition": "aws",
+      "name": "Markley Group One Summer Street Boston, Boston, MA, US",
+      "aws_name": "Markley",
+      "organization": "Markley Group, LLC",
+      "country": "US",
+      "region": "us-east-1",
+      "region_name": "US East (N. Virginia)",
+      "latitude": "42.354692",
+      "longitude": "-71.060266",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "AT&T",
+        "Arelion",
+        "BT",
+        "Colt",
+        "Crown Castle",
+        "GTT",
+        "Lightpath",
+        "Lumen",
+        "Megaport",
+        "Orange Business",
+        "PacketFabric",
+        "RCN",
+        "Sprint",
+        "Tata Communications",
+        "Verizon",
+        "XO Communications",
+        "Zayo"
+      ],
+      "peeringdb_id": "219"
+    },
+    {
+      "code": "QTDC2",
+      "partition": "aws",
+      "name": "QTS Atlanta-Metro (ATL1), Atlanta, GA, US",
+      "aws_name": "QTS ATL1",
+      "organization": "QTS Realty Trust, Inc.",
+      "country": "US",
+      "region": "us-east-1",
+      "region_name": "US East (N. Virginia)",
+      "latitude": "33.777526",
+      "longitude": "-84.421036",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "11:11 Systems",
+        "AT&T",
+        "Cogent Communications",
+        "Colt",
+        "Comcast",
+        "Crown Castle",
+        "FiberLight",
+        "Hurricane Electric",
+        "Lightpath",
+        "Lumen",
+        "One Ring",
+        "Southern Telecom",
+        "Telia Carrier",
+        "Unitas Global",
+        "Verizon",
+        "Windstream",
+        "Zayo"
+      ],
+      "peeringdb_id": "581"
+    },
+    {
+      "code": "TLLPJ",
+      "partition": "aws",
+      "name": "Digital Realty IAD (44100 Digital Loudoun), Ashburn, VA, US",
+      "aws_name": "Digital Realty IAD38",
+      "organization": "Digital Realty",
+      "country": "US",
+      "region": "us-east-1",
+      "region_name": "US East (N. Virginia)",
+      "latitude": "39.001795",
+      "longitude": "-77.47841",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "AT&T",
+        "BSO Network Solutions",
+        "China Telecom",
+        "China Unicom",
+        "Cogent Communications",
+        "Colt",
+        "Comcast",
+        "GTT",
+        "Lumen",
+        "PacketFabric",
+        "Tata Communications",
+        "Verizon",
+        "Zayo"
+      ],
+      "peeringdb_id": "4745"
+    },
+    {
+      "code": "TLXA1",
+      "partition": "aws",
+      "name": "Digital Realty ATL (56 Marietta), Atlanta, GA, US",
+      "aws_name": "Digital Realty ATL13",
+      "organization": "Digital Realty",
+      "country": "US",
+      "region": "us-east-1",
+      "region_name": "US East (N. Virginia)",
+      "latitude": "33.755456",
+      "longitude": "-84.39153",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "AT&T",
+        "Arelion",
+        "Bestel",
+        "Colt",
+        "Console Connect",
+        "Crown Castle",
+        "Digital Realty",
+        "Equinix",
+        "FiberLight",
+        "GTT",
+        "Lumen",
+        "Megaport",
+        "Orange Business",
+        "PacketFabric",
+        "QTS",
+        "Sohonet",
+        "Tata Communications",
+        "Verizon",
+        "Vodafone",
+        "XO Communications",
+        "Zayo"
+      ],
+      "peeringdb_id": "125"
+    },
+    {
+      "code": "COL67",
+      "partition": "aws",
+      "name": "Cologix COL2, Columbus, OH, US",
+      "aws_name": "Cologix COL2",
+      "organization": "Cologix, Inc.",
+      "country": "US",
+      "region": "us-east-2",
+      "region_name": "US East (Ohio)",
+      "latitude": "40.116491",
+      "longitude": "-83.001985",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "AT&T",
+        "Crown Castle",
+        "Lumen",
+        "Verizon",
+        "XO Communications",
+        "Zayo"
+      ],
+      "peeringdb_id": "2378"
+    },
+    {
+      "code": "COLM3",
+      "partition": "aws",
+      "name": "Cologix MIN3, Minneapolis, MN, US",
+      "aws_name": "Cologix MIN3",
+      "organization": "Cologix, Inc.",
+      "country": "US",
+      "region": "us-east-2",
+      "region_name": "US East (Ohio)",
+      "latitude": "44.971408",
+      "longitude": "-93.25458",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "11:11 Systems",
+        "AT&T",
+        "Allstream",
+        "Arelion",
+        "GTT",
+        "Lumen",
+        "Masergy",
+        "Verizon",
+        "XO Communications",
+        "Zayo"
+      ],
+      "peeringdb_id": "3312"
+    },
+    {
+      "code": "CSCH1",
+      "partition": "aws",
+      "name": "CoreSite - Chicago (CH1), Chicago, IL, US",
+      "aws_name": "CoreSite CH1",
+      "organization": "CoreSite",
+      "country": "US",
+      "region": "us-east-2",
+      "region_name": "US East (Ohio)",
+      "latitude": "41.876212",
+      "longitude": "-87.631453",
+      "port_speeds": [
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "AT&T",
+        "CoreSite",
+        "Crown Castle",
+        "Level 3",
+        "Lumen",
+        "MFS",
+        "Qwest",
+        "RCN",
+        "Sidera",
+        "Sunesys",
+        "Verizon",
+        "Windstream",
+        "Zayo"
+      ],
+      "peeringdb_id": "440"
+    },
+    {
+      "code": "CYOA1",
+      "partition": "aws",
+      "name": "CyrusOne Aurora I, Aurora, IL, US",
+      "aws_name": "CyrusOne Aurora A1",
+      "organization": "CyrusOne Inc.",
+      "country": "US",
+      "region": "us-east-2",
+      "region_name": "US East (Ohio)",
+      "latitude": "41.796754",
+      "longitude": "-88.24276",
+      "port_speeds": [
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "AT&T",
+        "Comcast",
+        "CryusOne",
+        "Lighttower",
+        "Lumen",
+        "Megaport",
+        "Zayo"
+      ],
+      "peeringdb_id": "3143"
+    },
+    {
+      "code": "CYOW3",
+      "partition": "aws",
+      "name": "Databank Houston West (HOU1) (HOU2), Houston, TX, US",
+      "aws_name": "DataBank HOU3",
+      "organization": "DataBank, Ltd.",
+      "country": "US",
+      "region": "us-east-2",
+      "region_name": "US East (Ohio)",
+      "latitude": "29.844182",
+      "longitude": "-95.556656",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "AT&T",
+        "Arelion",
+        "BT",
+        "Crown Castle",
+        "FiberLight",
+        "IX Reach",
+        "Lumen",
+        "Megaport",
+        "PacketFabric",
+        "Tata Communications",
+        "Verizon",
+        "Zayo"
+      ],
+      "peeringdb_id": "1476"
+    },
+    {
+      "code": "EQC50",
+      "partition": "aws",
+      "name": "Equinix CH1/CH2/CH4 - Chicago, Chicago, IL, US",
+      "aws_name": "Equinix CH2",
+      "organization": "Equinix, Inc.",
+      "country": "US",
+      "region": "us-east-2",
+      "region_name": "US East (Ohio)",
+      "latitude": "41.85365",
+      "longitude": "-87.618342",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "11:11 Systems",
+        "AT&T",
+        "Arelion",
+        "Atlantic Metro Communications",
+        "BICS",
+        "BSO Network Solutions",
+        "BT",
+        "China Mobile International",
+        "China Telecom",
+        "Colt",
+        "Comcast",
+        "Console Connect",
+        "CoreSite",
+        "Crown Castle",
+        "Epsilon",
+        "Equinix",
+        "GTT",
+        "Global Cloud Xchange",
+        "HopOne",
+        "IX Reach",
+        "InterCloud",
+        "Internet2",
+        "Lightpath",
+        "Lumen",
+        "Masergy",
+        "Orange Business",
+        "PacketFabric",
+        "Pureport",
+        "RCN",
+        "Sprint",
+        "Tata Communications",
+        "Verizon",
+        "XO Communications",
+        "Zayo"
+      ],
+      "peeringdb_id": "7"
+    },
+    {
+      "code": "NPKC1",
+      "partition": "aws",
+      "name": "Netrality Kansas City - 1102 Grand, Kansas City, MO, US",
+      "aws_name": "Netrality Data Centers",
+      "organization": "Netrality Data Centers",
+      "country": "US",
+      "region": "us-east-2",
+      "region_name": "US East (Ohio)",
+      "latitude": "39.100941",
+      "longitude": "-94.581036",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "AT&T",
+        "Arelion",
+        "BlueBird Networks",
+        "Charter Spectrum",
+        "Cogent Communications",
+        "Cologix",
+        "Comcast",
+        "Consolidated Communications",
+        "Cox",
+        "Crown Castle",
+        "Great Plains Communications",
+        "K=Powernet",
+        "Kansas Fiber Network",
+        "Linkcity",
+        "Lumen",
+        "Unite Private Networks",
+        "Verizon",
+        "Windstream",
+        "Zayo"
+      ],
+      "peeringdb_id": "435"
+    },
+    {
+      "code": "QTS52",
+      "partition": "aws",
+      "name": "QTS Chicago (CHI1), Chicago, IL, US",
+      "aws_name": "QTS",
+      "organization": "QTS Realty Trust, Inc.",
+      "country": "US",
+      "region": "us-east-2",
+      "region_name": "US East (Ohio)",
+      "latitude": "41.841895",
+      "longitude": "-87.668306",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "AT&T",
+        "Megaport",
+        "PacketFabric",
+        "QTS",
+        "Zayo"
+      ],
+      "peeringdb_id": "3362"
+    },
+    {
+      "code": "CSOW",
+      "partition": "aws",
+      "name": "CoreSite - Los Angeles (LA1) One Wilshire, Los Angeles, CA, US",
+      "aws_name": "CoreSite LA1",
+      "organization": "CoreSite",
+      "country": "US",
+      "region": "us-west-1",
+      "region_name": "US West (N. California)",
+      "latitude": "34.047942",
+      "longitude": "-118.255564",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "11:11 Systems",
+        "Allstream",
+        "Arelion",
+        "BICS",
+        "BSO Network Solutions",
+        "CENIC",
+        "CoreSite",
+        "Crown Castle",
+        "Digital Realty",
+        "Epsilon",
+        "Global Cloud Xchange",
+        "HGC Global Communications",
+        "IX Reach",
+        "KDDI",
+        "Lumen",
+        "Megaport",
+        "NTT Communications",
+        "Neutrona Networks",
+        "PacketFabric",
+        "Sohonet",
+        "Telecom Italia Sparkle",
+        "Telstra",
+        "Transtelco",
+        "Verizon",
+        "Vodafone",
+        "Zayo"
+      ],
+      "peeringdb_id": "19"
+    },
+    {
+      "code": "CSSV2",
+      "partition": "aws",
+      "name": "Coresite - Milpitas (SV2), Milpitas, CA, US",
+      "aws_name": "Coresite SV2",
+      "organization": "CoreSite",
+      "country": "US",
+      "region": "us-west-1",
+      "region_name": "US West (N. California)",
+      "latitude": "37.405693",
+      "longitude": "-121.916261",
+      "port_speeds": [
+        "1G",
+        "10G"
+      ],
+      "macsec_capable": [],
+      "providers": [
+        "CoreSite"
+      ],
+      "peeringdb_id": "671"
+    },
+    {
+      "code": "CSSV4",
+      "partition": "aws",
+      "name": "CoreSite - Santa Clara (SV4), Santa Clara, CA, US",
+      "aws_name": "CoreSite SV4",
+      "organization": "CoreSite",
+      "country": "US",
+      "region": "us-west-1",
+      "region_name": "US West (N. California)",
+      "latitude": "37.376259",
+      "longitude": "-121.970705",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G",
+        "400G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G",
+        "400G"
+      ],
+      "providers": [
+        "11:11 Systems",
+        "CoreSite",
+        "Datapipe",
+        "Fiber Internet Center",
+        "GTT",
+        "IX Reach",
+        "Layer42",
+        "Lumen",
+        "PacketFabric",
+        "Verizon",
+        "XO Communications",
+        "Zayo"
+      ],
+      "peeringdb_id": "1619"
+    },
+    {
+      "code": "ECPH1",
+      "partition": "aws",
+      "name": "EdgeConneX Phoenix (EDCPHX01), Tempe, AZ, US",
+      "aws_name": "EdgeConnex PHX01",
+      "organization": "EdgeConneX Inc.",
+      "country": "US",
+      "region": "us-west-1",
+      "region_name": "US West (N. California)",
+      "latitude": "33.395544",
+      "longitude": "-111.97012",
+      "port_speeds": [
+        "10G",
+        "100G",
+        "400G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G",
+        "400G"
+      ],
+      "providers": [
+        "48 IX",
+        "Arelion",
+        "Cloudflare",
+        "Cogent Communications",
+        "DE-CIX",
+        "Hurricane Electric",
+        "Lumen",
+        "Megaport",
+        "Phoenix IX",
+        "SRP Telecom",
+        "WhiteSky Communications",
+        "XO Communications",
+        "Zayo"
+      ],
+      "peeringdb_id": "1917"
+    },
+    {
+      "code": "EQLA3",
+      "partition": "aws",
+      "name": "Equinix LA3/LA4 - Los Angeles, El Segundo, CA, US",
+      "aws_name": "Equinix LA3",
+      "organization": "Equinix, Inc.",
+      "country": "US",
+      "region": "us-west-1",
+      "region_name": "US West (N. California)",
+      "latitude": "33.921239",
+      "longitude": "-118.383778",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "Crown Castle",
+        "Equinix",
+        "GTT",
+        "IX Reach",
+        "Lumen",
+        "Vodafone",
+        "XO Communications",
+        "Zayo"
+      ],
+      "peeringdb_id": "333"
+    },
+    {
+      "code": "EQSV5",
+      "partition": "aws",
+      "name": "Equinix SV1/SV5/SV10 - Silicon Valley, San Jose, CA, US",
+      "aws_name": "Equinix SV5",
+      "organization": "Equinix, Inc.",
+      "country": "US",
+      "region": "us-west-1",
+      "region_name": "US West (N. California)",
+      "latitude": "37.241767",
+      "longitude": "-121.782967",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "Arelion",
+        "BSO Network Solutions",
+        "Bestel",
+        "CENIC",
+        "Colt",
+        "Comcast",
+        "CoreSite",
+        "Cox",
+        "Datapipe",
+        "Epsilon",
+        "Equinix",
+        "Fiber Internet Center",
+        "GTT",
+        "Global Cloud Xchange",
+        "IX Reach",
+        "InterCloud",
+        "Internet2",
+        "Layer42",
+        "Lumen",
+        "Masergy",
+        "Megaport",
+        "NTT Communications",
+        "Orange Business",
+        "PacketFabric",
+        "Pureport",
+        "RCN",
+        "Sprint",
+        "Tata Communications",
+        "Telstra",
+        "Verizon",
+        "Vodafone",
+        "XO Communications",
+        "Zayo"
+      ],
+      "peeringdb_id": "6"
+    },
+    {
+      "code": "PNP51",
+      "partition": "aws",
+      "name": "PhoenixNAP, Phoenix, AZ, US",
+      "aws_name": "PhoenixNAP",
+      "organization": "PhoenixNAP",
+      "country": "US",
+      "region": "us-west-1",
+      "region_name": "US West (N. California)",
+      "latitude": "33.41601",
+      "longitude": "-112.009445",
+      "port_speeds": [
+        "1G",
+        "10G"
+      ],
+      "macsec_capable": [],
+      "providers": [
+        "Arelion",
+        "GTT",
+        "Lumen",
+        "PacketFabric",
+        "Tata Communications",
+        "Verizon",
+        "XO Communications",
+        "Zayo"
+      ],
+      "peeringdb_id": "917"
+    },
+    {
+      "code": "ALN91",
+      "partition": "aws",
+      "name": "AlohaNAP, Kapolei, HI, US",
+      "aws_name": "AlohaNap",
+      "organization": "HAWAII PACIFIC DATA LLC",
+      "country": "US",
+      "region": "us-west-2",
+      "region_name": "US West (Oregon)",
+      "latitude": "21.335728",
+      "longitude": "-158.086738",
+      "port_speeds": [
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "Hawaii Telecom",
+        "Lumen"
+      ],
+      "peeringdb_id": "3149"
+    },
+    {
+      "code": "CSDE1",
+      "partition": "aws",
+      "name": "CoreSite - Denver (DE1), Denver, CO, US",
+      "aws_name": "CoreSite DE1",
+      "organization": "CoreSite",
+      "country": "US",
+      "region": "us-west-2",
+      "region_name": "US West (Oregon)",
+      "latitude": "39.745636",
+      "longitude": "-104.995636",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "Arelion",
+        "CoreSite",
+        "GTT",
+        "IX Reach",
+        "Lumen",
+        "Megaport",
+        "Verizon",
+        "XO Communications",
+        "Zayo"
+      ],
+      "peeringdb_id": "389"
+    },
+    {
+      "code": "DBLV1",
+      "partition": "aws",
+      "name": "DataBank Las Vegas (LAS1), Las Vegas, NV, US",
+      "aws_name": "DataBank LAS1",
+      "organization": "DataBank, Ltd.",
+      "country": "US",
+      "region": "us-west-2",
+      "region_name": "US West (Oregon)",
+      "latitude": "36.059162",
+      "longitude": "-115.145989",
+      "port_speeds": [
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "Cogent Communications",
+        "Cox",
+        "Fusion",
+        "Lumen",
+        "TDS",
+        "Verizon",
+        "Zayo"
+      ],
+      "peeringdb_id": "1594"
+    },
+    {
+      "code": "ECPO1",
+      "partition": "aws",
+      "name": "EdgeConneX Portland (EDCPOR01), Hillsboro, OR, US",
+      "aws_name": "EdgeConnex",
+      "organization": "EdgeConneX Inc.",
+      "country": "US",
+      "region": "us-west-2",
+      "region_name": "US West (Oregon)",
+      "latitude": "45.548296",
+      "longitude": "-122.907473",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "Arelion",
+        "Comcast",
+        "Cox",
+        "Datapath.io",
+        "EdgeConneX",
+        "Lumen",
+        "Megaport",
+        "XO Communications",
+        "Zayo"
+      ],
+      "peeringdb_id": "1922"
+    },
+    {
+      "code": "EQSE2",
+      "partition": "aws",
+      "name": "Equinix SE2/SE3 - Seattle, Seattle, WA, US",
+      "aws_name": "Westin Building Exchange",
+      "organization": "Equinix, Inc.",
+      "country": "US",
+      "region": "us-west-2",
+      "region_name": "US West (Oregon)",
+      "latitude": "47.614358",
+      "longitude": "-122.338864",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G",
+        "400G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G",
+        "400G"
+      ],
+      "providers": [
+        "AT&T",
+        "Allstream",
+        "Arelion",
+        "Beanfield Metro",
+        "China Mobile International",
+        "Colt",
+        "Comcast",
+        "Console Connect",
+        "Datapipe",
+        "Epsilon",
+        "Equinix",
+        "GTT",
+        "HopOne",
+        "IX Reach",
+        "Internet2",
+        "Layer42",
+        "Lumen",
+        "Masergy",
+        "Megaport",
+        "PacketFabric",
+        "Pureport",
+        "RCN",
+        "Sprint",
+        "Telstra",
+        "Telus",
+        "Transtelco",
+        "Verizon",
+        "XO Communications",
+        "Zayo",
+        "ePLDT"
+      ],
+      "peeringdb_id": "86"
+    },
+    {
+      "code": "PEH51",
+      "partition": "aws",
+      "name": "PTOR1, Portland, OR, US",
+      "aws_name": "Pittock Block",
+      "organization": "1547 Critical Systems Realty",
+      "country": "US",
+      "region": "us-west-2",
+      "region_name": "US West (Oregon)",
+      "latitude": "45.521366",
+      "longitude": "-122.680792",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "AT&T",
+        "Allstream",
+        "Arelion",
+        "Datapath.io",
+        "Verizon",
+        "XO Communications",
+        "Zayo"
+      ],
+      "peeringdb_id": "275"
+    },
+    {
+      "code": "SNAP",
+      "partition": "aws",
+      "name": "Switch Las Vegas, Las Vegas, NV, US",
+      "aws_name": "Switch SUPERNAP 8",
+      "organization": "Switch, Ltd.",
+      "country": "US",
+      "region": "us-west-2",
+      "region_name": "US West (Oregon)",
+      "latitude": "36.059914",
+      "longitude": "-115.210194",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [
+        "AT&T",
+        "Cox",
+        "Crown Castle",
+        "IX Reach",
+        "Lumen",
+        "Megaport",
+        "Verizon",
+        "XO Communications",
+        "Zayo"
+      ],
+      "peeringdb_id": "770"
+    },
+    {
+      "code": "T5ALA",
+      "partition": "aws",
+      "name": "Serverfarm LAX1 Los Angeles, El Segundo, CA, US",
+      "aws_name": "Serverfarm LAX1 El Segundo",
+      "organization": "Serverfarm",
+      "country": "US",
+      "region": "us-west-2",
+      "region_name": "US West (Oregon)",
+      "latitude": "33.921614",
+      "longitude": "-118.386551",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [],
+      "providers": [
+        "Telecom Italia Sparkle"
+      ],
+      "peeringdb_id": "4952"
+    },
+    {
+      "code": "TPS19",
+      "partition": "aws",
+      "name": "TierPoint Seattle, Seattle, WA, US",
+      "aws_name": "TierPoint",
+      "organization": "TierPoint, LLC",
+      "country": "US",
+      "region": "us-west-2",
+      "region_name": "US West (Oregon)",
+      "latitude": "47.619446",
+      "longitude": "-122.34811",
+      "port_speeds": [
+        "1G",
+        "10G"
+      ],
+      "macsec_capable": [
+        "10G"
+      ],
+      "providers": [
+        "AT&T",
+        "Arelion",
+        "TierPoint",
+        "Verizon",
+        "XO Communications",
+        "Zayo"
+      ],
+      "peeringdb_id": "8599"
+    },
+    {
+      "code": "GDSH3",
+      "partition": "aws-cn",
+      "name": "GDS No. 3 Data Center, Shanghai, CN",
+      "aws_name": "GDS No. 3 DC",
+      "organization": null,
+      "country": "CN",
+      "region": "cn-north-1",
+      "region_name": "cn-north-1",
+      "latitude": "31.323104",
+      "longitude": "121.600306",
+      "port_speeds": [
+        "1G",
+        "10G"
+      ],
+      "macsec_capable": [],
+      "providers": [],
+      "peeringdb_id": null
+    },
+    {
+      "code": "GDSZ3",
+      "partition": "aws-cn",
+      "name": "GDS No. 3 Data Center, Shenzhen, CN",
+      "aws_name": "GDS No. 3 DC",
+      "organization": null,
+      "country": "CN",
+      "region": "cn-north-1",
+      "region_name": "cn-north-1",
+      "latitude": "22.507249",
+      "longitude": "114.045065",
+      "port_speeds": [
+        "1G",
+        "10G"
+      ],
+      "macsec_capable": [],
+      "providers": [],
+      "peeringdb_id": null
+    },
+    {
+      "code": "MOC2",
+      "partition": "aws-cn",
+      "name": "CIDS Jiachuang IDC, Beijing, CN",
+      "aws_name": "CIDS Jiachuang IDC",
+      "organization": null,
+      "country": "CN",
+      "region": "cn-north-1",
+      "region_name": "cn-north-1",
+      "latitude": "39.816829",
+      "longitude": "116.552776",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [],
+      "providers": [
+        "CBCcom",
+        "China International Data System co.",
+        "China Telecom",
+        "China Unicom",
+        "DCconnect Technology Co."
+      ],
+      "peeringdb_id": null
+    },
+    {
+      "code": "SINJI",
+      "partition": "aws-cn",
+      "name": "Sinnet Jiuxianqiao IDC, Beijing, CN",
+      "aws_name": "Sinnet Jiuxianqiao IDC",
+      "organization": null,
+      "country": "CN",
+      "region": "cn-north-1",
+      "region_name": "cn-north-1",
+      "latitude": "39.985399",
+      "longitude": "116.481053",
+      "port_speeds": [
+        "1G",
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [],
+      "providers": [
+        "Beijing Oneclouds Information Technology",
+        "China Mobile International",
+        "China Telecom",
+        "China Unicom",
+        "CypressTel",
+        "Sinnet",
+        "Sinnet Cloud"
+      ],
+      "peeringdb_id": null
+    },
+    {
+      "code": "IPI50",
+      "partition": "aws-cn",
+      "name": "Industrial Park IDC, Zhongwei, CN",
+      "aws_name": "Industrial Park IDC",
+      "organization": null,
+      "country": "CN",
+      "region": "cn-northwest-1",
+      "region_name": "cn-northwest-1",
+      "latitude": "37.5684",
+      "longitude": "105.1873",
+      "port_speeds": [
+        "1G",
+        "10G"
+      ],
+      "macsec_capable": [],
+      "providers": [
+        "Beijing Oneclouds Information Technology",
+        "China Mobile International",
+        "China Mobile Ningxia",
+        "China Telecom",
+        "China Unicom",
+        "DCconnect Technology Co.",
+        "Wangsu Science & Technology Co."
+      ],
+      "peeringdb_id": null
+    },
+    {
+      "code": "SHP54",
+      "partition": "aws-cn",
+      "name": "Shapotou IDC, Zhongwei, CN",
+      "aws_name": "Shapotou IDC",
+      "organization": null,
+      "country": "CN",
+      "region": "cn-northwest-1",
+      "region_name": "cn-northwest-1",
+      "latitude": "37.63670",
+      "longitude": "105.34678",
+      "port_speeds": [
+        "1G",
+        "10G"
+      ],
+      "macsec_capable": [],
+      "providers": [
+        "China Mobile Ningxia",
+        "China Unicom",
+        "GDS Services",
+        "Wangsu Science & Technology Co."
+      ],
+      "peeringdb_id": null
+    },
+    {
+      "code": "AEBTF",
+      "partition": "aws-eusc",
+      "name": "AtlasEdge DC Berlin BER001, Berlin, DE",
+      "aws_name": "Atlas Edge BER001",
+      "organization": "AtlasEdge",
+      "country": "DE",
+      "region": "eusc-de-east-1",
+      "region_name": "eusc-de-east-1",
+      "latitude": "52.527509",
+      "longitude": "13.318852",
+      "port_speeds": [
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [],
+      "peeringdb_id": "4073"
+    },
+    {
+      "code": "IPBTF",
+      "partition": "aws-eusc",
+      "name": "CarrierColo Berlin Luetzow (I/P/B/ site B), Berlin, DE",
+      "aws_name": "IPB GmbH",
+      "organization": "IPB Internet Provider in Berlin GmbH",
+      "country": "DE",
+      "region": "eusc-de-east-1",
+      "region_name": "eusc-de-east-1",
+      "latitude": "52.50192",
+      "longitude": "13.36945",
+      "port_speeds": [
+        "10G",
+        "100G"
+      ],
+      "macsec_capable": [
+        "10G",
+        "100G"
+      ],
+      "providers": [],
+      "peeringdb_id": "445"
+    }
+  ]
+}
