@@ -1,5 +1,10 @@
 {
   "151FS": {
+    "carriers": [
+      "EBOX",
+      "Hive Data Center",
+      "i3D.net"
+    ],
     "city": "Toronto",
     "coordinates": {
       "lat": "43.644672",
@@ -12,6 +17,14 @@
     "peeringdb_id": "392"
   },
   "165HS": {
+    "carriers": [
+      "AT&T US",
+      "Arelion",
+      "Clouvider",
+      "Global Secure Layer",
+      "Massive Networks",
+      "i3D.net"
+    ],
     "city": "Newark",
     "coordinates": {
       "lat": "40.736844",
@@ -25,6 +38,9 @@
     "state": "NJ"
   },
   "AEBTF": {
+    "carriers": [
+      "euNetworks"
+    ],
     "city": "Berlin",
     "coordinates": {
       "lat": "52.527509",
@@ -37,6 +53,9 @@
     "peeringdb_id": "4073"
   },
   "AIMMN": {
+    "carriers": [
+      "SG.GS"
+    ],
     "city": "Kuala Lumpur",
     "coordinates": {
       "lat": "3.14969",
@@ -62,6 +81,22 @@
     "state": "HI"
   },
   "ATTC1": {
+    "campus": {
+      "facilities": [
+        "AT TOKYO (CC1/CC2)",
+        "AT TOKYO (CC3)"
+      ],
+      "name": "AT TOKYO (Tokyo)"
+    },
+    "carriers": [
+      "Arelion",
+      "BB Backbone",
+      "NTT-ME",
+      "OneQode",
+      "RETN",
+      "Rakuten Mobile",
+      "SG.GS"
+    ],
     "city": "Tokyo",
     "coordinates": {
       "lat": "35.645435",
@@ -98,6 +133,17 @@
     "peeringdb_id": "8242"
   },
   "CBHU2": {
+    "campus": {
+      "facilities": [
+        "CDC Canberra HU1",
+        "CDC Canberra HU2",
+        "CDC Canberra HU3"
+      ],
+      "name": "CDC Hume Campus 1"
+    },
+    "carriers": [
+      "CDC"
+    ],
     "city": "Hume",
     "coordinates": {
       "lat": "-35.388831",
@@ -110,6 +156,12 @@
     "peeringdb_id": "12416"
   },
   "CDSR1": {
+    "carriers": [
+      "Airbeam Carrier",
+      "Arelion",
+      "Inter.link",
+      "RETN"
+    ],
     "city": "Milan",
     "coordinates": {
       "lat": "45.476394",
@@ -122,6 +174,17 @@
     "peeringdb_id": "3519"
   },
   "CEC50": {
+    "carriers": [
+      "1-IX EU",
+      "Arelion",
+      "Core-Backbone",
+      "Global Network Management",
+      "Inter.link",
+      "Orange Wholesale International - EVPL",
+      "RETN",
+      "ZET.NET Backbone",
+      "next layer"
+    ],
     "city": "Prague",
     "coordinates": {
       "lat": "50.060164",
@@ -134,6 +197,11 @@
     "peeringdb_id": "214"
   },
   "CFT52": {
+    "carriers": [
+      "Global Secure Layer",
+      "RETN",
+      "SG.GS"
+    ],
     "city": "Taipei",
     "coordinates": {
       "lat": "25.073467",
@@ -146,6 +214,9 @@
     "peeringdb_id": "456"
   },
   "CFT53": {
+    "carriers": [
+      "RETN"
+    ],
     "city": "Taipei",
     "coordinates": {
       "lat": "25.074213",
@@ -158,6 +229,9 @@
     "peeringdb_id": "5678"
   },
   "CFT54": {
+    "carriers": [
+      "RETN"
+    ],
     "city": "Taipei",
     "coordinates": {
       "lat": "25.074213",
@@ -170,6 +244,12 @@
     "peeringdb_id": "5678"
   },
   "CGM60": {
+    "carriers": [
+      "Arelion",
+      "EBOX",
+      "EXA Infrastructure",
+      "i3D.net"
+    ],
     "city": "Montreal",
     "coordinates": {
       "lat": "45.497188",
@@ -182,6 +262,9 @@
     "peeringdb_id": "1944"
   },
   "CHT51": {
+    "carriers": [
+      "RETN"
+    ],
     "city": "New Taipei City",
     "coordinates": {
       "lat": "24.994866",
@@ -194,6 +277,9 @@
     "peeringdb_id": "2886"
   },
   "CHT54": {
+    "carriers": [
+      "RETN"
+    ],
     "city": "New Taipei City",
     "coordinates": {
       "lat": "24.994866",
@@ -206,6 +292,16 @@
     "peeringdb_id": "2886"
   },
   "CIBNA": {
+    "carriers": [
+      "ADVANTUN",
+      "ANTEL Internacional",
+      "Cirion",
+      "EdgeUno",
+      "LINKEAR SRL",
+      "Servicios y Telecomunicaciones S.A",
+      "Telxius",
+      "Vtal Rede Neutra"
+    ],
     "city": "Buenos Aires",
     "coordinates": {
       "lat": "-34.590248",
@@ -218,6 +314,11 @@
     "peeringdb_id": "1550"
   },
   "CILIM": {
+    "carriers": [
+      "Cirion",
+      "EdgeUno",
+      "Telxius"
+    ],
     "city": "Santiago de Surco",
     "coordinates": {
       "lat": "-12.094823",
@@ -242,6 +343,10 @@
     "peeringdb_id": "15938"
   },
   "COL67": {
+    "carriers": [
+      "AT&T US",
+      "Arelion"
+    ],
     "city": "Columbus",
     "coordinates": {
       "lat": "40.116491",
@@ -255,6 +360,12 @@
     "state": "OH"
   },
   "COLM3": {
+    "carriers": [
+      "AT&T US",
+      "Hoyos Consulting",
+      "ImOn Communications",
+      "US Internet"
+    ],
     "city": "Minneapolis",
     "coordinates": {
       "lat": "44.971408",
@@ -268,6 +379,10 @@
     "state": "MN"
   },
   "COLV2": {
+    "carriers": [
+      "Arelion",
+      "Ziply Fiber"
+    ],
     "city": "Vancouver",
     "coordinates": {
       "lat": "49.286981",
@@ -280,6 +395,9 @@
     "peeringdb_id": "1881"
   },
   "COLV3": {
+    "carriers": [
+      "Ziply Fiber"
+    ],
     "city": "Vancouver",
     "coordinates": {
       "lat": "49.259393",
@@ -292,6 +410,17 @@
     "peeringdb_id": "8060"
   },
   "CS32A": {
+    "campus": {
+      "facilities": [
+        "CoreSite - New York (NY1)",
+        "CoreSite - Secaucus (NY2)"
+      ],
+      "name": "CoreSite - New York"
+    },
+    "carriers": [
+      "EXA Infrastructure",
+      "Macarne"
+    ],
     "city": "New York",
     "coordinates": {
       "lat": "40.72",
@@ -305,6 +434,18 @@
     "state": "NY"
   },
   "CSCH1": {
+    "campus": {
+      "facilities": [
+        "CoreSite - Chicago (CH1)",
+        "CoreSite - Chicago (CH2)"
+      ],
+      "name": "CoreSite - Chicago"
+    },
+    "carriers": [
+      "Arelion",
+      "Macarne",
+      "South Front Networks"
+    ],
     "city": "Chicago",
     "coordinates": {
       "lat": "41.876212",
@@ -318,6 +459,20 @@
     "state": "IL"
   },
   "CSDE1": {
+    "campus": {
+      "facilities": [
+        "CoreSite - Denver (DE1)",
+        "CoreSite - Denver (DE2)"
+      ],
+      "name": "CoreSite - Denver"
+    },
+    "carriers": [
+      "Arelion",
+      "Macarne",
+      "Massive Networks",
+      "SDN Communications",
+      "Ziply Fiber"
+    ],
     "city": "Denver",
     "coordinates": {
       "lat": "39.745636",
@@ -331,6 +486,9 @@
     "state": "CO"
   },
   "CSFX1": {
+    "carriers": [
+      "SG.GS"
+    ],
     "city": "Cyberjaya",
     "coordinates": {
       "lat": "2.913224",
@@ -343,6 +501,25 @@
     "peeringdb_id": "1279"
   },
   "CSOW": {
+    "campus": {
+      "facilities": [
+        "CoreSite - Los Angeles (LA1) One Wilshire",
+        "CoreSite - Los Angeles (LA2)",
+        "CoreSite - Los Angeles (LA3)"
+      ],
+      "name": "CoreSite - Los Angeles"
+    },
+    "carriers": [
+      "Arelion",
+      "Falcore Australia Pty Ltd",
+      "Global Secure Layer",
+      "Huge Networks",
+      "Macarne",
+      "Massive Networks",
+      "SG.GS",
+      "Vocus",
+      "i3D.net"
+    ],
     "city": "Los Angeles",
     "coordinates": {
       "lat": "34.047942",
@@ -356,6 +533,21 @@
     "state": "CA"
   },
   "CSSV2": {
+    "campus": {
+      "facilities": [
+        "CoreSite - San Jose (SV1)",
+        "Coresite - Milpitas (SV2)",
+        "CoreSite - Santa Clara (SV4)",
+        "CoreSite - Santa Clara (SV3)",
+        "CoreSite - Santa Clara (SV7)",
+        "CoreSite - Santa Clara (SV8)",
+        "CoreSite - Santa Clara (SV9)"
+      ],
+      "name": "CoreSite - Silicon Valley"
+    },
+    "carriers": [
+      "AT&T US"
+    ],
     "city": "Milpitas",
     "coordinates": {
       "lat": "37.405693",
@@ -369,6 +561,22 @@
     "state": "CA"
   },
   "CSSV4": {
+    "campus": {
+      "facilities": [
+        "CoreSite - San Jose (SV1)",
+        "Coresite - Milpitas (SV2)",
+        "CoreSite - Santa Clara (SV4)",
+        "CoreSite - Santa Clara (SV3)",
+        "CoreSite - Santa Clara (SV7)",
+        "CoreSite - Santa Clara (SV8)",
+        "CoreSite - Santa Clara (SV9)"
+      ],
+      "name": "CoreSite - Silicon Valley"
+    },
+    "carriers": [
+      "AT&T US",
+      "Arelion"
+    ],
     "city": "Santa Clara",
     "coordinates": {
       "lat": "37.376259",
@@ -382,6 +590,23 @@
     "state": "CA"
   },
   "CSVA1": {
+    "campus": {
+      "facilities": [
+        "CoreSite - Washington,DC (DC1)",
+        "CoreSite - Reston (VA1)",
+        "CoreSite - Reston (VA2)",
+        "CoreSite - Reston (VA3)",
+        "CoreSite - Washington,DC (DC2)"
+      ],
+      "name": "CoreSite - NoVA and DC"
+    },
+    "carriers": [
+      "AT&T US",
+      "Arelion",
+      "EXA Infrastructure",
+      "FiberLight LLC",
+      "Inter.link"
+    ],
     "city": "Reston",
     "coordinates": {
       "lat": "38.950631",
@@ -395,6 +620,9 @@
     "state": "VA"
   },
   "CYOA1": {
+    "carriers": [
+      "Bluebird Network"
+    ],
     "city": "Aurora",
     "coordinates": {
       "lat": "41.796754",
@@ -408,6 +636,11 @@
     "state": "IL"
   },
   "CYOW3": {
+    "carriers": [
+      "AT&T US",
+      "Arelion",
+      "FiberLight LLC"
+    ],
     "city": "Houston",
     "coordinates": {
       "lat": "29.844182",
@@ -446,6 +679,16 @@
     "peeringdb_id": "2024"
   },
   "DCIJ3": {
+    "campus": {
+      "facilities": [
+        "DCI Indonesia (JK1)",
+        "DCI Indonesia (JK2)",
+        "DCI Indonesia (JK3)",
+        "DCI Indonesia (JK5)",
+        "DCI Indonesia (JK6)"
+      ],
+      "name": "DCI Indonesia H1 Campus (Cibitung)"
+    },
     "city": "Bekasi, Cibitung",
     "coordinates": {
       "lat": "-6.299731",
@@ -458,6 +701,13 @@
     "peeringdb_id": "8169"
   },
   "DGPU1": {
+    "carriers": [
+      "31173 Services",
+      "Arelion",
+      "Blix",
+      "Portlane",
+      "euNetworks"
+    ],
     "city": "Oslo",
     "coordinates": {
       "lat": "59.924726",
@@ -470,6 +720,9 @@
     "peeringdb_id": "345"
   },
   "EANB1": {
+    "carriers": [
+      "Orange Wholesale International - EVPL"
+    ],
     "city": "Nairobi",
     "coordinates": {
       "lat": "-1.34014",
@@ -482,6 +735,10 @@
     "peeringdb_id": "1964"
   },
   "ECPH1": {
+    "carriers": [
+      "AT&T US",
+      "Arelion"
+    ],
     "city": "Tempe",
     "coordinates": {
       "lat": "33.395544",
@@ -495,6 +752,17 @@
     "state": "AZ"
   },
   "ECPO1": {
+    "campus": {
+      "facilities": [
+        "EdgeConneX Portland (EDCPOR01)",
+        "EdgeConneX Hillsboro (EDCPOR02)"
+      ],
+      "name": "EdgeConneX Hillsboro/Portland"
+    },
+    "carriers": [
+      "Arelion",
+      "Ziply Fiber"
+    ],
     "city": "Hillsboro",
     "coordinates": {
       "lat": "45.548296",
@@ -520,6 +788,9 @@
     "peeringdb_id": "11734"
   },
   "EIRCL": {
+    "carriers": [
+      "euNetworks"
+    ],
     "city": "Dublin",
     "coordinates": {
       "lat": "53.400983",
@@ -532,6 +803,11 @@
     "peeringdb_id": "2343"
   },
   "EPVM2": {
+    "carriers": [
+      "RETN",
+      "RISE.ph",
+      "SG.GS"
+    ],
     "city": "Makati",
     "coordinates": {
       "lat": "14.564484",
@@ -544,6 +820,34 @@
     "peeringdb_id": "4809"
   },
   "EQAM3": {
+    "campus": {
+      "facilities": [
+        "Equinix AM3 - Amsterdam, Science Park",
+        "Equinix AM4 - Amsterdam, Science Park"
+      ],
+      "name": "Equinix Amsterdam (Science Park)"
+    },
+    "carriers": [
+      "Afiber",
+      "Arelion",
+      "Aristo Networks",
+      "Asimo Networks BV",
+      "Core-Backbone",
+      "Eranium Fabric",
+      "Eurofiber",
+      "FIORD",
+      "Fusix Networks BV",
+      "I4 Networks",
+      "Macarne",
+      "NDIX",
+      "NL-ix",
+      "Netrouting",
+      "Nextpertise",
+      "RETN",
+      "Relined Fiber Network",
+      "ZET.NET Backbone",
+      "euNetworks"
+    ],
     "city": "Amsterdam",
     "coordinates": {
       "lat": "52.354686",
@@ -556,6 +860,14 @@
     "peeringdb_id": "1320"
   },
   "EQBA1": {
+    "carriers": [
+      "AXENT",
+      "Arelion",
+      "EXA Infrastructure",
+      "Orange Wholesale International - EVPL",
+      "RETN",
+      "Rocket Fibre"
+    ],
     "city": "Barcelona",
     "coordinates": {
       "lat": "41.351557",
@@ -568,6 +880,18 @@
     "peeringdb_id": "122"
   },
   "EQBG1": {
+    "campus": {
+      "facilities": [
+        "Equinix BG1 - Bogota",
+        "Equinix BG2 - Bogota"
+      ],
+      "name": "Equinix Bogota (Zona Franca Trade Zone)"
+    },
+    "carriers": [
+      "Cirion",
+      "EdgeUno",
+      "Vtal Rede Neutra"
+    ],
     "city": "Bogota",
     "coordinates": {
       "lat": "4.671384",
@@ -580,6 +904,21 @@
     "peeringdb_id": "1354"
   },
   "EQC50": {
+    "carriers": [
+      "AT&T US",
+      "Arelion",
+      "Global Secure Layer",
+      "Hoyos Consulting",
+      "Midco",
+      "Orange Wholesale International - EVPL",
+      "SDN Communications",
+      "SG.GS",
+      "South Front Networks",
+      "US Internet",
+      "WIN Technology, LLC",
+      "Ziply Fiber",
+      "i3D.net"
+    ],
     "city": "Chicago",
     "coordinates": {
       "lat": "41.85365",
@@ -617,6 +956,12 @@
     "peeringdb_id": "3251"
   },
   "EQDA2": {
+    "carriers": [
+      "AT&T US",
+      "Massive Networks",
+      "Shift Hosting",
+      "i3D.net"
+    ],
     "city": "Dallas",
     "coordinates": {
       "lat": "32.800748",
@@ -630,6 +975,28 @@
     "state": "TX"
   },
   "EQDC2": {
+    "campus": {
+      "facilities": [
+        "Equinix DC1-DC15,DC21-DC22 - Ashburn",
+        "Equinix DC16"
+      ],
+      "name": "Equinix Ashburn"
+    },
+    "carriers": [
+      "ANTEL Internacional",
+      "AT&T US",
+      "Arelion",
+      "EXA Infrastructure",
+      "EdgeUno",
+      "FiberLight LLC",
+      "Global Secure Layer",
+      "Inter.link",
+      "Orange Wholesale International - EVPL",
+      "SG.GS",
+      "Telxius",
+      "ZET.NET Backbone",
+      "i3D.net"
+    ],
     "city": "Ashburn",
     "coordinates": {
       "lat": "39.016363",
@@ -643,6 +1010,18 @@
     "state": "VA"
   },
   "EQDX1": {
+    "campus": {
+      "facilities": [
+        "Equinix DX1 - Dubai",
+        "Equinix DX3 - Dubai"
+      ],
+      "name": "Equinix Dubai"
+    },
+    "carriers": [
+      "Orange Wholesale International - EVPL",
+      "datamena",
+      "i3D.net"
+    ],
     "city": "Dubai",
     "coordinates": {
       "lat": "25.02618",
@@ -655,6 +1034,50 @@
     "peeringdb_id": "1355"
   },
   "EQFA5": {
+    "carriers": [
+      "1-IX EU",
+      "31173 Services",
+      "Arelion",
+      "Aristo Networks",
+      "Asimo Networks BV",
+      "Core-Backbone",
+      "EXA Infrastructure",
+      "Eranium Fabric",
+      "Eurofiber",
+      "Eurofiber France",
+      "FIORD",
+      "Free Pro",
+      "Global Network Management",
+      "Global Secure Layer",
+      "Globalways",
+      "Inter.link",
+      "LWLcom",
+      "M-net Telekommunikations GmbH",
+      "MIRhosting",
+      "Macarne",
+      "NL-ix",
+      "NetCom BW",
+      "NetIX",
+      "Neterra",
+      "Netrouting",
+      "Nextremum",
+      "Orange Wholesale International - EVPL",
+      "PFALZKOM",
+      "Portlane",
+      "RETN",
+      "RelAix Networks",
+      "Relined Fiber Network",
+      "SG.GS",
+      "TWL-KOM",
+      "Telehouse AD",
+      "WOBCOM",
+      "ZET.NET Backbone",
+      "aurologic GmbH",
+      "euNetworks",
+      "moji",
+      "next layer",
+      "nine"
+    ],
     "city": "Frankfurt",
     "coordinates": {
       "lat": "50.09885",
@@ -667,6 +1090,24 @@
     "peeringdb_id": "60"
   },
   "EQHE6": {
+    "campus": {
+      "facilities": [
+        "Equinix HE6 - Helsinki, Sinim\u00e4ki",
+        "Equinix HE7 - Helsinki, Sinim\u00e4ki"
+      ],
+      "name": "Equinix Helsinki (Espoo)"
+    },
+    "carriers": [
+      "Arelion",
+      "Blix",
+      "Cinia Oy",
+      "DNA",
+      "Elisa Carrier Business",
+      "Global Secure Layer",
+      "Portlane",
+      "RETN",
+      "euNetworks"
+    ],
     "city": "Espoo",
     "coordinates": {
       "lat": "60.203031",
@@ -679,6 +1120,26 @@
     "peeringdb_id": "2516"
   },
   "EQHK1": {
+    "campus": {
+      "facilities": [
+        "Equinix HK1 - Hong Kong",
+        "Equinix HK2 - Hong Kong",
+        "Equinix HK3 - Hong Kong"
+      ],
+      "name": "Equinix Hong Kong"
+    },
+    "carriers": [
+      "1-IX EU",
+      "Arelion",
+      "Core-Backbone",
+      "Global Secure Layer",
+      "Netrouting",
+      "RETN",
+      "RISE.ph",
+      "SG.GS",
+      "Unified National Networks",
+      "i3D.net"
+    ],
     "city": "Tsuen Wan",
     "coordinates": {
       "lat": "22.365581",
@@ -691,6 +1152,16 @@
     "peeringdb_id": "170"
   },
   "EQIL4": {
+    "campus": {
+      "facilities": [
+        "Equinix IL2 - Istanbul",
+        "Equinix IL4 - Istanbul"
+      ],
+      "name": "Equinix Istanbul"
+    },
+    "carriers": [
+      "ZET.NET Backbone"
+    ],
     "city": "Istanbul",
     "coordinates": {
       "lat": "41.008655",
@@ -703,6 +1174,11 @@
     "peeringdb_id": "15498"
   },
   "EQLA3": {
+    "carriers": [
+      "AT&T US",
+      "Global Secure Layer",
+      "i3D.net"
+    ],
     "city": "El Segundo",
     "coordinates": {
       "lat": "33.921239",
@@ -716,6 +1192,26 @@
     "state": "CA"
   },
   "EQLD5": {
+    "campus": {
+      "facilities": [
+        "Equinix LD4 - London, Slough",
+        "Equinix LD5 - London, Slough",
+        "Equinix LD6 - London, Slough",
+        "Equinix LD10 - London, Slough",
+        "Equinix LD7 -  London, Slough"
+      ],
+      "name": "Equinix London (Slough)"
+    },
+    "carriers": [
+      "Arelion",
+      "Aristo Networks",
+      "Clouvider",
+      "Core-Backbone",
+      "NL-ix",
+      "RETN",
+      "Telxius",
+      "euNetworks"
+    ],
     "city": "Slough",
     "coordinates": {
       "lat": "51.522463",
@@ -728,6 +1224,22 @@
     "peeringdb_id": "832"
   },
   "EQLS1": {
+    "campus": {
+      "facilities": [
+        "Equinix LS1 - Lisbon",
+        "Equinix LS2 - Lisbon"
+      ],
+      "name": "Equinix Lisbon"
+    },
+    "carriers": [
+      "Arelion",
+      "EXA Infrastructure",
+      "EllaLink",
+      "Inter.link",
+      "Orange Wholesale International - EVPL",
+      "Rocket Fibre",
+      "ZET.NET Backbone"
+    ],
     "city": "Lisbon",
     "coordinates": {
       "lat": "38.787919",
@@ -740,6 +1252,10 @@
     "peeringdb_id": "126"
   },
   "EQMA3": {
+    "carriers": [
+      "EXA Infrastructure",
+      "euNetworks"
+    ],
     "city": "Manchester",
     "coordinates": {
       "lat": "53.468674",
@@ -752,6 +1268,11 @@
     "peeringdb_id": "1403"
   },
   "EQMB2": {
+    "carriers": [
+      "Netlayer Global Fabric",
+      "Reliance Jio",
+      "i3D.net"
+    ],
     "city": "Mumbai",
     "coordinates": {
       "lat": "19.109353",
@@ -764,6 +1285,9 @@
     "peeringdb_id": "7377"
   },
   "EQMC1": {
+    "carriers": [
+      "Global Secure Layer"
+    ],
     "city": "Muscat",
     "coordinates": {
       "lat": "23.7280664",
@@ -776,6 +1300,14 @@
     "peeringdb_id": "9339"
   },
   "EQME2": {
+    "carriers": [
+      "5GN",
+      "Aussie Broadband",
+      "Falcore Australia Pty Ltd",
+      "Global Secure Layer",
+      "SG.GS",
+      "Vocus"
+    ],
     "city": "Melbourne",
     "coordinates": {
       "lat": "-37.821681",
@@ -788,6 +1320,24 @@
     "peeringdb_id": "1988"
   },
   "EQMI1": {
+    "carriers": [
+      "ANTEL Internacional",
+      "AT&T US",
+      "Arelion",
+      "CFH CABLE INC",
+      "Cirion",
+      "Dominican Telecom Prime",
+      "EdgeUno",
+      "FiberLight LLC",
+      "Global Secure Layer",
+      "Huge Networks",
+      "NetIX",
+      "Netrouting",
+      "Orange Wholesale International - EVPL",
+      "SG.GS",
+      "Vtal Rede Neutra",
+      "ZET.NET Backbone"
+    ],
     "city": "Miami",
     "coordinates": {
       "lat": "25.782648",
@@ -801,6 +1351,10 @@
     "state": "FL"
   },
   "EQML2": {
+    "carriers": [
+      "Global Secure Layer",
+      "euNetworks"
+    ],
     "city": "Milan",
     "coordinates": {
       "lat": "45.448684",
@@ -813,6 +1367,17 @@
     "peeringdb_id": "884"
   },
   "EQMU1": {
+    "carriers": [
+      "Arelion",
+      "Core-Backbone",
+      "EXA Infrastructure",
+      "Inter.link",
+      "M-net Telekommunikations GmbH",
+      "RETN",
+      "euNetworks",
+      "komro",
+      "next layer"
+    ],
     "city": "Munich",
     "coordinates": {
       "lat": "48.143056",
@@ -825,6 +1390,9 @@
     "peeringdb_id": "480"
   },
   "EQMX1": {
+    "carriers": [
+      "Arelion"
+    ],
     "city": "El Marques",
     "coordinates": {
       "lat": "20.556925",
@@ -837,6 +1405,22 @@
     "peeringdb_id": "8434"
   },
   "EQNY5": {
+    "campus": {
+      "facilities": [
+        "Equinix NY2/NY4/NY5/NY6 - New York, Secaucus",
+        "Equinix NY3 - New York, Secaucus"
+      ],
+      "name": "Equinix New York (Secaucus)"
+    },
+    "carriers": [
+      "1-IX EU",
+      "AT&T US",
+      "Arelion",
+      "Clouvider",
+      "Core-Backbone",
+      "Global Secure Layer",
+      "SG.GS"
+    ],
     "city": "Secaucus",
     "coordinates": {
       "lat": "40.778534",
@@ -850,6 +1434,15 @@
     "state": "NJ"
   },
   "EQOS1": {
+    "carriers": [
+      "Arelion",
+      "BB Backbone",
+      "Hanshin Cable Engineering Co.,Ltd.",
+      "JR West Optical Network(JRWON)",
+      "OPTAGE",
+      "Rakuten Mobile",
+      "TOKAI Communications Corporation"
+    ],
     "city": "Osaka",
     "coordinates": {
       "lat": "34.675774",
@@ -862,6 +1455,27 @@
     "peeringdb_id": "1791"
   },
   "EQPA3": {
+    "campus": {
+      "facilities": [
+        "Equinix PA2 - Paris, Saint-Denis",
+        "Equinix PA3 - Paris, Saint-Denis",
+        "Equinix PA10 - Paris, Saint-Denis"
+      ],
+      "name": "Equinix Paris (Saint-Denis)"
+    },
+    "carriers": [
+      "Arelion",
+      "Eurofiber France",
+      "Free Pro",
+      "Global Secure Layer",
+      "IELO",
+      "LASOTEL",
+      "Orange Wholesale International - EVPL",
+      "Terralpha",
+      "ZET.NET Backbone",
+      "euNetworks",
+      "moji"
+    ],
     "city": "Paris",
     "coordinates": {
       "lat": "48.927166",
@@ -874,6 +1488,15 @@
     "peeringdb_id": "717"
   },
   "EQRJ2": {
+    "carriers": [
+      "ANTEL Internacional",
+      "Cirion",
+      "EdgeUno",
+      "EllaLink",
+      "Huge Networks",
+      "Telxius",
+      "Vtal Rede Neutra"
+    ],
     "city": "Rio de Janeiro",
     "coordinates": {
       "lat": "-22.871261",
@@ -886,6 +1509,12 @@
     "peeringdb_id": "1899"
   },
   "EQSE2": {
+    "carriers": [
+      "Arelion",
+      "Global Secure Layer",
+      "Ziply Fiber",
+      "i3D.net"
+    ],
     "city": "Seattle",
     "coordinates": {
       "lat": "47.614358",
@@ -899,6 +1528,18 @@
     "state": "WA"
   },
   "EQSG2": {
+    "campus": {
+      "facilities": [
+        "Equinix SG2 - Singapore",
+        "Equinix SG5 - Singapore"
+      ],
+      "name": "Equinix Singapore (West)"
+    },
+    "carriers": [
+      "LASOTEL",
+      "Orange Wholesale International - EVPL",
+      "SG.GS"
+    ],
     "city": "Singapore",
     "coordinates": {
       "lat": "1.321502",
@@ -911,6 +1552,31 @@
     "peeringdb_id": "705"
   },
   "EQSK1": {
+    "campus": {
+      "facilities": [
+        "Equinix SK1 - Stockholm, Bromma",
+        "Equinix SK3 - Stockholm, Sp\u00e5nga"
+      ],
+      "name": "Equinix Stockholm"
+    },
+    "carriers": [
+      "Arelion",
+      "Bahnhof",
+      "Cinia Oy",
+      "DNA",
+      "Elisa Carrier Business",
+      "FIORD",
+      "Global Network Management",
+      "Netrouting",
+      "Obenet",
+      "Orange Wholesale International - EVPL",
+      "Portlane",
+      "RETN",
+      "SIACOM",
+      "ZET.NET Backbone",
+      "euNetworks",
+      "i3D.net"
+    ],
     "city": "Stockholm",
     "coordinates": {
       "lat": "59.362574",
@@ -923,6 +1589,15 @@
     "peeringdb_id": "156"
   },
   "EQSV5": {
+    "carriers": [
+      "AT&T US",
+      "Arelion",
+      "Macarne",
+      "Orange Wholesale International - EVPL",
+      "SG.GS",
+      "Vocus",
+      "i3D.net"
+    ],
     "city": "San Jose",
     "coordinates": {
       "lat": "37.241767",
@@ -936,6 +1611,13 @@
     "state": "CA"
   },
   "EQSY3": {
+    "carriers": [
+      "5GN",
+      "Aussie Broadband",
+      "Falcore Australia Pty Ltd",
+      "Global Secure Layer",
+      "Vocus"
+    ],
     "city": "Sydney",
     "coordinates": {
       "lat": "-33.911776",
@@ -948,6 +1630,12 @@
     "peeringdb_id": "1605"
   },
   "EQSY5": {
+    "carriers": [
+      "5GN",
+      "Falcore Australia Pty Ltd",
+      "Global Secure Layer",
+      "Vocus"
+    ],
     "city": "Sydney",
     "coordinates": {
       "lat": "-33.918198",
@@ -960,6 +1648,9 @@
     "peeringdb_id": "8615"
   },
   "EQTR2": {
+    "carriers": [
+      "Arelion"
+    ],
     "city": "Toronto",
     "coordinates": {
       "lat": "43.650854",
@@ -972,6 +1663,27 @@
     "peeringdb_id": "2206"
   },
   "EQTY2": {
+    "campus": {
+      "facilities": [
+        "Equinix TY2 - Tokyo",
+        "Equinix TY6 - Tokyo",
+        "Equinix TY7 - Tokyo",
+        "Equinix TY8 - Tokyo",
+        "Equinix TY15 - Tokyo"
+      ],
+      "name": "Equinix Tokyo (Shinagawa)"
+    },
+    "carriers": [
+      "Arelion",
+      "BB Backbone",
+      "Global Secure Layer",
+      "Macarne",
+      "Orange Wholesale International - EVPL",
+      "RETN",
+      "SG.GS",
+      "TOKAI Communications Corporation",
+      "i3D.net"
+    ],
     "city": "Tokyo",
     "coordinates": {
       "lat": "35.617432",
@@ -984,6 +1696,19 @@
     "peeringdb_id": "452"
   },
   "EQWA1": {
+    "carriers": [
+      "1-IX EU",
+      "Arelion",
+      "Global Network Management",
+      "Global Secure Layer",
+      "NetIX",
+      "Orange Wholesale International - EVPL",
+      "RETN",
+      "SG.GS",
+      "ZET.NET Backbone",
+      "euNetworks",
+      "i3D.net"
+    ],
     "city": "Warsaw",
     "coordinates": {
       "lat": "52.227354",
@@ -996,6 +1721,21 @@
     "peeringdb_id": "509"
   },
   "EQZH5": {
+    "campus": {
+      "facilities": [
+        "Equinix ZH2 - Zurich",
+        "Equinix ZH4 - Zurich",
+        "Equinix ZH5 - Zurich, South"
+      ],
+      "name": "Equinix Zurich"
+    },
+    "carriers": [
+      "NorthC Switzerland",
+      "Orange Wholesale International - EVPL",
+      "RETN",
+      "ZET.NET Backbone",
+      "euNetworks"
+    ],
     "city": "Zurich",
     "coordinates": {
       "lat": "47.405667",
@@ -1008,6 +1748,10 @@
     "peeringdb_id": "1515"
   },
   "ETIFJ": {
+    "carriers": [
+      "Orange Wholesale International - EVPL",
+      "i3D.net"
+    ],
     "city": "Fujairah",
     "coordinates": {
       "lat": "25.131143",
@@ -1020,6 +1764,9 @@
     "peeringdb_id": "1493"
   },
   "GBSY6": {
+    "carriers": [
+      "Vocus"
+    ],
     "city": "Silverwater",
     "coordinates": {
       "lat": "-33.836684",
@@ -1050,6 +1797,11 @@
     "facility_name": "GDS No. 3 Data Center"
   },
   "GPX51": {
+    "carriers": [
+      "Netlayer Global Fabric",
+      "Reliance Jio",
+      "i3D.net"
+    ],
     "city": "Mumbai",
     "coordinates": {
       "lat": "19.113908",
@@ -1062,6 +1814,14 @@
     "peeringdb_id": "2310"
   },
   "GSS52": {
+    "carriers": [
+      "Arelion",
+      "Axclusive",
+      "Global Secure Layer",
+      "OneQode",
+      "RETN",
+      "SG.GS"
+    ],
     "city": "Singapore",
     "coordinates": {
       "lat": "1.336723",
@@ -1074,6 +1834,16 @@
     "peeringdb_id": "388"
   },
   "IAMGI": {
+    "carriers": [
+      "Arelion",
+      "Core-Backbone",
+      "Global Secure Layer",
+      "Nextremum",
+      "OneQode",
+      "Orange Wholesale International - EVPL",
+      "RETN",
+      "SG.GS"
+    ],
     "city": "Hong Kong",
     "coordinates": {
       "lat": "22.266098",
@@ -1086,6 +1856,45 @@
     "peeringdb_id": "225"
   },
   "INX6": {
+    "carriers": [
+      "1-IX EU",
+      "3W Infra B.V.",
+      "Arelion",
+      "BICS",
+      "Cinia Oy",
+      "Core-Backbone",
+      "EXA Infrastructure",
+      "Global Network Management",
+      "Globalways",
+      "Inter.link",
+      "LWLcom",
+      "M-net Telekommunikations GmbH",
+      "Macarne",
+      "NDIX",
+      "NL-ix",
+      "NetCom BW",
+      "NetIX",
+      "NorthC Switzerland",
+      "Openfactory",
+      "Orange Wholesale International - EVPL",
+      "PFALZKOM",
+      "RETN",
+      "Realtox Media",
+      "RelAix Networks",
+      "Relined Fiber Network",
+      "Rocket Fibre",
+      "SG.GS",
+      "TWL-KOM",
+      "Telehouse AD",
+      "Telxius",
+      "WhiteHat",
+      "ZET.NET Backbone",
+      "aurologic GmbH",
+      "euNetworks",
+      "i3D.net",
+      "komro",
+      "next layer"
+    ],
     "city": "Frankfurt",
     "coordinates": {
       "lat": "50.11925",
@@ -1098,6 +1907,20 @@
     "peeringdb_id": "58"
   },
   "IPB50": {
+    "carriers": [
+      "31173 Services",
+      "Arelion",
+      "Cinia Oy",
+      "Core-Backbone",
+      "EXA Infrastructure",
+      "Globalways",
+      "Inter.link",
+      "LWLcom",
+      "NL-ix",
+      "RETN",
+      "WOBCOM",
+      "euNetworks"
+    ],
     "city": "Berlin",
     "coordinates": {
       "lat": "52.50192",
@@ -1110,6 +1933,20 @@
     "peeringdb_id": "445"
   },
   "IPBTF": {
+    "carriers": [
+      "31173 Services",
+      "Arelion",
+      "Cinia Oy",
+      "Core-Backbone",
+      "EXA Infrastructure",
+      "Globalways",
+      "Inter.link",
+      "LWLcom",
+      "NL-ix",
+      "RETN",
+      "WOBCOM",
+      "euNetworks"
+    ],
     "city": "Berlin",
     "coordinates": {
       "lat": "52.50192",
@@ -1122,6 +1959,13 @@
     "peeringdb_id": "445"
   },
   "IPHH3": {
+    "carriers": [
+      "EXA Infrastructure",
+      "LWLcom",
+      "TKRZ Stadtwerke",
+      "euNetworks",
+      "wilhelm.tel GmbH"
+    ],
     "city": "Hamburg",
     "coordinates": {
       "lat": "53.550998",
@@ -1143,6 +1987,19 @@
     "facility_name": "Industrial Park IDC"
   },
   "ITCM2": {
+    "carriers": [
+      "1-IX EU",
+      "AXENT",
+      "Arelion",
+      "Core-Backbone",
+      "EXA Infrastructure",
+      "EllaLink",
+      "Global Secure Layer",
+      "Telxius",
+      "ZET.NET Backbone",
+      "euNetworks",
+      "i3D.net"
+    ],
     "city": "Alcobendas",
     "coordinates": {
       "lat": "40.536855",
@@ -1155,6 +2012,13 @@
     "peeringdb_id": "127"
   },
   "ITXA1": {
+    "carriers": [
+      "EXA Infrastructure",
+      "Grid Telecom",
+      "IONIAN",
+      "NetIX",
+      "ZET.NET Backbone"
+    ],
     "city": "Koropi",
     "coordinates": {
       "lat": "37.871339",
@@ -1167,6 +2031,21 @@
     "peeringdb_id": "1949"
   },
   "ITXA7": {
+    "carriers": [
+      "Afiber",
+      "Arcadiz",
+      "Arelion",
+      "Eranium Fabric",
+      "Eurofiber",
+      "Fusix Networks BV",
+      "I4 Networks",
+      "NDIX",
+      "NL-ix",
+      "Nextpertise",
+      "RETN",
+      "Relined Fiber Network",
+      "euNetworks"
+    ],
     "city": "Amsterdam",
     "coordinates": {
       "lat": "52.28415",
@@ -1179,6 +2058,21 @@
     "peeringdb_id": "64"
   },
   "ITXC2": {
+    "carriers": [
+      "31173 Services",
+      "Arelion",
+      "Bahnhof",
+      "Core-Backbone",
+      "Inter.link",
+      "NL-ix",
+      "Obenet",
+      "Portlane",
+      "RETN",
+      "Telia Denmark",
+      "ZET.NET Backbone",
+      "euNetworks",
+      "i3D.net"
+    ],
     "city": "Copenhagen",
     "coordinates": {
       "lat": "55.728092",
@@ -1191,6 +2085,13 @@
     "peeringdb_id": "148"
   },
   "ITXD2": {
+    "carriers": [
+      "Inter.link",
+      "NL-ix",
+      "RETN",
+      "ZET.NET Backbone",
+      "euNetworks"
+    ],
     "city": "Dublin",
     "coordinates": {
       "lat": "53.334251",
@@ -1203,6 +2104,29 @@
     "peeringdb_id": "177"
   },
   "ITXM1": {
+    "carriers": [
+      "ARTERIA",
+      "AXENT",
+      "Arelion",
+      "Eurofiber France",
+      "Free Pro",
+      "Global Secure Layer",
+      "IELO",
+      "Inter.link",
+      "LASOTEL",
+      "NL-ix",
+      "NetIX",
+      "Orange Wholesale International - EVPL",
+      "RETN",
+      "Rocket Fibre",
+      "SG.GS",
+      "Telxius",
+      "Terralpha",
+      "ZET.NET Backbone",
+      "euNetworks",
+      "moji",
+      "nine"
+    ],
     "city": "Marseille",
     "coordinates": {
       "lat": "43.310818",
@@ -1215,6 +2139,29 @@
     "peeringdb_id": "226"
   },
   "ITXM2": {
+    "campus": {
+      "facilities": [
+        "Digital Realty Madrid MAD1-2",
+        "Digital Realty Madrid MAD3",
+        "Digital Realty Madrid MAD4"
+      ],
+      "name": "Digital Realty Madrid Campus"
+    },
+    "carriers": [
+      "AXENT",
+      "Arelion",
+      "Core-Backbone",
+      "EXA Infrastructure",
+      "EllaLink",
+      "Inter.link",
+      "NetIX",
+      "Orange Wholesale International - EVPL",
+      "RETN",
+      "Rocket Fibre",
+      "Telxius",
+      "ZET.NET Backbone",
+      "euNetworks"
+    ],
     "city": "Madrid",
     "coordinates": {
       "lat": "40.439323",
@@ -1227,6 +2174,22 @@
     "peeringdb_id": "130"
   },
   "ITXM3": {
+    "campus": {
+      "facilities": [
+        "Digital Realty Madrid MAD1-2",
+        "Digital Realty Madrid MAD3",
+        "Digital Realty Madrid MAD4"
+      ],
+      "name": "Digital Realty Madrid Campus"
+    },
+    "carriers": [
+      "AXENT",
+      "Core-Backbone",
+      "EXA Infrastructure",
+      "RETN",
+      "ZET.NET Backbone",
+      "euNetworks"
+    ],
     "city": "Madrid",
     "coordinates": {
       "lat": "40.433899",
@@ -1239,6 +2202,11 @@
     "peeringdb_id": "7414"
   },
   "ITXP7": {
+    "carriers": [
+      "IELO",
+      "Orange Wholesale International - EVPL",
+      "euNetworks"
+    ],
     "city": "Paris",
     "coordinates": {
       "lat": "48.924907",
@@ -1251,6 +2219,23 @@
     "peeringdb_id": "1536"
   },
   "ITXS1": {
+    "carriers": [
+      "31173 Services",
+      "Arelion",
+      "Bahnhof",
+      "Blix",
+      "Cinia Oy",
+      "Core-Backbone",
+      "DNA",
+      "Elisa Carrier Business",
+      "Global Network Management",
+      "Nextremum",
+      "Obenet",
+      "Portlane",
+      "RETN",
+      "ZET.NET Backbone",
+      "euNetworks"
+    ],
     "city": "Stockholm",
     "coordinates": {
       "lat": "59.422226",
@@ -1263,6 +2248,22 @@
     "peeringdb_id": "208"
   },
   "ITXV2": {
+    "carriers": [
+      "Arelion",
+      "Core-Backbone",
+      "EXA Infrastructure",
+      "Eranium Fabric",
+      "Global Network Management",
+      "Global Secure Layer",
+      "Inter.link",
+      "NetIX",
+      "Orange Wholesale International - EVPL",
+      "RETN",
+      "ZET.NET Backbone",
+      "euNetworks",
+      "i3D.net",
+      "next layer"
+    ],
     "city": "Vienna",
     "coordinates": {
       "lat": "48.269027",
@@ -1275,6 +2276,19 @@
     "peeringdb_id": "67"
   },
   "ITXZ1": {
+    "carriers": [
+      "31173 Services",
+      "Arelion",
+      "Core-Backbone",
+      "Inter.link",
+      "NorthC Switzerland",
+      "Openfactory",
+      "RETN",
+      "Rocket Fibre",
+      "ZET.NET Backbone",
+      "euNetworks",
+      "next layer"
+    ],
     "city": "Glattbrugg",
     "coordinates": {
       "lat": "47.432702",
@@ -1287,6 +2301,12 @@
     "peeringdb_id": "81"
   },
   "JKT02": {
+    "carriers": [
+      "DETELNETWORKS",
+      "GERBANGAKSES",
+      "Matrix NAP Info",
+      "SG.GS"
+    ],
     "city": "Jakarta",
     "coordinates": {
       "lat": "-6.237998",
@@ -1299,6 +2319,11 @@
     "peeringdb_id": "5865"
   },
   "KDOS2": {
+    "carriers": [
+      "BB Backbone",
+      "JR West Optical Network(JRWON)",
+      "OPTAGE"
+    ],
     "city": "Osaka",
     "coordinates": {
       "lat": "34.693119",
@@ -1311,6 +2336,11 @@
     "peeringdb_id": "3068"
   },
   "KIOQ1": {
+    "carriers": [
+      "Arelion",
+      "Cirion",
+      "EdgeUno"
+    ],
     "city": "El Marques",
     "coordinates": {
       "lat": "20.567915",
@@ -1335,6 +2365,10 @@
     "peeringdb_id": "7674"
   },
   "LGT50": {
+    "carriers": [
+      "AT&T US",
+      "Arelion"
+    ],
     "city": "Philadelphia",
     "coordinates": {
       "lat": "39.959668",
@@ -1360,6 +2394,11 @@
     "peeringdb_id": "7573"
   },
   "MB1SD": {
+    "carriers": [
+      "AT&T US",
+      "Arelion",
+      "EXA Infrastructure"
+    ],
     "city": "Boston",
     "coordinates": {
       "lat": "42.354692",
@@ -1382,6 +2421,9 @@
     "facility_name": "CIDS Jiachuang IDC"
   },
   "MOILH": {
+    "carriers": [
+      "MedOne"
+    ],
     "city": "Tirat Carmel",
     "coordinates": {
       "lat": "32.770949",
@@ -1394,6 +2436,15 @@
     "peeringdb_id": "7177"
   },
   "NDCB2": {
+    "carriers": [
+      "5GN",
+      "Aussie Broadband",
+      "Falcore Australia Pty Ltd",
+      "Global Secure Layer",
+      "OneQode",
+      "QCN",
+      "Vocus"
+    ],
     "city": "Fortitude Valley",
     "coordinates": {
       "lat": "-27.453902",
@@ -1406,6 +2457,9 @@
     "peeringdb_id": "4688"
   },
   "NDCC1": {
+    "carriers": [
+      "Aussie Broadband"
+    ],
     "city": "Bruce",
     "coordinates": {
       "lat": "-35.245308",
@@ -1418,6 +2472,13 @@
     "peeringdb_id": "1162"
   },
   "NDCM1": {
+    "carriers": [
+      "5GN",
+      "Aussie Broadband",
+      "Falcore Australia Pty Ltd",
+      "Global Secure Layer",
+      "Vocus"
+    ],
     "city": "Melbourne",
     "coordinates": {
       "lat": "-37.821705",
@@ -1430,6 +2491,14 @@
     "peeringdb_id": "1339"
   },
   "NDCP1": {
+    "carriers": [
+      "5GN",
+      "Aussie Broadband",
+      "Falcore Australia Pty Ltd",
+      "Global Secure Layer",
+      "SG.GS",
+      "Vocus"
+    ],
     "city": "M\u00e1laga",
     "coordinates": {
       "lat": "-31.864402",
@@ -1442,6 +2511,13 @@
     "peeringdb_id": "1940"
   },
   "NDCS2": {
+    "carriers": [
+      "Aussie Broadband",
+      "Falcore Australia Pty Ltd",
+      "Global Secure Layer",
+      "Nexthop",
+      "Vocus"
+    ],
     "city": "Macquarie Park",
     "coordinates": {
       "lat": "-33.785125",
@@ -1478,6 +2554,13 @@
     "peeringdb_id": "7988"
   },
   "NPKC1": {
+    "carriers": [
+      "AT&T US",
+      "Arelion",
+      "Bluebird Network",
+      "KCFiber",
+      "Midco"
+    ],
     "city": "Kansas City",
     "coordinates": {
       "lat": "39.100941",
@@ -1503,6 +2586,11 @@
     "peeringdb_id": "1885"
   },
   "PEH51": {
+    "carriers": [
+      "Arelion",
+      "Hoyos Consulting",
+      "Ziply Fiber"
+    ],
     "city": "Portland",
     "coordinates": {
       "lat": "45.521366",
@@ -1516,6 +2604,11 @@
     "state": "OR"
   },
   "PNP51": {
+    "carriers": [
+      "AT&T US",
+      "Arelion",
+      "Global Secure Layer"
+    ],
     "city": "Phoenix",
     "coordinates": {
       "lat": "33.41601",
@@ -1529,6 +2622,11 @@
     "state": "AZ"
   },
   "QTDC2": {
+    "carriers": [
+      "AT&T US",
+      "Arelion",
+      "FiberLight LLC"
+    ],
     "city": "Atlanta",
     "coordinates": {
       "lat": "33.777526",
@@ -1542,6 +2640,10 @@
     "state": "GA"
   },
   "QTS52": {
+    "carriers": [
+      "AT&T US",
+      "Arelion"
+    ],
     "city": "Chicago",
     "coordinates": {
       "lat": "41.841895",
@@ -1555,6 +2657,9 @@
     "state": "IL"
   },
   "RCL1": {
+    "carriers": [
+      "Orange Wholesale International - EVPL"
+    ],
     "city": "Ikeja",
     "coordinates": {
       "lat": "6.597527",
@@ -1609,6 +2714,10 @@
     "facility_name": "Sinnet Jiuxianqiao IDC"
   },
   "SNAP": {
+    "carriers": [
+      "AT&T US",
+      "Arelion"
+    ],
     "city": "Las Vegas",
     "coordinates": {
       "lat": "36.059914",
@@ -1622,6 +2731,10 @@
     "state": "NV"
   },
   "SONQU": {
+    "carriers": [
+      "Cirion",
+      "Telxius"
+    ],
     "city": "Santiago",
     "coordinates": {
       "lat": "-33.35628",
@@ -1634,6 +2747,9 @@
     "peeringdb_id": "10697"
   },
   "SPK53": {
+    "carriers": [
+      "Global Secure Layer"
+    ],
     "city": "Auckland",
     "coordinates": {
       "lat": "-36.854324",
@@ -1646,6 +2762,9 @@
     "peeringdb_id": "1523"
   },
   "T5ALA": {
+    "carriers": [
+      "AT&T US"
+    ],
     "city": "El Segundo",
     "coordinates": {
       "lat": "33.921614",
@@ -1659,6 +2778,9 @@
     "state": "CA"
   },
   "TCCBK": {
+    "carriers": [
+      "SG.GS"
+    ],
     "city": "Bangkok",
     "coordinates": {
       "lat": "13.663651",
@@ -1671,6 +2793,10 @@
     "peeringdb_id": "4139"
   },
   "TCDC1": {
+    "carriers": [
+      "Netlayer Global Fabric",
+      "Reliance Jio"
+    ],
     "city": "Chennai",
     "coordinates": {
       "lat": "13.068351",
@@ -1683,6 +2809,9 @@
     "peeringdb_id": "6778"
   },
   "TCDE2": {
+    "carriers": [
+      "Netlayer Global Fabric"
+    ],
     "city": "Delhi",
     "coordinates": {
       "lat": "28.541514",
@@ -1695,6 +2824,9 @@
     "peeringdb_id": "6786"
   },
   "TCDK1": {
+    "carriers": [
+      "Reliance Jio"
+    ],
     "city": "Kolkata",
     "coordinates": {
       "lat": "22.588218",
@@ -1707,6 +2839,9 @@
     "peeringdb_id": "6780"
   },
   "TCHY1": {
+    "carriers": [
+      "Reliance Jio"
+    ],
     "city": "Hyderabad",
     "coordinates": {
       "lat": "17.441478",
@@ -1719,6 +2854,13 @@
     "peeringdb_id": "6781"
   },
   "TCSH": {
+    "carriers": [
+      "Arelion",
+      "NL-ix",
+      "RETN",
+      "Rocket Fibre",
+      "euNetworks"
+    ],
     "city": "London",
     "coordinates": {
       "lat": "51.499819",
@@ -1731,6 +2873,10 @@
     "peeringdb_id": "40"
   },
   "TECT1": {
+    "carriers": [
+      "DFA South Africa",
+      "Orange Wholesale International - EVPL"
+    ],
     "city": "Cape Town",
     "coordinates": {
       "lat": "-33.970872",
@@ -1743,6 +2889,11 @@
     "peeringdb_id": "1225"
   },
   "TEJB1": {
+    "carriers": [
+      "DFA South Africa",
+      "Orange Wholesale International - EVPL",
+      "i3D.net"
+    ],
     "city": "Johannesburg",
     "coordinates": {
       "lat": "-26.137957",
@@ -1755,6 +2906,21 @@
     "peeringdb_id": "850"
   },
   "THNO2": {
+    "carriers": [
+      "Arelion",
+      "Clouvider",
+      "Colt Technology Services",
+      "Core-Backbone",
+      "Exascale",
+      "Global Secure Layer",
+      "Macarne",
+      "NL-ix",
+      "RETN",
+      "Rocket Fibre",
+      "ZET.NET Backbone",
+      "euNetworks",
+      "moji"
+    ],
     "city": "London",
     "coordinates": {
       "lat": "51.511776",
@@ -1779,6 +2945,36 @@
     "peeringdb_id": "13618"
   },
   "THV52": {
+    "carriers": [
+      "ABACLOUDA",
+      "ARTERIA",
+      "Arelion",
+      "Aristo Networks",
+      "Colt Technology Services",
+      "Core-Backbone",
+      "Eranium Fabric",
+      "Eurofiber France",
+      "Free Pro",
+      "Global Secure Layer",
+      "IELO",
+      "Inter.link",
+      "MEDIACTIVE NETWORK",
+      "NL-ix",
+      "NetIX",
+      "Nextremum",
+      "Orange Wholesale International - EVPL",
+      "Prosoluce",
+      "Quantic Telecom",
+      "RETN",
+      "Rocket Fibre",
+      "SG.GS",
+      "Telehouse AD",
+      "Terralpha",
+      "ZET.NET Backbone",
+      "euNetworks",
+      "moji",
+      "nine"
+    ],
     "city": "Paris",
     "coordinates": {
       "lat": "48.856654",
@@ -1791,6 +2987,9 @@
     "peeringdb_id": "53"
   },
   "TIVIT": {
+    "carriers": [
+      "Vtal Rede Neutra"
+    ],
     "city": "S\u00e3o Paulo",
     "coordinates": {
       "lat": "-23.65071",
@@ -1803,6 +3002,9 @@
     "peeringdb_id": "1325"
   },
   "TLLPJ": {
+    "carriers": [
+      "FiberLight LLC"
+    ],
     "city": "Ashburn",
     "coordinates": {
       "lat": "39.001795",
@@ -1816,6 +3018,9 @@
     "state": "VA"
   },
   "TLS10": {
+    "carriers": [
+      "kt cloud"
+    ],
     "city": "Mapo-gu",
     "coordinates": {
       "lat": "37.582162",
@@ -1828,6 +3033,15 @@
     "peeringdb_id": "9210"
   },
   "TLXA1": {
+    "carriers": [
+      "Arelion",
+      "Clouvider",
+      "DC Blox Dark Fiber",
+      "EXA Infrastructure",
+      "Global Secure Layer",
+      "Shift Hosting",
+      "i3D.net"
+    ],
     "city": "Atlanta",
     "coordinates": {
       "lat": "33.755456",
@@ -1841,6 +3055,20 @@
     "state": "GA"
   },
   "TNDB": {
+    "carriers": [
+      "ANTEL Internacional",
+      "BR.Digital",
+      "Brasil TecPar",
+      "Cirion",
+      "EdgeUno",
+      "EllaLink",
+      "Huge Networks",
+      "NetIX",
+      "ProveNET",
+      "Telxius",
+      "Turbozone Internet",
+      "Vtal Rede Neutra"
+    ],
     "city": "Barueri",
     "coordinates": {
       "lat": "-23.497589",

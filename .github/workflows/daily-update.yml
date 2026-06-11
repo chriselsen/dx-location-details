@@ -21,18 +21,22 @@ jobs:
           python-version: '3.x'
       
       - name: Install dependencies
-        run: bash scripts/install_map_deps.sh
+        run: |
+          pip install boto3
+          bash scripts/install_map_deps.sh
       
       - name: Collect EUSC data
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_EUSC_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_EUSC_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: eusc-de-east-1
         run: python3 scripts/collect_data_eusc.py
       
       - name: Collect China data
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_CHINA_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_CHINA_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: cn-north-1
         run: python3 scripts/collect_data_china.py
       
       - name: Configure AWS credentials for Commercial

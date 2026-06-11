@@ -1,63 +1,43 @@
 #!/usr/bin/env python3
 import json
-import subprocess
 import re
+import boto3
 from collections import defaultdict
 
 def load_mapping(mapping_file):
-    with open(mapping_file, 'r') as f:
+    with open(mapping_file, 'r', encoding='utf-8') as f:
         return json.load(f)
-
-def check_disabled_regions():
-    """Check for any disabled regions and fail if found"""
-    cmd = "aws account list-regions --region-opt-status-contains DISABLED --query 'Regions[].RegionName' --output text"
-    result = subprocess.run(cmd, shell=True, capture_output=True, text=True, executable='/bin/bash')
-    disabled_regions = [r.strip() for r in result.stdout.strip().split() if r.strip()]
-    
-    if disabled_regions:
-        print(f"\nERROR: Found {len(disabled_regions)} DISABLED region(s):")
-        for region in disabled_regions:
-            print(f"  - {region}")
-        print(f"\nPlease enable all regions to ensure complete Direct Connect location coverage.")
-        exit(1)
 
 def normalize_location_code(code):
     """Remove floor suffixes like -32FL, -10FL and MMR suffixes, normalize case"""
-    # Remove floor suffixes like -32FL, -10FL
     code = re.sub(r'-\d+FL$', '', code)
-    # Remove MMR suffixes like -MMR-1A, -MMR-1B
     code = re.sub(r'-MMR-\w+$', '', code)
-    # Remove other common suffixes like -21001, -21004, -CDLAN-A, -MIX-DC1, -SC1, -SC111, -EQ, -WBE
     code = re.sub(r'-(\d{5}|CDLAN-[AB]|MIX-DC\d+|SC\d+|EQ|WBE)$', '', code)
     return code.upper()
 
-def get_region_opt_status():
-    """Get opt-in status for all regions"""
-    cmd = "aws account list-regions --query 'Regions[].[RegionName,RegionOptStatus]' --output text"
-    result = subprocess.run(cmd, shell=True, capture_output=True, text=True, executable='/bin/bash')
-    
-    region_status = {}
-    for line in result.stdout.strip().split('\n'):
-        if line.strip():
-            parts = line.split()
-            if len(parts) == 2:
-                region_status[parts[0]] = parts[1]
-    return region_status
+def get_enabled_regions():
+    """Get all enabled regions using boto3, returns dict of region -> opt status"""
+    client = boto3.client('account', region_name='us-east-1')
+    regions = {}
+    paginator = client.get_paginator('list_regions')
+    for page in paginator.paginate(RegionOptStatusContains=['ENABLED', 'ENABLED_BY_DEFAULT']):
+        for r in page['Regions']:
+            regions[r['RegionName']] = r['RegionOptStatus']
+    return regions
 
-def get_dx_locations():
-    """Fetch DX locations from AWS CLI"""
-    cmd = """
-    for r in $(aws account list-regions \
-     --region-opt-status-contains ENABLED ENABLED_BY_DEFAULT \
-     --query "Regions[].RegionName" \
-     --output text | tr '\t' '\n'); do 
-        aws directconnect describe-locations --region $r \
-        --query 'locations[]' \
-        --no-cli-pager --output text
-    done
-    """
-    result = subprocess.run(cmd, shell=True, capture_output=True, text=True, executable='/bin/bash')
-    return result.stdout.strip().split('\n')
+def get_dx_locations(regions):
+    """Fetch DX locations from all regions using boto3"""
+    all_locations = []
+    for region in regions:
+        try:
+            client = boto3.client('directconnect', region_name=region)
+            response = client.describe_locations()
+            for loc in response.get('locations', []):
+                loc['_region'] = region
+                all_locations.append(loc)
+        except Exception as e:
+            print(f"  WARNING: Skipped {region} ({e})")
+    return all_locations
 
 def normalize_country_from_name(name, country_mapping):
     """Extract and normalize country from location name"""
@@ -70,30 +50,23 @@ def normalize_country_from_name(name, country_mapping):
             return country
     return None
 
+def build_location_name(peeringdb_facility_name, map_data):
+    """Build PeeringDB name: Facility Name (first part), City, State, Country"""
+    facility_name = peeringdb_facility_name.split(',')[0].strip() if peeringdb_facility_name else None
+    if not facility_name:
+        return None
+    parts = [facility_name]
+    if map_data.get('city'):
+        parts.append(map_data['city'])
+    if map_data.get('state'):
+        parts.append(map_data['state'])
+    if map_data.get('country'):
+        parts.append(map_data['country'])
+    return ', '.join(parts)
+
 def extract_aws_name(aws_full_name):
     """Extract AWS name without city/country (everything before first comma)"""
     return aws_full_name.split(',')[0].strip()
-
-def build_peeringdb_name(peeringdb_facility_name, map_data):
-    """Build PeeringDB name: Facility Name (first part), City, State, Country"""
-    # Strip everything after first comma in PeeringDB name
-    facility_name = peeringdb_facility_name.split(',')[0].strip() if peeringdb_facility_name else None
-    
-    if not facility_name:
-        return None
-    
-    parts = [facility_name]
-    
-    if map_data.get('city'):
-        parts.append(map_data['city'])
-    
-    if map_data.get('state'):
-        parts.append(map_data['state'])
-    
-    if map_data.get('country'):
-        parts.append(map_data['country'])
-    
-    return ', '.join(parts)
 
 def sort_port_speeds(speeds):
     """Sort port speeds in ascending order"""
@@ -153,7 +126,6 @@ def normalize_provider(name):
     if name in PROVIDER_ALIASES:
         return PROVIDER_ALIASES[name]
     # Strip common corporate suffixes (case-insensitive), loop to handle compound suffixes like "Pty Ltd"
-    import re
     pattern = r',?\s*\b(Sdn Bhd|Sdn Bh|Berhad|Limited|Inc\.?|AG|GmbH|Ltd\.?|ltd\.?|SA de CV|S\.?A\.?\s*de\s*C\.?V\.?|SPA|S\.?p\.?A\.?|Pty|Corp\.?)\s*$'
     prev = None
     while prev != name:
@@ -168,35 +140,24 @@ def normalize_provider(name):
             return canonical
     return name
 
-def parse_locations(lines):
-    """Parse location data and deduplicate by normalized code"""
+def parse_locations(raw_locations):
+    """Deduplicate locations by normalized code"""
     locations = defaultdict(lambda: {'region': None, 'name': None, 'port_speeds': set(), 'macsec_speeds': set(), 'providers': set()})
-    current_code = None
     
-    for line in lines:
-        if not line.strip():
-            continue
-        parts = line.split('\t')
-        
-        if len(parts) >= 3 and not parts[0].startswith('AVAILABLE'):
-            # Location line: code, name, region
-            code, name, region = parts[0], parts[1], parts[2]
-            current_code = normalize_location_code(code)
-            if not locations[current_code]['region']:
-                locations[current_code]['region'] = region
-                locations[current_code]['name'] = name
-        elif len(parts) >= 2 and current_code:
-            # Capability line
-            if parts[0] == 'AVAILABLEPORTSPEEDS':
-                locations[current_code]['port_speeds'].add(parts[1])
-            elif parts[0] == 'AVAILABLEMACSECPORTSPEEDS':
-                locations[current_code]['macsec_speeds'].add(parts[1])
-            elif parts[0] == 'AVAILABLEPROVIDERS':
-                normalized = normalize_provider(parts[1])
-                if normalized:
-                    locations[current_code]['providers'].add(normalized)
+    for loc in raw_locations:
+        code = normalize_location_code(loc['locationCode'])
+        if not locations[code]['region']:
+            locations[code]['region'] = loc['_region']
+            locations[code]['name'] = loc.get('locationName', '')
+        for speed in loc.get('availablePortSpeeds', []):
+            locations[code]['port_speeds'].add(speed)
+        for speed in loc.get('availableMacSecPortSpeeds', []):
+            locations[code]['macsec_speeds'].add(speed)
+        for provider in loc.get('availableProviders', []):
+            normalized = normalize_provider(provider)
+            if normalized:
+                locations[code]['providers'].add(normalized)
     
-    # Convert sets to sorted lists
     for code in locations:
         locations[code]['port_speeds'] = sort_port_speeds(list(locations[code]['port_speeds']))
         locations[code]['macsec_speeds'] = sort_port_speeds(list(locations[code]['macsec_speeds']))
@@ -209,21 +170,20 @@ def main():
     country_mapping_file = 'data-structures/country-mapping.json'
     output_file = 'data-structures/dx-locations-data.json'
     
-    print("Checking for disabled regions...")
-    check_disabled_regions()
-    
-    print("Getting region opt-in status...")
-    region_opt_status = get_region_opt_status()
-    
     print("Loading mappings...")
     mapping = load_mapping(mapping_file)
     country_mapping = load_mapping(country_mapping_file)
     
+    print("Fetching enabled regions...")
+    region_opt_status = get_enabled_regions()
+    regions = sorted(region_opt_status.keys())
+    print(f"Found {len(regions)} enabled regions")
+    
     print("Fetching DX locations from AWS...")
-    lines = get_dx_locations()
+    raw_locations = get_dx_locations(regions)
     
     print("Parsing locations...")
-    locations = parse_locations(lines)
+    locations = parse_locations(raw_locations)
     
     print(f"Found {len(locations)} unique locations")
     
@@ -236,6 +196,7 @@ def main():
         aws_name = data['name']
         port_speeds = data['port_speeds']
         macsec_speeds = data['macsec_speeds']
+        providers = data['providers']
         
         entry = {
             'code': code,
@@ -251,7 +212,7 @@ def main():
             'longitude': None,
             'port_speeds': port_speeds,
             'macsec_capable': macsec_speeds,
-            'providers': data.get('providers', [])
+            'providers': providers
         }
         
         if code in mapping:
@@ -268,11 +229,19 @@ def main():
             
             # Build PeeringDB name if facility name available
             if map_data.get('facility_name'):
-                entry['name'] = build_peeringdb_name(map_data['facility_name'], map_data)
+                entry['name'] = build_location_name(map_data['facility_name'], map_data)
             
             # Fallback to AWS name if no PeeringDB name
             if not entry['name']:
                 entry['name'] = entry['aws_name']
+            
+            # Campus data from PeeringDB
+            if map_data.get('campus'):
+                entry['campus'] = map_data['campus']
+            
+            # Carrier data from PeeringDB
+            if map_data.get('carriers'):
+                entry['carriers'] = map_data['carriers']
         else:
             missing_locations.append({'code': code, 'name': aws_name, 'region': region})
         
@@ -291,7 +260,7 @@ def main():
         exit(1)
     
     # Save to JSON
-    with open(output_file, 'w') as f:
+    with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(complete_data, f, indent=2)
     
     print(f"\nData saved to: {output_file}")

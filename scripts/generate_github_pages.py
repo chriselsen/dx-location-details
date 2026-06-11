@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import json
-from datetime import datetime
+from datetime import datetime, timezone
 
 # Read the data (use merged if available)
 try:
@@ -126,7 +126,7 @@ html = f"""<!DOCTYPE html>
         <h2>Help<button class="close-btn" onclick="closeHelp()"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M2 2l12 12M14 2L2 14"></path></svg></button></h2>
         <h3>About this page</h3>
         <p>This page shows all AWS Direct Connect locations across all AWS partitions: Commercial, GovCloud (US), EU Sovereign Cloud, and China.</p>
-        <p>Location data is sourced from the <a href="https://docs.aws.amazon.com/directconnect/latest/APIReference/" target="_blank">AWS Direct Connect API</a> and enriched with facility names, coordinates, and organization details from <a href="https://www.peeringdb.com/" target="_blank">PeeringDB</a>.</p>
+        <p>Location data is sourced from the <a href="https://docs.aws.amazon.com/directconnect/latest/APIReference/" target="_blank">AWS Direct Connect API</a> and enriched with facility names, coordinates, organization details, campus information, and carrier presence from <a href="https://www.peeringdb.com/" target="_blank">PeeringDB</a>.</p>
         <h3>Switching partitions</h3>
         <p>Use the tabs above the table to switch between AWS partitions. Each tab filters the map and table to show only locations in that partition.</p>
         <h3>Interactive map</h3>
@@ -149,6 +149,12 @@ html = f"""<!DOCTYPE html>
         <ul>
             <li><b>Click a column header</b> to sort ascending/descending.</li>
             <li><b>Click a row</b> to zoom the map to that location.</li>
+        </ul>
+        <h3>Columns</h3>
+        <ul>
+            <li><b>Campus</b> &#x2014; PeeringDB campus name (if the facility is part of a multi-building campus). Hover to see all facilities in the campus.</li>
+            <li><b>Carriers</b> &#x2014; Number of carriers present at the facility (from PeeringDB). Hover to see carrier names.</li>
+            <li><b>DX Partners</b> &#x2014; Number of AWS Direct Connect delivery partners at the location. Hover to see partner names.</li>
         </ul>
         <h3>Icons</h3>
         <ul>
@@ -214,6 +220,9 @@ html = f"""<!DOCTYPE html>
         <select id="partnerFilter" onchange="filterTable()">
             <option value="">All DX Partners</option>
         </select>
+        <select id="carrierFilter" onchange="filterTable()">
+            <option value="">All Carriers</option>
+        </select>
         <select id="speedFilter" onchange="filterTable()">
             <option value="">All Port Speeds</option>
         </select>
@@ -235,13 +244,15 @@ html = f"""<!DOCTYPE html>
     <table id="dxTable">
         <thead>
             <tr>
-                <th onclick="sortTable(0)" id="th0">Location</th>
-                <th onclick="sortTable(1)" id="th1">Organization</th>
-                <th class="no-sort" id="th2" style="text-align: center;">Google Maps</th>
-                <th onclick="sortTable(3)" id="th3">AWS Code</th>
-                <th onclick="sortTable(4)" id="th4">Port Speeds</th>
-                <th onclick="sortTable(5)" id="th5">DX Partners</th>
-                <th onclick="sortTable(6)" id="th6">Associated Region<span class="info-icon tooltip-below" id="regionTooltip" data-tooltip="The AWS region used for API calls to manage Direct Connect resources at this location. Virtual interfaces created at this location can connect to any AWS Commercial and AWS GovCloud (US) region globally. Note: Opt-in regions must be enabled in your AWS account before locations in those regions become selectable." onclick="event.stopPropagation()"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true"><circle cx="8" cy="8" r="7"></circle><path d="M8 12V7M8 6V4"></path></svg></span></th>
+                <th onclick="sortTable(0)" id="th0" style="width: 17%;">Location</th>
+                <th onclick="sortTable(1)" id="th1" style="width: 12%;">Campus</th>
+                <th onclick="sortTable(2)" id="th2" style="width: 11%;">Organization</th>
+                <th class="no-sort" id="th3" style="text-align: center; width: 4%;">Google Maps</th>
+                <th onclick="sortTable(4)" id="th4" style="width: 7%;">AWS Code</th>
+                <th onclick="sortTable(5)" id="th5" style="width: 13%;">Port Speeds</th>
+                <th onclick="sortTable(6)" id="th6" style="width: 7%;">DX Partners</th>
+                <th onclick="sortTable(7)" id="th7" style="width: 7%;">Carriers</th>
+                <th onclick="sortTable(8)" id="th8" style="width: 16%;">Associated Region<span class="info-icon tooltip-below" id="regionTooltip" data-tooltip="The AWS region used for API calls to manage Direct Connect resources at this location. Virtual interfaces created at this location can connect to any AWS Commercial and AWS GovCloud (US) region globally. Note: Opt-in regions must be enabled in your AWS account before locations in those regions become selectable." onclick="event.stopPropagation()"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true"><circle cx="8" cy="8" r="7"></circle><path d="M8 12V7M8 6V4"></path></svg></span></th>
             </tr>
         </thead>
         <tbody>
@@ -310,13 +321,37 @@ for loc in sorted_locations:
     else:
         partners_html = ""
     
-    html += f"""            <tr data-code="{loc['code']}" data-partition="{partition}" data-country="{country_display}" data-region="{region}" data-org="{org_name}" data-speeds="{port_speeds}" data-macsec="{macsec_speeds}" data-providers="{providers_str}">
+    # Carriers column: count badge with tooltip listing carrier names (signal tower icon)
+    carriers = loc.get('carriers', [])
+    if carriers:
+        carriers_tooltip = '&#8226; ' + '&#10;&#8226; '.join(carriers)
+        carriers_html = f"<span class='info-icon tooltip-below' data-tooltip='{carriers_tooltip}' onclick='event.stopPropagation()'><svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' style='vertical-align: middle;'><path d='M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0' /><path d='M14.828 9.172a4 4 0 0 1 0 5.656' /><path d='M17.657 6.343a8 8 0 0 1 0 11.314' /><path d='M9.168 14.828a4 4 0 0 1 0 -5.656' /><path d='M6.337 17.657a8 8 0 0 1 0 -11.314' /></svg></span> {len(carriers)}"
+    else:
+        carriers_html = ""
+    
+    # Campus column: campus name with tooltip listing facilities
+    campus_data = loc.get('campus', {})
+    if campus_data and campus_data.get('name'):
+        campus_facilities = campus_data.get('facilities', [])
+        if campus_facilities:
+            campus_tooltip = '&#8226; ' + '&#10;&#8226; '.join(campus_facilities)
+            campus_html = f"<span class='info-icon tooltip-below' data-tooltip='{campus_tooltip}' onclick='event.stopPropagation()'><svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' style='vertical-align: middle;'><path d='M3 21l18 0' /><path d='M5 21v-14l8 -4v18' /><path d='M19 21v-10l-6 -4' /><path d='M9 9l0 .01' /><path d='M9 12l0 .01' /><path d='M9 15l0 .01' /><path d='M9 18l0 .01' /></svg></span> {campus_data['name']}"
+        else:
+            campus_html = campus_data['name']
+    else:
+        campus_html = ""
+    
+    carriers_str = ','.join(carriers)
+    
+    html += f"""            <tr data-code="{loc['code']}" data-partition="{partition}" data-country="{country_display}" data-region="{region}" data-org="{org_name}" data-speeds="{port_speeds}" data-macsec="{macsec_speeds}" data-providers="{providers_str}" data-carriers="{carriers_str}">
                 <td>{location_html}</td>
+                <td>{campus_html}</td>
                 <td>{org_html}</td>
                 <td style="text-align: center;">{map_html}</td>
                 <td>{map_link}</td>
                 <td>{speeds_html}</td>
                 <td>{partners_html}</td>
+                <td>{carriers_html}</td>
                 <td>{region_html}</td>
             </tr>
 """
@@ -466,6 +501,7 @@ html += """        </tbody>
         const regions = new Set();
         const speeds = new Set();
         const partners = new Set();
+        const carriersSet = new Set();
         const selectedCountries = new Set();
         
         function populateFilters(partition) {
@@ -474,6 +510,7 @@ html += """        </tbody>
             regions.clear();
             speeds.clear();
             partners.clear();
+            carriersSet.clear();
             
             document.querySelectorAll('tr[data-country]').forEach(tr => {
                 const rowPartition = tr.dataset.partition || 'aws';
@@ -484,6 +521,7 @@ html += """        </tbody>
                     if (tr.dataset.speeds) tr.dataset.speeds.split(',').forEach(s => speeds.add(s));
                     if (tr.dataset.macsec) tr.dataset.macsec.split(',').forEach(s => speeds.add(s));
                     if (tr.dataset.providers) tr.dataset.providers.split(',').forEach(p => { if (p) partners.add(p); });
+                    if (tr.dataset.carriers) tr.dataset.carriers.split(',').forEach(c => { if (c) carriersSet.add(c); });
                 }
             });
             
@@ -550,6 +588,17 @@ html += """        </tbody>
                 partnerFilter.appendChild(opt);
             });
             if (partners.has(currentPartner)) partnerFilter.value = currentPartner;
+            
+            const carrierFilter = document.getElementById('carrierFilter');
+            const currentCarrier = carrierFilter.value;
+            carrierFilter.innerHTML = '<option value="">All Carriers</option>';
+            Array.from(carriersSet).sort().forEach(c => {
+                const opt = document.createElement('option');
+                opt.value = c;
+                opt.textContent = c;
+                carrierFilter.appendChild(opt);
+            });
+            if (carriersSet.has(currentCarrier)) carrierFilter.value = currentCarrier;
         }
         
         document.querySelectorAll('tr[data-country]').forEach(tr => {
@@ -684,6 +733,7 @@ html += """
             clearAllCountries();
             document.getElementById('orgFilter').value = '';
             document.getElementById('partnerFilter').value = '';
+            document.getElementById('carrierFilter').value = '';
             document.getElementById('regionFilter').value = '';
             document.getElementById('speedFilter').value = '';
             document.getElementById('macsecFilter').value = '';
@@ -787,11 +837,12 @@ html += """
             const partitionFilter = getCurrentPartition();
             const orgFilter = document.getElementById("orgFilter").value;
             const partnerFilter = document.getElementById("partnerFilter").value;
+            const carrierFilter = document.getElementById("carrierFilter").value;
             const regionFilter = document.getElementById("regionFilter").value;
             const speedFilter = document.getElementById("speedFilter").value;
             const macsecFilter = document.getElementById("macsecFilter").value;
             
-            if (selectedCountries.size > 0 || orgFilter || partnerFilter || regionFilter || speedFilter || macsecFilter) {
+            if (selectedCountries.size > 0 || orgFilter || partnerFilter || carrierFilter || regionFilter || speedFilter || macsecFilter) {
                 clearUserMarker();
                 if (searchInput) {
                     document.getElementById('searchInput').value = '';
@@ -805,7 +856,7 @@ html += """
             const visibleCodes = new Set();
             
             const resetBtn = document.getElementById('resetFilters');
-            resetBtn.style.display = (selectedCountries.size > 0 || orgFilter || partnerFilter || regionFilter || speedFilter || macsecFilter) ? 'block' : 'none';
+            resetBtn.style.display = (selectedCountries.size > 0 || orgFilter || partnerFilter || carrierFilter || regionFilter || speedFilter || macsecFilter) ? 'block' : 'none';
             
             for (let i = 1; i < tr.length; i++) {
                 const row = tr[i];
@@ -816,6 +867,7 @@ html += """
                 const speeds = row.dataset.speeds || '';
                 const macsec = row.dataset.macsec || '';
                 const rowProviders = row.dataset.providers || '';
+                const rowCarriers = row.dataset.carriers || '';
                 
                 const effectivePartition = (partitionFilter === 'aws-govcloud') ? 'aws' : partitionFilter;
                 const partitionMatch = partition === effectivePartition;
@@ -836,6 +888,7 @@ html += """
                 const countryMatch = selectedCountries.size === 0 || selectedCountries.has(country);
                 const orgMatch = !orgFilter || org === orgFilter;
                 const partnerMatch = !partnerFilter || rowProviders.split(',').includes(partnerFilter);
+                const carrierMatch = !carrierFilter || rowCarriers.split(',').includes(carrierFilter);
                 const regionMatch = !regionFilter || region === regionFilter;
                 
                 let speedMatch = true;
@@ -858,7 +911,7 @@ html += """
                     }
                 }
                 
-                const show = partitionMatch && textMatch && countryMatch && orgMatch && partnerMatch && regionMatch && speedMatch && macsecMatch;
+                const show = partitionMatch && textMatch && countryMatch && orgMatch && partnerMatch && carrierMatch && regionMatch && speedMatch && macsecMatch;
                 row.style.display = show ? "" : "none";
                 if (show) visibleCodes.add(row.getAttribute('data-code'));
             }
@@ -884,7 +937,7 @@ html += """
         document.getElementById('th0').classList.add('asc');
     </script>
     <div class="footer">
-        <p><a href="https://github.com/chriselsen/dx-location-details" target="_blank">GitHub Repository</a> | Last updated: """ + datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S UTC') + """</p>
+        <p><a href="https://github.com/chriselsen/dx-location-details" target="_blank">GitHub Repository</a> | Last updated: """ + datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC') + """</p>
     </div>
 </body>
 </html>

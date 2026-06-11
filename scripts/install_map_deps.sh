@@ -3,8 +3,8 @@
 
 echo "Installing Python dependencies for map generation..."
 
-# Install matplotlib and cartopy
-pip3 install matplotlib cartopy
+# Install matplotlib, cartopy, and boto3
+pip3 install matplotlib cartopy boto3
 
 echo "✓ Dependencies installed successfully"
 echo ""

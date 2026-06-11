@@ -6,6 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
+  id-token: write
   contents: write
 
 jobs:
@@ -21,19 +22,34 @@ jobs:
       
       - name: Install dependencies
         run: |
-          pip install requests
+          pip install requests boto3
           bash scripts/install_map_deps.sh
       
       - name: Sync PeeringDB data
         run: python3 scripts/sync_peeringdb.py
       
-      - name: Regenerate outputs
+      - name: Configure AWS credentials for Commercial
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ vars.AWS_ROLE_ARN }}
+          aws-region: us-east-1
+      
+      - name: Collect Commercial data and merge partitions
         run: |
           python3 scripts/collect_data.py
+          python3 scripts/merge_partitions.py
+      
+      - name: Generate all outputs
+        run: |
           python3 scripts/generate_csv.py
+          python3 scripts/generate_csv_eusc.py
+          python3 scripts/generate_csv_china.py
           python3 scripts/generate_kml.py
+          python3 scripts/generate_kml_eusc.py
+          python3 scripts/generate_kml_china.py
           python3 scripts/generate_map_png.py
           python3 scripts/generate_github_pages.py
+          python3 scripts/generate_locations_json.py
       
       - name: Commit and push changes
         run: |
