@@ -20,10 +20,10 @@
       "100G"
     ],
     "providers": [],
-    "partition": "aws",
     "carriers": [
       "Orange Wholesale International - EVPL"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "RCL1",
@@ -64,10 +64,10 @@
       "VDT",
       "Vobiss"
     ],
-    "partition": "aws",
     "carriers": [
       "Orange Wholesale International - EVPL"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "TECT1",
@@ -96,11 +96,11 @@
       "Teraco",
       "Vodacom Business"
     ],
-    "partition": "aws",
     "carriers": [
       "DFA South Africa",
       "Orange Wholesale International - EVPL"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "EQHK1",
@@ -129,7 +129,6 @@
       "Megaport",
       "Orange Business"
     ],
-    "partition": "aws",
     "campus": {
       "facilities": [
         "Equinix HK1 - Hong Kong",
@@ -149,7 +148,8 @@
       "SG.GS",
       "Unified National Networks",
       "i3D.net"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "CFT54",
@@ -178,10 +178,10 @@
       "China Mobile International",
       "Telstra"
     ],
-    "partition": "aws",
     "carriers": [
       "RETN"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "CHT51",
@@ -207,10 +207,10 @@
     "providers": [
       "Chunghwa Telecom"
     ],
-    "partition": "aws",
     "carriers": [
       "RETN"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "ATTC1",
@@ -253,7 +253,6 @@
       "Telstra",
       "Verizon"
     ],
-    "partition": "aws",
     "campus": {
       "facilities": [
         "AT TOKYO (CC1/CC2)",
@@ -269,7 +268,8 @@
       "RETN",
       "Rakuten Mobile",
       "SG.GS"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "CFT52",
@@ -295,12 +295,12 @@
       "China Mobile International",
       "Telstra"
     ],
-    "partition": "aws",
     "carriers": [
       "Global Secure Layer",
       "RETN",
       "SG.GS"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "EQOS1",
@@ -335,7 +335,6 @@
       "Softbank",
       "TOKAI Communications"
     ],
-    "partition": "aws",
     "carriers": [
       "Arelion",
       "BB Backbone",
@@ -344,7 +343,8 @@
       "OPTAGE",
       "Rakuten Mobile",
       "TOKAI Communications Corporation"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "EQTY2",
@@ -398,7 +398,6 @@
       "Verizon",
       "Zayo"
     ],
-    "partition": "aws",
     "campus": {
       "facilities": [
         "Equinix TY2 - Tokyo",
@@ -419,7 +418,8 @@
       "SG.GS",
       "TOKAI Communications Corporation",
       "i3D.net"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "NEIN2",
@@ -542,10 +542,10 @@
       "Samsung SDS",
       "Sejong Telecom"
     ],
-    "partition": "aws",
     "carriers": [
       "kt cloud"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "KDOS2",
@@ -574,12 +574,12 @@
       "Optage",
       "TOKAI Communications"
     ],
-    "partition": "aws",
     "carriers": [
       "BB Backbone",
       "JR West Optical Network(JRWON)",
       "OPTAGE"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "EQMB2",
@@ -613,12 +613,12 @@
       "Tata Communications",
       "Vodafone"
     ],
-    "partition": "aws",
     "carriers": [
       "Netlayer Global Fabric",
       "Reliance Jio",
       "i3D.net"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "GPX51",
@@ -648,12 +648,12 @@
       "Sify",
       "Tata Communications"
     ],
-    "partition": "aws",
     "carriers": [
       "Netlayer Global Fabric",
       "Reliance Jio",
       "i3D.net"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "NMBL2",
@@ -742,11 +742,11 @@
       "Tata Communications",
       "Vodafone"
     ],
-    "partition": "aws",
     "carriers": [
       "Netlayer Global Fabric",
       "Reliance Jio"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "TCDE2",
@@ -772,10 +772,10 @@
     "providers": [
       "Tata Communications"
     ],
-    "partition": "aws",
     "carriers": [
       "Netlayer Global Fabric"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "TCDK1",
@@ -807,10 +807,10 @@
       "TCL",
       "Vodafone"
     ],
-    "partition": "aws",
     "carriers": [
       "Reliance Jio"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "TCHY1",
@@ -838,10 +838,10 @@
       "Sify",
       "Tata Communications"
     ],
-    "partition": "aws",
     "carriers": [
       "Reliance Jio"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "AIMMN",
@@ -877,10 +877,10 @@
       "Telekom Malaysia",
       "Telstra"
     ],
-    "partition": "aws",
     "carriers": [
       "SG.GS"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "EPVM2",
@@ -906,12 +906,12 @@
     "providers": [
       "ePLDT"
     ],
-    "partition": "aws",
     "carriers": [
       "RETN",
       "RISE.ph",
       "SG.GS"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "EQSG2",
@@ -974,7 +974,6 @@
       "ePLDT",
       "iXSforAll"
     ],
-    "partition": "aws",
     "campus": {
       "facilities": [
         "Equinix SG2 - Singapore",
@@ -986,7 +985,8 @@
       "LASOTEL",
       "Orange Wholesale International - EVPL",
       "SG.GS"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "GSS52",
@@ -1002,12 +1002,10 @@
     "longitude": "103.893828",
     "port_speeds": [
       "1G",
-      "10G",
-      "100G"
+      "10G"
     ],
     "macsec_capable": [
-      "10G",
-      "100G"
+      "10G"
     ],
     "providers": [
       "1CloudStar",
@@ -1036,7 +1034,6 @@
       "Vodafone",
       "Zayo"
     ],
-    "partition": "aws",
     "carriers": [
       "Arelion",
       "Axclusive",
@@ -1044,7 +1041,8 @@
       "OneQode",
       "RETN",
       "SG.GS"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "IAMGI",
@@ -1098,7 +1096,6 @@
       "Zayo",
       "iAdvantage"
     ],
-    "partition": "aws",
     "carriers": [
       "Arelion",
       "Core-Backbone",
@@ -1108,7 +1105,8 @@
       "Orange Wholesale International - EVPL",
       "RETN",
       "SG.GS"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "TCCBK",
@@ -1142,10 +1140,10 @@
       "True",
       "UIH"
     ],
-    "partition": "aws",
     "carriers": [
       "SG.GS"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "CBHU2",
@@ -1175,7 +1173,6 @@
       "Telstra",
       "Vocus"
     ],
-    "partition": "aws",
     "campus": {
       "facilities": [
         "CDC Canberra HU1",
@@ -1186,7 +1183,8 @@
     },
     "carriers": [
       "CDC"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "DCDH6",
@@ -1276,14 +1274,14 @@
       "Vodafone",
       "Zayo"
     ],
-    "partition": "aws",
     "carriers": [
       "5GN",
       "Aussie Broadband",
       "Falcore Australia Pty Ltd",
       "Global Secure Layer",
       "Vocus"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "EQSY5",
@@ -1320,13 +1318,13 @@
       "VPN Solutions",
       "Verizon"
     ],
-    "partition": "aws",
     "carriers": [
       "5GN",
       "Falcore Australia Pty Ltd",
       "Global Secure Layer",
       "Vocus"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "GBSY6",
@@ -1373,10 +1371,10 @@
       "Vocus",
       "Vodafone"
     ],
-    "partition": "aws",
     "carriers": [
       "Vocus"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "NDCB2",
@@ -1404,7 +1402,6 @@
       "Telstra",
       "Vocus"
     ],
-    "partition": "aws",
     "carriers": [
       "5GN",
       "Aussie Broadband",
@@ -1413,7 +1410,8 @@
       "OneQode",
       "QCN",
       "Vocus"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "NDCC1",
@@ -1440,10 +1438,10 @@
       "TPG Telecom/AAPT",
       "Telstra"
     ],
-    "partition": "aws",
     "carriers": [
       "Aussie Broadband"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "NDCM1",
@@ -1477,14 +1475,14 @@
       "VPN Solutions",
       "Vocus"
     ],
-    "partition": "aws",
     "carriers": [
       "5GN",
       "Aussie Broadband",
       "Falcore Australia Pty Ltd",
       "Global Secure Layer",
       "Vocus"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "NDCP1",
@@ -1516,7 +1514,6 @@
       "Telstra",
       "Vocus"
     ],
-    "partition": "aws",
     "carriers": [
       "5GN",
       "Aussie Broadband",
@@ -1524,7 +1521,8 @@
       "Global Secure Layer",
       "SG.GS",
       "Vocus"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "NDCS2",
@@ -1552,14 +1550,14 @@
       "NEXTDC",
       "Vocus"
     ],
-    "partition": "aws",
     "carriers": [
       "Aussie Broadband",
       "Falcore Australia Pty Ltd",
       "Global Secure Layer",
       "Nexthop",
       "Vocus"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "DCIJ3",
@@ -1590,7 +1588,6 @@
       "Telin",
       "XL Axiata"
     ],
-    "partition": "aws",
     "campus": {
       "facilities": [
         "DCI Indonesia (JK1)",
@@ -1600,7 +1597,8 @@
         "DCI Indonesia (JK6)"
       ],
       "name": "DCI Indonesia H1 Campus (Cibitung)"
-    }
+    },
+    "partition": "aws"
   },
   {
     "code": "JKT02",
@@ -1632,13 +1630,13 @@
       "Telin",
       "XL Axiata"
     ],
-    "partition": "aws",
     "carriers": [
       "DETELNETWORKS",
       "GERBANGAKSES",
       "Matrix NAP Info",
       "SG.GS"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "EQME2",
@@ -1670,7 +1668,6 @@
       "Telstra",
       "Verizon"
     ],
-    "partition": "aws",
     "carriers": [
       "5GN",
       "Aussie Broadband",
@@ -1678,7 +1675,8 @@
       "Global Secure Layer",
       "SG.GS",
       "Vocus"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "CMCHV",
@@ -1759,10 +1757,10 @@
       "Visi Cenderawasih",
       "X86 Network"
     ],
-    "partition": "aws",
     "carriers": [
       "SG.GS"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "SPK53",
@@ -1790,10 +1788,10 @@
       "Spark",
       "Vector"
     ],
-    "partition": "aws",
     "carriers": [
       "Global Secure Layer"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "THRA9",
@@ -1864,12 +1862,12 @@
       "Telus",
       "Zayo"
     ],
-    "partition": "aws",
     "carriers": [
       "EBOX",
       "Hive Data Center",
       "i3D.net"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "CGM60",
@@ -1911,13 +1909,13 @@
       "Telus",
       "Zayo"
     ],
-    "partition": "aws",
     "carriers": [
       "Arelion",
       "EBOX",
       "EXA Infrastructure",
       "i3D.net"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "COLV2",
@@ -1948,11 +1946,11 @@
       "Telus",
       "Zayo"
     ],
-    "partition": "aws",
     "carriers": [
       "Arelion",
       "Ziply Fiber"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "COLV3",
@@ -1987,10 +1985,10 @@
       "Urban Communications",
       "Zayo"
     ],
-    "partition": "aws",
     "carriers": [
       "Ziply Fiber"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "EQTR2",
@@ -2026,10 +2024,10 @@
       "Rogers Carrier Services",
       "Telus"
     ],
-    "partition": "aws",
     "carriers": [
       "Arelion"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "NTM62",
@@ -2132,13 +2130,13 @@
       "Lumen",
       "Telecom Italia Sparkle"
     ],
-    "partition": "aws",
     "carriers": [
       "Airbeam Carrier",
       "Arelion",
       "Inter.link",
       "RETN"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "CEC50",
@@ -2165,7 +2163,6 @@
       "Lumen",
       "NL-ix"
     ],
-    "partition": "aws",
     "carriers": [
       "1-IX EU",
       "Arelion",
@@ -2176,7 +2173,8 @@
       "RETN",
       "ZET.NET Backbone",
       "next layer"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "DGPU1",
@@ -2201,14 +2199,14 @@
       "DigiPlex",
       "EUNetworks"
     ],
-    "partition": "aws",
     "carriers": [
       "31173 Services",
       "Arelion",
       "Blix",
       "Portlane",
       "euNetworks"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "EQAM3",
@@ -2256,7 +2254,6 @@
       "Vodafone",
       "Zayo"
     ],
-    "partition": "aws",
     "campus": {
       "facilities": [
         "Equinix AM3 - Amsterdam, Science Park",
@@ -2284,7 +2281,8 @@
       "Relined Fiber Network",
       "ZET.NET Backbone",
       "euNetworks"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "EQFA5",
@@ -2346,7 +2344,6 @@
       "Zain Group",
       "Zayo"
     ],
-    "partition": "aws",
     "carriers": [
       "1-IX EU",
       "31173 Services",
@@ -2390,7 +2387,8 @@
       "moji",
       "next layer",
       "nine"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "EQHE6",
@@ -2413,7 +2411,6 @@
       "Cinia",
       "Equinix"
     ],
-    "partition": "aws",
     "campus": {
       "facilities": [
         "Equinix HE6 - Helsinki, Sinim\u00e4ki",
@@ -2431,7 +2428,8 @@
       "Portlane",
       "RETN",
       "euNetworks"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "EQIL4",
@@ -2468,7 +2466,6 @@
       "Turknet",
       "Vodafone"
     ],
-    "partition": "aws",
     "campus": {
       "facilities": [
         "Equinix IL2 - Istanbul",
@@ -2478,7 +2475,8 @@
     },
     "carriers": [
       "ZET.NET Backbone"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "EQMU1",
@@ -2512,7 +2510,6 @@
       "Tata Communications",
       "Vodafone"
     ],
-    "partition": "aws",
     "carriers": [
       "Arelion",
       "Core-Backbone",
@@ -2523,7 +2520,8 @@
       "euNetworks",
       "komro",
       "next layer"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "EQWA1",
@@ -2552,7 +2550,6 @@
       "Orange Business",
       "Tata Communications"
     ],
-    "partition": "aws",
     "carriers": [
       "1-IX EU",
       "Arelion",
@@ -2565,7 +2562,8 @@
       "ZET.NET Backbone",
       "euNetworks",
       "i3D.net"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "INX6",
@@ -2609,7 +2607,6 @@
       "Vodafone",
       "Zayo"
     ],
-    "partition": "aws",
     "carriers": [
       "1-IX EU",
       "3W Infra B.V.",
@@ -2648,7 +2645,8 @@
       "i3D.net",
       "komro",
       "next layer"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "IPB50",
@@ -2681,7 +2679,6 @@
       "Telefonica",
       "Vodafone"
     ],
-    "partition": "aws",
     "carriers": [
       "31173 Services",
       "Arelion",
@@ -2695,7 +2692,8 @@
       "RETN",
       "WOBCOM",
       "euNetworks"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "IPHH3",
@@ -2725,14 +2723,14 @@
       "T-Systems International",
       "Vodafone"
     ],
-    "partition": "aws",
     "carriers": [
       "EXA Infrastructure",
       "LWLcom",
       "TKRZ Stadtwerke",
       "euNetworks",
       "wilhelm.tel GmbH"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "ITCM2",
@@ -2771,7 +2769,6 @@
       "Verizon",
       "Vodafone"
     ],
-    "partition": "aws",
     "carriers": [
       "1-IX EU",
       "AXENT",
@@ -2784,7 +2781,8 @@
       "ZET.NET Backbone",
       "euNetworks",
       "i3D.net"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "ITXA1",
@@ -2818,14 +2816,14 @@
       "Vodafone",
       "Wind"
     ],
-    "partition": "aws",
     "carriers": [
       "EXA Infrastructure",
       "Grid Telecom",
       "IONIAN",
       "NetIX",
       "ZET.NET Backbone"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "ITXA7",
@@ -2852,7 +2850,6 @@
       "Lumen",
       "NOS"
     ],
-    "partition": "aws",
     "carriers": [
       "Afiber",
       "Arcadiz",
@@ -2867,7 +2864,8 @@
       "RETN",
       "Relined Fiber Network",
       "euNetworks"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "ITXC2",
@@ -2891,7 +2889,6 @@
     "providers": [
       "Interxion"
     ],
-    "partition": "aws",
     "carriers": [
       "31173 Services",
       "Arelion",
@@ -2906,7 +2903,8 @@
       "ZET.NET Backbone",
       "euNetworks",
       "i3D.net"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "ITXM2",
@@ -2941,7 +2939,6 @@
       "Verizon",
       "Vodafone"
     ],
-    "partition": "aws",
     "campus": {
       "facilities": [
         "Digital Realty Madrid MAD1-2",
@@ -2964,7 +2961,8 @@
       "Telxius",
       "ZET.NET Backbone",
       "euNetworks"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "ITXM3",
@@ -2987,7 +2985,6 @@
       "100G"
     ],
     "providers": [],
-    "partition": "aws",
     "campus": {
       "facilities": [
         "Digital Realty Madrid MAD1-2",
@@ -3003,7 +3000,8 @@
       "RETN",
       "ZET.NET Backbone",
       "euNetworks"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "ITXS1",
@@ -3041,7 +3039,6 @@
       "Vodafone",
       "Zayo"
     ],
-    "partition": "aws",
     "carriers": [
       "31173 Services",
       "Arelion",
@@ -3058,7 +3055,8 @@
       "RETN",
       "ZET.NET Backbone",
       "euNetworks"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "ITXV2",
@@ -3093,7 +3091,6 @@
       "Telefonica",
       "Verizon"
     ],
-    "partition": "aws",
     "carriers": [
       "Arelion",
       "Core-Backbone",
@@ -3109,7 +3106,8 @@
       "euNetworks",
       "i3D.net",
       "next layer"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "ITXZ1",
@@ -3147,7 +3145,6 @@
       "Telefonica",
       "Verizon"
     ],
-    "partition": "aws",
     "carriers": [
       "31173 Services",
       "Arelion",
@@ -3160,7 +3157,8 @@
       "ZET.NET Backbone",
       "euNetworks",
       "next layer"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "MOILH",
@@ -3189,10 +3187,10 @@
       "Cellcom",
       "Tamares Telecom"
     ],
-    "partition": "aws",
     "carriers": [
       "MedOne"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "THV52",
@@ -3241,7 +3239,6 @@
       "Verizon",
       "Zayo"
     ],
-    "partition": "aws",
     "carriers": [
       "ABACLOUDA",
       "ARTERIA",
@@ -3271,7 +3268,8 @@
       "euNetworks",
       "moji",
       "nine"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "EQZH5",
@@ -3303,7 +3301,6 @@
       "Sunrise",
       "Swisscom"
     ],
-    "partition": "aws",
     "campus": {
       "facilities": [
         "Equinix ZH2 - Zurich",
@@ -3318,7 +3315,8 @@
       "RETN",
       "ZET.NET Backbone",
       "euNetworks"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "EQSK1",
@@ -3348,7 +3346,6 @@
       "Lumen",
       "Telecom Italia Sparkle"
     ],
-    "partition": "aws",
     "campus": {
       "facilities": [
         "Equinix SK1 - Stockholm, Bromma",
@@ -3373,7 +3370,8 @@
       "ZET.NET Backbone",
       "euNetworks",
       "i3D.net"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "EQML2",
@@ -3397,11 +3395,11 @@
       "Fastweb",
       "IT.net"
     ],
-    "partition": "aws",
     "carriers": [
       "Global Secure Layer",
       "euNetworks"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "EQBA1",
@@ -3424,7 +3422,6 @@
       "100G"
     ],
     "providers": [],
-    "partition": "aws",
     "carriers": [
       "AXENT",
       "Arelion",
@@ -3432,7 +3429,8 @@
       "Orange Wholesale International - EVPL",
       "RETN",
       "Rocket Fibre"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "EIRCL",
@@ -3464,10 +3462,10 @@
       "Tata Communications",
       "eircom"
     ],
-    "partition": "aws",
     "carriers": [
       "euNetworks"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "EQDX1",
@@ -3510,7 +3508,6 @@
       "Telstra",
       "Zain Group"
     ],
-    "partition": "aws",
     "campus": {
       "facilities": [
         "Equinix DX1 - Dubai",
@@ -3522,7 +3519,8 @@
       "Orange Wholesale International - EVPL",
       "datamena",
       "i3D.net"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "EQLD5",
@@ -3583,7 +3581,6 @@
       "Zayo",
       "hSo"
     ],
-    "partition": "aws",
     "campus": {
       "facilities": [
         "Equinix LD4 - London, Slough",
@@ -3603,7 +3600,8 @@
       "RETN",
       "Telxius",
       "euNetworks"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "EQLS1",
@@ -3644,7 +3642,6 @@
       "Telefonica Global",
       "Vodafone"
     ],
-    "partition": "aws",
     "campus": {
       "facilities": [
         "Equinix LS1 - Lisbon",
@@ -3660,7 +3657,8 @@
       "Orange Wholesale International - EVPL",
       "Rocket Fibre",
       "ZET.NET Backbone"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "ETIFJ",
@@ -3686,11 +3684,11 @@
       "Infonas",
       "Zain Group"
     ],
-    "partition": "aws",
     "carriers": [
       "Orange Wholesale International - EVPL",
       "i3D.net"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "ITXD2",
@@ -3727,14 +3725,14 @@
       "Verizon",
       "Zayo"
     ],
-    "partition": "aws",
     "carriers": [
       "Inter.link",
       "NL-ix",
       "RETN",
       "ZET.NET Backbone",
       "euNetworks"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "ITXM1",
@@ -3774,7 +3772,6 @@
       "Verizon",
       "Vodafone"
     ],
-    "partition": "aws",
     "carriers": [
       "ARTERIA",
       "AXENT",
@@ -3797,7 +3794,8 @@
       "euNetworks",
       "moji",
       "nine"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "SCDB9",
@@ -3903,14 +3901,14 @@
       "Zayo",
       "hSo"
     ],
-    "partition": "aws",
     "carriers": [
       "Arelion",
       "NL-ix",
       "RETN",
       "Rocket Fibre",
       "euNetworks"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "TEJB1",
@@ -3941,12 +3939,12 @@
       "Teraco",
       "Vodacom Business"
     ],
-    "partition": "aws",
     "carriers": [
       "DFA South Africa",
       "Orange Wholesale International - EVPL",
       "i3D.net"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "EQMA3",
@@ -3976,11 +3974,11 @@
       "Lumen",
       "Vodafone"
     ],
-    "partition": "aws",
     "carriers": [
       "EXA Infrastructure",
       "euNetworks"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "THNO2",
@@ -4021,7 +4019,6 @@
       "Telecom Italia Sparkle",
       "Zayo"
     ],
-    "partition": "aws",
     "carriers": [
       "Arelion",
       "Clouvider",
@@ -4036,7 +4033,8 @@
       "ZET.NET Backbone",
       "euNetworks",
       "moji"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "EQPA3",
@@ -4073,7 +4071,6 @@
       "Orange Business",
       "Zayo"
     ],
-    "partition": "aws",
     "campus": {
       "facilities": [
         "Equinix PA2 - Paris, Saint-Denis",
@@ -4094,7 +4091,8 @@
       "ZET.NET Backbone",
       "euNetworks",
       "moji"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "ITXP7",
@@ -4119,12 +4117,12 @@
       "Colt",
       "Interxion"
     ],
-    "partition": "aws",
     "carriers": [
       "IELO",
       "Orange Wholesale International - EVPL",
       "euNetworks"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "ECTL1",
@@ -4197,10 +4195,10 @@
       "Total Play",
       "UC Telecom"
     ],
-    "partition": "aws",
     "carriers": [
       "Arelion"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "CIBNA",
@@ -4226,7 +4224,6 @@
     "providers": [
       "Lumen"
     ],
-    "partition": "aws",
     "carriers": [
       "ADVANTUN",
       "ANTEL Internacional",
@@ -4236,7 +4233,8 @@
       "Servicios y Telecomunicaciones S.A",
       "Telxius",
       "Vtal Rede Neutra"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "CILIM",
@@ -4274,12 +4272,12 @@
       "Telmex",
       "Viettel"
     ],
-    "partition": "aws",
     "carriers": [
       "Cirion",
       "EdgeUno",
       "Telxius"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "EQBG1",
@@ -4308,7 +4306,6 @@
       "Orange Business",
       "Telefonica"
     ],
-    "partition": "aws",
     "campus": {
       "facilities": [
         "Equinix BG1 - Bogota",
@@ -4320,7 +4317,8 @@
       "Cirion",
       "EdgeUno",
       "Vtal Rede Neutra"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "EQRJ2",
@@ -4351,7 +4349,6 @@
       "Telefonica",
       "Verizon"
     ],
-    "partition": "aws",
     "carriers": [
       "ANTEL Internacional",
       "Cirion",
@@ -4360,7 +4357,8 @@
       "Huge Networks",
       "Telxius",
       "Vtal Rede Neutra"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "SONQU",
@@ -4391,11 +4389,11 @@
       "Telefonica",
       "Ufinet"
     ],
-    "partition": "aws",
     "carriers": [
       "Cirion",
       "Telxius"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "TIVIT",
@@ -4429,10 +4427,10 @@
       "Telefonica",
       "UOL DIVEO"
     ],
-    "partition": "aws",
     "carriers": [
       "Vtal Rede Neutra"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "TNDB",
@@ -4472,7 +4470,6 @@
       "UOL DIVEO",
       "Verizon"
     ],
-    "partition": "aws",
     "carriers": [
       "ANTEL Internacional",
       "BR.Digital",
@@ -4486,7 +4483,8 @@
       "Telxius",
       "Turbozone Internet",
       "Vtal Rede Neutra"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "165HS",
@@ -4532,7 +4530,6 @@
       "XO Communications",
       "Zayo"
     ],
-    "partition": "aws",
     "carriers": [
       "AT&T US",
       "Arelion",
@@ -4540,7 +4537,8 @@
       "Global Secure Layer",
       "Massive Networks",
       "i3D.net"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "CS32A",
@@ -4589,7 +4587,6 @@
       "Vodafone",
       "Zayo"
     ],
-    "partition": "aws",
     "campus": {
       "facilities": [
         "CoreSite - New York (NY1)",
@@ -4600,7 +4597,8 @@
     "carriers": [
       "EXA Infrastructure",
       "Macarne"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "CSVA1",
@@ -4617,11 +4615,13 @@
     "port_speeds": [
       "1G",
       "10G",
-      "100G"
+      "100G",
+      "400G"
     ],
     "macsec_capable": [
       "10G",
-      "100G"
+      "100G",
+      "400G"
     ],
     "providers": [
       "11:11 Systems",
@@ -4645,7 +4645,6 @@
       "YellowFiber Networks",
       "Zayo"
     ],
-    "partition": "aws",
     "campus": {
       "facilities": [
         "CoreSite - Washington,DC (DC1)",
@@ -4662,7 +4661,8 @@
       "EXA Infrastructure",
       "FiberLight LLC",
       "Inter.link"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "EQDA2",
@@ -4719,13 +4719,13 @@
       "XO Communications",
       "Zayo"
     ],
-    "partition": "aws",
     "carriers": [
       "AT&T US",
       "Massive Networks",
       "Shift Hosting",
       "i3D.net"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "EQDC2",
@@ -4802,7 +4802,6 @@
       "YellowFiber Networks",
       "Zayo"
     ],
-    "partition": "aws",
     "campus": {
       "facilities": [
         "Equinix DC1-DC15,DC21-DC22 - Ashburn",
@@ -4824,7 +4823,8 @@
       "Telxius",
       "ZET.NET Backbone",
       "i3D.net"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "EQMI1",
@@ -4871,7 +4871,6 @@
       "Vodafone",
       "Zayo"
     ],
-    "partition": "aws",
     "carriers": [
       "ANTEL Internacional",
       "AT&T US",
@@ -4889,7 +4888,8 @@
       "SG.GS",
       "Vtal Rede Neutra",
       "ZET.NET Backbone"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "EQNY5",
@@ -4919,7 +4919,6 @@
       "Lightpath",
       "Telecom Italia Sparkle"
     ],
-    "partition": "aws",
     "campus": {
       "facilities": [
         "Equinix NY2/NY4/NY5/NY6 - New York, Secaucus",
@@ -4935,7 +4934,8 @@
       "Core-Backbone",
       "Global Secure Layer",
       "SG.GS"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "KIOQ1",
@@ -4964,12 +4964,12 @@
       "FLO Networks",
       "KIO Networks"
     ],
-    "partition": "aws",
     "carriers": [
       "Arelion",
       "Cirion",
       "EdgeUno"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "LGT50",
@@ -5005,11 +5005,11 @@
       "XO Communications",
       "Zayo"
     ],
-    "partition": "aws",
     "carriers": [
       "AT&T US",
       "Arelion"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "MB1SD",
@@ -5051,12 +5051,12 @@
       "XO Communications",
       "Zayo"
     ],
-    "partition": "aws",
     "carriers": [
       "AT&T US",
       "Arelion",
       "EXA Infrastructure"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "QTDC2",
@@ -5098,12 +5098,12 @@
       "Windstream",
       "Zayo"
     ],
-    "partition": "aws",
     "carriers": [
       "AT&T US",
       "Arelion",
       "FiberLight LLC"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "TLLPJ",
@@ -5141,10 +5141,10 @@
       "Verizon",
       "Zayo"
     ],
-    "partition": "aws",
     "carriers": [
       "FiberLight LLC"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "TLXA1",
@@ -5190,7 +5190,6 @@
       "XO Communications",
       "Zayo"
     ],
-    "partition": "aws",
     "carriers": [
       "Arelion",
       "Clouvider",
@@ -5199,7 +5198,8 @@
       "Global Secure Layer",
       "Shift Hosting",
       "i3D.net"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "COL67",
@@ -5230,11 +5230,11 @@
       "XO Communications",
       "Zayo"
     ],
-    "partition": "aws",
     "carriers": [
       "AT&T US",
       "Arelion"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "COLM3",
@@ -5269,13 +5269,13 @@
       "XO Communications",
       "Zayo"
     ],
-    "partition": "aws",
     "carriers": [
       "AT&T US",
       "Hoyos Consulting",
       "ImOn Communications",
       "US Internet"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "CSCH1",
@@ -5312,7 +5312,6 @@
       "Windstream",
       "Zayo"
     ],
-    "partition": "aws",
     "campus": {
       "facilities": [
         "CoreSite - Chicago (CH1)",
@@ -5324,7 +5323,8 @@
       "Arelion",
       "Macarne",
       "South Front Networks"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "CYOA1",
@@ -5355,10 +5355,10 @@
       "Megaport",
       "Zayo"
     ],
-    "partition": "aws",
     "carriers": [
       "Bluebird Network"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "CYOW3",
@@ -5395,12 +5395,12 @@
       "Verizon",
       "Zayo"
     ],
-    "partition": "aws",
     "carriers": [
       "AT&T US",
       "Arelion",
       "FiberLight LLC"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "EQC50",
@@ -5459,7 +5459,6 @@
       "XO Communications",
       "Zayo"
     ],
-    "partition": "aws",
     "carriers": [
       "AT&T US",
       "Arelion",
@@ -5474,7 +5473,8 @@
       "WIN Technology, LLC",
       "Ziply Fiber",
       "i3D.net"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "NPKC1",
@@ -5518,14 +5518,14 @@
       "Windstream",
       "Zayo"
     ],
-    "partition": "aws",
     "carriers": [
       "AT&T US",
       "Arelion",
       "Bluebird Network",
       "KCFiber",
       "Midco"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "QTS52",
@@ -5555,11 +5555,11 @@
       "QTS",
       "Zayo"
     ],
-    "partition": "aws",
     "carriers": [
       "AT&T US",
       "Arelion"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "CSOW",
@@ -5610,7 +5610,6 @@
       "Vodafone",
       "Zayo"
     ],
-    "partition": "aws",
     "campus": {
       "facilities": [
         "CoreSite - Los Angeles (LA1) One Wilshire",
@@ -5629,7 +5628,8 @@
       "SG.GS",
       "Vocus",
       "i3D.net"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "CSSV2",
@@ -5651,7 +5651,6 @@
     "providers": [
       "CoreSite"
     ],
-    "partition": "aws",
     "campus": {
       "facilities": [
         "CoreSite - San Jose (SV1)",
@@ -5666,7 +5665,8 @@
     },
     "carriers": [
       "AT&T US"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "CSSV4",
@@ -5705,7 +5705,6 @@
       "XO Communications",
       "Zayo"
     ],
-    "partition": "aws",
     "campus": {
       "facilities": [
         "CoreSite - San Jose (SV1)",
@@ -5721,7 +5720,8 @@
     "carriers": [
       "AT&T US",
       "Arelion"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "ECPH1",
@@ -5760,11 +5760,11 @@
       "XO Communications",
       "Zayo"
     ],
-    "partition": "aws",
     "carriers": [
       "AT&T US",
       "Arelion"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "EQLA3",
@@ -5797,12 +5797,12 @@
       "XO Communications",
       "Zayo"
     ],
-    "partition": "aws",
     "carriers": [
       "AT&T US",
       "Global Secure Layer",
       "i3D.net"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "EQSV5",
@@ -5860,7 +5860,6 @@
       "XO Communications",
       "Zayo"
     ],
-    "partition": "aws",
     "carriers": [
       "AT&T US",
       "Arelion",
@@ -5869,7 +5868,8 @@
       "SG.GS",
       "Vocus",
       "i3D.net"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "PNP51",
@@ -5898,12 +5898,12 @@
       "XO Communications",
       "Zayo"
     ],
-    "partition": "aws",
     "carriers": [
       "AT&T US",
       "Arelion",
       "Global Secure Layer"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "ALN91",
@@ -5963,7 +5963,6 @@
       "XO Communications",
       "Zayo"
     ],
-    "partition": "aws",
     "campus": {
       "facilities": [
         "CoreSite - Denver (DE1)",
@@ -5977,7 +5976,8 @@
       "Massive Networks",
       "SDN Communications",
       "Ziply Fiber"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "DBLV1",
@@ -6042,7 +6042,6 @@
       "XO Communications",
       "Zayo"
     ],
-    "partition": "aws",
     "campus": {
       "facilities": [
         "EdgeConneX Portland (EDCPOR01)",
@@ -6053,7 +6052,8 @@
     "carriers": [
       "Arelion",
       "Ziply Fiber"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "EQSE2",
@@ -6110,13 +6110,13 @@
       "Zayo",
       "ePLDT"
     ],
-    "partition": "aws",
     "carriers": [
       "Arelion",
       "Global Secure Layer",
       "Ziply Fiber",
       "i3D.net"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "PEH51",
@@ -6148,12 +6148,12 @@
       "XO Communications",
       "Zayo"
     ],
-    "partition": "aws",
     "carriers": [
       "Arelion",
       "Hoyos Consulting",
       "Ziply Fiber"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "SNAP",
@@ -6187,11 +6187,11 @@
       "XO Communications",
       "Zayo"
     ],
-    "partition": "aws",
     "carriers": [
       "AT&T US",
       "Arelion"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "T5ALA",
@@ -6214,10 +6214,10 @@
     "providers": [
       "Telecom Italia Sparkle"
     ],
-    "partition": "aws",
     "carriers": [
       "AT&T US"
-    ]
+    ],
+    "partition": "aws"
   },
   {
     "code": "TPS19",
