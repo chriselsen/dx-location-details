@@ -3307,7 +3307,9 @@
     "country": "IT",
     "latitude": "45.448684",
     "longitude": "9.147436",
-    "port_speeds": [],
+    "port_speeds": [
+      "1G"
+    ],
     "macsec_capable": [],
     "providers": [
       "ACP - Init7",

@@ -84,7 +84,7 @@ IPHH3,aws,"Portus/IPHH HH3 (Wendenstrasse 251), Hamburg, DE",Portus Data Centers
 THV52,aws,"Telehouse - Paris 2 (Voltaire - Léon Frot), Paris, FR",Telehouse - Global Data Centers,Telehouse Voltaire,FR,eu-central-1,eu-central-1,"1G, 10G, 100G","10G, 100G",53,48.856654,2.38532
 EQZH5,aws,"Equinix ZH5 - Zurich, Zurich, CH","Equinix, Inc.",Equinix ZH5,CH,eu-central-2,eu-central-2,"1G, 10G, 100G","10G, 100G",1515,47.405667,8.46174
 EQSK1,aws,"Equinix SK1 - Stockholm, Stockholm, SE","Equinix, Inc.",Equinix Sweden SK1,SE,eu-north-1,eu-north-1,"1G, 10G, 100G","10G, 100G",156,59.362574,17.955657
-EQML2,aws,"Equinix ML2 - Milan, Milan, IT","Equinix, Inc.",Equinix ML2,IT,eu-south-1,eu-south-1,,,884,45.448684,9.147436
+EQML2,aws,"Equinix ML2 - Milan, Milan, IT","Equinix, Inc.",Equinix ML2,IT,eu-south-1,eu-south-1,1G,,884,45.448684,9.147436
 EQBA1,aws,"Equinix BA1 - Barcelona, Barcelona, ES","Equinix, Inc.",Equinix BA1,ES,eu-south-2,eu-south-2,"10G, 100G","10G, 100G",122,41.351557,2.137457
 ITXD2,aws,"Digital Realty Dublin DUB1-2, Dublin, IE",Digital Realty,Digital Realty DUB2,IE,eu-west-1,eu-west-1,"1G, 10G, 100G","10G, 100G",177,53.334251,-6.365538
 TCSH,aws,"Digital Realty London LHR20, London, GB",Digital Realty,Digital Realty LHR20,GB,eu-west-1,eu-west-1,"1G, 10G",10G,40,51.499819,-0.010775
