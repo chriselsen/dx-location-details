@@ -257,7 +257,7 @@
     "carriers": [
       "Arelion",
       "BB Backbone",
-      "NTT-ME",
+      "NTT ME",
       "OneQode",
       "RETN",
       "Rakuten Mobile",
@@ -439,6 +439,9 @@
       "NTT East",
       "Softbank",
       "TOKAI Communications"
+    ],
+    "carriers": [
+      "TOKAI Communications Corporation"
     ]
   },
   {
@@ -563,7 +566,8 @@
     "carriers": [
       "BB Backbone",
       "JR West Optical Network(JRWON)",
-      "OPTAGE"
+      "OPTAGE",
+      "TOKAI Communications Corporation"
     ]
   },
   {
@@ -618,10 +622,12 @@
     "longitude": "72.892742",
     "port_speeds": [
       "1G",
-      "10G"
+      "10G",
+      "100G"
     ],
     "macsec_capable": [
-      "10G"
+      "10G",
+      "100G"
     ],
     "providers": [
       "Bharti Airtel",
@@ -4897,10 +4903,6 @@
       "Verizon",
       "XO Communications",
       "Zayo"
-    ],
-    "carriers": [
-      "AT&T US",
-      "Arelion"
     ]
   },
   {

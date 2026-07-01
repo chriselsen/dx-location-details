@@ -91,7 +91,7 @@
     "carriers": [
       "Arelion",
       "BB Backbone",
-      "NTT-ME",
+      "NTT ME",
       "OneQode",
       "RETN",
       "Rakuten Mobile",
@@ -2322,7 +2322,8 @@
     "carriers": [
       "BB Backbone",
       "JR West Optical Network(JRWON)",
-      "OPTAGE"
+      "OPTAGE",
+      "TOKAI Communications Corporation"
     ],
     "city": "Osaka",
     "coordinates": {
@@ -2365,10 +2366,6 @@
     "peeringdb_id": "7674"
   },
   "LGT50": {
-    "carriers": [
-      "AT&T US",
-      "Arelion"
-    ],
     "city": "Philadelphia",
     "coordinates": {
       "lat": "39.959668",
@@ -2530,6 +2527,9 @@
     "peeringdb_id": "6792"
   },
   "NEIN2": {
+    "carriers": [
+      "TOKAI Communications Corporation"
+    ],
     "city": "Inzai-shi",
     "coordinates": {
       "lat": "35.808986",

@@ -14,7 +14,7 @@ TLS10,aws,"Digital Realty ICN10 - Seoul, Mapo-gu, KR",Digital Realty,Digital Rea
 LGKNX,aws,"KINX Gasan, Seoul, KR",KINX Inc.,KINX Gasen,KR,ap-northeast-2,ap-northeast-2,"1G, 10G",10G,7674,37.482096,126.879733
 LGU57,aws,"LG Uplus Pyeongchon IDC, Anyang-si, KR",LG Uplus Corp.,LG U+ Pyeong-Chon Mega Center,KR,ap-northeast-2,ap-northeast-2,"1G, 10G, 100G","10G, 100G",7573,37.397891,126.9648961
 KDOS2,aws,"Telehouse – OSAKA 1&2, Osaka, JP",Telehouse - Global Data Centers,KDDI Telehouse Osaka 2,JP,ap-northeast-3,ap-northeast-3,"1G, 10G, 100G","10G, 100G",3068,34.693119,135.534371
-GPX51,aws,"Equinix MB1 - Mumbai (GPX Mumbai 1), Mumbai, IN","Equinix, Inc.",Equinix MB1,IN,ap-south-1,ap-south-1,"1G, 10G",10G,2310,19.113908,72.892742
+GPX51,aws,"Equinix MB1 - Mumbai (GPX Mumbai 1), Mumbai, IN","Equinix, Inc.",Equinix MB1,IN,ap-south-1,ap-south-1,"1G, 10G, 100G","10G, 100G",2310,19.113908,72.892742
 EQMB2,aws,"Equinix MB2 - Mumbai (GPX Mumbai 2), Mumbai, IN","Equinix, Inc.",Equinix MB2,IN,ap-south-1,ap-south-1,"1G, 10G, 100G","10G, 100G",7377,19.109353,72.901441
 NMBL2,aws,"Netmagic Bangalore DC02, Bangalore, IN",NTTCINS,NetMagic DC2,IN,ap-south-1,ap-south-1,"1G, 10G",10G,7988,12.839551,77.662274
 TCDC1,aws,"STT Chennai 1, Chennai, IN",ST Telemedia Global Data Centres (STT GDC),STT GDC INDIA PVT. LTD. VSB,IN,ap-south-1,ap-south-1,"1G, 10G, 100G","10G, 100G",6778,13.068351,80.278869
