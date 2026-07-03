@@ -3398,7 +3398,9 @@
       "1G",
       "10G"
     ],
-    "macsec_capable": [],
+    "macsec_capable": [
+      "10G"
+    ],
     "providers": [
       "ACP - Init7",
       "Colt",
