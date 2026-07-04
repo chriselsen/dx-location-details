@@ -76,7 +76,7 @@ EQFA5,aws,"Equinix FR5 - Frankfurt, Frankfurt, DE","Equinix, Inc.",Equinix FR5,D
 EQHE6,aws,"Equinix HE6 - Helsinki, Espoo, FI","Equinix, Inc.",Equinix HE6,FI,eu-central-1,eu-central-1,"1G, 10G",,2516,60.203031,24.777861
 EQIL4,aws,"Equinix IL4 - Istanbul, Istanbul, TR","Equinix, Inc.",Equinix IL4,TR,eu-central-1,eu-central-1,"10G, 100G","10G, 100G",15498,41.008655,29.156655
 ITCM2,aws,"Equinix MD2 - Madrid, Alcobendas, ES","Equinix, Inc.",Equinix Itconic MD2,ES,eu-central-1,eu-central-1,"1G, 10G, 100G","10G, 100G",127,40.536855,-3.648584
-EQMU1,aws,"Equinix MU1/MU3 - Munich, Munich, DE","Equinix, Inc.",Equinix MU1,DE,eu-central-1,eu-central-1,"1G, 10G",10G,480,48.143056,11.55584
+EQMU1,aws,"Equinix MU1/MU3 - Munich, Munich, DE","Equinix, Inc.",Equinix MU1,DE,eu-central-1,eu-central-1,,,480,48.143056,11.55584
 EQWA1,aws,"Equinix WA1 - Warsaw, Warsaw, PL","Equinix, Inc.",Equinix WA1,PL,eu-central-1,eu-central-1,"1G, 10G",,509,52.227354,21.003357
 MOILH,aws,"MedOne TC1, Tirat Carmel, IL",Med-1 IC-1 (1999) LTD.,MedOne,IL,eu-central-1,eu-central-1,"1G, 10G, 100G","10G, 100G",7177,32.770949,34.966486
 DGPU1,aws,"OSL01 - Vaultica Data Centers, Oslo, NO",Vaultica Data Centers - NORDICS,DigiPlex Ulven,NO,eu-central-1,eu-central-1,"1G, 10G",10G,345,59.924726,10.810183
@@ -118,7 +118,7 @@ LGT50,aws,"Crown Castle Philadelphia (401 N Broad), Philadelphia, PA, US",Crown 
 TLXA1,aws,"Digital Realty ATL (56 Marietta), Atlanta, GA, US",Digital Realty,Digital Realty ATL13,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",125,33.755456,-84.39153
 TLLPJ,aws,"Digital Realty IAD (44100 Digital Loudoun), Ashburn, VA, US",Digital Realty,Digital Realty IAD38,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",4745,39.001795,-77.47841
 EQDA2,aws,"Equinix DA - Dallas (previously Infomart Dallas), Dallas, TX, US","Equinix, Inc.",Equinix DA2,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",505,32.800748,-96.819412
-EQDC2,aws,"Equinix DC1-DC15, Ashburn, VA, US","Equinix, Inc.",Equinix DC2/DC11,US,us-east-1,us-east-1,"1G, 10G, 100G",10G,1,39.016363,-77.459023
+EQDC2,aws,"Equinix DC1-DC15, Ashburn, VA, US","Equinix, Inc.",Equinix DC2/DC11,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",1,39.016363,-77.459023
 EQMI1,aws,"Equinix MI1 - Miami, Miami, FL, US","Equinix, Inc.",Equinix MI1,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",15,25.782648,-80.193157
 EQNY5,aws,"Equinix NY2/NY4/NY5/NY6 - New York, Secaucus, NJ, US","Equinix, Inc.",Equinix NY5,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",36,40.778534,-74.072237
 KIOQ1,aws,"KIO Querétaro 1 (QRO1), El Marques, MX",KIO,KIO Networks QRO 1,MX,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",1778,20.567915,-100.254141
