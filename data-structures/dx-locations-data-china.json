@@ -30,10 +30,7 @@
     "country": "CN",
     "latitude": "22.507249",
     "longitude": "114.045065",
-    "port_speeds": [
-      "1G",
-      "10G"
-    ],
+    "port_speeds": [],
     "macsec_capable": [],
     "providers": []
   },
