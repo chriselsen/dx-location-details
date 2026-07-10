@@ -19,7 +19,10 @@
       "10G",
       "100G"
     ],
-    "providers": []
+    "providers": [
+      "DE-CIX",
+      "euNetworks Fiber UK"
+    ]
   },
   {
     "code": "IPBTF",
@@ -41,6 +44,10 @@
       "10G",
       "100G"
     ],
-    "providers": []
+    "providers": [
+      "Colt Technology Services",
+      "DE-CIX",
+      "euNetworks Fiber UK"
+    ]
   }
 ]

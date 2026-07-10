@@ -2851,6 +2851,7 @@
       "BSO Network Solutions",
       "Interxion",
       "Lumen",
+      "NL-ix",
       "NOS"
     ],
     "carriers": [
@@ -6414,7 +6415,10 @@
       "10G",
       "100G"
     ],
-    "providers": [],
+    "providers": [
+      "DE-CIX",
+      "euNetworks Fiber UK"
+    ],
     "carriers": [
       "euNetworks"
     ]
@@ -6439,7 +6443,11 @@
       "10G",
       "100G"
     ],
-    "providers": [],
+    "providers": [
+      "Colt Technology Services",
+      "DE-CIX",
+      "euNetworks Fiber UK"
+    ],
     "carriers": [
       "31173 Services",
       "Arelion",
