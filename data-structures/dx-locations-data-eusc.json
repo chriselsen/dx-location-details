@@ -45,6 +45,7 @@
       "100G"
     ],
     "providers": [
+      "56k/Init7",
       "Colt Technology Services",
       "DE-CIX",
       "euNetworks Fiber UK"
