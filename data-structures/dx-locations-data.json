@@ -4165,10 +4165,12 @@
     "longitude": "-76.973532",
     "port_speeds": [
       "1G",
-      "10G"
+      "10G",
+      "100G"
     ],
     "macsec_capable": [
-      "10G"
+      "10G",
+      "100G"
     ],
     "providers": [
       "Americatel",

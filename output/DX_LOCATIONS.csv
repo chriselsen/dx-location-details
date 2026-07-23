@@ -105,7 +105,7 @@ IPBTF,aws-eusc,"CarrierColo Berlin Luetzow (I/P/B/ site B), Berlin, DE",IPB Inte
 ECTL1,aws,"EdgeConneX Tel Aviv (EDCTLV01), Herzliya, IL",EdgeConneX Inc.,Edgeconnex,IL,il-central-1,il-central-1,"1G, 10G",10G,11734,32.052681,34.770992
 EQMX1,aws,"Equinix MX1/MX2 - Mexico City, El Marques, MX","Equinix, Inc.",Equinix MX1,MX,mx-central-1,mx-central-1,"10G, 100G","10G, 100G",8434,20.556925,-100.277833
 CIBNA,aws,"Cirion Buenos Aires - BUE1, Buenos Aires, AR",Cirion,Cirion BNARAGMS,AR,sa-east-1,sa-east-1,"1G, 10G, 100G","10G, 100G",1550,-34.590248,-58.467164
-CILIM,aws,"Cirion Lima - LIM1, Santiago de Surco, PE",Cirion,Cirion LIMAPUCD,PE,sa-east-1,sa-east-1,"1G, 10G",10G,6248,-12.094823,-76.973532
+CILIM,aws,"Cirion Lima - LIM1, Santiago de Surco, PE",Cirion,Cirion LIMAPUCD,PE,sa-east-1,sa-east-1,"1G, 10G, 100G","10G, 100G",6248,-12.094823,-76.973532
 EQBG1,aws,"Equinix BG1 - Bogota, Bogota, CO","Equinix, Inc.",Equinix BG1,CO,sa-east-1,sa-east-1,"1G, 10G, 100G","10G, 100G",1354,4.671384,-74.156026
 EQRJ2,aws,"Equinix RJ2 - Rio de Janeiro, Rio de Janeiro, BR","Equinix, Inc.",Equinix RJ2,BR,sa-east-1,sa-east-1,"1G, 10G, 100G","10G, 100G",1899,-22.871261,-43.272742
 TNDB,aws,"Equinix SP4 - São Paulo, Barueri, BR","Equinix, Inc.",Equinix SP4,BR,sa-east-1,sa-east-1,"1G, 10G, 100G","10G, 100G",165,-23.497589,-46.814577
