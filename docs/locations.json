@@ -1,7 +1,7 @@
 {
   "description": "AWS Direct Connect colocation facility locations across all AWS partitions.",
   "source": "https://github.com/chriselsen/dx-location-details",
-  "last_updated": "2026-07-31T02:12:12Z",
+  "last_updated": "2026-08-01T03:14:08Z",
   "fields": {
     "code": "AWS Direct Connect location code (used in API calls)",
     "region": "AWS region code for managing Direct Connect resources at this location",
@@ -290,7 +290,8 @@
         "OneQode",
         "RETN",
         "Rakuten Mobile",
-        "SG.GS"
+        "SG.GS",
+        "TOKAI Communications Corporation"
       ],
       "partition": "aws"
     },
@@ -1594,7 +1595,7 @@
       "code": "DCIJ3",
       "region": "ap-southeast-3",
       "region_opt_status": "ENABLED",
-      "name": "DCI Indonesia (JK3), Bekasi, Cibitung, ID",
+      "name": "DCI Indonesia (JK3), Greater Jakarta, Bekasi, Cibitung, ID",
       "aws_name": "DCI Indonesia",
       "peeringdb_id": "8169",
       "org_id": 23644,
@@ -2212,7 +2213,7 @@
       "code": "DGPU1",
       "region": "eu-central-1",
       "region_opt_status": "ENABLED_BY_DEFAULT",
-      "name": "OSL01 - Vaultica Data Centers, Oslo, NO",
+      "name": "Vaultica Data Centers | OSL01, Oslo, NO",
       "aws_name": "DigiPlex Ulven",
       "peeringdb_id": "345",
       "org_id": 603,
@@ -2582,6 +2583,7 @@
         "Arelion",
         "Global Network Management",
         "Global Secure Layer",
+        "Inter.link",
         "NetIX",
         "Orange Wholesale International - EVPL",
         "RETN",
@@ -2752,6 +2754,7 @@
       ],
       "carriers": [
         "EXA Infrastructure",
+        "Inter.link",
         "LWLcom",
         "TKRZ Stadtwerke",
         "euNetworks",
@@ -2815,7 +2818,7 @@
       "code": "ITXA1",
       "region": "eu-central-1",
       "region_opt_status": "ENABLED_BY_DEFAULT",
-      "name": "Digital Realty Athens Campus (ATH1, Koropi, GR",
+      "name": "Digital Realty ATH1/2/3 - Athens, Koropi, GR",
       "aws_name": "Digital Realty ATH3",
       "peeringdb_id": "1949",
       "org_id": 8592,
@@ -2856,7 +2859,7 @@
       "code": "ITXA7",
       "region": "eu-central-1",
       "region_opt_status": "ENABLED_BY_DEFAULT",
-      "name": "Digital Realty Amsterdam AMS3, Amsterdam, NL",
+      "name": "Digital Realty AMS3/5/7/8/10 - Amsterdam, Amsterdam, NL",
       "aws_name": "Digital Realty AMS7",
       "peeringdb_id": "64",
       "org_id": 8592,
@@ -2878,6 +2881,13 @@
         "NL-ix",
         "NOS"
       ],
+      "campus": {
+        "facilities": [
+          "Digital Realty AMS3/5/7/8/10 - Amsterdam",
+          "Digital Realty AMS11 - Amsterdam"
+        ],
+        "name": "Digital Realty Amsterdam Schiphol Campus"
+      },
       "carriers": [
         "Afiber",
         "Arcadiz",
@@ -3025,6 +3035,7 @@
         "AXENT",
         "Core-Backbone",
         "EXA Infrastructure",
+        "Inter.link",
         "RETN",
         "ZET.NET Backbone",
         "euNetworks"
@@ -3077,6 +3088,7 @@
         "DNA",
         "Elisa Carrier Business",
         "Global Network Management",
+        "Inter.link",
         "Nextremum",
         "Obenet",
         "Portlane",
@@ -3090,7 +3102,7 @@
       "code": "ITXV2",
       "region": "eu-central-1",
       "region_opt_status": "ENABLED_BY_DEFAULT",
-      "name": "Digital Realty Vienna VIE1-2, Vienna, AT",
+      "name": "Digital Realty VIE1/2 - Vienna, Vienna, AT",
       "aws_name": "Digital Realty VIE2",
       "peeringdb_id": "67",
       "org_id": 8592,
@@ -3121,6 +3133,7 @@
       ],
       "carriers": [
         "Arelion",
+        "Aristo Networks",
         "Core-Backbone",
         "EXA Infrastructure",
         "Eranium Fabric",
@@ -3823,6 +3836,7 @@
         "RETN",
         "Rocket Fibre",
         "SG.GS",
+        "System-Net SAS",
         "Telxius",
         "Terralpha",
         "ZET.NET Backbone",
@@ -4117,6 +4131,7 @@
       },
       "carriers": [
         "Arelion",
+        "Aristo Networks",
         "Eurofiber France",
         "Free Pro",
         "Global Secure Layer",
@@ -5181,7 +5196,7 @@
       "code": "TLXA1",
       "region": "us-east-1",
       "region_opt_status": "ENABLED_BY_DEFAULT",
-      "name": "Digital Realty ATL (56 Marietta), Atlanta, GA, US",
+      "name": "Digital Realty ATL13 - Atlanta, Atlanta, GA, US",
       "aws_name": "Digital Realty ATL13",
       "peeringdb_id": "125",
       "org_id": 8592,

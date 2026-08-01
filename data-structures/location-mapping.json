@@ -95,7 +95,8 @@
       "OneQode",
       "RETN",
       "Rakuten Mobile",
-      "SG.GS"
+      "SG.GS",
+      "TOKAI Communications Corporation"
     ],
     "city": "Tokyo",
     "coordinates": {
@@ -689,7 +690,7 @@
       ],
       "name": "DCI Indonesia H1 Campus (Cibitung)"
     },
-    "city": "Bekasi, Cibitung",
+    "city": "Greater Jakarta, Bekasi, Cibitung",
     "coordinates": {
       "lat": "-6.299731",
       "lon": "107.089244"
@@ -714,7 +715,7 @@
       "lon": "10.810183"
     },
     "country": "NO",
-    "facility_name": "OSL01 - Vaultica Data Centers",
+    "facility_name": "Vaultica Data Centers | OSL01",
     "org_id": 603,
     "org_name": "Vaultica Data Centers - NORDICS",
     "peeringdb_id": "345"
@@ -1465,6 +1466,7 @@
     },
     "carriers": [
       "Arelion",
+      "Aristo Networks",
       "Eurofiber France",
       "Free Pro",
       "Global Secure Layer",
@@ -1701,6 +1703,7 @@
       "Arelion",
       "Global Network Management",
       "Global Secure Layer",
+      "Inter.link",
       "NetIX",
       "Orange Wholesale International - EVPL",
       "RETN",
@@ -1961,6 +1964,7 @@
   "IPHH3": {
     "carriers": [
       "EXA Infrastructure",
+      "Inter.link",
       "LWLcom",
       "TKRZ Stadtwerke",
       "euNetworks",
@@ -2025,12 +2029,19 @@
       "lon": "23.870251"
     },
     "country": "GR",
-    "facility_name": "Digital Realty Athens Campus (ATH1, ATH2, ATH3)",
+    "facility_name": "Digital Realty ATH1/2/3 - Athens",
     "org_id": 8592,
     "org_name": "Digital Realty",
     "peeringdb_id": "1949"
   },
   "ITXA7": {
+    "campus": {
+      "facilities": [
+        "Digital Realty AMS3/5/7/8/10 - Amsterdam",
+        "Digital Realty AMS11 - Amsterdam"
+      ],
+      "name": "Digital Realty Amsterdam Schiphol Campus"
+    },
     "carriers": [
       "Afiber",
       "Arcadiz",
@@ -2052,7 +2063,7 @@
       "lon": "4.770855"
     },
     "country": "NL",
-    "facility_name": "Digital Realty Amsterdam AMS3, AMS5-8, AMS10",
+    "facility_name": "Digital Realty AMS3/5/7/8/10 - Amsterdam",
     "org_id": 8592,
     "org_name": "Digital Realty",
     "peeringdb_id": "64"
@@ -2120,6 +2131,7 @@
       "RETN",
       "Rocket Fibre",
       "SG.GS",
+      "System-Net SAS",
       "Telxius",
       "Terralpha",
       "ZET.NET Backbone",
@@ -2186,6 +2198,7 @@
       "AXENT",
       "Core-Backbone",
       "EXA Infrastructure",
+      "Inter.link",
       "RETN",
       "ZET.NET Backbone",
       "euNetworks"
@@ -2229,6 +2242,7 @@
       "DNA",
       "Elisa Carrier Business",
       "Global Network Management",
+      "Inter.link",
       "Nextremum",
       "Obenet",
       "Portlane",
@@ -2250,6 +2264,7 @@
   "ITXV2": {
     "carriers": [
       "Arelion",
+      "Aristo Networks",
       "Core-Backbone",
       "EXA Infrastructure",
       "Eranium Fabric",
@@ -2270,7 +2285,7 @@
       "lon": "16.410613"
     },
     "country": "AT",
-    "facility_name": "Digital Realty Vienna VIE1-2",
+    "facility_name": "Digital Realty VIE1/2 - Vienna",
     "org_id": 8592,
     "org_name": "Digital Realty",
     "peeringdb_id": "67"
@@ -3048,7 +3063,7 @@
       "lon": "-84.39153"
     },
     "country": "US",
-    "facility_name": "Digital Realty ATL (56 Marietta)",
+    "facility_name": "Digital Realty ATL13 - Atlanta",
     "org_id": 8592,
     "org_name": "Digital Realty",
     "peeringdb_id": "125",

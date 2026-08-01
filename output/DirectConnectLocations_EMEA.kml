@@ -56,7 +56,7 @@
   <Placemark>
     <name>DGPU1</name>
     <description><![CDATA[
-      <b>OSL01 - Vaultica Data Centers, Oslo, NO</b><br/>
+      <b>Vaultica Data Centers | OSL01, Oslo, NO</b><br/>
       Region: eu-central-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -155,7 +155,7 @@
   <Placemark>
     <name>ITXA1</name>
     <description><![CDATA[
-      <b>Digital Realty Athens Campus (ATH1, Koropi, GR</b><br/>
+      <b>Digital Realty ATH1/2/3 - Athens, Koropi, GR</b><br/>
       Region: eu-central-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -164,7 +164,7 @@
   <Placemark>
     <name>ITXA7</name>
     <description><![CDATA[
-      <b>Digital Realty Amsterdam AMS3, Amsterdam, NL</b><br/>
+      <b>Digital Realty AMS3/5/7/8/10 - Amsterdam, Amsterdam, NL</b><br/>
       Region: eu-central-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -209,7 +209,7 @@
   <Placemark>
     <name>ITXV2</name>
     <description><![CDATA[
-      <b>Digital Realty Vienna VIE1-2, Vienna, AT</b><br/>
+      <b>Digital Realty VIE1/2 - Vienna, Vienna, AT</b><br/>
       Region: eu-central-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
