@@ -6434,6 +6434,7 @@
       "100G"
     ],
     "providers": [
+      "56k/Init7",
       "DE-CIX",
       "euNetworks Fiber UK"
     ],

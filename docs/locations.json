@@ -1,7 +1,7 @@
 {
   "description": "AWS Direct Connect colocation facility locations across all AWS partitions.",
   "source": "https://github.com/chriselsen/dx-location-details",
-  "last_updated": "2026-08-10T01:16:40Z",
+  "last_updated": "2026-08-11T01:15:42Z",
   "fields": {
     "code": "AWS Direct Connect location code (used in API calls)",
     "region": "AWS region code for managing Direct Connect resources at this location",
@@ -6457,6 +6457,7 @@
         "100G"
       ],
       "providers": [
+        "56k/Init7",
         "DE-CIX",
         "euNetworks Fiber UK"
       ],
