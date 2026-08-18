@@ -4154,6 +4154,7 @@
       "100G"
     ],
     "providers": [
+      "ANTEL",
       "Lumen"
     ],
     "carriers": [
