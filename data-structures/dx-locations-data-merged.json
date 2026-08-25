@@ -1009,11 +1009,9 @@
     "longitude": "103.893828",
     "port_speeds": [
       "1G",
-      "10G",
       "100G"
     ],
     "macsec_capable": [
-      "10G",
       "100G"
     ],
     "providers": [
