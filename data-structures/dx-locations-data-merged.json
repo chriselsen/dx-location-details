@@ -5313,11 +5313,13 @@
     "longitude": "-87.631453",
     "port_speeds": [
       "10G",
-      "100G"
+      "100G",
+      "400G"
     ],
     "macsec_capable": [
       "10G",
-      "100G"
+      "100G",
+      "400G"
     ],
     "providers": [
       "AT&T",
