@@ -1008,12 +1008,9 @@
     "latitude": "1.336723",
     "longitude": "103.893828",
     "port_speeds": [
-      "1G",
-      "100G"
+      "1G"
     ],
-    "macsec_capable": [
-      "100G"
-    ],
+    "macsec_capable": [],
     "providers": [
       "1CloudStar",
       "AT&T",
@@ -5313,13 +5310,11 @@
     "longitude": "-87.631453",
     "port_speeds": [
       "10G",
-      "100G",
-      "400G"
+      "100G"
     ],
     "macsec_capable": [
       "10G",
-      "100G",
-      "400G"
+      "100G"
     ],
     "providers": [
       "AT&T",
