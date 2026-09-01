@@ -1,7 +1,7 @@
 {
   "description": "AWS Direct Connect colocation facility locations across all AWS partitions.",
   "source": "https://github.com/chriselsen/dx-location-details",
-  "last_updated": "2026-08-27T06:39:18Z",
+  "last_updated": "2026-09-01T07:12:53Z",
   "fields": {
     "code": "AWS Direct Connect location code (used in API calls)",
     "region": "AWS region code for managing Direct Connect resources at this location",
@@ -2582,6 +2582,7 @@
         "NetIX",
         "Orange Wholesale International - EVPL",
         "RETN",
+        "Rocket Fibre",
         "SG.GS",
         "ZET.NET Backbone",
         "euNetworks",
@@ -4866,6 +4867,7 @@
         "Inter.link",
         "Orange Wholesale International - EVPL",
         "SG.GS",
+        "Shift Hosting",
         "Telxius",
         "ZET.NET Backbone",
         "i3D.net"
