@@ -134,7 +134,7 @@ NPKC1,aws,"Netrality Kansas City - 1102 Grand, Kansas City, MO, US",Netrality Da
 QTS52,aws,"QTS Chicago (CHI1), Chicago, IL, US","QTS Realty Trust, Inc.",QTS,US,us-east-2,us-east-2,"1G, 10G, 100G","10G, 100G",3362,41.841895,-87.668306
 CSOW,aws,"CoreSite - Los Angeles (LA1) One Wilshire, Los Angeles, CA, US",CoreSite,CoreSite LA1,US,us-west-1,us-west-1,"1G, 10G, 100G","10G, 100G",19,34.047942,-118.255564
 CSSV4,aws,"CoreSite - Santa Clara (SV4), Santa Clara, CA, US",CoreSite,CoreSite SV4,US,us-west-1,us-west-1,"1G, 10G, 100G, 400G","10G, 100G, 400G",1619,37.376259,-121.970705
-CSSV2,aws,"Coresite - Milpitas (SV2), Milpitas, CA, US",CoreSite,Coresite SV2,US,us-west-1,us-west-1,"1G, 10G",,671,37.405693,-121.916261
+CSSV2,aws,"Coresite - Milpitas (SV2), Milpitas, CA, US",CoreSite,Coresite SV2,US,us-west-1,us-west-1,"1G, 10G, 100G",,671,37.405693,-121.916261
 ECPH1,aws,"EdgeConneX Phoenix (EDCPHX01), Tempe, AZ, US",EdgeConneX Inc.,EdgeConnex PHX01,US,us-west-1,us-west-1,"10G, 100G, 400G","10G, 100G, 400G",1917,33.395544,-111.97012
 EQLA3,aws,"Equinix LA3/LA4 - Los Angeles, El Segundo, CA, US","Equinix, Inc.",Equinix LA3,US,us-west-1,us-west-1,"1G, 10G, 100G","10G, 100G",333,33.921239,-118.383778
 EQSV5,aws,"Equinix SV1/SV5/SV10 - Silicon Valley, San Jose, CA, US","Equinix, Inc.",Equinix SV5,US,us-west-1,us-west-1,"1G, 10G, 100G","10G, 100G",6,37.241767,-121.782967
