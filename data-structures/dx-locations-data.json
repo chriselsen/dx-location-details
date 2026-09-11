@@ -4152,6 +4152,7 @@
     ],
     "providers": [
       "ANTEL",
+      "Cirion Technologies Solutions, LLC",
       "Lumen"
     ],
     "carriers": [
@@ -4188,6 +4189,7 @@
     ],
     "providers": [
       "Americatel",
+      "Cirion Technologies Solutions, LLC",
       "Claro",
       "Commerce",
       "Convergia",
@@ -4231,6 +4233,7 @@
       "100G"
     ],
     "providers": [
+      "Cirion Technologies Solutions, LLC",
       "Liberty Global",
       "Lumen",
       "Orange Business",
@@ -4272,6 +4275,7 @@
     ],
     "providers": [
       "China Mobile International",
+      "Cirion Technologies Solutions, LLC",
       "Equinix",
       "T-Systems Brazil",
       "Telecom Italia Sparkle",
@@ -4311,6 +4315,7 @@
     ],
     "providers": [
       "Cirion",
+      "Cirion Technologies Solutions, LLC",
       "Claro",
       "Entel",
       "GTD",
@@ -4347,6 +4352,7 @@
       "Ascenty",
       "BT",
       "China Mobile International",
+      "Cirion Technologies Solutions, LLC",
       "Lumen",
       "T-Systems Brazil",
       "TIVIT",
@@ -4384,6 +4390,7 @@
       "BT",
       "China Mobile International",
       "China Telecom",
+      "Cirion Technologies Solutions, LLC",
       "Equinix",
       "InterCloud",
       "Lumen",
@@ -4876,6 +4883,7 @@
     "providers": [
       "American Tower Communications",
       "C3ntro Telecom",
+      "Cirion Technologies Solutions, LLC",
       "FLO Networks",
       "KIO Networks"
     ],
