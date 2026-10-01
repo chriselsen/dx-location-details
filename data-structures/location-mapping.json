@@ -1466,6 +1466,7 @@
       "name": "Equinix Paris (Saint-Denis)"
     },
     "carriers": [
+      "ALTEASYSTEMS",
       "Arelion",
       "Aristo Networks",
       "Eurofiber France",
@@ -2118,6 +2119,7 @@
   },
   "ITXM1": {
     "carriers": [
+      "ALTEASYSTEMS",
       "ARTERIA",
       "AXENT",
       "Arelion",

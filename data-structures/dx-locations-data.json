@@ -3711,6 +3711,7 @@
       "Vodafone"
     ],
     "carriers": [
+      "ALTEASYSTEMS",
       "ARTERIA",
       "AXENT",
       "Arelion",
@@ -4014,6 +4015,7 @@
       "name": "Equinix Paris (Saint-Denis)"
     },
     "carriers": [
+      "ALTEASYSTEMS",
       "Arelion",
       "Aristo Networks",
       "Eurofiber France",
