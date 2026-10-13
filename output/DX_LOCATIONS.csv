@@ -24,7 +24,7 @@ TCDK1,aws,"STT Kolkata 1, Kolkata, IN",ST Telemedia Global Data Centres (STT GDC
 SFY52,aws,"Sify Rabale - Mumbai, Navi Mumbai, IN",Sify Technologies Limited,Sify Rabale,IN,ap-south-1,ap-south-1,"1G, 10G",10G,2465,19.147451,73.014195
 AIMMN,aws,"AIMS Kuala Lumpur, Kuala Lumpur, MY",AIMS Data Centre Sdn Bhd,Menara AIMS,MY,ap-southeast-1,ap-southeast-1,"1G, 10G, 100G","10G, 100G",460,3.14969,101.70634
 EQSG2,aws,"Equinix SG2 - Singapore, Singapore, SG","Equinix, Inc.",Equinix SG2,SG,ap-southeast-1,ap-southeast-1,"1G, 10G, 100G","10G, 100G",705,1.321502,103.695359
-GSS52,aws,"Global Switch Singapore, Singapore, SG",Global Switch,Global Switch,SG,ap-southeast-1,ap-southeast-1,"1G, 10G",10G,388,1.336723,103.893828
+GSS52,aws,"Global Switch Singapore, Singapore, SG",Global Switch,Global Switch,SG,ap-southeast-1,ap-southeast-1,"1G, 10G, 100G","10G, 100G",388,1.336723,103.893828
 IAMGI,aws,"MEGA-i (iAdvantage Hong Kong), Hong Kong, HK",iAdvantage Hong Kong,iAdvantage MEGA-i,HK,ap-southeast-1,ap-southeast-1,"1G, 10G, 100G","10G, 100G",225,22.266098,114.246512
 TCCBK,aws,"TCC Technology Data Center- Bangkok, Bangkok, TH","TCC Technology Co., Ltd",TCC,TH,ap-southeast-1,ap-southeast-1,"1G, 10G, 100G","10G, 100G",4139,13.663651,100.651345
 EPVM2,aws,"VITRO Makati 2, Makati, PH",Vitro Inc.,ePLDT VM2,PH,ap-southeast-1,ap-southeast-1,"1G, 10G, 100G","10G, 100G",4809,14.564484,121.022368
