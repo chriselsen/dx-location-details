@@ -126,7 +126,7 @@ MB1SD,aws,"Markley Group One Summer Street Boston, Boston, MA, US","Markley Grou
 QTDC2,aws,"QTS Atlanta-Metro (ATL1), Atlanta, GA, US","QTS Realty Trust, Inc.",QTS ATL1,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",581,33.777526,-84.421036
 COL67,aws,"Cologix COL2, Columbus, OH, US","Cologix, Inc.",Cologix COL2,US,us-east-2,us-east-2,"1G, 10G, 100G","10G, 100G",2378,40.116491,-83.001985
 COLM3,aws,"Cologix MIN3, Minneapolis, MN, US","Cologix, Inc.",Cologix MIN3,US,us-east-2,us-east-2,"1G, 10G, 100G","10G, 100G",3312,44.971408,-93.25458
-CSCH1,aws,"CoreSite - Chicago (CH1), Chicago, IL, US",CoreSite,CoreSite CH1,US,us-east-2,us-east-2,"10G, 100G","10G, 100G",440,41.876212,-87.631453
+CSCH1,aws,"CoreSite - Chicago (CH1), Chicago, IL, US",CoreSite,CoreSite CH1,US,us-east-2,us-east-2,"10G, 100G, 400G","10G, 100G, 400G",440,41.876212,-87.631453
 CYOA1,aws,"CyrusOne Aurora I, Aurora, IL, US",CyrusOne Inc.,CyrusOne Aurora A1,US,us-east-2,us-east-2,"10G, 100G","10G, 100G",3143,41.796754,-88.24276
 CYOW3,aws,"Databank Houston West (HOU1) (HOU2), Houston, TX, US","DataBank, Ltd.",DataBank HOU3,US,us-east-2,us-east-2,"1G, 10G, 100G","10G, 100G",1476,29.844182,-95.556656
 EQC50,aws,"Equinix CH1/CH2/CH4 - Chicago, Chicago, IL, US","Equinix, Inc.",Equinix CH2,US,us-east-2,us-east-2,"1G, 10G, 100G","10G, 100G",7,41.85365,-87.618342
