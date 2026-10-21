@@ -659,10 +659,12 @@
     "longitude": "77.662274",
     "port_speeds": [
       "1G",
-      "10G"
+      "10G",
+      "100G"
     ],
     "macsec_capable": [
-      "10G"
+      "10G",
+      "100G"
     ],
     "providers": [
       "Bharti Airtel",
@@ -3898,9 +3900,13 @@
     "longitude": "-2.310421",
     "port_speeds": [
       "1G",
-      "10G"
+      "10G",
+      "100G"
     ],
-    "macsec_capable": [],
+    "macsec_capable": [
+      "10G",
+      "100G"
+    ],
     "providers": [
       "BT",
       "Colt",

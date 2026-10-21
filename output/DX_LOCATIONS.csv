@@ -16,7 +16,7 @@ LGU57,aws,"LG Uplus Pyeongchon IDC, Anyang-si, KR",LG Uplus Corp.,LG U+ Pyeong-C
 KDOS2,aws,"Telehouse – OSAKA 1&2, Osaka, JP",Telehouse - Global Data Centers,KDDI Telehouse Osaka 2,JP,ap-northeast-3,ap-northeast-3,"1G, 10G, 100G","10G, 100G",3068,34.693119,135.534371
 GPX51,aws,"Equinix MB1 - Mumbai (GPX Mumbai 1), Mumbai, IN","Equinix, Inc.",Equinix MB1,IN,ap-south-1,ap-south-1,"1G, 10G, 100G","10G, 100G",2310,19.113908,72.892742
 EQMB2,aws,"Equinix MB2 - Mumbai (GPX Mumbai 2), Mumbai, IN","Equinix, Inc.",Equinix MB2,IN,ap-south-1,ap-south-1,"1G, 10G, 100G","10G, 100G",7377,19.109353,72.901441
-NMBL2,aws,"Netmagic Bangalore DC02, Bangalore, IN",NTTCINS,NetMagic DC2,IN,ap-south-1,ap-south-1,"1G, 10G",10G,7988,12.839551,77.662274
+NMBL2,aws,"Netmagic Bangalore DC02, Bangalore, IN",NTTCINS,NetMagic DC2,IN,ap-south-1,ap-south-1,"1G, 10G, 100G","10G, 100G",7988,12.839551,77.662274
 TCDC1,aws,"STT Chennai 1, Chennai, IN",ST Telemedia Global Data Centres (STT GDC),STT GDC INDIA PVT. LTD. VSB,IN,ap-south-1,ap-south-1,"1G, 10G, 100G","10G, 100G",6778,13.068351,80.278869
 TCDE2,aws,"STT Delhi 2, Delhi, IN",ST Telemedia Global Data Centres (STT GDC),STT Delhi DC2,IN,ap-south-1,ap-south-1,"1G, 10G, 100G","10G, 100G",6786,28.541514,77.240201
 TCHY1,aws,"STT Hyderabad 1, Hyderabad, IN",ST Telemedia Global Data Centres (STT GDC),STT Hyderabad DC1,IN,ap-south-1,ap-south-1,"1G, 10G, 100G","10G, 100G",6781,17.441478,78.377811
@@ -96,7 +96,7 @@ EQLS1,aws,"Equinix LS1 - Lisbon, Lisbon, PT","Equinix, Inc.",Equinix LS1,PT,eu-w
 SCDB9,aws,"Servecentric (Blanchardstown), Dublin, IE",ServeCentric Ltd. (Blanchardstown),Servecentric Unit 9,IE,eu-west-1,eu-west-1,"1G, 10G, 100G","10G, 100G",5901,53.412959,-6.373212
 ETIFJ,aws,"SmartHub Fujairah, Fujairah, AE",Etisalat,Etisalat Smart Hub Data Center,AE,eu-west-1,eu-west-1,"1G, 10G",10G,1493,25.131143,56.336378
 TEJB1,aws,"Teraco Johannesburg Campus, Johannesburg, ZA",Teraco Data Environments Pty Ltd,Teraco JB1,ZA,eu-west-1,eu-west-1,"1G, 10G, 100G","10G, 100G",850,-26.137957,28.197517
-EQMA3,aws,"Equinix MA3 - Manchester, Manchester, GB","Equinix, Inc.",Equinix MA3,GB,eu-west-2,eu-west-2,"1G, 10G",,1403,53.468674,-2.310421
+EQMA3,aws,"Equinix MA3 - Manchester, Manchester, GB","Equinix, Inc.",Equinix MA3,GB,eu-west-2,eu-west-2,"1G, 10G, 100G","10G, 100G",1403,53.468674,-2.310421
 THNO2,aws,"Telehouse - London (Docklands West), London, GB",Telehouse - Global Data Centers,Telehouse West,GB,eu-west-2,eu-west-2,"1G, 10G, 100G","10G, 100G",835,51.511776,-0.002927
 ITXP7,aws,"Digital Realty Paris PAR7, Paris, FR",Digital Realty,Digital Realty PAR7,FR,eu-west-3,eu-west-3,10G,,1536,48.924907,2.403
 EQPA3,aws,"Equinix PA3 - Paris, Paris, FR","Equinix, Inc.",Equinix PA3,FR,eu-west-3,eu-west-3,"1G, 10G, 100G","10G, 100G",717,48.927166,2.350664
