@@ -17,10 +17,10 @@ KDOS2,aws,"Telehouse – OSAKA 1&2, Osaka, JP",Telehouse - Global Data Centers,K
 GPX51,aws,"Equinix MB1 - Mumbai (GPX Mumbai 1), Mumbai, IN","Equinix, Inc.",Equinix MB1,IN,ap-south-1,ap-south-1,"1G, 10G, 100G","10G, 100G",2310,19.113908,72.892742
 EQMB2,aws,"Equinix MB2 - Mumbai (GPX Mumbai 2), Mumbai, IN","Equinix, Inc.",Equinix MB2,IN,ap-south-1,ap-south-1,"1G, 10G, 100G","10G, 100G",7377,19.109353,72.901441
 NMBL2,aws,"Netmagic Bangalore DC02, Bangalore, IN",NTTCINS,NetMagic DC2,IN,ap-south-1,ap-south-1,"1G, 10G, 100G","10G, 100G",7988,12.839551,77.662274
-TCDC1,aws,"STT Chennai 1, Chennai, IN",ST Telemedia Global Data Centres (STT GDC),STT GDC INDIA PVT. LTD. VSB,IN,ap-south-1,ap-south-1,"1G, 10G, 100G","10G, 100G",6778,13.068351,80.278869
-TCDE2,aws,"STT Delhi 2, Delhi, IN",ST Telemedia Global Data Centres (STT GDC),STT Delhi DC2,IN,ap-south-1,ap-south-1,"1G, 10G, 100G","10G, 100G",6786,28.541514,77.240201
-TCHY1,aws,"STT Hyderabad 1, Hyderabad, IN",ST Telemedia Global Data Centres (STT GDC),STT Hyderabad DC1,IN,ap-south-1,ap-south-1,"1G, 10G, 100G","10G, 100G",6781,17.441478,78.377811
-TCDK1,aws,"STT Kolkata 1, Kolkata, IN",ST Telemedia Global Data Centres (STT GDC),STT Kolkata,IN,ap-south-1,ap-south-1,"1G, 10G, 100G","10G, 100G",6780,22.588218,88.392964
+TCDC1,aws,"STTGDC CHN1, Chennai, IN",STTGDC,STT GDC INDIA PVT. LTD. VSB,IN,ap-south-1,ap-south-1,"1G, 10G, 100G","10G, 100G",6778,13.068351,80.278869
+TCDE2,aws,"STTGDC DEL2, Delhi, IN",STTGDC,STT Delhi DC2,IN,ap-south-1,ap-south-1,"1G, 10G, 100G","10G, 100G",6786,28.541514,77.240201
+TCHY1,aws,"STTGDC HYD1, Hyderabad, IN",STTGDC,STT Hyderabad DC1,IN,ap-south-1,ap-south-1,"1G, 10G, 100G","10G, 100G",6781,17.441478,78.377811
+TCDK1,aws,"STTGDC KOL1, Kolkata, IN",STTGDC,STT Kolkata,IN,ap-south-1,ap-south-1,"1G, 10G, 100G","10G, 100G",6780,22.588218,88.392964
 SFY52,aws,"Sify Rabale - Mumbai, Navi Mumbai, IN",Sify Technologies Limited,Sify Rabale,IN,ap-south-1,ap-south-1,"1G, 10G",10G,2465,19.147451,73.014195
 AIMMN,aws,"AIMS Kuala Lumpur, Kuala Lumpur, MY",AIMS Data Centre Sdn Bhd,Menara AIMS,MY,ap-southeast-1,ap-southeast-1,"1G, 10G, 100G","10G, 100G",460,3.14969,101.70634
 EQSG2,aws,"Equinix SG2 - Singapore, Singapore, SG","Equinix, Inc.",Equinix SG2,SG,ap-southeast-1,ap-southeast-1,"1G, 10G, 100G","10G, 100G",705,1.321502,103.695359
@@ -81,7 +81,7 @@ EQWA1,aws,"Equinix WA1 - Warsaw, Warsaw, PL","Equinix, Inc.",Equinix WA1,PL,eu-c
 MOILH,aws,"MedOne TC1, Tirat Carmel, IL",Med-1 IC-1 (1999) LTD.,MedOne,IL,eu-central-1,eu-central-1,"1G, 10G, 100G","10G, 100G",7177,32.770949,34.966486
 IPHH3,aws,"Portus/IPHH HH3 (Wendenstrasse 251), Hamburg, DE",Portus Data Centers,IPHH H3,DE,eu-central-1,eu-central-1,"1G, 10G",10G,7274,53.550998,10.03825
 THV52,aws,"Telehouse - Paris 2 (Voltaire - Léon Frot), Paris, FR",Telehouse - Global Data Centers,Telehouse Voltaire,FR,eu-central-1,eu-central-1,"1G, 10G, 100G","10G, 100G",53,48.856654,2.38532
-DGPU1,aws,"Vaultica Data Centers | OSL01, Oslo, NO",Vaultica Data Centers - NORDICS,DigiPlex Ulven,NO,eu-central-1,eu-central-1,"1G, 10G",10G,345,59.924726,10.810183
+DGPU1,aws,"Vaultica Data Centers | OSL01, Oslo, NO",Vaultica Data Centers - NORDICS,DigiPlex Ulven,NO,eu-central-1,eu-central-1,"1G, 10G",10G,345,59.925055,10.809123
 EQZH5,aws,"Equinix ZH5 - Zurich, Zurich, CH","Equinix, Inc.",Equinix ZH5,CH,eu-central-2,eu-central-2,"1G, 10G, 100G","10G, 100G",1515,47.405667,8.46174
 EQSK1,aws,"Equinix SK1 - Stockholm, Stockholm, SE","Equinix, Inc.",Equinix Sweden SK1,SE,eu-north-1,eu-north-1,"1G, 10G, 100G","10G, 100G",156,59.362574,17.955657
 EQML2,aws,"Equinix ML2 - Milan, Milan, IT","Equinix, Inc.",Equinix ML2,IT,eu-south-1,eu-south-1,"1G, 10G",10G,884,45.448684,9.147436

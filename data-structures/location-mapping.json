@@ -711,8 +711,8 @@
     ],
     "city": "Oslo",
     "coordinates": {
-      "lat": "59.924726",
-      "lon": "10.810183"
+      "lat": "59.925055",
+      "lon": "10.809123"
     },
     "country": "NO",
     "facility_name": "Vaultica Data Centers | OSL01",
@@ -1236,6 +1236,7 @@
     "carriers": [
       "Arelion",
       "EXA Infrastructure",
+      "Eletronet",
       "EllaLink",
       "Inter.link",
       "Orange Wholesale International - EVPL",
@@ -1441,6 +1442,7 @@
       "BB Backbone",
       "Hanshin Cable Engineering Co.,Ltd.",
       "JR West Optical Network(JRWON)",
+      "Kintetsu Cable Network Co.,Ltd",
       "OPTAGE",
       "Rakuten Mobile",
       "TOKAI Communications Corporation"
@@ -1565,6 +1567,7 @@
     },
     "carriers": [
       "Arelion",
+      "Aristo Networks",
       "Bahnhof",
       "Cinia Oy",
       "DNA",
@@ -1703,6 +1706,7 @@
     "carriers": [
       "1-IX EU",
       "Arelion",
+      "Aristo Networks",
       "Global Network Management",
       "Global Secure Layer",
       "Inter.link",
@@ -1998,6 +2002,7 @@
       "1-IX EU",
       "AXENT",
       "Arelion",
+      "Aristo Networks",
       "Core-Backbone",
       "EXA Infrastructure",
       "EllaLink",
@@ -2079,10 +2084,10 @@
       "Core-Backbone",
       "Inter.link",
       "NL-ix",
+      "Norlys",
       "Obenet",
       "Portlane",
       "RETN",
-      "Telia Denmark",
       "ZET.NET Backbone",
       "euNetworks",
       "i3D.net"
@@ -2822,9 +2827,9 @@
       "lon": "80.278869"
     },
     "country": "IN",
-    "facility_name": "STT Chennai 1",
+    "facility_name": "STTGDC CHN1",
     "org_id": 15538,
-    "org_name": "ST Telemedia Global Data Centres (STT GDC)",
+    "org_name": "STTGDC",
     "peeringdb_id": "6778"
   },
   "TCDE2": {
@@ -2837,9 +2842,9 @@
       "lon": "77.240201"
     },
     "country": "IN",
-    "facility_name": "STT Delhi 2",
+    "facility_name": "STTGDC DEL2",
     "org_id": 15538,
-    "org_name": "ST Telemedia Global Data Centres (STT GDC)",
+    "org_name": "STTGDC",
     "peeringdb_id": "6786"
   },
   "TCDK1": {
@@ -2852,9 +2857,9 @@
       "lon": "88.392964"
     },
     "country": "IN",
-    "facility_name": "STT Kolkata 1",
+    "facility_name": "STTGDC KOL1",
     "org_id": 15538,
-    "org_name": "ST Telemedia Global Data Centres (STT GDC)",
+    "org_name": "STTGDC",
     "peeringdb_id": "6780"
   },
   "TCHY1": {
@@ -2867,9 +2872,9 @@
       "lon": "78.377811"
     },
     "country": "IN",
-    "facility_name": "STT Hyderabad 1",
+    "facility_name": "STTGDC HYD1",
     "org_id": 15538,
-    "org_name": "ST Telemedia Global Data Centres (STT GDC)",
+    "org_name": "STTGDC",
     "peeringdb_id": "6781"
   },
   "TCSH": {

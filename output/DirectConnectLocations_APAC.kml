@@ -155,7 +155,7 @@
   <Placemark>
     <name>TCDC1</name>
     <description><![CDATA[
-      <b>STT Chennai 1, Chennai, IN</b><br/>
+      <b>STTGDC CHN1, Chennai, IN</b><br/>
       Region: ap-south-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -164,7 +164,7 @@
   <Placemark>
     <name>TCDE2</name>
     <description><![CDATA[
-      <b>STT Delhi 2, Delhi, IN</b><br/>
+      <b>STTGDC DEL2, Delhi, IN</b><br/>
       Region: ap-south-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -173,7 +173,7 @@
   <Placemark>
     <name>TCDK1</name>
     <description><![CDATA[
-      <b>STT Kolkata 1, Kolkata, IN</b><br/>
+      <b>STTGDC KOL1, Kolkata, IN</b><br/>
       Region: ap-south-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
@@ -182,7 +182,7 @@
   <Placemark>
     <name>TCHY1</name>
     <description><![CDATA[
-      <b>STT Hyderabad 1, Hyderabad, IN</b><br/>
+      <b>STTGDC HYD1, Hyderabad, IN</b><br/>
       Region: ap-south-1
     ]]></description>
     <styleUrl>#dx-location</styleUrl>
