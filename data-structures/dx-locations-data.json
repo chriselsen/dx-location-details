@@ -2869,7 +2869,10 @@
     "country": "ES",
     "latitude": "40.439323",
     "longitude": "-3.621211",
-    "port_speeds": [],
+    "port_speeds": [
+      "1G",
+      "10G"
+    ],
     "macsec_capable": [],
     "providers": [
       "ACP - Init7",
@@ -4626,13 +4629,11 @@
     "port_speeds": [
       "1G",
       "10G",
-      "100G",
-      "400G"
+      "100G"
     ],
     "macsec_capable": [
       "10G",
-      "100G",
-      "400G"
+      "100G"
     ],
     "providers": [
       "11:11 Systems",
@@ -4690,13 +4691,11 @@
     "port_speeds": [
       "1G",
       "10G",
-      "100G",
-      "400G"
+      "100G"
     ],
     "macsec_capable": [
       "10G",
-      "100G",
-      "400G"
+      "100G"
     ],
     "providers": [
       "11:11 Systems",

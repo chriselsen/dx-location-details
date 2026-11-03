@@ -66,7 +66,7 @@ ITXA7,aws,"Digital Realty AMS3/5/7/8/10 - Amsterdam, Amsterdam, NL",Digital Real
 ITXA1,aws,"Digital Realty ATH1/2/3 - Athens, Koropi, GR",Digital Realty,Digital Realty ATH3,GR,eu-central-1,eu-central-1,"10G, 100G","10G, 100G",1949,37.871339,23.870251
 ITXC2,aws,"Digital Realty Copenhagen CPH1-3, Copenhagen, DK",Digital Realty,Digital Realty CPH2,DK,eu-central-1,eu-central-1,"1G, 10G",10G,148,55.728092,12.377482
 INX6,aws,"Digital Realty Frankfurt FRA1-27, Frankfurt, DE",Digital Realty,Digital Realty FRA6,DE,eu-central-1,eu-central-1,"1G, 10G, 100G","10G, 100G",58,50.11925,8.735199
-ITXM2,aws,"Digital Realty Madrid MAD1-2, Madrid, ES",Digital Realty,Digital Realty MAD2,ES,eu-central-1,eu-central-1,,,130,40.439323,-3.621211
+ITXM2,aws,"Digital Realty Madrid MAD1-2, Madrid, ES",Digital Realty,Digital Realty MAD2,ES,eu-central-1,eu-central-1,"1G, 10G",,130,40.439323,-3.621211
 ITXM3,aws,"Digital Realty Madrid MAD3, Madrid, ES",Digital Realty,Digital Realty MAD3,ES,eu-central-1,eu-central-1,"1G, 10G, 100G","10G, 100G",7414,40.433899,-3.62408
 ITXS1,aws,"Digital Realty Stockholm STO1-6, Stockholm, SE",Digital Realty,Digital Realty STO1,SE,eu-central-1,eu-central-1,"1G, 10G, 100G","10G, 100G",208,59.422226,17.916696
 ITXV2,aws,"Digital Realty VIE1/2 - Vienna, Vienna, AT",Digital Realty,Digital Realty VIE2,AT,eu-central-1,eu-central-1,"1G, 10G",10G,67,48.269027,16.410613
@@ -117,8 +117,8 @@ CSVA1,aws,"CoreSite - Reston (VA1), Reston, VA, US",CoreSite,CoreSite VA1,US,us-
 LGT50,aws,"Crown Castle Philadelphia (401 N Broad), Philadelphia, PA, US",Crown Castle Inc.,Crown Castle,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",3482,39.959668,-75.161377
 TLXA1,aws,"Digital Realty ATL13 - Atlanta, Atlanta, GA, US",Digital Realty,Digital Realty ATL13,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",125,33.755456,-84.39153
 TLLPJ,aws,"Digital Realty IAD (44100 Digital Loudoun), Ashburn, VA, US",Digital Realty,Digital Realty IAD38,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",4745,39.001795,-77.47841
-EQDA2,aws,"Equinix DA - Dallas (previously Infomart Dallas), Dallas, TX, US","Equinix, Inc.",Equinix DA2,US,us-east-1,us-east-1,"1G, 10G, 100G, 400G","10G, 100G, 400G",505,32.800748,-96.819412
-EQDC2,aws,"Equinix DC1-DC15, Ashburn, VA, US","Equinix, Inc.",Equinix DC2/DC11,US,us-east-1,us-east-1,"1G, 10G, 100G, 400G","10G, 100G, 400G",1,39.016363,-77.459023
+EQDA2,aws,"Equinix DA - Dallas (previously Infomart Dallas), Dallas, TX, US","Equinix, Inc.",Equinix DA2,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",505,32.800748,-96.819412
+EQDC2,aws,"Equinix DC1-DC15, Ashburn, VA, US","Equinix, Inc.",Equinix DC2/DC11,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",1,39.016363,-77.459023
 EQMI1,aws,"Equinix MI1 - Miami, Miami, FL, US","Equinix, Inc.",Equinix MI1,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",15,25.782648,-80.193157
 EQNY5,aws,"Equinix NY2/NY4/NY5/NY6 - New York, Secaucus, NJ, US","Equinix, Inc.",Equinix NY5,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",36,40.778534,-74.072237
 KIOQ1,aws,"KIO Querétaro 1 (QRO1), El Marques, MX",KIO,KIO Networks QRO 1,MX,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",1778,20.567915,-100.254141

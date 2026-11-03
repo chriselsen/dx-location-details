@@ -1,7 +1,7 @@
 {
   "description": "AWS Direct Connect colocation facility locations across all AWS partitions.",
   "source": "https://github.com/chriselsen/dx-location-details",
-  "last_updated": "2026-11-01T08:36:21Z",
+  "last_updated": "2026-11-03T04:59:56Z",
   "fields": {
     "code": "AWS Direct Connect location code (used in API calls)",
     "region": "AWS region code for managing Direct Connect resources at this location",
@@ -2962,7 +2962,10 @@
       "country": "ES",
       "latitude": "40.439323",
       "longitude": "-3.621211",
-      "port_speeds": [],
+      "port_speeds": [
+        "1G",
+        "10G"
+      ],
       "macsec_capable": [],
       "providers": [
         "ACP - Init7",
@@ -4756,13 +4759,11 @@
       "port_speeds": [
         "1G",
         "10G",
-        "100G",
-        "400G"
+        "100G"
       ],
       "macsec_capable": [
         "10G",
-        "100G",
-        "400G"
+        "100G"
       ],
       "providers": [
         "11:11 Systems",
@@ -4821,13 +4822,11 @@
       "port_speeds": [
         "1G",
         "10G",
-        "100G",
-        "400G"
+        "100G"
       ],
       "macsec_capable": [
         "10G",
-        "100G",
-        "400G"
+        "100G"
       ],
       "providers": [
         "11:11 Systems",
