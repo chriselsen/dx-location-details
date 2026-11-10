@@ -2163,10 +2163,7 @@
     "country": "CZ",
     "latitude": "50.060164",
     "longitude": "14.482978",
-    "port_speeds": [
-      "1G",
-      "10G"
-    ],
+    "port_speeds": [],
     "macsec_capable": [],
     "providers": [
       "Arelion",

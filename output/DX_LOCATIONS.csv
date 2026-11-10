@@ -60,7 +60,7 @@ SINJI,aws-cn,"Sinnet Jiuxianqiao IDC, Beijing, CN",,Sinnet Jiuxianqiao IDC,CN,cn
 IPI50,aws-cn,"Industrial Park IDC, Zhongwei, CN",,Industrial Park IDC,CN,cn-northwest-1,cn-northwest-1,"1G, 10G",,,37.5684,105.1873
 SHP54,aws-cn,"Shapotou IDC, Zhongwei, CN",,Shapotou IDC,CN,cn-northwest-1,cn-northwest-1,"1G, 10G",,,37.63670,105.34678
 CDSR1,aws,"C21, Milan, IT",CDLAN SpA,CDLAN srl Via Caldera 21,IT,eu-central-1,eu-central-1,"1G, 10G, 100G","10G, 100G",3519,45.476394,9.103571
-CEC50,aws,"CE Colo Prague, Prague, CZ",CE Colo Czech s.r.o.,CE Colo,CZ,eu-central-1,eu-central-1,"1G, 10G",,214,50.060164,14.482978
+CEC50,aws,"CE Colo Prague, Prague, CZ",CE Colo Czech s.r.o.,CE Colo,CZ,eu-central-1,eu-central-1,,,214,50.060164,14.482978
 IPB50,aws,"CarrierColo Berlin Luetzow (I/P/B/ site B), Berlin, DE",IPB Internet Provider in Berlin GmbH,IPB GmbH,DE,eu-central-1,eu-central-1,"1G, 10G",10G,445,52.50192,13.36945
 ITXA7,aws,"Digital Realty AMS3/5/7/8/10 - Amsterdam, Amsterdam, NL",Digital Realty,Digital Realty AMS7,NL,eu-central-1,eu-central-1,"1G, 10G",10G,64,52.28415,4.770855
 ITXA1,aws,"Digital Realty ATH1/2/3 - Athens, Koropi, GR",Digital Realty,Digital Realty ATH3,GR,eu-central-1,eu-central-1,"10G, 100G","10G, 100G",1949,37.871339,23.870251
