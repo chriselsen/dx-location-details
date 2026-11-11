@@ -35,7 +35,7 @@ EQSY5,aws,"Equinix SY5 - Sydney, Sydney, AU","Equinix, Inc.",Equinix SY5,AU,ap-s
 GBSY6,aws,"Equinix SY6 - Sydney (formerly Metronode Sydney 2), Silverwater, AU","Equinix, Inc.",Global Switch SY6,AU,ap-southeast-2,ap-southeast-2,"1G, 10G",,2474,-33.836684,151.053282
 NDCB2,aws,"NEXTDC B2, Fortitude Valley, AU",NEXTDC,NEXTDC B2,AU,ap-southeast-2,ap-southeast-2,"10G, 100G","10G, 100G",4688,-27.453902,153.0332
 NDCC1,aws,"NEXTDC C1, Bruce, AU",NEXTDC,NEXTDC C1,AU,ap-southeast-2,ap-southeast-2,"1G, 10G",10G,1162,-35.245308,149.096242
-NDCM1,aws,"NEXTDC M1, Melbourne, AU",NEXTDC,NEXTDC M1,AU,ap-southeast-2,ap-southeast-2,"1G, 10G, 100G","10G, 100G",1339,-37.821705,144.931061
+NDCM1,aws,"NEXTDC M1, Melbourne, AU",NEXTDC,NEXTDC M1,AU,ap-southeast-2,ap-southeast-2,"10G, 100G","10G, 100G",1339,-37.821705,144.931061
 NDCP1,aws,"NEXTDC P1, Málaga, AU",NEXTDC,NEXTDC P1,AU,ap-southeast-2,ap-southeast-2,"1G, 10G, 100G","10G, 100G",1940,-31.864402,115.895935
 NDCS2,aws,"NEXTDC S2, Macquarie Park, AU",NEXTDC,NEXTDC S2,AU,ap-southeast-2,ap-southeast-2,"1G, 10G, 100G","10G, 100G",6792,-33.785125,151.125301
 DCIJ3,aws,"DCI Indonesia (JK3), Greater Jakarta, Bekasi, Cibitung, ID",DCI Indonesia,DCI Indonesia,ID,ap-southeast-3,ap-southeast-3,"1G, 10G, 100G","10G, 100G",8169,-6.299731,107.089244
