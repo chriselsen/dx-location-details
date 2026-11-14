@@ -5,7 +5,7 @@ TECT1,aws,"Teraco CT1 Cape Town, Cape Town, ZA",Teraco Data Environments Pty Ltd
 EQHK1,aws,"Equinix HK1 - Hong Kong, Tsuen Wan, HK","Equinix, Inc.",Equinix HK1,HK,ap-east-1,ap-east-1,"1G, 10G, 100G","10G, 100G",170,22.365581,114.11932
 CHT51,aws,"CHT Taipei Banqiao IDC, New Taipei City, TW","Chunghwa Telecom Co., Ltd.",Chunghwa Telecom,TW,ap-east-2,ap-east-2,"1G, 10G, 100G","10G, 100G",2886,24.994866,121.458263
 CFT54,aws,"Chief HD Building Taipei, Taipei, TW",Chief Telecom Inc.,Chief Telecom HD,TW,ap-east-2,ap-east-2,"10G, 100G","10G, 100G",5678,25.074213,121.576784
-ATTC1,aws,"AT TOKYO (CC1/CC2), Tokyo, JP",AT TOKYO Corporation,AT Tokyo Chuo Data Center,JP,ap-northeast-1,ap-northeast-1,"1G, 10G, 100G","10G, 100G",738,35.645435,139.793285
+ATTC1,aws,"AT TOKYO (CC1/CC2), Tokyo, JP",AT TOKYO Corporation,AT Tokyo Chuo Data Center,JP,ap-northeast-1,ap-northeast-1,"10G, 100G","10G, 100G",738,35.645435,139.793285
 CFT52,aws,"Chief LY Building Taipei, Taipei, TW",Chief Telecom Inc.,Chief Telecom LY,TW,ap-northeast-1,ap-northeast-1,"1G, 10G",,456,25.073467,121.577519
 EQOS1,aws,"Equinix OS1 - Osaka, Osaka, JP","Equinix, Inc.",Equinix OS1,JP,ap-northeast-1,ap-northeast-1,"1G, 10G, 100G","10G, 100G",1791,34.675774,135.495551
 EQTY2,aws,"Equinix TY2 - Tokyo, Tokyo, JP","Equinix, Inc.",Equinix TY2,JP,ap-northeast-1,ap-northeast-1,"1G, 10G, 100G","10G, 100G",452,35.617432,139.748106
