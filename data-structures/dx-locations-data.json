@@ -2866,8 +2866,7 @@
     "latitude": "40.439323",
     "longitude": "-3.621211",
     "port_speeds": [
-      "1G",
-      "10G"
+      "1G"
     ],
     "macsec_capable": [],
     "providers": [
