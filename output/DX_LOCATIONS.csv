@@ -5,7 +5,7 @@ TECT1,aws,"Teraco CT1 Cape Town, Cape Town, ZA",Teraco Data Environments Pty Ltd
 EQHK1,aws,"Equinix HK1 - Hong Kong, Tsuen Wan, HK","Equinix, Inc.",Equinix HK1,HK,ap-east-1,ap-east-1,"1G, 10G, 100G","10G, 100G",170,22.365581,114.11932
 CHT51,aws,"CHT Taipei Banqiao IDC, New Taipei City, TW","Chunghwa Telecom Co., Ltd.",Chunghwa Telecom,TW,ap-east-2,ap-east-2,"1G, 10G, 100G","10G, 100G",2886,24.994866,121.458263
 CFT54,aws,"Chief HD Building Taipei, Taipei, TW",Chief Telecom Inc.,Chief Telecom HD,TW,ap-east-2,ap-east-2,"10G, 100G","10G, 100G",5678,25.074213,121.576784
-ATTC1,aws,"AT TOKYO (CC1/CC2), Tokyo, JP",AT TOKYO Corporation,AT Tokyo Chuo Data Center,JP,ap-northeast-1,ap-northeast-1,"10G, 100G","10G, 100G",738,35.645435,139.793285
+ATTC1,aws,"AT TOKYO (CC1/CC2), Tokyo, JP",AT TOKYO Corporation,AT Tokyo Chuo Data Center,JP,ap-northeast-1,ap-northeast-1,"1G, 10G, 100G","10G, 100G",738,35.645435,139.793285
 CFT52,aws,"Chief LY Building Taipei, Taipei, TW",Chief Telecom Inc.,Chief Telecom LY,TW,ap-northeast-1,ap-northeast-1,"1G, 10G",,456,25.073467,121.577519
 EQOS1,aws,"Equinix OS1 - Osaka, Osaka, JP","Equinix, Inc.",Equinix OS1,JP,ap-northeast-1,ap-northeast-1,"1G, 10G, 100G","10G, 100G",1791,34.675774,135.495551
 EQTY2,aws,"Equinix TY2 - Tokyo, Tokyo, JP","Equinix, Inc.",Equinix TY2,JP,ap-northeast-1,ap-northeast-1,"1G, 10G, 100G","10G, 100G",452,35.617432,139.748106
@@ -60,7 +60,7 @@ SINJI,aws-cn,"Sinnet Jiuxianqiao IDC, Beijing, CN",,Sinnet Jiuxianqiao IDC,CN,cn
 IPI50,aws-cn,"Industrial Park IDC, Zhongwei, CN",,Industrial Park IDC,CN,cn-northwest-1,cn-northwest-1,"1G, 10G",,,37.5684,105.1873
 SHP54,aws-cn,"Shapotou IDC, Zhongwei, CN",,Shapotou IDC,CN,cn-northwest-1,cn-northwest-1,"1G, 10G",,,37.63670,105.34678
 CDSR1,aws,"C21, Milan, IT",CDLAN SpA,CDLAN srl Via Caldera 21,IT,eu-central-1,eu-central-1,"1G, 10G, 100G","10G, 100G",3519,45.476394,9.103571
-CEC50,aws,"CE Colo Prague, Prague, CZ",CE Colo Czech s.r.o.,CE Colo,CZ,eu-central-1,eu-central-1,,,214,50.060164,14.482978
+CEC50,aws,"CE Colo Prague, Prague, CZ",CE Colo Czech s.r.o.,CE Colo,CZ,eu-central-1,eu-central-1,"1G, 10G",,214,50.060164,14.482978
 IPB50,aws,"CarrierColo Berlin Luetzow (I/P/B/ site B), Berlin, DE",IPB Internet Provider in Berlin GmbH,IPB GmbH,DE,eu-central-1,eu-central-1,"1G, 10G",10G,445,52.50192,13.36945
 ITXA7,aws,"Digital Realty AMS3/5/7/8/10 - Amsterdam, Amsterdam, NL",Digital Realty,Digital Realty AMS7,NL,eu-central-1,eu-central-1,"1G, 10G",10G,64,52.28415,4.770855
 ITXA1,aws,"Digital Realty ATH1/2/3 - Athens, Koropi, GR",Digital Realty,Digital Realty ATH3,GR,eu-central-1,eu-central-1,"10G, 100G","10G, 100G",1949,37.871339,23.870251
@@ -118,7 +118,7 @@ LGT50,aws,"Crown Castle Philadelphia (401 N Broad), Philadelphia, PA, US",Crown 
 TLXA1,aws,"Digital Realty ATL13 - Atlanta, Atlanta, GA, US",Digital Realty,Digital Realty ATL13,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",125,33.755456,-84.39153
 TLLPJ,aws,"Digital Realty IAD (44100 Digital Loudoun), Ashburn, VA, US",Digital Realty,Digital Realty IAD38,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",4745,39.001795,-77.47841
 EQDA2,aws,"Equinix DA - Dallas (previously Infomart Dallas), Dallas, TX, US","Equinix, Inc.",Equinix DA2,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",505,32.800748,-96.819412
-EQDC2,aws,"Equinix DC1-DC15, Ashburn, VA, US","Equinix, Inc.",Equinix DC2/DC11,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",1,39.016363,-77.459023
+EQDC2,aws,"Equinix DC1-DC15, Ashburn, VA, US","Equinix, Inc.",Equinix DC2/DC11,US,us-east-1,us-east-1,"1G, 10G",10G,1,39.016363,-77.459023
 EQMI1,aws,"Equinix MI1 - Miami, Miami, FL, US","Equinix, Inc.",Equinix MI1,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",15,25.782648,-80.193157
 EQNY5,aws,"Equinix NY2/NY4/NY5/NY6 - New York, Secaucus, NJ, US","Equinix, Inc.",Equinix NY5,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",36,40.778534,-74.072237
 KIOQ1,aws,"KIO Querétaro 1 (QRO1), El Marques, MX",KIO,KIO Networks QRO 1,MX,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",1778,20.567915,-100.254141
