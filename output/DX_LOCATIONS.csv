@@ -35,7 +35,7 @@ EQSY5,aws,"Equinix SY5 - Sydney, Sydney, AU","Equinix, Inc.",Equinix SY5,AU,ap-s
 GBSY6,aws,"Equinix SY6 - Sydney (formerly Metronode Sydney 2), Silverwater, AU","Equinix, Inc.",Global Switch SY6,AU,ap-southeast-2,ap-southeast-2,"1G, 10G",,2474,-33.836684,151.053282
 NDCB2,aws,"NEXTDC B2, Fortitude Valley, AU",NEXTDC,NEXTDC B2,AU,ap-southeast-2,ap-southeast-2,"10G, 100G","10G, 100G",4688,-27.453902,153.0332
 NDCC1,aws,"NEXTDC C1, Bruce, AU",NEXTDC,NEXTDC C1,AU,ap-southeast-2,ap-southeast-2,"1G, 10G",10G,1162,-35.245308,149.096242
-NDCM1,aws,"NEXTDC M1, Melbourne, AU",NEXTDC,NEXTDC M1,AU,ap-southeast-2,ap-southeast-2,"1G, 10G, 100G","10G, 100G",1339,-37.821705,144.931061
+NDCM1,aws,"NEXTDC M1, Melbourne, AU",NEXTDC,NEXTDC M1,AU,ap-southeast-2,ap-southeast-2,"10G, 100G","10G, 100G",1339,-37.821705,144.931061
 NDCP1,aws,"NEXTDC P1, Málaga, AU",NEXTDC,NEXTDC P1,AU,ap-southeast-2,ap-southeast-2,"1G, 10G, 100G","10G, 100G",1940,-31.864402,115.895935
 NDCS2,aws,"NEXTDC S2, Macquarie Park, AU",NEXTDC,NEXTDC S2,AU,ap-southeast-2,ap-southeast-2,"1G, 10G, 100G","10G, 100G",6792,-33.785125,151.125301
 DCIJ3,aws,"DCI Indonesia (JK3), Greater Jakarta, Bekasi, Cibitung, ID",DCI Indonesia,DCI Indonesia,ID,ap-southeast-3,ap-southeast-3,"1G, 10G, 100G","10G, 100G",8169,-6.299731,107.089244
@@ -98,7 +98,7 @@ ETIFJ,aws,"SmartHub Fujairah, Fujairah, AE",Etisalat,Etisalat Smart Hub Data Cen
 TEJB1,aws,"Teraco Johannesburg Campus, Johannesburg, ZA",Teraco Data Environments Pty Ltd,Teraco JB1,ZA,eu-west-1,eu-west-1,"1G, 10G, 100G","10G, 100G",850,-26.137957,28.197517
 EQMA3,aws,"Equinix MA3 - Manchester, Manchester, GB","Equinix, Inc.",Equinix MA3,GB,eu-west-2,eu-west-2,"1G, 10G, 100G","10G, 100G",1403,53.468674,-2.310421
 THNO2,aws,"Telehouse - London (Docklands West), London, GB",Telehouse - Global Data Centers,Telehouse West,GB,eu-west-2,eu-west-2,"1G, 10G, 100G","10G, 100G",835,51.511776,-0.002927
-ITXP7,aws,"Digital Realty Paris PAR7, Paris, FR",Digital Realty,Digital Realty PAR7,FR,eu-west-3,eu-west-3,1G,,1536,48.924907,2.403
+ITXP7,aws,"Digital Realty Paris PAR7, Paris, FR",Digital Realty,Digital Realty PAR7,FR,eu-west-3,eu-west-3,"1G, 10G",,1536,48.924907,2.403
 EQPA3,aws,"Equinix PA3 - Paris, Paris, FR","Equinix, Inc.",Equinix PA3,FR,eu-west-3,eu-west-3,"1G, 10G, 100G","10G, 100G",717,48.927166,2.350664
 AEBTF,aws-eusc,"AtlasEdge DC Berlin BER001, Berlin, DE",AtlasEdge,Atlas Edge BER001,DE,eusc-de-east-1,eusc-de-east-1,"10G, 100G","10G, 100G",4073,52.527509,13.318852
 IPBTF,aws-eusc,"CarrierColo Berlin Luetzow (I/P/B/ site B), Berlin, DE",IPB Internet Provider in Berlin GmbH,IPB GmbH,DE,eusc-de-east-1,eusc-de-east-1,"10G, 100G","10G, 100G",445,52.50192,13.36945
@@ -118,7 +118,7 @@ LGT50,aws,"Crown Castle Philadelphia (401 N Broad), Philadelphia, PA, US",Crown 
 TLXA1,aws,"Digital Realty ATL13 - Atlanta, Atlanta, GA, US",Digital Realty,Digital Realty ATL13,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",125,33.755456,-84.39153
 TLLPJ,aws,"Digital Realty IAD (44100 Digital Loudoun), Ashburn, VA, US",Digital Realty,Digital Realty IAD38,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",4745,39.001795,-77.47841
 EQDA2,aws,"Equinix DA - Dallas (previously Infomart Dallas), Dallas, TX, US","Equinix, Inc.",Equinix DA2,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",505,32.800748,-96.819412
-EQDC2,aws,"Equinix DC1-DC15, Ashburn, VA, US","Equinix, Inc.",Equinix DC2/DC11,US,us-east-1,us-east-1,"1G, 10G",10G,1,39.016363,-77.459023
+EQDC2,aws,"Equinix DC1-DC15, Ashburn, VA, US","Equinix, Inc.",Equinix DC2/DC11,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",1,39.016363,-77.459023
 EQMI1,aws,"Equinix MI1 - Miami, Miami, FL, US","Equinix, Inc.",Equinix MI1,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",15,25.782648,-80.193157
 EQNY5,aws,"Equinix NY2/NY4/NY5/NY6 - New York, Secaucus, NJ, US","Equinix, Inc.",Equinix NY5,US,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",36,40.778534,-74.072237
 KIOQ1,aws,"KIO Querétaro 1 (QRO1), El Marques, MX",KIO,KIO Networks QRO 1,MX,us-east-1,us-east-1,"1G, 10G, 100G","10G, 100G",1778,20.567915,-100.254141

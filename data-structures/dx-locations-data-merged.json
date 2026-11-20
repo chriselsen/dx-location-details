@@ -1468,7 +1468,6 @@
     "latitude": "-37.821705",
     "longitude": "144.931061",
     "port_speeds": [
-      "1G",
       "10G",
       "100G"
     ],
@@ -4152,7 +4151,8 @@
     "latitude": "48.924907",
     "longitude": "2.403",
     "port_speeds": [
-      "1G"
+      "1G",
+      "10G"
     ],
     "macsec_capable": [],
     "providers": [
@@ -4796,10 +4796,12 @@
     "longitude": "-77.459023",
     "port_speeds": [
       "1G",
-      "10G"
+      "10G",
+      "100G"
     ],
     "macsec_capable": [
-      "10G"
+      "10G",
+      "100G"
     ],
     "providers": [
       "11:11 Systems",
